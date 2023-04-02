@@ -1,0 +1,142 @@
+{
+  "progress": {
+    "title": "除治进度统计",
+    "enTitle": "Remediation progress statistics",
+    "suffix": {
+      "label": "单位：",
+      "unit": "万亩 / 株"
+    },
+    "content": {
+      "area": {
+        "data": [
+          {
+            "key": "infectionArea",
+            "value": 0,
+            "unit": "万亩",
+            "text": "普查感染面积",
+            "icon": "./images/area.svg",
+            "layer": "ldysf:view_progress_infection"
+          },
+          {
+            "key": "completedArea",
+            "value": 0,
+            "unit": "万亩",
+            "text": "已除治面积",
+            "icon": "",
+            "layer": "ldysf:view_progress_complete"
+          },
+          {
+            "key": "unCompletedArea",
+            "value": 0,
+            "unit": "万亩",
+            "text": "待除治面积",
+            "icon": "",
+            "layer": "ldysf:view_progress_uncomplete"
+          }
+        ],
+        "progress": {
+          "label": "除治进度",
+          "value": 0
+        }
+      },
+      "number": {
+        "data": [
+          {
+            "key": "infectionNumber",
+            "value": 0,
+            "unit": "株",
+            "text": "普查感染株",
+            "icon": "./images/tree.svg",
+            "layer": "ldysf:view_progress_infection"
+          },
+          {
+            "key": "completedNumber",
+            "value": 0,
+            "unit": "株",
+            "text": "已除治疫木",
+            "icon": "",
+            "layer": "ldysf:view_progress_complete"
+          },
+          {
+            "key": "unCompletedNumber",
+            "value": 0,
+            "unit": "株",
+            "text": "待除治疫木",
+            "icon": "",
+            "layer": "ldysf:view_progress_uncomplete"
+          }
+        ],
+        "progress": {
+          "label": "除治进度",
+          "value": 0
+        }
+      }
+    }
+  },
+  "quality": {
+    "title": "除治质量统计",
+    "enTitle": "Remediation quality statistics",
+    "suffix": {
+      "label": "单位：",
+      "unit": "个 / 吨"
+    },
+    "pop": [
+      {
+        "label": "采伐队(",
+        "value": 0,
+        "unit": ")",
+        "data": []
+      },
+      {
+        "label": "小班(",
+        "value": 0,
+        "unit": ")",
+        "data": []
+      }
+    ],
+    "content": [
+      {
+        "key": "trunkWeight",
+        "value": 0,
+        "label": "树干重量",
+        "unit": "吨"
+      },
+      {
+        "key": "branchWeight",
+        "value": 0,
+        "label": "过磅枝桠重量",
+        "unit": "吨"
+      },
+      {
+        "key": "percentOfBranch",
+        "value": 0,
+        "label": "枝桠占比",
+        "unit": "%"
+      },
+      {
+        "key": "totalWeight",
+        "value": 0,
+        "label": "除治总重量",
+        "unit": "吨"
+      }
+    ]
+  },
+  "mapInfo": [
+    {
+      "key": "className",
+      "label": "小班编号："
+    },
+    {
+      "key": "teamName",
+      "label": "采伐队："
+    },
+    {
+      "key": "infectionNumber",
+      "label": "感染株数："
+    },
+    {
+      "key": "eliminationStatus",
+      "label": "除治状态："
+    }
+  ]
+}

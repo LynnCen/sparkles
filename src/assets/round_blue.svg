@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>蓝色</title>
+    <g id="正式稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1首页" transform="translate(-677.000000, -652.000000)">
+            <g id="蓝色" transform="translate(677.000000, 652.000000)">
+                <circle id="椭圆形" fill="#FFFFFF" opacity="0.8" cx="13" cy="13" r="13"></circle>
+                <circle id="椭圆形" fill="#0091FF" cx="13" cy="13" r="8"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,109 @@
+{
+  "progress": [
+    {
+      "key": "Area",
+      "title": "除治进度·面积",
+      "subtitle": "Remediation progress · Area",
+      "list": [
+        {
+          "key": "infectionArea",
+          "imgUrl": "./images/area.svg",
+          "title": "普查感染面积",
+          "number": 0
+        },
+        {
+          "key": "stockInfectionArea",
+          "imgUrl": "",
+          "title": "存量感染面积",
+          "number": 0
+        }
+      ],
+      "goalsArea": 0,
+      "completed": ["completedArea", "areaProgress"],
+      "pass": ["passArea", "passAreaProgress"],
+      "unit": "万亩"
+    },
+    {
+      "key": "Number",
+      "title": "除治进度·疫木",
+      "subtitle": "Remediation progress · plague tree",
+      "list": [
+        {
+          "key": "plantNumber",
+          "imgUrl": "./images/tree.svg",
+          "title": "松木数量",
+          "number": 0
+        },
+        {
+          "key": "plantInfectionNumber",
+          "imgUrl": "",
+          "title": "普查感染",
+          "number": 0
+        },
+        {
+          "key": "plantStockNumber",
+          "imgUrl": "",
+          "title": "存量感染",
+          "number": 0
+        }
+      ],
+      "goalsNumber": 0,
+      "completed": ["plantCompletedNumber", "plantCompletedProgress"],
+      "pass": ["plantPassNumber", "plantPassProgress"],
+      "unit": "万株"
+    }
+  ],
+  "statistics": [
+    {
+      "key": "manager",
+      "title": "管理人员",
+      "number": 0,
+      "unit": "人"
+    },
+    {
+      "key": "car",
+      "title": "运输车辆",
+      "number": 0,
+      "unit": "辆"
+    },
+    {
+      "key": "censusPeople",
+      "title": "普查人员",
+      "number": 0,
+      "unit": "人"
+    },
+    {
+      "key": "cutTeam",
+      "title": "采伐队伍",
+      "number": 0,
+      "unit": "支"
+    },
+    {
+      "key": "checkPeople",
+      "title": "验收人员",
+      "number": 0,
+      "unit": "人"
+    },
+    {
+      "key": "cutPeople",
+      "title": "采伐人员",
+      "number": 0,
+      "unit": "人"
+    }
+  ],
+  "factory": [
+    { "key": "name" },
+    { "key": "principal", "label": "负责人" },
+    { "key": "phone", "label": "联系电话" },
+    { "key": "address", "label": "工厂地址" }
+  ],
+  "mapInfo": [
+    { "key": "className", "label": "小班编号：" },
+    { "key": "treeNumber", "label": "疫木数量：", "unit": "株" },
+    { "key": "area", "label": "地块面积：", "unit": "亩" },
+    { "key": "priority", "label": "除治优先级：" },
+    { "key": "difficulty", "label": "除治难易程度：" },
+    { "key": "currentStatus", "label": "当前进度：" },
+    { "key": "teamInfo", "label": "采伐队及负责人：" }
+  ]
+}

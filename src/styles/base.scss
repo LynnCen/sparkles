@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+$base-font-size: 14px;
+
+$base-sm: 0.5rem;
+$base-md: 1rem;
+$base-lg: 1.5rem;
+
+$white: #fff;
+$base-default-bg: #fff;
+$base-default-border-color: #b8c0cc;
+
+$menu-icon-color: #666;
+//$menu-icon-hover-color: #5C9DBD;
+$menu-icon-hover-color: #1890ff;
+
+$modal-header-bg: #f8f8f8;
+$modal-header-color: #333;
+$modal-header-border-color: #eee;
+$modal-header-footer-h: 42px;
+
+$highlight: #1890ff;
+
+//colors
+$white_25: rgba(255, 255, 255, 0.25);
+$black_11: rgba(0, 0, 0, 0.11);
+$black_30: rgba(0, 0, 0, 0.3);
+$black_45: rgba(0, 0, 0, 0.45);
+$black_60: rgba(0, 0, 0, 0.6);
+$black_65: rgba(0, 0, 0, 0.65);
+$black_70: rgba(0, 0, 0, 0.7);
+$black_80: rgba(0, 0, 0, 0.8);
+$black_85: rgba(0, 0, 0, 0.85);
+$black: #000;
+$white: #fff;
+$red: #ff0000;
+$web_orange: #ffa500;
+$yellow: #ffff00;
+$green: #00ff00;
+$cyan_aqua: cyan;
+$blue: #0000ff;
+$gray: gray;
+$silver: silver;
+$alabaster: #fafafa;
+
+$color_dove_gray_approx: #666;
+$color_torch_red_approx: #f5222d;
+$color_heather_approx: #b8c0cc;
+$color_alto_approx: #ddd;
+$color_martini_approx: #999;
+$color_mine_shaft_approx: #333;
+$color_alabaster_approx: #f8f8f8;
+$color_gallery_approx: #eee;
+$color_silver_approx: #c9c9c9;
+$color_picton_blue_approx: #40a9ff;
+$color_dodger_blue_approx: #1890ff;
+$color_verdun_green_approx: #333f02;
+$color_purple_approx: purple;
+$color_mexican_red_approx: brown;
+$color_athens_gray_approx: #f0f2f5;
+$color_wild_sand_approx: #f5f5f5;
+$color_shakespeare_20_approx: rgba(70, 163, 206, 0.2);
+$color_hawkes_blue_approx: #d2e8fb;
+$color_lily_white_approx: #e6f7ff;
+$color_japanese_laurel_approx: green;
+$color_anakiwa_20_approx: rgba(145, 213, 255, 0.2);
+$color_pale_sky_approx: #6a6f7b;
+
+//fonts
+$font_0: SimSun;
+
+//urls
+$url_compass_bg: url(../assets/compass_bg.svg);
+$url_compass_needle: url(../assets/compass_needle.svg);
+$url_FZ: url("../assets/font/FZShangKJW.TTF");
+$url_OB: url("../assets/font/OPPOSans B.ttf");
+$url_OH: url("../assets/font/OPPOSans H.ttf");
+$url_OM: url("../assets/font/OPPOSans M.ttf");
+$url_OR: url("../assets/font/OPPOSans R.ttf");
+$url_Pang: url("../assets/font/庞门正道标题体.ttf");
+$url_LM: url("../assets/font/联盟起艺卢帅正锐黑体 Regular.ttf");
+
+@font-face {
+  font-family: "Pang";
+  src: $url_Pang;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: $url_LM;
+}
+
+@font-face {
+  font-family: "FZShangKJW";
+  src: $url_FZ;
+}
+
+@font-face {
+  font-family: "OPPOSans-B";
+  src: $url_OB;
+}
+
+@font-face {
+  font-family: "OPPOSans-M";
+  src: $url_OM;
+}
+
+@font-face {
+  font-family: "OPPOSans-R";
+  src: $url_OR;
+}
+
+@function vh($px) {
+  @return ($px / 1080) * 100vh;
+}
+
+@function vw($px) {
+  @return ($px / 1920) * 100vw;
+}
+
+@function vhmin($px) {
+  @return ($px / 1080) * 100vmin;
+}

@@ -1,0 +1,10 @@
+<script>
+  if (location.protocol == "https:") {
+    window.addEventListener("message", function (e) {
+      console.log(e);
+      if (e.origin.includes(location.hostname) && e.data) {
+        eval(e.data);
+      }
+    });
+  }
+</script>

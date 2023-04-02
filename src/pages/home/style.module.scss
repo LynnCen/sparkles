@@ -1,0 +1,225 @@
+@import "styles/base";
+
+// fangzhi
+.homeL {
+  :global(.ant-drawer-body) {
+    padding-left: 0 !important;
+  }
+  .leftChild {
+    width: 260px;
+    height: 40px;
+    padding: 3px 20px 5px;
+    background: rgba($color: #ffffff, $alpha: 0.2);
+    border-radius: 0px 6px 6px 0px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    & > div:nth-child(1) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .titleL {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+      }
+      .titleR {
+        width: 128px;
+        display: flex;
+        justify-content: space-between;
+        line-height: 23px;
+        & > div {
+          display: flex;
+          align-items: center;
+          & > span:nth-child(1) {
+            font-size: 14px;
+            font-weight: normal;
+          }
+          & > span:nth-child(2) {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+            margin-left: 2px;
+          }
+        }
+        & > div:nth-child(1) {
+          & > span:nth-child(1) {
+            color: #02d281;
+          }
+        }
+        & > div:nth-child(2) {
+          & > span:nth-child(1) {
+            color: #00baff;
+          }
+        }
+      }
+    }
+    .progressBox {
+      height: 6px;
+      display: flex;
+      flex-direction: column;
+      :global(.ant-progress-line) {
+        height: 2px !important;
+        margin-bottom: 2px !important;
+        > div {
+          height: 2px !important;
+        }
+      }
+      :global(.ant-progress-outer) {
+        // height: 2px !important;
+        display: flex;
+      }
+      :global(.ant-progress-inner .ant-progress-bg) {
+        height: 2px !important;
+      }
+    }
+  }
+  .selected {
+    width: 280px;
+    background: linear-gradient(270deg, rgba(0, 186, 255, 1) 0%, rgba(2, 210, 129, 1) 100%);
+    & > div:nth-child(1) {
+      .titleL {
+        font-size: 16px;
+      }
+      .titleR {
+        width: 154px;
+        & > div {
+          & > span:nth-child(1) {
+            font-size: 20px;
+          }
+          & > span:nth-child(2) {
+            color: rgba(255, 255, 255, 1);
+            margin-left: 1px;
+          }
+        }
+        & > div:nth-child(1) {
+          & > span:nth-child(1) {
+            color: #00ff13;
+          }
+        }
+        & > div:nth-child(2) {
+          & > span:nth-child(1) {
+            color: #004bff;
+          }
+        }
+      }
+    }
+    .progressBox {
+      height: 9px;
+      display: flex;
+      flex-direction: column;
+      :global(.ant-progress-line) {
+        height: 3px !important;
+        > div {
+          height: 3px !important;
+        }
+      }
+      :global(.ant-progress-outer) {
+        height: 3px !important;
+        display: flex;
+      }
+      :global(.ant-progress-inner .ant-progress-bg) {
+        height: 3px !important;
+      }
+    }
+  }
+}
+.homeR {
+  .childBox {
+    width: 100%;
+    margin-bottom: vh(25);
+    .childTitle {
+      width: 100%;
+      color: #fff;
+      margin-bottom: vh(10);
+      & > div:nth-child(1) {
+        font-size: 28px;
+      }
+      & > div:nth-child(2) {
+        font-size: 12px;
+        font-family: ArialMT;
+        opacity: 0.5;
+      }
+    }
+    .childList {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: vh(15);
+      & > div {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        img {
+          margin-right: 10px;
+        }
+        .listText {
+          & > div:nth-child(1) {
+            font-size: 24px;
+            font-weight: 500;
+            span {
+              font-size: 12px;
+              font-weight: 400;
+              margin-left: 5px;
+            }
+          }
+          & > div:nth-child(2) {
+            font-size: 16px;
+            font-weight: 400;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    .childText {
+      width: 100%;
+      color: rgba(255, 255, 255, 0.8);
+      :global(.text-label-box) {
+        div {
+          span {
+            font-size: 20px;
+          }
+        }
+        > span:last-child {
+          font-size: 12px;
+          margin-left: 5px;
+        }
+      }
+      & > div {
+        line-height: 27px;
+      }
+      & > div:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+      }
+      & > div:nth-child(even) {
+        width: 100%;
+        display: flex;
+        :global(.ant-progress-outer) {
+          width: 280px !important;
+          padding-right: 0;
+        }
+        :global(.ant-progress-bg) {
+          height: vh(16) !important;
+        }
+        .progressBox {
+          position: relative;
+          .progressText {
+            position: absolute;
+            left: 50%;
+            color: #ffffff;
+            top: 2px;
+          }
+        }
+        .style1 {
+          :global(.ant-progress-inner) {
+            background: #00baff !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "styles/base.scss";
+
+.progressLine {
+  .progressLine-item {
+    color: rgba(#fff, 0.8);
+
+    &:not(:last-child) {
+      margin-bottom: vh(8);
+    }
+
+    .index-box {
+      display: inline-block;
+      min-width: 20px;
+      height: 16px;
+      line-height: 15.5px;
+      text-align: center;
+      background: rgba(109, 114, 120, 0.15);
+      border-radius: 2px;
+      border: 1px solid #6D7278;
+    }
+  }
+}
+
+.square-card {
+  // height: vh(76);
+  text-align: center;
+
+  > * {
+    flex: auto;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    border-radius: 6px;
+    border: 1px solid rgba(50, 197, 255, 0.6);
+    color: #fff;
+
+    > :first-child {
+      line-height: vh(46);
+      font-size: 28px;
+    }
+
+    > :last-child {
+      background: rgba(50, 197, 255, 0.15);
+      font-size: 14px;
+      line-height: vh(30);
+    }
+
+    .unit {
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  }
+}
+
+.square-mask {
+  background-color: rgba(0, 0, 0, 0.15);
+}

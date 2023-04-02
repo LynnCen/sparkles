@@ -1,0 +1,367 @@
+@import "./base";
+
+* {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
+
+svg {
+  fill: currentcolor;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.bg_white_25 {
+  background-color: rgba(109, 114, 120, 0.25) !important;
+}
+
+.font_16 {
+  font-size: 16px;
+}
+
+.font_24 {
+  font-size: 24px;
+}
+
+.opacity_60 {
+  opacity: 0.6;
+}
+
+.opacity_80 {
+  opacity: 0.8;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.border-none {
+  border: none !important;
+
+  .ant-select-selector {
+    border: none !important;
+    background-color: rgba(109, 114, 120, 0.25) !important;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.align-right {
+  margin-left: auto;
+  margin-right: 0;
+  left: auto;
+  right: 0;
+}
+
+.mt-sm {
+  margin-top: $base-sm;
+}
+
+.mb-sm {
+  margin-bottom: $base-sm;
+}
+
+.ml-sm {
+  margin-left: $base-sm;
+}
+
+.mr-sm {
+  margin-right: $base-sm;
+}
+
+.mt-md {
+  margin-top: $base-md;
+}
+
+.mb-md {
+  margin-bottom: $base-md;
+}
+
+.ml-md {
+  margin-left: $base-md;
+}
+
+.mr-md {
+  margin-right: $base-md !important;
+}
+
+.mt-lg {
+  margin-top: $base-lg;
+}
+
+.mb-lg {
+  margin-bottom: $base-lg;
+}
+
+.ml-lg {
+  margin-left: $base-lg;
+}
+
+.mr-lg {
+  margin-right: $base-lg;
+}
+
+.mx-sm {
+  margin-left: $base-sm;
+  margin-right: $base-sm;
+}
+
+.mx-md {
+  margin-left: $base-md;
+  margin-right: $base-md;
+}
+
+.mx-lg {
+  margin-left: $base-lg;
+  margin-right: $base-lg;
+}
+
+.my-sm {
+  margin-top: $base-sm;
+  margin-bottom: $base-sm;
+}
+
+.my-md {
+  margin-top: $base-md;
+  margin-bottom: $base-md;
+}
+
+.my-lg {
+  margin-top: $base-lg;
+  margin-bottom: $base-lg;
+}
+
+.m-sm {
+  margin: $base-sm !important;
+}
+
+.m-md {
+  margin: $base-md;
+}
+
+.m-lg {
+  margin: $base-lg;
+}
+
+.p-sm {
+  padding: $base-sm;
+}
+
+.p-md {
+  padding: $base-md;
+}
+
+.p-lg {
+  padding: $base-lg;
+}
+
+.pr-sm {
+  padding-right: $base-sm;
+}
+
+.pt-md {
+  padding-top: $base-md;
+}
+
+.px-sm {
+  padding-left: $base-sm;
+  padding-right: $base-sm;
+}
+
+.px-md {
+  padding-left: $base-md;
+  padding-right: $base-md;
+}
+
+.py-sm {
+  padding-top: $base-sm;
+  padding-bottom: $base-sm;
+}
+
+.py-md {
+  padding-top: $base-md;
+  padding-bottom: $base-md;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+// .flex-left {
+//   display: flex;
+//   justify-content: left;
+// }
+/*垂直居中*/
+.flex-center-v {
+  display: flex;
+  align-items: center;
+}
+
+/*水平居中*/
+.flex-center-h {
+  display: flex;
+  justify-content: center;
+}
+
+/*水平垂直居中*/
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*垂直居中 两端对齐*/
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*垂直居中 文本居左*/
+.flex-center-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.flex-center-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-center-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-start-between {
+  @extend .flex-start;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+/*单行文本超出隐藏*/
+.ellipsis,
+.text-overflow-hide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.square {
+  border-radius: 0;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.pe-none {
+  pointer-events: none;
+}
+
+.pe-auto {
+  pointer-events: auto;
+}
+
+.arial {
+  font-family: Arial !important;
+}
+
+.yahei {
+  font-family: MicrosoftYaHei !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #969696;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: rgba(#fff, 0.2);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+  background-color: transparent;
+}
+
+.hide-scrollbar {
+  overflow-y: auto;
+  position: relative;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

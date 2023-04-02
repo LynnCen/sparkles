@@ -1,0 +1,13 @@
+{
+  "presets": ["react-app"],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": true // style: "css"|true, true 会加载 less 文件
+      }
+    ]
+  ]
+}

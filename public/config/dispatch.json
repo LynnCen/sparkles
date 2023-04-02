@@ -1,0 +1,34 @@
+{
+  "administrator": {
+    "title": "管理人员列表",
+    "entitle": "Manager list",
+    "suffix": {
+      "label": "人员数量：",
+      "unit": "人"
+    },
+    "data": []
+  },
+  "toBeAssigned": {
+    "title": "待分配列表",
+    "entitle": "To be assigned list",
+    "suffix": {
+      "label": "待分配：",
+      "unit": "人"
+    },
+    "data": []
+  },
+  "allocated": {
+    "title": "已分配列表",
+    "entitle": "Allocated list",
+    "suffix": {
+      "label": "已分配：",
+      "unit": "人"
+    },
+    "data": []
+  },
+  "mapInfo": [
+    { "key": "className", "label": "小班编号：" },
+    { "key": "taskStatus", "label": "任务状态：" },
+    { "key": "teamName", "label": "采伐队：" }
+  ]
+}

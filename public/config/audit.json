@@ -1,0 +1,266 @@
+{
+  "cost": {
+    "title": "支付记录",
+    "enTitle": "Payment record",
+    "suffix": { "label": "信息数量：", "key": "", "value": 0, "unit": "条" },
+    "columns": [
+      {
+        "title": "采伐队",
+        "key": "payee"
+      },
+      {
+        "title": "金额",
+        "key": "paymentAmount"
+      },
+      {
+        "title": "时间",
+        "key": "time"
+      },
+      {
+        "title": "详情",
+        "key": "detail"
+      }
+    ],
+    "sampleData": {
+      "id": null,
+      "townCode": "",
+      "payer": "",
+      "cutTeamId": null,
+      "payee": "",
+      "trunkWeight": 0,
+      "branchWeight": 0,
+      "locallyBranchWeight": 0,
+      "branchProportion": 0,
+      "paymentAmount": 0,
+      "remarks": null,
+      "time": ""
+    },
+    "data": [],
+    "pop": {
+      "data": [
+        {
+          "key": "time",
+          "label": "支付记录详情"
+        },
+        {
+          "key": "payer",
+          "label": "付款人"
+        },
+        {
+          "key": "payee",
+          "label": "收款人"
+        },
+        {
+          "label": "树干重量",
+          "key": "trunkWeight",
+          "unit": "吨"
+        },
+        {
+          "label": "过磅枝桠重量",
+          "key": "branchWeight",
+          "unit": "吨"
+        },
+        {
+          "label": "就地焚烧枝桠重量",
+          "key": "locallyBranchWeight",
+          "unit": "吨"
+        },
+        {
+          "label": "枝桠占比",
+          "key": "branchProportion",
+          "unit": "%"
+        },
+        {
+          "label": "支付金额",
+          "key": "paymentAmount",
+          "unit": "元"
+        }
+      ]
+    }
+  },
+  "injection": {
+    "title": "注杆管理",
+    "enTitle": "Note lever management",
+    "suffix": { "label": "总用药量：", "key": "", "value": 39542, "unit": "/株" },
+    "columns": [
+      {
+        "title": "乡镇街道",
+        "key": "townName"
+      },
+      {
+        "title": "树木编号",
+        "key": "trunkId"
+      },
+      {
+        "title": "注药量/瓶",
+        "key": "dose"
+      },
+      {
+        "title": "操作",
+        "key": "action",
+        "values": ["定位", "详情"]
+      }
+    ],
+    "data": [],
+    "pop": {
+      "data": [
+        {
+          "key": "detail",
+          "label": "注杆详情"
+        },
+        {
+          "key": "trunkId",
+          "label": "树木编号："
+        },
+        {
+          "key": "townName",
+          "label": "乡镇/街道："
+        },
+        {
+          "key": "diameter",
+          "label": "胸径(cm)："
+        },
+        {
+          "key": "dose",
+          "label": "注药量(瓶)："
+        },
+        {
+          "key": "longitude",
+          "label": "经度："
+        },
+        {
+          "key": "latitude",
+          "label": "纬度："
+        },
+        {
+          "key": "address",
+          "label": "详细地址："
+        },
+        {
+          "key": "uploadTime",
+          "label": "采集时间："
+        }
+      ]
+    }
+  },
+  "clock": {
+    "title": "考勤记录",
+    "enTitle": "Attendance Record",
+    "suffix": { "label": "信息数量：", "key": "", "value": 10, "unit": "条" },
+    "columns": [
+      {
+        "title": "采伐队",
+        "key": "teamName"
+      },
+      {
+        "title": "姓名",
+        "key": "clockInPerson"
+      },
+      {
+        "title": "时间",
+        "key": "time"
+      },
+      {
+        "title": "详情",
+        "key": "detail"
+      }
+    ],
+    "statusColor": {
+      "-1": "#E02020",
+      "0": "#D19900",
+      "1": "#339758",
+      "缺卡": "#E02020",
+      "迟到打卡": "#D19900",
+      "已打卡": "#339758"
+    },
+    "sampleData": {
+      "id": null,
+      "town": "",
+      "townCode": "",
+      "teamName": "",
+      "cutTeamId": null,
+      "clockInPerson": "",
+      "phone": "",
+      "time": "",
+      "numberOfWorkers": 0,
+      "clockInLocation": ""
+    },
+    "data": [],
+    "pop": {
+      "data": [
+        {
+          "key": "time",
+          "label": "考勤记录详情"
+        },
+        {
+          "key": "town",
+          "label": "乡镇/街道"
+        },
+        {
+          "key": "teamName",
+          "label": "采伐队"
+        },
+        {
+          "key": "clockInPerson",
+          "label": "打卡人"
+        },
+        {
+          "key": "phone",
+          "label": "联系电话"
+        },
+        {
+          "key": "numberOfWorkers",
+          "label": "作业人数"
+        }
+      ]
+    }
+  },
+  "car": {
+    "title": "车辆管理",
+    "enTitle": "Vehicle management",
+    "suffix": { "label": "信息数量：", "key": "", "value": 10, "unit": "条" },
+    "picker": { "defaultValue": ["2020/08/01", "2020/09/01"] },
+    "columns": [
+      {
+        "title": "采伐队",
+        "key": "teamName"
+      },
+      {
+        "title": "负责人",
+        "key": "responsiblePerson"
+      },
+      {
+        "title": "车牌号",
+        "key": "carPlate"
+      },
+      {
+        "title": "操作",
+        "key": "action",
+        "values": ["定位", "轨迹"]
+      }
+    ],
+    "statusColor": {
+      "-1": "#E02020",
+      "0": "#D19900",
+      "1": "#339758",
+      "缺卡": "#E02020",
+      "迟到打卡": "#D19900",
+      "已打卡": "#339758"
+    },
+    "sampleData": {
+      "id": null,
+      "town": "",
+      "townCode": "",
+      "teamName": "",
+      "carPlate": "",
+      "responsiblePerson": "",
+      "state": ""
+    }
+  },
+  "factory": [
+    { "key": "name" },
+    { "key": "principal", "label": "负责人" },
+    { "key": "phone", "label": "联系电话" },
+    { "key": "address", "label": "工厂地址" }
+  ]
+}

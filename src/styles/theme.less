@@ -1,0 +1,102 @@
+@white_35: rgba(255, 255, 255, 0.35);
+@white_80: rgba(255, 255, 255, 0.8);
+
+.ant-drawer {
+  z-index: 3;
+  .ant-drawer-content-wrapper {
+    box-shadow: none !important;
+    height: auto !important;
+    .ant-drawer-content {
+      background: none;
+      .ant-drawer-body {
+        padding: 0 40px 0 0;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.ant-table {
+  .ant-table-thead th {
+    padding: 0;
+    text-align: center;
+  }
+  .ant-table-body {
+    overflow-y: auto !important;
+  }
+}
+
+.ant-progress,
+.ant-progress-outer {
+  line-height: 100%;
+}
+.ant-progress-line {
+  .ant-progress-outer {
+    width: 100%;
+    padding: 0;
+    .ant-progress-inner {
+      stroke: @white_35;
+      background-color: @white_35;
+      .ant-progress-bg {
+        border-radius: unset !important;
+      }
+    }
+  }
+  .ant-progress-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-48%);
+    margin: 0;
+    font-size: 12px;
+    width: fit-content;
+    color: #121212;
+    font-family: OPPOSans-M;
+  }
+}
+
+.ant-select {
+  border-radius: 4px;
+  .ant-select-selection-item,
+  .anticon-down {
+    color: white;
+  }
+}
+
+.ant-picker {
+  border-radius: 4px;
+  padding: 3px 11px 3px;
+  .ant-picker-input input {
+    color: white;
+    line-height: 20px;
+  }
+  .ant-picker-clear {
+    background: transparent;
+  }
+  .ant-picker-suffix,
+  .anticon-swap-right {
+    color: white;
+  }
+}
+// .ant-picker.ant-picker-borderless {
+//   background-color: transparent;
+// }
+// .ant-picker-month-panel {
+//   width: 200px;
+// }
+
+.ant-breadcrumb-separator {
+  color: white;
+}
+
+.ant-tag {
+  margin-right: 4px;
+}
+.ant-popover-inner {
+  border-radius: 4px;
+  .ant-popover-inner-content {
+    padding: 0;
+  }
+}
+
+.ant-empty-normal {
+  margin: auto;
+}

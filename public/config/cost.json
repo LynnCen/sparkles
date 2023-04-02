@@ -1,0 +1,161 @@
+{
+  "progress": {
+    "title": "结算进度",
+    "enTitle": "Settlement progress",
+    "suffix": { "label": "队伍数量：", "key": "", "value": 0, "unit": "队" },
+    "columns": [
+      {
+        "title": "采伐队",
+        "key": "teamName"
+      },
+      {
+        "title": "姓名",
+        "key": "teamLeader"
+      },
+      {
+        "title": "应付款",
+        "key": "amountDue"
+      },
+      {
+        "title": "已付款",
+        "key": "paymentAmount"
+      },
+      {
+        "title": "状态",
+        "key": "paymentStatus"
+      }
+    ],
+    "count": {
+      "title": "采伐队费用结算进度",
+      "color": ["#339758", "#d19900"],
+      "data": [
+        {
+          "status": "已结算",
+          "key": "completeClassNum",
+          "value": 0
+        },
+        {
+          "status": "待结算",
+          "key": "incompleteClassNum",
+          "value": 0
+        }
+      ]
+    },
+    "statusColor": {
+      "0": "#D19900",
+      "1": "#339758",
+      "待完结": "#D19900",
+      "已完结": "#339758"
+    },
+    "data": [
+      {
+        "teamName": "",
+        "teamLeader": "",
+        "amountDue": 0,
+        "paymentAmount": 0,
+        "paymentStatus": ""
+      }
+    ],
+    "empty": [
+      {
+        "team": "- -",
+        "name": -1,
+        "payable": "- -",
+        "paid": "- -",
+        "status": "- -",
+        "operation": {
+          "text": "- -",
+          "title": "   ",
+          "img": ""
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "title": "结算统计",
+    "enTitle": "Settlement statistics",
+    "suffix": "计算依据",
+    "pop": [
+      {
+        "label": "采伐队列表(",
+        "value": 0,
+        "unit": ")",
+        "key": "cutTeamList",
+        "data": []
+      },
+      {
+        "label": "小班列表(",
+        "value": 0,
+        "unit": ")",
+        "key": "smallClassList",
+        "data": []
+      }
+    ],
+    "colKeys": [
+      ["trunkWeight", "trunkUnitPrice"],
+      ["branchWeight", "branchUnitPrice"],
+      ["locallyBranchWeight", "locallyBranchUnitPrice"]
+    ],
+    "rowKeys": ["amountDue", "paymentAmount", "amountToBePaid"],
+    "branchProportion": { "title": "枝桠占比", "ranges": [0, 1], "actual": 0, "target": 0 },
+    "data": [
+      {
+        "label": "树干重量",
+        "key": "trunkWeight",
+        "value": 0,
+        "unit": "吨"
+      },
+      { "label": "单价", "key": "trunkUnitPrice", "value": 0, "unit": "元/吨" },
+      {
+        "label": "过磅枝桠重量",
+        "key": "branchWeight",
+        "value": 0,
+        "unit": "吨"
+      },
+      {
+        "label": "单价",
+        "key": "branchUnitPrice",
+        "value": 0,
+        "unit": "元/吨"
+      },
+      {
+        "label": "就地处理枝桠重量",
+        "key": "locallyBranchWeight",
+        "value": 0,
+        "unit": "吨"
+      },
+      {
+        "label": "单价",
+        "key": "locallyBranchUnitPrice",
+        "value": 0,
+        "unit": "元/吨"
+      },
+      {
+        "label": "应付金额",
+        "key": "amountDue",
+        "value": 0,
+        "unit": "元"
+      },
+      {
+        "label": "已付金额",
+        "key": "paymentAmount",
+        "value": 0,
+        "unit": "元"
+      },
+      {
+        "label": "待付金额",
+        "key": "amountToBePaid",
+        "value": 0,
+        "unit": "元"
+      }
+    ]
+  },
+  "mapInfo": [
+    { "key": "className", "label": "小班编号：" },
+    { "key": "status", "label": "结算进度：" },
+    { "key": "amountDue", "label": "应付金额：" },
+    { "key": "teamName", "label": "采伐队：" },
+    { "key": "teamLeader", "label": "负责人：" },
+    { "key": "phone", "label": "联系电话：" }
+  ]
+}

@@ -1,0 +1,38 @@
+.breadcrumb {
+  a {
+    color: #39F4E8 !important;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.green {
+  font-size: 16px;
+  font-weight: 500;
+  color: #02d281;
+  font-family: OPPOSans-M;
+}
+.rang-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  & > div {
+    margin-right: 10px;
+  }
+  & > div:nth-child(4) {
+    margin-right: 0;
+  }
+}
+.analysis-chart {
+  width: 84px;
+  height: 84px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  & > div {
+    width: 84px;
+    height: 84px;
+  }
+}

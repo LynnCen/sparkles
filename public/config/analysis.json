@@ -1,0 +1,140 @@
+{
+  "range": {
+    "title": "疫情范围统计",
+    "entitle": "Epidemic scope statistics",
+    "suffixNum": 0,
+    "above": [
+      {
+        "key": "total",
+        "imgUrl": "./images/class.svg"
+      },
+      {
+        "key": "censusNumber",
+        "imgUrl": ""
+      },
+      {
+        "key": "infectionNumber",
+        "imgUrl": ""
+      }
+    ],
+    "data": {
+      "key": "Area",
+      "infectionArea": 0,
+      "unInfectionArea": 0,
+      "censusArea": 0,
+      "unit": "",
+      "color": ["#F7B500", "#02D281"]
+    }
+  },
+  "division": {
+    "title": "疫情划分统计",
+    "entitle": "Epidemic classification statistics",
+    "suffixNum": 0,
+    "priority": {
+      "prefix": "除治优先级",
+      "suffix": "单位：个",
+      "color": ["#339758", "#F7B500", "#FA6400", "#E02020"],
+      "data": [
+        {
+          "key": "rectifyLevelZero",
+          "status": "无",
+          "value": 0
+        },
+        {
+          "key": "rectifyLevelThree",
+          "status": "Ⅲ级",
+          "value": 0,
+          "style": 3
+        },
+        {
+          "key": "rectifyLevelTwo",
+          "status": "Ⅱ级",
+          "value": 0,
+          "style": 2
+        },
+        {
+          "key": "rectifyLevelOne",
+          "status": "Ⅰ级",
+          "value": 0,
+          "style": 1
+        }
+      ]
+    },
+    "difficulty": {
+      "prefix": "除治难易程度",
+      "suffix": "单位：个",
+      "color": ["#339758", "#44D7B6", "#32C5FF", "#0091FF"],
+      "data": [
+        {
+          "key": "difficultLevelZero",
+          "status": "无",
+          "value": 0
+        },
+        {
+          "key": "difficultLevelThree",
+          "status": "C级",
+          "value": 0,
+          "style": 3
+        },
+        {
+          "key": "difficultLevelTwo",
+          "status": "B级",
+          "value": 0,
+          "style": 2
+        },
+        {
+          "key": "difficultLevelOne",
+          "status": "A级",
+          "value": 0,
+          "style": 1
+        }
+      ]
+    }
+  },
+  "budget": {
+    "title": "治理费用预算",
+    "entitle": "Governance cost budget",
+    "suffixNum": 0,
+    "content": [
+      {
+        "key": "rectifyNumber",
+        "label": "除治数量",
+        "value": 0,
+        "unit": "株"
+      },
+      {
+        "key": "price",
+        "label": "单株",
+        "value": 0,
+        "unit": "元/株"
+      },
+      {
+        "key": "estimatedFee",
+        "label": "预计费用",
+        "value": 0,
+        "unit": "元"
+      }
+    ]
+  },
+  "suffix": {
+    "label": "单位：",
+    "unit": "个 / 万株 / 万亩"
+  },
+  "keyText": {
+    "infectionArea": "感染面积",
+    "unInfectionArea": "未感染面积",
+    "censusArea": "普查面积",
+    "infectionNumber": "疫木感染数量",
+    "unInfectionNumber": "未感染数量",
+    "censusNumber": "松木普查数量",
+    "total": "小班数量"
+  },
+  "mapInfo": [
+    { "key": "className", "label": "小班编号：" },
+    { "key": "treeNumber", "label": "疫木数量：", "unit": "株" },
+    { "key": "area", "label": "地块面积：", "unit": "亩" },
+    { "key": "priority", "label": "除治优先级：" },
+    { "key": "difficulty", "label": "除治难易程度：" },
+    { "key": "fee", "label": "治理费用：", "unit": "元" }
+  ]
+}

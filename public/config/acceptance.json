@@ -1,0 +1,73 @@
+{
+  "assess": {
+    "title": "进度考核",
+    "enTitle": "Progress assessment",
+    "select": {
+      "defaultValue": 1,
+      "options": [
+        { "label": "除治面积", "value": 1, "unit": "亩" },
+        { "label": "除治株数", "value": 2, "unit": "株" }
+      ]
+    },
+    "data": []
+  },
+  "accept": {
+    "title": "效果验收",
+    "enTitle": "Effect acceptance",
+    "suffix": {
+      "children": "不合格列表",
+      "style": { "color": "#FF3636", "textDecoration": "underline" }
+    },
+    "unqualified": {
+      "columns": [
+        {
+          "title": "采伐队",
+          "key": "teamName"
+        },
+        {
+          "title": "负责人",
+          "key": "teamLeader"
+        },
+        {
+          "title": "小班名称",
+          "key": "className"
+        }
+      ],
+      "data": []
+    },
+    "data": [
+      {
+        "key": "totalNumber",
+        "title": "验收小班总数",
+        "value": 0,
+        "imgUrl": "./images/class.svg"
+      },
+      {
+        "key": "acceptNumber",
+        "title": "验收通过",
+        "value": 0,
+        "imgUrl": ""
+      },
+      {
+        "key": "unAcceptNumber",
+        "title": "验收不合格",
+        "value": 0,
+        "imgUrl": ""
+      },
+      {
+        "key": "perOfAccept",
+        "title": "验收通过率",
+        "value": 0,
+        "imgUrl": ""
+      }
+    ]
+  },
+  "mapInfo": [
+    { "key": "className", "label": "小班编号：" },
+    { "key": "result", "label": "验收状态：" },
+    { "key": "teamName", "label": "采伐队：" },
+    { "key": "teamLeader", "label": "负责人：" },
+    { "key": "phone", "label": "联系电话：" },
+    { "key": "picUrl", "label": "查看详情" }
+  ]
+}
