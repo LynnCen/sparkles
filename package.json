@@ -1,0 +1,35 @@
+{
+  "name": "foxth",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development TEST=true PORT=3000 node server",
+    "dev:pro": "cross-env NODE_ENV=development PORT=3000 node server",
+    "build": "cross-env TEST=true next build",
+    "build:pro": "next build",
+    "server": "cross-env NODE_ENV=production TEST=true PORT=3000 node server",
+    "server:pro": "cross-env NODE_ENV=production PORT=3000 node server",
+    "deploy": "pm2 deploy development update",
+    "deploy:pro": "pm2 deploy production update",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "next": "^9.3.5",
+    "next-i18next": "^4.3.0",
+    "rc-queue-anim": "^1.8.2",
+    "rc-scroll-anim": "^2.6.2",
+    "rc-texty": "^0.2.0",
+    "react": "16.11.0",
+    "react-dom": "16.11.0"
+  },
+  "devDependencies": {
+    "@zeit/next-less": "^1.0.1",
+    "cross-env": "^6.0.3",
+    "express": "^4.17.1",
+    "file-loader": "^6.0.0",
+    "http-proxy-middleware": "^0.20.0",
+    "less": "^3.11.1",
+    "sitemap": "^5.0.1"
+  }
+}

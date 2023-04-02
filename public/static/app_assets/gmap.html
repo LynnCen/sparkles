@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Map</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+      height: 100%;
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <!-- <script src="../js/vconsole.min.js"></script>
+  <script>
+    // 初始化
+    var vConsole = new VConsole();
+    console.log('Hello world');
+  </script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPWUr_JIpzmK16C0Ys0rscxnCS-M9_mSQ"></script>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script>
+    let markerIcon = {
+      default: './img/marker-default.png?v=1',
+      circle: './img/marker-circle.png?v=1'
+    }
+    let markersInsArr = [];
+    let gmap = new google.maps.Map(document.getElementById('map'), {
+      center: { lng: -116.397428, lat: 39.90923, },
+      zoom: 11,
+      minZoom: 4,
+      maxZoom: 18,
+      fullscreenControl: false,
+      mapTypeControl: false,
+      // rotateControl: false,
+      // scaleControl: false,
+      // scrollwheel: false,
+      streetViewControl: false,
+      zoomControl: false
+    });
+    let t = {
+      // 添加点标记
+      addMarkers: (markers) => {
+        let newMarkersInsArr = markers.map((itm) => new google.maps.Marker({ ...itm, position: new google.maps.LatLng(...itm.position.slice().reverse()), icon: itm.icon ? markerIcon[itm.icon] : markerIcon.default, map: gmap }))
+        markersInsArr.splice(markersInsArr.length, 0, ...newMarkersInsArr);
+        // 调整视野
+        let bounds = new google.maps.LatLngBounds();
+        markersInsArr.forEach(marker => {
+          bounds.extend(marker.getPosition());
+        });
+        gmap.fitBounds(bounds);
+      },
+      // 清除点标记
+      clearMarkers: () => {
+        markersInsArr.forEach(marker => {
+          marker.setMap(null);
+        })
+        markersInsArr = []
+      },
+      // 设置中心点
+      setCenter: (orgLnglat) => {
+        gmap.setCenter(new google.maps.LatLng(...orgLnglat.slice().reverse()))
+      }
+    }
+
+    // app接口
+    window.callMap = (type, ...arg) => {
+      console.log('调用成功', ...arg)
+      switch (type) {
+        case 'addMarkers':
+          t.addMarkers(...arg);
+          break;
+        case 'clearMarkers':
+          t.clearMarkers(...arg);
+          break;
+        case 'setCenter':
+          t.setCenter(...arg);
+          break;
+        default:
+          console.log('type错误', type);
+      }
+    }
+  </script>
+</body>
+
+</html>

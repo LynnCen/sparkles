@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <title>App Map</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #root {
+            height: 100vh;
+        }
+    </style>
+    <!-- <script src="../js/vconsole.min.js"></script>
+    <script>
+        // 初始化
+        var vConsole = new VConsole();
+        console.log('Hello world');
+    </script> -->
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=d256e24c6d481581cdd319d3043d13a2"></script>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+        let markerIcon = {
+            default: './img/marker-default.png?v=1',
+            circle: './img/marker-circle.png?v=1'
+        }
+        let markersInsArr = [];
+        let amap = new AMap.Map('root', {
+            zoom: 11, //级别
+            zooms: [4, 18],
+            // center: lnglats, //中心点坐标
+            viewMode: "3D" //使用3D视图
+        });
+        let t = {
+            // 添加点标记
+            // window.callMap('addMarkers', [{position: [104.187428, 30.80923]}, {position:  [104.197428, 30.90923]}])
+            addMarkers: (markers) => {
+                let orgLnglatArr = markers.map(itm => itm.position);
+                AMap.convertFrom(orgLnglatArr, 'gps', function (status, result) {
+                    if (result.info === 'ok') {
+                        let lnglats = result.locations; // Array.<LngLat>
+                        let newMarkersInsArr = markers.map((itm, idx) => new AMap.Marker({ ...itm, position: lnglats[idx], icon: itm.icon ? markerIcon[itm.icon] : markerIcon.default }))
+                        markersInsArr.splice(markersInsArr.length, 0, ...newMarkersInsArr)
+                        amap.add(newMarkersInsArr)
+                        // 自动调整视野
+                        amap.setFitView();
+                    } else {
+                        console.log('坐标数据错误')
+                    }
+                });
+            },
+            // 清除点标记
+            clearMarkers: () => {
+                markersInsArr.forEach(marker => {
+                    marker.setMap(null);
+                })
+                markersInsArr = []
+            },
+            // 设置地图中心点
+            setCenter: (orgLnglat) => {
+                AMap.convertFrom(orgLnglat, 'gps', function (status, result) {
+                    if (result.info === 'ok') {
+                        let lnglat = result.locations[0]; // Array.<LngLat>
+                        amap.setCenter(lnglat)
+                    } else {
+                        console.log('坐标数据错误')
+                    }
+                });
+            }
+        }
+        // app接口
+        window.callMap = (type, ...arg) => {
+            console.log('调用成功', ...arg)
+            switch (type) {
+                case 'addMarkers':
+                    t.addMarkers(...arg);
+                    break;
+                case "clearMarkers":
+                    t.clearMarkers(...arg)
+                    break;
+                case "setCenter":
+                    t.setCenter(...arg)
+                    break;
+                default:
+                    console.log('type错误', type);
+            }
+        }
+    </script>
+</body>
+
+</html>
