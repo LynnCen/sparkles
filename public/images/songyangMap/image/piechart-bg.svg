@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="521.844" height="317.942" viewBox="0 0 521.844 317.942">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4, .cls-6 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 1.71px;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #26e3b5;
+      }
+
+      .cls-1 {
+        opacity: 0.83;
+      }
+
+      .cls-2 {
+        fill: #26e3b5;
+      }
+
+      .cls-3, .cls-6 {
+        opacity: 0.2;
+      }
+
+      .cls-4, .cls-6 {
+        stroke: #1395ff;
+      }
+
+      .cls-4 {
+        opacity: 0.883;
+      }
+
+      .cls-5 {
+        fill: #1395ff;
+      }
+    </style>
+  </defs>
+  <g id="组_1790" data-name="组 1790" transform="translate(-255.613 -665.347)">
+    <g id="组_1740" data-name="组 1740" transform="translate(554.706 666.202)">
+      <path id="路径_1486" data-name="路径 1486" class="cls-1" d="M598.7,9038.016l68.448,82.725h128.71" transform="translate(-597.192 -8820.332)"/>
+      <circle id="椭圆_582" data-name="椭圆 582" class="cls-2" cx="6.73" cy="6.73" r="6.73" transform="translate(198.96 293.645)"/>
+      <circle id="椭圆_583" data-name="椭圆 583" class="cls-3" cx="15.857" cy="15.857" r="15.857" transform="translate(189.833 284.517)"/>
+      <path id="路径_1487" data-name="路径 1487" class="cls-1" d="M597.246,8906.446l69.959-72.794h128.71" transform="translate(-597.246 -8817.479)"/>
+      <circle id="椭圆_584" data-name="椭圆 584" class="cls-2" cx="6.878" cy="6.878" r="6.878" transform="translate(198.813 9.328)"/>
+      <circle id="椭圆_585" data-name="椭圆 585" class="cls-3" cx="16.205" cy="16.205" r="16.205" transform="translate(189.485)"/>
+    </g>
+    <g id="组_1741" data-name="组 1741" transform="translate(256.468 666.202)">
+      <path id="路径_1486-2" data-name="路径 1486" class="cls-4" d="M786.05,9046.744l-58.636,74H598.7" transform="translate(-575.477 -8820.332)"/>
+      <circle id="椭圆_582-2" data-name="椭圆 582" class="cls-5" cx="6.73" cy="6.73" r="6.73" transform="translate(9.475 293.645)"/>
+      <circle id="椭圆_583-2" data-name="椭圆 583" class="cls-6" cx="15.857" cy="15.857" r="15.857" transform="translate(0.348 284.517)"/>
+      <path id="路径_1487-2" data-name="路径 1487" class="cls-4" d="M795.915,8906.446l-69.959-72.794H597.246" transform="translate(-574.019 -8817.479)"/>
+      <circle id="椭圆_584-2" data-name="椭圆 584" class="cls-5" cx="6.878" cy="6.878" r="6.878" transform="translate(9.328 9.328)"/>
+      <circle id="椭圆_585-2" data-name="椭圆 585" class="cls-6" cx="16.205" cy="16.205" r="16.205"/>
+    </g>
+  </g>
+</svg>

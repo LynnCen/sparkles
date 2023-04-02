@@ -1,0 +1,217 @@
+{
+  "routes": [],
+  "atmosphere": {
+    "title": "大气生态数据",
+    "enTitle": "Atmospheric Ecology Data",
+    "suffix": { "name": "监测点位", "value": 34, "unit": "个" },
+    "data": [
+      {
+        "name": "温度（℃）",
+        "value": 26,
+        "avatar": "./images/ecology/icon_wendu.png"
+      },
+      {
+        "name": "湿度RH",
+        "value": 30,
+        "avatar": "./images/ecology/icon_shidu.png"
+      },
+      {
+        "name": "AQI",
+        "value": "32优",
+        "avatar": "./images/ecology/icon_kongqizhiyiban.png"
+      },
+      {
+        "name": "PM2.5",
+        "value": "23",
+        "avatar": "./images/ecology/icon_pm25.png"
+      },
+      {
+        "name": "风向风力",
+        "value": "3-4级",
+        "avatar": "./images/ecology/iconfengxiang.png"
+      }
+    ]
+  },
+  "site": {
+    "title": "工地监测数据",
+    "enTitle": "Site monitoring data",
+    "suffix": { "name": "监测点位", "value": 684, "unit": "个" },
+    "data": [
+      { "name": "噪音合格率", "value": 0.83 },
+      { "name": "扬尘合格率", "value": 0.9 }
+    ]
+  },
+  "sewage": {
+    "title": "排污监测数据",
+    "enTitle": "Monitoring data of sewage discharge",
+    "suffix": { "name": "监测点位", "value": 104, "unit": "个" },
+    "data": [
+      {
+        "name": "工业排污",
+        "value": 424,
+        "icon": "./images/ecology/icon_gongyepaiwu.png"
+      },
+      {
+        "name": "农业排污",
+        "value": 218,
+        "icon": "./images/ecology/icon_nongyepaiwu.png"
+      },
+      {
+        "name": "生活排污",
+        "value": 662,
+        "icon": "./images/ecology/icon_shenghuopaiwu.png"
+      }
+    ]
+  },
+  "conservancy": {
+    "title": "水利监测数据",
+    "enTitle": "Water Conservancy Monitoring Data",
+    "suffix": { "name": "监测点位", "value": 52, "unit": "个" },
+    "data": [
+      [
+        {
+          "type": "水质监测",
+          "item": "I类水",
+          "count": 2
+        },
+        { "type": "水质监测", "item": "II类水", "count": 6 },
+        { "type": "水质监测", "item": "III类水", "count": 8 }
+      ],
+      [
+        { "type": "水利监测", "item": "饮用水", "count": 13 },
+        {
+          "type": "水利监测",
+          "item": "生态水流",
+          "count": 8
+        },
+        { "type": "水利监测", "item": "河道", "count": 6 },
+        { "type": "水利监测", "item": "山塘水库", "count": 9 }
+      ]
+    ]
+  },
+  "monitors": {
+    "title": "实时视频监控",
+    "enTitle": "Real-time video surveillance",
+    "icon": "./images/ecology/icon_jiankong.png",
+    "data": [
+      [
+        {
+          "code": "KTU-101",
+          "thumbnail": "./images/ecology/dizhai031.png",
+          "name": "龙泉宝溪乡",
+          "url": "rtsp://218.205.127.16:554/pag://218.205.127.179:7302:33112300001310216233:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAABFDubO7bdaOvraN6ZEHEI57niFj3%2FPtHYqUdfqpkafoXzg50YukOZDcxeytvgzwv3eFiLv6dcLHwz0ENuhKt6G&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTAzMjMxWiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc5OjczMDI6MzMxMTIzMDAwMDEzMTAyMTYyMzM6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+        },
+        {
+          "code": "KTU-102",
+          "thumbnail": "./images/ecology/shuili01.png",
+          "name": "紫金大桥",
+          "url": "rtsp://218.205.127.16:554/pag://218.205.127.178:7302:33112300001310016295:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAABicZumxpxiRisimYydsEo%2Bg6Z1f1zI%2Flq7O6eVVEitdCDH3xzeX%2BqbDx%2BgfjS%2FB5RqMO2Whyzwa6gL5E8%2BasyN&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc0NTA1WiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc4OjczMDI6MzMxMTIzMDAwMDEzMTAwMTYyOTU6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+        }
+      ],
+      [
+        {
+          "code": "KTU-201",
+          "thumbnail": "./images/ecology/201.png",
+          "name": "世茂·璀璨江山楼盘工地",
+          "url": "rtsp://218.205.127.16:554/pag://218.205.127.178:7302:33112300001310015252:0:MAIN:TCP?streamform=rtp&idinfo=EBACAAAQAAAeuyFMCCusutO%2Fi3xSt%2F4KHwfxXUySUTdPZcDjzjpg2fvls5LHaA8DPA%2BaoGVjPuQ6PuikMtyqT6ZuDi%2BDmv6q&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc0NzI2WiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc4OjczMDI6MzMxMTIzMDAwMDEzMTAwMTUyNTI6MDpNQUlOOlRDUD9zdHJlYW1mb3JtPXJ0cCJ9"
+        },
+        {
+          "code": "KTU-202",
+          "thumbnail": "./images/ecology/202.png",
+          "name": "汇鑫·东景苑楼盘工地",
+          "url": "rtsp://218.205.127.16:554/pag://218.205.127.179:7302:33112300001310021896:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAACYeLF8Nt7YBhq8hut3ccnrnFdb9nDu%2B0yHzonxnWvKLAkG7OVlI11l7TyU%2BgCyBez3W05oYp4jUOGJvWSQhukV&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc1NDExWiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc5OjczMDI6MzMxMTIzMDAwMDEzMTAwMjE4OTY6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+        }
+      ],
+      [
+        {
+          "code": "KTU-301",
+          "thumbnail": "./images/ecology/301.png",
+          "name": "浙江豪丰合成革有限公司",
+          "url": "rtsp://218.205.127.16:554/pag://218.205.127.179:7302:33110200001310010922:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAADKUDl8VFbEsUOjTozqkr3tyhjCYoa1TMfumopIDskNydg8nTozmJR9wohvBsEwL6NKbALfGGSQq%2B2XqHHTnMEy&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc1NjQyWiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc5OjczMDI6MzMxMTAyMDAwMDEzMTAwMTA5MjI6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+        },
+        {
+          "code": "KTU-302",
+          "thumbnail": "./images/ecology/302.png",
+          "name": "浙江华大树脂有限公司",
+          "url": "rtsp://218.205.127.16:554/pag://218.205.127.178:7302:33110200001310014792:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAADIUCtzJDlT33lxX7cB%2BeVt4U3neJBPJB1U2MBEcRHKvG27jVdU45%2BX3eZsNtuZVx7P%2F0%2BUwdxtyQmtQEUAbGkX&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc1ODIxWiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc4OjczMDI6MzMxMTAyMDAwMDEzMTAwMTQ3OTI6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+        }
+      ],
+      [
+        {
+          "code": "KTU-501",
+          "thumbnail": "./images/ecology/501.png",
+          "name": "滩坑水库点位监控 001"
+        },
+        {
+          "code": "KTU-502",
+          "thumbnail": "./images/ecology/502.png",
+          "name": "玉溪点位监控 002"
+        }
+      ]
+    ]
+  },
+  "chart": {
+    "theme": {
+      "defaultColor": "#ccc",
+      "colors": [
+        "#00baff",
+        "#02ce7f",
+        "#f5f4d6f0",
+        "#223273",
+        "#8543E0",
+        "#13C2C2",
+        "#3436C7",
+        "#F04864"
+      ],
+      "axis": {
+        "left": {
+          "label": {
+            "textStyle": {
+              "fill": "#ccc",
+              "fontSize": 14
+            }
+          },
+          "grid": {
+            "lineStyle": {
+              "stroke": "rgba(255,255,255,0.3)",
+              "lineWidth": 1,
+              "lineDash": [2, 2]
+            },
+            "hideFirstLine": false
+          }
+        },
+        "bottom": {
+          "position": "bottom",
+          "title": null,
+          "label": {
+            "offset": 22,
+            "autoRotate": true,
+            "textStyle": {
+              "fill": "rgba(255,255,255,0.8)",
+              "fontSize": 14,
+              "lineHeight": 20
+            }
+          },
+          "line": {
+            "lineWidth": 0
+          },
+          "tickLine": {
+            "lineWidth": 0
+          }
+        }
+      },
+      "legend": {
+        "bottom": {
+          "itemGap": 24,
+          "width": 156,
+          "height": 16,
+          "textStyle": {
+            "fill": "rgba(204,204,204,0.8)",
+            "fontSize": 14,
+            "lineHeight": 20
+          }
+        }
+      }
+    }
+  }
+}

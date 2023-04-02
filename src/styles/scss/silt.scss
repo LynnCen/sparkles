@@ -1,0 +1,117 @@
+@import "./base.scss";
+
+.active {
+  color: $highlight;
+}
+
+.silt {
+  .line {
+    margin: $base-sm 0;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+  }
+}
+
+.content {
+  padding: $base-sm;
+  height: calc(100vh - 148px);
+  background: #fafafa;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-style {
+
+  .unfold {
+    display: block;
+  }
+
+  .fold {
+    display: none;
+  }
+
+  margin-bottom: $base-sm;
+  padding: $base-sm;
+  min-height: 40px;
+  box-shadow: 0 0 2px 2px rgba(24, 144, 255, 0.3);
+  border-radius: 2px;
+  background: $white;
+
+  .title {
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    line-height: 20px;
+  }
+
+  .block-search {
+    width: 160px;
+    height: 24px;
+    padding: 0 $base-sm;
+    // margin: $base-sm;
+    background: #F8F8F8;
+    border-radius: 2px;
+    border: 1px solid transparent;
+  }
+
+
+  .block-tools {
+    display: contents;
+    line-height: initial;
+
+    > * {
+      padding: 0 $base-sm;
+
+    }
+
+    .unfold-icon {
+      transition: all 0.25s;
+      transform: rotate(90deg);
+      color: $highlight;
+    }
+
+    .fold-icon {
+      transition: all 0.25s;
+      transform: none;
+      color: $highlight;
+    }
+
+
+  }
+}
+
+.param-item {
+  font-size: 12px;
+  background: #fafafa;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  margin-bottom: $base-sm;
+
+  .top {
+    padding: $base-sm;
+    height: 16px;
+    background: rgba(214, 214, 214, 1);
+    border-radius: 2px 2px 0 0;
+  }
+
+  .small-input-search {
+    width: 190px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  :global(.ant-checkbox-wrapper) {
+    font-size: 12px;
+  }
+
+  :global(.ant-input-number-handler-wrap) {
+    display: none;
+  }
+}

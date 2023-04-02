@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="29px" viewBox="0 0 32 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>图标库/双色32x32/空气质量</title>
+    <desc>Created with Sketch.</desc>
+    <g id="主页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="灾害点抢险" transform="translate(-299.000000, -254.000000)">
+            <g id="左右数据表" transform="translate(40.000000, 177.000000)">
+                <g id="左侧">
+                    <g id="数据模块库/天气预报3" transform="translate(4.000000, 76.000000)">
+                        <g id="空气质量AQI">
+                            <g transform="translate(243.000000, 1.000000)">
+                                <g id="图标库/双色32/空气质量" transform="translate(12.000000, 0.000000)">
+                                    <g id="空气质量">
+                                        <circle id="椭圆形" fill="#00BAFF" cx="12.5" cy="4.5" r="4.5"></circle>
+                                        <circle id="椭圆形" fill="#02D281" cx="26" cy="9" r="6"></circle>
+                                        <circle id="椭圆形" fill="#00BAFF" cx="19" cy="24" r="5"></circle>
+                                        <polygon id="直线-2" fill="#00BAFF" points="12 7 12 9 0 9 0 7"></polygon>
+                                        <polygon id="直线-2" fill="#02D281" points="26 13 26 15 0 15 0 13"></polygon>
+                                        <polygon id="直线-2" fill="#00BAFF" points="20 19 20 21 0 21 0 19"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

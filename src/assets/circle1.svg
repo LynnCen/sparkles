@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="117px" height="117px" viewBox="0 0 117 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>椭圆形</title>
+    <g id="正式稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.3" stroke-dasharray="3,6">
+        <g id="1-1莲都区公安-警情监控" transform="translate(-1640.000000, -226.000000)" stroke="#979797" stroke-width="6">
+            <g id="右侧数据" transform="translate(1450.000000, 158.000000)">
+                <g id="圆" transform="translate(171.000000, 49.000000)">
+                    <path d="M77.5,133 C108.151804,133 133,108.151804 133,77.5 C133,46.8481964 108.151804,22 77.5,22 C46.8481964,22 22,46.8481964 22,77.5 C22,108.151804 46.8481964,133 77.5,133 Z" id="椭圆形"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="550.107" height="145.268" viewBox="0 0 550.107 145.268">
+  <defs>
+    <filter id="_14万元" x="47.144" y="74.268" width="106" height="68" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_274亩" x="264.494" y="77.268" width="108" height="68" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-2"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_213亩" x="442.107" y="77.268" width="108" height="68" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-3"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_1516" data-name="组 1516" transform="translate(-2464.551 -943.459)">
+    <g id="组_1373" data-name="组 1373">
+      <text id="家庭收入主要来源_" data-name="家庭收入主要来源：" transform="translate(2464.551 964.459)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">家庭收入主要来源：</tspan></text>
+    </g>
+    <g id="组_1374" data-name="组 1374">
+      <text id="家庭人均收入_" data-name="家庭人均收入：" transform="translate(2502.029 1013.261)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">家庭人均收入：</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 2464.55, 943.46)" filter="url(#_14万元)">
+        <text id="_14万元-2" data-name="14万元" transform="translate(57.64 122.77)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">14</tspan><tspan y="0" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400">万元</tspan></text>
+      </g>
+    </g>
+    <g id="组_1375" data-name="组 1375">
+      <text id="林地_亩_" data-name="林地(亩)：" transform="translate(2739.545 1016.261)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">林地(亩)：</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 2464.55, 943.46)" filter="url(#_274亩)">
+        <text id="_274亩-2" data-name="274亩" transform="translate(274.99 125.77)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">274</tspan><tspan y="0" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400">亩</tspan></text>
+      </g>
+    </g>
+    <g id="组_1376" data-name="组 1376">
+      <text id="耕地_亩_" data-name="耕地(亩)：" transform="translate(2917.158 1016.261)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">耕地(亩)：</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 2464.55, 943.46)" filter="url(#_213亩)">
+        <text id="_213亩-2" data-name="213亩" transform="translate(452.61 125.77)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">213</tspan><tspan y="0" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400">亩</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

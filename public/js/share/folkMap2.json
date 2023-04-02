@@ -1,0 +1,266 @@
+{
+  "leftData1": {
+    "title": "村情民情",
+    "entitle": "Situation of rural villagers",
+    "data": [
+      {
+        "index": "1",
+        "image": "./images/folkMap/人口icon.svg",
+        "title": "人口数量(人)",
+        "number": 314
+      },
+      {
+        "index": "1",
+        "image": "./images/folkMap/户数icon.svg",
+        "title": "住户数量(户)",
+        "number": 104
+      },
+      {
+        "index": "1",
+        "image": "./images/folkMap/小组icon.svg",
+        "title": "村民小组(个)",
+        "number": 3
+      },
+      {
+        "index": "1",
+        "image": "./images/folkMap/收入icon.svg",
+        "title": "人均收入(元)",
+        "number": 12870
+      },
+      {
+        "index": "1",
+        "image": "./images/folkMap/耕地面积.svg",
+        "title": "耕地面积(亩)",
+        "number": 152
+      },
+      {
+        "index": "1",
+        "image": "./images/folkMap/山林面积.svg",
+        "title": "山林面积(亩)",
+        "number": 2053
+      }
+    ]
+  },
+  "leftData2": {
+    "title": "产业发展",
+    "entitle": "Industrial Development",
+    "text": "经济发展有高山白茶、高山蔬菜，有70%的劳动力外出经商、务工，占全村经济收入的65%。特别是近年来，该村以深入实践科学发展观为契机，紧扣原生态摄影.."
+  },
+  "leftData3": {
+    "title": "防灾避险",
+    "entitle": "Disaster prevention",
+    "data": [
+      {
+        "index": "1",
+        "number": 12,
+        "title": "危房数量",
+        "unit": "栋"
+      },
+      {
+        "index": "2",
+        "number": 2,
+        "title": "地质灾害点",
+        "unit": "处"
+      },
+      {
+        "index": "3",
+        "number": 2,
+        "title": "避灾安置点",
+        "unit": "处"
+      },
+      {
+        "index": "4",
+        "number": 3,
+        "title": "避灾路线",
+        "unit": "条"
+      }
+    ]
+  },
+  "rightData1": {
+    "title": "组织体系",
+    "entitle": "Organization system",
+    "text": "村两委干部通讯录",
+    "data": [
+      {
+        "id": 1,
+        "organization": "村党支部",
+        "name": "杨XX",
+        "job": "书记",
+        "phone": "13912345678"
+      },
+      {
+        "id": 2,
+        "organization": "村委会",
+        "name": "王XX",
+        "job": "主任",
+        "phone": "13912345678"
+      },
+      {
+        "id": 3,
+        "organization": "村委会",
+        "name": "陈XX",
+        "job": "副主任",
+        "phone": "13912345678"
+      },
+      {
+        "id": 4,
+        "organization": "村委会",
+        "name": "杨XX",
+        "job": "委员",
+        "phone": "13912345678"
+      }
+    ]
+  },
+  "rightData2": {
+    "title": "结对帮扶",
+    "entitle": "Pair help",
+    "titleR": {
+      "text": "帮扶类型:",
+      "number": 4,
+      "unit": "类"
+    },
+    "color": ["#02D281", "#f0000000"],
+    "content": [
+      {
+        "index": "1",
+        "title": "低收入农民",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "2",
+        "title": "低保户",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "3",
+        "title": "五保户",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "4",
+        "title": "重点残疾对象",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      }
+    ]
+  },
+  "rightData3": {
+    "title": "重点人员",
+    "entitle": "Key personnel",
+    "titleR": {
+      "text": "人员类型:",
+      "number": 4,
+      "unit": "类"
+    },
+    "color": ["#00BAFF", "#f0000000"],
+    "content": [
+      {
+        "index": "1",
+        "title": "上访人员",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "2",
+        "title": "归正人员",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "3",
+        "title": "矫正对象",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "4",
+        "title": "精神病患者",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      }
+    ]
+  }
+}

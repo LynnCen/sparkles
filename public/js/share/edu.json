@@ -1,0 +1,206 @@
+{
+  "title": "智慧校园",
+  "enTitle": "SMART CAMPUS MANAGEMENT PLATFORM",
+  "number": {
+    "title": "师生人数",
+    "enTitle": "Number of teachers & students",
+    "data": [
+      {
+        "name": "教师人数",
+        "icon": "./images/lsms/icon_lingdao.png",
+        "value": 1110
+      },
+      {
+        "name": "学生人数",
+        "icon": "./images/lsms/icon_xuesheng.png",
+        "value": 13256
+      }
+    ]
+  },
+  "netTeacher": {
+    "title": "优秀教师",
+    "enTitle": "Prominent teacher",
+    "data": [
+      {
+        "avatar": "./images/lsms/icon_wangluoxunke1.png",
+        "name": "刘*颖"
+      },
+      {
+        "avatar": "./images/lsms/icon_wangluoxunke2.png",
+        "name": "王*武"
+      },
+      {
+        "avatar": "./images/lsms/icon_wangluoxunke3.png",
+        "name": "李*成"
+      },
+      {
+        "avatar": "./images/lsms/icon_wangluoxunke4.png",
+        "name": "宋*琴"
+      },
+      {
+        "avatar": "./images/lsms/icon_wangluoxunke5.png",
+        "name": "王*源"
+      }
+    ]
+  },
+  "overview": {
+    "title": "学校概况",
+    "enTitle": "General Situation of Schools",
+    "data": {
+      "index": 138.482,
+      "rank": 0.77737004,
+      "trailImg": "./images/edu/dashboard-trail.png",
+      "areaSubIndexes": {
+        "课件制作": 25.78499,
+        "听课评课": 11.8833498,
+        "师生互动": 12.8975482,
+        "互动教学": 10.45269,
+        "家校沟通": 12.882193
+      },
+      "subIndexes": {
+        "课件制作": 57.3537,
+        "听课评课": 0,
+        "师生互动": 0,
+        "互动教学": 0,
+        "家校沟通": 51.1287
+      }
+    }
+  },
+  "excellentClass": {
+    "title": "优秀班级",
+    "enTitle": "Excellent class",
+    "data": [
+      "现代教育技术选课2班",
+      "现代教育技术技能训练选课1班",
+      "小学教育181",
+      "小学教育18选课4班"
+    ]
+  },
+  "labs": {
+    "title": "实验室",
+    "enTitle": "Laboratory",
+    "data": [
+      {
+        "name": "木工坊",
+        "icon": "./images/edu/icon_mugongfan.png"
+      },
+      {
+        "name": "织布坊",
+        "icon": "./images/edu/icon_zhibufan.png"
+      },
+      {
+        "name": "手工制作室",
+        "icon": "./images/edu/icon_shougongzhizuoshi.png"
+      },
+      {
+        "name": "虚拟演播室",
+        "icon": "./images/edu/icon_xuniyanboshi.png"
+      },
+      {
+        "name": "创新实验室",
+        "icon": "./images/edu/icon_chuangxinshiyanshi.png"
+      },
+      {
+        "name": "教育评估院",
+        "icon": "./images/edu/icon_jiaoyupingguyuan.png"
+      },
+      {
+        "name": "数学思维训练室",
+        "icon": "./images/edu/icon_shuxuesiweixunlianshi.png"
+      },
+      {
+        "name": "未来智慧教育中心",
+        "icon": "./images/edu/icon_weilaizhihui.png"
+      },
+      {
+        "name": "3D虚拟仿真实验室",
+        "icon": "./images/edu/icon_3D.png"
+      }
+    ]
+  },
+  "monitors": {
+    "title": "实时视频监控",
+    "enTitle": "Real-time video surveillance",
+    "icon": "./images/lsms/icon_jiankong.png",
+    "data": [
+      {
+        "code": "KTU-001",
+        "thumbnail": "./images/edu/240.png",
+        "name": "304录播",
+        "url": "rtmp://10.10.91.240:1935/stream&streamName=10&id=0",
+        "poster": "./images/edu/240.png"
+      },
+      {
+        "code": "KTU-002",
+        "thumbnail": "./images/edu/243.png",
+        "name": "301录播",
+        "url": "rtmp://10.10.91.243:1935/stream&streamName=10&id=0",
+        "poster": "./images/edu/243.png"
+      }
+    ]
+  },
+  "chart": {
+    "theme": {
+      "defaultColor": "#ccc",
+      "colors": [
+        "#00baff",
+        "#02ce7f",
+        "#f5f4d6f0",
+        "#223273",
+        "#8543E0",
+        "#13C2C2",
+        "#3436C7",
+        "#F04864"
+      ],
+      "axis": {
+        "left": {
+          "label": {
+            "textStyle": {
+              "fill": "#ccc",
+              "fontSize": 14
+            }
+          },
+          "grid": {
+            "lineStyle": {
+              "stroke": "rgba(255,255,255,0.3)",
+              "lineWidth": 1,
+              "lineDash": [2, 2]
+            },
+            "hideFirstLine": false
+          }
+        },
+        "bottom": {
+          "position": "bottom",
+          "title": null,
+          "label": {
+            "offset": 22,
+            "autoRotate": true,
+            "textStyle": {
+              "fill": "rgba(255,255,255,0.8)",
+              "fontSize": 14,
+              "lineHeight": 20
+            }
+          },
+          "line": {
+            "lineWidth": 0
+          },
+          "tickLine": {
+            "lineWidth": 0
+          }
+        }
+      },
+      "legend": {
+        "bottom": {
+          "itemGap": 24,
+          "width": 156,
+          "height": 16,
+          "textStyle": {
+            "fill": "rgba(204,204,204,0.8)",
+            "fontSize": 14,
+            "lineHeight": 20
+          }
+        }
+      }
+    }
+  }
+}

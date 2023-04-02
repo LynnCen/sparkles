@@ -1,0 +1,26 @@
+{
+    "leftContent": {
+        "riseUrl": "./images/ldPolice/增长箭头.svg",
+        "declineUrl": "./images/ldPolice/下降箭头.svg",
+        "imgList": {
+            "盗窃": "./images/ldPolice/盗窃icon.svg",
+            "电诈": "./images/ldPolice/电诈icon.svg",
+            "伤害": "./images/ldPolice/伤害icon.svg",
+            "涉赌": "./images/ldPolice/涉赌icon.svg",
+            "涉黄": "./images/ldPolice/涉黄icon.svg",
+            "矛盾纠纷": "./images/ldPolice/矛盾纠纷icon.svg"
+        }
+    },
+    "rightContent1": {
+        "title": "当月发案",
+        "entitle": "Case in the month"
+    },
+    "rightContent2": {
+        "title": "发案趋势",
+        "entitle": "Incident trend"
+    },
+    "rightContent3": {
+        "title": "重大警情/事件",
+        "entitle": "Major alarm"
+    }
+}

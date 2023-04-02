@@ -1,0 +1,59 @@
+<svg id="组件_1_2" data-name="组件 1 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="513.939" height="233.29" viewBox="0 0 513.939 233.29">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.001" stop-color="#2489ea" stop-opacity="0"/>
+      <stop offset="0.344" stop-color="#17a3e4" stop-opacity="0.361"/>
+      <stop offset="0.797" stop-color="#08c4dc" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#02d2da"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.001" stop-color="#2489ea" stop-opacity="0"/>
+      <stop offset="0.416" stop-color="#15a9e2" stop-opacity="0.439"/>
+      <stop offset="0.819" stop-color="#07c6dc" stop-opacity="0.843"/>
+      <stop offset="1" stop-color="#02d2da"/>
+    </linearGradient>
+  </defs>
+  <text id="_0" data-name="0" transform="translate(11 205.948)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan></text>
+  <text id="_5" data-name="5" transform="translate(11 174.423)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">5</tspan></text>
+  <text id="_10" data-name="10" transform="translate(0 142.896)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">10</tspan></text>
+  <text id="_15" data-name="15" transform="translate(0 111.371)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">15</tspan></text>
+  <text id="_20" data-name="20" transform="translate(0 79.846)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">20</tspan></text>
+  <text id="_25" data-name="25" transform="translate(0 50.423)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">25</tspan></text>
+  <text id="_30" data-name="30" transform="translate(0 21)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">30</tspan></text>
+  <line id="直线_352" data-name="直线 352" x2="484.26" transform="translate(29.679 201.34)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1"/>
+  <line id="直线_357" data-name="直线 357" x2="482.042" transform="translate(29.679 170.086)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+  <line id="直线_358" data-name="直线 358" y1="0.684" x2="482.042" transform="translate(29.679 138.147)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+  <line id="直线_359" data-name="直线 359" y1="1.369" x2="482.042" transform="translate(29.679 106.209)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+  <line id="直线_360" data-name="直线 360" y1="2.053" x2="482.042" transform="translate(29.679 74.271)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+  <line id="直线_361" data-name="直线 361" y1="4.023" x2="482.042" transform="translate(29.679 42.332)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+  <line id="直线_362" data-name="直线 362" x2="482.042" transform="translate(29.679 10.394)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+  <g id="组_1556" data-name="组 1556" transform="translate(-3.576 2)">
+    <text id="旅游民宿" transform="translate(52.25 226.29)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">旅游民宿</tspan></text>
+    <line id="直线_353" data-name="直线 353" y1="6.72" transform="translate(88.375 199.521)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <text id="_27" data-name="27" transform="translate(77.419 19)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">27</tspan></text>
+    <rect id="矩形_742" data-name="矩形 742" width="36" height="169.557" transform="translate(70.743 29.255)" fill="url(#linear-gradient)"/>
+    <rect id="矩形_743" data-name="矩形 743" width="36" height="5.255" transform="translate(70.919 24)" fill="#00f8ec"/>
+  </g>
+  <g id="组_1578" data-name="组 1578">
+    <g id="组_1548" data-name="组 1548" transform="translate(-2471.73 -686.119)">
+      <text id="_1" data-name="1" transform="translate(2912.235 874.188)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">1</tspan></text>
+      <rect id="矩形_1059" data-name="矩形 1059" width="36" height="7.339" transform="translate(2900.702 879.591)" fill="url(#linear-gradient-2)"/>
+      <rect id="矩形_745" data-name="矩形 745" width="36" height="6.806" transform="translate(2900.878 872.785)" fill="#00f8ec"/>
+    </g>
+    <g id="组_1558" data-name="组 1558" transform="translate(0.045 2)">
+      <text id="景点" transform="translate(428.398 226.29)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">景点</tspan></text>
+    </g>
+    <line id="直线_424" data-name="直线 424" y1="6.72" transform="translate(447.06 201.34)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+  <g id="组_1579" data-name="组 1579" transform="translate(-187)">
+    <g id="组_1548-2" data-name="组 1548" transform="translate(-2471.73 -686.119)">
+      <text id="_1-2" data-name="1" transform="translate(2912.235 874.188)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">1</tspan></text>
+      <rect id="矩形_1059-2" data-name="矩形 1059" width="36" height="7.339" transform="translate(2900.702 879.591)" fill="url(#linear-gradient-2)"/>
+      <rect id="矩形_745-2" data-name="矩形 745" width="36" height="6.806" transform="translate(2900.878 872.785)" fill="#00f8ec"/>
+    </g>
+    <g id="组_1558-2" data-name="组 1558" transform="translate(0.045 2)">
+      <text id="农家乐" transform="translate(418.398 226.29)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">农家乐</tspan></text>
+    </g>
+    <line id="直线_424-2" data-name="直线 424" y1="6.72" transform="translate(447.06 201.34)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

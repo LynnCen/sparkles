@@ -1,0 +1,282 @@
+@charset "UTF-8";
+@import "./base";
+
+p {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.m-t-sm {
+  margin-top: $base-sm;
+}
+
+.m-b-sm {
+  margin-bottom: $base-sm;
+}
+
+.m-l-sm {
+  margin-left: $base-sm;
+}
+
+.m-r-sm {
+  margin-right: $base-sm;
+}
+
+.m-t-md {
+  margin-top: $base-md;
+}
+
+.m-b-md {
+  margin-bottom: $base-md;
+}
+
+.m-l-md {
+  margin-left: $base-md;
+}
+
+.m-r-md {
+  margin-right: $base-md !important;
+}
+
+.m-t-lg {
+  margin-top: $base-lg;
+}
+
+.m-b-lg {
+  margin-bottom: $base-lg;
+}
+
+.m-l-lg {
+  margin-left: $base-lg;
+}
+
+.m-r-lg {
+  margin-right: $base-lg;
+}
+
+.m-x-sm {
+  margin-left: $base-sm;
+  margin-right: $base-sm;
+}
+
+.m-x-md {
+  margin-left: $base-md;
+  margin-right: $base-md;
+}
+
+.m-x-lg {
+  margin-left: $base-lg;
+  margin-right: $base-lg;
+}
+
+.m-y-sm {
+  margin-top: $base-sm;
+  margin-bottom: $base-sm;
+}
+
+.m-y-md {
+  margin-top: $base-md;
+  margin-bottom: $base-md;
+}
+
+.m-y-lg {
+  margin-top: $base-lg;
+  margin-bottom: $base-lg;
+}
+
+.m-sm {
+  margin: $base-sm !important;
+}
+
+.m-md {
+  margin: $base-md;
+}
+
+.m-lg {
+  margin: $base-lg;
+}
+
+.p-sm {
+  padding: $base-sm;
+}
+
+.p-md {
+  padding: $base-md;
+}
+
+.p-lg {
+  padding: $base-lg;
+}
+
+.p-r-sm {
+  padding-right: $base-sm;
+}
+
+.p-t-md {
+  padding-top: $base-md;
+}
+
+.p-x-sm {
+  padding-left: $base-sm;
+  padding-right: $base-sm;
+}
+
+.p-x-md {
+  padding-left: $base-md;
+  padding-right: $base-md;
+}
+
+.p-y-sm {
+  padding-top: $base-sm;
+  padding-bottom: $base-sm;
+}
+
+.p-y-md {
+  padding-top: $base-md;
+  padding-bottom: $base-md;
+}
+
+/*垂直居中*/
+.flex-center-v {
+  display: flex !important;
+  align-items: center;
+}
+
+/*水平居中*/
+.flex-center-h {
+  display: flex !important;
+  justify-content: center;
+}
+
+/*水平垂直居中*/
+.flex,
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*垂直居中 两端对齐*/
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*垂直居中 文本居左*/
+.flex-center-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.flex-center-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-center-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*文本居左*/
+.flex-top-left {
+  display: flex;
+  justify-content: left;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.flex-none-label {
+  @extend .flex-none;
+  color: $black_85;
+  &:after {
+    content: ":";
+    position: relative;
+    top: -0.5px;
+    margin: 0 8px 0 2px;
+  }
+}
+
+/*多行文本超出隐藏*/
+.multiline {
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/*单行文本超出隐藏*/
+.ellipsis,
+.text-overflow-hide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.required {
+  :global(.ant-form-item-label) {
+    label:before {
+      display: inline-block;
+      margin-right: 4px;
+      content: "*";
+      line-height: 1;
+      font-size: 14px;
+      font-family: SimSun;
+      color: #f5222d;
+    }
+  }
+}
+// 2019/9/3
+.pointer {
+  cursor: pointer;
+}
+.round {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+.icon-circle {
+  height: 24px !important;
+  width: 24px;
+  border-radius: 50%;
+}
+.icon-square {
+  height: 24px !important;
+  width: 24px;
+  border-radius: 2px;
+}
+.icon-square22 {
+  height: 22px !important;
+  width: 22px;
+  border-radius: 2px;
+}
+.align-right {
+  margin-left: auto;
+  margin-right: 0;
+  right: 0;
+  left: auto;
+}

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="519.845" height="189.959" viewBox="0 0 519.845 189.959">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#aeaeae" stop-opacity="0.102"/>
+      <stop offset="1" stop-color="#aeaeae"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#02d2da" stop-opacity="0.102"/>
+      <stop offset="1" stop-color="#02d2da"/>
+    </linearGradient>
+  </defs>
+  <g id="组件_4_1" data-name="组件 4 – 1" transform="translate(0 2.321)">
+    <g id="组_333" data-name="组 333" transform="translate(861.085 -2653.297)">
+      <g id="组_332" data-name="组 332">
+        <rect id="矩形_210" data-name="矩形 210" width="32.42" height="18.483" transform="translate(-860.812 2658.616)" fill="#03fbee" opacity="0.2"/>
+        <path id="路径_313" data-name="路径 313" d="M-860.194,2676.511c.568-.4,31.152-17.346,31.152-17.346" fill="none" stroke="#f7f7f7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.112" opacity="0.3"/>
+      </g>
+      <text id="_1" data-name="1" transform="translate(-851.975 2674.977)" fill="#03fbee" font-size="22.243" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1</tspan></text>
+      <text id="农产品加工" transform="translate(-819.673 2674.297)" fill="#fff" font-size="20" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI"><tspan x="0" y="0">农产</tspan><tspan y="0" font-family="YuGothicUI-Regular, Yu Gothic UI">品加工</tspan></text>
+      <text id="_0元" data-name="0元" transform="translate(-369.693 2674.297)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0</tspan><tspan y="0" font-size="16" font-family="YuGothicUI-Regular, Yu Gothic UI">元</tspan></text>
+      <rect id="矩形_1058" data-name="矩形 1058" width="519.845" height="6" transform="translate(-861.085 2684.019)" fill="#606060" opacity="0.5"/>
+      <rect id="矩形_211" data-name="矩形 211" width="30" height="6" transform="translate(-861.085 2684.012)" fill="url(#linear-gradient)"/>
+      <rect id="矩形_212" data-name="矩形 212" width="3.999" height="12.691" transform="translate(-831.085 2680.133)" fill="#02d2da"/>
+    </g>
+    <g id="组_335" data-name="组 335" transform="translate(861.085 -2653.297)">
+      <rect id="矩形_213" data-name="矩形 213" width="519.845" height="6" transform="translate(-861.085 2733.019)" fill="#606060" opacity="0.5"/>
+      <g id="组_334" data-name="组 334">
+        <rect id="矩形_214" data-name="矩形 214" width="32.42" height="18.483" transform="translate(-860.812 2707.986)" fill="#03fbee" opacity="0.2"/>
+        <path id="路径_314" data-name="路径 314" d="M-860.194,2725.882c.568-.4,31.152-17.347,31.152-17.347" fill="none" stroke="#f7f7f7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.112" opacity="0.3"/>
+      </g>
+      <text id="_2" data-name="2" transform="translate(-851.975 2724.347)" fill="#03fbee" font-size="22.243" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2</tspan></text>
+      <text id="燃料加工" transform="translate(-819.673 2723.668)" fill="#fff" font-size="20" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="0" y="0">燃料加工</tspan></text>
+      <text id="_0元-2" data-name="0元" transform="translate(-369.693 2723.668)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0</tspan><tspan y="0" font-size="16" font-family="YuGothicUI-Regular, Yu Gothic UI">元</tspan></text>
+      <rect id="矩形_215" data-name="矩形 215" width="30" height="6" transform="translate(-861.085 2733.382)" fill="url(#linear-gradient)"/>
+      <rect id="矩形_216" data-name="矩形 216" width="3.999" height="12.691" transform="translate(-831.083 2729.503)" fill="#02d2da"/>
+    </g>
+    <g id="组_337" data-name="组 337" transform="translate(861.085 -2653.297)">
+      <rect id="矩形_217" data-name="矩形 217" width="519.845" height="6" transform="translate(-861.085 2782.026)" fill="#606060" opacity="0.5"/>
+      <g id="组_336" data-name="组 336">
+        <rect id="矩形_218" data-name="矩形 218" width="32.42" height="18.483" transform="translate(-860.812 2757.357)" fill="#03fbee" opacity="0.2"/>
+        <path id="路径_315" data-name="路径 315" d="M-860.194,2775.252c.568-.4,31.152-17.346,31.152-17.346" fill="none" stroke="#f7f7f7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.112" opacity="0.3"/>
+      </g>
+      <text id="_3" data-name="3" transform="translate(-851.975 2773.717)" fill="#03fbee" font-size="22.243" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3</tspan></text>
+      <text id="电商" transform="translate(-819.673 2773.039)" fill="#fff" font-size="20" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI"><tspan x="0" y="0">电</tspan><tspan y="0" font-family="YuGothicUI-Regular, Yu Gothic UI">商</tspan></text>
+      <text id="_892.39万元" data-name="892.39万元" transform="translate(-435.693 2773.039)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">892.39</tspan><tspan y="0" font-size="16" font-family="YuGothicUI-Regular, Yu Gothic UI">万元</tspan></text>
+      <rect id="矩形_219" data-name="矩形 219" width="407.845" height="6" transform="translate(-861.085 2782.753)" fill="url(#linear-gradient-3)"/>
+      <rect id="矩形_220" data-name="矩形 220" width="3.999" height="12.691" transform="translate(-454.579 2778.874)" fill="#02d2da"/>
+    </g>
+    <g id="组_340" data-name="组 340" transform="translate(861.085 -2653.297)">
+      <g id="组_339" data-name="组 339">
+        <rect id="矩形_222" data-name="矩形 222" width="519.845" height="6" transform="translate(-861.085 2831.034)" fill="#606060" opacity="0.5"/>
+        <g id="组_338" data-name="组 338">
+          <rect id="矩形_223" data-name="矩形 223" width="32.42" height="18.483" transform="translate(-860.812 2806.727)" fill="#03fbee" opacity="0.2"/>
+          <path id="路径_316" data-name="路径 316" d="M-860.194,2824.623c.568-.4,31.152-17.347,31.152-17.347" fill="none" stroke="#f7f7f7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.112" opacity="0.3"/>
+        </g>
+        <text id="_4" data-name="4" transform="translate(-851.975 2823.088)" fill="#fff" font-size="22.243" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4</tspan></text>
+        <text id="其他" transform="translate(-819.673 2822.409)" fill="#fff" font-size="20" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="0" y="0">其他</tspan></text>
+        <text id="_0元-3" data-name="0元" transform="translate(-369.693 2822.409)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0</tspan><tspan y="0" font-size="16" font-family="YuGothicUI-Regular, Yu Gothic UI">元</tspan></text>
+        <rect id="矩形_224" data-name="矩形 224" width="3.999" height="12.691" transform="translate(-831.083 2828.244)" fill="#02d2da"/>
+        <rect id="矩形_221" data-name="矩形 221" width="30" height="6" transform="translate(-861.085 2832.045)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

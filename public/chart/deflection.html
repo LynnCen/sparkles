@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>内部位移-扰度曲线图</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #panel-chart {
+        margin-top: 10px;
+        height: inherit;
+      }
+    </style>
+  </head>
+  <body style="overflow:hidden">
+    <!-- <div id="input-group" style="display:none">
+        <span class="must" style="color: red">* </span>
+        <label id="pointname">测点名称:</label>
+        <input
+          id="input-device"
+          type="text"
+          readonly
+          value=""
+          onclick="showDeviceTree()"
+        />
+        <span class="must" style="color: red">* </span>
+        <label id="date">日期:</label>
+        <input
+          id="dateList"
+          type="text"
+          readonly="readonly"
+          style="width: 500px;"
+        />
+        <div id="dateSelector" style="display: inline;">
+          <img
+            class="ui-datepicker-trigger"
+            src="../../Js/jQueryTheme/images/calendar.gif"
+            alt="..."
+            title="..."
+          />
+        </div>
+        <button id="btn-search" onclick="doQuery()">查 询</button>
+      </div> -->
+    <!-- <div
+        id="menuContent"
+        class="menuContent"
+        style="display:none; position: absolute;z-index: 100;"
+      >
+        <ul id="deviceTree" class="ztree"></ul>
+      </div> -->
+    <!-- <button id="btn-search" onclick="doQuery()">查 询</button> -->
+    <div id="panel-chart">
+      <div id="panel-chart-x" style="float: left; display: inline"></div>
+      <div
+        id="panel-chart-y"
+        style="margin-left: 40px; float: left; display: inline"
+      ></div>
+    </div>
+    <script src="Js/chart/commonChart.js"></script>
+    <script src="Js/chart/deflection.js?v=0.8"></script>
+  </body>
+</html>

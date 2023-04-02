@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>内部位移过程线</title>
+    <!-- <link href="../../App_Themes/Flat/css/chart/common.css" rel="stylesheet" />
+    <link href="../../App_Themes/Flat/css/chart/demo.css" rel="stylesheet" />
+    <link
+      href="../../App_Themes/Flat/css/chart/zTreeStyle.css"
+      rel="stylesheet"
+    />
+    <link href="../../Js/jQueryTheme/jquery.ui.all.css" rel="stylesheet" /> -->
+    <style type="text/css">
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #panel-chart {
+        /* margin-top: 20px; */
+        /* margin: 20px; */
+        /* padding: 50px; */
+        padding-top: 10px;
+        /* height: calc(100% - 500px); */
+      }
+      /* .ui-dialog {
+        position: absolute;
+        padding: 0em;
+        width: 300px;
+        overflow: hidden;
+      }
+
+      .ui-dialog .ui-dialog-titlebar {
+        padding: 0.4em 1em;
+        position: relative;
+        border: 1px solid #00bcbc;
+        background: #00bcbc 50% 50% repeat-x;
+        color: #00bcbc;
+        font-weight: bold;
+      }
+
+      .ui-dialog .ui-dialog-title {
+        font-size: 14px;
+        color: #fff;
+        line-height: 20px;
+      }
+
+      .ui-dialog .ui-dialog-titlebar-close {
+        position: absolute;
+        right: 0.3em;
+        top: 50%;
+        width: 19px;
+        margin: -10px 0 0 0;
+        padding: 1px;
+        height: 18px;
+      }
+
+      .ui-dialog .ui-dialog-titlebar-close span {
+        background: url(../../App_Themes/Flat/Images/ModalWindow/Close1.png) 0 0
+          no-repeat;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        display: block;
+      }
+
+      .ui-dialog .ui-dialog-titlebar-close:hover,
+      .ui-dialog .ui-dialog-titlebar-close:focus {
+        padding: 0;
+      }
+
+      .ui-dialog .ui-dialog-content {
+        position: relative;
+        border: 0;
+        padding: 0.5em 1em;
+        background: none;
+        overflow: auto;
+        zoom: 1;
+      }
+
+      .ui-dialog .ui-dialog-buttonpane {
+        text-align: left;
+        border-width: 1px 0 0 0;
+        background-image: none;
+        margin: 0.5em 0 0 0;
+        padding: 0.3em 1em 0.5em 0.4em;
+      }
+
+      .ui-dialog .ui-dialog-buttonpane button {
+        margin: 0.5em 0.4em 0.5em 0;
+        cursor: pointer;
+      }
+
+      .ui-dialog .ui-resizable-se {
+        width: 14px;
+        height: 14px;
+        right: 3px;
+        bottom: 3px;
+      }
+
+      .ui-draggable .ui-dialog-titlebar {
+        cursor: move;
+      }
+
+      .ui-button .ui-button-text {
+        display: block;
+        line-height: 20px;
+      }
+
+      .ui-button-text-only .ui-button-text {
+        padding: 0em 0em;
+      }
+
+      .ui-button-icon-only .ui-button-text,
+      .ui-button-icons-only .ui-button-text {
+        padding: 0em;
+        text-indent: -9999999px;
+      }
+
+      .ui-button-icon-only .ui-icon {
+        left: -10%;
+        margin-left: -8px;
+      }
+
+      .ui-dialog .ui-state-default {
+        border: 1px solid #00bcbc;
+        background: #00bcbc 50% 50% repeat-x;
+        color: #00bcbc;
+        font-weight: bold;
+      }
+
+      .ui-dialog .ui-state-default a,
+      .ui-dialog .ui-state-default a:link,
+      .ui-dialog .ui-state-default a:visited {
+        color: #00bcbc;
+        text-decoration: none;
+      }
+
+      .ui-dialog-buttonset .ui-state-default {
+        color: #fff !important;
+        background-color: #343e3f;
+        border-color: #131e26;
+      }
+
+      .ui-dialog-buttonset .ui-state-default a,
+      .ui-dialog-buttonset .ui-state-default a:link,
+      .ui-dialog-buttonset .ui-state-default a:visited {
+        color: #fff !important;
+        text-decoration: none;
+      }
+
+      .ui-button {
+        display: inline-block;
+        padding: 5px 10px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 20px;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 2px;
+        outline: 0 !important;
+        margin-bottom: 5px;
+        width: 90px;
+        color: #fff !important;
+        background-color: #343e3f;
+        border-color: #131e26;
+        font-size: 13px;
+      }
+
+      .validateTips {
+        border: 1px solid transparent;
+        padding: 0.3em;
+        margin-left: 90px;
+      } */
+    </style>
+  </head>
+  <body style="overflow:hidden">
+    <div id="panel-chart"></div>
+    <!-- <div id="dialog-form" title="设置Y轴参数">
+      <form>
+        <table>
+          <tr>
+            <td style="padding-top:10px;">
+              <label for="name">最大值(mm)：</label>
+              <input
+                type="text"
+                name="defaultYmax"
+                id="defaultYmax"
+                class="text ui-widget-content ui-corner-all"
+              />
+              <span style="color: red">* </span>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-top:10px;">
+              <label for="email">最小值(mm)：</label>
+              <input
+                type="text"
+                name="defaultYmin"
+                id="defaultYmin"
+                value=""
+                class="text ui-widget-content ui-corner-all"
+              />
+              <span style="color: red">* </span>
+            </td>
+          </tr>
+          <tr style="padding-top:10px;">
+            <td style="padding-top:10px;">
+              <label for="password">&nbsp;&nbsp;&nbsp;刻度(mm)：</label>
+              <input
+                type="text"
+                name="defaultintervalY"
+                id="defaultintervalY"
+                value=""
+                class="text ui-widget-content ui-corner-all"
+              />
+              <span style="color: red">* </span>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-top:10px;"><p class="validateTips"></p></td>
+          </tr>
+        </table>
+      </form>
+    </div> -->
+    <script src="Js/chart/commonChart.js"></script>
+    <!-- <script src="../../layer/layer.js"></script> -->
+    <!-- <script src="../../Js/zTree/js/jquery.ztree.core-3.5.min.js"></script>
+    <script src="../../Js/zTree/js/jquery.ztree.excheck-3.5.min.js"></script>
+    <script src="../../Js/MonitorVideo/js/jquery/ui/jquery-ui.js"></script>
+    <script src="../../Js/MonitorVideo/js/jquery/ui/jquery.ui.dialog.js"></script> -->
+    <script src="Js/chart/nbwy.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+{
+    "content1": {
+        "title": "重点指标",
+        "data": [
+            {
+                "title": "干部总人数",
+                "num": 9,
+                "unit": "人"
+            },
+            {
+                "title": "平均年龄",
+                "num": 45.3,
+                "unit": "岁"
+            }
+        ]
+    },
+    "content2": {
+        "title": "各组织人数",
+        "description": [
+            "组织名称",
+            "人数"
+        ],
+        "data": [
+            {
+                "title": "党组织",
+                "num": 3
+            },
+            {
+                "title": "村委",
+                "num": 3
+            },
+            {
+                "title": "村监会",
+                "num": 3
+            },
+            {
+                "title": "股份经济合作社管理委员会",
+                "num": 3
+            },
+            {
+                "title": "股份经济合作社监事会人数",
+                "num": 3
+            },
+            {
+                "title": "妇女联合会执行委员会人数",
+                "num": 7
+            },
+            {
+                "title": "党员干部",
+                "num": 25
+            },
+            {
+                "title": "团支部",
+                "num": 3
+            },
+            {
+                "title": "网格员",
+                "num": 2
+            },
+            {
+                "title": "乡贤",
+                "num": 3
+            },
+            {
+                "title": "村调成员",
+                "num": 3
+            },
+            {
+                "title": "结对帮扶干部",
+                "num": 25
+            }
+        ]
+    },
+    "content3": {
+        "title": "党组织信息",
+        "text1": {
+            "title": "党组织名称:",
+            "text": "内陈村党支部"
+        },
+        "text2": {
+            "title": "所属党委:",
+            "text": "内陈村党委员会"
+        },
+        "text3": {
+            "title": "党员人数:",
+            "text": "25",
+            "unit": "人"
+        }
+    },
+    "content4": {
+        "title": "党员干部平均年龄趋势",
+        "url": "./images/songyangMap/image/charts/organization1.svg",
+        "chartData": [
+            {
+                "name": "2019",
+                "value": 55,
+                "unit": "年龄"
+            },
+            {
+                "name": "2020",
+                "value": 54,
+                "unit": "年龄"
+            },
+            {
+                "name": "2021",
+                "value": 48,
+                "unit": "年龄"
+            }
+        ]
+    },
+    "content5": {
+        "title": "党员干部性别年龄分析",
+        "url": "./images/songyangMap/image/charts/organization2.svg",
+        "data": [
+            [
+              { "value": 32, "name": "35岁以下党员", "text": "男性" },
+              { "value": 12, "name": "党龄50周年以上党员", "text": "男性" }
+              
+            ],
+            [
+                { "value": 35, "name": "35岁以下党员", "text": "女性" },
+                { "value": 6, "name": "党龄50周年以上党员", "text": "女性" }
+            ]
+          ]
+    },
+    "content6": {
+        "title": "党员干部从业情况分析",
+        "url": "./images/songyangMap/image/charts/organization3.svg",
+            "data": [
+                { "value": 335, "name": "从事农业", "unit": "人" },
+                { "value": 310, "name": "经商务工", "unit": "人" },
+                { "value": 234, "name": "其他", "unit": "人" }
+              ],
+              "img": "./images/songyangMap/image/hc-project-bg.svg"
+
+        
+    }
+}

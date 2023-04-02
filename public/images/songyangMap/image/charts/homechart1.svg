@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="518.058" height="183.265" viewBox="0 0 518.058 183.265">
+  <defs>
+    <filter id="_0件" x="0" y="24.83" width="71" height="85" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_1567" data-name="组 1567" transform="translate(-79.978 -784.656)">
+    <text id="矛盾解纷数_" data-name="矛盾解纷数：" transform="translate(90.478 810.935)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">矛盾解纷数：</tspan></text>
+    <g id="组_77" data-name="组 77" transform="translate(0 0)">
+      <text id="已解决" transform="translate(122.158 919.379)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">已解决</tspan></text>
+      <text id="_0件-2" data-name="0件" transform="translate(203.889 919.379)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan><tspan y="0" font-size="16">件</tspan></text>
+      <rect id="矩形_57" data-name="矩形 57" width="12.634" height="13.467" transform="translate(92.656 904.8)" fill="#11bc8e"/>
+    </g>
+    <g id="组_78" data-name="组 78" transform="translate(0 0)">
+      <text id="未解决" transform="translate(122.159 957.249)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">未解决</tspan></text>
+      <text id="_0件-3" data-name="0件" transform="translate(203.89 957.249)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan><tspan y="0" font-size="16">件</tspan></text>
+      <rect id="矩形_58" data-name="矩形 58" width="12.634" height="13.467" transform="translate(92.656 942.669)" fill="#03a5ff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 79.98, 784.66)" filter="url(#_0件)">
+      <text id="_0件-4" data-name="0件" transform="translate(10.5 86.33)" fill="#f3fcff" font-size="48" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">0</tspan><tspan y="0" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400">件</tspan></text>
+    </g>
+    <text id="_0.0_" data-name="0.0%" transform="translate(377.7 826.656)" fill="#fff" font-size="40" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0.0%</tspan></text>
+    <line id="直线_38" data-name="直线 38" x1="49.591" y1="25.799" transform="translate(466.5 822.5)" fill="none" stroke="#03a5ff" stroke-miterlimit="10" stroke-width="2"/>
+    <g id="组_1540" data-name="组 1540" transform="translate(-392.37 18.81)" opacity="0.943">
+      <path id="路径_1315" data-name="路径 1315" d="M886.222,948.5V936.9s92.55-5.334,104.152-44.408c0,0,.533,14.4-2.8,19.6S960.1,945.3,886.222,948.5Z" fill="#969696"/>
+      <path id="路径_1316" data-name="路径 1316" d="M857.373,856.451s27.338.8,39.873,1.334l.8,12.357s-23.16-2.622-40.274-1.955Z" fill="#0c9c76"/>
+      <path id="路径_1317" data-name="路径 1317" d="M857.551,841.737s31.427.134,39.651,2.268l.089,13.913-40.1-1.333Z" fill="#11bc8e"/>
+      <path id="路径_1318" data-name="路径 1318" d="M767.8,895.163s-9.6-18.556,28.539-30.532c0,0,33.539-12.375,62.344-7.958l-.644,11.514S787.271,865.421,767.8,895.163Z" fill="#606060"/>
+      <path id="路径_1319" data-name="路径 1319" d="M886.533,937.114l-8-14.038s-109.708,2.983-111.689-32.809c-.33-5.965,3.52-11.424,8.58-14.7,11.318-7.339,39.37-22.26,83.283-18.815l.267-15.09s-98.684-1.58-128.023,36.849a26.413,26.413,0,0,0-2.968,12.239C727.972,909.14,747.454,941.344,886.533,937.114Z" fill="#b1b1b1" opacity="0.418"/>
+      <path id="路径_1320" data-name="路径 1320" d="M727.894,891.733s-1.744,12.129.923,18.622c0,0,18.959,44.021,157.472,38.231V937.2S755.666,940.1,727.894,891.733Z" fill="#969696"/>
+      <path id="路径_1321" data-name="路径 1321" d="M852.211,841.646s76.351.068,101.279,18.458c0,0,13.208-8.543,30.112-7.076l1.171,48.031-36.948-9.4s-9.433-24.288-93.707-23.652Z" fill="#606060"/>
+      <path id="路径_1322" data-name="路径 1322" d="M852.484,843.485l-.205-18.8s86.363-7.628,131.5,28.341c0,0-21.728,3.915-30.917,7.2C952.865,860.233,923.794,841.17,852.484,843.485Z" fill="#b1b1b1" opacity="0.418"/>
+      <path id="路径_1323" data-name="路径 1323" d="M878.088,903.036l.444,20.04,7.757,14.126s91.741-3.581,104.085-44.714l0-22.614s1.411,35.8-103.88,46.561C883.913,913.349,879.107,904.111,878.088,903.036Z" fill="#969696"/>
+      <path id="路径_1324" data-name="路径 1324" d="M878.088,903.036s114.361-14.6,71.5-46.389l8.83-2.334a13.674,13.674,0,0,1,3.173-.556l21.686-1.205s27.635,27.814-29.708,50.484c0,0-38.941,13.336-67.479,13.336Z" fill="#b1b1b1" opacity="0.418"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=100%, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="mapsweb/mapsweb.nocache.js"></script>
+  <title>测试</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    html,
+    body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .container {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    #containerTwo {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 50%;
+      overflow: hidden;
+      height: 100%;
+
+    }
+
+    #containerOne {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 50%;
+      overflow: hidden;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="containerOne">
+  </div>
+  <div id="containerTwo">
+  </div>
+</body>
+<script>
+  function onMapsReady() {
+    const maps1 = new vrplanner.Maps("containerOne", "settings.json");
+    const maps2 = new vrplanner.Maps("containerTwo", "settings.json");
+  }
+</script>
+
+</html>

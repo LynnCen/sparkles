@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="453.21" height="199.185" viewBox="0 0 453.21 199.185">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.111" y1="0.815" x2="0.889" y2="0.185" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#10f7f8"/>
+      <stop offset="0.003" stop-color="#10f7f8" stop-opacity="0.984"/>
+      <stop offset="0.044" stop-color="#10f7f8" stop-opacity="0.8"/>
+      <stop offset="0.088" stop-color="#10f7f8" stop-opacity="0.631"/>
+      <stop offset="0.137" stop-color="#10f7f8" stop-opacity="0.478"/>
+      <stop offset="0.19" stop-color="#10f7f8" stop-opacity="0.349"/>
+      <stop offset="0.249" stop-color="#10f7f8" stop-opacity="0.239"/>
+      <stop offset="0.316" stop-color="#10f7f8" stop-opacity="0.149"/>
+      <stop offset="0.394" stop-color="#10f7f8" stop-opacity="0.082"/>
+      <stop offset="0.49" stop-color="#10f7f8" stop-opacity="0.035"/>
+      <stop offset="0.625" stop-color="#10f7f8" stop-opacity="0.008"/>
+      <stop offset="1" stop-color="#10f7f8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="组_1580" data-name="组 1580" transform="translate(-2604.79 -1072.118)">
+    <text id="无职业" transform="translate(2904.14 1129.272)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">无职业</tspan></text>
+    <text id="_0人" data-name="0人" transform="translate(3029 1129.272)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan><tspan y="0" font-size="16">人</tspan></text>
+    <g id="组_477" data-name="组 477" transform="translate(2904.14 1176.788)">
+      <text id="从事农业" transform="translate(0 21)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">从事农业</tspan></text>
+      <text id="_20人" data-name="20人" transform="translate(113.86 21)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">20</tspan><tspan y="0" font-size="16">人</tspan></text>
+    </g>
+    <text id="公职" transform="translate(2904.141 1163.53)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">公职</tspan></text>
+    <text id="_0人-2" data-name="0人" transform="translate(3029 1163.53)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan><tspan y="0" font-size="16">人</tspan></text>
+    <text id="其他职业" transform="translate(2904.141 1093.118)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">其他职业</tspan></text>
+    <text id="_0人-3" data-name="0人" transform="translate(3029 1093.118)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan><tspan y="0" font-size="16">人</tspan></text>
+    <text id="从商" transform="translate(2904.14 1232.045)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">从商</tspan></text>
+    <text id="_4人" data-name="4人" transform="translate(3029 1232.045)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">4</tspan><tspan y="0" font-size="16">人</tspan></text>
+    <g id="组_478" data-name="组 478" transform="translate(2874.638 1080.436)">
+      <rect id="矩形_416" data-name="矩形 416" width="12.634" height="13.467" transform="translate(0 34.258)" fill="#11bc8e"/>
+      <rect id="矩形_417" data-name="矩形 417" width="12.634" height="13.467" transform="translate(0 102.773)" fill="#03a5ff"/>
+      <rect id="矩形_418" data-name="矩形 418" width="12.634" height="13.467" transform="translate(0 68.516)" fill="#fe4343"/>
+      <rect id="矩形_419" data-name="矩形 419" width="12.634" height="13.467" fill="#5045f5"/>
+      <rect id="矩形_420" data-name="矩形 420" width="12.634" height="13.467" transform="translate(0 137.032)" fill="#11c9f4"/>
+      <rect id="矩形_421" data-name="矩形 421" width="12.634" height="13.467" transform="translate(0 171.29)" fill="#eae41c"/>
+    </g>
+    <text id="企业职工" transform="translate(2904.141 1266.303)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">企业职工</tspan></text>
+    <text id="_1人" data-name="1人" transform="translate(3029 1266.303)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">1</tspan><tspan y="0" font-size="16">人</tspan></text>
+    <g id="组_1554" data-name="组 1554" transform="translate(-8.647 -310.239)">
+      <path id="路径_1344" data-name="路径 1344" d="M2620.893,1482.1a85.434,85.434,0,0,1,10.1-40.37l-6.489-3.747a93.454,93.454,0,0,0-1.221,85.852l6.488-3.746A85.432,85.432,0,0,1,2620.893,1482.1Z" fill="#03a5ff"/>
+      <path id="路径_1345" data-name="路径 1345" d="M2790.234,1524.286a93.475,93.475,0,0,0-1.222-86.757l-6.488,3.746a85.768,85.768,0,0,1,1.221,79.265Z" fill="#03a5ff"/>
+      <path id="路径_1346" data-name="路径 1346" d="M2710.935,1396.222a85.986,85.986,0,0,1,67.381,38.1l6.493-3.748a93.336,93.336,0,0,0-73.874-41.808Z" fill="#03a5ff"/>
+      <path id="路径_1347" data-name="路径 1347" d="M2635.154,1434.75a85.987,85.987,0,0,1,67.656-38.528v-7.456A93.337,93.337,0,0,0,2628.661,1431Z" fill="#03a5ff"/>
+      <path id="路径_1348" data-name="路径 1348" d="M2633.708,1527.194l-6.492,3.748a93.765,93.765,0,0,0,40.406,35.929l3.41-6.655A86.539,86.539,0,0,1,2633.708,1527.194Z" fill="#03a5ff"/>
+      <path id="路径_1349" data-name="路径 1349" d="M2702.81,1567.975a85.427,85.427,0,0,1-23.588-4.467l-2.566,7.011a93.141,93.141,0,0,0,26.154,4.912Z" fill="#eae41c"/>
+      <path id="路径_1350" data-name="路径 1350" d="M2710.935,1567.975v7.456a93.549,93.549,0,0,0,16.059-2.1l-1.245-7.363A85.69,85.69,0,0,1,2710.935,1567.975Z" fill="#eae41c"/>
+      <path id="路径_1351" data-name="路径 1351" d="M2786.254,1531.37l-6.492-3.748a86.338,86.338,0,0,1-47.864,36.694l2.358,7.109A93.621,93.621,0,0,0,2786.254,1531.37Z" fill="#11c9f4"/>
+      <g id="组_1553" data-name="组 1553">
+        <circle id="椭圆_551" data-name="椭圆 551" cx="73.607" cy="73.607" r="73.607" transform="translate(2633.265 1408.491)" fill="#03fbee" opacity="0.1"/>
+        <g id="组_1551" data-name="组 1551">
+          <path id="路径_1352" data-name="路径 1352" d="M2679.089,1460.557c0,9.495,6.927,17.192,15.472,17.192s15.473-7.7,15.473-17.192-6.927-17.192-15.473-17.192-15.472,7.7-15.472,17.192Zm0,0" fill="#fff"/>
+          <path id="路径_1353" data-name="路径 1353" d="M2713.472,1469.153a15.918,15.918,0,0,0,6.877,13.4,12.443,12.443,0,0,0,13.754,0,16.5,16.5,0,0,0,0-26.8,12.444,12.444,0,0,0-13.754,0,15.919,15.919,0,0,0-6.877,13.4Zm0,0" fill="#fff"/>
+          <path id="路径_1354" data-name="路径 1354" d="M2734.1,1488.064h-10.316a17.241,17.241,0,0,0-17.191,17.192,6.9,6.9,0,0,0,6.876,6.877h30.946a6.9,6.9,0,0,0,6.876-6.877,17.241,17.241,0,0,0-17.191-17.192Zm0,0" fill="#fff"/>
+          <path id="路径_1355" data-name="路径 1355" d="M2711.753,1487.376a1.933,1.933,0,0,0,0-3.094,23.441,23.441,0,0,0-12.034-3.438h-6.877a24.213,24.213,0,0,0-24.068,24.412,6.685,6.685,0,0,0,6.876,6.877h25.788a1.935,1.935,0,0,0,2.063-2.407,19.6,19.6,0,0,1-.344-4.47c0-8.6,3.095-14.441,8.6-17.88Zm0,0" fill="#fff"/>
+        </g>
+        <g id="椭圆_552" data-name="椭圆 552" transform="translate(2633.265 1408.491)" fill="none" stroke="#707070" stroke-miterlimit="10" stroke-width="1.053">
+          <circle cx="73.607" cy="73.607" r="73.607" stroke="none"/>
+          <circle cx="73.607" cy="73.607" r="73.081" fill="none"/>
+        </g>
+        <g id="组_1552" data-name="组 1552">
+          <path id="路径_1356" data-name="路径 1356" d="M2706.873,1409.544a72.555,72.555,0,1,1-72.555,72.555,72.637,72.637,0,0,1,72.555-72.555m0-1.053a73.608,73.608,0,1,0,73.607,73.608,73.608,73.608,0,0,0-73.607-73.608Z" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <path id="路径_1357" data-name="路径 1357" d="M2777.573,1433.211l4.951,8.064,6.488-3.746-4.7-7.723Z" fill="#03a5ff"/>
+      <path id="路径_1358" data-name="路径 1358" d="M2702.542,1396.211s6.556-.153,8.531,0l-.138-7.445s-7.2-.064-8.6,0Z" fill="#03a5ff"/>
+      <path id="路径_1359" data-name="路径 1359" d="M2624.25,1438.354s4.87-8.1,4.972-8.173,6.3,3.95,6.3,3.95-4.495,7.543-4.869,8.224Z" fill="#03a5ff"/>
+      <path id="路径_1360" data-name="路径 1360" d="M2622.514,1522.4l6.742-3.474s4.972,9.672,5.653,10.285l-6.2,4.291Z" fill="#03a5ff"/>
+      <path id="路径_1361" data-name="路径 1361" d="M2701.861,1575.39s10.251.238,10.966-.1l-.239-7.458s-10.727.238-11.238.068Z" fill="#eae41c"/>
+    </g>
+  </g>
+</svg>

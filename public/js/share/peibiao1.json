@@ -1,0 +1,11 @@
+{
+  "left": {
+    "imgUrl": "./images/peibiao/peibiao1_4.png"
+  },
+  "right": {
+    "imgUrl": "./images/peibiao/peibiao1_3.png"
+  },
+  "content": {
+    "imgUrl": "./images/peibiao/peibiao1_1.png"
+  }
+}

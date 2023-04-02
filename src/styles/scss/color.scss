@@ -1,0 +1,125 @@
+.vrp-color-picker {
+  position: relative;
+  z-index: 2;
+
+  .current {
+    display: flex;
+    margin-right: 2px;
+    padding-right: 2px;
+    border-right: 1px solid #d9d9d9;
+  }
+
+  .color-item {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .icon-plus {
+    font-size: 13px;
+    color: #666;
+  }
+
+  :global(.ant-popover-inner-content) {
+    padding: 0 !important;
+  }
+  :global(.sketch-picker) {
+    // position: absolute;
+    // left: -1rem;
+    // top: 2rem;
+  }
+  // .cover {
+  //   position: fixed;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  // }
+}
+
+.single-color-selector {
+  display: inline-block;
+  border-radius: 4px;
+  width: 54px;
+  height: 24px;
+  border: 1px solid #f2f2f2;
+}
+
+.vrp-color-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  height: 40px;
+  line-height: 40px;
+}
+
+.color-circle {
+  display: inline-block;
+  margin: 2px;
+  width: 21px;
+  height: 21px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  &.active {
+    box-shadow: 0 0 1px 1px #40a9ff;
+  }
+
+  &.white {
+    background: #fff;
+  }
+
+  &.red {
+    background: #ff0000;
+  }
+
+  &.orange {
+    background: #ffa500;
+  }
+
+  &.yellow {
+    background: #ffff00;
+  }
+
+  &.green {
+    background: #00ff00;
+  }
+
+  &.blue {
+    background: #0000ff;
+  }
+
+  &.black {
+    background: #000;
+  }
+
+  &.dark-green {
+    background: #333f02;
+  }
+
+  &.cyan {
+    background: cyan;
+  }
+
+  &.purple {
+    background: purple;
+  }
+
+  &.gray {
+    background: gray;
+  }
+
+  &.silver {
+    background: silver;
+  }
+
+  &.brown {
+    background: brown;
+  }
+}

@@ -1,0 +1,40 @@
+.vrp-tag {
+  margin: 5px !important;
+  width: 48px;
+  height: 26px !important;
+  text-align: center;
+  line-height: 23px !important;
+}
+
+.vrp-btn-plan {
+  width: 282px;
+  border: 1px solid #f1f1f1;
+  overflow: hidden;
+}
+
+.vrp-btn-icon {
+  font-size: 18px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+/* :global .ant-tabs-ink-bar {
+  display: none !important;
+} */
+
+:global .ant-tabs-bar {
+  border: none !important;
+  margin-bottom: 0px !important;
+}
+
+:global .ant-divider-horizontal {
+  margin: 5px 0 !important;
+}
+
+:global(.ppt-input .ant-select-selection__choice) {
+  /* max-width: 82% !important; */
+}
+
+:global(.ppt-input .ant-input-number) {
+  /* width: 45px; */
+}

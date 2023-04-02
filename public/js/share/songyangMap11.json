@@ -1,0 +1,171 @@
+{
+  "leftContent":{
+    "child1": {
+      "title": "总体情况",
+      "textShadow": "#31B0F7",
+      "content1": [
+          {
+              "title": "县域总面积：",
+              "num": 1406,
+              "unit": "k㎡"
+          },
+          {
+              "title": "耕地面积：",
+              "num": 277,
+              "unit": "万亩"
+          }
+      ],
+      "content2": [
+          {
+              "title": "山地面积：",
+              "num": 277,
+              "unit": "万亩"
+          },
+          {
+              "title": "水域及其他：",
+              "num": 565,
+              "unit": "万亩"
+          }
+      ]
+  },
+  "child2": {
+    "title": "生态指标完成情况",
+    "statistical": [
+      { "name": "", "value": 1300, "unit": "亩" },
+      { "name": "", "value": 500, "unit": "亩" }
+    ],
+    "chartData": [
+      {
+        "data": [
+          { "name": "土地垦造完成情况", "value": 1147, "unit": "亩" },
+          { "name": "土地垦造未完成情况", "value": 347, "unit": "亩" }
+        ],
+        "color": [
+          ["rgba(17, 237, 157, 0.4)", "rgba(133, 141, 144, 0.4)"],
+          ["rgba(17, 237, 157, 1)", "rgba(113, 121, 123, 1)"]
+        ]
+      },
+      {
+        "data": [
+          { "name": "建设用地复垦完成情况", "value": 222, "unit": "亩" },
+          { "name": "建设用地复垦未完成情况", "value": 347, "unit": "亩" }
+        ],
+        "color": [
+          ["rgba(226, 215, 26, 0.4)", "rgba(133, 141, 144, 0.4)"],
+          ["rgba(226, 215, 26, 1)", "rgba(113, 121, 123, 1)"]
+        ]
+      }
+    ]
+},
+"child3":{
+  "title": "生态保护情况",
+  "ecologicalProtection":{
+    "img": "ecological-protection",
+    "data": [
+      { "name": "生态公益林", "value": 6, "unit": "万亩" },
+      { "name": "水域面积", "value": 21, "unit": "万亩" },
+      { "name": "野生动物", "value": 13, "unit": "种" },
+      { "name": "空气质量", "value": 13, "unit": "优" }
+    ]
+  }
+ 
+}
+},
+
+"rightContent":{
+  "child1":{
+    "title": "生态资源发展空间",
+    "data": [
+      { "value": 277, "name": "耕地", "unit": "万亩" },
+      { "value": 321, "name": "水域", "unit": "万亩" },
+      { "value": 235, "name": "城乡建设", "unit": "万亩" },
+      { "value": 235, "name": "山地", "unit": "万亩" }
+    ],
+    "title1": "资源面积",
+    "total": 209,
+    "titleStyle": {
+      "x": "25%",
+      "y": "35%"
+    },
+    "color": ["#F97B26", "#11BC8E", "#F5D44A", "#26E9F9"],
+    "legendStyle": {
+      "orient": "vertical",
+      "x": "56%",
+      "y": "center"
+    },
+    "seriesRadius": [["66%", "70%"], ["58%", "0%"]],
+    "seriesCenter": ["26%", "50%"],
+    "intervalVal": 10
+  },
+  "child2":{
+"title":"耕、林地发展趋势",
+"data": [
+  [
+    { "value": 32, "name": "2015", "text": "耕地", "unit": "万亩" },
+    { "value": 32, "name": "2016", "text": "耕地", "unit": "万亩" },
+    { "value": 30, "name": "2017", "text": "耕地", "unit": "万亩" },
+    { "value": 50, "name": "2018", "text": "耕地", "unit": "万亩" },
+    { "value": 30, "name": "2019", "text": "耕地", "unit": "万亩" }
+  ],
+  [
+    { "value": 12, "name": "2015", "text": "林地", "unit": "万亩" },
+    { "value": 32, "name": "2016", "text": "林地", "unit": "万亩" },
+    { "value": 10, "name": "2017", "text": "林地", "unit": "万亩" },
+    { "value": 13, "name": "2018", "text": "林地", "unit": "万亩" },
+    { "value": 30, "name": "2019", "text": "林地", "unit": "万亩" }
+  ]
+],
+"color": [
+  ["rgba(2, 210, 218, 0)", "rgba(2, 210, 218, 1)"],
+  ["rgba(9, 203, 91, 0)", "rgba(9, 203, 91, 1)"]
+]
+  },
+  "child3":{
+    "title":"产业发展资源",
+    "data": [
+      [
+        { "name": "香榧", "value": 70, "unit": "万亩", "year": 2016 },
+        { "name": "香榧", "value": 66, "unit": "万亩", "year": 2017 },
+        { "name": "香榧", "value": 10, "unit": "万亩", "year": 2018 },
+        { "name": "香榧", "value": 70, "unit": "万亩", "year": 2019 },
+        { "name": "香榧", "value": 66, "unit": "万亩", "year": 2020 }
+  
+      ],
+      [
+        { "name": "油茶", "value": 55, "unit": "万亩", "year": 2016 },
+        { "name": "油茶", "value": 45, "unit": "万亩", "year": 2017 },
+        { "name": "油茶", "value": 45, "unit": "万亩", "year": 2018 },
+        { "name": "油茶", "value": 55, "unit": "万亩", "year": 2019 },
+        { "name": "油茶", "value": 45, "unit": "万亩", "year": 2020 }
+      ],
+      [
+        { "name": "茶叶", "value": 25, "unit": "万亩", "year": 2016 },
+        { "name": "茶叶", "value": 38, "unit": "万亩", "year": 2017 },
+        { "name": "茶叶", "value": 72, "unit": "万亩", "year": 2018 },
+        { "name": "茶叶", "value": 25, "unit": "万亩", "year": 2019 },
+        { "name": "茶叶", "value": 38, "unit": "万亩", "year": 2020 }
+      ],
+      [
+        { "name": "中药材", "value": 66, "unit": "万亩", "year": 2016 },
+        { "name": "中药材", "value": 10, "unit": "万亩", "year": 2017 },
+        { "name": "中药材", "value": 70, "unit": "万亩", "year": 2018 },
+        { "name": "中药材", "value": 66, "unit": "万亩", "year": 2019 },
+        { "name": "中药材", "value": 70, "unit": "万亩", "year": 2020 }
+  
+      ],
+      [
+        { "name": "香菇", "value": 70, "unit": "万亩", "year": 2016 },
+        { "name": "香菇", "value": 72, "unit": "万亩", "year": 2017 },
+        { "name": "香菇", "value": 25, "unit": "万亩", "year": 2018 },
+        { "name": "香菇", "value": 38, "unit": "万亩", "year": 2019 },
+        { "name": "香菇", "value": 55, "unit": "万亩", "year": 2020 }
+      ]
+    ],
+    "colors": ["#02CFD7", "#F5D44A", "#1DBC8E", "#F97B26", "#C13839"],
+    "legendStyle": {
+      "icon": "react",
+      "right": 0
+    },
+    "areaStyleOpacity": 0
+  }
+}}

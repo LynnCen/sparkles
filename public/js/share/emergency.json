@@ -1,0 +1,248 @@
+{
+  "title": "丽水市应急管理综合指挥平台",
+  "enTitle": "LISHUI EMERGENCY MANAGEMENT INTEGRATED COMMAND PLATFORM",
+  "equipment": {
+    "title": "应急物资与装备",
+    "enTitle": "Emergency materials and equipment",
+    "suffix": { "name": "物资数量", "value": 62, "unit": "个" },
+    "data": [
+      {
+        "name": "运输车",
+        "icon": "./images/emergency/icon_yunshuche.png",
+        "value": 26
+      },
+      {
+        "name": "机动船只",
+        "icon": "./images/emergency/icoc_jidongchuanzhi.png",
+        "value": 1
+      },
+      {
+        "name": "发电设备",
+        "icon": "./images/emergency/icon_daidanshebei.png",
+        "value": 8
+      },
+      {
+        "name": "橡皮艇",
+        "icon": "./images/emergency/icon_xiangpiting.png",
+        "value": 1
+      },
+      {
+        "name": "移动电源车",
+        "icon": "./images/emergency/icon_yidongdianyuanche.png",
+        "value": 1
+      },
+      {
+        "name": "水泵",
+        "icon": "./images/emergency/icon_shuiben.png",
+        "value": 22
+      },
+      {
+        "name": "冲锋舟",
+        "icon": "./images/emergency/icon_chongfenzhou.png",
+        "value": 2
+      },
+      {
+        "name": "应急送水车",
+        "icon": "./images/emergency/icon_yingjishuiche.png",
+        "value": 1
+      },
+      {
+        "name": "其他",
+        "icon": "./images/emergency/icon_qita.png",
+        "value": 0
+      }
+    ]
+  },
+  "typicalCase": {
+    "title": "典型案例",
+    "enTitle": "Typical Case",
+    "suffix": { "name": "案例数量", "value": 21, "unit": "个" },
+    "data": [
+      {
+        "content": "遂昌县地质灾害",
+        "date": "2019-06-06"
+      },
+      {
+        "content": "莲都区小流域山洪防御",
+        "date": "2019-06-21"
+      },
+      {
+        "content": "庆元县濛洲街道碧桂园房地产工地四周山体...",
+        "date": "2019-06-22"
+      },
+      {
+        "content": "庆元县屏都街道菊水村回龙自然村泥石流地...",
+        "date": "2019-06-22"
+      },
+      {
+        "content": "云和县崇云和县头镇沙浦村强降雨",
+        "date": "2019-06-30"
+      },
+      {
+        "content": "缙云县解救被困驴友",
+        "date": "2019-07-03"
+      },
+      {
+        "content": "松阳县新兴镇山体滑坡自然灾害应急救援案例",
+        "date": "2019-07-04"
+      },
+      {
+        "content": "龙泉竹垟畲族乡科学处置山体塌方灾情",
+        "date": "2019-07-05"
+      },
+      {
+        "content": "龙泉市宝溪乡龚岭村22号户屋后滑坡",
+        "date": "2019-07-09"
+      },
+      {
+        "content": "开发区张垵行政村山脚自然村山体滑坡",
+        "date": "2019-07-09"
+      },
+      {
+        "content": "云和县紧水滩水库泄洪后遭遇大暴雨",
+        "date": "2019-07-09"
+      },
+      { "content": "青田县梅雨带强降雨海口镇人员转移", "date": "2019-07-09" },
+
+      {
+        "content": "松阳县西屏街道西九村成功避险案例",
+        "date": "2019-07-09"
+      },
+      {
+        "content": "缙云县小流域山洪防御",
+        "date": "2019-07-16"
+      },
+
+      {
+        "content": "莲都区台风强降雨防御",
+        "date": "2019-08-08"
+      },
+      {
+        "content": "景宁县危旧房转移",
+        "date": "2019-08-09"
+      },
+      {
+        "content": "景宁县驴友劝返",
+        "date": "2019-08-10"
+      },
+      {
+        "content": "青田县受超强台风“利奇马”影响防洪堤坍...",
+        "date": "2019-08-10"
+      },
+      {
+        "content": "遂昌县地质灾害",
+        "date": "2019-08-10"
+      }
+    ]
+  },
+  "riskSource": {
+    "title": "危险源",
+    "enTitle": "Source of risk",
+    "suffix": { "name": "目标数量", "value": 4, "unit": "个" },
+    "data": [
+      {
+        "icon": "./images/emergency/icon_jiayouzhan.png",
+        "name": "中石化浙江丽水石油分公司莲都油库",
+        "type": "经营带储存",
+        "level": 2,
+        "color": "#ff4800",
+        "region": "莲都",
+        "lon": 119.950278,
+        "lat": 28.441111,
+        "address": "丽青路46号",
+        "unit": "中石化浙江丽水石油分公司",
+        "head": "涂仙伟",
+        "phone": 13600606135
+      },
+      {
+        "icon": "./images/emergency/icon_ranqi.png",
+        "name": "丽水市通海燃气化工有限公司",
+        "type": "经营带储存",
+        "level": 3,
+        "color": "#ff9000",
+        "region": "莲都",
+        "lon": 119.950278,
+        "lat": 28.441111,
+        "address": "丽青路46号",
+        "unit": "中石化浙江丽水石油分公司",
+        "head": "涂仙伟",
+        "phone": 13600606135
+      },
+      {
+        "icon": "./images/emergency/icon_huaxuehuagong1.png",
+        "name": "浙江丽水有邦新材料有限公司",
+        "type": "经营带储存",
+        "level": 3,
+        "color": "#ff9000",
+        "region": "莲都",
+        "lon": 119.950278,
+        "lat": 28.441111,
+        "address": "丽青路46号",
+        "unit": "中石化浙江丽水石油分公司",
+        "head": "涂仙伟",
+        "phone": 13600606135
+      },
+      {
+        "icon": "./images/emergency/icon_ranqi.png",
+        "name": "丽水市鸿运气体有限公司",
+        "type": "经营带储存",
+        "level": 3,
+        "color": "#ff9000",
+        "region": "莲都",
+        "lon": 119.950278,
+        "lat": 28.441111,
+        "address": "丽青路46号",
+        "unit": "中石化浙江丽水石油分公司",
+        "head": "涂仙伟",
+        "phone": 13600606135
+      }
+    ]
+  },
+  "experts": {
+    "title": "应急专家",
+    "enTitle": "Emergency experts",
+    "suffix": { "name": "专家数量", "value": 185, "unit": "人" },
+    "data": [
+      {
+        "name": "曹志多",
+        "education": "学历：本科",
+        "major": "专业：茶学"
+      },
+      {
+        "name": "陈小峰",
+        "education": "学历：本科",
+        "major": "专业：材料科学与工程"
+      },
+      {
+        "name": "董小弟",
+        "education": "学历：本科",
+        "major": "专业：生物工程"
+      },
+      {
+        "name": "何菊芬",
+        "education": "学历：本科",
+        "major": "专业：工商行政管理"
+      },
+      {
+        "name": "何文俊",
+        "education": "学历：本科",
+        "major": "专业：法学"
+      },
+      {
+        "name": "胡郑烽",
+        "education": "学历：本科",
+        "major": "专业：机械设计制造"
+      },
+      {
+        "name": "纪丽伟",
+        "education": "学历：本科",
+        "major": "专业：机械制造"
+      },
+      {
+        "name": "金   涛",
+        "education": "学历：本科",
+        "major": "专业：工商管理"
+      }
+    ]
+  }
+}

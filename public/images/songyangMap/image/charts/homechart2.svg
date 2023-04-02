@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="524.57" height="149.665" viewBox="0 0 524.57 149.665">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#02d2da" stop-opacity="0.102"/>
+      <stop offset="1" stop-color="#02d2da"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1" y1="0.5" x2="0" y2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="3.17" y1="0.5" x2="4.17" y2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="5.253" y1="0.5" x2="6.253" y2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="5.71" y1="0.5" x2="6.71" y2="0.5" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="组_1442" data-name="组 1442" transform="translate(-2584.303 -423.778)">
+    <text id="女性" transform="translate(2916.939 444.778)" fill="#03fbee" font-size="20" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">女性</tspan></text>
+    <text id="男性" transform="translate(2744.759 444.778)" fill="#03fbee" font-size="20" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">男性</tspan></text>
+    <g id="组_90" data-name="组 90" transform="translate(0 0)">
+      <text id="_15岁以下" data-name="15岁以下" transform="translate(2808.997 471.074)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">15</tspan><tspan y="0" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI">岁</tspan><tspan y="0" font-family="YuGothicUI-Regular, Yu Gothic UI">以下</tspan></text>
+      <rect id="矩形_71" data-name="矩形 71" width="209.845" height="6" transform="translate(2896.303 460.083)" fill="url(#linear-gradient)"/>
+      <rect id="矩形_818" data-name="矩形 818" width="209.845" height="6" transform="translate(2587.028 460.083)" fill="url(#linear-gradient-2)"/>
+      <rect id="矩形_72" data-name="矩形 72" width="3.999" height="12.691" transform="translate(3104.809 456.204)" fill="#02d2da"/>
+      <rect id="矩形_73" data-name="矩形 73" width="209.845" height="6" transform="translate(2796.873 466.083) rotate(-180)" fill="url(#linear-gradient-3)"/>
+      <rect id="矩形_74" data-name="矩形 74" width="3.999" height="12.691" transform="translate(2588.367 469.995) rotate(-180)" fill="#02d2da"/>
+    </g>
+    <g id="组_91" data-name="组 91" transform="translate(0 0)">
+      <rect id="矩形_75" data-name="矩形 75" width="209.845" height="6" transform="translate(2897.938 493.266)" fill="#606060" opacity="0.5"/>
+      <text id="_16-35岁" data-name="16-35岁" transform="translate(2808.997 503.53)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">16-35</tspan><tspan y="0" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI">岁</tspan></text>
+      <rect id="矩形_76" data-name="矩形 76" width="107.845" height="6" transform="translate(2897.938 493.63)" fill="url(#linear-gradient)"/>
+      <rect id="矩形_77" data-name="矩形 77" width="3.999" height="12.691" transform="translate(3004.443 489.751)" fill="#02d2da"/>
+      <rect id="矩形_78" data-name="矩形 78" width="209.845" height="6" transform="translate(2795.238 499.266) rotate(-180)" fill="#606060" opacity="0.5"/>
+      <rect id="矩形_79" data-name="矩形 79" width="107.845" height="6" transform="translate(2795.238 499.63) rotate(-180)" fill="url(#linear-gradient-5)"/>
+      <rect id="矩形_80" data-name="矩形 80" width="3.999" height="12.691" transform="translate(2688.732 502.442) rotate(-180)" fill="#02d2da"/>
+    </g>
+    <g id="组_92" data-name="组 92" transform="translate(0 0)">
+      <rect id="矩形_81" data-name="矩形 81" width="209.845" height="6" transform="translate(2899.028 525.904)" fill="#606060" opacity="0.5"/>
+      <text id="_36-60岁" data-name="36-60岁" transform="translate(2808.997 535.986)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">36-60</tspan><tspan y="0" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI">岁</tspan></text>
+      <rect id="矩形_82" data-name="矩形 82" width="97.845" height="6" transform="translate(2899.028 526.631)" fill="url(#linear-gradient)"/>
+      <rect id="矩形_83" data-name="矩形 83" width="3.999" height="12.691" transform="translate(2995.533 522.752)" fill="#02d2da"/>
+      <rect id="矩形_84" data-name="矩形 84" width="209.845" height="6" transform="translate(2794.148 531.904) rotate(-180)" fill="#606060" opacity="0.5"/>
+      <rect id="矩形_85" data-name="矩形 85" width="97.845" height="6" transform="translate(2794.148 532.631) rotate(-180)" fill="url(#linear-gradient-7)"/>
+      <rect id="矩形_86" data-name="矩形 86" width="3.999" height="12.691" transform="translate(2697.643 535.443) rotate(-180)" fill="#02d2da"/>
+    </g>
+    <g id="组_93" data-name="组 93" transform="translate(0 0)">
+      <rect id="矩形_87" data-name="矩形 87" width="209.845" height="6" transform="translate(2899.028 558.361)" fill="#606060" opacity="0.5"/>
+      <text id="_60岁以上" data-name="60岁以上" transform="translate(2808.997 568.443)" fill="#fff" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">60</tspan><tspan y="0" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI">岁</tspan><tspan y="0" font-family="YuGothicUI-Regular, Yu Gothic UI">以上</tspan></text>
+      <rect id="矩形_88" data-name="矩形 88" width="97.845" height="6" transform="translate(2899.028 559.087)" fill="url(#linear-gradient)"/>
+      <rect id="矩形_89" data-name="矩形 89" width="3.999" height="12.691" transform="translate(2995.533 555.208)" fill="#02d2da"/>
+      <rect id="矩形_90" data-name="矩形 90" width="209.845" height="6" transform="translate(2794.148 564.361) rotate(-180)" fill="#606060" opacity="0.5"/>
+      <rect id="矩形_91" data-name="矩形 91" width="97.845" height="6" transform="translate(2794.148 565.087) rotate(-180)" fill="url(#linear-gradient-7)"/>
+      <rect id="矩形_92" data-name="矩形 92" width="3.999" height="12.691" transform="translate(2697.643 567.899) rotate(-180)" fill="#02d2da"/>
+    </g>
+  </g>
+</svg>

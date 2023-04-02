@@ -1,0 +1,423 @@
+@charset "UTF-8";
+@import "base";
+@import "public";
+$warn-color: rgba(248, 92, 92, 0.7);
+$shadow-color: rgba(30, 30, 30, 0.15);
+$shadow: 0 1px 2px 0 $shadow-color;
+$card-shadow: 0 1px 2px 0 rgba(100, 100, 100, 0.2);
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ppt-drawer-body {
+  :global(.ant-slider) {
+    margin: 6px;
+  }
+  :global(.ant-tabs) {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 50px);
+    background: #fafafa;
+    :global(.ant-tabs-content) {
+      height: calc(100% - 44px);
+    }
+  }
+  :global(.ant-tabs-nav-container) {
+    background: white;
+  }
+  :global(.ant-tabs-nav-container) {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.11);
+  }
+
+  > div:last-child button {
+    height: 32px;
+    width: 74px;
+    border-radius: 4px;
+    :global(.ant-switch-inner) {
+      margin-right: 2px;
+      margin-left: 27px;
+    }
+    &:global(.ant-switch-checked .ant-switch-inner) {
+      margin-right: 27px;
+      margin-left: 2px;
+    }
+    &::after {
+      top: 2px;
+      left: 2px;
+      width: 26px;
+      height: 26px;
+      border-radius: 4px;
+    }
+    &:global(.ant-switch-checked::after) {
+      left: 100% !important;
+    }
+  }
+}
+.right-collapse {
+  max-height: unset;
+  overflow-y: unset;
+  border: none;
+  padding: 1px;
+  :global(.ant-collapse-item) {
+    background: white;
+    border-bottom: none;
+    margin-bottom: 6px;
+    box-shadow: $card-shadow;
+    input[type="text"].menu-title {
+      width: 140px;
+      border-radius: 11px;
+      background: #f2f2f2;
+      height: 22px;
+      border: none;
+      font-size: 12px;
+      color: rgba(0, 21, 41, 0.51);
+    }
+    :global(.ant-collapse-header) {
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+      padding: 8px;
+      padding-right: 28px;
+      box-shadow: $card-shadow;
+      // line-height: initial;
+      // position: relative;
+      border-radius: 3px;
+      // border-bottom: 1px solid $shadow-color;
+      > div {
+        position: relative;
+        i {
+          color: $highlight !important;
+          right: 8px;
+        }
+      }
+
+      :global(.ant-spin-container) {
+        > div {
+          background-color: rgba(0, 0, 0, 0.18);
+        }
+      }
+      :global(.ant-collapse-extra) {
+        @extend .flex-center-between;
+      }
+      :global(.ant-collapse-arrow) {
+        right: 8px;
+        color: $highlight !important;
+      }
+    }
+    :global(.ant-collapse-content) {
+      border: none;
+      background: #fafafa;
+      overflow-y: auto;
+      // max-height: 375px;
+      // :global(.ant-collapse-content-box) {
+      //   // padding: 0 8px;
+      //   input[type="text"] {
+      //     background: #e1e0e0;
+      //     // margin-left: 32px;
+      //   }
+      // }
+    }
+  }
+}
+
+.tabpanel {
+  :global(.ant-collapse-header) {
+    cursor: auto;
+    button {
+      position: absolute;
+      right: 0;
+    }
+  }
+  :global(.ant-collapse-content-box) {
+    padding: 1px 0;
+    .content-header {
+      button {
+        position: absolute;
+        right: 0;
+        &:global(.ant-switch-checked) {
+          background-color: rgba(0, 0, 0, 0.65);
+        }
+      }
+    }
+    .content-header:not(:last-child) {
+      border-bottom: 1px #efefef solid;
+    }
+    *:not(label) + input[type="text"] {
+      // background: #e1e0e0;
+      // margin-left: 32px
+    }
+  }
+  .childMenu {
+    > div:not(:first-child) {
+      background: #f2f2f2;
+    }
+    > div:first-child {
+      background: rgba(224, 224, 224, 0.8);
+      box-shadow: 0 0 2px 0 rgba(155, 155, 155, 0.56);
+      input[type="text"] {
+        background: rgba(25, 31, 37, 0.13) !important;
+      }
+      button:global(.ant-switch-checked) {
+        background-color: rgba(0, 0, 0, 0.65);
+      }
+    }
+    .feature-header {
+      background: #e6e6e6;
+      line-height: 24px;
+      i {
+        font-size: 9px;
+        color: white;
+        background: #4a4a4a;
+        border-radius: 50%;
+        opacity: 0.4;
+        padding: 2px;
+      }
+    }
+    .moving {
+      background: rgba(24, 144, 255, 0.1);
+    }
+    :global(.ant-input-group-addon) {
+      padding: 0 8px;
+    }
+  }
+  .buttonGroup {
+    background: white;
+    box-shadow: 0 0px 2px 0 rgba(25, 31, 37, 0.1);
+    button {
+      height: 24px !important;
+      padding: 0 12px;
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+  :global(.ppt-input) {
+    > *,
+    > * > *:not([class*="selection--multiple"]):not([class*="slider"]) {
+      height: 26px;
+      border: none;
+    }
+    > input {
+      padding: 0 11px;
+    }
+    > *:first-child {
+      margin-right: 3px;
+    }
+    > *:nth-child(2),
+    :global(.ant-input-group-wrapper) {
+      margin-right: 3px;
+      height: auto;
+      flex: 1;
+      // background-color: white;
+    }
+    :global(.ant-input-suffix) {
+      right: 3px;
+      display: flex;
+      align-items: center;
+      i　 {
+        line-height: unset;
+      }
+    }
+    :global(.ant-input-affix-wrapper .ant-input:not(:last-child)) {
+      padding-right: 24px;
+    }
+    :global(.ant-select-selection__rendered) {
+      line-height: 26px;
+    }
+    :global(.ant-select-selection--multiple .ant-select-selection__rendered) {
+      margin-right: 5px;
+    }
+  }
+}
+
+.tabCard {
+  margin: 10px 8px !important;
+  position: relative;
+  > *:first-child {
+    margin: 0 0 8px;
+  }
+  h3 {
+    border-left: 2px solid $highlight;
+    height: 20px;
+    line-height: 18px;
+  }
+  > :global(.ant-collapse) {
+    height: calc(100% - 40px);
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+  }
+}
+[role="tabpanel"] {
+  &:not(:nth-child(2)) {
+    .tabCard {
+      height: calc(100% - 20px);
+    }
+  }
+  &:first-child :global(.ant-collapse) {
+    top: 40px;
+  }
+  .tabCard {
+    label,
+    button {
+      font-size: 12px;
+    }
+  }
+  [role="checkboxgroup"],
+  [role="radiogroup"] {
+    button {
+      width: 100%;
+      height: 26px;
+    }
+    > h3 + div {
+      background: white;
+      box-shadow: 0 1px 4px 0 rgba(150, 150, 150, 0.22);
+      border-radius: 2px;
+    }
+  }
+  .tabCard[role="checkboxgroup"] {
+    > div {
+      > div:first-of-type {
+        border-bottom: 1px solid rgba(150, 150, 150, 0.07);
+      }
+      > div {
+        // margin: 16px 8px;
+        padding-left: 8px;
+      }
+      label {
+        color: rgba(0, 0, 0, 0.65);
+        text-align: left;
+        margin: 7px 0;
+        line-height: 16px;
+        width: 25%;
+        span {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  [role="radiogroup"] {
+    > div {
+      padding-top: 5px;
+    }
+    :global(label.ant-radio-button-wrapper) {
+      height: 24px !important;
+      padding: 0 8px !important;
+      line-height: 22px !important;
+    }
+  }
+  [role="collapsecard"] {
+    > :global(.ant-collapse) {
+      > :global(.ant-collapse-item) {
+        box-shadow: $card-shadow;
+        > :global(.ant-collapse-header) {
+          padding: 4px 32px 4px 0 !important;
+          box-shadow: none !important;
+          > span:first-of-type {
+            border-left: 2px solid rgba(24, 144, 255, 0.3);
+            line-height: 16px;
+            padding-left: 6px;
+          }
+          button {
+            margin-left: 4px;
+            position: relative;
+          }
+          i {
+            color: #666;
+            &:global(.ant-collapse-arrow) {
+              right: 10px;
+            }
+          }
+        }
+      }
+
+      :global(.ant-collapse-content) {
+        background: #fff !important;
+        :global(.ant-collapse-content-box) {
+          padding: 0;
+        }
+      }
+      :global(.ant-collapse-item-active) {
+        :global(.ant-collapse-header) {
+          // box-shadow: $card-shadow !important;
+          border-bottom: 1px solid #0000000a;
+          border-radius: 0;
+        }
+      }
+    }
+    :global(.ant-input-group-addon .ant-select .ant-select-selection) {
+      background: #fff;
+      border: 1px solid #d9d9d9;
+    }
+    main {
+      padding: 8px 8px 0;
+      > div:not(:last-child) {
+        margin-bottom: 7px;
+      }
+      .legend-card {
+        border-top: 1px solid #0000000a;
+        > div {
+          margin: 8px 0;
+        }
+      }
+    }
+    .panel-footer {
+      border-top: 1px solid #0000000a;
+      padding: 8px 0;
+      button:not(:last-child) {
+        margin-right: 8px;
+      }
+      button,
+      button::after {
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.drawer-tooltip {
+  :global(.ant-tooltip-arrow) {
+    border-color: white;
+    // box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.19);
+    &::before {
+      background: white;
+      box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+  :global(.ant-tooltip-inner) {
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+  }
+  i {
+    background: rgba(24, 144, 255, 0.4);
+    border-radius: 50%;
+    svg {
+      padding: 3px;
+      &[data-icon="caret-right"] {
+        padding-right: 2px;
+      }
+    }
+  }
+  i.triangle-right {
+    height: 17.5px;
+    width: 17.5px;
+    display: inline-block;
+  }
+}
+i.triangle-right {
+  clip-path: polygon(5px 10px, 16px 3px, 16px 17px);
+}
+.warn {
+  transition: all 0.3s ease 0s;
+  box-shadow: 0 0 5px 0 $warn-color !important;
+  input,
+  input::placeholder {
+    color: $warn-color !important;
+  }
+}
+.moving {
+  background: rgba(24, 144, 255, 0.1) !important;
+}

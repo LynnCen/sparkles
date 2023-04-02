@@ -1,0 +1,194 @@
+{
+    "leftContent": {
+        "child1": {
+            "title": "总体情况",
+            "textShadow": "#31B0F7",
+            "content1": [
+                {
+                    "title": "工业园区数量：",
+                    "num": 21,
+                    "unit": "个"
+                },
+                {
+                    "title": "规上企业数量：",
+                    "num": 29,
+                    "unit": "家"
+                }
+            ],
+            "content2": [
+                {
+                    "title": "企业数量：",
+                    "num": 13293,
+                    "unit": "家"
+                },
+                {
+                    "title": "企业总产值：",
+                    "num": 129.38,
+                    "unit": "万元"
+                }
+            ]
+        },
+        "child2": {
+            "title": "乡镇亩均产值排名",
+            "content": [
+                {
+                    "value": 35,
+                    "name": "西屏街道",
+                    "unit": "亩"
+                },
+                {
+                    "value": 34,
+                    "name": "水南街道",
+                    "unit": "亩"
+                },
+                {
+                    "value": 33,
+                    "name": "望松街道",
+                    "unit": "亩"
+                },
+                {
+                    "value": 25,
+                    "name": "竹源乡",
+                    "unit": "亩"
+                },
+                {
+                    "value": 24,
+                    "name": "三都乡",
+                    "unit": "亩"
+                },
+                {
+                    "value": 18,
+                    "name": "四都乡",
+                    "unit": "亩"
+                }
+            ]
+        },
+        "child3": {
+            "title": "乡镇亩均税收排名",
+            "content": [
+                {
+                    "value": 35,
+                    "name": "西屏街道",
+                    "unit": "亩"
+                },
+                {
+                    "value": 34,
+                    "name": "水南街道",
+                    "unit": "亩"
+                },
+                {
+                    "value": 33,
+                    "name": "望松街道",
+                    "unit": "亩"
+                },
+                {
+                    "value": 25,
+                    "name": "竹源乡",
+                    "unit": "亩"
+                },
+                {
+                    "value": 24,
+                    "name": "三都乡",
+                    "unit": "亩"
+                },
+                {
+                    "value": 18,
+                    "name": "四都乡",
+                    "unit": "亩"
+                }
+            ]
+        }
+    },
+    "rightContent": {
+        "child1": {
+            "title": "行业分布",
+            "content": [
+                {
+                    "value": 335,
+                    "name": "黑色金属冶炼和压延加工业",
+                    "unit": "家"
+                },
+                {
+                    "value": 310,
+                    "name": "电气机械和器材制造业",
+                    "unit": "家"
+                },
+                {
+                    "value": 234,
+                    "name": "橡胶和塑料制品业",
+                    "unit": "家"
+                },
+                {
+                    "value": 135,
+                    "name": "数字经济核心产业制造业",
+                    "unit": "家"
+                },
+                {
+                    "value": 1548,
+                    "name": "其他行业",
+                    "unit": "家"
+                }
+            ]
+        },
+        "child2": {
+            "title": "企业产值发展趋势",
+            "content": [
+                {
+                    "name": "2016年",
+                    "value": 3,
+                    "unit": "万元"
+                },
+                {
+                    "name": "2017年",
+                    "value": 9,
+                    "unit": "万元"
+                },
+                {
+                    "name": "2018年",
+                    "value": 4,
+                    "unit": "万元"
+                },
+                {
+                    "name": "2019年",
+                    "value": 7,
+                    "unit": "万元"
+                },
+                {
+                    "name": "2020年",
+                    "value": 6,
+                    "unit": "万元"
+                }
+            ]
+        },
+        "child3": {
+            "title": "企业税收发展趋势",
+            "content": [
+                {
+                    "name": "2016年",
+                    "value": 3,
+                    "unit": "万元"
+                },
+                {
+                    "name": "2017年",
+                    "value": 9,
+                    "unit": "万元"
+                },
+                {
+                    "name": "2018年",
+                    "value": 4,
+                    "unit": "万元"
+                },
+                {
+                    "name": "2019年",
+                    "value": 7,
+                    "unit": "万元"
+                },
+                {
+                    "name": "2020年",
+                    "value": 6,
+                    "unit": "万元"
+                }
+            ]
+        }
+    }
+}

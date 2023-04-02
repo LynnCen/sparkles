@@ -1,0 +1,229 @@
+{
+  "industrial": {
+    "title": "产业布局",
+    "entitle": "Industrial Distribution",
+    "subtitleNum": 6,
+    "listData": [
+      {
+        "title": "办公区",
+        "imageUrl": "./images/digitalFarm/办公区icon.svg"
+      },
+      {
+        "title": "苗木区",
+        "imageUrl": "./images/digitalFarm/苗木icon.svg"
+      },
+      {
+        "title": "大棚区",
+        "imageUrl": "./images/digitalFarm/大棚区icon.svg"
+      },
+      {
+        "title": "养殖区",
+        "imageUrl": "./images/digitalFarm/养殖区icon.svg"
+      },
+      {
+        "title": "消防设施",
+        "imageUrl": "./images/digitalFarm/消防设施icon.svg"
+      },
+      {
+        "title": "地下管网",
+        "imageUrl": "./images/digitalFarm/地下管网icon.svg"
+      }
+    ]
+  },
+  "production": {
+    "title": "生产销售",
+    "entitle": "Production and sales",
+    "subtitleNum": 3,
+    "listData": [
+      {
+        "title": "蔬菜",
+        "number": 1234.67,
+        "imageUrl": "./images/digitalFarm/蔬菜icon.svg"
+      },
+      {
+        "title": "水果",
+        "number": 1234.67,
+        "imageUrl": "./images/digitalFarm/水果icon.svg"
+      },
+      {
+        "title": "深加工",
+        "number": 1234.67,
+        "imageUrl": "./images/digitalFarm/深加工icon.svg"
+      }
+    ]
+  },
+  "atmosphere": {
+    "title": "天气预报",
+    "enTitle": "Weather forecast",
+    "title2": "气象信息",
+    "enTitle2": "Meteorological information",
+    "icon": "./images/geologicHazard/weizhi.png",
+    "icons": {
+      "晴": "./images/geologicHazard/晴.svg",
+      "云": "./images/geologicHazard/云.svg",
+      "阴": "./images/geologicHazard/阴.svg",
+      "小雨": "./images/geologicHazard/小雨.svg",
+      "中雨": "./images/geologicHazard/中雨.svg",
+      "阵雨": "./images/geologicHazard/阵雨.svg",
+      "大雨": "./images/geologicHazard/大雨.svg"
+    },
+    "data": [
+      {
+        "key": "wea",
+        "name": "当前天气",
+        "value": "",
+        "avatar": "./images/geologicHazard/晴.svg"
+      },
+      {
+        "key": "tem",
+        "name": "温度℃",
+        "value": "",
+        "unit": "",
+        "avatar": "./images/geologicHazard/temperature.svg"
+      },
+      {
+        "key": "humidity",
+        "name": "相对湿度%",
+        "value": "",
+        "avatar": "./images/geologicHazard/humidity.svg"
+      },
+      {
+        "key": [
+          "air",
+          "air_level"
+        ],
+        "name": "空气质量",
+        "value": "",
+        "unit": "",
+        "avatar": "./images/geologicHazard/air.svg"
+      },
+      {
+        "key": "win_speed",
+        "name": "风力风向",
+        "value": "",
+        "unit": "级",
+        "avatar": "./images/geologicHazard/wind.svg"
+      }
+    ]
+  },
+  "internet": {
+    "title": "物联网",
+    "entitle": "Internet of Things",
+    "listNum": 12,
+    "pointImg": "./images/digitalFarm/coordinate.png",
+    "listData": [
+      [
+        {
+          "key": 1,
+          "title": "XXX品种大棚",
+          "temperature": 25,
+          "humidity": 46,
+          "switch1": false,
+          "switch2": true,
+          "imageUrl": "./images/digitalFarm/pic1.png"
+        },
+        {
+          "key": 2,
+          "title": "XXX品种大棚",
+          "temperature": 22,
+          "humidity": 76,
+          "switch1": true,
+          "switch2": false,
+          "imageUrl": "./images/digitalFarm/pic2.png"
+        },
+        {
+          "key": 3,
+          "title": "XXX品种大棚",
+          "temperature": 26,
+          "humidity": 69,
+          "switch1": true,
+          "switch2": false,
+          "imageUrl": "./images/digitalFarm/pic3.png"
+        },
+        {
+          "key": 4,
+          "title": "XXX品种大棚",
+          "temperature": 20,
+          "humidity": 66,
+          "switch1": false,
+          "switch2": false,
+          "imageUrl": "./images/digitalFarm/pic4.png"
+        },
+        {
+          "key": 5,
+          "title": "XXX品种大棚",
+          "temperature": 25,
+          "humidity": 71,
+          "switch1": true,
+          "switch2": false,
+          "imageUrl": "./images/digitalFarm/pic5.png"
+        },
+        {
+          "key": 6,
+          "title": "XXX品种大棚",
+          "temperature": 20,
+          "humidity": 45,
+          "switch1": false,
+          "switch2": true,
+          "imageUrl": "./images/digitalFarm/pic6.png"
+        },
+        {
+          "key": 7,
+          "title": "XXX品种大棚",
+          "temperature": 24,
+          "humidity": 55,
+          "switch1": false,
+          "switch2": true,
+          "imageUrl": "./images/digitalFarm/pic7.png"
+        },
+        {
+          "key": 8,
+          "title": "XXX品种大棚",
+          "temperature": 25,
+          "humidity": 82,
+          "switch1": false,
+          "switch2": false,
+          "imageUrl": "./images/digitalFarm/pic8.png"
+        }
+      ],
+      [
+        {
+          "key": 9,
+          "title": "XXX品种大棚",
+          "temperature": 25,
+          "humidity": 46,
+          "switch1": false,
+          "switch2": true,
+          "imageUrl": "./images/digitalFarm/pic1.png"
+        },
+        {
+          "key": 10,
+          "title": "XXX品种大棚",
+          "temperature": 22,
+          "humidity": 76,
+          "switch1": true,
+          "switch2": false,
+          "imageUrl": "./images/digitalFarm/pic2.png"
+        },
+        {
+          "key": 11,
+          "title": "XXX品种大棚",
+          "temperature": 26,
+          "humidity": 69,
+          "switch1": true,
+          "switch2": false,
+          "imageUrl": "./images/digitalFarm/pic3.png"
+        },
+        {
+          "key": 12,
+          "title": "XXX品种大棚",
+          "temperature": 20,
+          "humidity": 66,
+          "switch1": false,
+          "switch2": false,
+          "imageUrl": "./images/digitalFarm/pic4.png"
+        }
+      ]
+    ]
+  }
+}

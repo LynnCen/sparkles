@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=100%, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>测试</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    html,
+    body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .container {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .containerTwo {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 50%;
+      overflow: hidden;
+      height: 100%;
+
+    }
+
+    .containerOne {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 50%;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .line {
+      position: absolute;
+      left: 50%;
+      margin-left: -2px;
+      width: 4px;
+      height: 100%;
+      background: white;
+      cursor: col-resize;
+    }
+
+    .line.vertical {
+      left: 0;
+      margin-left: 0;
+      top: 50%;
+      margin-top: -2px;
+      width: 100%;
+      height: 4px;
+      cursor: row-resize;
+    }
+
+    .alignToggle {
+      position: absolute;
+      right: 60px;
+      bottom: 20px;
+      width: 30px;
+      height: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 4;
+      cursor: pointer;
+    }
+
+    .single-toggle {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      width: 30px;
+      height: 30px;
+      z-index: 4;
+      background-image: url("./images/single_toggle.png");
+      background-size: contain;
+      cursor: pointer;
+    }
+
+    .align-toggle {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -15px;
+      margin-left: -15px;
+      width: 30px;
+      height: 30px;
+      z-index: 4;
+      background-size: contain;
+      background-image: url("./images/horizontal_toggle.png");
+    }
+
+    .align-toggle.vertical {
+      background-image: url("./images/vertical_toggle.png");
+    }
+
+    .panBtn {
+      position: absolute;
+      right: 100px;
+      bottom: 20px;
+      width: 30px;
+      height: 30px;
+      background: rgba(130, 130, 0, 0.6);
+      z-index: 4;
+    }
+
+    /*.showBtn {*/
+    /*position: absolute;*/
+    /*right: 20px;*/
+    /*bottom: 60px;*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*background: rgba(22, 121, 235, 0.6);*/
+    /*z-index: 4;*/
+    /*}*/
+  </style>
+</head>
+
+<body>
+  <div class="containerOne">
+    <!-- <iframe name="One"
+      src="/container.html?url=https://highdata.oss-cn-hangzhou.aliyuncs.com/20181219lishuigongan/lsZB416-IOS/"
+      frameborder="no" style="position: absolute;top:0px;"></iframe> -->
+    <iframe name="One" src="/container.html?url=http://192.168.1.198/SWLH_20190801/a3x/" frameborder="no"
+      style="position: absolute;top:0px;"></iframe>
+  </div>
+  <div class="containerTwo">
+    <!-- <iframe name="Two" src="/container.html?url=http://qiniu.vrplanner.cn/416a3x/" frameborder="no"
+      style="position: absolute;bottom:0px;right: 0px;"></iframe> -->
+    <iframe name="Two" src="/container.html?url=http://192.168.1.198/SWLH_20190801_XF/a3x/" frameborder="no"
+      style="position: absolute;bottom:0px;right: 0px;"></iframe>
+  </div>
+  <div class="line" draggable="true">
+
+  </div>
+  <!--<div class="panBtn"></div>-->
+  <div class="align-toggle" title="垂直/水平模式切换"></div>
+  <div class="single-toggle" title="联动/独立模式切换"></div>
+  <!--<div class="showBtn"></div>-->
+</body>
+<script>
+  let dragType = "vertical", modelType = "together", oneMaps, twoMaps, isShow = true;
+  const line = document.getElementsByClassName("line")[0];
+  const containerOne = document.getElementsByClassName("containerOne")[0];
+  const iframeOne = containerOne.children[0];
+  const containerTwo = document.getElementsByClassName("containerTwo")[0];
+  const iframeTwo = containerTwo.children[0];
+  const alignToggle = document.getElementsByClassName("align-toggle")[0];
+  const singleToggle = document.getElementsByClassName("single-toggle")[0];
+  // const showBtn = document.getElementsByClassName("showBtn")[0];
+
+  const maps = function (a, b, c, d) {
+    this.m1 = a;
+    this.v1 = b;
+    this.m2 = c;
+    this.v2 = d;
+    this.p = null;
+    const click = () => {
+      const m1 = this.m1;
+      const m2 = this.m2;
+      const v1 = this.v1;
+      const v2 = this.v2;
+      const polygon1 = new polygon("polygonLayer", m1, v1);
+      const polygon2 = new polygon("polygonLayer", m2, v2);
+      const p1 = polygon1.init();
+      const p2 = polygon2.init();
+      const STATE_CREATE = "create";
+      const STATE_ADD = "add";
+
+      m1.bindEvent("click", (e) => {
+        const geo = e.getGeoLocation();
+        if (e.isLeftClick()) {
+          if (geo) {
+            p1.addVertex(geo);
+            const geo1 = new v2.GeoLocation(geo.x(), geo.y(), geo.z());
+            p2.addVertex(geo1);
+          }
+        } else if (e.isRightClick()) {
+          m2.unbindEvent("click");
+          m1.unbindEvent("click");
+        }
+      });
+      m2.bindEvent("click", (e) => {
+        const geo = e.getGeoLocation();
+        if (e.isLeftClick()) {
+          if (geo) {
+            const geo1 = new v1.GeoLocation(geo.x(), geo.y(), geo.z());
+            p1.addVertex(geo1);
+            p2.addVertex(geo);
+          }
+        } else if (e.isRightClick()) {
+          m2.unbindEvent("click");
+          m2.unbindEvent("click");
+        }
+      })
+    }
+
+    const polygon = function (i, m, v) {
+      this.id = i;
+      this.m = m;
+      this.v = v;
+      this.layer = this.m.getLayerById(i) || new this.v.Layer.FeatureLayer(i);
+      const getLayerId = () => {
+        return this.id;
+      }
+      const getLayer = () => {
+        return this.layer;
+      }
+      const init = () => {
+        const layer = this.layer;
+        const v = this.v;
+        const m = this.m;
+        const polygon = new v.Feature.Polygon();
+        const style = new v.Style.ExtrudeStyle();
+        style.setColor(new v.Color("#ffffff"));
+        style.setOpacity(0.7);
+        style.setHeight(40);
+        polygon.setStyle(style);
+        m.addLayer(layer);
+        layer.addFeature(polygon);
+        return polygon;
+      }
+      return {
+        getLayerId,
+        getLayer,
+        init
+      }
+    }
+    return {
+      click,
+      polygon
+    }
+  }
+
+  function updatePosition(position, lookAt) {
+    One.window.setPosition(position.x(), position.y(), position.z(), lookAt.x(), lookAt.y(), lookAt.z())
+    Two.window.setPosition(position.x(), position.y(), position.z(), lookAt.x(), lookAt.y(), lookAt.z())
+  }
+
+  const interval = setInterval(() => {
+    if (One.window.maps && Two.window.maps) {
+      oneMaps = One.window.maps;
+      twoMaps = Two.window.maps;
+      const webMap = new maps(oneMaps, One.window.vrplanner, twoMaps, Two.window.vrplanner);
+      webMap.click();
+      clearInterval(interval);
+    }
+  }, 100);
+  const iframe = document.getElementsByTagName("iframe");
+  window.onload = function () {
+    [...iframe].map((item, index) => {
+      item.width = window.innerWidth;
+      item.height = window.innerHeight;
+    });
+  }
+  window.addEventListener("resize", () => {
+    [...iframe].map((item, index) => {
+      item.width = window.innerWidth;
+      item.height = window.innerHeight;
+    });
+  })
+  alignToggle.onclick = () => {
+    let isVertical = dragType === "level";
+    const isTogether = modelType === "together";
+    isVertical ? dragType = "vertical" : dragType = "level";
+    ModelChange(isTogether, isVertical, true);
+  };
+  singleToggle.onclick = () => {
+    const isVertical = dragType === "vertical";
+    const isTogether = modelType === "self";
+    line.draggable = isTogether;
+    isTogether ? modelType = "together" : modelType = "self";
+    ModelChange(isTogether, isVertical, false);
+  };
+
+  const ModelChange = (isTogether, isVertical, isToggle) => {
+    const height = window.innerHeight;
+    const width = window.innerWidth;
+    if (isToggle) {
+      line.classList.toggle("vertical");
+      alignToggle.classList.toggle("vertical");
+    }
+    line.removeAttribute("style");
+    alignToggle.removeAttribute("style");
+    // line.style.height = (isVertical ? height : 4) + "px";
+    // line.style.top = (isVertical ? 0 : height / 2) + "px";
+    // // line.style.left = (isVertical ? width / 2 : 0) + "px";
+    // line.style.width = (isVertical ? 4 : width) + "px";
+    // line.style.cursor = (isVertical ? "col-resize" : "row-resize");
+
+    containerOne.style.width = (isVertical ? width / 2 : width) + "px";
+    containerOne.style.height = (isVertical ? height : height / 2) + "px";
+
+    iframeOne.height = (isVertical ? height : (isTogether ? height : height / 2)) + "px";
+    iframeOne.width = (isVertical ? (isTogether ? width : width / 2) : width) + "px";
+
+    containerTwo.style.width = (isVertical ? width / 2 : width) + "px";
+    containerTwo.style.height = (isVertical ? height : height / 2) + "px";
+    iframeTwo.height = (isVertical ? height : (isTogether ? height : height / 2)) + "px";
+    iframeTwo.width = (isVertical ? (isTogether ? width : width / 2) : width) + "px";
+
+  };
+  const drag = (x, y) => {
+    const isVertical = dragType === "vertical";
+    const isTogether = modelType === "together";
+    line.style.left = (isVertical ? x : 0) + "px";
+    line.style.top = (isVertical ? 0 : y) + "px";
+    alignToggle.style.left = (isVertical ? x : "50%") + "px";
+    alignToggle.style.top = (isVertical ? "50%" : y) + "px";
+    isVertical ? (
+      (containerOne.style.width = x + "px",
+        containerTwo.style.width = (window.innerWidth - x) + "px")
+    ) : (
+        containerOne.style.height = y + "px",
+        containerTwo.style.height = (window.innerHeight - y) + "px"
+      );
+  };
+  line.ondrag = (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+    drag(x, y);
+  };
+  line.ondragend = (e) => {
+    const x = e.clientX;
+    const y = e.screenY;
+    drag(x, y);
+  }
+</script>
+
+</html>

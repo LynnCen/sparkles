@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="523.054" height="197.45" viewBox="0 0 523.054 197.45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.001" stop-color="#2489ea" stop-opacity="0"/>
+      <stop offset="0.344" stop-color="#17a3e4" stop-opacity="0.361"/>
+      <stop offset="0.797" stop-color="#08c4dc" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#02d2da"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.001" stop-color="#2489ea" stop-opacity="0"/>
+      <stop offset="0.416" stop-color="#15a9e2" stop-opacity="0.439"/>
+      <stop offset="0.819" stop-color="#07c6dc" stop-opacity="0.843"/>
+      <stop offset="1" stop-color="#02d2da"/>
+    </linearGradient>
+  </defs>
+  <g id="组_1593" data-name="组 1593" transform="translate(-2598.936 -1102.132)">
+    <text id="人数" transform="translate(2598.936 1119.132)" fill="#fff" font-size="16" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">人数</tspan></text>
+    <text id="_0" data-name="0" transform="translate(2614.8 1274.24)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan></text>
+    <text id="城镇医保" transform="translate(2652.086 1294.582)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">城镇医保</tspan></text>
+    <text id="离退休保险" transform="translate(2888.84 1294.582)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">离退休保险</tspan></text>
+    <text id="新融合医保" transform="translate(2764.884 1294.582)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">新融合医保</tspan></text>
+    <text id="残疾人保险" transform="translate(3014.821 1294.582)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">残疾人保险</tspan></text>
+    <text id="_2" data-name="2" transform="translate(2614.8 1242.715)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2</tspan></text>
+    <text id="_4" data-name="4" transform="translate(2614.8 1211.189)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">4</tspan></text>
+    <text id="_6" data-name="6" transform="translate(2614.8 1179.663)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">6</tspan></text>
+    <text id="_8" data-name="8" transform="translate(2614.8 1148.138)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">8</tspan></text>
+    <line id="直线_29" data-name="直线 29" x2="484.26" transform="translate(2637.73 1267.632)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_30" data-name="直线 30" y1="6.72" transform="translate(2693.176 1267.813)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_31" data-name="直线 31" y1="6.72" transform="translate(2816.516 1267.813)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_32" data-name="直线 32" y1="6.72" transform="translate(2938.932 1267.813)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_33" data-name="直线 33" y1="6.72" transform="translate(3064.088 1267.813)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_34" data-name="直线 34" x2="482.042" transform="translate(2637.73 1236.378)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <line id="直线_35" data-name="直线 35" x2="482.042" transform="translate(2637.73 1205.124)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <line id="直线_36" data-name="直线 36" x2="482.042" transform="translate(2637.73 1173.87)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <line id="直线_37" data-name="直线 37" x2="482.042" transform="translate(2637.73 1142.616)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <g id="组_43" data-name="组 43" transform="translate(0 0)">
+      <text id="_7" data-name="7" transform="translate(2687.804 1164.65)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">7</tspan></text>
+      <rect id="矩形_33" data-name="矩形 33" width="36" height="91.283" transform="translate(2675.545 1175.82)" fill="url(#linear-gradient)"/>
+      <rect id="矩形_34" data-name="矩形 34" width="36" height="3.96" transform="translate(2675.721 1171.901)" fill="#00f8ec"/>
+    </g>
+    <g id="组_44" data-name="组 44" transform="translate(0 0)">
+      <text id="_6-2" data-name="6" transform="translate(2809.898 1189.078)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">6</tspan></text>
+      <rect id="矩形_35" data-name="矩形 35" width="36" height="61.283" transform="translate(2798.366 1205.82)" fill="url(#linear-gradient-2)"/>
+      <rect id="矩形_36" data-name="矩形 36" width="36" height="3.96" transform="translate(2798.542 1201.901)" fill="#00f8ec"/>
+    </g>
+    <g id="组_46" data-name="组 46" transform="translate(0 0)">
+      <text id="_7-2" data-name="7" transform="translate(2932.63 1164.65)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">7</tspan></text>
+      <g id="组_45" data-name="组 45">
+        <rect id="矩形_37" data-name="矩形 37" width="36" height="91.283" transform="translate(2921.188 1175.82)" fill="url(#linear-gradient-2)"/>
+        <rect id="矩形_38" data-name="矩形 38" width="36" height="3.96" transform="translate(2921.364 1171.901)" fill="#00f8ec"/>
+      </g>
+    </g>
+    <g id="组_48" data-name="组 48" transform="translate(0 0)">
+      <text id="_7-3" data-name="7" transform="translate(3055.453 1164.65)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">7</tspan></text>
+      <g id="组_47" data-name="组 47">
+        <rect id="矩形_39" data-name="矩形 39" width="36" height="91.283" transform="translate(3044.01 1175.82)" fill="url(#linear-gradient-2)"/>
+        <rect id="矩形_40" data-name="矩形 40" width="36" height="3.96" transform="translate(3044.186 1171.901)" fill="#00f8ec"/>
+      </g>
+    </g>
+  </g>
+</svg>

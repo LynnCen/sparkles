@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>诊所</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI主框架-类型1-基础模式" transform="translate(-1525.000000, -336.000000)" fill-rule="nonzero">
+            <g id="特殊场所分布" transform="translate(1500.000000, 175.000000)">
+                <g id="编组-2" transform="translate(14.000000, 161.000000)">
+                    <g id="诊所" transform="translate(11.000000, 0.000000)">
+                        <path d="M0,16 L0,32 L12,32 L12,14 L2,14 L2,14 C0.895439151,14 0,14.8954308 0,16 C0,16 0,16 0,16 L0,16 Z M4,18 L8,18 L8,22 L4,22 L4,18 Z M4,27 L8,27 L8,31 L4,31 L4,27 Z" id="形状" fill="#02D281"></path>
+                        <path d="M29,0 C30.6568572,0 32,1.3431649 32,3.00001852 L32,3.00001852 L32,32 L25.379999,32 L25.379999,23.0800004 L20.620001,23.0800004 L20.620001,32 L14,32 L14,3.00001123 C14,1.3431436 15.3431568,0 17,0 L17,0 Z M24,5 L22,5 L22,7.95999667 L19,7.95999667 L19,9.95999737 L22,9.95999737 L22,13 L24,13 L24,9.93998887 L27,9.94001409 L27,8.00001366 L24,8.00001366 L24,5 Z" id="形状结合" fill="#00BAFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

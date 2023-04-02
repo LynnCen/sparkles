@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="42px" viewBox="0 0 48 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>户数icon</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="行政村级" transform="translate(-269.000000, -261.000000)" fill-rule="nonzero">
+            <g id="两侧数据" transform="translate(40.000000, 175.000000)">
+                <g id="住户数量" transform="translate(229.000000, 80.000000)">
+                    <g id="户数icon" transform="translate(0.000000, 6.000000)">
+                        <polygon id="路径" fill="#00BAFF" points="20.2254716 42 7.54369907 42 7.54369907 24.5009117 23.9973211 9.45246158 40.4509432 24.5009117 40.4509432 42 27.7691707 42 27.7691707 29.7522792 20.2254716 29.7522792"></polygon>
+                        <polygon id="路径" fill="#02D281" points="3.08605871 25.5511852 0 21.7001823 23.9973211 1.0658141e-14 33.2554973 8.40218807 33.2554973 1.40036468 40.4563009 1.40036468 40.4563009 15.0484501 48 21.7001823 44.9139413 25.5511852 23.9973211 6.65173222"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

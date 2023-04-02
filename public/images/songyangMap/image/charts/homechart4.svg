@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="537.197" height="186.352" viewBox="0 0 537.197 186.352">
+  <defs>
+    <filter id="耕地面积" x="193.657" y="114.951" width="125.4" height="71.4" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.567" result="blur"/>
+      <feFlood flood-color="#0ee264" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_222_亩" x="215.442" y="31.017" width="89" height="84" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-2"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="林地面积" x="3.8" y="114.952" width="125.4" height="71.4" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.567" result="blur-3"/>
+      <feFlood flood-color="#e8b115" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_11472_亩" x="0" y="31.017" width="133" height="84" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-4"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="行政区域面积" x="371.797" y="114.952" width="165.4" height="71.4" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.567" result="blur-5"/>
+      <feFlood flood-color="#1384ea" flood-opacity="0.918"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_8.34_平方公里" x="400.693" y="31.017" width="111" height="84" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-6"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_1574" data-name="组 1574" transform="translate(-2589.512 -881.449)">
+    <g id="组_1572" data-name="组 1572">
+      <g transform="matrix(1, 0, 0, 1, 2589.51, 881.45)" filter="url(#耕地面积)">
+        <text id="耕地面积-2" data-name="耕地面积" transform="translate(216.36 158.65)" fill="#faffff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">耕地面积</tspan></text>
+      </g>
+      <g id="组_1569" data-name="组 1569">
+        <g transform="matrix(1, 0, 0, 1, 2589.51, 881.45)" filter="url(#_222_亩)">
+          <text id="_222_亩-2" data-name="222
+/亩" transform="translate(259.94 79.52)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="-33.302" y="0">222</tspan><tspan font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400"><tspan x="-14.272" y="20">/亩</tspan></tspan></text>
+        </g>
+        <g id="组_89" data-name="组 89" transform="translate(0 -3.28)">
+          <g id="组_1542" data-name="组 1542" transform="translate(-0.809 3.275)">
+            <path id="路径_1329" data-name="路径 1329" d="M2812.034,919.5a46.876,46.876,0,0,1,36.664-17.625v-15c-19.908,0-37.389,8.743-48.728,23.333Z" fill="#71797b" opacity="0.23"/>
+            <path id="路径_1330" data-name="路径 1330" d="M2881.338,896.975c17.15,11.114,28.724,30.2,28.724,51.876a62.126,62.126,0,1,1-111.708-37.441l1.249-1.6c12.119-13.612,28.809-23.089,48.332-23.089q.382,0,.763,0" fill="none" stroke="#858d90" stroke-miterlimit="10" stroke-width="6.086"/>
+            <path id="路径_1331" data-name="路径 1331" d="M2878.455,894.11a59.222,59.222,0,0,0-27.219-7.231l-.554,15.169a45.265,45.265,0,0,1,19.909,5.217Z" fill="#e2d71a" opacity="0.4"/>
+            <path id="路径_1332" data-name="路径 1332" d="M2882.029,896.22l-8.326,12.858c12.918,8.251,21.207,22.943,21.207,39.773a46.975,46.975,0,1,1-93.95,0c0-10.587,4.988-21.568,10.9-29.424l-12.055-9.4c-7.625,10.3-13.839,25.026-13.839,38.823a61.971,61.971,0,1,0,123.943,0C2909.907,926.648,2899.029,907.169,2882.029,896.22Z" fill="#71797b" opacity="0.23"/>
+            <path id="路径_1333" data-name="路径 1333" d="M2877.979,894.941a63.31,63.31,0,0,0-26.743-8.061" fill="none" stroke="#e2d71a" stroke-miterlimit="10" stroke-width="6.086"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="组_1571" data-name="组 1571">
+      <g transform="matrix(1, 0, 0, 1, 2589.51, 881.45)" filter="url(#林地面积)">
+        <text id="林地面积-2" data-name="林地面积" transform="translate(26.5 158.65)" fill="#faffff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">林地面积</tspan></text>
+      </g>
+      <g id="组_1568" data-name="组 1568">
+        <g id="组_87" data-name="组 87" transform="translate(0 0)">
+          <path id="路径_113" data-name="路径 113" d="M2620.111,919.5a46.875,46.875,0,0,1,36.664-17.625v-15c-19.908,0-37.389,8.743-48.728,23.333Z" fill="#71797b" opacity="0.23"/>
+          <path id="路径_114" data-name="路径 114" d="M2659.313,886.88l-.554,15.168c25.272.767,44.228,21.345,44.228,46.8a46.975,46.975,0,0,1-93.95,0c0-10.587,3.858-19.973,9.768-27.829l-12.374-9.612a63.729,63.729,0,0,0-12.39,37.441,61.971,61.971,0,1,0,123.943,0C2717.984,915.111,2692.868,887.651,2659.313,886.88Z" fill="#0e5f3b" opacity="0.4"/>
+          <path id="路径_115" data-name="路径 115" d="M2607.68,909.814a62.005,62.005,0,0,1,48.332-23.089q.383,0,.763,0" fill="none" stroke="#858d90" stroke-miterlimit="10" stroke-width="6.086"/>
+          <path id="路径_116" data-name="路径 116" d="M2659.313,886.88c32.267,2.247,58.826,29.133,58.826,61.971a62.126,62.126,0,1,1-111.708-37.441" fill="none" stroke="#11ed9d" stroke-miterlimit="10" stroke-width="6.086"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 2589.51, 881.45)" filter="url(#_11472_亩)">
+          <text id="_11472_亩-2" data-name="11472
+/亩" transform="translate(66.5 79.52)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="-55.503" y="0">11472</tspan><tspan font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400"><tspan x="-14.272" y="20">/亩</tspan></tspan></text>
+        </g>
+      </g>
+    </g>
+    <g id="组_1573" data-name="组 1573">
+      <g transform="matrix(1, 0, 0, 1, 2589.51, 881.45)" filter="url(#行政区域面积)">
+        <text id="行政区域面积-2" data-name="行政区域面积" transform="translate(394.5 158.65)" fill="#faffff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">行政区域面积</tspan></text>
+      </g>
+      <g id="组_1570" data-name="组 1570">
+        <g id="组_1543" data-name="组 1543" transform="translate(-35.315 106.72) rotate(-2)">
+          <path id="路径_1334" data-name="路径 1334" d="M3049.237,886.88l-.554,15.168c25.272.767,44.229,21.345,44.229,46.8a46.975,46.975,0,0,1-93.95,0c0-10.587,4.935-21.591,10.845-29.446l-11.9-9.445c-7.624,10.3-13.945,25.094-13.945,38.891a61.972,61.972,0,1,0,123.944,0C3107.909,915.111,3082.792,887.651,3049.237,886.88Z" fill="#0e365e" opacity="0.4"/>
+          <path id="路径_1335" data-name="路径 1335" d="M3028.845,889.037a62.261,62.261,0,0,1,15.138-1.857c.255,0,.509,0,.763.005" fill="none" stroke="#858d90" stroke-miterlimit="10" stroke-width="6.086"/>
+          <path id="路径_1336" data-name="路径 1336" d="M3024.716,890.724a59.743,59.743,0,0,0-26.745,19.489l12.064,9.288a47.108,47.108,0,0,1,19.778-14.475Z" fill="#0e365e" opacity="0.4"/>
+          <path id="路径_1337" data-name="路径 1337" d="M3029.02,889.265l3.9,14.589a46.915,46.915,0,0,1,11.827-1.523v-15A64.728,64.728,0,0,0,3029.02,889.265Z" fill="#71797b" opacity="0.23"/>
+          <path id="路径_1338" data-name="路径 1338" d="M3049.237,886.88c32.267,2.247,58.826,29.133,58.826,61.971a62.126,62.126,0,1,1-111.707-37.441l1.248-1.6a62.256,62.256,0,0,1,27.042-19.345" fill="none" stroke="#1384ea" stroke-miterlimit="10" stroke-width="6.086"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 2589.51, 881.45)" filter="url(#_8.34_平方公里)">
+          <text id="_8.34_平方公里-2" data-name="8.34
+/平方公里" transform="translate(456.19 79.52)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="-38.443" y="0">8.34</tspan><tspan font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400"><tspan x="-44.272" y="20">/平方公里</tspan></tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="683.572" height="521.614" viewBox="0 0 683.572 521.614">
+  <defs>
+    <filter id="_274次" x="3.5" y="76.181" width="108" height="68" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_213次" x="1.037" y="173.003" width="108" height="68" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-2"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#02d2da"/>
+      <stop offset="0.046" stop-color="#05cbdb" stop-opacity="0.91"/>
+      <stop offset="0.182" stop-color="#0db9df" stop-opacity="0.671"/>
+      <stop offset="0.319" stop-color="#14aae2" stop-opacity="0.467"/>
+      <stop offset="0.456" stop-color="#199ee5" stop-opacity="0.298"/>
+      <stop offset="0.593" stop-color="#1e95e7" stop-opacity="0.169"/>
+      <stop offset="0.729" stop-color="#218ee8" stop-opacity="0.075"/>
+      <stop offset="0.865" stop-color="#238ae9" stop-opacity="0.02"/>
+      <stop offset="0.999" stop-color="#2489ea" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect y="15" width="553.929" height="228.177" fill="none"/>
+    </clipPath>
+    <filter id="_55.52_" x="81.51" y="490.938" width="138" height="68" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-3"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_43.48_" x="444.542" y="278.437" width="138" height="68" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-4"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_426" x="261.294" y="426.064" width="88.189" height="68.27" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-5"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_1541" data-name="组 1541" transform="translate(-120 -709.094)">
+    <g id="组_1521" data-name="组 1521" transform="translate(-2605.545 -235.452)">
+      <text id="总走访次数_" data-name="总走访次数：" transform="translate(2739.545 1016.261)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">总走访次数：</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 2725.54, 944.55)" filter="url(#_274次)">
+        <text id="_274次-2" data-name="274次" transform="translate(14 124.68)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">274</tspan><tspan y="0" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400">次</tspan></text>
+      </g>
+    </g>
+    <g id="组_1522" data-name="组 1522" transform="translate(-2785.621 -138.63)">
+      <text id="当年走访次数_" data-name="当年走访次数：" transform="translate(2917.158 1016.261)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">当年走访次数：</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 2905.62, 847.72)" filter="url(#_213次)">
+        <text id="_213次-2" data-name="213次" transform="translate(11.54 221.5)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">213</tspan><tspan y="0" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400">次</tspan></text>
+      </g>
+    </g>
+    <g id="组_1523" data-name="组 1523" transform="translate(-6.463 190.367)">
+      <text id="走访次数统计" transform="translate(145.537 543.727)" fill="#03fbee" font-size="24" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">走访次数统计</tspan></text>
+      <path id="路径_1232" data-name="路径 1232" d="M77.5,1014.175l-6.438-8.439,6.439-8.508,6.438,8.439Z" transform="translate(55.398 -467.864)" fill="#03fbee"/>
+    </g>
+    <g id="组_1525" data-name="组 1525" transform="translate(205.758 190.367)">
+      <text id="走访率分析" transform="translate(145.537 543.727)" fill="#03fbee" font-size="24" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">走访率分析</tspan></text>
+      <path id="路径_1232-2" data-name="路径 1232" d="M77.5,1014.175l-6.438-8.439,6.439-8.508,6.438,8.439Z" transform="translate(55.398 -467.864)" fill="#03fbee"/>
+    </g>
+    <g id="组_1526" data-name="组 1526" transform="translate(-6.463 465.62)">
+      <text id="问题解决情况" transform="translate(145.537 543.727)" fill="#03fbee" font-size="24" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">问题解决情况</tspan></text>
+      <path id="路径_1232-3" data-name="路径 1232" d="M77.5,1014.175l-6.438-8.439,6.439-8.508,6.438,8.439Z" transform="translate(55.398 -467.864)" fill="#03fbee"/>
+    </g>
+    <text id="百分比" transform="translate(313.529 776.809)" fill="#fff" font-size="16" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">百分比</tspan></text>
+    <text id="_0" data-name="0" transform="translate(338.085 931.917)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan></text>
+    <text id="_2020.3" data-name="2020.3" transform="translate(355.429 952.259)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2020.3</tspan></text>
+    <text id="_2020.5" data-name="2020.5" transform="translate(512.563 952.259)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2020.5</tspan></text>
+    <text id="_2020.4" data-name="2020.4" transform="translate(432.078 952.259)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2020.4</tspan></text>
+    <text id="_2020.7" data-name="2020.7" transform="translate(666.782 952.259)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2020.7</tspan></text>
+    <text id="_2020.8" data-name="2020.8" transform="translate(738.306 952.259)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2020.8</tspan></text>
+    <text id="_25" data-name="25" transform="translate(332.221 900.392)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">25</tspan></text>
+    <text id="_50" data-name="50" transform="translate(332.221 868.865)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">50</tspan></text>
+    <text id="_75" data-name="75" transform="translate(332.221 837.34)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">75</tspan></text>
+    <text id="_100" data-name="100" transform="translate(322.221 805.814)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">100</tspan></text>
+    <line id="直线_412" data-name="直线 412" x2="441.203" transform="translate(362.322 925.31)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_413" data-name="直线 413" y1="6.72" transform="translate(387.495 925.491)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_414" data-name="直线 414" y1="6.72" transform="translate(462.121 925.491)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_415" data-name="直线 415" y1="6.72" transform="translate(542.798 925.491)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <text id="_2020.6" data-name="2020.6" transform="translate(587.723 952.259)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2020.6</tspan></text>
+    <line id="直线_416" data-name="直线 416" y1="6.72" transform="translate(623.938 925.491)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_417" data-name="直线 417" y1="6.72" transform="translate(700.241 925.491)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_419" data-name="直线 419" x2="438.984" transform="translate(362.322 894.056)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <line id="直线_420" data-name="直线 420" x2="438.984" transform="translate(362.322 862.802)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <line id="直线_421" data-name="直线 421" x2="438.984" transform="translate(362.322 831.547)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <line id="直线_422" data-name="直线 422" x2="438.984" transform="translate(362.322 800.293)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <path id="路径_1274" data-name="路径 1274" d="M3039.26,1134.707l-80.037,9.116-80.037,52.871-80.037-61.987-80.037,46.7-80.25-1.949v54.218h400.4Z" transform="translate(-2255.52 -308.345)" fill="url(#linear-gradient)"/>
+    <g id="组_1524" data-name="组 1524" transform="translate(365.468 807.609)">
+      <path id="路径_814" data-name="路径 814" d="M2639.51,1179.225l80.25,1.949,80.037-46.7,80.036,61.987,80.037-52.871,80.037-9.116" transform="translate(-2620.988 -1115.954)" fill="none" stroke="#00f8ec" stroke-miterlimit="10" stroke-width="1.326"/>
+      <g id="组_862" data-name="组 862" transform="translate(0 44.75)">
+        <circle id="椭圆_309" data-name="椭圆 309" cx="6.029" cy="6.029" r="6.029" transform="translate(12.492 12.492)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+        <circle id="椭圆_310" data-name="椭圆 310" cx="18.522" cy="18.522" r="18.522" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+      <g id="组_863" data-name="组 863" transform="translate(80.25 46.812)">
+        <circle id="椭圆_311" data-name="椭圆 311" cx="6.029" cy="6.029" r="6.029" transform="translate(12.492 12.492)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+        <circle id="椭圆_312" data-name="椭圆 312" cx="18.522" cy="18.522" r="18.522" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+      <g id="组_864" data-name="组 864" transform="translate(160.287)">
+        <circle id="椭圆_313" data-name="椭圆 313" cx="6.029" cy="6.029" r="6.029" transform="translate(12.492 12.492)" fill="#04e6db"/>
+        <circle id="椭圆_314" data-name="椭圆 314" cx="18.522" cy="18.522" r="18.522" fill="none" stroke="#04e6db" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+      <g id="组_865" data-name="组 865" transform="translate(240.324 61.987)">
+        <circle id="椭圆_315" data-name="椭圆 315" cx="6.029" cy="6.029" r="6.029" transform="translate(12.492 12.492)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+        <circle id="椭圆_316" data-name="椭圆 316" cx="18.522" cy="18.522" r="18.522" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+      <g id="组_866" data-name="组 866" transform="translate(320.361 9.67)">
+        <circle id="椭圆_317" data-name="椭圆 317" cx="6.029" cy="6.029" r="6.029" transform="translate(12.492 12.492)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+        <circle id="椭圆_318" data-name="椭圆 318" cx="18.522" cy="18.522" r="18.522" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+      <g id="组_867" data-name="组 867" transform="translate(400.398)">
+        <circle id="椭圆_319" data-name="椭圆 319" cx="6.029" cy="6.029" r="6.029" transform="translate(12.492 12.492)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+        <circle id="椭圆_320" data-name="椭圆 320" cx="18.522" cy="18.522" r="18.522" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+    </g>
+    <g id="滚动组_11" data-name="滚动组 11" transform="translate(180.24 987.53)" clip-path="url(#clip-path)" style="isolation: isolate">
+      <g id="组件_5_3" data-name="组件 5 – 3" transform="translate(0.592 10.5)">
+        <g id="组_624" data-name="组 624" transform="translate(-2589.2 -2597.08)">
+          <path id="路径_591" data-name="路径 591" d="M2886.7,2816.98a85.9,85.9,0,0,1-142.977-64.211,86.537,86.537,0,0,1,.769-11.476l-14.925-4.334a101.333,101.333,0,0,0,100.073,117.119,100.919,100.919,0,0,0,67.341-25.629Z" fill="#0dbc86"/>
+          <path id="路径_592" data-name="路径 592" d="M2829.641,2651.46a101.31,101.31,0,0,0-100.073,85.5l14.925,4.333a85.978,85.978,0,0,1,85.148-74.441h0V2651.46Z" fill="#0dbc86"/>
+          <path id="路径_593" data-name="路径 593" d="M2930.95,2752.769a101.309,101.309,0,0,0-101.309-101.309v15.392a85.9,85.9,0,0,1,57.06,150.128l10.281,11.469A101.052,101.052,0,0,0,2930.95,2752.769Z" fill="#f5d44a"/>
+        </g>
+        <g id="组_625" data-name="组 625" transform="translate(-2589.2 -2597.08)">
+          <circle id="椭圆_217" data-name="椭圆 217" cx="10.641" cy="10.641" r="10.641" transform="translate(3096.19 2640.792)" fill="none" stroke="#f5d44a" stroke-miterlimit="10" stroke-width="1.184" opacity="0.6"/>
+          <circle id="椭圆_218" data-name="椭圆 218" cx="5.011" cy="5.011" r="5.011" transform="translate(3101.821 2646.423)" fill="#f5d44a" opacity="0.2"/>
+        </g>
+        <path id="路径_594" data-name="路径 594" d="M2890.1,2692.307l28.377-41.276h177.7" transform="translate(-2589.2 -2597.08)" fill="none" stroke="#f5d44a" stroke-miterlimit="10" stroke-width="1.184" opacity="0.6"/>
+        <g id="组_626" data-name="组 626" transform="translate(-2589.2 -2597.08)">
+          <circle id="椭圆_219" data-name="椭圆 219" cx="10.641" cy="10.641" r="10.641" transform="translate(2589.2 2859.883)" fill="none" stroke="#0dbc86" stroke-miterlimit="10" stroke-width="1.184" opacity="0.6"/>
+          <circle id="椭圆_220" data-name="椭圆 220" cx="5.011" cy="5.011" r="5.011" transform="translate(2594.831 2865.513)" fill="#0dbc86" opacity="0.2"/>
+        </g>
+        <path id="路径_595" data-name="路径 595" d="M2814,2841.286l-20.638,29.022H2610.7" transform="translate(-2589.2 -2597.08)" fill="none" stroke="#0dbc86" stroke-miterlimit="10" stroke-width="1.184"/>
+        <g id="组_627" data-name="组 627" transform="translate(-2589.2 -2597.08)">
+          <text id="已解决" transform="translate(2996.805 2819.233)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">已解决</tspan></text>
+          <text id="_200个" data-name="  200个" transform="translate(3078.536 2819.233)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0" xml:space="preserve">  200</tspan><tspan y="0" font-size="16">个</tspan></text>
+          <rect id="矩形_518" data-name="矩形 518" width="12.634" height="13.467" transform="translate(2967.302 2804.653)" fill="#11bc8e"/>
+        </g>
+        <g id="组_628" data-name="组 628" transform="translate(-2589.2 -2597.08)">
+          <text id="未解决" transform="translate(2996.806 2865.548)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">未解决</tspan></text>
+          <text id="_226个" data-name="  226个" transform="translate(3078.537 2865.548)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0" xml:space="preserve">  226</tspan><tspan y="0" font-size="16">个</tspan></text>
+          <rect id="矩形_519" data-name="矩形 519" width="12.634" height="13.467" transform="translate(2967.302 2850.968)" fill="#f5d44a"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -60.83, -288.94)" filter="url(#_55.52_)">
+          <text id="_55.52_2" data-name="55.52%" transform="translate(92.01 539.44)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">55.52</tspan><tspan y="0" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400">%</tspan></text>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -60.83, -288.94)" filter="url(#_43.48_)">
+          <text id="_43.48_2" data-name="43.48%" transform="translate(455.04 326.94)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">43.48</tspan><tspan y="0" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400">%</tspan></text>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -60.83, -288.94)" filter="url(#_426)">
+          <text id="_426-2" data-name="426" transform="translate(271.83 474.56) rotate(0.23)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">426</tspan></text>
+        </g>
+        <text id="问题总数" transform="translate(182.13 140.497)" fill="#fff" font-size="30" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI"><tspan x="0" y="0">问题总</tspan><tspan y="0" font-family="YuGothicUI-Regular, Yu Gothic UI">数</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

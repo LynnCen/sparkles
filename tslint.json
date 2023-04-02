@@ -1,0 +1,50 @@
+{
+  "extends": [
+    "tslint:latest"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*.ts",
+      "src/**/*.{ts,tsx}"
+    ]
+  },
+  "rules": {
+    "member-access": false,
+    "no-var-requires": false,
+    "no-consecutive-blank-lines": false,
+    "no-empty-interface": false,
+    "quotemark": false,
+    "no-for-in-array": true,
+    "interface-name": false,
+    "no-var-keyword": true,
+    "whitespace": [
+      true
+    ],
+    "no-empty": false,
+    "ordered-imports": false,
+    "max-classes-per-file": false,
+    // 一个文件类的个数
+    "max-line-length": false,
+    "no-console": false,
+    "variable-name": false,
+    "object-literal-sort-keys": false,
+    "jsx-no-lambda": false,
+    "eofline": false,
+    "space-within-parents": false,
+    "no-submodule-imports": false,
+    "no-implicit-dependencies": false,
+    "jsx-boolean-value": false,
+    "no-trailing-whitespace": false,
+    "semicolon": false,
+    "trailing-comma": false,
+    "space-in-parents": false,
+    "typedef-whitespace": [
+      false
+    ],
+    "interface-over-type-literal": true,
+    "no-duplicate-imports": false,
+    "no-namespace": true,
+    "no-internal-module": true,
+    "no-string-literal": false
+  }
+}

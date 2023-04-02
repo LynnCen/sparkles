@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="信息提醒-指北针" transform="translate(-40.000000, -180.000000)">
+            <g id="分组-2" transform="translate(40.000000, 180.000000)">
+                <path d="M17.5,35 C7.83501688,35 0,27.1649831 0,17.5 C0,7.83501688 7.83501688,0 17.5,0 C27.1649831,0 35,7.83501688 35,17.5 C35,27.1649831 27.1649831,35 17.5,35 Z M17.5,29 C23.8512746,29 29,23.8512746 29,17.5 C29,11.1487254 23.8512746,6 17.5,6 C11.1487254,6 6,11.1487254 6,17.5 C6,23.8512746 11.1487254,29 17.5,29 Z" id="合并形状" fill-opacity="0.42" fill="#000000"></path>
+                <path d="M1.5,17.5 L3.5,17.5" id="直线" stroke-opacity="0.6" stroke="#000000" stroke-linecap="square"></path>
+                <path d="M16.5,32.5 L18.5,32.5" id="直线" stroke-opacity="0.6" stroke="#000000" stroke-linecap="square" transform="translate(17.500000, 32.500000) rotate(90.000000) translate(-17.500000, -32.500000) "></path>
+                <path d="M31.5,17.5 L33.5,17.5" id="直线-copy" stroke-opacity="0.6" stroke="#000000" stroke-linecap="square"></path>
+                <text id="N" font-family="PingFangSC-Regular, PingFang SC" font-size="5" font-weight="normal" fill="#FF0000">
+                    <tspan x="15.5" y="5">N</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

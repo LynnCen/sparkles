@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="706.289" height="114.889" viewBox="0 0 706.289 114.889">
+  <g id="组_1538" data-name="组 1538" transform="translate(-100.818 -944.66)">
+    <text id="文号" transform="translate(701 965.66)" fill="#fff" font-size="20" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">文号</tspan></text>
+    <text id="处分类型" transform="translate(267 965.66)" fill="#fff" font-size="20" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">处分类型</tspan></text>
+    <text id="受处分原因" transform="translate(413 965.66)" fill="#fff" font-size="20" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">受处分原因</tspan></text>
+    <text id="惩处时间" transform="translate(121 965.66)" fill="#fff" font-size="20" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">惩处时间</tspan></text>
+  </g>
+</svg>

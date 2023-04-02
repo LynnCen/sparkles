@@ -1,0 +1,151 @@
+{
+    "leftContent": {
+        "content1": [
+            {
+                "title": "总户籍数",
+                "unit": "(户)",
+                "number": 97,
+                "imgUrl": "./images/dtVillage/总户籍数icon.svg"
+            },
+            {
+                "title": "总人口数",
+                "unit": "(人)",
+                "number": 309,
+                "imgUrl": "./images/dtVillage/总人口数icon.svg"
+            },
+            {
+                "title": "高龄老人",
+                "unit": "(人)",
+                "number": 4,
+                "imgUrl": "./images/dtVillage/高龄老人icon.svg"
+            },
+            {
+                "title": "孤寡老人",
+                "unit": "(人)",
+                "number": 2,
+                "imgUrl": "./images/dtVillage/孤寡老人icon.svg"
+            }
+        ],
+        "content2": [
+            {
+                "title": "男女比例",
+                "unit": "(%)",
+                "imgUrl": "./images/dtVillage/人口总数icon.svg",
+                "fields": [
+                    "男",
+                    "女"
+                ],
+                "data": [
+                    {
+                        "state": "男女比例",
+                        "男": 58,
+                        "女": 42
+                    }
+                ],
+                "color": [
+                    "#0091FF",
+                    "#FF5A5A"
+                ]
+            },
+            {
+                "title": "常驻/外出比例",
+                "unit": "(%)",
+                "imgUrl": "./images/dtVillage/常驻外出icon.svg",
+                "fields": [
+                    "常驻",
+                    "外出"
+                ],
+                "data": [
+                    {
+                        "state": "常驻/外出比例",
+                        "常驻": 68,
+                        "外出": 32
+                    }
+                ],
+                "color": [
+                    "#00BAFF",
+                    "#02D281"
+                ]
+            }
+        ]
+    },
+    "video": {
+        "title": "党务视频",
+        "entitle": "Party Affairs Video",
+        "data": [
+            {
+                "name": "党务视频001",
+                "thumbnail": "./images/dtVillage/pic1.png"
+            },
+            {
+                "name": "党务视频002",
+                "thumbnail": "./images/dtVillage/pic2.png"
+            }
+        ]
+    },
+    "rightContent": {
+        "content1": {
+            "title": "房屋及林田信息",
+            "entitle": "Housing and forestry information",
+            "data": [
+                {
+                    "title": "总房屋数量 ",
+                    "unit": "(栋)",
+                    "number": 125,
+                    "imgUrl": "./images/dtVillage/总房屋数量icon.svg"
+                },
+                {
+                    "title": "危房数量 ",
+                    "unit": "(栋)",
+                    "number": 15,
+                    "imgUrl": "./images/dtVillage/危房数量icon.svg"
+                },
+                {
+                    "title": "林地面积 ",
+                    "unit": "(亩)",
+                    "number": 512,
+                    "imgUrl": "./images/dtVillage/林地面积icon.svg"
+                },
+                {
+                    "title": "耕地面积 ",
+                    "unit": "(亩)",
+                    "number": 320,
+                    "imgUrl": "./images/dtVillage/耕地面积icon.svg"
+                }
+            ]
+        },
+        "content2": {
+            "title": "休闲旅游设施",
+            "entitle": "Leisure and tourism facilities",
+            "data1": [
+                {
+                    "title": "旅游景点 ",
+                    "unit": "(个)",
+                    "number": 1,
+                    "imgUrl": "./images/dtVillage/旅游景点icon.svg"
+                },
+                {
+                    "title": "停车场 ",
+                    "unit": "(个)",
+                    "number": 1,
+                    "imgUrl": "./images/dtVillage/停车场icon.svg"
+                },
+                {
+                    "title": "农家乐 ",
+                    "unit": "(家)",
+                    "number": 2,
+                    "imgUrl": "./images/dtVillage/农家乐icon.svg"
+                }
+            ],
+            "data2": {
+                "title1": "民宿 ",
+                "title2": "客房 ",
+                "unit1": "(家)",
+                "unit2": "(间)",
+                "number1": 3,
+                "number2": 12,
+                "imgUrl": "./images/dtVillage/民宿icon.svg"
+            }
+        }
+    }
+}

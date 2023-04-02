@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="488.535" height="206.639" viewBox="0 0 488.535 206.639">
+  <defs>
+    <filter id="_386" x="61.768" y="85.237" width="88.189" height="68.27" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_1575" data-name="组 1575" transform="translate(-95.383 -1070.093)">
+    <g id="组_369" data-name="组 369" transform="translate(3456.694 -1656.423)">
+      <text id="第二产业" transform="translate(-3018.508 2823.449)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">第二产业</tspan></text>
+      <text id="_6人" data-name="  6人" transform="translate(-2936.776 2823.449)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0" xml:space="preserve">  6</tspan><tspan y="0" font-size="16">人</tspan></text>
+      <rect id="矩形_240" data-name="矩形 240" width="12.634" height="13.467" transform="translate(-3048.01 2808.869)" fill="#11bc8e"/>
+    </g>
+    <g id="组_370" data-name="组 370" transform="translate(3456.694 -1656.423)">
+      <text id="第一产业" transform="translate(-3018.507 2779.587)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">第一产业</tspan></text>
+      <text id="_353人" data-name="  353人" transform="translate(-2936.775 2779.587)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0" xml:space="preserve">  353</tspan><tspan y="0" font-size="16">人</tspan></text>
+      <rect id="矩形_241" data-name="矩形 241" width="12.634" height="13.467" transform="translate(-3048.01 2765.007)" fill="#f97b26"/>
+    </g>
+    <g id="组_371" data-name="组 371" transform="translate(3456.694 -1656.423)">
+      <text id="第三产业" transform="translate(-3018.507 2869.764)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">第三产业</tspan></text>
+      <text id="_27人" data-name="  27人" transform="translate(-2936.775 2869.764)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0" xml:space="preserve">  27</tspan><tspan y="0" font-size="16">人</tspan></text>
+      <rect id="矩形_242" data-name="矩形 242" width="12.634" height="13.467" transform="translate(-3048.01 2855.184)" fill="#f5d44a"/>
+    </g>
+    <g id="组_1547" data-name="组 1547" transform="translate(0.002 0.005)">
+      <path id="路径_1339" data-name="路径 1339" d="M294.915,1199.681a99.279,99.279,0,0,1-14.974,31.554" fill="none" stroke="#0dbc86" stroke-miterlimit="10" stroke-width="7.214"/>
+      <path id="路径_1340" data-name="路径 1340" d="M138.651,1253.018a99.559,99.559,0,0,1-39.663-79.61q0-1.109.024-2.21c.281-13.246,4.6-28.379,10.347-41.595l2.913-5.954a99.674,99.674,0,0,1,86.429-49.954l12.142.732a99.73,99.73,0,0,1,87.57,98.981v.112a95.586,95.586,0,0,1-1.375,15.575l-.623,3.747" fill="none" stroke="#f97b26" stroke-miterlimit="10" stroke-width="7.214"/>
+      <path id="路径_1341" data-name="路径 1341" d="M273.3,1239.567a99.756,99.756,0,0,1-124.991,19.9" fill="none" stroke="#f5d44a" stroke-miterlimit="10" stroke-width="7.214"/>
+      <circle id="椭圆_550" data-name="椭圆 550" cx="77.959" cy="77.959" r="77.959" transform="translate(121.528 1097.1)" fill="#72d1d8" opacity="0.16"/>
+      <g transform="matrix(1, 0, 0, 1, 95.38, 1070.09)" filter="url(#_386)">
+        <text id="_386-2" data-name="386" transform="translate(72.3 133.74) rotate(0.23)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">386</tspan></text>
+      </g>
+      <text id="总人数" transform="translate(156.2 1158.695)" fill="#fff" font-size="30" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI"><tspan x="0" y="0">总</tspan><tspan y="0" font-family="YuGothicUI-Regular, Yu Gothic UI">人数</tspan></text>
+    </g>
+  </g>
+</svg>

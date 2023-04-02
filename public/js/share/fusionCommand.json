@@ -1,0 +1,97 @@
+{
+    "Disaster": {
+        "title": "灾害信息",
+        "entitle": "Disaster information",
+        "type": "山洪",
+        "location": "丽水市缙云县壶镇镇白竹村",
+        "time": "2020-08-04 08:42",
+        "situation": "山洪淹没了整条公路，越野车进退不得。受台风“黑格比”影响，缙云县壶镇镇白竹村洪水暴涨至一米多，多处民房倒塌。",
+        "text": "收到险情的金华消防救援人员立即赶赴现场。由于水流较大，救援人员无法靠近，只能带着25公斤的救援装备，徒手攀爬落差10米的悬崖，抵达被困车辆所在的山崖边。由于水流湍急，救援人员将救生绳抛给被困人员，看准时机将其营救到路边。由当地民兵和退伍军人组成的救援队员挨家挨户寻找受困群众，背起老人和小孩，一趟趟地将他们转移到安全地带。"
+    },
+    "mapping": {
+        "title": "应急三维制图",
+        "entitle": "Emergency 3D Mapping",
+        "area": "2.34",
+        "areaUnit": "平方公里/km²",
+        "schedule1": "67",
+        "schedule1Color": "#02D281",
+        "schedule2": "29",
+        "schedule2Color": "#F7B500"
+    },
+    "responsible": {
+        "title": "负责人信息",
+        "entitle": "Responsible person information",
+        "name": "邓小路",
+        "phone": "13523652542",
+        "position": "救援组长"
+    },
+    "guarantee": {
+        "title": "路·网·电保障",
+        "entitle": "Road·Network·Electricity Guarantee",
+        "data": [
+            {
+                "imageUrl": "./images/fusionCommand/icon.svg",
+                "label": [
+                    "通  畅"
+                ],
+                "phone": "13523652542",
+                "contact": "邓小路",
+                "title": "道路状况"
+            },
+            {
+                "imageUrl": "./images/fusionCommand/icon2.svg",
+                "label": [
+                    "移动正常",
+                    "联通正常"
+                ],
+                "phone": "13523652542",
+                "contact": "邓小路",
+                "title": "网络通信"
+            },
+            {
+                "imageUrl": "./images/fusionCommand/icon3.svg",
+                "label": [
+                    "正  常"
+                ],
+                "phone": "13523652542",
+                "contact": "邓小路",
+                "title": "电力状况"
+            }
+        ]
+    },
+    "video": {
+        "title": "视频感知",
+        "entitle": "Video perception",
+        "data": [
+            {
+                "name": "交通实时画面",
+                "thumbnail": "./images/fusionCommand/pic1.png"
+            },
+            {
+                "name": "单兵视频01",
+                "thumbnail": "./images/fusionCommand/pic2.png"
+            }
+        ]
+    },
+    "statistics": {
+        "title": "应急资源统计",
+        "entitle": "Emergency resource statistics",
+        "data": [
+            {
+                "title": "应急指挥车",
+                "number": 2,
+                "unit": "辆"
+            },
+            {
+                "title": "无人机",
+                "number": 3,
+                "unit": "台"
+            },
+            {
+                "title": "直升机",
+                "number": 1,
+                "unit": "架"
+            }
+        ]
+    }
+}

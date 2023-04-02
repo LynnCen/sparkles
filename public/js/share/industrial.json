@@ -1,0 +1,38 @@
+{
+  "key": "lsgy",
+  "menu": [
+    {
+      "title": "党支部",
+      "icon": "./images/industrial/icon_dangzhibu.png",
+      "value": 0
+    },
+    {
+      "title": "党员",
+      "icon": "./images/industrial/icon_danghui.png",
+      "value": 0
+    },
+    {
+      "title": "租赁企业",
+      "icon": "./images/industrial/icon_changfan.png",
+      "value": 0
+    },
+    {
+      "title": "规上企业",
+      "icon": "./images/industrial/icon_changfan.png",
+      "value": 0
+    },
+    {
+      "title": "亿元企业",
+      "icon": "./images/industrial/icon_changfan.png",
+      "value": 0
+    }
+  ],
+  "overview": {
+    "title": "选区内企业数据",
+    "data": [
+      { "name": "面积", "value": 0, "unit": "㎡" },
+      { "name": "产值", "value": 0, "unit": "元" }
+    ]
+  },
+  "companys": []
+}

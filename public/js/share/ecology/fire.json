@@ -1,0 +1,70 @@
+{
+  "overview": [
+    {
+      "name": "自动消防监测点（个）",
+      "value": 208,
+      "icon": "./images/ecology/icon_loudian.png"
+    },
+    {
+      "name": "电气火灾监测点（个）",
+      "value": 945,
+      "icon": "./images/ecology/icon_wendu.png"
+    },
+    {
+      "name": "液位（压）监测点（个）",
+      "value": 73,
+      "icon": "./images/ecology/icon_shuiya.png"
+    },
+    {
+      "name": "小场所安全监测点（个）",
+      "value": 208,
+      "icon": "./images/ecology/icon_yangan.png"
+    },
+    {
+      "name": "今日报警数",
+      "value": 0,
+      "icon": "./images/ecology/icon_gaojing1.png"
+    },
+    {
+      "name": "隐患数",
+      "value": 2,
+      "icon": "./images/ecology/icon_gaojing.png",
+      "data": [
+        {
+          "name": "丽水职业技术学院  机电楼三层2-135烟感  2019-11-15 02:03:55"
+        },
+        {
+          "name": "丽水职业技术学院  机电楼三层2-135烟感  2019-11-15 02:04:43"
+        }
+      ]
+    }
+  ],
+  "sewage": {
+    "title": "防火监测点位",
+    "enTitle": "Fire monitoring point",
+    "suffix": { "name": "监测点位", "value": 845, "unit": "个" }
+  },
+  "monitors": [
+    {
+      "title": "消控室监测",
+      "data": []
+    },
+    {
+      "title": "森林防火监控",
+      "data": [
+        {
+          "code": "33112100001310011514",
+          "thumbnail": "./images/ecology/fanghuo01.png",
+          "name": "青田县陈宅",
+          "url": "rtsp://218.205.127.16:554/pag://218.205.127.178:7302:33112300001310015252:0:MAIN:TCP?streamform=rtp&idinfo=EBACAAAQAAAeuyFMCCusutO%2Fi3xSt%2F4KHwfxXUySUTdPZcDjzjpg2fvls5LHaA8DPA%2BaoGVjPuQ6PuikMtyqT6ZuDi%2BDmv6q&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc0NzI2WiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc4OjczMDI6MzMxMTIzMDAwMDEzMTAwMTUyNTI6MDpNQUlOOlRDUD9zdHJlYW1mb3JtPXJ0cCJ9"
+        },
+        {
+          "code": "33112100001310016411",
+          "thumbnail": "./images/ecology/fanghuo02.png",
+          "name": "青田县颜宅",
+          "url": "rtsp://218.205.127.16:554/pag://218.205.127.179:7302:33112300001310021896:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAACYeLF8Nt7YBhq8hut3ccnrnFdb9nDu%2B0yHzonxnWvKLAkG7OVlI11l7TyU%2BgCyBez3W05oYp4jUOGJvWSQhukV&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc1NDExWiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc5OjczMDI6MzMxMTIzMDAwMDEzMTAwMjE4OTY6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+        }
+      ]
+    }
+  ]
+}

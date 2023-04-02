@@ -1,0 +1,13 @@
+{
+    "leftContent": {
+        "riseUrl": "./images/ldPolice/增长箭头.svg",
+        "declineUrl": "./images/ldPolice/下降箭头.svg",
+        "imgList": {
+            "重点人员": "./images/ldPolice/重点人员icon.svg",
+            "物品管理": "./images/ldPolice/物品管理icon.svg",
+            "行业管理": "./images/ldPolice/行业管理icon.svg",
+            "场所管理": "./images/ldPolice/场所管理icon.svg"
+        }
+    },
+    "rightUrl": "./images/ldPolice/右侧数据2.png"
+}

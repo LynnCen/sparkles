@@ -1,0 +1,825 @@
+{
+  "tianqiapi": {
+    "version": "v1",
+    "appid": "52329359",
+    "appsecret": "iSWTX5pP",
+    "appid1": "34991874",
+    "appsecret1": "R6dAVB0S",
+    "appid2": "31737486",
+    "appsecret2": "92JB0BPa"
+  },
+  "fly": {
+    "position": [13337935.743265415, 3225674.513552079, 89722.0536515499],
+    "lookAt": [13337934.429334302, 3225724.6907169716, 89635.563619128],
+    "time": 2
+  },
+  "menu": {
+    "title": "隐患点",
+    "icon": "/res/image/icon/sadan/26821592020618770.svg"
+  },
+  "link": {
+    "title": "业务系统",
+    "icon": "/res/image/icon/YXDDC/27271592448757957.png",
+    "href": "http://218.205.109.19:9091/login/autoLogin",
+    "target": "_self"
+  },
+  "intro": {
+    "title": "平台简介",
+    "icon": "/res/image/icon/XXF/27731593420380984.png",
+    "ref": true,
+    "modal": {
+      "width": 1446,
+      "data": [
+        "./images/geologicHazard/幻灯片1.JPG",
+        "./images/geologicHazard/幻灯片2.JPG",
+        "./images/geologicHazard/幻灯片3.JPG",
+        "./images/geologicHazard/幻灯片4.JPG",
+        "./images/geologicHazard/幻灯片5.JPG",
+        "./images/geologicHazard/幻灯片6.JPG",
+        "./images/geologicHazard/幻灯片7.JPG",
+        "./images/geologicHazard/幻灯片8.JPG",
+        "./images/geologicHazard/幻灯片9.JPG",
+        "./images/geologicHazard/幻灯片10.JPG",
+        "./images/geologicHazard/幻灯片11.JPG",
+        "./images/geologicHazard/幻灯片12.JPG",
+        "./images/geologicHazard/幻灯片13.JPG",
+        "./images/geologicHazard/幻灯片14.JPG",
+        "./images/geologicHazard/幻灯片15.JPG",
+        "./images/geologicHazard/幻灯片16.JPG",
+        "./images/geologicHazard/幻灯片17.JPG",
+        "./images/geologicHazard/幻灯片18.JPG",
+        "./images/geologicHazard/幻灯片19.JPG"
+      ]
+    }
+  },
+  "atmosphere": {
+    "title": "天气预报",
+    "enTitle": "Weather forecast",
+    "title2": "气象信息",
+    "enTitle2": "Meteorological information",
+    "icon": "./images/geologicHazard/weizhi.png",
+    "icons": {
+      "晴": "./images/geologicHazard/晴.svg",
+      "云": "./images/geologicHazard/云.svg",
+      "阴": "./images/geologicHazard/阴.svg",
+      "小雨": "./images/geologicHazard/小雨.svg",
+      "中雨": "./images/geologicHazard/中雨.svg",
+      "阵雨": "./images/geologicHazard/阵雨.svg",
+      "大雨": "./images/geologicHazard/大雨.svg"
+    },
+    "data": [
+      {
+        "key": "wea",
+        "name": "当前天气",
+        "value": "",
+        "avatar": "./images/geologicHazard/晴.svg"
+      },
+      {
+        "key": "tem",
+        "name": "温度℃",
+        "value": "",
+        "unit": "",
+        "avatar": "./images/geologicHazard/temperature.svg"
+      },
+      {
+        "key": "humidity",
+        "name": "相对湿度%",
+        "value": "",
+        "avatar": "./images/geologicHazard/humidity.svg"
+      },
+      {
+        "key": ["air", "air_level"],
+        "name": "空气质量",
+        "value": "",
+        "unit": "",
+        "avatar": "./images/geologicHazard/air.svg"
+      },
+      {
+        "key": "win_speed",
+        "name": "风力风向",
+        "value": "",
+        "unit": "级",
+        "avatar": "./images/geologicHazard/wind.svg"
+      }
+    ]
+  },
+  "pointInfo": {
+    "title": "基本信息",
+    "enTitle": "Disaster point information",
+    "suffix": { "name": "详情" },
+    "data": [
+      {
+        "key": "synopsis",
+        "name": "基本情况",
+        "value": []
+      },
+      {
+        "key": "addressDetails",
+        "name": "地&nbsp;&nbsp;&nbsp;&nbsp;址：",
+        "value": "xx村"
+      },
+      {
+        "key": "type",
+        "name": "危险源：",
+        "value": ["山洪 1处"],
+        "background": "#0060A8",
+        "unit": ""
+      },
+      {
+        "key": "populationNum",
+        "name": "人口总数：",
+        "value": 0,
+        "unit": "人"
+      },
+      {
+        "key": "",
+        "name": "承灾人口：",
+        "value": [
+          { "key": "affectedHouseholds", "name": "", "value": 0, "unit": "户" },
+          { "key": "threatNum", "name": "", "value": 0, "unit": "人" }
+        ]
+      }
+    ],
+    "nav": {
+      "title": "救援条件：",
+      "color": { "0": "#6D7278", "1": "#4AB80D" },
+      "data": [
+        {
+          "title": "危险源",
+          "icon": "icon-alarm"
+        },
+        {
+          "title": "影响范围",
+          "icon": "icon-circle-area"
+        },
+        {
+          "title": "监测设备",
+          "icon": "icon-monitor-shield"
+        },
+        {
+          "title": "避灾路线",
+          "icon": "icon-route"
+        },
+        {
+          "title": "动态模拟",
+          "icon": "icon-windmill"
+        }
+      ]
+    }
+  },
+  "sensorVOList": {
+    "title": "设备类别",
+    "enTitle": "Equipment condition",
+    "legend": {
+      "1": {
+        "text": "异常",
+        "color": "#00BAFF",
+        "background": "rgba(0,0,0,.15)"
+      },
+      "0": {
+        "text": "正常",
+        "color": "#00BAFF",
+        "background": "rgba(0,0,0,.15)"
+      }
+    },
+    "overview": {
+      "雨量计": {
+        "name": "雨量计",
+        "value": 0,
+        "status": 1
+      },
+      "次声仪": {
+        "name": "次声仪",
+        "value": 0,
+        "status": 1
+      },
+      "泥位计": {
+        "name": "泥位计",
+        "value": 0,
+        "status": 1
+      },
+      "摄像头": {
+        "name": "摄像头",
+        "value": 0,
+        "status": 1
+      },
+      "声光报警器": {
+        "name": "声光报警器",
+        "value": 0,
+        "status": 1
+      },
+      "预警广播": {
+        "name": "预警广播",
+        "value": 0,
+        "status": 0
+      }
+    },
+    "data": []
+  },
+  "video": {
+    "title": "监控视频",
+    "enTitle": "Surveillance video",
+    "preview": "hik/preview.html?cameraIndexCode=",
+    "balloon": {
+      "url": "/res/image/icon/XXF/28641595404128673.svg"
+    },
+    "model": {
+      "url": "/res/source/hbs/1594345375635/m0-正方形.a3x"
+    },
+    "suffix": {
+      "name": "视频数量：",
+      "value": 2,
+      "unit": "个"
+    },
+    "category": [
+      {
+        "title": "点位",
+        "key": "lc"
+      },
+      {
+        "title": "单兵",
+        "key": "hik",
+        "icon": "/res/image/icon/admin/22711569724914930.png"
+      }
+    ],
+    "data": [
+      {
+        "thumbnail": "./images/geologicHazard/pic1.png",
+        "name": "无人机远程直播",
+        "status": 0
+      },
+      {
+        "thumbnail": "./images/geologicHazard/pic2.png",
+        "name": "现场监控视频",
+        "status": 0
+      }
+    ],
+    "testLoc": {
+      "longitude": 119.9010174917,
+      "latitude": 28.4641366691
+    },
+    "lc": [],
+    "hik": []
+  },
+  "situation": {
+    "title": "承灾情况",
+    "enTitle": "Disaster situation",
+    "icons": ["./images/gongancommand/coordinate.png", ""],
+    "data": [
+      {
+        "key": "victimsNum",
+        "title": "承灾人数（人）",
+        "status": {
+          "name": "（充足）",
+          "color": "#02D281"
+        },
+        "value": 1634298,
+        "icon": "./images/geologicHazard/population.svg"
+      },
+      {
+        "key": "affectedHouseholds",
+        "title": "承灾住户（户）",
+        "status": {
+          "name": "（不足）",
+          "color": "#FF5000"
+        },
+        "value": 592148,
+        "icon": "./images/geologicHazard/household.svg"
+      }
+    ],
+    "repository": [
+      {
+        "name": "老竹畲族镇东头村滑坡——徐庄存储库"
+      },
+      {
+        "name": "横岗村——储备库",
+        "suffix": ""
+      },
+      {
+        "name": "山口镇板石小区北侧——储备库",
+        "suffix": ""
+      }
+    ]
+  },
+  "riskVOList": {
+    "title": "风险类别",
+    "enTitle": "Risk category",
+    "suffix": {
+      "name": "单位：",
+      "value": "",
+      "unit": "个"
+    },
+    "legend": {
+      "0": {
+        "text": "异常",
+        "color": "#00BAFF",
+        "background": "rgba(0,0,0,.15)"
+      },
+      "1": {
+        "text": "正常",
+        "color": "#00BAFF",
+        "background": "rgba(0,0,0,.15)"
+      }
+    },
+    "overview": {
+      "山洪": {
+        "name": "山洪",
+        "value": 1,
+        "status": 1
+      },
+      "大坝": {
+        "name": "大坝",
+        "value": 1,
+        "status": 1
+      },
+      "滑坡": {
+        "name": "滑坡",
+        "value": 1,
+        "status": 1
+      },
+      "泥石流": {
+        "name": "泥石流",
+        "value": 1,
+        "status": 1
+      }
+    },
+    "data": []
+  },
+  "suppliesLibraryVOList": {
+    "title": "物资储备",
+    "enTitle": "Nearby supplies",
+    "suffix": { "name": "详情" },
+    "columns": [
+      {
+        "key": "name",
+        "title": "名称"
+      },
+      {
+        "key": "distance",
+        "title": "距离"
+      },
+      {
+        "key": "county",
+        "title": "归属县（市、区）"
+      },
+      {
+        "key": "township",
+        "title": "归属乡（镇、街道）"
+      },
+      {
+        "key": "address",
+        "title": "地址"
+      },
+      {
+        "key": "liaison",
+        "title": "联系人"
+      },
+      {
+        "key": "phone",
+        "title": "联系电话"
+      }
+    ],
+    "sample": {
+      "name": "莲都区物资库",
+      "distance": 0,
+      "county": "",
+      "township": "",
+      "address": "",
+      "liaison": "",
+      "phone": "",
+      "unit": "km",
+      "icon": "./images/geologicHazard/posText.svg"
+    },
+    "data": []
+  },
+  "headVO": {
+    "title": "防汛防台责任人",
+    "enTitle": "Person in charge of the disaster site",
+    "icons": [
+      {
+        "background": "#02D281",
+        "url": "./images/geologicHazard/phone.png"
+      },
+      {
+        "background": "#00BAFF",
+        "url": "./images/geologicHazard/position.png"
+      }
+    ],
+    "avatar": "./images/geologicHazard/avatar.svg",
+    "sample": {
+      "avatar": "",
+      "name": "",
+      "position": "",
+      "phone": "",
+      "unit": ""
+    },
+    "data": []
+  },
+  "forecastEquipmentVOList": {
+    "overview": {
+      "声光报警器": {
+        "name": "声光报警器",
+        "value": 0,
+        "status": 1
+      },
+      "预警广播": {
+        "name": "预警广播",
+        "value": 0,
+        "status": 1
+      }
+    },
+    "data": []
+  },
+  "sensorCountVOList": {
+    "title": "设备类别",
+    "enTitle": "Equipment condition",
+    "legend": {
+      "0": {
+        "text": "异常",
+        "color": "#00BAFF",
+        "background": "rgba(0,0,0,.15)"
+      },
+      "1": {
+        "text": "正常",
+        "color": "#00BAFF",
+        "background": "rgba(0,0,0,.15)"
+      }
+    },
+    "overview": {
+      "雨量计": {
+        "name": "雨量计",
+        "value": 0,
+        "status": 1
+      },
+      "次声仪": {
+        "name": "次声仪",
+        "value": 0,
+        "status": 1
+      },
+      "泥位计": {
+        "name": "泥位计",
+        "value": 0,
+        "status": 1
+      },
+      "摄像头": {
+        "name": "摄像头",
+        "value": 0,
+        "status": 1
+      },
+      "声光报警器": {
+        "name": "声光报警器",
+        "value": 0,
+        "status": 1
+      },
+      "预警广播": {
+        "name": "预警广播",
+        "value": 0,
+        "status": 0
+      }
+    },
+    "columns": [
+      {
+        "title": "设备地址",
+        "key": "title"
+      },
+      {
+        "title": "类型",
+        "key": "type"
+      },
+      {
+        "title": "数值",
+        "key": "number"
+      },
+      {
+        "title": "状态",
+        "key": "status"
+      }
+    ],
+    "data": [
+      {
+        "title": "",
+        "type": "固定测斜",
+        "number": "008_1",
+        "status": {
+          "text": "正常",
+          "color": "rgb(247, 221, 0)"
+        }
+      }
+    ]
+  },
+  "disaster": {
+    "title": "小流域防治点",
+    "enTitle": "Small watershed control point",
+    "suffixIcon": "单位：个",
+    "color": "#26BFFF",
+    "overview": [
+      {
+        "key": "smallWatershed",
+        "title": "小流域",
+        "value": 973,
+        "unit": "(条)"
+      },
+      {
+        "key": "keyPreventionVillage",
+        "title": "重点防治村",
+        "value": 2026,
+        "unit": "(个)"
+      },
+      {
+        "key": "generalPreventionVillage",
+        "title": "一般防治村",
+        "value": 4724,
+        "unit": "(个)"
+      }
+    ],
+    "data": [
+      {
+        "key": "done",
+        "item": "已完成",
+        "count": 1
+      },
+      {
+        "key": "doing",
+        "item": "正在实施",
+        "count": 2
+      },
+      {
+        "key": "waiting",
+        "item": "待完成",
+        "count": 3
+      }
+    ],
+    "colors_pie": [
+      "#2AB80E",
+      "#F7B500",
+      "#0091FF",
+      "#DC4B06",
+      "#D6B249",
+      "#05B874",
+      "#04A3E0"
+    ],
+    "modal": {
+      "title": "山洪灾害防治对象名录表"
+    },
+    "columns": [
+      {
+        "key": "city",
+        "title": "地级市"
+      },
+      {
+        "key": "county",
+        "title": "县区市"
+      },
+      {
+        "key": "administrativeVillage",
+        "title": "行政村"
+      },
+      {
+        "key": "naturalVillage",
+        "title": "自然村"
+      },
+      {
+        "key": "jurisdictionArea",
+        "title": "管辖区域"
+      },
+      {
+        "key": "totalHouseholds",
+        "title": "总房屋数"
+      },
+      {
+        "key": "totalPopulation",
+        "title": "总人口数"
+      },
+      {
+        "key": "controlObjectType",
+        "title": "防治对象类别"
+      }
+    ]
+  },
+  "basic": {
+    "title": "基础情况",
+    "enTitle": "Basic situation",
+    "color": "#26BFFF",
+    "overview": [
+      {
+        "title": "巡查队伍",
+        "data": [
+          {
+            "value": 36,
+            "unit": "支",
+            "color": "#0091FF"
+          },
+          {
+            "value": 126,
+            "unit": "人",
+            "color": "#44D7B6"
+          }
+        ]
+      },
+      {
+        "title": "网格化管理",
+        "data": [
+          {
+            "value": 19,
+            "unit": "片",
+            "color": "#6DD400"
+          }
+        ]
+      }
+    ],
+    "dangerPoints": {
+      "title": "隐患点",
+      "suffix": "单位：个",
+      "data": [
+        {
+          "title": "一级",
+          "value": 2,
+          "color": "#E02020"
+        },
+        {
+          "title": "二级",
+          "value": 27,
+          "color": "#FA6400"
+        },
+        {
+          "title": "三级",
+          "value": 2026,
+          "color": "#E7A902"
+        },
+        {
+          "title": "四级",
+          "value": 4724,
+          "color": "#0151FD"
+        }
+      ]
+    }
+  },
+  "alarm": {
+    "title": "告警信息",
+    "enTitle": "Alarm information",
+    "icon": "./images/geologicHazard/alarm.png",
+    "colors": {
+      "4": "#0151FD",
+      "3": "#F7B500",
+      "2": "#FF5000",
+      "1": "#D40000",
+      "0": "",
+      "-1": "rgba(255,255,255,.1)"
+    },
+    "columns": [
+      {
+        "title": "告警类型",
+        "key": "warnType"
+      },
+      {
+        "title": "地点",
+        "key": "location"
+      },
+      {
+        "title": "时间",
+        "key": "warnTime"
+      },
+      {
+        "title": "状态",
+        "key": "status"
+      }
+    ],
+    "sample": {
+      "warnType": "水位",
+      "warnLevel": 4,
+      "location": "莲都沙溪村对门山",
+      "warnTime": "2020.04.19",
+      "status": "",
+      "operation": {
+        "text": "工单",
+        "title": "灾害工单",
+        "img": "./images/geologicHazard/job.png"
+      }
+    },
+    "data": [],
+    "empty": [
+      {
+        "warnType": "- -",
+        "warnLevel": -1,
+        "location": "- -",
+        "warnTime": "- -",
+        "status": "- -",
+        "operation": {
+          "text": "- -",
+          "title": "   ",
+          "img": ""
+        }
+      },
+      {
+        "warnType": "",
+        "warnLevel": -1,
+        "location": "",
+        "warnTime": "",
+        "status": "",
+        "operation": {
+          "text": ""
+        }
+      }
+    ]
+  },
+  "overview": {
+    "color": "#26BFFF",
+    "text": "丽水市小流域地质灾害多发频发，努力实现自然灾害防治能力现代化",
+    "data": [
+      {
+        "title": "灾情总数",
+        "count": 4,
+        "unit": "个"
+      },
+      {
+        "title": "险情总数",
+        "count": 2,
+        "unit": "个"
+      },
+      {
+        "title": "死亡人数",
+        "count": 45,
+        "unit": "人"
+      },
+      {
+        "title": "经济损失",
+        "count": 1245,
+        "unit": "万元"
+      },
+      {
+        "title": "应急调查次数",
+        "count": 4,
+        "unit": "次"
+      },
+      {
+        "title": "应急监测次数",
+        "count": 5,
+        "unit": "次"
+      },
+      {
+        "title": "应急救援",
+        "count": 7,
+        "unit": "次"
+      }
+    ]
+  },
+  "geohazard": "",
+  "uniqueId": "",
+  "town": "全部乡镇",
+  "region": "丽水市",
+  "regions": [],
+  "city": {
+    "丽水市": 331100,
+    "莲都区": 331102,
+    "缙云县": 331122,
+    "青田县": 331121,
+    "遂昌县": 331123,
+    "松阳县": 331124,
+    "云和县": 331125,
+    "庆元县": 331126,
+    "景宁县": 331127,
+    "龙泉市": 331181
+  },
+  "countyDisaster": {
+    "types": {
+      "oneLevelDisasterVOList": "三维",
+      "twoLevelDisasterVOList": "2.5D",
+      "threeLevelDisasterVOList": "华测"
+    },
+    "data": []
+  },
+  "icon": {
+    "geohazard": "/res/image/icon/admin/26621585454431610.svg",
+    "GNSS": "/res/image/icon/admin/26921592285602971.png",
+    "裂缝计": "/res/image/icon/admin/26921592285602971.png",
+    "测缝加速度计": "/res/image/icon/admin/26921592285602971.png",
+    "次声仪": "/res/image/icon/admin/26921592285602971.png",
+    "地声仪": "/res/image/icon/admin/26921592285602971.png",
+    "水位计": "/res/image/icon/zanzee/27031592276198035.svg",
+    "内部测斜仪": "/res/image/icon/admin/26921592285602971.png",
+    "泥位器": "/res/image/icon/admin/26921592285602971.png",
+    "气温计": "/res/image/icon/admin/26921592285602971.png",
+    "倾角加速度计": "/res/image/icon/admin/26921592285602971.png",
+    "渗压计": "/res/image/icon/admin/26921592285602971.png",
+    "声光报警器": {
+      "0": "/res/image/icon/XXF/28111593572322344.svg",
+      "1": "/res/image/icon/XXF/27421592538934692.svg",
+      "2": "/res/image/icon/zanzee/27011592276158660.svg"
+    },
+    "视频": "/res/image/icon/admin/26921592285602971.png",
+    "水标尺": "/res/image/icon/admin/26921592285602971.png",
+    "地下水水位": "/res/image/icon/admin/26921592285602971.png",
+    "土壤水分析仪": "/res/image/icon/admin/26921592285602971.png",
+    "预警广播": {
+      "0": "/res/image/icon/XXF/28081593572322344.svg",
+      "1": "/res/image/icon/XXF/27471592538934785.svg",
+      "2": "/res/image/icon/zanzee/27051592276229238.svg"
+    },
+    "雨量计": "/res/image/icon/admin/26921592285602971.png",
+    "震动加速度计": "/res/image/icon/admin/26921592285602971.png",
+    "hik": "/res/image/icon/XXF/28641595404128673.svg"
+  },
+  "model": {
+    "hik": "/res/source/hbs/1594345375635/m0-正方形.a3x"
+  }
+}

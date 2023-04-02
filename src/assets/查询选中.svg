@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="454.807" height="55" viewBox="0 0 454.807 55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #038689;
+        opacity: 0.44;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #04bdc9;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="搜索" transform="translate(-1736.737 -199.911)">
+    <rect id="矩形_914" data-name="矩形 914" class="cls-1" width="452.807" height="53" rx="26.5" transform="translate(1737.737 200.911)"/>
+    <rect id="矩形_915" data-name="矩形 915" class="cls-2" width="452.807" height="53" rx="26.5" transform="translate(1737.737 200.911)"/>
+  </g>
+</svg>

@@ -1,0 +1,172 @@
+{
+  "coordinate": "./images/gongancommand/coordinate.png",
+  "leftchild1": {
+    "title": "当前工作状态",
+    "data": [
+      {
+        "index": "L1_1",
+        "title": "当前状态",
+        "value": "日常",
+        "imgurl": "./images/gongancommand/child1img.png"
+      }
+    ]
+  },
+  "leftchild2": {
+    "title": "今日人员排班情况",
+    "data": [
+      {
+        "index": "L2_1",
+        "title": "上班人数 (人)",
+        "value": "86",
+        "imgurl": "./images/gongancommand/child2img1.png"
+      },
+      {
+        "index": "L2_2",
+        "title": "备勤人数 (人)",
+        "value": "46",
+        "imgurl": "./images/gongancommand/child2img2.png"
+      },
+      {
+        "index": "L2_3",
+        "title": "休息人数 (人)",
+        "value": "34",
+        "imgurl": "./images/gongancommand/child2img3.png"
+      }
+    ]
+  },
+  "rightchild1": {
+    "title": "武装巡逻车",
+    "subtitle": "Armed patrol car",
+    "number": 1,
+    "data": [
+      {
+        "index": "R1_1",
+        "name": "王丽景",
+        "position": "队长",
+        "from": "莲都区白云派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      },
+      {
+        "index": "R1_2",
+        "name": "马国平",
+        "position": "队员",
+        "from": "莲都区白云派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      },
+      {
+        "index": "R1_3",
+        "name": "蓝章财",
+        "position": "队员",
+        "from": "莲都区白云派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      },
+      {
+        "index": "R1_4",
+        "name": "付文涛",
+        "position": "队员",
+        "from": "莲都区白云派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      }
+    ],
+    "position": "一号巡逻车位置：丽水市莲都区水东路动车站出站口广场"
+  },
+  "rightchild2": {
+    "title": "巡逻小组",
+    "subtitle": "Patrol team",
+    "number": 3,
+    "data1": [
+      {
+        "index": "R2_1",
+        "name": "李春华",
+        "position": "队长",
+        "from": "莲都区紫金派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      },
+      {
+        "index": "R2_2",
+        "name": "王志成",
+        "position": "队员",
+        "from": "莲都区紫金派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      },
+      {
+        "index": "R2_3",
+        "name": "宋勇国",
+        "position": "队员",
+        "from": "莲都区紫金派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      }
+    ],
+    "data2": [
+      {
+        "index": "R2_1",
+        "name": "李春华",
+        "position": "队长",
+        "from": "莲都区紫金派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      },
+      {
+        "index": "R2_2",
+        "name": "王志成",
+        "position": "队员",
+        "from": "莲都区紫金派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      },
+      {
+        "index": "R2_3",
+        "name": "宋勇国",
+        "position": "队员",
+        "from": "莲都区紫金派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      }
+    ],
+    "data3": [
+      {
+        "index": "R2_1",
+        "name": "李春华",
+        "position": "队长",
+        "from": "莲都区紫金派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      },
+      {
+        "index": "R2_2",
+        "name": "王志成",
+        "position": "队员",
+        "from": "莲都区紫金派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      },
+      {
+        "index": "R2_3",
+        "name": "宋勇国",
+        "position": "队员",
+        "from": "莲都区紫金派出所",
+        "imgurl": "./images/gongancommand/photo.png"
+      }
+    ],
+    "position1": "一号巡逻队位置：丽水市莲都区紫金路体育中心北门",
+    "position2": "二号巡逻队位置：丽水市莲都区紫金路体育中心北门",
+    "position3": "三号巡逻队位置：丽水市莲都区紫金路体育中心北门"
+  },
+  "rightchild3": {
+    "title": "备勤小组",
+    "subtitle": "Standby team",
+    "number": 18,
+    "data": [
+      {
+        "index": "R3_1",
+        "name": "紫金派出所",
+        "value": "7"
+      },
+      {
+        "index": "R3_2",
+        "name": "白云派出所",
+        "value": "5"
+      },
+      {
+        "index": "R3_3",
+        "name": "岩泉派出所",
+        "value": "6"
+      }
+    ]
+  }
+}

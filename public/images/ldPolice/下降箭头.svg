@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>下降箭头</title>
+    <g id="正式稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-1莲都区公安-警情监控" transform="translate(-189.000000, -625.000000)" fill="#16E3A2">
+            <g id="左侧数据" transform="translate(40.000000, 157.000000)">
+                <g id="涉赌" transform="translate(0.000000, 456.000000)">
+                    <g id="下降箭头" transform="translate(155.000000, 22.000000) scale(1, -1) translate(-155.000000, -22.000000) translate(149.000000, 12.000000)">
+                        <path d="M2,10 L6.36363636,10 L10,16 L6.36363636,22 L2,22 L5.63636364,16 L2,10 Z" id="形状结合" opacity="0.35" transform="translate(6.000000, 16.000000) rotate(-90.000000) translate(-6.000000, -16.000000) "></path>
+                        <path d="M2,4 L6.36363636,4 L10,10 L6.36363636,16 L2,16 L5.63636364,10 L2,4 Z" id="形状结合" opacity="0.6" transform="translate(6.000000, 10.000000) rotate(-90.000000) translate(-6.000000, -10.000000) "></path>
+                        <path d="M2,-2 L6.36363636,-2 L10,4 L6.36363636,10 L2,10 L5.63636364,4 L2,-2 Z" id="形状结合" transform="translate(6.000000, 4.000000) rotate(-90.000000) translate(-6.000000, -4.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

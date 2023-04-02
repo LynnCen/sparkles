@@ -1,0 +1,43 @@
+@import "public.scss";
+
+.vrp-terrain-list {
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+  height: 220px;
+  box-shadow: 0 0 10px #f5f5f5;
+  overflow-y: auto;
+}
+.vrp-terrain-item {
+  padding: 0.5rem;
+  color: #373737;
+  &:hover,
+  &.active {
+    border-radius: 5px;
+    background-color: rgba(70, 163, 206, 0.2);
+  }
+  .item-title {
+    cursor: pointer;
+    @extend .text-overflow-hide;
+  }
+  .item-icons {
+    :global(.icon) {
+      padding: 0 0.15rem;
+      cursor: pointer;
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+}
+
+.custom-terrain-modal {
+  width: 600px !important;
+  .vrp-terrain-list {
+    .vrp-terrain-item {
+      display: inline-flex;
+      width: 96%;
+      margin: 0.25rem;
+      line-height: 27px;
+    }
+  }
+}

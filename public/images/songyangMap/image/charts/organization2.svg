@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="550.146" height="332.323" viewBox="0 0 550.146 332.323">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.001" stop-color="#2489ea" stop-opacity="0"/>
+      <stop offset="0.416" stop-color="#15a9e2" stop-opacity="0.439"/>
+      <stop offset="0.819" stop-color="#07c6dc" stop-opacity="0.843"/>
+      <stop offset="1" stop-color="#02d2da"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cc3a3a"/>
+      <stop offset="1" stop-color="#cc3a3a" stop-opacity="0.2"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="矩形_442" data-name="矩形 442" width="198" height="2" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="矩形_446" data-name="矩形 446" width="198" height="2" fill="#00c19c"/>
+    </clipPath>
+    <filter id="_16_" x="147.611" y="0" width="84" height="68" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <image id="image" width="199" height="3" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMcAAAADCAYAAAAnfBtkAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAx6ADAAQAAAABAAAAAwAAAADg1PWwAAAAkUlEQVRIDe2T0Q2AQAhD1f13VnqCAcoRB4AfDLxSjsTzljjeaLNyLSNj0CdGLcpe4R30m/0CU3mi5nxhU2mq2sfqgJbRucQU3sTASMLX17ctnnrGet5qlk3aMoAliHE7U++VBE1gzDjNDUzqYST6i9noA2Nszqr97eX17s3kdaEyMReYC/AF5ufgm0xlLrAu8ADszZht2igNoQAAAABJRU5ErkJggg=="/>
+  </defs>
+  <g id="组_1582" data-name="组 1582" transform="translate(-2552.917 -636.044)">
+    <g id="组_1581" data-name="组 1581" transform="translate(-7.083 -5.431)">
+      <g id="组_515" data-name="组 515" transform="translate(2754.92 947.797)">
+        <g id="组_513" data-name="组 513" transform="translate(117.693 0)">
+          <text id="女性" transform="translate(29.502 21)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">女性</tspan></text>
+          <rect id="矩形_438" data-name="矩形 438" width="12.634" height="13.467" transform="translate(0 6.422)" fill="#c13839"/>
+        </g>
+        <g id="组_514" data-name="组 514">
+          <text id="男性" transform="translate(29.503 21)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">男性</tspan></text>
+          <rect id="矩形_439" data-name="矩形 439" width="12.634" height="13.467" transform="translate(0 6.422)" fill="#02cfd7"/>
+        </g>
+      </g>
+      <line id="直线_138" data-name="直线 138" x1="512.027" transform="translate(2594.664 785.986)" fill="none" stroke="#21cfdb" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+      <text id="_35岁以下" data-name="35岁以下" transform="translate(2650.822 936.915)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">35岁以下</tspan></text>
+      <text id="_50岁以上" data-name="50岁以上" transform="translate(2948.513 936.915)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">50岁以上</tspan></text>
+      <text id="_36-50岁" data-name="36-50岁" transform="translate(2812.223 936.915)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">36-50岁</tspan></text>
+      <line id="直线_139" data-name="直线 139" y1="6.72" transform="translate(2691.911 910.001)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="直线_140" data-name="直线 140" y1="6.72" transform="translate(2843.854 910.001)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="直线_141" data-name="直线 141" y1="6.72" transform="translate(2998.603 910.001)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="直线_142" data-name="直线 142" x1="512.027" transform="translate(2594.664 909.178)" fill="none" stroke="#05cfdb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.962"/>
+      <line id="直线_143" data-name="直线 143" x1="512.027" transform="translate(2594.664 826.712)" fill="none" stroke="#21cfdb" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+      <line id="直线_144" data-name="直线 144" x1="512.027" transform="translate(2594.664 867.439)" fill="none" stroke="#21cfdb" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+      <line id="直线_145" data-name="直线 145" x1="512.027" transform="translate(2594.664 745.259)" fill="none" stroke="#21cfdb" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+      <circle id="椭圆_165" data-name="椭圆 165" cx="3.455" cy="3.455" r="3.455" transform="translate(2591.208 905.491)" fill="#05cfdb"/>
+      <circle id="椭圆_166" data-name="椭圆 166" cx="3.455" cy="3.455" r="3.455" transform="translate(3103.236 905.491)" fill="#05cfdb"/>
+      <g id="组_539" data-name="组 539" transform="translate(2650.368 739.759)">
+        <rect id="矩形_462" data-name="矩形 462" width="36" height="23.928" transform="translate(0 145)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="组_540" data-name="组 540" transform="translate(2699.789 884.759)">
+        <rect id="矩形_463" data-name="矩形 463" width="36" height="24.091" fill="url(#linear-gradient-2)"/>
+      </g>
+      <g id="组_541" data-name="组 541" transform="translate(2802.374 817.316)">
+        <rect id="矩形_464" data-name="矩形 464" width="36" height="91.463" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="组_542" data-name="组 542" transform="translate(2851.794 906.992)">
+        <rect id="矩形_465" data-name="矩形 465" width="36" height="1.908" fill="url(#linear-gradient-2)"/>
+      </g>
+      <g id="组_543" data-name="组 543" transform="translate(2954.379 860.458)">
+        <rect id="矩形_466" data-name="矩形 466" width="36" height="119.604" transform="translate(0 -71)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="组_544" data-name="组 544" transform="translate(3003.8 901.351)">
+        <rect id="矩形_467" data-name="矩形 467" width="36" height="7.763" fill="url(#linear-gradient-2)"/>
+      </g>
+      <g id="组_1032" data-name="组 1032">
+        <g id="组_522" data-name="组 522" transform="translate(2591.938 648.259)">
+          <path id="路径_475" data-name="路径 475" d="M2591.938,662.164v-19h19" transform="translate(-2591.938 -643.164)" fill="none" stroke="#03fbee" stroke-miterlimit="10" stroke-width="2"/>
+          <path id="路径_476" data-name="路径 476" d="M2610.938,707.164h-19v-19" transform="translate(-2591.938 -643.164)" fill="none" stroke="#03fbee" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="组_527" data-name="组 527" transform="translate(2600.938 647.015)" opacity="0.2">
+          <g id="组_526" data-name="组 526">
+            <g id="组_525" data-name="组 525" clip-path="url(#clip-path)">
+              <g id="组_524" data-name="组 524">
+                <g id="组_523" data-name="组 523" clip-path="url(#clip-path)">
+                  <use id="矩形_440" data-name="矩形 440" transform="translate(-0.938 -0.073)" xlink:href="#image"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="组_532" data-name="组 532" transform="translate(2600.938 711.498)" opacity="0.2">
+          <g id="组_531" data-name="组 531">
+            <rect id="矩形_443" data-name="矩形 443" width="198" height="2" fill="#00c19c"/>
+            <g id="组_530" data-name="组 530" clip-path="url(#clip-path-3)">
+              <g id="组_529" data-name="组 529">
+                <g id="组_528" data-name="组 528" clip-path="url(#clip-path)">
+                  <use id="矩形_444" data-name="矩形 444" transform="translate(-0.938 -0.073)" xlink:href="#image"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="组_533" data-name="组 533" transform="translate(2778.737 648.259)">
+          <path id="路径_477" data-name="路径 477" d="M2797.737,662.164v-19h-19" transform="translate(-2778.737 -643.164)" fill="none" stroke="#03fbee" stroke-miterlimit="10" stroke-width="2"/>
+          <path id="路径_478" data-name="路径 478" d="M2778.737,707.164h19v-19" transform="translate(-2778.737 -643.164)" fill="none" stroke="#03fbee" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <rect id="矩形_468" data-name="矩形 468" width="185.117" height="55.162" transform="translate(2602.083 652.632)" fill="#fff" opacity="0.1"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 2560, 641.48)" filter="url(#_16_)">
+        <text id="_16_2" data-name="16%" transform="translate(158.11 48.5)" fill="#ffd60b" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">16</tspan><tspan y="0" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400">%</tspan></text>
+      </g>
+      <text id="_0" data-name="0" transform="translate(2571 915.527)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan></text>
+      <text id="_4" data-name="4" transform="translate(2571 875.439)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">4</tspan></text>
+      <text id="_8" data-name="8" transform="translate(2571 834.712)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">8</tspan></text>
+      <text id="_12" data-name="12" transform="translate(2560 792.887)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">12</tspan></text>
+      <text id="_16" data-name="16" transform="translate(2560 749.456)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">16</tspan></text>
+      <text id="_2" data-name="2" transform="translate(2659.167 872.796)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2</tspan></text>
+      <text id="_2-2" data-name="2" transform="translate(2714.167 872.796)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2</tspan></text>
+      <text id="_9" data-name="9" transform="translate(2814.374 810.458)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">9</tspan></text>
+      <text id="_11" data-name="11" transform="translate(2962.379 780.986)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">11</tspan></text>
+      <text id="_1" data-name="1" transform="translate(3014.513 896.109)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">1</tspan></text>
+      <text id="_0-2" data-name="0" transform="translate(2863.794 896.109)" fill="#03ecff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan></text>
+    </g>
+    <text id="_35岁以下_" data-name="35岁以下：" transform="translate(2605.322 688.265)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">35岁以下：</tspan></text>
+  </g>
+</svg>

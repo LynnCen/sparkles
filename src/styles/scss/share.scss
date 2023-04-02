@@ -1,0 +1,178 @@
+@import "base";
+@import "public";
+
+.share-menu {
+  color: $white;
+  text-align: center;
+  .menu-title {
+    @extend .flex-center;
+    width: 36px;
+    height: 36px;
+    margin: 0 4px;
+    font-size: 10px;
+    border-radius: 50%;
+    background: $black_80;
+    .vrp-menu-icon {
+      border: none;
+      color: $white;
+      &:hover {
+        color: $highlight;
+      }
+    }
+    .vrp-second-menu {
+      .vrp-second-li:hover .vrp-icon {
+        color: $highlight !important;
+      }
+      .menu-item-group .expand-content .vrp-second-li {
+        width: 100px;
+        line-height: 28px;
+        border-bottom: 1px solid #373737;
+        &:hover {
+          color: $highlight !important;
+        }
+      }
+    }
+    .menu-item-group {
+      .vrp-second-menu {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: -30px;
+        margin-top: 20px !important;
+        width: 100px;
+        background: $black_70;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 2px;
+        color: $white;
+        .menu-item {
+          width: 100px;
+          line-height: 28px;
+          border-bottom: 1px solid #373737;
+          &:hover {
+            color: #1890ff !important;
+          }
+        }
+        .vrp-second-li {
+          width: 100px;
+          line-height: 28px;
+          border-bottom: 1px solid #373737;
+          &:hover {
+            color: #1890ff !important;
+          }
+        }
+        .menu-title {
+          font-size: 12px;
+        }
+        &:before {
+          position: absolute;
+          top: -10px;
+          left: 44px;
+          content: "";
+          border-top: 2px transparent dashed;
+          border-left: 8px transparent dashed;
+          border-right: 8px transparent dashed;
+          border-bottom: 8px $black_70 solid;
+        }
+      }
+      &:hover .vrp-second-menu {
+        display: block;
+      }
+    }
+    &:hover .vrp-second-menu {
+      display: block;
+    }
+  }
+  .first-menu {
+    display: block;
+    height: 35px;
+  }
+  .menu-item-group {
+    position: relative;
+    float: left;
+    height: 50px;
+    .expand-content {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: -30px;
+      margin-top: 20px !important;
+      width: 100px;
+      background: $black_70;
+      border-radius: 2px;
+      color: $white;
+      .menu-item {
+        width: 100px;
+        line-height: 28px;
+        border-bottom: 1px solid #373737;
+        &:hover {
+          color: #1890ff !important;
+        }
+      }
+      .menu-title {
+        font-size: 12px;
+      }
+      &:before {
+        position: absolute;
+        top: -10px;
+        left: 44px;
+        content: "";
+        border-top: 2px transparent dashed;
+        border-left: 8px transparent dashed;
+        border-right: 8px transparent dashed;
+        border-bottom: 8px $black_70 solid;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      .expand-content {
+        display: block;
+      }
+      .menu-title .vrp-second-menu {
+        display: block;
+      }
+    }
+    .menu-text:hover {
+      color: #1890ff;
+    }
+    .menu-title .vrp-second-menu {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: -30px;
+      margin-top: 20px !important;
+      width: 100px;
+      background: $black_70;
+      border-radius: 2px;
+      color: $white;
+      .menu-item {
+        width: 100px;
+        line-height: 28px;
+        border-bottom: 1px solid #373737;
+        &:hover {
+          color: #1890ff !important;
+        }
+      }
+      .vrp-second-li {
+        width: 100px;
+        line-height: 28px;
+        border-bottom: 1px solid #373737;
+        &:hover {
+          color: #1890ff !important;
+        }
+      }
+      .menu-title {
+        font-size: 12px;
+      }
+      &:before {
+        position: absolute;
+        top: -10px;
+        left: 44px;
+        content: "";
+        border-top: 2px transparent dashed;
+        border-left: 8px transparent dashed;
+        border-right: 8px transparent dashed;
+        border-bottom: 8px $black_70 solid;
+      }
+    }
+  }
+}

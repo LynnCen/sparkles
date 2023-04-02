@@ -1,0 +1,165 @@
+{
+  "left": {
+    "child1": {
+      "title": "消防应急通道/点",
+      "content": [
+        {
+          "name": "登高点(个)",
+          "number": "139",
+          "imgurl": "./images/channelManagement/ladderTruck.svg"
+        },
+        {
+          "name": "消防通道(条)",
+          "number": "564",
+          "imgurl": "./images/channelManagement/highway.svg"
+        },
+        {
+          "name": "监控设备(个)",
+          "number": "835",
+          "imgurl": "./images/channelManagement/camera.svg"
+        }
+      ]
+    },
+    "child2": {
+      "title": "时段被占用数",
+      "imgurl": "./images/channelManagement/statistics.svg",
+      "content": [
+        {
+          "name": "近一天 (次)",
+          "number": "24",
+          "key": false
+        },
+        {
+          "name": "近一周 (次)",
+          "number": "136",
+          "key": false
+        },
+        {
+          "name": "近30天 (次)",
+          "number": "571",
+          "key": true
+        }
+      ]
+    },
+    "child3": {
+      "title": "区域统计总数",
+      "imgurl": "./images/channelManagement/weizhiStatistics.svg",
+      "content": [
+        {
+          "name": "主城区 (次)",
+          "number": "1792"
+        },
+        {
+          "name": "开发区 (次)",
+          "number": "1461"
+        }
+      ]
+    }
+  },
+  "right": {
+    "table1": {
+      "title": "待挪车信息列表",
+      "subtitle": "To-be-moved car information list",
+      "number": 13,
+      "data": [
+        {
+          "plate": "丽水·0052696",
+          "time": "12:33:45",
+          "state": "已通知/待挪车",
+          "key": "a"
+        },
+        {
+          "plate": "浙K·20992",
+          "time": "12:33:32",
+          "state": "未接通/再次拨打(64)",
+          "key": "b"
+        },
+        {
+          "plate": "丽水·0052696",
+          "time": "12:33:45",
+          "state": "已通知/待挪车",
+          "key": "a"
+        },
+        {
+          "plate": "丽水·0057639",
+          "time": "12:33:45",
+          "state": "已通知/待挪车",
+          "key": "a"
+        },
+        {
+          "plate": "浙K·8756A",
+          "time": "12:33:45",
+          "state": "已通知/待挪车",
+          "key": "a"
+        },
+        {
+          "plate": "浙K·89890",
+          "time": "12:33:45",
+          "state": "已通知/待挪车",
+          "key": "a"
+        },
+        {
+          "plate": "浙K·73762",
+          "time": "12:33:45",
+          "state": "未接通/已发送短信",
+          "key": "b"
+        }
+      ]
+    },
+    "table2": {
+      "title": "已处理信息列表",
+      "subtitle": "List of processed information",
+      "number": 3240,
+      "data": [
+        {
+          "plate": "丽水·0052696",
+          "time": "12:33:45",
+          "state": "收到通知/已挪车",
+          "key": "c"
+        },
+        {
+          "plate": "浙K·20992",
+          "time": "12:33:32",
+          "state": "挪车超时/已处罚",
+          "key": "d"
+        },
+        {
+          "plate": "丽水·0052696",
+          "time": "12:33:45",
+          "state": "收到通知/已挪车",
+          "key": "c"
+        },
+        {
+          "plate": "丽水·0057639",
+          "time": "12:33:45",
+          "state": "收到通知/已挪车",
+          "key": "c"
+        },
+        {
+          "plate": "浙K·8756A",
+          "time": "12:33:45",
+          "state": "收到通知/已挪车",
+          "key": "c"
+        },
+        {
+          "plate": "浙K·89890",
+          "time": "12:33:45",
+          "state": "收到通知/已挪车",
+          "key": "c"
+        },
+        {
+          "plate": "浙K·73762",
+          "time": "12:33:45",
+          "state": "收到通知/已挪车",
+          "key": "c"
+        }
+      ]
+    }
+  },
+  "colors": {
+    "a": "#FF9000",
+    "b": "#D81E1E",
+    "c": "#259F0B",
+    "d": "#FF5000"
+  }
+}

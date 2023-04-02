@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="706.289" height="114.889" viewBox="0 0 706.289 114.889">
+  <g id="组_1539" data-name="组 1539" transform="translate(-100.818 -1144.124)">
+    <text id="文号" transform="translate(701 1165.124)" fill="#fff" font-size="20" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">文号</tspan></text>
+    <text id="获奖名称" transform="translate(267 1165.124)" fill="#fff" font-size="20" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">获奖名称</tspan></text>
+    <text id="获奖原因" transform="translate(413 1165.124)" fill="#fff" font-size="20" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">获奖原因</tspan></text>
+    <text id="获奖时间" transform="translate(121 1165.124)" fill="#fff" font-size="20" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">获奖时间</tspan></text>
+  </g>
+</svg>

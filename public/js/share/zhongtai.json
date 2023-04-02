@@ -1,0 +1,37 @@
+{
+  "menu": {
+    "title": "党务系统",
+    "icon": "/res/image/icon/admin/26631585456677766.png",
+    "href": "http://www.baidu.com"
+  },
+  "categories": [
+    { "name": "全部", "value": "all" },
+    { "name": "人口", "value": "people" },
+    { "name": "房屋", "value": "house" },
+    { "name": "企业", "value": "enterprise" },
+    { "name": "农林", "value": "farming" },
+    { "name": "工程", "value": "engineering" },
+    { "name": "土地", "value": "land" },
+    { "name": "教育", "value": "education" },
+    { "name": "资产", "value": "assets" },
+    { "name": "旅游", "value": "tour" }
+  ],
+  "streets": [
+    "中泰街道",
+    "桃源社区",
+    "石鸽社区",
+    "新明社区",
+    "幸福河社区",
+    "白云村",
+    "中桥村",
+    "南峰村",
+    "南湖村",
+    "紫荆村",
+    "新泰村",
+    "泰峰村",
+    "双联村",
+    "枫岭村",
+    "岑岭村",
+    "111幸福社区"
+  ]
+}

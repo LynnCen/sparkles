@@ -1,0 +1,215 @@
+{
+  "leftContent": [
+    {
+      "id": "1",
+      "name": "莲都区",
+      "number1": "712.61",
+      "number2": "70.6",
+      "progress1": 35,
+      "progress2": 48
+    },
+    {
+      "id": "2",
+      "name": "峰源乡",
+      "number1": "93.03",
+      "number2": "9.20",
+      "progress1": 56,
+      "progress2": 48
+    },
+    {
+      "id": "3",
+      "name": "黄村乡",
+      "number1": "89.12",
+      "number2": "8.80",
+      "progress1": 34,
+      "progress2": 37
+    },
+    {
+      "id": "4",
+      "name": "老竹镇",
+      "number1": "85.66",
+      "number2": "8.30",
+      "progress1": 33,
+      "progress2": 48
+    },
+    {
+      "id": "5",
+      "name": "大港头镇",
+      "number1": "69.76",
+      "number2": "6.80",
+      "progress1": 50,
+      "progress2": 60
+    },
+    {
+      "id": "6",
+      "name": "碧湖镇",
+      "number1": "66.34",
+      "number2": "6.70",
+      "progress1": 40,
+      "progress2": 34
+    },
+    {
+      "id": "7",
+      "name": "丽新乡",
+      "number1": "69.07",
+      "number2": "6.30",
+      "progress1": 63,
+      "progress2": 60
+    },
+    {
+      "id": "8",
+      "name": "太平乡",
+      "number1": "54.01",
+      "number2": "5.40",
+      "progress1": 24,
+      "progress2": 48
+    },
+    {
+      "id": "9",
+      "name": "仙渡乡",
+      "number1": "49.99",
+      "number2": "4.80",
+      "progress1": 42,
+      "progress2": 48
+    },
+    {
+      "id": "10",
+      "name": "联城街道",
+      "number1": "43.34",
+      "number2": "4.20",
+      "progress1": 40,
+      "progress2": 30
+    },
+    {
+      "id": "11",
+      "name": "紫金街道",
+      "number1": "36.78",
+      "number2": "3.50",
+      "progress1": 30,
+      "progress2": 20
+    },
+    {
+      "id": "12",
+      "name": "白云街道",
+      "number1": "22.66",
+      "number2": "2.30",
+      "progress1": 36,
+      "progress2": 48
+    },
+    {
+      "id": "13",
+      "name": "万象街道",
+      "number1": "19.20",
+      "number2": "1.70",
+      "progress1": 70,
+      "progress2": 48
+    },
+    {
+      "id": "14",
+      "name": "岩泉街道",
+      "number1": "17.23",
+      "number2": "1.40",
+      "progress1": 60,
+      "progress2": 60
+    },
+    {
+      "id": "15",
+      "name": "南明山街道",
+      "number1": "13.09",
+      "number2": "1.20",
+      "progress1": 40,
+      "progress2": 60
+    },
+    {
+      "id": "16",
+      "name": "水阁街道",
+      "number1": "12.03",
+      "number2": "1.10",
+      "progress1": 24,
+      "progress2": 48
+    }
+  ],
+  "rightContent": [
+    {
+      "index": "1",
+      "title": "整治进度·面积",
+      "subtitle": "Remediation progress · Area",
+      "list": [
+        {
+          "index": "1_1",
+          "imgUrl": "./images/fangzhi/area.svg",
+          "title": "普查感染面积",
+          "number": ""
+        },
+        {
+          "index": "1_2",
+          "imgUrl": "./images/fangzhi/area.svg",
+          "title": "存量感染面积",
+          "number": "547.0"
+        }
+      ],
+      "targetNum": "312.5",
+      "reportNum": "183.1",
+      "schedule1": 62.2,
+      "schedule2": 41.2,
+      "acceptance": 143.2,
+      "unit": "万亩"
+    },
+    {
+      "index": "2",
+      "title": "整治进度·疫木",
+      "subtitle": "Remediation progress · Epidemic tree",
+      "list": [
+        {
+          "index": "2_1",
+          "imgUrl": "./images/fangzhi/treeicon.png",
+          "title": "普查疫木",
+          "number": ""
+        },
+        {
+          "index": "2_2",
+          "imgUrl": "./images/fangzhi/treeicon.png",
+          "title": "存量疫木",
+          "number": "47.0"
+        }
+      ],
+      "targetNum": "50.5",
+      "reportNum": "31.1",
+      "schedule1": 61.6,
+      "schedule2": 33.8,
+      "acceptance": 23.6,
+      "unit": "万株"
+    },
+    {
+      "index": "3",
+      "title": "整治进度·小班",
+      "subtitle": "Remediation progress · small class",
+      "list": [
+        {
+          "index": "3_1",
+          "imgUrl": "./images/fangzhi/icon1.png",
+          "title": "小班数量",
+          "number": "574"
+        },
+        {
+          "index": "3_2",
+          "imgUrl": "",
+          "title": "普查感染数",
+          "number": "173"
+        },
+        {
+          "index": "3_3",
+          "imgUrl": "",
+          "title": "存量感染数",
+          "number": "136"
+        }
+      ],
+      "targetNum": "100",
+      "reportNum": "30",
+      "schedule1": 30,
+      "schedule2": 25.2,
+      "acceptance": 27,
+      "unit": "个"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+    "content1": {
+        "title": "重点指标",
+        "data": [
+            {
+                "title": "重点人员总数",
+                "num": 2,
+                "unit": "人"
+            },
+            {
+                "title": "重点人员占比",
+                "num": 0.26,
+                "unit": "%"
+            }
+        ]
+    },
+    "content2": {
+        "title": "各类人数",
+        "data": [
+            {
+                "count": 0,
+                "text": "上访人员"
+            },
+            {
+                "count": 0,
+                "text": "重点青少年"
+            },
+            {
+                "count": 0,
+                "text": "矫正对象"
+            },
+            {
+                "count": 0,
+                "text": "失独家庭"
+            },
+            {
+                "count": 2,
+                "text": "精神障碍"
+            },
+            {
+                "count": 0,
+                "text": "吸毒人员"
+            },
+            {
+                "count": 0,
+                "text": "刑满释放"
+            },
+            {
+                "count": 0,
+                "text": "涉刑人员"
+            },
+            {
+                "count": 0,
+                "text": "反社会人员"
+            },
+            {
+                "count": 0,
+                "text": "反政府人员"
+            },
+            {
+                "count": 0,
+                "text": "危险品从业人员"
+            },
+            {
+                "count": 0,
+                "text": "寄递业从业人员"
+            }
+        ],
+        "child": {
+            "title": "重点青少年",
+            "icon": "./images/songyangMap/icon/titleicon.svg",
+            "url": "./images/songyangMap/image/charts/personnel1.svg",
+            "data": [
+                { "value": 2021, "name": "涉黄", "unit": "人" },
+                { "value": 1920, "name": "涉赌", "unit": "人" },
+                { "value": 1890, "name": "打架斗殴", "unit": "人" }
+              ]
+        }
+    },
+    "content3": {
+        "title": "重点人员报道情况",
+        "url": "./images/songyangMap/image/charts/personnel3.svg",
+        "chartData": [
+            {
+                "name": "2020.3",
+                "value": 55,
+                "unit": "百分比"
+            },
+            {
+                "name": "2020.6",
+                "value": 78,
+                "unit": "百分比"
+            },
+            {
+                "name": "2020.9",
+                "value": 88,
+                "unit": "百分比"
+            },
+            {
+                "name": "2020.12",
+                "value": 90,
+                "unit": "百分比"
+            },
+            {
+                "name": "2021.3",
+                "value": 88,
+                "unit": "百分比"
+            },
+            {
+                "name": "2021.6",
+                "value": 94,
+                "unit": "百分比"
+            }
+            
+        ]
+    },
+    "content4": {
+        "title": "重点人员人数发展趋势",
+        "url": "./images/songyangMap/image/charts/personnel4.svg",
+        "chartData": [
+            {
+                "name": "2016年",
+                "value": 3,
+                "unit": "低边低保户数"
+            },
+            {
+                "name": "2017年",
+                "value": 3,
+                "unit": "低边低保户数"
+            },
+            {
+                "name": "2018年",
+                "value": 3,
+                "unit": "低边低保户数"
+            },
+            {
+                "name": "2019年",
+                "value": 3,
+                "unit": "低边低保户数"
+            },
+            {
+                "name": "2020年",
+                "value": 2,
+                "unit": "低边低保户数"
+            }
+
+            
+        ]
+    },
+    "content5": {
+        "title": "年龄性别结构",
+        "url": "./images/songyangMap/image/charts/personnel2.svg",
+        "data": [
+            {
+                "num": 2,
+                "unit": "人"
+            },
+            {
+                "num": 0,
+                "unit": "人"
+            }
+        ]
+    }
+}

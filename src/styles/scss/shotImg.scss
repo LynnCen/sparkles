@@ -1,0 +1,53 @@
+.shotImg-vrpModal .blockspan {
+  display: block;
+  margin: 8px 0 0 0;
+}
+.jietu-manual-div {
+  margin: 0 0 8px 0;
+}
+.jietu-manual-div span {
+  margin: 0 8px 0 0;
+}
+.shotImg-drawArea-container {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  text-align: center;
+  margin-left: -700px;
+  width: 1400px;
+  height: 68px;
+  line-height: 68px;
+}
+.shotImg-drawArea-but {
+  height: 58px;
+  font-size: 18px;
+}
+.shotImg-adjustAngle-angle {
+  position: fixed;
+  background-color: rgba(202, 202, 202, 0.4);
+  border-radius: 14px;
+  top: 88px;
+  left: 50%;
+  text-align: center;
+  margin-left: -300px;
+  width: 600px;
+  height: 68px;
+  line-height: 68px;
+}
+.shotImg-adjustAngle-angle span {
+  font-size: 19px;
+  margin: 0 10px;
+  color: rgb(255, 255, 255);
+}
+.shotImg-adjustAngle-but {
+  position: fixed;
+  //background-color: rgba(202, 202, 202, 0.4);
+  border-radius: 14px;
+  bottom: 100px;
+  left: 50%;
+  text-align: center;
+  margin-left: -300px;
+  width: 600px;
+  height: 100px;
+  line-height: 100px;
+}

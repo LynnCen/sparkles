@@ -1,0 +1,249 @@
+@import "./base";
+@import "./public";
+
+.vrp-right-menu {
+  display: grid;
+  position: absolute;
+  top: 49px;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  vertical-align: middle;
+  background: $base-default-bg;
+  border: 1px solid $base-default-border-color;
+  transition: all 0.3s;
+  z-index: 4;
+
+  .vrp-menu-item {
+    @extend .flex-center;
+    height: 50px;
+    //border-left: 1px solid #c2c2c2;
+    //border-top: 1px solid transparent;
+    //border-bottom: 1px solid transparent;
+  }
+
+  .vrp-grid-item {
+    display: grid;
+    align-items: end;
+    margin: 0;
+  }
+}
+
+.hide-right-menu {
+  animation: moveright 1s 1;
+  right: -40px;
+}
+
+.show-right-menu {
+  animation: moveleft 1s 1;
+  right: 0;
+}
+
+@keyframes moveright {
+  from {
+    right: 0;
+  }
+  to {
+    right: -40px;
+  }
+}
+
+@keyframes moveleft {
+  from {
+    right: -40px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.vrp-right-modal {
+  top: -55px;
+  left: -77vh;
+}
+
+.vrp-right-list {
+  padding: $base-md;
+
+  .list-title {
+    font-size: 1rem;
+  }
+}
+
+.vrp-list-ul {
+  position: relative;
+  height: 375px;
+  box-shadow: 0 2px 2px #eee;
+  overflow-y: auto;
+
+  .vrp-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    height: 40px;
+    border-bottom: 1px solid #f5f5f5;
+    cursor: pointer;
+
+    .title {
+      height: 40px;
+      width: 100%;
+      line-height: 40px;
+      @extend .text-overflow-hide;
+    }
+
+    &:nth-of-type(odd) {
+      background: #f5f5f5;
+    }
+
+    &:hover {
+      background: #d2e8fb;
+    }
+
+    .after-content {
+      display: flex;
+      align-items: center;
+      width: 70%;
+    }
+
+    .item-icons {
+      :global(.icon) {
+        padding: 0 0.15rem;
+        color: #999;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .vrp-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+.vrp-model-list {
+  max-height: calc(100vh - 155px);
+  min-height: 80px;
+  overflow-y: auto;
+
+  .vrp-model-li {
+    position: relative;
+    display: inline-block;
+    padding: 6px;
+
+    :global(.ant-spin-blur) {
+      overflow: inherit;
+    }
+
+    .vrp-model-img {
+      width: 50px;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      border: 1px solid #bfbfbf;
+
+      &.small {
+        width: 38px;
+        height: 38px;
+      }
+
+      &:hover {
+        border-color: $highlight;
+        cursor: pointer;
+      }
+    }
+
+    .vrp-del-icon {
+      display: none;
+      position: absolute;
+      top: 3px;
+      right: 2px;
+      color: #000;
+      background: $white;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &:hover {
+      .vrp-del-icon {
+        display: block;
+      }
+    }
+  }
+}
+
+.vrp-monitor-list {
+  position: relative;
+
+  .vrp-list {
+    position: absolute;
+    background: $white;
+    z-index: 2;
+    right: 0;
+    left: 0;
+
+    .vrp-list-item {
+      display: flex;
+      align-items: center;
+      padding: 0 5px;
+
+      &:hover {
+        background: #e6f7ff;
+      }
+    }
+  }
+}
+
+.gps-status-icon {
+  margin-right: 4px;
+  color: red;
+  font-size: 12px;
+  vertical-align: baseline;
+}
+
+:global {
+  .monitor-video-play {
+    width: 100%;
+    .monitor-video {
+      width: 100%;
+      background: $black;
+    }
+  }
+}
+
+.on-line {
+  color: green;
+}
+
+.off-line {
+  color: red;
+}
+
+.vrp-dynamic-list {
+  .vrp-li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+
+    .vrp-img {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #bfbfbf;
+
+      &:hover {
+        border-color: $highlight;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.border-list {
+  @extend .flex-center;
+  padding: $base-sm 0;
+  border-bottom: 1px solid #eee;
+}

@@ -1,0 +1,164 @@
+{
+    "content1": {
+        "title": "重点指标",
+        "data": [
+            {
+                "title": "需帮扶人员",
+                "num": 111,
+                "unit": "人"
+            },
+            {
+                "title": "结队干部",
+                "num": 26,
+                "unit": "人"
+            }
+        ]
+    },
+    "content2": {
+        "title": "各类人数",
+        "description": [
+            "人员类型",
+            "人数"
+        ],
+        "data": [
+            {
+                "title": "留守儿童",
+                "num": 3
+            },
+            {
+                "title": "困境儿童",
+                "num": 1
+            },
+            {
+                "title": "留守老人",
+                "num": 0
+            },
+            {
+                "title": "失独家庭",
+                "num": 0
+            },
+            {
+                "title": "低保人员",
+                "num": 15
+            },
+            {
+                "title": "低收入边缘户",
+                "num": 37
+            },
+            {
+                "title": "残疾人员",
+                "num": 26
+            },
+            {
+                "title": "五保人员",
+                "num": 0
+            },
+            {
+                "title": "优抚人员",
+                "num": 0
+            },
+            {
+                "title": "服刑在教人员未成年子女",
+                "num": 0
+            }
+        ]
+    },
+    "content3": {
+        "title": "医保预警",
+        "data1": [
+            {
+                "num": 0,
+                "unit": "次"
+            },
+            {
+                "num": 0,
+                "unit": "人"
+            },
+            {
+                "num": 0,
+                "unit": "万元"
+            }
+        ],
+        "data2": [
+            "预警次数",
+            "帮扶人数",
+            "帮扶金额"
+        ]
+    },
+    "content4": {
+        "title": "走访率分析",
+        "url": "./images/songyangMap/image/charts/help1.svg",
+        "chartData": [
+            {
+                "name": "2020.3",
+                "value": 55,
+                "unit": "百分比"
+            },
+            {
+                "name": "2020.6",
+                "value": 78,
+                "unit": "百分比"
+            },
+            {
+                "name": "2020.9",
+                "value": 88,
+                "unit": "百分比"
+            },
+            {
+                "name": "2020.12",
+                "value": 90,
+                "unit": "百分比"
+            },
+            {
+                "name": "2021.3",
+                "value": 88,
+                "unit": "百分比"
+            },
+            {
+                "name": "2021.6",
+                "value": 94,
+                "unit": "百分比"
+            }
+            
+        ]
+    },
+    "content5": {
+        "title": "帮扶成效",
+        "url": "./images/songyangMap/image/charts/help2.svg",
+        "chartData": [
+            {
+                "name": "2017年",
+                "value": 7,
+                "unit": "低边低保户数"
+            },
+            {
+                "name": "2018年",
+                "value": 6,
+                "unit": "低边低保户数"
+            },
+            {
+                "name": "2019年",
+                "value": 37,
+                "unit": "低边低保户数"
+            },
+            {
+                "name": "2020年",
+                "value": 29,
+                "unit": "低边低保户数"
+            }
+
+            
+        ]
+    },
+    "content6": {
+        "title": "问题解决情况",
+        "url": "./images/songyangMap/image/charts/help3.svg",
+        "chartData": {
+            "total": { "name": "问题总数", "value": 32, "unit": "个" },
+            "data": [
+              { "name": "已解决", "value": 18, "unit": "个" },
+              { "name": "为解决", "value": 14, "unit": "个" }
+            ]
+          }
+    }
+}

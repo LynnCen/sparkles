@@ -1,0 +1,205 @@
+{
+    "content1": {
+        "title": "重点指标",
+        "textShadow": "#31B0F7",
+        "data1": [
+            {
+                "title": "事故总量:",
+                "num": 0,
+                "unit": "个"
+            },
+            {
+                "title": "避灾点:",
+                "num": 1,
+                "unit": "个"
+            }
+        ],
+        "data2": [
+            {
+                "title": "当年经济损失:",
+                "num": 0,
+                "unit": "万元"
+            },
+            {
+                "title": "当年因灾致死人数:",
+                "num": 0,
+                "unit": "人"
+            }
+        ]
+    },
+    "content2": {
+        "title": "各类地点数",
+        "description": [
+            "地址类型",
+            "数量"
+        ],
+        "data": [
+            {
+                "title": "危房",
+                "num": 0
+            },
+            {
+                "title": "地质灾害点",
+                "num": 1
+            },
+            {
+                "title": "小流域隐患",
+                "num": 1
+            },
+            {
+                "title": "水库",
+                "num": 0
+            },
+            {
+                "title": "山塘",
+                "num": 0
+            },
+            {
+                "title": "渠",
+                "num": 0
+            }
+        ]
+    },
+    "content3": {
+        "title": "抢险小组信息",
+        "signal": {
+            "title": "抢险组织信号:",
+            "text": "敲锣"
+        },
+        "imageUrl": "./images/songyangMap/image/avatar.svg",
+        "leadership": [
+            {
+                "name": "曾延富",
+                "position": "队长"
+            },
+            {
+                "name": "王美仙",
+                "position": "副队长"
+            }
+        ],
+        "member": [
+            {
+                "name": "刘先清",
+                "position": "抢险成员"
+            },
+            {
+                "name": "雷辉",
+                "position": "抢险成员"
+            },
+            {
+                "name": "兰木水",
+                "position": "抢险成员"
+            },
+            {
+                "name": "雷土金",
+                "position": "抢险成员"
+            },
+            {
+                "name": "兰海琴",
+                "position": "抢险成员"
+            },
+            {
+                "name": "陈华伟",
+                "position": "抢险成员"
+            }
+        ]
+    },
+    "content4": {
+        "title": "隐患点情况分析",
+        "url": "./images/songyangMap/image/charts/takeRefugechart1.svg",
+        "chartData": [
+            [
+              { "value": 32, "name": "2020年二季度", "text": "隐患点数", "unit": "%" },
+              { "value": 32, "name": "2020年三季度", "text": "隐患点数", "unit": "%" },
+              { "value": 30, "name": "2020年四季度", "text": "隐患点数", "unit": "%" },
+              { "value": 50, "name": "2021年一季度", "text": "隐患点数", "unit": "%" }
+            ],
+            [
+              { "value": 12, "name": "2020年二季度", "text": "巡查次数", "unit": "%" },
+              { "value": 32, "name": "2020年三季度", "text": "巡查次数", "unit": "%" },
+              { "value": 10, "name": "2020年四季度", "text": "巡查次数", "unit": "%" },
+              { "value": 13, "name": "2021年一季度", "text": "巡查次数", "unit": "%" }
+            ],
+            [
+              { "value": 20, "name": "2020年二季度", "text": "转移次数", "unit": "%" },
+              { "value": 18, "name": "2020年三季度", "text": "转移次数", "unit": "%" },
+              { "value": 11, "name": "2020年四季度", "text": "转移次数", "unit": "%" },
+              { "value": 22, "name": "2021年一季度", "text": "转移次数", "unit": "%" }
+            ],
+            [
+              { "value": 20, "name": "2020年二季度", "text": "救灾次数", "unit": "%" },
+              { "value": 12, "name": "2020年三季度", "text": "救灾次数", "unit": "%" },
+              { "value": 19, "name": "2020年四季度", "text": "救灾次数", "unit": "%" },
+              { "value": 24, "name": "2021年一季度", "text": "救灾次数", "unit": "%" }
+            ]
+          ]
+    },
+    "content5": {
+        "title": "解危成效",
+        "url": "./images/songyangMap/image/charts/takeRefugechart2.svg",
+        "chartData": [
+            {
+                "name": "2016年",
+                "value": 3,
+                "unit": "万元"
+            },
+            {
+                "name": "2017年",
+                "value": 9,
+                "unit": "万元"
+            },
+            {
+                "name": "2018年",
+                "value": 4,
+                "unit": "万元"
+            },
+            {
+                "name": "2019年",
+                "value": 7,
+                "unit": "万元"
+            },
+            {
+                "name": "2020年",
+                "value": 6,
+                "unit": "万元"
+            }
+        ]
+    },
+    "content6": {
+        "title": "经济损失情况",
+        "url": "./images/songyangMap/image/charts/takeRefugechart3.svg",
+        "chartData": [
+            {
+                "name": "2016",
+                "value": 55,
+                "unit": "百分比"
+            },
+            {
+                "name": "2017",
+                "value": 78,
+                "unit": "百分比"
+            },
+            {
+                "name": "2018",
+                "value": 88,
+                "unit": "百分比"
+            },
+            {
+                "name": "2019",
+                "value": 90,
+                "unit": "百分比"
+            },
+            {
+                "name": "2020",
+                "value": 88,
+                "unit": "百分比"
+            },
+            {
+                "name": "2021",
+                "value": 94,
+                "unit": "百分比"
+            }
+            
+        ]
+    }
+}

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="168" height="66" viewBox="0 0 168 66">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #00c19c;
+      }
+
+      .cls-4 {
+        opacity: 0.6;
+      }
+
+      .cls-5 {
+        stroke: #03fbee;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-7 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-8 {
+        opacity: 0.5;
+      }
+
+      .cls-9 {
+        opacity: 0.2;
+      }
+
+      .cls-10 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-11 {
+        clip-path: url(#clip-path-5);
+      }
+
+      .cls-12 {
+        clip-path: url(#clip-path-6);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0283da" stop-opacity="0.2"/>
+      <stop offset="0.559" stop-color="#00f7fd" stop-opacity="0.102"/>
+      <stop offset="1" stop-color="#0283da" stop-opacity="0.2"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="矩形_251" data-name="矩形 251" class="cls-1" width="152.092" height="54" transform="translate(-692.296 1959.628)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="矩形_250" data-name="矩形 250" class="cls-1" width="152.092" height="54" transform="translate(-692.296 1959.629)"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="矩形_254" data-name="矩形 254" class="cls-2" width="158" height="2" transform="translate(-689.296 1953.398)"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect id="矩形_258" data-name="矩形 258" class="cls-3" width="158" height="2" transform="translate(-689.296 2017.398)"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect id="矩形_257" data-name="矩形 257" class="cls-2" width="158" height="2" transform="translate(-689.296 2017.398)"/>
+    </clipPath>
+    <image id="image" width="159" height="3" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ8AAAADCAYAAACNv93YAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAn6ADAAQAAAABAAAAAwAAAABM00anAAAAc0lEQVQ4Ee2SwQ7AIAhDdf//zwoKS4OgWXbwApcRfa2FrDaqMgu/ow/umOZ75PWsGI3LoNbwrw8y2Etc9MV+0Yv/lhH/wRzyuD5G4zI6w9c8rKNa5sLM6h2w2zyiOTJ/3ohmfsg0KzdwZQP5811Zez7KG+hxOYKDZ/1c8AAAAABJRU5ErkJggg=="/>
+  </defs>
+  <g id="组_410" data-name="组 410" class="cls-4" transform="translate(699.296 -1953.398)">
+    <g id="组_393" data-name="组 393">
+      <path id="路径_348" data-name="路径 348" class="cls-5" d="M-698.3,1973.4v-19h19"/>
+      <path id="路径_349" data-name="路径 349" class="cls-5" d="M-679.3,2018.4h-19v-19"/>
+    </g>
+    <g id="组_398" data-name="组 398">
+      <g id="组_397" data-name="组 397">
+        <rect id="矩形_247" data-name="矩形 247" class="cls-1" width="152.092" height="54" transform="translate(-692.296 1959.628)"/>
+        <g id="组_396" data-name="组 396" class="cls-6">
+          <g id="组_395" data-name="组 395">
+            <rect id="矩形_248" data-name="矩形 248" class="cls-1" width="152.092" height="54" transform="translate(-692.296 1959.629)"/>
+            <g id="组_394" data-name="组 394" class="cls-7">
+              <image id="矩形_249" data-name="矩形 249" class="cls-8" width="147" height="55" transform="translate(-692.694 1959.322)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJMAAAA3CAYAAAAIaHjtAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAk6ADAAQAAAABAAAANwAAAACNajCwAAABDUlEQVR4Ae3SsQ0AMAzDsLb//5ygP2ikD/Ag8M7MMQWKAq848aHALwATB1kBmLKUjmBiICsAU5bSEUwMZAVgylI6gomBrABMWUpHMDGQFYApS+kIJgayAjBlKR3BxEBWAKYspSOYGMgKwJSldAQTA1kBmLKUjmBiICsAU5bSEUwMZAVgylI6gomBrABMWUpHMDGQFYApS+kIJgayAjBlKR3BxEBWAKYspSOYGMgKwJSldAQTA1kBmLKUjmBiICsAU5bSEUwMZAVgylI6gomBrABMWUpHMDGQFYApS+kIJgayAjBlKR3BxEBWAKYspSOYGMgKwJSldAQTA1kBmLKUjmBiICsAU5bSEUwMZAUW5YgDa+MCLmAAAAAASUVORK5CYII="/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="组_403" data-name="组 403" class="cls-9">
+      <g id="组_402" data-name="组 402">
+        <g id="组_401" data-name="组 401" class="cls-10">
+          <g id="组_400" data-name="组 400">
+            <g id="组_399" data-name="组 399" class="cls-10">
+              <use id="矩形_252" data-name="矩形 252" transform="translate(-689.694 1953.322)" xlink:href="#image"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="组_408" data-name="组 408" class="cls-9">
+      <g id="组_407" data-name="组 407">
+        <rect id="矩形_255" data-name="矩形 255" class="cls-3" width="158" height="2" transform="translate(-689.296 2017.398)"/>
+        <g id="组_406" data-name="组 406" class="cls-11">
+          <g id="组_405" data-name="组 405">
+            <g id="组_404" data-name="组 404" class="cls-12">
+              <use id="矩形_256" data-name="矩形 256" transform="translate(-689.694 2017.322)" xlink:href="#image"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="组_409" data-name="组 409">
+      <path id="路径_350" data-name="路径 350" class="cls-5" d="M-532.5,1973.4v-19h-19"/>
+      <path id="路径_351" data-name="路径 351" class="cls-5" d="M-551.5,2018.4h19v-19"/>
+    </g>
+  </g>
+</svg>

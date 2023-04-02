@@ -1,0 +1,174 @@
+{
+  "title": "丽水市违法建筑管控平台",
+  "enTitle": "LISHUI CITY ILLEGAL BUILDING CONTROL PLATFORM",
+  "overview": {
+    "data": [
+      {
+        "name": "违建总面积",
+        "icon": "./images/wfjz/icon_weizhangzongmianji.png",
+        "value": 343901.82,
+        "unit": "平方米",
+        "max": 300000
+      },
+      {
+        "name": "棚结构违建",
+        "icon": "./images/wfjz/icon_pengjiegou.png",
+        "value": 175686.79,
+        "unit": "平方米",
+        "max": 300000
+      },
+      {
+        "name": "围护结构违建",
+        "icon": "./images/wfjz/icon_weihujiegoou.png",
+        "value": 168215.03,
+        "unit": "平方米",
+        "max": 300000
+      },
+      {
+        "name": "完成违建拆除",
+        "icon": "./images/wfjz/icon_wancheng.png",
+        "value": 0.46,
+        "unit": "%",
+        "max": 1
+      }
+    ]
+  },
+  "statistics": {
+    "title": "整治巡查统计",
+    "enTitle": "Regulation patrol statistics",
+    "data": [
+      {
+        "name": "整治点位",
+        "三月": 60,
+        "四月": 40,
+        "五月": 70,
+        "六月": 65,
+        "七月": 73,
+        "八月": 77
+      },
+      {
+        "name": "发现点位",
+        "三月": 13,
+        "四月": 12,
+        "五月": 11,
+        "六月": 13,
+        "七月": 12,
+        "八月": 20
+      }
+    ]
+  },
+  "streets": {
+    "data": [
+      {
+        "name": "白云街道",
+        "value": 83124.94,
+        "unit": "平方米",
+        "max": 300000
+      },
+      {
+        "name": "岩泉街道",
+        "value": 91591.38,
+        "unit": "平方米",
+        "max": 300000
+      },
+      {
+        "name": "万象街道",
+        "value": 72581.93,
+        "unit": "平方米",
+        "max": 300000
+      },
+      {
+        "name": "联城街道",
+        "value": 80690.93,
+        "unit": "平方米",
+        "max": 400000
+      },
+      { "name": "紫金街道", "value": 91347.93, "unit": "平方米", "max": 350000 }
+    ]
+  },
+  "inspectionList": {
+    "title": "整治巡查列表",
+    "enTitle": "Remediation inspection list",
+    "data": [
+      {
+        "thumbnail": "./images/wfjz/pic1.png"
+      },
+      {
+        "thumbnail": "./images/wfjz/pic2.png"
+      },
+      {
+        "thumbnail": "./images/wfjz/pic3.png"
+      },
+      {
+        "thumbnail": "./images/wfjz/pic4.png"
+      },
+      {
+        "thumbnail": "./images/wfjz/pic5.png"
+      }
+    ]
+  },
+  "chart": {
+    "theme": {
+      "defaultColor": "#ccc",
+      "colors": [
+        "#00baff",
+        "#02ce7f",
+        "#f5f4d6f0",
+        "#223273",
+        "#8543E0",
+        "#13C2C2",
+        "#3436C7",
+        "#F04864"
+      ],
+      "axis": {
+        "left": {
+          "label": {
+            "textStyle": {
+              "fill": "#ccc",
+              "fontSize": 14
+            }
+          },
+          "grid": {
+            "lineStyle": {
+              "stroke": "rgba(255,255,255,0.3)",
+              "lineWidth": 1,
+              "lineDash": [2, 2]
+            },
+            "hideFirstLine": false
+          }
+        },
+        "bottom": {
+          "position": "bottom",
+          "title": null,
+          "label": {
+            "offset": 22,
+            "autoRotate": true,
+            "textStyle": {
+              "fill": "rgba(255,255,255,0.8)",
+              "fontSize": 14,
+              "lineHeight": 20
+            }
+          },
+          "line": {
+            "lineWidth": 0
+          },
+          "tickLine": {
+            "lineWidth": 0
+          }
+        }
+      },
+      "legend": {
+        "bottom": {
+          "itemGap": 24,
+          "width": 156,
+          "height": 16,
+          "textStyle": {
+            "fill": "rgba(204,204,204,0.8)",
+            "fontSize": 14,
+            "lineHeight": 20
+          }
+        }
+      }
+    }
+  }
+}

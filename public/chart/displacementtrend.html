@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>表面位移监测-位移变化趋势图</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #panel-chart {
+        margin-top: 20px;
+        height: inherit;
+      }
+    </style>
+  </head>
+  <body style="overflow:hidden">
+    <div id="panel-chart"></div>
+    <script src="Js/chart/commonChart.js"></script>
+    <script src="Js/chart/displacementtrend.js"></script>
+    <script>
+      let timer = setInterval(() => {
+        if ($("#panel-chart").height()) {
+          $("html").height($("#panel-chart").height());
+          clearInterval(timer);
+        }
+      }, 20);
+    </script>
+  </body>
+</html>

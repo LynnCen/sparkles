@@ -1,0 +1,284 @@
+{
+    "content1": {
+        "title": "重点指标",
+        "child": [
+            {
+                "title": "人口情况",
+                "textShadow": "#31B0F7",
+                "data": [
+                    {
+                        "title": "总户数:",
+                        "num": 274,
+                        "unit": "户"
+                    },
+                    {
+                        "title": "人口总数:",
+                        "num": 778,
+                        "unit": "人"
+                    },
+                    {
+                        "title": "村民组数:",
+                        "num": 5,
+                        "unit": "组"
+                    }
+                ]
+            },
+            {
+                "title": "收入情况",
+                "textShadow": "#F47231",
+                "data": [
+                    {
+                        "title": "上年度经济总收入:",
+                        "num": 32.54,
+                        "unit": "万元"
+                    },
+                    {
+                        "title": "村民人均收入:",
+                        "num": 12300,
+                        "unit": "元"
+                    }
+                ]
+            }
+        ]
+    },
+    "content2": {
+        "title": "三联情况",
+        "imageUrl": "./images/songyangMap/image/avatar.svg",
+        "data": [
+            {
+                "name": "章剑荣",
+                "position": "联系乡领导"
+            },
+            {
+                "name": "李王星",
+                "position": "驻村干部"
+            }
+        ]
+    },
+    "content3": {
+        "title": "矛盾调解",
+        "url": "./images/songyangMap/image/charts/homechart1.svg",
+        "chartData": [
+            {
+                "name": "已解决",
+                "y": 147,
+                "unit": "件"
+            },
+            {
+                "name": "未解决",
+                "y": 117,
+                "unit": "件"
+            }
+        ],
+        "problem": 82
+    },
+    "content4": {
+        "title": "民族特色活动展示",
+        "background": "./images/songyangMap/image/video-background.svg",
+        "image": "./images/songyangMap/image/homecontent4.svg"
+    },
+    "content5": {
+        "title": "人口构成情况",
+        "textShadow": "#31B0F7",
+        "url": "./images/songyangMap/image/charts/homechart2.svg",
+        "data": [
+            {
+                "title": "流动人口:",
+                "num": 353,
+                "unit": "人"
+            },
+            {
+                "title": "外来人口:",
+                "num": 0,
+                "unit": "人"
+            },
+            {
+                "title": "外出务工:",
+                "num": 425,
+                "unit": "人"
+            }
+        ],
+        "chartData": [
+            {
+                "text": "男性",
+                "data": [
+                    {
+                        "value": 7,
+                        "name": "0-18岁"
+                    },
+                    {
+                        "value": 20,
+                        "name": "18-60岁"
+                    },
+                    {
+                        "value": 62,
+                        "name": "60-70岁"
+                    },
+                    {
+                        "value": 24,
+                        "name": "70-90岁"
+                    },
+                    {
+                        "value": 24,
+                        "name": "90岁以上"
+                    }
+                ]
+            },
+            {
+                "text": "女性",
+                "data": [
+                    {
+                        "value": 15,
+                        "name": "0-18岁"
+                    },
+                    {
+                        "value": 34,
+                        "name": "18-60岁"
+                    },
+                    {
+                        "value": 62,
+                        "name": "60-70岁"
+                    },
+                    {
+                        "value": 24,
+                        "name": "70-90岁"
+                    },
+                    {
+                        "value": 6,
+                        "name": "90岁以上"
+                    }
+                ]
+            }
+        ]
+    },
+    "content6": {
+        "title": "经济收入情况",
+        "url": "./images/songyangMap/image/charts/homechart3.svg",
+        "chartData": [
+            {
+                "name": "集体经济收入",
+                "value": 16.58,
+                "unit": "万元"
+            },
+            {
+                "name": "经营性收入",
+                "value": 15.96,
+                "unit": "万元"
+            }
+        ],
+        "total": {
+            "name": "总收入",
+            "value": 32.54,
+            "unit": "万元"
+        },
+        "color": [
+            "#11BC8E",
+            "#F5D44A"
+        ]
+    },
+    "content7": {
+        "title": "土地情况",
+        "url": "./images/songyangMap/image/charts/homechart4.svg",
+        "chartData": [
+            {
+                "data": [
+                    {
+                        "name": "行政区域面积",
+                        "value": 8.34,
+                        "unit": "平方公里"
+                    },
+                    {
+                        "name": "其余面积",
+                        "value": 0.22,
+                        "unit": "平方公里"
+                    }
+                ],
+                "color": [
+                    [
+                        "rgba(19, 132, 234, 0.4)",
+                        "rgba(133, 141, 144, 0.4)"
+                    ],
+                    [
+                        "rgba(19, 132, 234, 1)",
+                        "rgba(49, 176, 247, 1)"
+                    ]
+                ]
+            },
+            {
+                "data": [
+                    {
+                        "name": "林地面积",
+                        "value": 11472,
+                        "unit": "亩"
+                    },
+                    {
+                        "name": "其余面积",
+                        "value": 900,
+                        "unit": "亩"
+                    }
+                ],
+                "color": [
+                    [
+                        "rgba(17, 237, 157, 0.4)",
+                        "rgba(133, 141, 144, 0.4)"
+                    ],
+                    [
+                        "rgba(17, 237, 157, 1)",
+                        "rgba(49, 176, 247, 1)"
+                    ]
+                ]
+            },
+            {
+                "data": [
+                    {
+                        "name": "耕地面积",
+                        "value": 222,
+                        "unit": "亩"
+                    },
+                    {
+                        "name": "其余面积",
+                        "value": 600,
+                        "unit": "亩"
+                    }
+                ],
+                "color": [
+                    [
+                        "rgba(226, 215, 26, 0.4)",
+                        "rgba(133, 141, 144, 0.4)"
+                    ],
+                    [
+                        "rgba(226, 215, 26, 1)",
+                        "rgba(49, 176, 247, 1)"
+                    ]
+                ]
+            }
+        
+        ]
+    },
+    "content8": {
+        "title": "村民参保情况",
+        "url": "./images/songyangMap/image/charts/homechart5.svg",
+        "chartData": [
+            {
+                "name": "城镇医疗",
+                "value": 7,
+                "unit": "人数"
+            },
+            {
+                "name": "新融合医保",
+                "value": 6,
+                "unit": "人数"
+            },
+            {
+                "name": "离退休保险",
+                "value": 7,
+                "unit": "人数"
+            },
+            {
+                "name": "残疾人保险",
+                "value": 7,
+                "unit": "人数"
+            }
+        ]
+    }
+}

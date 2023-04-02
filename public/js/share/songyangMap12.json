@@ -1,0 +1,150 @@
+{
+    "leftContent":{
+      "child1": {
+        "title": "总体情况",
+        "textShadow": "#31B0F7",
+        "content1": [
+            {
+                "title": "村域总面积：",
+                "num": 1406,
+                "unit": "k㎡"
+            },
+            {
+                "title": "建设用地：",
+                "num": 277,
+                "unit": "k㎡"
+            }
+        ],
+        "content2": [
+            {
+                "title": "常住人口：",
+                "num": 2640,
+                "unit": "人"
+            },
+            {
+                "title": "非建设用地：",
+                "num": 565,
+                "unit": "k㎡"
+            }
+        ]
+    },
+    "child2": {
+      "title": "用地类别分析",
+      "activeIndex": 0,
+      "tabs": ["现有", "规划"],
+      "chartData": [
+        { "name": "城乡居民点", "value": 3, "unit": "k㎡" },
+        { "name": "交通设施用地", "value": 9, "unit": "k㎡" },
+        { "name": "公用设施用地", "value": 4, "unit": "k㎡" },
+        { "name": "特殊用地", "value": 7, "unit": "k㎡" },
+        { "name": "采矿用地", "value": 6, "unit": "k㎡" },
+        { "name": "水域", "value": 3, "unit": "k㎡" },
+        { "name": "农林用地", "value": 9, "unit": "k㎡" },
+        { "name": "其他", "value": 4, "unit": "k㎡" }
+      ]
+  },
+  "child3":{
+    "title": "建筑现状",
+    "data": [
+        { "value": 277, "name": "C级危旧房屋数", "unit": "幢" },
+        { "value": 321, "name": "D级危旧房屋数", "unit": "幢" },
+        { "value": 235, "name": "挂牌保护古建筑数", "unit": "幢" }
+      ],
+      "entitle": "房屋总数",
+      "total": 209,
+      "titleStyle": {
+        "x": "25%",
+        "y": "35%"
+      },
+      "color": ["#F97B26", "#11BC8E", "#26E9F9"],
+      "legendStyle": {
+        "orient": "vertical",
+        "x": "50%",
+        "y": "center"
+      },
+      "seriesRadius": [["66%", "70%"], ["58%", "0%"]],
+      "seriesCenter": ["26%", "50%"],
+      "intervalVal": 10
+  }
+  },
+  
+  "rightContent":{
+    "child1":{
+      "title": "用地面积发展趋势",
+      "data": [
+        [
+          { "value": 32, "name": "2015", "text": "建设用地", "unit": "k㎡" },
+          { "value": 32, "name": "2016", "text": "建设用地", "unit": "k㎡" },
+          { "value": 30, "name": "2017", "text": "建设用地", "unit": "k㎡" },
+          { "value": 50, "name": "2018", "text": "建设用地", "unit": "k㎡" },
+          { "value": 30, "name": "2019", "text": "建设用地", "unit": "k㎡" }
+        ],
+        [
+          { "value": 12, "name": "2015", "text": "非建设用地", "unit": "k㎡" },
+          { "value": 32, "name": "2016", "text": "非建设用地", "unit": "k㎡" },
+          { "value": 10, "name": "2017", "text": "非建设用地", "unit": "k㎡" },
+          { "value": 13, "name": "2018", "text": "非建设用地", "unit": "k㎡" },
+          { "value": 30, "name": "2019", "text": "非建设用地", "unit": "k㎡" }
+        ]
+      ],
+      "color": [
+        ["rgba(2, 210, 218, 0)", "rgba(2, 210, 218, 1)"],
+        ["rgba(9, 203, 91, 0)", "rgba(9, 203, 91, 1)"]
+      ]
+    },
+    "child2":{
+  "title":"各类用地发展趋势",
+  "data": [
+    [
+      { "name": "居住", "value": 70, "unit": "万亩", "year": 2016 },
+      { "name": "居住", "value": 66, "unit": "万亩", "year": 2017 },
+      { "name": "居住", "value": 10, "unit": "万亩", "year": 2018 },
+      { "name": "居住", "value": 70, "unit": "万亩", "year": 2019 },
+      { "name": "居住", "value": 66, "unit": "万亩", "year": 2020 }
+
+    ],
+    [
+      { "name": "生产", "value": 55, "unit": "万亩", "year": 2016 },
+      { "name": "生产", "value": 45, "unit": "万亩", "year": 2017 },
+      { "name": "生产", "value": 45, "unit": "万亩", "year": 2018 },
+      { "name": "生产", "value": 55, "unit": "万亩", "year": 2019 },
+      { "name": "生产", "value": 45, "unit": "万亩", "year": 2020 }
+    ],
+    [
+      { "name": "交通", "value": 25, "unit": "万亩", "year": 2016 },
+      { "name": "交通", "value": 38, "unit": "万亩", "year": 2017 },
+      { "name": "交通", "value": 72, "unit": "万亩", "year": 2018 },
+      { "name": "交通", "value": 25, "unit": "万亩", "year": 2019 },
+      { "name": "交通", "value": 38, "unit": "万亩", "year": 2020 }
+    ],
+    [
+      { "name": "绿地", "value": 66, "unit": "万亩", "year": 2016 },
+      { "name": "绿地", "value": 10, "unit": "万亩", "year": 2017 },
+      { "name": "绿地", "value": 70, "unit": "万亩", "year": 2018 },
+      { "name": "绿地", "value": 66, "unit": "万亩", "year": 2019 },
+      { "name": "绿地", "value": 70, "unit": "万亩", "year": 2020 }
+
+    ]
+  ],
+  "colors": ["#02CFD7", "#F5D44A", "#1DBC8E", "#F97B26"],
+  "legendStyle": {
+    "icon": "react",
+    "right": 0
+  },
+  "areaStyleOpacity": 0
+  ,
+  "color": [
+    ["rgba(2, 210, 218, 0)", "rgba(2, 210, 218, 1)"],
+    ["rgba(9, 203, 91, 0)", "rgba(9, 203, 91, 1)"]
+  ]
+    },
+    "child3":{
+      "title":"人均用地面积情况",
+      "data": [
+        { "value": 35, "name": "城乡居民点建设用地", "unit": "㎡/人" },
+        { "value": 34, "name": "居住用地", "unit": "㎡/人" },
+        { "value": 33, "name": "村庄建设用地", "unit": "㎡/人" },
+        { "value": 18, "name": "城市道路与交通设施用地", "unit": "㎡/人" }
+      ]
+    }
+  }}

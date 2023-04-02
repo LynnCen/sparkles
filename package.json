@@ -1,0 +1,82 @@
+{
+  "name": "dtcity_editor",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/DTCity/dtcity_editor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "set port=3002 && roadhog server",
+    "build": "set ANALYZE=true && roadhog build",
+    "build-stage": "set STAGE=true && roadhog build",
+    "start-lz": "set port=3003 && set LIZHONG=true && roadhog server",
+    "build-lz": "set LIZHONG=true && roadhog build",
+    "deploy": "./deploy.bat",
+    "deploy-stage": "./deploy-stage.bat",
+    "lint": "eslint --ext .js src",
+    "test": "roadhog test --watch",
+    "coverage": "roadhog test --watch --coverage",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@antv/data-set": "^0.10.2",
+    "@antv/l7": "^2.3.9",
+    "@antv/l7-maps": "^2.3.9",
+    "@types/node": "^14.14.35",
+    "antd": "^3.20.7",
+    "bizcharts": "^3.5.5",
+    "braft-editor": "^2.2.0",
+    "dva": "^2.4.0",
+    "echarts": "^5.1.1",
+    "echarts-for-react": "^3.0.1",
+    "file-saver": "^2.0.2",
+    "highcharts": "^9.1.0",
+    "highcharts-react-official": "^3.0.0",
+    "jszip": "^3.5.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "react": "^16.9.0",
+    "react-color": "^2.17.0",
+    "react-dom": "^16.9.0",
+    "react-draggable": "^3.0.5",
+    "react-transition-group": "^4.3.0",
+    "reqwest": "^2.0.5",
+    "video.js": "^7.6.0",
+    "videojs-flash": "^2.2.0",
+    "xlsx": "^0.15.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.24",
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
+    "babel-plugin-dva-hmr": "^0.4.2",
+    "babel-plugin-import": "^1.11.0",
+    "compression-webpack-plugin": "^1.1.12",
+    "eslint": "^4.19.1",
+    "eslint-config-umi": "^0.1.1",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "husky": "^0.12.0",
+    "node-sass": "^4.14.1",
+    "redbox-react": "^1.4.3",
+    "roadhog": "^2.5.0-beta.4",
+    "sass-loader": "^7.1.0",
+    "ts-lint": "^4.5.1",
+    "ts-loader": "^5.2.2",
+    "tslint": "^5.12.0",
+    "umi-test": "^1.9.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
+}

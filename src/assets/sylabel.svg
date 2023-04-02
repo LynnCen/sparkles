@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="439.277" height="70.653" viewBox="0 0 439.277 70.653">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-5 {
+        fill: none;
+        stroke: #0088c7;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-width: 3px;
+        opacity: 0.2;
+      }
+
+      .cls-3 {
+        fill: #0f3d38;
+        opacity: 0.78;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.301" y1="0.993" x2="0.609" y2="-0.06" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0557c9"/>
+      <stop offset="0.027" stop-color="#055cc9"/>
+      <stop offset="0.236" stop-color="#0684cb"/>
+      <stop offset="0.441" stop-color="#08a3cc"/>
+      <stop offset="0.64" stop-color="#09b9ce"/>
+      <stop offset="0.83" stop-color="#09c7ce"/>
+      <stop offset="1" stop-color="#0acccf"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.327" y1="0.989" x2="0.598" y2="-0.071" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="组_94" data-name="组 94" transform="translate(-726.751 -192.585)">
+    <path id="路径_129" data-name="路径 129" class="cls-1" d="M761.4,194.824,728.051,232.25l23.271,29.989H986.684l8.157-6.957h171.188"/>
+    <line id="直线_39" data-name="直线 39" class="cls-2" x1="392.404" transform="translate(772.994 194.344)"/>
+    <path id="路径_130" data-name="路径 130" class="cls-3" d="M752.275,223.933,781.57,194.5l384.374.64-.574,58.538H759.7l-14.452-19.832Z"/>
+    <path id="路径_131" data-name="路径 131" class="cls-4" d="M791.469,247.527l-9.6-15.834,20.95-26.55h-8.8l-22.23,26.71,10.718,15.994Z"/>
+    <line id="直线_40" data-name="直线 40" class="cls-5" x1="223.286" transform="translate(756.66 254.701)"/>
+    <path id="路径_132" data-name="路径 132" class="cls-6" d="M775.153,255.6,757.72,232.25l32.308-39.665-17.913.16L737.728,232.09l18.713,23.191Z"/>
+  </g>
+</svg>

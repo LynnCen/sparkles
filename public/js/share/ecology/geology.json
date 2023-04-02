@@ -1,0 +1,63 @@
+{
+  "overview": [
+    {
+      "name": "监测点位（个）",
+      "value": 24,
+      "icon": "./images/ecology/icon_xiangmuzongshu.png"
+    },
+    {
+      "name": "在线监测点（个）",
+      "value": 19,
+      "icon": "./images/ecology/icon_zaixianjiance.png"
+    },
+    {
+      "name": "视频监控点（个）",
+      "value": 38,
+      "icon": "./images/ecology/icon_shipingjiankong.png"
+    },
+    {
+      "name": "预警信息（个）",
+      "value": 0,
+      "icon": "./images/ecology/icon_gaojing1.png"
+    }
+  ],
+  "sewage": {
+    "title": "地质灾害监测点位",
+    "enTitle": "Geological disaster monitoring site",
+    "suffix": { "name": "监测点位", "value": 24, "unit": "个" }
+  },
+  "monitors": [
+    {
+      "title": "危险性：大",
+      "data": []
+    },
+    {
+      "title": "危险性：中",
+      "data": [
+        {
+          "code": "33118100001310012396",
+          "thumbnail": "./images/ecology/dizhai03.png",
+          "name": "龙泉市宝溪乡塘上村",
+          "url": "rtsp://218.205.127.16:554/pag://218.205.127.178:7302:33112300001310016295:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAABicZumxpxiRisimYydsEo%2Bg6Z1f1zI%2Flq7O6eVVEitdCDH3xzeX%2BqbDx%2BgfjS%2FB5RqMO2Whyzwa6gL5E8%2BasyN&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc0NTA1WiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc4OjczMDI6MzMxMTIzMDAwMDEzMTAwMTYyOTU6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+        }
+      ],
+      "points": [
+        { "id": 0, "str": "新兴镇-地质灾害监测点007" },
+        { "id": 1, "str": "竹源乡-地质灾害监测点008" }
+      ]
+    },
+    {
+      "title": "危险性：小",
+      "data": [],
+      "points": [
+        { "str": "呈回村" },
+        { "str": "程路后村" },
+        { "str": "大东坝镇界源坑口" },
+        { "str": "玉岩镇范山头" },
+        { "str": "竹源乡潘坑村" },
+        { "str": "竹源乡横岗村" },
+        { "str": "新兴镇新处村" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="508.516" height="161.987" viewBox="0 0 508.516 161.987">
+  <defs>
+    <filter id="_16.58万元" x="0" y="93.987" width="161" height="68" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_32.54" x="183.851" y="66.164" width="121.189" height="68.404" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-2"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_15.96万元" x="347.516" y="0" width="161" height="68" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-3"/>
+      <feFlood flood-color="#31b0f7"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_1541" data-name="组 1541" transform="translate(-2557.1 -1437.883)">
+    <path id="路径_1325" data-name="路径 1325" d="M2817.152,1594a76.55,76.55,0,0,1-55.216-8.616l-7.392-4.937a76.165,76.165,0,0,1-30.343-60.9q0-.848.018-1.691c.215-10.134,3.523-21.71,7.916-31.822l2.228-4.554a76.254,76.254,0,0,1,66.121-38.216" fill="none" stroke="#11bc8e" stroke-miterlimit="10" stroke-width="5.519"/>
+    <path id="路径_1326" data-name="路径 1326" d="M2820.885,1593.069a74.725,74.725,0,0,0,39.2-26.082l2.551-3.2a76.3,76.3,0,0,0-52.862-119.962" fill="none" stroke="#eae41c" stroke-miterlimit="10" stroke-width="5.519"/>
+    <circle id="椭圆_549" data-name="椭圆 549" cx="59.641" cy="59.641" r="59.641" transform="translate(2741.444 1461.167)" fill="#72d1d8" opacity="0.16"/>
+    <path id="路径_1327" data-name="路径 1327" d="M2876.585,1515l19.615-20.16h148.751" fill="none" stroke="#eae41c" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="路径_1328" data-name="路径 1328" d="M2748.314,1576.667l-19.209,18.071-170.527-1.635" fill="none" stroke="#11bc8e" stroke-miterlimit="10" stroke-width="1"/>
+    <text id="集体经济收入_" data-name="集体经济收入：" transform="translate(2567.6 1533.396)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">集体经济收入：</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 2557.1, 1437.88)" filter="url(#_16.58万元)">
+      <text id="_16.58万元-2" data-name="16.58万元" transform="translate(10.5 142.49)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">16.58</tspan><tspan y="0" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400">万元</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 2557.1, 1437.88)" filter="url(#_32.54)">
+      <text id="_32.54-2" data-name="32.54" transform="translate(194.39 114.66) rotate(0.23)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">32.54</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 2557.1, 1437.88)" filter="url(#_15.96万元)">
+      <text id="_15.96万元-2" data-name="15.96万元" transform="translate(358.02 48.5)" fill="#f3fcff" font-size="36" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-weight="700"><tspan x="0" y="0">15.96</tspan><tspan y="0" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei" font-weight="400">万元</tspan></text>
+    </g>
+    <text id="总收入" transform="translate(2759.618 1507.417)" fill="#fff" font-size="30" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI"><tspan x="0" y="0">总</tspan><tspan y="0" font-family="YuGothicUI-Regular, Yu Gothic UI">收入</tspan></text>
+  </g>
+</svg>

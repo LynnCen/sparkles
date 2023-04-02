@@ -1,0 +1,185 @@
+{
+  "environment": [
+    {
+      "name": "温度℃",
+      "value": "37/26",
+      "avatar": "./images/water/icon_wendu.png"
+    },
+    {
+      "name": "相对湿度%",
+      "value": "47",
+      "avatar": "./images/water/icon_shidu.png"
+    },
+    {
+      "name": "空气质量AQI",
+      "value": "68优",
+      "avatar": "./images/water/fengsu.png"
+    },
+    {
+      "name": "当前风力",
+      "value": "<3级",
+      "avatar": "./images/water/iconfengxiang.png"
+    }
+  ],
+  "videoData": [
+    {
+      "index": "1",
+      "title": "景区入口",
+      "imgUrl": "./images/grassrootsGovernance/pic1.png"
+    },
+    {
+      "index": "2",
+      "title": "停车场监控",
+      "imgUrl": "./images/grassrootsGovernance/pic2.png"
+    },
+    {
+      "index": "3",
+      "title": "景区街道01",
+      "imgUrl": "./images/grassrootsGovernance/pic3.png"
+    },
+    {
+      "index": "4",
+      "title": "景区街道02",
+      "imgUrl": "./images/grassrootsGovernance/pic4.png"
+    },
+    {
+      "index": "5",
+      "title": "景区街道03",
+      "imgUrl": "./images/grassrootsGovernance/pic5.png"
+    },
+    {
+      "index": "6",
+      "title": "景区街道04",
+      "imgUrl": "./images/grassrootsGovernance/pic6.png"
+    }
+  ],
+  "distribution": {
+    "title": "场所分布",
+    "engTitle": "Location distribution",
+    "typeNum": "11",
+    "data": [
+      {
+        "index": "1",
+        "title": "民俗酒店",
+        "imgUrl": "./images/grassrootsGovernance/酒店.svg",
+        "dataId": []
+      },
+      {
+        "index": "2",
+        "title": "农家乐",
+        "imgUrl": "./images/grassrootsGovernance/农家乐.svg",
+        "dataId": []
+      },
+      {
+        "index": "3",
+        "title": "美术馆",
+        "imgUrl": "./images/grassrootsGovernance/美术馆.svg",
+        "dataId": []
+      },
+      {
+        "index": "4",
+        "title": "停车场",
+        "imgUrl": "./images/grassrootsGovernance/停车场.svg",
+        "dataId": []
+      },
+      {
+        "index": "5",
+        "title": "加油站",
+        "imgUrl": "./images/grassrootsGovernance/加油站.svg",
+        "dataId": []
+      },
+      {
+        "index": "6",
+        "title": "医院诊所",
+        "imgUrl": "./images/grassrootsGovernance/诊所.svg",
+        "dataId": []
+      },
+      {
+        "index": "7",
+        "title": "学校",
+        "imgUrl": "./images/grassrootsGovernance/学校.svg",
+        "dataId": [54712]
+      },
+      {
+        "index": "8",
+        "title": "网吧",
+        "imgUrl": "./images/grassrootsGovernance/网吧.svg",
+        "dataId": []
+      },
+      {
+        "index": "9",
+        "title": "消防点",
+        "imgUrl": "./images/grassrootsGovernance/消防.svg",
+        "dataId": []
+      },
+      {
+        "index": "10",
+        "title": "其他",
+        "imgUrl": "./images/grassrootsGovernance/其他.svg",
+        "dataId": [54652]
+      }
+    ]
+  },
+  "population": {
+    "title": "人口类型",
+    "engTitle": "Population type",
+    "typeNum": "4",
+    "data": [
+      {
+        "index": "1",
+        "number": 1400,
+        "title": "常驻人口"
+      },
+      {
+        "index": "2",
+        "number": 320,
+        "title": "外来人口"
+      },
+      {
+        "index": "3",
+        "number": 320,
+        "title": "户主人数"
+      },
+      {
+        "index": "4",
+        "number": 1600,
+        "title": "成员人数"
+      }
+    ]
+  },
+  "passenger": {
+    "title": "实时客流量统计",
+    "engTitle": "Real-time passenger flow statistics",
+    "typeNum": "",
+    "data": [
+      {
+        "country": "古堰游客中心",
+        "population": 125
+      },
+      {
+        "country": "香樟古埠",
+        "population": 31
+      },
+      {
+        "country": "渡南路入口",
+        "population": 23
+      },
+      {
+        "country": "大港头村委会",
+        "population": 6
+      },
+      {
+        "country": "通坪码头",
+        "population": 2
+      }
+    ]
+  },
+  "parking": {
+    "title": "停车场实时数据",
+    "engTitle": "Real-time parking lot data",
+    "imgUrl1": "./images/grassrootsGovernance/车辆.svg",
+    "imgUrl2": "./images/grassrootsGovernance/停车场1.svg",
+    "number1": 17,
+    "number2": 518
+  }
+}

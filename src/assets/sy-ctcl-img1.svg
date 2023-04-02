@@ -1,0 +1,176 @@
+<svg id="组_629" data-name="组 629" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="560.198" height="97.721" viewBox="0 0 560.198 97.721">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-5 {
+        opacity: 0.3;
+      }
+
+      .cls-6 {
+        fill: #2bfbee;
+      }
+
+      .cls-7 {
+        filter: url(#椭圆_201);
+      }
+
+      .cls-8 {
+        filter: url(#椭圆_200);
+      }
+
+      .cls-9 {
+        filter: url(#椭圆_199);
+      }
+
+      .cls-10 {
+        filter: url(#椭圆_198);
+      }
+
+      .cls-11 {
+        filter: url(#椭圆_197);
+      }
+
+      .cls-12 {
+        filter: url(#椭圆_196);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#19d5fd" stop-opacity="0.4"/>
+      <stop offset="0.024" stop-color="#19d5fd" stop-opacity="0.384"/>
+      <stop offset="0.327" stop-color="#19d5fd" stop-opacity="0.22"/>
+      <stop offset="0.602" stop-color="#19d5fd" stop-opacity="0.098"/>
+      <stop offset="0.835" stop-color="#19d5fd" stop-opacity="0.027"/>
+      <stop offset="1" stop-color="#19d5fd" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00c19c" stop-opacity="0.502"/>
+      <stop offset="0.306" stop-color="#0ac9c5" stop-opacity="0.286"/>
+      <stop offset="0.589" stop-color="#12cfe3" stop-opacity="0.129"/>
+      <stop offset="0.83" stop-color="#17d3f6" stop-opacity="0.035"/>
+      <stop offset="1" stop-color="#19d5fd" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1aeee0" stop-opacity="0.4"/>
+      <stop offset="0.3" stop-color="#1aeddf" stop-opacity="0.235"/>
+      <stop offset="0.585" stop-color="#1aeddf" stop-opacity="0.106"/>
+      <stop offset="0.828" stop-color="#1aeddf" stop-opacity="0.027"/>
+      <stop offset="1" stop-color="#1aeddf" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#19d5fd" stop-opacity="0.4"/>
+      <stop offset="0.37" stop-color="#19d5fd" stop-opacity="0.502"/>
+      <stop offset="0.739" stop-color="#19d5fd" stop-opacity="0.573"/>
+      <stop offset="1" stop-color="#19d5fd" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="椭圆_196" x="419.024" y="44.168" width="86.123" height="37.483" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.409" dy="1.409" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.705" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="椭圆_197" x="427.242" y="45.534" width="69.687" height="30.808" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.409" dy="1.409" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.705" result="blur-2"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="椭圆_198" x="234.073" y="44.168" width="86.123" height="37.483" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.409" dy="1.409" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.705" result="blur-3"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="椭圆_199" x="242.291" y="45.534" width="69.687" height="30.808" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.409" dy="1.409" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.705" result="blur-4"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="椭圆_200" x="56.419" y="44.168" width="86.123" height="37.483" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.409" dy="1.409" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.705" result="blur-5"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="椭圆_201" x="64.637" y="45.534" width="69.687" height="30.808" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.409" dy="1.409" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.705" result="blur-6"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="路径_582" data-name="路径 582" class="cls-1" d="M84.388,2815.841,65.14,2867.725h560.2l-18.692-51.885Z" transform="translate(-65.14 -2776.805)"/>
+  <path id="路径_583" data-name="路径 583" class="cls-2" d="M84.388,2822.641,65.14,2874.526h560.2l-18.692-51.885Z" transform="translate(-65.14 -2776.805)"/>
+  <g id="组_606" data-name="组 606" transform="translate(419.729)">
+    <path id="路径_584" data-name="路径 584" class="cls-3" d="M566.911,2841.5h0a92.445,92.445,0,0,0-81.9,0h0V2776.8h81.9Z" transform="translate(-484.869 -2776.805)"/>
+    <g id="组_605" data-name="组 605" transform="translate(0 44.872)">
+      <g class="cls-12" transform="matrix(1, 0, 0, 1, -419.73, -44.87)">
+        <ellipse id="椭圆_196-2" data-name="椭圆 196" class="cls-4" cx="40.947" cy="16.627" rx="40.947" ry="16.627" transform="translate(419.73 44.87)"/>
+      </g>
+      <g class="cls-11" transform="matrix(1, 0, 0, 1, -419.73, -44.87)">
+        <ellipse id="椭圆_197-2" data-name="椭圆 197" class="cls-4" cx="32.73" cy="13.29" rx="32.73" ry="13.29" transform="translate(427.95 46.24)"/>
+      </g>
+    </g>
+  </g>
+  <g id="组_608" data-name="组 608" transform="translate(234.778)">
+    <path id="路径_585" data-name="路径 585" class="cls-3" d="M381.961,2841.5h0a92.445,92.445,0,0,0-81.895,0h0V2776.8h81.895Z" transform="translate(-299.918 -2776.805)"/>
+    <g id="组_607" data-name="组 607" transform="translate(0 44.872)">
+      <g class="cls-10" transform="matrix(1, 0, 0, 1, -234.78, -44.87)">
+        <ellipse id="椭圆_198-2" data-name="椭圆 198" class="cls-4" cx="40.947" cy="16.627" rx="40.947" ry="16.627" transform="translate(234.78 44.87)"/>
+      </g>
+      <g class="cls-9" transform="matrix(1, 0, 0, 1, -234.78, -44.87)">
+        <ellipse id="椭圆_199-2" data-name="椭圆 199" class="cls-4" cx="32.73" cy="13.29" rx="32.73" ry="13.29" transform="translate(243 46.24)"/>
+      </g>
+    </g>
+  </g>
+  <g id="组_610" data-name="组 610" transform="translate(57.123)">
+    <path id="路径_586" data-name="路径 586" class="cls-3" d="M204.306,2841.5h0a92.445,92.445,0,0,0-81.895,0h0V2776.8h81.895Z" transform="translate(-122.264 -2776.805)"/>
+    <g id="组_609" data-name="组 609" transform="translate(0 44.872)">
+      <g class="cls-8" transform="matrix(1, 0, 0, 1, -57.12, -44.87)">
+        <ellipse id="椭圆_200-2" data-name="椭圆 200" class="cls-4" cx="40.947" cy="16.627" rx="40.947" ry="16.627" transform="translate(57.12 44.87)"/>
+      </g>
+      <g class="cls-7" transform="matrix(1, 0, 0, 1, -57.12, -44.87)">
+        <ellipse id="椭圆_201-2" data-name="椭圆 201" class="cls-4" cx="32.73" cy="13.29" rx="32.73" ry="13.29" transform="translate(65.34 46.24)"/>
+      </g>
+    </g>
+  </g>
+  <ellipse id="椭圆_202" data-name="椭圆 202" class="cls-5" cx="26.747" cy="8.7" rx="26.747" ry="8.7" transform="translate(434.003 50.83)"/>
+  <ellipse id="椭圆_203" data-name="椭圆 203" class="cls-5" cx="26.747" cy="8.7" rx="26.747" ry="8.7" transform="translate(249.053 50.83)"/>
+  <ellipse id="椭圆_204" data-name="椭圆 204" class="cls-5" cx="26.747" cy="8.7" rx="26.747" ry="8.7" transform="translate(71.398 50.83)"/>
+  <g id="组_1652" data-name="组 1652" transform="translate(67.391 0.024)">
+    <path id="路径_1430" data-name="路径 1430" class="cls-6" d="M-563.462,336.446l-3.526-7.658,2.312,0-5.677-15.141-4.259,14.906h2.128l-6.388,12.776h6.388v.008h4.26v-.007l2.176.008" transform="translate(583.373 -305.126)"/>
+    <path id="路径_1431" data-name="路径 1431" class="cls-6" d="M-527.528,306.638l.141-.342h-2.131l6.388-21.3,7.069,21.21-1.52.007.22.648,7.007,16.466h-25.554" transform="translate(553.184 -285)"/>
+    <path id="路径_1432" data-name="路径 1432" class="cls-6" d="M-453.63,341.326h1.753v.011c.027,0,.053,0,.082,0h4.176v-.007h6.389l-5.127-12.836,2.188.025-5.577-14.871-4.259,14.906h2.129l-3.835,7.759" transform="translate(496.838 -305.126)"/>
+    <path id="路径_1433" data-name="路径 1433" class="cls-6" d="M-510.352,413.784h-9.789a1.521,1.521,0,0,0-.381-.047h-5.044a1.531,1.531,0,0,0-.382.047h15.6Zm0,0" transform="translate(553.184 -375.453)"/>
+    <path id="路径_1434" data-name="路径 1434" class="cls-6" d="M-545.031,421.819V410.475h-4.177c-.028,0-.055,0-.082,0v9.218a76.632,76.632,0,0,0-12.777-2.129v-5.008h-4.258v5.008a84.5,84.5,0,0,0-12.777,1.622V410.19h-4.26v9.5s-8.4,3.7-10.647,6.389c3.552-1.62,7.25-1.253,12.778-2.13a27.6,27.6,0,0,0-3.859,2.337c-2.438,2-6.789,6.182-6.789,6.182h25.553s-8.762-4.035-8.518-6.389c.143-1.392,2.772-3.167,4.583-3.728a11.749,11.749,0,0,1,3.935-.531v4.259h4.258v-4.259c10.721.358,21.72,1.537,27.684,4.259-1.978-2.369-10.648-4.259-10.648-4.259Zm0,0" transform="translate(594.008 -372.96)"/>
+  </g>
+  <g id="组_1653" data-name="组 1653" transform="translate(244.842 5.983)">
+    <path id="路径_1435" data-name="路径 1435" class="cls-6" d="M-554.254,693.212h32.135v1.671h-32.135Zm13.053-3.106h6.036v1.671H-541.2Zm0,0" transform="translate(569.141 -642.975)"/>
+    <path id="路径_1436" data-name="路径 1436" class="cls-6" d="M-547.471,548.523a.22.22,0,0,0-.254.042,13.045,13.045,0,0,1-8.312,3.511,14.829,14.829,0,0,1-5.709-1.229c-.4-.151-1.253-.569-2.331-1.132v-4.6l.279.006c.194.006.436.012.7.012a9.642,9.642,0,0,0,2.791-.37c1.9-.569,9.021-5.218,9.324-5.412a.263.263,0,0,0,.115-.23v-2.482A.277.277,0,0,0-551,536.4a.2.2,0,0,0-.236.042,11.825,11.825,0,0,1-7.713,3.409,13.283,13.283,0,0,1-5.3-1.193c-.375-.145-1.181-.563-2.2-1.114v-4.274a9.571,9.571,0,0,0,2.385-.309c1.755-.478,8.361-4.407,8.639-4.577a.214.214,0,0,0,.1-.194v-2.095a.229.229,0,0,0-.121-.206.185.185,0,0,0-.218.036,11.486,11.486,0,0,1-7.15,2.882,13.345,13.345,0,0,1-4.91-1.011c-1.326-.466-8.391-4.238-10.147-5.176v-1.471a1.029,1.029,0,0,0,.545-.908,1.024,1.024,0,0,0-.545-.908v-.751a.673.673,0,0,0,.248-.521.672.672,0,0,0-.248-.521v-1.1A.434.434,0,0,0-578.3,516a.434.434,0,0,0-.436.436v1.114a.692.692,0,0,0-.248.521.672.672,0,0,0,.248.521v.751a1.017,1.017,0,0,0-.545.908,1.023,1.023,0,0,0,.545.908v1.471c-1.75.938-8.821,4.71-10.147,5.176a13.225,13.225,0,0,1-4.91,1.011,11.487,11.487,0,0,1-7.15-2.882.193.193,0,0,0-.218-.036.227.227,0,0,0-.121.206V528.2a.217.217,0,0,0,.109.194c.279.169,6.884,4.1,8.639,4.577a9.337,9.337,0,0,0,2.385.309v4.274c-1.017.557-1.822.969-2.2,1.114a13.184,13.184,0,0,1-5.3,1.193,11.842,11.842,0,0,1-7.719-3.409.2.2,0,0,0-.236-.042.266.266,0,0,0-.127.242v2.482a.264.264,0,0,0,.115.23c.3.2,7.428,4.843,9.324,5.412a9.718,9.718,0,0,0,2.8.369c.273,0,.509-.006.7-.012l.279-.006v4.6c-1.078.563-1.931.981-2.331,1.132a14.936,14.936,0,0,1-5.709,1.229,13.011,13.011,0,0,1-8.312-3.511.214.214,0,0,0-.248-.042.273.273,0,0,0-.139.248v2.555a.27.27,0,0,0,.121.236c.327.206,8,4.983,10.044,5.57a10.7,10.7,0,0,0,3.009.381c.291,0,.551-.006.757-.018a3.179,3.179,0,0,1,.5,0,3.052,3.052,0,0,0,.521.024v7.32h11.061V554.117h9.886v11.031h11.061v-7.628a3.115,3.115,0,0,0,.521-.024,3.2,3.2,0,0,1,.5,0c.206.006.466.018.757.018a10.7,10.7,0,0,0,3.009-.381c2.04-.587,9.717-5.364,10.044-5.57a.287.287,0,0,0,.121-.236v-2.555a.273.273,0,0,0-.139-.248Zm-36.864-15.233c2.434-.006,5.122-.018,6.024-.024v-.224l.042.224c2.01.012,4.014.018,6.024.024v4.4q-6.048.055-12.09,0ZM-588.7,549.8c-.672-.012-1.284-.024-1.816-.036v-4.607h1.816Zm.551-16.516c.369.006.938.006,1.816.006v4.365q-1.008-.018-1.816-.036Zm18.271,16.546c-4.952.055-11.872.055-16.824,0v-4.668h16.824Zm1.441-12.217q-.809.018-1.816.036v-4.365c.884,0,1.447-.006,1.816-.006Zm2.367,12.151c-.532.012-1.144.024-1.816.036v-4.643h1.816Zm0,0" transform="translate(609.247 -516)"/>
+  </g>
+  <g id="组_1654" data-name="组 1654" transform="translate(436.145 10.319)">
+    <path id="路径_1437" data-name="路径 1437" class="cls-6" d="M-1502.52,438.376a.517.517,0,0,0-.591.457l-.221,3.3h-2.614v-6.92H-1507s0,6.56.014,7.175c-.072.879.634.807.634.807s3.037-.01,3.484-.01c.543-.087.524-.457.524-.457s.245-3.465.283-3.763c.072-.418-.351-.562-.461-.591Zm-8.434,3.758h-2.615l-.221-3.3a.516.516,0,0,0-.591-.457c-.111.029-.534.173-.457.591.038.3.284,3.763.284,3.763s-.019.375.524.457c.447,0,3.484.01,3.484.01s.711.072.634-.807c0-.61.014-7.175.014-7.175h-1.052v6.92Zm0,0" transform="translate(1533.055 -417.938)"/>
+    <path id="路径_1438" data-name="路径 1438" class="cls-6" d="M-1629.34,303.239a24.6,24.6,0,0,0-24.605,24.605,24.6,24.6,0,0,0,24.605,24.6,24.6,24.6,0,0,0,24.6-24.6,24.6,24.6,0,0,0-24.6-24.605Zm-6.5,35.3a.529.529,0,0,1-.524.466.277.277,0,0,1-.062,0,.524.524,0,0,1-.462-.581l.7-3.787a.527.527,0,0,1,.582-.466.531.531,0,0,1,.466.581Zm7,.264a.522.522,0,0,1-.524.524.522.522,0,0,1-.524-.524v-4.114a.522.522,0,0,1,.524-.524.526.526,0,0,1,.524.529Zm6.747.192a.58.58,0,0,1-.091.01.53.53,0,0,1-.519-.432l-1.076-3.787a.522.522,0,0,1,.428-.61.527.527,0,0,1,.61.428l1.076,3.787a.52.52,0,0,1-.428.605Zm4.287-18.478h-1.514c-.283,3.455-.682,10.6-.74,11.313a1.833,1.833,0,0,1-2.037,1.562c-.336,0-5.834.057-9.967.057-2.172,0-3.965-.014-4.436-.057a2.3,2.3,0,0,1-1.922-2.1l-.889-10.77h-1.562a.522.522,0,0,1-.524-.524.525.525,0,0,1,.524-.524h1.442l-.26-2.46a.521.521,0,0,1,.466-.577.524.524,0,0,1,.577.466l.269,2.571h18.079c.125-1.5.207-2.556.207-2.556a.524.524,0,0,1,.586-.543.5.5,0,0,1,.466.63s-.082,1.019-.2,2.47h1.437a.522.522,0,0,1,.524.524.524.524,0,0,1-.524.519Zm0,0" transform="translate(1653.945 -303.239)"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg id="组件_3_2" data-name="组件 3 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="523.053" height="198.78" viewBox="0 0 523.053 198.78">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#02d2da" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#02d2da" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <text id="万元" transform="translate(0 17)" fill="#fff" font-size="16" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">万元</tspan></text>
+  <text id="_0" data-name="0" transform="translate(14.556 173.281)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan></text>
+  <text id="_2019" data-name="2019" transform="translate(39.598 193.78)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2019</tspan></text>
+  <text id="_2020" data-name="2020" transform="translate(249.598 193.78)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2020</tspan></text>
+  <text id="_2021" data-name="2021" transform="translate(458.598 193.78)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2021</tspan></text>
+  <text id="_25" data-name="25" transform="translate(8.691 141.514)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">25</tspan></text>
+  <text id="_40" data-name="40" transform="translate(8.691 109.745)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">40</tspan></text>
+  <text id="_55" data-name="55" transform="translate(8.691 77.977)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">55</tspan></text>
+  <text id="_70" data-name="70" transform="translate(8.691 46.209)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">70</tspan></text>
+  <line id="直线_127" data-name="直线 127" x2="484.26" transform="translate(38.793 166.707)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1"/>
+  <line id="直线_128" data-name="直线 128" y1="6.72" transform="translate(63.965 166.91)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+  <line id="直线_130" data-name="直线 130" y1="6.72" transform="translate(273.098 166.91)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+  <line id="直线_133" data-name="直线 133" y1="6.72" transform="translate(482.587 166.91)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+  <line id="直线_134" data-name="直线 134" x2="482.042" transform="translate(38.793 135.217)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+  <line id="直线_135" data-name="直线 135" x2="482.042" transform="translate(38.793 103.728)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+  <line id="直线_136" data-name="直线 136" x2="482.042" transform="translate(38.793 72.238)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+  <line id="直线_137" data-name="直线 137" x2="482.042" transform="translate(38.793 40.748)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+  <path id="路径_1343" data-name="路径 1343" d="M649,96.9H862.191L1069.1,108.473v75.62H651.523Z" transform="translate(-588.54 -17.382)" fill="url(#linear-gradient)"/>
+  <path id="路径_1342" data-name="路径 1342" d="M649,96.9H862.191L1069.1,108.473" transform="translate(-588.54 -17.382)" fill="none" stroke="#26e6db" stroke-width="1.33"/>
+  <g id="组_516" data-name="组 516" transform="translate(44.577 60.992)">
+    <circle id="椭圆_153" data-name="椭圆 153" cx="6.029" cy="6.029" r="6.029" transform="translate(12.492 12.492)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+    <circle id="椭圆_154" data-name="椭圆 154" cx="18.522" cy="18.522" r="18.522" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+  </g>
+  <g id="组_1549" data-name="组 1549" transform="translate(254.577 60.992)">
+    <circle id="椭圆_153-2" data-name="椭圆 153" cx="6.029" cy="6.029" r="6.029" transform="translate(12.492 12.492)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+    <circle id="椭圆_154-2" data-name="椭圆 154" cx="18.522" cy="18.522" r="18.522" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+  </g>
+  <g id="组_518" data-name="组 518" transform="translate(463.577 72.238)">
+    <circle id="椭圆_157" data-name="椭圆 157" cx="6.029" cy="6.029" r="6.029" transform="translate(12.492 12.492)" fill="#fff"/>
+    <circle id="椭圆_158" data-name="椭圆 158" cx="18.522" cy="18.522" r="18.522" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+  </g>
+</svg>

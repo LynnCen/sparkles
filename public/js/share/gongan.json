@@ -1,0 +1,240 @@
+{
+  "overview": {
+    "title": "事件信息",
+    "enTitle": "Event Infomation",
+    "suffix": { "name": "参与人数", "value": 19, "unit": "人" },
+    "data": [
+      {
+        "name": "名称：",
+        "value": "丽水市莲都区发生**紧急事件",
+        "color": "#1ac5ff"
+      },
+      { "name": "时间：", "value": "2019年5月21日 09时00分" },
+      { "name": "地点：", "value": "丽水市莲都区人民街505号" }
+    ]
+  },
+  "monitors": {
+    "title": "视频监控",
+    "enTitle": "Video monitoring",
+    "suffix": { "name": "视频数量", "value": 2, "unit": "条" },
+    "data": [
+      {
+        "code": "KTU-001",
+        "thumbnail": "./images/gongan/1.png",
+        "name": "视频点位1",
+        "url": "rtmp://10.10.91.240:1935/stream&streamName=10&id=0"
+      },
+      {
+        "code": "KTU-002",
+        "thumbnail": "./images/gongan/2.png",
+        "name": "视频点位2",
+        "url": "rtmp://10.10.91.243:1935/stream&streamName=10&id=0"
+      }
+    ]
+  },
+  "communication": {
+    "title": "通讯信息",
+    "enTitle": "Communication information",
+    "suffix": { "name": "信息数量", "value": 21, "unit": "条" },
+    "data": [
+      {
+        "bureau": "庆元局：",
+        "detail": "庆元局3名同志已于 06:10 出发",
+        "time": "06:11:24"
+      },
+      {
+        "bureau": "缙云局：",
+        "detail": "我局4名同志已于 7:20 出发",
+        "time": "07:22:12"
+      },
+      {
+        "bureau": "松阳局：",
+        "detail": "松阳局2名同志 7:13 出发",
+        "time": "07:15:43"
+      },
+      {
+        "bureau": "庆元局：",
+        "detail": "庆元局队伍已到达丽水富岭收费站",
+        "time": "08:10:22"
+      },
+      {
+        "bureau": "云和局：",
+        "detail": "云和公安局3人，8:03分出发",
+        "time": "08:13:02"
+      },
+      {
+        "bureau": "景宁局：",
+        "detail": "景宁3人还需要20分钟到场，路上堵...",
+        "time": "08:24:12"
+      },
+      {
+        "bureau": "龙泉局：",
+        "detail": "高速发生交通事故预计还要堵上30分...",
+        "time": "08:25:11"
+      },
+      {
+        "bureau": "莲都分局：",
+        "detail": "已出发",
+        "time": "08:25:11"
+      }
+    ]
+  },
+  "rightList": {
+    "data": [
+      {
+        "name": "莲都区分局",
+        "suffix": 2,
+        "detail": [
+          { "name": "队长：", "value": "李XX" },
+          { "name": "人数：", "value": "2人" },
+          { "name": "剩余到达时间", "value": "" }
+        ],
+        "operation": [
+          {
+            "icon": "./images/gongan/4.png",
+            "name": "",
+            "url": "/video/ziyunlu.mp4"
+          },
+          { "icon": "./images/gongan/5.png" }
+        ]
+      },
+      {
+        "name": "龙泉市局",
+        "suffix": 100,
+        "detail": [
+          { "name": "队长：", "value": "林XX" },
+          { "name": "人数：", "value": "2人" },
+          { "name": "剩余到达时间", "value": "" }
+        ],
+        "operation": [
+          {
+            "icon": "./images/gongan/4.png",
+            "name": "",
+            "url": "/video/ziyunlu.mp4"
+          },
+          { "icon": "./images/gongan/5.png" }
+        ]
+      },
+      {
+        "name": "缙云县局",
+        "suffix": 43,
+        "detail": [
+          { "name": "队长：", "value": "陈XX" },
+          { "name": "人数：", "value": "2人" },
+          { "name": "剩余到达时间", "value": "" }
+        ],
+        "operation": [
+          {
+            "icon": "./images/gongan/4.png",
+            "name": "",
+            "url": "/video/ziyunlu.mp4"
+          },
+          { "icon": "./images/gongan/5.png" }
+        ]
+      },
+      {
+        "name": "云和县局",
+        "suffix": 61,
+        "detail": [
+          { "name": "队长：", "value": "刘XX" },
+          { "name": "人数：", "value": "2人" },
+          { "name": "剩余到达时间", "value": "" }
+        ],
+        "operation": [
+          {
+            "icon": "./images/gongan/4.png",
+            "name": "",
+            "url": "/video/ziyunlu.mp4"
+          },
+          { "icon": "./images/gongan/5.png" }
+        ]
+      },
+
+      {
+        "name": "景宁县局",
+        "suffix": 67,
+        "detail": [
+          { "name": "队长：", "value": "李XX" },
+          { "name": "人数：", "value": "2人" },
+          { "name": "剩余到达时间", "value": "" }
+        ],
+        "operation": [
+          {
+            "icon": "./images/gongan/4.png",
+            "name": "",
+            "url": "/video/ziyunlu.mp4"
+          },
+          { "icon": "./images/gongan/5.png" }
+        ]
+      },
+      {
+        "name": "松阳县局",
+        "suffix": 63,
+        "detail": [
+          { "name": "队长：", "value": "王XX" },
+          { "name": "人数：", "value": "2人" },
+          { "name": "剩余到达时间", "value": "" }
+        ],
+        "operation": [
+          {
+            "icon": "./images/gongan/4.png",
+            "name": "",
+            "url": "/video/ziyunlu.mp4"
+          },
+          { "icon": "./images/gongan/5.png" }
+        ]
+      },
+      {
+        "name": "青田县局",
+        "suffix": 65,
+        "detail": [
+          { "name": "队长：", "value": "任XX" },
+          { "name": "人数：", "value": "2人" },
+          { "name": "剩余到达时间", "value": "" }
+        ],
+        "operation": [
+          {
+            "icon": "./images/gongan/4.png",
+            "name": "",
+            "url": "/video/ziyunlu.mp4"
+          },
+          { "icon": "./images/gongan/5.png" }
+        ]
+      },
+      {
+        "name": "庆元县局",
+        "suffix": 153,
+        "detail": [
+          { "name": "队长：", "value": "赵XX" },
+          { "name": "人数：", "value": "2人" },
+          { "name": "剩余到达时间", "value": "" }
+        ],
+        "operation": [
+          {
+            "icon": "./images/gongan/4.png",
+            "name": "",
+            "url": "/video/ziyunlu.mp4"
+          },
+          { "icon": "./images/gongan/5.png" }
+        ]
+      },
+      {
+        "name": "开发区分局",
+        "suffix": 16,
+        "detail": [
+          { "name": "队长：", "value": "胡XX" },
+          { "name": "人数：", "value": "2人" },
+          { "name": "剩余到达时间", "value": "" }
+        ],
+        "operation": [
+          {
+            "icon": "./images/gongan/4.png",
+            "name": "",
+            "url": "/video/ziyunlu.mp4"
+          },
+          { "icon": "./images/gongan/5.png" }
+        ]
+      }
+    ]
+  }
+}

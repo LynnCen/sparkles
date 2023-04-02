@@ -1,0 +1,14 @@
+{
+    "leftContent": [
+        {
+            "iconUrl": "./images/ldPolice/视频点位icon.svg",
+            "count": 2000,
+            "typeName": "视频点位"
+        },
+        {
+            "iconUrl": "./images/ldPolice/人像点位icon.svg",
+            "count": 1223,
+            "typeName": "人像点位"
+        }
+    ]
+}

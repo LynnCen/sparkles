@@ -1,0 +1,316 @@
+{
+  "menu": {
+    "人员情况": "./images/water/personnel.png",
+    "运行指标": "./images/water/runTargets.png"
+  },
+  "overview": [
+    {
+      "name": "河道长度(公里)",
+      "icon": "./images/water/heliu.png",
+      "value": 2.73
+    },
+    {
+      "name": "进口水量(万方/日)",
+      "icon": "./images/water/suojinindent2.png",
+      "value": 26
+    },
+    {
+      "name": "出口水量(万方/日)",
+      "icon": "./images/water/suojinindent2.png",
+      "value": 26
+    },
+    {
+      "name": "橡胶坝高度(米)",
+      "icon": "./images/water/xiangjiaoba.png",
+      "value": 4.1
+    },
+    {
+      "name": "水闸开度",
+      "icon": "./images/water/ziyuan.png",
+      "value": "52%"
+    },
+    {
+      "name": "河道/湿地(水量分流比)",
+      "icon": "./images/water/ziyuan.png",
+      "value": "1:9"
+    },
+    {
+      "name": "生态浮岛(个)",
+      "icon": "./images/water/ecological.png",
+      "value": 86
+    },
+    {
+      "name": "生物绳组团(个)",
+      "icon": "./images/water/icon_dingwei.png",
+      "value": 51
+    },
+    {
+      "name": "运营面积(亩)",
+      "icon": "./images/water/mianji.png",
+      "value": 1000
+    }
+  ],
+  "monitors": [
+    {
+      "thumbnail": "./images/water/111.gif",
+      "name": "橡胶坝",
+      "url": "./video/ziyunlu.mp4"
+    },
+    {
+      "thumbnail": "./images/water/222.gif",
+      "name": "出口",
+      "url": "./video/chushuikou.mp4"
+    }
+  ],
+
+  "targets": [
+    {
+      "title": "监控",
+      "data": [
+        {
+          "type": "监控",
+          "item": "工作",
+          "count": 0
+        },
+        { "type": "监控", "item": "关闭", "count": 0 },
+        { "type": "监控", "item": "故障", "count": 1 },
+        { "type": "监控", "item": "离网", "count": 0 }
+      ]
+    },
+    {
+      "title": "曝气机",
+      "data": [
+        {
+          "type": "曝气机",
+          "item": "工作",
+          "count": 38
+        },
+        { "type": "曝气机", "item": "关闭", "count": 3 },
+        { "type": "曝气机", "item": "故障", "count": 1 },
+        { "type": "曝气机", "item": "离网", "count": 2 }
+      ]
+    },
+    {
+      "title": "推流器",
+      "data": [
+        { "type": "推流器", "item": "工作", "count": 4 },
+        { "type": "推流器", "item": "关闭", "count": 18 },
+        { "type": "推流器", "item": "故障", "count": 0 },
+        { "type": "推流器", "item": "离网", "count": 18 }
+      ]
+    },
+    {
+      "title": "自动监测站",
+      "data": [
+        { "type": "自动监测站", "item": "工作", "count": 3 },
+        { "type": "自动监测站", "item": "关闭", "count": 0 },
+        { "type": "自动监测站", "item": "故障", "count": 0 },
+        { "type": "自动监测站", "item": "离网", "count": 0 }
+      ]
+    }
+  ],
+  "runTargets": [
+    [
+      {
+        "type": "监控",
+        "item": "工作",
+        "count": 10
+      },
+      { "type": "监控", "item": "关闭", "count": 0 },
+      { "type": "监控", "item": "故障", "count": 1 },
+      { "type": "监控", "item": "离网", "count": 0 },
+
+      {
+        "type": "曝气机",
+        "item": "工作",
+        "count": 38
+      },
+      { "type": "曝气机", "item": "关闭", "count": 3 },
+      { "type": "曝气机", "item": "故障", "count": 1 },
+      { "type": "曝气机", "item": "离网", "count": 2 }
+    ],
+    [
+      { "type": "推流器", "item": "工作", "count": 4 },
+      { "type": "推流器", "item": "关闭", "count": 18 },
+      { "type": "推流器", "item": "故障", "count": 0 },
+      { "type": "推流器", "item": "离网", "count": 18 },
+      { "type": "自动监测站", "item": "工作", "count": 3 },
+      { "type": "自动监测站", "item": "关闭", "count": 0 },
+      { "type": "自动监测站", "item": "故障", "count": 0 },
+      { "type": "自动监测站", "item": "离网", "count": 0 }
+    ]
+  ],
+
+  "energyConsumption": {
+    "title": "当前能耗情况",
+    "data": [
+      {
+        "type": "负荷余量",
+        "x": "用水",
+        "value": 23,
+        "limit": [0, 100]
+      },
+      {
+        "type": "负荷余量",
+        "x": "用电",
+        "value": 52,
+        "limit": [0, 100]
+      },
+      {
+        "type": "负荷余量",
+        "x": "网络",
+        "value": 9,
+        "limit": [0, 100]
+      },
+      {
+        "type": "目前负荷",
+        "x": "用水",
+        "value": 77,
+        "limit": [0, 100]
+      },
+      {
+        "type": "目前负荷",
+        "x": "用电",
+        "value": 48,
+        "limit": [0, 100]
+      },
+      {
+        "type": "目前负荷",
+        "x": "网络",
+        "value": 90,
+        "limit": [0, 100]
+      }
+    ]
+  },
+  "pressure": [
+    { "name": "正常", "value": 167, "limit": [0, 220] },
+    { "name": "异常", "value": 18, "limit": [0, 220] },
+    { "name": "告警", "value": 1, "limit": [0, 220] }
+  ],
+  "weatherIcons": {
+    "晴": "./images/tianqi-qing1.png",
+    "云": "./images/tianqi-yun1.png",
+    "阴": ["./images/tianqi-yin0.png", "./images/tianqi-yin1.png"],
+    "雨": ["./images/tianqi-yu0.png", "./images/tianqi-yu1.png"]
+  },
+  "environment": [
+    {
+      "name": "温度（℃）",
+      "value": 26,
+      "avatar": "./images/water/icon_wendu.png"
+    },
+    {
+      "name": "相对湿度",
+      "value": 43,
+      "avatar": "./images/water/icon_shidu.png"
+    },
+    {
+      "name": "风速(km/h)",
+      "value": 2.63,
+      "avatar": "./images/water/fengsu.png"
+    },
+    {
+      "name": "风向",
+      "value": "西南风",
+      "avatar": "./images/water/iconfengxiang.png"
+    }
+  ],
+  "bridgeTargets": {
+    "title": "希望桥指标",
+    "data": [
+      { "name": "氨氮(mg/L)", "value": 0.15, "limit": [0, 100] },
+      { "name": "COD(mg/L)", "value": 17.66, "limit": [0, 100] },
+      { "name": "总磷(mg/L)", "value": 0.11, "limit": [0, 100] }
+    ]
+  },
+  "qualities": {
+    "title": "进出口水质",
+    "catagories": [
+      {
+        "name": "I类",
+        "color": "#54c4fb"
+      },
+      {
+        "name": "II类",
+        "color": "#328dec"
+      },
+      {
+        "name": "III类",
+        "color": "#53c218"
+      },
+      {
+        "name": "IV类",
+        "color": "#329747"
+      },
+      {
+        "name": "V类",
+        "color": "#f3ab14"
+      },
+      {
+        "name": "劣V类",
+        "color": "#eb3f14"
+      }
+    ],
+    "data": [
+      { "name": "入口", "value": 1, "unit": "劣V类", "color": "#eb3f14" },
+      { "name": "出口", "value": 1, "unit": "IV类", "color": "#329747" }
+    ]
+  },
+  "waterTargets": {
+    "title": "水文指标",
+    "data": [
+      {
+        "name": "入口",
+        "data": [
+          {
+            "name": "水位(m)",
+            "value": 11.1,
+            "change": 1,
+            "limit": [11.08, 11.12],
+            "scale": 0.02
+          },
+          {
+            "name": "流速(m/s)",
+            "value": 0.04,
+            "change": 1,
+            "limit": [0, 500],
+            "scale": 0.01
+          },
+          {
+            "name": "流量(m³/s)",
+            "value": 3.17,
+            "change": 1,
+            "limit": [0, 500],
+            "scale": 0.01
+          }
+        ]
+      },
+      {
+        "name": "出口",
+        "data": [
+          {
+            "name": "水位(m)",
+            "value": 9.42,
+            "change": 1,
+            "limit": [9.4, 9.44],
+            "scale": 0.02
+          },
+          {
+            "name": "流速(m/s)",
+            "value": 0.02,
+            "change": 1,
+            "limit": [0, 500],
+            "scale": 0.01
+          },
+          {
+            "name": "流量(m³/s)",
+            "value": 3.1,
+            "change": 1,
+            "limit": [0, 500],
+            "scale": 0.01
+          }
+        ]
+      }
+    ]
+  }
+}

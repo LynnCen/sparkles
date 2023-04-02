@@ -1,0 +1,204 @@
+{
+  "folkMap1L": [
+    {
+      "index": 1,
+      "image": "./images/folkMap/行政村icon.svg",
+      "number": 203,
+      "text": "行政村数量 (个)"
+    },
+    {
+      "index": 2,
+      "image": "./images/folkMap/帮扶icon.svg",
+      "number": 1894,
+      "text": "结对帮扶 (人)"
+    },
+    {
+      "index": 3,
+      "image": "./images/folkMap/重点人员icon.svg",
+      "number": 2311,
+      "text": "重点人员 (人)"
+    },
+    {
+      "index": 4,
+      "image": "./images/folkMap/危房icon.svg",
+      "number": 477,
+      "text": "危房数量 (栋)"
+    },
+    {
+      "index": 5,
+      "image": "./images/folkMap/灾害隐患点icon.svg",
+      "number": 102,
+      "text": "灾害隐患点 (处)"
+    }
+  ],
+  "right1": {
+    "title": "结对帮扶",
+    "entitle": "Pair help",
+    "titleR": {
+      "text": "帮扶类型:",
+      "number": 4,
+      "unit": "类"
+    },
+    "color": ["#02D281", "#f0000000"],
+    "content": [
+      {
+        "index": "1",
+        "title": "低收入农民",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "2",
+        "title": "低保户",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "3",
+        "title": "五保户",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "4",
+        "title": "重点残疾对象",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      }
+    ]
+  },
+  "right2": {
+    "title": "重点人员",
+    "entitle": "Key personnel",
+    "titleR": {
+      "text": "人员类型:",
+      "number": 4,
+      "unit": "类"
+    },
+    "color": ["#00BAFF", "#f0000000"],
+    "content": [
+      {
+        "index": "1",
+        "title": "上访人员",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "2",
+        "title": "归正人员",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "3",
+        "title": "矫正对象",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "index": "4",
+        "title": "精神病患者",
+        "number": "25",
+        "proportion": "25",
+        "data": [
+          {
+            "item": "人数1",
+            "count": 25
+          },
+          {
+            "item": "人数2",
+            "count": 75
+          }
+        ]
+      }
+    ]
+  },
+  "right3": {
+    "title": "防灾避险",
+    "entitle": "Disaster prevention",
+    "data": [
+      {
+        "index": "1",
+        "number": 924,
+        "title": "避灾安置点",
+        "unit": "处"
+      },
+      {
+        "index": "2",
+        "number": 1412,
+        "title": "避灾逃跑路线",
+        "unit": "条"
+      }
+    ]
+  }
+}

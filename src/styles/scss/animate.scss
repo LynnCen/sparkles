@@ -1,0 +1,513 @@
+body {
+  margin: 0;
+}
+.vrp-animate-container {
+  //background: #fafafa;
+ // height: 833px;
+  margin: 0;
+}
+.vrp-animation-pageheader {
+  font-size: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.11);
+  position: relative;
+  height: 46px;
+  width: 300px;
+  z-index: 200;
+  top: 0px;
+  background: #fff;
+}
+.vrp-animation-header {
+  
+  :global(.ant-page-header) {
+    padding: 7px 17px;
+
+    line-height: 24px;
+
+    :global(.ant-page-header-heading-title) {
+      font-family: PingFangSC-Light;
+      font-size: 16px;
+    }
+  }
+}
+
+.vrp-animate-operate {
+  // margin-top:8px;
+
+  top: 0px;
+  position: relative;
+  height: 52px;
+  padding: 8px;
+  background-color: #fafafa;
+  width:300px;
+  z-index: 100;
+}
+.vrp-animate-search {
+  width: 135px;
+
+}
+
+.vrp-animate-selectLine {
+  :global(.ant-select-arrow) {
+    right: 7px;
+  }
+}
+.vrp-animate-selectline {
+  width: 77px;
+  margin-left: 7px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.menu-contents .menu-contents-list {
+  height: 140px;
+  overflow: scroll;
+}
+
+.menu-contents-list .list-item {
+  width: 130px;
+}
+
+.vrp-animate-selectLine {
+  :global(.ant-select-selection-selected-value) {
+    padding-right: 3px;
+  }
+}
+.vrp-animate-operate-button {
+  width: 60px;
+  margin-left: 4px;
+}
+
+.vrp-animate-infor-frame {
+  width: 286px;
+ 
+}
+.vrp-animation-infor-header-icon {
+  height: 22px;
+  i {
+    margin-left: 13px;
+    font-size: 16px;
+  }
+  position:flex;
+  margin-left:auto;
+  margin-right:8px;
+  display: inline-block;
+}
+.vrp-animation-frame-name {
+  background: #f8f8f8;
+  border-radius: 2px;
+  height: 23px;
+  width: 179px;
+  margin-left: 8px;
+  margin-top: 5px;
+  display: inline-block;
+  span {
+    margin-left: 5px;
+    font-size: 14px;
+  }
+}
+.vrp-animate-infor {
+  position: absolute;
+  top: 99px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background :#fafafa;
+  width: 100%;
+  height: calc(100% - 98px - 50px);
+  box-shadow: 0 1px 2px 0 rgba(25, 31, 37, 0.13);
+  :global(.ant-collapse-header) {
+    background-color: #fafafa;
+    margin-left: 8px;
+  }
+}
+
+.vrp-animate-infor-item {
+  width: 284px;
+  height: auto;
+//  box-shadow: 0 3px 6px 0 rgba(25, 31, 37, 0.13);
+  margin-left: 7px;
+  margin-top: 8px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow:0px 1px 1px 0px rgba(0,0,0,0.1);
+}
+.vrp-animate-infor-item-highlight {
+  width: 284px;
+  height: auto;
+  box-shadow: 0 1px 4px 2px rgba(24, 144, 255, 0.3);
+  margin-left: 7px;
+  margin-top: 8px;
+  border-radius:2px;
+  background-color: #ffffff;
+}
+.vrp-animate-infor-header {
+  height:40px;
+  padding: 8px 0px;
+ // border-left: 2px solid rgba(24, 144, 255, 0.4);
+  display: flex;
+   align-items: center;
+   //justify-content: center;
+   box-shadow:0px 1px 1px 0px rgba(0,0,0,0.1);
+  
+}
+.vrp-animate-infor-header .header-img-share {
+  width: 30px;
+  height: 22px;
+  border-left:2px solid rgba(24, 144, 255,0.3);
+  display: inline-block;
+  padding-left:8px;
+  
+}
+.vrp-animate-infor-header .header-lineType {
+  width: 41px;
+  height: 22px;
+  margin-left:4px;
+  font-size:13px;
+  color: #1890FF;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #E6F7FF;
+  border: 1px solid #91D5FF;
+  display: inline-block;
+ 
+}
+
+
+.animate-infor-header-title {
+  width: 100px;
+  height: 22px;
+  padding-right: 10px;
+  margin-left: 4px;
+  background: rgba(248,248,248,1);;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  display: inline-block;
+  position: relative;
+}
+.vrp-animate-eyeicon {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+.vrp-animate-model {
+  height: 65px;
+}
+
+.vrp-animate-header-hr {
+  position: relative;
+  top: 0px;
+  width: 284px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.04);
+  margin-left: 8px;
+}
+.vrp-animate-model-li {
+  position: relative;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  height: 50px;
+  width: 50px;
+  margin-top: 8px;
+  float: left;
+  background-size: 100% 100%;
+  &:hover {
+    .vrp-animate-model-li-operate {
+      display: block;
+    }
+  }
+  .vrp-animate-model-li-operate {
+    display: none;
+  }
+}
+
+.vrp-animate-slider-frame {
+  display: flex;
+  margin-top: 10px;
+}
+
+.vrp-animate-edit-header {
+ 
+  line-height: 36px;
+  vertical-align:middle;
+  height:35px;
+  display: inline-block;
+  color: #333333;
+  font-weight: 700;
+}
+.vrp-animate-slider{
+  width: 146px;
+  margin:7px 0px 0px 0px;
+  display: inline-block;
+  height: 10px;
+}
+.vrp-animate-slider-frame{
+  :global{
+   .ant-slider{
+      margin:7px 0px 0px 0px !important;
+    }
+  }
+}
+
+.vrp-animate-slider-input {
+  width: 50px;
+  margin-left:auto;
+  margin-right: 8px;
+ :global{
+  
+     .ant-input-number-input{
+      padding:0px 0 0 2px;
+     }
+     .ant-input-number-sm input{
+      padding:0px 0 0 2px;
+     }
+}
+}
+
+
+.vrp-animate-frame-attribute {
+  width: 276px;
+  min-height:36px;
+  //xdisplay: block;
+  vertical-align:middle;
+    height: auto;
+  margin-left: 8px;
+}
+.vrp-animate-frame-attribute .frame-attribute-header{
+  padding-top:2px;
+  width:275px;
+  height:36px;
+  display: flex;
+  align-items:center;
+
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.vrp-animate-attribute-header {
+  width: auto;
+  display: inline-block;
+  margin-left: 6px;
+  color: #333333;
+  font-weight: 700;
+}
+.vrp-animate-slider-span {
+  font-size: 12px;
+  color: #333333;
+  line-height: 24px;
+}
+
+.vrp-animate-frame-footer {
+  border-top: 1px solid rgb(235, 237, 240);
+  height: 39px;
+  width: 284px;
+  margin-top: 14px;
+
+  :global(.ant-btn) {
+    padding: 0px;
+  }
+  button {
+    width: 46px;
+    height: 24px;
+    font-size: 14px;
+
+    margin-right: 8px;
+    margin-top: 8px;
+    float: right;
+  }
+}
+.vrp-animate-frame-footer {
+  :global(.ant-btn[disabled]) {
+    cursor: default;
+  }
+}
+.vrp-animate-save-but {
+  background-color: rgb(211, 210, 210);
+  border-color: rgb(199, 199, 199);
+}
+.vrp-animate-attribute-i {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.vrp-animate-model-add {
+  font-size: 25px;
+  color: #1890ff;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+.vrp-animate-model-list {
+  width: 267px;
+  height: 340px;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+.vrp-animate-model-menu {
+  width: 70px;
+}
+
+.vrp-animate-header-dropmenu {
+  display: inline-block;
+  color: #1890ff;
+}
+.vrp-animate-header-dropmenu:hover {
+  color: rgb(156, 153, 153);
+}
+.vrp-animate-modellist-container {
+  width: 267px;
+  .custom__vrp-modal___3d7g6 .custom__vrp-modal-body___3YJKz {
+    padding: 0;
+  }
+}
+.vrp-animate-modellist-li {
+  display: inline-block;
+}
+.vrp-animate-model-img {
+  width: 45px;
+  height: 45px;
+  margin: 7px;
+}
+.vrp-animate-selectLine-down {
+  width: 150px;
+}
+.vrp-animate-model-change {
+  cursor: pointer;
+  background-color: rgba(136, 170, 88, 0.6);
+  width: 50px;
+  height: 25px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.vrp-animate-model-delete {
+  cursor: pointer;
+  background-color: rgba(167, 90, 126, 0.6);
+  width: 50px;
+  height: 25px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.vrp-animate-attribute-icon {
+  cursor: pointer;
+  margin-left: 16px;
+  line-height: 35px;
+}
+.vrp-animate-frame-attribute .animate-icon-fold{
+
+  margin-left:auto;
+  margin-right:8px;
+ line-height: 35px;
+
+}
+
+.vrp-animate-bottom-but {
+  position: absolute;
+  top: 850px;
+  right: 15px;
+  width: 60%;
+  :global(.ant-btn) {
+    padding: 0px;
+  }
+  button {
+    margin-left: 10px;
+    width: 46px;
+    height: 24px;
+    font-size: 14px;
+  }
+}
+.vrp-animate-bottom-play {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+.vrp-animate-play {
+  width: 100px;
+  display: inline-block;
+}
+.vrp-animate-play-icon {
+  margin-top: 12px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.vrp-animate-balloon-input {
+  width: 142px;
+  height: 24px;
+  margin-left: 6px;
+  font-size: 12px;
+}
+.vrp-animate-ballon-fontfamily {
+  width: 24px;
+  height: 24px;
+  padding: 0px;
+  margin-left: 6px;
+}
+.vrp-animate-model-ahead {
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  height: 50px;
+  width: 50px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.vrp-animation-balloonBtu {
+  width: 24px;
+  height: 24px;
+  margin-left: 3px;
+}
+
+.vrp-animate-Radio-span {
+  font-size: 12px;
+  margin-left: 2px;
+  color: #333333;
+}
+
+.vrp-animate-progress {
+  position: fixed;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 320px;
+  height: 100px;
+  bottom: 100px;
+  z-index: 20;
+  right: 950px;
+  :global(.ant-slider) {
+    margin: 0px 0 0 18px;
+  }
+}
+
+.progress-slider {
+  width: 200px;
+  margin-top: 30px;
+
+  display: inline-block;
+}
+
+/*垂直居中 文本居左*/
+.vrp-animate-infor-frame .flex-center-left {
+  // display: flex;
+  // align-items: center;
+  // justify-content: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 264px;
+}
+
+.flex-none-label {
+  flex: none;
+}
+.vrp-dataSource-input {
+  width: 200px;
+}
+
+.vrp-animate-slider-interval {
+  width: 135px;
+  margin: 0px 0px 0px 0px;
+  display: inline-block;
+}
+
+.vrp-animate-slider-frame .model-rotate-switch{
+  margin-right:8px;
+  margin-left:auto;
+}

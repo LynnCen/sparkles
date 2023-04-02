@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="795" height="1157.794" viewBox="0 0 795 1157.794">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: #40ada8;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #03fbee;
+      }
+
+      .cls-4 {
+        opacity: 0.75;
+        mix-blend-mode: screen;
+        isolation: isolate;
+      }
+
+      .cls-5 {
+        stroke: #25d7e7;
+        stroke-width: 4px;
+      }
+
+      .cls-6 {
+        filter: url(#直线_392);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0.502"/>
+      <stop offset="1" stop-opacity="0.522"/>
+    </linearGradient>
+    <filter id="直线_392" x="721.066" y="1095.089" width="64.58" height="62.705" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#1fe5d7" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_1356" data-name="组 1356" transform="translate(-2402.812 -176.193)">
+    <path id="路径_1135" data-name="路径 1135" class="cls-1" d="M2432.692,1326.674l-11.987-11.987V222.962l29.242-29.241h718.325l11.443,11.442V1278.589l-46.587,47S2431.875,1327.492,2432.692,1326.674Z"/>
+    <path id="路径_1136" data-name="路径 1136" class="cls-2" d="M2432.692,1326.674l-11.987-11.987V222.962l29.242-29.241h718.325l11.443,11.442V1278.589l-46.587,47S2431.875,1327.492,2432.692,1326.674Z"/>
+    <path id="路径_1137" data-name="路径 1137" class="cls-3" d="M3181.074,1288.626,3143.2,1326.5l18.433-2.114,18.25-18.048Z"/>
+    <g id="组_1353" data-name="组 1353">
+      <image id="矩形_1016" data-name="矩形 1016" class="cls-4" width="144" height="123" transform="translate(2402.812 176.193)" xlink:href="data:image/png;base64,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"/>
+      <g id="组_1352" data-name="组 1352">
+        <path id="路径_1138" data-name="路径 1138" class="cls-5" d="M2420.341,283.349V223.141l29.243-29.42,81.731-.272"/>
+      </g>
+    </g>
+    <g id="组_1355" data-name="组 1355">
+      <image id="矩形_1017" data-name="矩形 1017" class="cls-4" width="96" height="92" transform="translate(3101.812 176.193)" xlink:href="data:image/png;base64,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"/>
+      <g id="组_1354" data-name="组 1354">
+        <path id="路径_1139" data-name="路径 1139" class="cls-5" d="M3179.893,252.749l-.091-46.859-11.624-11.806-50.674-.363"/>
+      </g>
+    </g>
+    <g class="cls-6" transform="matrix(1, 0, 0, 1, 2402.81, 176.19)">
+      <line id="直线_392-2" data-name="直线 392" class="cls-5" y1="44.816" x2="46.814" transform="translate(729.95 1104.03)"/>
+    </g>
+  </g>
+</svg>

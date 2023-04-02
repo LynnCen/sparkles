@@ -1,0 +1,269 @@
+{
+  "renkou": {
+    "title": "./images/lishui3D/title/renju.png",
+    "content": [
+      {
+        "name": "低保人群",
+        "number": "15"
+      },
+      {
+        "name": "孤寡老人",
+        "number": "68"
+      },
+      {
+        "name": "重点青少年",
+        "number": "22"
+      },
+      {
+        "name": "社区矫正人员",
+        "number": "25"
+      },
+      {
+        "name": "党员",
+        "number": "120"
+      }
+    ],
+    "chartData1": [
+      {
+        "item": "群租",
+        "count": 9
+      },
+      {
+        "item": "自住",
+        "count": 33
+      },
+      {
+        "item": "空闲",
+        "count": 13
+      },
+      {
+        "item": "出租",
+        "count": 45
+      }
+    ],
+    "chartData2": [
+      {
+        "item": "常住人口",
+        "count": 789
+      },
+      {
+        "item": "流动人口",
+        "count": 463
+      }
+    ],
+    "chartData3": "./images/lishui3D/teshu.png",
+    "chartData4": [
+      {
+        "item": "涉藏涉疆人群",
+        "count": 100
+      },
+      {
+        "item": "境外人群",
+        "count": 50
+      },
+      {
+        "item": "发烧人群",
+        "count": 40
+      }
+    ]
+  },
+  "xiaoqu": {
+    "title": "./images/lishui3D/title/xiaoqu.png",
+    "content": {
+      "imgurl": "./images/lishui3D/xiaoqu/environment.svg",
+      "imgurl2": "./images/lishui3D/xiaoqu/guangwang.jpg",
+      "imgurl3": "./images/lishui3D/xiaoqu/tuzhi.jpg",
+      "place": "丽水市莲都区城北街73号,建造于2013年,占地面积54321m2,半封闭小区",
+      "facilities": [
+        {
+          "name": "电梯",
+          "imgurl": "./images/lishui3D/xiaoqu/checkCircle.svg"
+        },
+        {
+          "name": "地下车库",
+          "imgurl": "./images/lishui3D/xiaoqu/checkCircle.svg"
+        },
+        {
+          "name": "健身器材",
+          "imgurl": "./images/lishui3D/xiaoqu/checkCircle.svg"
+        },
+        {
+          "name": "儿童场所",
+          "imgurl": "./images/lishui3D/xiaoqu/checkCircle.svg"
+        }
+      ],
+      "information": [
+        {
+          "profession": "社区民警",
+          "name": "a",
+          "phone": "132456787",
+          "imgUrl": "./images/lishui3D/xiaoqu/mingjing.svg"
+        },
+        {
+          "profession": "网格员",
+          "name": "b",
+          "phone": "132456787",
+          "imgUrl": "./images/lishui3D/xiaoqu/wanggeyuan.svg"
+        }
+      ]
+    }
+  },
+  "bianmin": {
+    "title": "./images/lishui3D/title/bianmin.png",
+    "content": [
+      {
+        "title": "药店、医院",
+        "imgUrl": "./images/lishui3D/bianmin/hospital.svg",
+        "dataId": [21259, 21264, 21261]
+      },
+      {
+        "title": "公交线路",
+        "imgUrl": "./images/lishui3D/bianmin/bus.svg",
+        "dataId": [21271, 21278]
+      },
+      {
+        "title": "停车情况",
+        "imgUrl": "./images/lishui3D/bianmin/stop.svg",
+        "dataId": [21257, 21260]
+      },
+      {
+        "title": "教学资源",
+        "imgUrl": "./images/lishui3D/bianmin/teaching.svg",
+        "dataId": [21258, 21263]
+      },
+      {
+        "title": "餐饮",
+        "imgUrl": "./images/lishui3D/bianmin/Catering.png",
+        "dataId": [21280, 21279]
+      },
+      {
+        "title": "政务服务",
+        "imgUrl": "./images/lishui3D/bianmin/service.svg",
+        "dataId": [21275]
+      },
+      {
+        "title": "居家养老",
+        "imgUrl": "./images/lishui3D/bianmin/pension.svg",
+        "dataId": [21274]
+      }
+    ]
+  },
+  "pingan": {
+    "title": "./images/lishui3D/title/pingan.png",
+    "content": [
+      {
+        "name": "消防设施",
+        "number": 22,
+        "url": "./images/lishui3D/pingan/xiaofang.png"
+      },
+      {
+        "name": "摄像头",
+        "number": 55,
+        "url": "./images/lishui3D/pingan/shexiangtou.png"
+      },
+      {
+        "name": "灭火器",
+        "number": 108,
+        "url": "./images/lishui3D/pingan/miehuoqi.png"
+      },
+      {
+        "name": "消防通道",
+        "number": 3,
+        "url": "./images/lishui3D/pingan/xiaofangtongdao.png"
+      }
+    ],
+    "data": [
+      {
+        "key": "1",
+        "type": "治安",
+        "time": "2019.05.03",
+        "describe": "入室盗窃",
+        "processing": "处理中"
+      },
+      {
+        "key": "2",
+        "type": "纠纷",
+        "time": "2019.05.10",
+        "describe": "邻里纠纷",
+        "processing": "已处理"
+      },
+      {
+        "key": "3",
+        "type": "投诉",
+        "time": "2019.05.14",
+        "describe": "随意上涨物业费",
+        "processing": "未处理"
+      }
+    ]
+  },
+  "shengtai": {
+    "title": "./images/lishui3D/title/shengtai.png",
+    "data1": [
+      {
+        "name": "水质安全指数",
+        "number": 48
+      },
+      {
+        "name": "PM2.5指数",
+        "number": 48
+      },
+      {
+        "name": "负氧离子指数",
+        "number": 48
+      }
+    ],
+    "data2": [
+      {
+        "name": "绿化覆盖率",
+        "number1": 35,
+        "number2": 50
+      },
+      {
+        "name": "垃圾分类率",
+        "number1": 95,
+        "number2": 100
+      },
+      {
+        "name": "建筑节能率",
+        "number1": 35,
+        "number2": 70
+      }
+    ]
+  },
+  "wenming": {
+    "title": "./images/lishui3D/title/wenming.png",
+    "data1": [
+      {
+        "title": "志愿者数量",
+        "number": "302"
+      },
+      {
+        "title": "服务时长",
+        "number": "400h"
+      }
+    ],
+    "data2": [
+      {
+        "item": "车辆停放",
+        "数量": 70
+      },
+      {
+        "item": "公共设施",
+        "数量": 60
+      },
+      {
+        "item": "公共卫生",
+        "数量": 50
+      },
+      {
+        "item": "乱贴小广告",
+        "数量": 60
+      },
+      {
+        "item": "违章建筑",
+        "数量": 40
+      }
+    ],
+    "data2Img": "./images/lishui3D/zhuapai.png"
+  }
+}

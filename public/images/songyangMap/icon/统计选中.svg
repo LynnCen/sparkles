@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55.037" height="55.037" viewBox="0 0 55.037 55.037">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #038689;
+        opacity: 0.44;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #08bcc1;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #00c19c;
+      }
+    </style>
+  </defs>
+  <g id="统计选中" transform="translate(-2615.169 -39.482)">
+    <g id="组_58" data-name="组 58">
+      <circle id="椭圆_22" data-name="椭圆 22" class="cls-1" cx="26.518" cy="26.518" r="26.518" transform="translate(2616.169 40.482)"/>
+      <circle id="椭圆_23" data-name="椭圆 23" class="cls-2" cx="26.518" cy="26.518" r="26.518" transform="translate(2616.169 40.482)"/>
+    </g>
+    <g id="组_59" data-name="组 59">
+      <path id="路径_91" data-name="路径 91" class="cls-3" d="M2661.227,64.216v-.029a16.268,16.268,0,0,0-16.268-16.268v16.3Zm0,0"/>
+      <path id="路径_92" data-name="路径 92" class="cls-3" d="M2642.35,66.854v-16.3a16.268,16.268,0,0,0-16.267,16.268v.029a16.267,16.267,0,0,0,32.535,0Zm0,0"/>
+    </g>
+  </g>
+</svg>

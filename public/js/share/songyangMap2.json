@@ -1,0 +1,293 @@
+{
+    "content1": {
+        "title": "重点指标",
+        "textShadow": "#31B0F7",
+        "data": [
+            {
+                "title": "出租承包:",
+                "num": 0.95,
+                "unit": "万元"
+            },
+            {
+                "title": "经营生产:",
+                "num": 13.05,
+                "unit": "万元"
+            },
+            {
+                "title": "投资分红:",
+                "num": 1.96,
+                "unit": "万元"
+            }
+        ]
+    },
+    "content2": {
+        "title": "村集体收入",
+        "url": "./images/songyangMap/image/charts/industrychart1.svg",
+        "chartData": [
+            {
+                "name": "2018",
+                "value": 8,
+                "unit": "万元"
+            },
+            {
+                "name": "2019",
+                "value": 9,
+                "unit": "万元"
+            },
+            {
+                "name": "2020",
+                "value": 12,
+                "unit": "万元"
+            }
+        ]
+    },
+    "content3": {
+        "title": "产值占比分析",
+        "url": "./images/songyangMap/image/charts/industrychart2.svg",
+        "chartData": [
+            { "name": "第一产业", "y": 147, "unit": "万元" },
+            { "name": "第二产业", "y": 117, "unit": "万元"},
+            { "name": "第三产业", "y": 114, "unit": "万元"}
+          ]
+    },
+    "content4": {
+        "title": "从业人员占比分析",
+        "url": "./images/songyangMap/image/charts/industrychart3.svg",
+        "child":{
+            "title": "总人数",
+            "data": [
+                { "value": 353, "name": "第一产业", "unit": "人" },
+                { "value": 6, "name": "第二产业", "unit": "人" },
+                { "value": 27, "name": "第三产业", "unit": "人" }
+              ],
+              "total": 386,
+              "titleStyle": {
+                "x": "25%",
+                "y": "35%"
+              },
+              "color": ["#F97B26", "#11BC8E", "#26E9F9"],
+              "legendStyle": {
+                "orient": "vertical",
+                "x": "50%",
+                "y": "center"
+              },
+              "seriesRadius": [["66%", "70%"], ["58%", "0%"]],
+              "seriesCenter": ["26%", "50%"],
+              "intervalVal": 10
+          }
+    },
+    "content5": [
+        {
+            "title": "第一产业",
+            "textShadow": "#31B0F7",
+            
+            "child1": {
+                "title": "养殖专业合作社",
+                "data1": [
+                    {
+                        "title": "合作社数量:",
+                        "num": 0,
+                        "unit": "个"
+                    },
+                    {
+                        "title": "从业人数:",
+                        "num": 0,
+                        "unit": "人"
+                    }
+                ],
+                "data2": [
+                    {
+                        "title": "年产值:",
+                        "num": 0,
+                        "unit": "万元"
+                    },
+                    {
+                        "title": "带动低收入农户:",
+                        "num": 0,
+                        "unit": "户"
+                    }
+                ]
+            },
+            "child2": {
+                "title": "种植专业合作社",
+                "data1": [
+                    {
+                        "title": "合作社数量:",
+                        "num": 1,
+                        "unit": "个"
+                    },
+                    {
+                        "title": "种植面积:",
+                        "num": 0,
+                        "unit": "亩"
+                    }
+                ],
+                "data2": [
+                    {
+                        "title": "从业人数:",
+                        "num": 0,
+                        "unit": "人"
+                    },
+                    {
+                        "title": "种植种类:",
+                        "num": 0,
+                        "unit": "类"
+                    }
+                ],
+                "data3": [
+                    {
+                        "title": "年产值:",
+                        "num": 0,
+                        "unit": "万元"
+                    },
+                    {
+                        "title": "带动低收入农户:",
+                        "num": 0,
+                        "unit": "户"
+                    }
+                ]
+                
+            },
+            "child3": {
+                "title": "主要经营收入",
+                "icon": "./images/songyangMap/icon/titleicon.svg",
+                "url": "./images/songyangMap/image/charts/industrychart4.svg",
+                "data": [
+                    { "value": 35, "name": "粮食产业", "unit": "万元" },
+                    { "value": 34, "name": "种植业", "unit": "万元" },
+                    { "value": 33, "name": "蔬菜产业", "unit": "万元" },
+                    { "value": 18, "name": "林业", "unit": "万元" }
+                  ]
+            }
+        },
+        {
+            "title": "第二产业",
+            "textShadow": "#31B0F7",
+            "child1": {
+                "title": "重点指标",
+                "data": [
+                    {
+                        "title": "产值:",
+                        "num": 0,
+                        "unit": "万元"
+                    },
+                    {
+                        "title": "从业人数:",
+                        "num": 0,
+                        "unit": "人"
+                    },
+                    {
+                        "title": "企业数:",
+                        "num": 0,
+                        "unit": "家"
+                    }
+                ]
+            },
+            "child2": {
+                "title": "产值趋势",
+                "url": "./images/songyangMap/image/charts/industrychart5.svg",
+                "chartData": [
+                    {
+                        "name": "2019",
+                        "value": 55,
+                        "unit": "万元"
+                    },
+                    {
+                        "name": "2020",
+                        "value": 48,
+                        "unit": "万元"
+                    },
+                    {
+                        "name": "2020",
+                        "value": 36,
+                        "unit": "万元"
+                    }
+                ]
+                
+            },
+            "child3": {
+                "title": "细类分析",
+                "url": "./images/songyangMap/image/charts/industrychart6.svg",
+                "data": [
+                    { "value": 66, "name": "农业品夹共", "unit": "万元" },
+                    { "value": 22, "name": "燃料加工", "unit": "万元" },
+                    { "value": 88, "name": "电商", "unit": "万元" },
+                    { "value": 18, "name": "其他", "unit": "万元" }
+                  ]
+            }
+        },
+        {
+            "title": "第三产业",
+            "textShadow": "#31B0F7",
+            "child1": {
+                "title": "重点指标",
+                "data": [
+                    {
+                        "title": "产值:",
+                        "num": 0,
+                        "unit": "万元"
+                    },
+                    {
+                        "title": "从业人数:",
+                        "num": 29,
+                        "unit": "人"
+                    },
+                    {
+                        "title": "企业数:",
+                        "num": 29,
+                        "unit": "家"
+                    }
+                ]
+            },
+            "child2": {
+                "title": "产值分析",
+                "url": "./images/songyangMap/image/charts/industrychart7.svg",
+                "child":{
+                    "title": "产值",
+                    "data": [
+                        { "value": 353, "name": "旅游业", "unit": "万元" },
+                        { "value": 6, "name": "景点", "unit": "万元" },
+                        { "value": 27, "name": "农家乐", "unit": "万元" }
+                      ],
+                      "total": 386,
+                      "titleStyle": {
+                        "x": "25%",
+                        "y": "35%"
+                      },
+                      "color": ["#F97B26", "#11BC8E", "#26E9F9"],
+                      "legendStyle": {
+                        "orient": "vertical",
+                        "x": "50%",
+                        "y": "center"
+                      },
+                      "seriesRadius": [["66%", "70%"], ["58%", "0%"]],
+                      "seriesCenter": ["26%", "50%"],
+                      "intervalVal": 10
+                  }
+            },
+            "child3": {
+                "title": "数量分析",
+                "url": "./images/songyangMap/image/charts/industrychart8.svg",
+                    "chartData": [
+                        {
+                            "name": "旅游民宿",
+                            "value": 27,
+                            "unit": "人数"
+                        },
+                        {
+                            "name": "农家乐",
+                            "value": 6,
+                            "unit": "人数"
+                        },
+                        {
+                            "name": "景点",
+                            "value": 7,
+                            "unit": "人数"
+                        }
+                        
+                    ]
+                
+            }
+        }
+    ]
+}

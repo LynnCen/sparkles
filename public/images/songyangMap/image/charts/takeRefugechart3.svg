@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="533.1" height="197.45" viewBox="0 0 533.1 197.45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#02d2da"/>
+      <stop offset="0.046" stop-color="#05cbdb" stop-opacity="0.91"/>
+      <stop offset="0.182" stop-color="#0db9df" stop-opacity="0.671"/>
+      <stop offset="0.319" stop-color="#14aae2" stop-opacity="0.467"/>
+      <stop offset="0.456" stop-color="#199ee5" stop-opacity="0.298"/>
+      <stop offset="0.593" stop-color="#1e95e7" stop-opacity="0.169"/>
+      <stop offset="0.729" stop-color="#218ee8" stop-opacity="0.075"/>
+      <stop offset="0.865" stop-color="#238ae9" stop-opacity="0.02"/>
+      <stop offset="0.999" stop-color="#2489ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="组_1458" data-name="组 1458" transform="translate(-2569.049 -1068.153)">
+    <text id="百分比" transform="translate(2569.049 1085.153)" fill="#fff" font-size="16" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">百分比</tspan></text>
+    <text id="_0" data-name="0" transform="translate(2593.605 1240.262)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">0</tspan></text>
+    <text id="_2016" data-name="2016" transform="translate(2610.949 1260.604)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2016</tspan></text>
+    <text id="_2018" data-name="2018" transform="translate(2788.154 1260.604)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2018</tspan></text>
+    <text id="_2017" data-name="2017" transform="translate(2699.552 1260.604)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2017</tspan></text>
+    <text id="_2020" data-name="2020" transform="translate(2965.36 1260.604)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2020</tspan></text>
+    <text id="_2021" data-name="2021" transform="translate(3053.962 1260.604)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2021</tspan></text>
+    <text id="_25" data-name="25" transform="translate(2587.741 1208.736)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">25</tspan></text>
+    <text id="_50" data-name="50" transform="translate(2587.741 1177.21)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">50</tspan></text>
+    <text id="_75" data-name="75" transform="translate(2587.741 1145.685)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">75</tspan></text>
+    <text id="_100" data-name="100" transform="translate(2577.741 1114.159)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">100</tspan></text>
+    <line id="直线_300" data-name="直线 300" x2="484.26" transform="translate(2617.842 1233.654)" fill="none" stroke="#1ec3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_301" data-name="直线 301" y1="6.72" transform="translate(2643.014 1233.836)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_302" data-name="直线 302" y1="6.72" transform="translate(2730.698 1233.836)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_303" data-name="直线 303" y1="6.72" transform="translate(2818.465 1233.836)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <text id="_2019" data-name="2019" transform="translate(2870.892 1260.604)" fill="#fff" font-size="20" font-family="MicrosoftYaHei, Microsoft YaHei"><tspan x="0" y="0">2019</tspan></text>
+    <line id="直线_304" data-name="直线 304" y1="6.72" transform="translate(2906.734 1233.836)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_305" data-name="直线 305" y1="6.72" transform="translate(2998.819 1233.836)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_306" data-name="直线 306" y1="6.72" transform="translate(3087.79 1233.836)" fill="none" stroke="#05c3cd" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="直线_307" data-name="直线 307" x2="482.042" transform="translate(2617.842 1202.4)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <line id="直线_308" data-name="直线 308" x2="482.042" transform="translate(2617.842 1171.146)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <line id="直线_309" data-name="直线 309" x2="482.042" transform="translate(2617.842 1139.892)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <line id="直线_310" data-name="直线 310" x2="482.042" transform="translate(2617.842 1108.638)" fill="none" stroke="#2af8ec" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="12" opacity="0.5"/>
+    <path id="路径_813" data-name="路径 813" d="M3082.318,1134.707l-88.644,9.116-88.644,52.871-88.644-61.987-88.644,46.7-88.88-1.949v54.218h443.455Z" transform="translate(0)" fill="url(#linear-gradient)"/>
+    <g id="组_868" data-name="组 868" transform="translate(0)">
+      <path id="路径_814" data-name="路径 814" d="M2639.51,1179.225l88.88,1.949,88.644-46.7,88.643,61.987,88.644-52.871,88.644-9.116" fill="none" stroke="#00f8ec" stroke-miterlimit="10" stroke-width="1.326"/>
+      <g id="组_862" data-name="组 862">
+        <circle id="椭圆_309" data-name="椭圆 309" cx="6.029" cy="6.029" r="6.029" transform="translate(2633.48 1173.196)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+        <circle id="椭圆_310" data-name="椭圆 310" cx="18.522" cy="18.522" r="18.522" transform="translate(2620.988 1160.704)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+      <g id="组_863" data-name="组 863">
+        <circle id="椭圆_311" data-name="椭圆 311" cx="6.029" cy="6.029" r="6.029" transform="translate(2722.361 1175.258)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+        <circle id="椭圆_312" data-name="椭圆 312" cx="18.522" cy="18.522" r="18.522" transform="translate(2709.868 1162.766)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+      <g id="组_864" data-name="组 864">
+        <circle id="椭圆_313" data-name="椭圆 313" cx="6.029" cy="6.029" r="6.029" transform="translate(2811.005 1128.447)" fill="#04e6db"/>
+        <circle id="椭圆_314" data-name="椭圆 314" cx="18.522" cy="18.522" r="18.522" transform="translate(2798.512 1115.954)" fill="none" stroke="#04e6db" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+      <g id="组_865" data-name="组 865">
+        <circle id="椭圆_315" data-name="椭圆 315" cx="6.029" cy="6.029" r="6.029" transform="translate(2899.648 1190.434)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+        <circle id="椭圆_316" data-name="椭圆 316" cx="18.522" cy="18.522" r="18.522" transform="translate(2887.156 1177.941)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+      <g id="组_866" data-name="组 866">
+        <circle id="椭圆_317" data-name="椭圆 317" cx="6.029" cy="6.029" r="6.029" transform="translate(2988.292 1138.116)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+        <circle id="椭圆_318" data-name="椭圆 318" cx="18.522" cy="18.522" r="18.522" transform="translate(2975.8 1125.624)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+      <g id="组_867" data-name="组 867">
+        <circle id="椭圆_319" data-name="椭圆 319" cx="6.029" cy="6.029" r="6.029" transform="translate(3076.936 1128.447)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.768"/>
+        <circle id="椭圆_320" data-name="椭圆 320" cx="18.522" cy="18.522" r="18.522" transform="translate(3064.443 1115.954)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.326"/>
+      </g>
+    </g>
+  </g>
+</svg>

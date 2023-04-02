@@ -1,0 +1,359 @@
+{
+  "child1L": {
+    "title": "主要工程",
+    "content": [
+      {
+        "key": "1",
+        "number1": 359.06,
+        "number2": 5385.9,
+        "location": "生态湿地",
+        "unit1": "万平方米",
+        "unit2": "亩",
+        "img": "./images/drinkingWaterProtection/child1_1.png",
+        "data": [
+          {
+            "item": "1",
+            "count": 14.6
+          },
+          {
+            "item": "2",
+            "count": 85.4
+          }
+        ]
+      },
+      {
+        "key": "2",
+        "number1": 12.3,
+        "number2": 24.6,
+        "location": "原水管道",
+        "unit1": "公里(单管)",
+        "unit2": "公里(双管)",
+        "img": "./images/drinkingWaterProtection/child1_2.png",
+        "data": [
+          {
+            "item": "1",
+            "count": 13.5
+          },
+          {
+            "item": "2",
+            "count": 86.5
+          }
+        ]
+      },
+      {
+        "key": "3",
+        "number1": 3.29,
+        "number2": 49.4,
+        "location": "取水泵站",
+        "unit1": "万平方米",
+        "unit2": "亩",
+        "img": "./images/drinkingWaterProtection/child1_3.png",
+        "data": [
+          {
+            "item": "1",
+            "count": 5.3
+          },
+          {
+            "item": "2",
+            "count": 94.7
+          }
+        ]
+      }
+    ]
+  },
+  "child2L": {
+    "title": "人员投入",
+    "data1": [
+      {
+        "type": "业主",
+        "number": 9,
+        "img": "./images/drinkingWaterProtection/child3_1.png"
+      },
+      {
+        "type": "监理",
+        "number": 8,
+        "img": "./images/drinkingWaterProtection/child3_2.png"
+      },
+      {
+        "type": "项目部",
+        "number": 41,
+        "img": "./images/drinkingWaterProtection/child3_3.png"
+      }
+    ],
+    "img": "./images/drinkingWaterProtection/child3_4.png",
+    "data2": [
+      {
+        "type": "生态湿地工人",
+        "number": 267
+      },
+      {
+        "type": "原水管线工人",
+        "number": 97
+      },
+      {
+        "type": "取水泵站工人",
+        "number": 29
+      }
+    ]
+  },
+  "child3L": {
+    "title": "设备投入",
+    "data": [
+      {
+        "type": "挖掘机",
+        "number": 41,
+        "unit": "台",
+        "img": "./images/drinkingWaterProtection/child4_1.png"
+      },
+      {
+        "type": "推土机",
+        "number": 8,
+        "unit": "台",
+        "img": "./images/drinkingWaterProtection/child4_2.png"
+      },
+      {
+        "type": "铲车",
+        "number": 1,
+        "unit": "辆",
+        "img": "./images/drinkingWaterProtection/child4_3.png"
+      },
+      {
+        "type": "运输车",
+        "number": 21,
+        "unit": "辆",
+        "img": "./images/drinkingWaterProtection/child4_4.png"
+      },
+      {
+        "type": "桩机",
+        "number": 6,
+        "unit": "台",
+        "img": "./images/drinkingWaterProtection/child4_5.png"
+      }
+    ]
+  },
+  "child1R": [
+    {
+      "name": "温度(℃)",
+      "value": 26,
+      "avatar": "./images/drinkingWaterProtection/icon_sun.png"
+    },
+    {
+      "name": "湿度(%)",
+      "value": 43,
+      "avatar": "./images/drinkingWaterProtection/icon_shidu.png"
+    },
+    {
+      "name": "pm2.5",
+      "value": 23,
+      "avatar": "./images/drinkingWaterProtection/icon_pm.png"
+    },
+    {
+      "name": "风向",
+      "value": "西南风",
+      "avatar": "./images/drinkingWaterProtection/icon_fengxiang.png"
+    }
+  ],
+  "child2R": {
+    "title": "实时监控",
+    "titleImg": "./images/drinkingWaterProtection/child3Title.png",
+    "data": [
+      {
+        "code": "KTU-101",
+        "thumbnail": "./images/drinkingWaterProtection/1.jpg",
+        "name": "视频监控001",
+        "url": "rtsp://218.205.127.16:554/pag://218.205.127.179:7302:33112300001310216233:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAABFDubO7bdaOvraN6ZEHEI57niFj3%2FPtHYqUdfqpkafoXzg50YukOZDcxeytvgzwv3eFiLv6dcLHwz0ENuhKt6G&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTAzMjMxWiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc5OjczMDI6MzMxMTIzMDAwMDEzMTAyMTYyMzM6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+      },
+      {
+        "code": "KTU-102",
+        "thumbnail": "./images/drinkingWaterProtection/2.jpg",
+        "name": "视频监控002",
+        "url": "rtsp://218.205.127.16:554/pag://218.205.127.178:7302:33112300001310016295:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAABicZumxpxiRisimYydsEo%2Bg6Z1f1zI%2Flq7O6eVVEitdCDH3xzeX%2BqbDx%2BgfjS%2FB5RqMO2Whyzwa6gL5E8%2BasyN&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc0NTA1WiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc4OjczMDI6MzMxMTIzMDAwMDEzMTAwMTYyOTU6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+      },
+      {
+        "code": "KTU-103",
+        "thumbnail": "./images/drinkingWaterProtection/3.jpg",
+        "name": "视频监控003",
+        "url": "rtsp://218.205.127.16:554/pag://218.205.127.178:7302:33112300001310016295:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAABicZumxpxiRisimYydsEo%2Bg6Z1f1zI%2Flq7O6eVVEitdCDH3xzeX%2BqbDx%2BgfjS%2FB5RqMO2Whyzwa6gL5E8%2BasyN&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc0NTA1WiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc4OjczMDI6MzMxMTIzMDAwMDEzMTAwMTYyOTU6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+      },
+      {
+        "code": "KTU-104",
+        "thumbnail": "./images/drinkingWaterProtection/4.jpg",
+        "name": "视频监控004",
+        "url": "rtsp://218.205.127.16:554/pag://218.205.127.178:7302:33112300001310016295:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAABicZumxpxiRisimYydsEo%2Bg6Z1f1zI%2Flq7O6eVVEitdCDH3xzeX%2BqbDx%2BgfjS%2FB5RqMO2Whyzwa6gL5E8%2BasyN&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc0NTA1WiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc4OjczMDI6MzMxMTIzMDAwMDEzMTAwMTYyOTU6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+      },
+      {
+        "code": "KTU-105",
+        "thumbnail": "./images/drinkingWaterProtection/5.jpg",
+        "name": "视频监控005",
+        "url": "rtsp://218.205.127.16:554/pag://218.205.127.178:7302:33112300001310016295:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAABicZumxpxiRisimYydsEo%2Bg6Z1f1zI%2Flq7O6eVVEitdCDH3xzeX%2BqbDx%2BgfjS%2FB5RqMO2Whyzwa6gL5E8%2BasyN&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc0NTA1WiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc4OjczMDI6MzMxMTIzMDAwMDEzMTAwMTYyOTU6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+      },
+      {
+        "code": "KTU-106",
+        "thumbnail": "./images/drinkingWaterProtection/5.jpg",
+        "name": "视频监控006",
+        "url": "rtsp://218.205.127.16:554/pag://218.205.127.178:7302:33112300001310016295:0:SUB:TCP?streamform=rtp&idinfo=EBACAAAQAABicZumxpxiRisimYydsEo%2Bg6Z1f1zI%2Flq7O6eVVEitdCDH3xzeX%2BqbDx%2BgfjS%2FB5RqMO2Whyzwa6gL5E8%2BasyN&checkinfo=eyJ0aW1lIjoiMjAxOTEwMTZUMTc0NTA1WiIsInVybCI6InJ0c3A6Ly8yMTguMjA1LjEyNy4xNjo1NTQvcGFnOi8vMjE4LjIwNS4xMjcuMTc4OjczMDI6MzMxMTIzMDAwMDEzMTAwMTYyOTU6MDpTVUI6VENQP3N0cmVhbWZvcm09cnRwIn0%3D"
+      }
+    ]
+  },
+  "child3R": {
+    "title": "水位监测",
+    "data": [
+      {
+        "name": "崇德水位(85高程)",
+        "data": [
+          {
+            "name": "水位(m)",
+            "value": 3.7,
+            "change": 1,
+            "limit": [3.7, 4.5],
+            "scale": 0.02
+          },
+          {
+            "name": "超警戒(m)",
+            "value": 0,
+            "change": 1,
+            "limit": [0, 20],
+            "scale": 0.01
+          },
+          {
+            "name": "超危急(m)",
+            "value": 0.4,
+            "change": 1,
+            "limit": [0, 20],
+            "scale": 0.01
+          }
+        ]
+      }
+    ]
+  },
+  "child4R": {
+    "data": [
+      {
+        "type": "现场值",
+        "x": "一号工区",
+        "value": 90.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      },
+      {
+        "type": "现场值",
+        "x": "二号工区",
+        "value": 101.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      },
+
+      {
+        "type": "限制值",
+        "x": "一号工区",
+        "value": 10.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      },
+      {
+        "type": "限制值",
+        "x": "二号工区",
+        "value": 0.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      },
+
+      {
+        "type": "剩余值",
+        "x": "一号工区",
+        "value": 10.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      },
+      {
+        "type": "剩余值",
+        "x": "二号工区",
+        "value": 9.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      }
+    ],
+    "theme": {
+      "colors": ["#0cceac", "rgba(255, 255, 255, 0.4)"],
+      "axis": {
+        "left": {
+          "grid": {
+            "lineStyle": { "stroke": "transparent" },
+            "hideFirstLine": true
+          }
+        },
+        "bottom": {
+          "position": "bottom",
+          "label": {
+            "offset": 12,
+            "textStyle": { "fill": "rgba(255,255,255,.8)" }
+          }
+        }
+      }
+    }
+  },
+  "child5R": {
+    "data": [
+      {
+        "type": "现场值",
+        "x": "一号工区",
+        "value": 90.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      },
+      {
+        "type": "现场值",
+        "x": "二号工区",
+        "value": 48.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      },
+      {
+        "type": "限制值",
+        "x": "一号工区",
+        "value": 10.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      },
+      {
+        "type": "限制值",
+        "x": "二号工区",
+        "value": 52.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      },
+      {
+        "type": "剩余值",
+        "x": "一号工区",
+        "value": 10.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      },
+      {
+        "type": "剩余值",
+        "x": "二号工区",
+        "value": 10.0,
+        "limit": [0, 110],
+        "scale": 0.1
+      }
+    ],
+    "theme": {
+      "colors": ["#0cceac", "rgba(255, 255, 255, 0.4)"],
+      "axis": {
+        "left": {
+          "grid": {
+            "lineStyle": { "stroke": "transparent" },
+            "hideFirstLine": true
+          }
+        },
+        "bottom": {
+          "position": "bottom",
+          "label": {
+            "offset": 12,
+            "textStyle": { "fill": "rgba(255,255,255,.8)" }
+          }
+        }
+      }
+    }
+  }
+}
