@@ -1,0 +1,76 @@
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  background: #f5f5f5;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.itemDelete {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20px;
+  height: 20px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 10px;
+  & > span {
+    flex: none;
+    width: 40px;
+    margin-top: 6px;
+    margin-right: 10px;
+  }
+  & .titleItem {
+    display: flex;
+    align-items: center;
+    width: 291px;
+  }
+}
+
+.logs {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  & > span {
+    flex: none;
+    width: 40px;
+    margin-top: 6px;
+    margin-right: 10px;
+  }
+}
+
+.logsRight {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+
+  & > input {
+    width: 291px;
+    margin-right: 5px;
+  }
+}
+
+.logsAdd {
+  width: 291px;
+}

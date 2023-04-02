@@ -1,0 +1,30 @@
+.cardbox  {
+  display: flex;
+}
+
+.card {
+  position: relative;
+  margin-right: 10px;
+
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardmask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
+
