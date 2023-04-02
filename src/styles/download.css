@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "TMM";
+    src: url("../fonts/AvenirLTStd-Black.otf");
+}
+
+.main-wrapper {
+    min-height: calc(100vh - 300px);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.main-wrapper h1 {
+    font-family: "TMM";
+    height: 66px;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    color: #0d1324;
+    line-height: 66px;
+}
+
+.tmm-cards {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 72px auto 0;
+}
+
+.tmm-cards-item {
+    height: 480px;
+    width: 370px;
+    margin-right: 45px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px 0px rgba(162,168,195,0.20);
+}
+
+.tmm-cards-item__img {
+    width: 370px;
+    height: 280px;
+}
+
+.tmm-cards .tmm-cards-item:nth-child(1) .tmm-cards-item__img {
+    background: center / contain no-repeat url("../assets/download_mobile.png");
+}
+.tmm-cards .tmm-cards-item:nth-child(2) .tmm-cards-item__img {
+    background: center / contain no-repeat url("../assets/download_PC.png");
+}
+.tmm-cards .tmm-cards-item:nth-child(3) .tmm-cards-item__img {
+    background: center / contain no-repeat url("../assets/download_apk.png");
+}
+
+.tmm-cards .tmm-cards-item:last-child {
+    margin: 0;
+}
+
+.tmm-cards-item h2 {
+    width: 100%;
+    height: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #0d1324;
+    line-height: 24px;
+    margin: 30px 0 32px;
+}
+
+.tmm-download__url {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tmm-download__url > a {
+    width: 150px;
+    height: 48px;
+    opacity: 1;
+    border: 2px solid #00c6db;
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-underline: none;
+    color: #0D1324;
+}
+
+.tmm-download__url > a >div {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tmm-download__url-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.tmm-download__url-txt {
+    color: #00C6DB;
+}
+
+.tmm-download__app .tmm-download__url-icon {
+    background: center / contain no-repeat url("../assets/ios.png");
+}
+
+.tmm-download__google .tmm-download__url-icon {
+    background: center / contain no-repeat url("../assets/googleplay.png");
+}
+
+.tmm-download__win .tmm-download__url-icon {
+    background: center / contain no-repeat url("../assets/windows.png");
+}
+
+.tmm-download__apk .tmm-download__url-icon {
+    background: center / contain no-repeat url("../assets/android.png");
+}

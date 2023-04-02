@@ -1,0 +1,31 @@
+{
+  "name": "tmm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build && gulp auto",
+    "build": "gulp build",
+    "build:pro": "gulp build",
+    "deploy": "pm2 deploy development",
+    "deploy:pro": "pm2 deploy production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-uglify": "^3.0.2",
+    "prettier": "^2.3.0",
+    "readable-stream": "^3.6.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "1.3.1"
+  }
+}
