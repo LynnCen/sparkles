@@ -1,0 +1,64 @@
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #333a4b;
+  .footer_tmmprev {
+    width: 1200px;
+    margin: 0 auto;
+    height: 120px;
+  }
+  .footer_tmmpicons {
+    width: 184px;
+    height: 100%;
+    line-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+    }
+    div:last-child {
+      margin-right: 0px;
+    }
+    .footer_tmm_facebook {
+      background: center / contain no-repeat
+        url("../../public/images/shejiao_icon_facebook.png");
+    }
+    .footer_tmm_twwiter {
+      margin: 0 32px;
+      background: center / contain no-repeat
+        url("../../public/images/shejiao_icon_tiwtter.png");
+    }
+    .footer_tmm_instagram {
+      background: center / contain no-repeat
+        url("../../public/images/shejiao_icon_ins.png");
+    }
+  }
+  .footer_tmmpright {
+    height: 80px;
+    border-top: 1px solid #5e6a81;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    color: #ffffff;
+    .footer_tmmpright_left {
+      a {
+        text-decoration: none;
+        text-underline: none;
+        color: #ffffff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer {
+    display: none;
+  }
+}

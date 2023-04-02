@@ -1,0 +1,50 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  // background: #f8f9fb;
+  // overflow-x: hidden;
+  h1 {
+    color: #0d1324;
+    font-size: 1.875rem;
+    font-family: PingFangSC, PingFangSC-Semibold;
+    font-weight: 600;
+    margin-bottom: 3.75rem;
+    cursor: pointer;
+  }
+  h2 {
+    color: #0d1324;
+    font-size: 1.5rem;
+    font-family: PingFangSC, PingFangSC-Semibold;
+    font-weight: 600;
+    margin-bottom: 1.875rem;
+    cursor: pointer;
+  }
+  h4 {
+    font-size: 1rem;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    color: #0d1324;
+    // padding-left: 0.9375rem;
+    cursor: pointer;
+    margin-bottom: 0.625rem;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+html {
+  font-size: unset;
+}
+
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+}
