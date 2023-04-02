@@ -1,0 +1,106 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        --bg-light: #595959;
+        --bg-demmed: #313131;
+        --bg-normal: #292929;
+        --bg-deep: #252525;
+        --bg-peer: #000;
+
+
+        --border-light: #d8d8d8;
+        --border-lighter: #e9eaf0;
+
+        --color-lighter: #fff;
+        --color-normal: #898989;
+        --color-bg-primary: #595959;
+        --color-deep: #505050;
+        --color-deepest: #0d1324;
+        --color-danger: #fe6869;
+
+        --primary: #00b3c5;
+        --dimmed: #313131;
+        --deep: #1f1f1f;
+        --danger: #ff4a4a;
+
+        --placeholder: #595959;
+
+        --icon-color-normal: #898989;
+        --icon-fill-normal: #898989;
+
+
+        /* 特殊处理 */
+        --spec-textContent:#1f1f1f;
+        --spec-textContent-label: #1f1f1f66;
+        --spec-quota-bg-me: #ffffff80;
+        --spec-quota-divier-me: #fff;
+        --spec-user-popover-shadow: #1f1f1f4d;
+        --spec-create-chat-btn: #313131;
+        --spec-searchNewFriend-clear-icon: #898989;
+
+    /*    */
+        --spec-immutable-fff: #fff;
+        --spec-immutable-fff-alpha-70: #ffffffb3;
+        --spec-immutable-fff-alpha-60: #ffffff99;
+        --spec-immutable-fff-alpha-25: #ffffff40;
+        --active-bg: #7c84ff;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+
+    body {
+        --bg-light:  #dadce7;
+        --bg-demmed: #fff;
+        --bg-normal: #f8f9fb;
+        --bg-deep: #f3f5f9;
+        --bg-peer: #fff;
+
+        /* */
+        --border-light: #d8d8d8;
+        /* */
+        --border-lighter: #313131;
+
+        --color-lighter: #0d1324;
+        --color-normal: #a2a8c3;
+        /* todo */ --color-thick: #1f1f1f;
+
+
+        --color-bg-primary: #a2a8c3;
+        /* */
+        --color-deep: #505050;
+        /* */
+        --color-deepest: #fff;
+        --color-danger: #fe6869;
+
+        --primary: #00c6db;
+        --dimmed: #e9eaf0;
+        --deep: #fff;
+        --danger: #ff4a4a;
+
+
+        --placeholder: #dadce7;
+        --icon-color-normal: #5e6a81;
+        --icon-fill-normal: #a3a8c1;
+
+        --topic-color: #ffce78;
+
+        /* s */
+        --spec-textContent:#0d1324;
+        --spec-textContent-label: #a2a8c3;
+        --spec-quota-bg-me: #ffffff80;
+        --spec-quota-divier-me: #00c6db;
+        --spec-user-popover-shadow: #a2a8c31a;
+        --spec-create-chat-btn: #f3f5f9;
+        --spec-searchNewFriend-clear-icon: #fff;
+
+
+        /**/
+        --spec-immutable-fff: #fff;
+        --spec-immutable-fff-alpha-70: #ffffffb3;
+        --spec-immutable-fff-alpha-60: #ffffff99;
+        --spec-immutable-fff-alpha-25: #ffffff40;
+        --active-bg: #7c84ff;
+        --spec-green: #32c872;
+        --spec-blue: #7c84ff;
+    }
+}

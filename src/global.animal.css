@@ -1,0 +1,12 @@
+@keyframes cu-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(540deg);
+    }
+}
+
+.rotate-ani-normal {
+    animation: cu-rotate 5s infinite alternate;
+}

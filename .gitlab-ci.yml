@@ -1,0 +1,58 @@
+stages:
+    - init
+    - build
+    - deploy
+cache:
+    key: ${CI_BUILD_REF_NAME}
+    paths:
+        - node_modules/
+        - .docusaurus/
+        - build/
+
+master_init:
+    stage: init
+    script:
+        - pwd
+        - yarn install
+    only:
+        - master
+
+develop_init:
+    stage: init
+    script:
+        - yarn install
+    only:
+        - develop
+
+master_build:
+    stage: build
+    script:
+        - yarn build
+    only:
+        - master
+
+develop_build:
+    stage: build
+    script:
+        - yarn build
+    only:
+        - develop
+
+master_deploy:
+    stage: deploy
+    script:
+        # - pm2 reload ecosystem.config.js --env production
+        # - pm2 list
+        - pwd
+        - echo "deploy success"
+    only:
+        - master
+
+develop_deploy:
+    stage: deploy
+    script:
+        # - pm2 reload ecosystem.config.js --env development
+        # - pm2 list
+        - echo "deploy success"
+    only:
+        - develop

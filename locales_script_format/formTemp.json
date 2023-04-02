@@ -1,0 +1,6 @@
+{
+    "DeleteFromEveryone": "Delete from Everyone (All)",
+    "RevokeAllMessages": "Are you sure you want to delete all your messages for everyone?",
+    "WantClearChat": "Are you sure you want to clear the chat? ",
+    "ChatDeleted": "Chat History Deleted"
+}

@@ -1,0 +1,92 @@
+/**
+* @Author Pull
+* @Date 2021-11-10 15:15
+* @project global.theme
+*/
+
+
+.initDarkTheme() {
+    :global {
+        @primary: #00C6DB;
+        .dark-theme-bg_light {
+            background-color: #595959 !important;
+        }
+        .dark-theme-bg_lighter {
+            background-color: #313131 !important;
+        }
+        .dark-theme-bg_normal {
+            background-color: #292929 !important;
+        }
+        .dark-theme-bg_deep {
+            background-color: #252525 !important;
+        }
+        .dark-theme-bg_darkness {
+            background-color: #1f1f1f !important;
+        }
+
+        .dark-theme-border_light {
+            border-color: #d8d8d8 !important;
+        }
+        .dark-theme-border_normal {
+            border-color: #313131 !important;
+        }
+        .dark-theme-border_darkness {
+            border-color: #1f1f1f !important;
+        }
+        //.theme-border_lighter {
+        //    border-color: #e9eaf0 !important;
+        //}
+        //.theme-border_primary {
+        //    border-color: @primary !important;
+        //}
+
+        .dark-theme-color_deppGrey {
+            color: #505050;
+        }
+        .dark-theme-color_grey {
+            color: #898989 !important;
+        }
+        .dark-theme-color_lighter {
+            color: #fff !important;
+        }
+        .dark-theme-color_dark {
+            color: #313131 !important;
+        }
+        .dark-theme-color_deep {
+            color: #1f1f1f !important;
+        }
+        .dark-theme-color_deppDark {
+            color: #0d1324 !important;
+        }
+        .dark-theme-color_primary {
+            color: @primary !important;
+        }
+
+        .dark-theme-filter_invert {
+            filter: invert(1);
+        }
+    }
+}
+
+
+
+
+
+:global {
+
+    //     body[data-device="win32"] {
+    //         border: 2px solid #e0e0e0!important;
+    //     }
+
+  
+    body[data-device="darwin"] {
+        border: none;
+    }
+    
+    body[data-theme="dark"] {
+        &[data-device="win32"] {
+            border: 2px solid #414141 !important;
+        }
+        .initDarkTheme();
+    }
+}
