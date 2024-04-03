@@ -1,0 +1,124 @@
+@import "../../../utils/stylesMix";
+@import "../../../utils/style_var";
+
+@avatarSize: 60px;
+.container {
+    width: 100%;
+    background-color: #fff;
+    padding: 26px 24px;
+    border-radius: 10px;
+    .mix-flex(flex-start, flex-start, column);
+
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        .nameInfo {
+            width: calc(100% - @avatarSize - 16px);
+            .mix-flex(center, flex-start, column);
+
+            > p {
+                .mix-flex(flex-start, center, row, nowrap);
+            }
+
+            .name {
+                margin: 0;
+                line-height: 16px;
+                height: 18px;
+                display: inline-block;
+                width: 100%;
+                font-size: 16px;
+                text-align: center;
+                color: #0d1324;
+                font-weight: 400;
+                .ellipsis;
+            }
+        }
+
+        .tmmdesc {
+            display: block;
+            margin-top: 2px;
+            width: 100%;
+            cursor: pointer;
+            color: #a2a8c3;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            text-align: center;
+            .ellipsisMultiple(2);
+        }
+
+        .avatar {
+            position: relative;
+            width: @avatarSize;
+            margin-bottom: 16px;
+            .mix-flex();
+
+            .gender {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-color: #f3f5f8;
+                border-radius: 50%;
+                line-height: 18px;
+                text-align: center;
+            }
+        }
+    }
+
+    .info {
+        width: 100%;
+
+        .officialRemark {
+            width: 100%;
+            color: #a2a8c3;
+            margin-top: 14px;
+            .ellipsisMultiple(2);
+        }
+
+        .infoLine {
+            width: 100%;
+            margin-top: 8px;
+
+            &:first-child {
+                margin-top: 14px;
+            }
+
+            .mix-flex(space-between, center);
+
+            > .title {
+                display: inline-block;
+                width: 100px;
+                .ellipsis;
+            }
+
+            > .detail {
+                display: inline-block;
+                width: calc(100% - 110px);
+                .ellipsis;
+            }
+        }
+
+        .loading {
+            width: 100%;
+            padding: 5px 0;
+            .mix-flex();
+        }
+    }
+
+    .action {
+        margin-top: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.dark {
+}

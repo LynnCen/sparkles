@@ -1,0 +1,86 @@
+@import "../../../../../utils/stylesMix";
+.container {
+    overflow: hidden;
+    display: flex;
+    .msgCheck {
+        margin-right: 16px;
+        & :global(.ant-checkbox-inner) {
+            border-radius: 50%;
+            outline: none;
+            background-color: unset;
+        }
+        & :global(.ant-checkbox-checked .ant-checkbox-inner) {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        & :global(.ant-checkbox-checked::after) {
+            display: none;
+        }
+    }
+    .message {
+        max-width: 510px;
+        word-break: break-word;
+        .mix-flex(flex-start, flex-start, column, nowrap);
+
+        .head {
+            height: 24px;
+            .mix-flex(center, flex-start, row, nowrap);
+
+            .avatar {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .name {
+                line-height: 24px;
+                font-size: 14px;
+                color: var(--color-normal);
+                margin-left: 6px;
+            }
+        }
+
+        .msgContainer {
+            // width: 100%;
+            position: relative;
+
+            &.padLeft {
+                padding-left: 30px;
+            }
+            .content {
+                background-color: var(--bg-demmed);
+                position: relative;
+                white-space: pre-wrap;
+                overflow: hidden;
+
+                &.ignoreBackground {
+                    background-color: inherit;
+                }
+            }
+        }
+    }
+}
+
+.container.me {
+    justify-content: flex-end;
+    .msgCheck {
+        margin-right: auto;
+    }
+    .message {
+        align-items: flex-end;
+        position: relative;
+
+        .head {
+            display: none;
+        }
+    }
+}
+
+.quoteContainer {
+    height: 44px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    max-width: 510px;
+}

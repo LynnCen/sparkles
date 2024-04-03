@@ -1,0 +1,55 @@
+@import "../../../../utils/stylesMix";
+.box {
+    width: 100%;
+    border-top: 8px solid var(--bg-deep);
+    background-color: var(--deep);
+
+    .item {
+        height: 43px;
+        width: 100%;
+        padding: 0 16px;
+        cursor: pointer;
+        .mix-flex(flex-start, center, row, nowrap);
+
+        .icon {
+            width: 16px;
+            height: 16px;
+            .mix-flex(center, center);
+
+            svg {
+                color: var(--color-danger);
+            }
+        }
+        .title {
+            font-size: 14px;
+            margin-left: 16px;
+            color: var(--color-danger);
+        }
+
+        &:hover {
+            background-color: var(--spec-create-chat-btn);
+        }
+    }
+}
+.Content {
+    margin: 0 auto;
+    text-align: center;
+    .wrapper {
+        margin-top: 10px;
+        .Checkbox {
+            margin-right: 5px;
+            & :global(.ant-checkbox-inner) {
+                border-radius: 50%;
+                outline: none;
+                background-color: unset;
+            }
+            & :global(.ant-checkbox-checked .ant-checkbox-inner) {
+                background-color: var(--primary);
+                border-color: var(--primary);
+            }
+            & :global(.ant-checkbox-checked::after) {
+                display: none;
+            }
+        }
+    }
+}

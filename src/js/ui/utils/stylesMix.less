@@ -1,0 +1,73 @@
+/**
+* @Author Pull
+* @Date 2021-02-06 14:03
+* @project stylesMix
+*/
+@keyframes Spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mix-flex(@mainAxis: center, @crossAxis: center, @direction: row, @warp: wrap) {
+    display: flex;
+    justify-content: @mainAxis;
+    align-items: @crossAxis;
+    flex-direction: @direction;
+    flex-wrap: @warp;
+}
+
+.ellipsisMultiple(@lines: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @lines;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    word-break: break-all;
+}
+
+.scrollBar(@thumbColor: #8d82b315, @ScrollBg: transparent, @thumbSize: 4px, @bgSize: 8px) {
+    /* webkit */
+    &::-webkit-scrollbar {
+        // 重写
+        width: @bgSize;
+        background-color: @ScrollBg;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: @thumbColor;
+        border-radius: @thumbSize;
+    }
+}
+
+.positionCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.antd-badge {
+    & :global(.ant-badge-count) {
+        padding: 0;
+        min-width: 14px;
+        height: 14px;
+        line-height: 14px;
+        font-size: 10px;
+        margin-right: 1px;
+    }
+
+    & :global(.ant-badge-multiple-words) {
+        padding: 0 4px;
+    }
+}

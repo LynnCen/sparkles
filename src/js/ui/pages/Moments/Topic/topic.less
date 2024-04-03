@@ -1,0 +1,50 @@
+/**
+* @Author Pull
+* @Date 2021-10-13 16:54
+* @project topic
+*/
+@import "utils/stylesMix.less";
+.space {
+    display: block;
+    height: 16px;
+    width: 100%;
+    overflow-y: hidden;
+}
+.moment-topics {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0 29px;
+    overflow-y: scroll;
+
+    .topic-item {
+        height: 48px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        .mix-flex(flex-start, center, row, nowrap);
+
+        .topic-number {
+            color: #ff4a4a;
+            margin-right: 19px;
+        }
+        .topic-name {
+            color: #0d1324;
+            //flex: 1;
+            margin-right: 28px;
+            .ellipsis();
+        }
+        .topic-moments {
+            color: #a2a8c3;
+            flex: none;
+        }
+    }
+}
+
+.empty {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    .mix-flex(center, center);
+}

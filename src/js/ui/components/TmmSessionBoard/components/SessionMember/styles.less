@@ -1,0 +1,142 @@
+@import "../../../../utils/stylesMix";
+.box {
+    width: 100%;
+    border-top: 8px solid var(--spec-create-chat-btn);
+    background-color: var(--deep);
+    max-height: 336px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .mix-flex(flex-start, flex-start, column, nowrap);
+
+    &.full {
+        max-height: none;
+        height: 100%;
+        border-top: none;
+    }
+    .head {
+        // height: 40px;
+        padding: 0 12px 0 15px;
+        width: 100%;
+        margin: 12px 0;
+        .mix-flex(space-between, center, row, nowrap);
+
+        .count {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-lighter);
+        }
+
+        .showMore {
+            font-size: 12px;
+            color: var(--color-normal);
+            cursor: pointer;
+            .mix-flex(flex-end, center, row, nowrap);
+
+            .arr {
+                width: 14px;
+                height: 14px;
+                margin-left: 4px;
+                .mix-flex(center, center);
+
+                svg {
+                    width: 14px;
+                    height: 14px;
+                    color: var(--color-normal);
+                }
+            }
+        }
+    }
+
+    .fullHead {
+        padding: 0 12px 0 15px;
+        width: 100%;
+
+        .back {
+            height: 40px;
+            .mix-flex(flex-start, center, row, nowrap);
+
+            .backIcon {
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+                .mix-flex(flex-start, center);
+
+                svg {
+                    color: var(--color-lighter);
+                }
+            }
+
+            .title {
+                color: var(--color-lighter);
+                margin-left: 16px;
+            }
+        }
+
+        .search {
+            width: 100%;
+            height: 36px;
+            .mix-flex(flex-start, center);
+        }
+    }
+
+    .addMember {
+        cursor: pointer;
+    }
+    .row {
+        height: 48px;
+        width: 100%;
+        position: relative;
+        padding: 5px 12px;
+        .mix-flex(flex-start, center, row, nowrap);
+
+        &:hover {
+            background-color: var(--spec-create-chat-btn);
+        }
+
+        .iconCenter() {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            margin-right: 12px;
+            .mix-flex(center, center);
+        }
+
+        .avatar {
+            .iconCenter();
+        }
+
+        .addIcon {
+            background-color: var(--active-bg);
+            .iconCenter();
+
+            svg {
+                color: var(--deep);
+            }
+        }
+
+        .name {
+            font-size: 14px;
+            color: var(--color-lighter);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-right: 15px;
+        }
+
+        .removeMember {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+            cursor: pointer;
+            svg {
+                color: var(--danger);
+            }
+        }
+
+        &:hover .removeMember {
+            display: block;
+        }
+    }
+}

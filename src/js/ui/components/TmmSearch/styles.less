@@ -1,0 +1,39 @@
+@import "../../utils/stylesMix";
+.search {
+    height: 100%;
+    width: 100%;
+    .mix-flex(center, center);
+
+    .inner {
+        width: 320px;
+        height: 24px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 16px;
+        .mix-flex(center, center);
+
+        .searchIcon {
+            width: 12px;
+            height: 12px;
+            .mix-flex(center, center);
+            position: absolute;
+            left: 16px;
+            top: 7px;
+            z-index: 9;
+            svg {
+                color: var(--color-normal);
+            }
+        }
+        input {
+            border: none;
+            outline: none;
+            height: 100%;
+            padding-left: 36px;
+            color: var(--color-normal);
+            background-color: var(--spec-create-chat-btn);
+            &::placeholder {
+                color: var(--color-normal);
+            }
+        }
+    }
+}

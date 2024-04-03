@@ -46,7 +46,7 @@
                 }
             ],
             "title": "TMMTMM ${version}",
-            "sign": false
+            "sign":false
         },
         "mac": {
             "icon": "../resource/dock.icns",

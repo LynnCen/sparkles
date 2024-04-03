@@ -1,0 +1,137 @@
+/**
+* @Author Pull
+* @Date 2021-11-10 14:59
+* @project styles
+*/
+.cuModal {
+    :global {
+        .ant-modal-title {
+            color: var(--color-lighter);
+        }
+        .ant-modal-close-x svg {
+            color: var(--color-lighter);
+        }
+        .ant-modal-header {
+            border-color: var(--dimmed);
+        }
+
+        .ant-modal {
+            -webkit-app-region: no-drag;
+        }
+        .ant-modal-content,
+        .ant-modal-header,
+        .ant-modal-body {
+            overflow: hidden;
+            background-color: var(--deep);
+            color: var(--color-lighter);
+        }
+
+        .ant-select-arrow {
+            color: var(--color-lighter);
+        }
+    }
+}
+.cuModalFn {
+    :global {
+        .ant-modal-body {
+            background: var(--deep);
+            border: 1px solid var(--dimmed);
+        }
+
+        .ant-modal-confirm-content {
+            color: var(--color-lighter) !important;
+        }
+
+        button {
+            border: none;
+            outline: none;
+        }
+        .ant-modal-confirm-btns .ant-btn {
+            color: var(--color-lighter);
+            background-color: var(--dimmed);
+        }
+
+        .ant-modal-confirm-btns .ant-btn-primary {
+            color: var(--color-deepest);
+            background: var(--primary);
+        }
+    }
+}
+.cuPopover {
+    :global {
+        .ant-popover-arrow {
+            border-color: var(--deep);
+        }
+        .ant-popover-inner {
+            border-radius: 4px;
+            background-color: var(--deep);
+        }
+    }
+}
+
+.cuSelectDropdown {
+    background-color: var(--deep);
+    :global {
+        .ant-select-item-option-selected:not(.ant-select-item-option-disabled),
+        .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+            //color: rgba(0, 0, 0, 0.65);
+            font-weight: 600;
+            background-color: var(--bg-demmed);
+        }
+
+        .ant-select-arrow {
+            color: var(--color-lighter);
+        }
+    }
+}
+.cuSelectPick {
+    :global {
+        .ant-select-selector {
+            background-color: var(--deep);
+        }
+    }
+}
+
+.cuDropDown {
+    border-color: var(--dimmed);
+    background-color: var(--deep);
+}
+
+.cuCheckBox {
+    :global {
+        .ant-checkbox-inner {
+            background-color: var(--deep);
+        }
+
+        .ant-checkbox:hover .ant-checkbox-inner {
+            border-color: var(--primary);
+        }
+
+        .ant-checkbox-input:focus + .ant-checkbox-inner {
+            border-color: var(--primary);
+        }
+
+        .ant-checkbox-checked {
+            &:hover::after {
+                border-color: var(--primary);
+            }
+
+            .ant-checkbox-inner {
+                background-color: var(--primary);
+                border-color: var(--primary);
+                &::after {
+                    color: var(--spec-immutable-fff);
+                }
+            }
+        }
+    }
+}
+
+.cuMessage {
+    :global {
+        .ant-message-notice-content {
+            color: var(--color-lighter) !important;
+            background-color: var(--deep) !important;
+        }
+    }
+}

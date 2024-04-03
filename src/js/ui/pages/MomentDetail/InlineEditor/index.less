@@ -1,0 +1,67 @@
+.tmm_commenteditor {
+    margin: 10px 0;
+}
+
+.editorwrapper {
+    display: flex;
+    align-items: flex-start;
+
+    & :global {
+        .ant-avatar {
+            width: 30px;
+            height: 30px;
+            flex: none;
+            margin-right: 16px;
+        }
+    }
+}
+
+.tmm_commentInput {
+    width: 480px;
+    min-height: 30px;
+    max-height: 100px;
+    overflow: auto;
+    background: #f3f5f9;
+    //border: 1px solid #00c6db;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    color: #0d1324;
+
+    & :global {
+        .ql-container.ql-snow {
+            border: unset;
+            -webkit-app-region: no-drag;
+        }
+        .ql-editor.ql-blank::before {
+            color: currentColor;
+        }
+        .ql-editor {
+            padding: 7px 16px;
+            line-height: 14px;
+            &::placeholder {
+                color: currentColor;
+            }
+        }
+    }
+}
+
+.tmm_commentAction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & :global {
+        .ant-btn-round {
+            height: 30px;
+        }
+
+        .ant-btn-primary[disabled],
+        .ant-btn-primary[disabled]:hover,
+        .ant-btn-primary[disabled]:focus,
+        .ant-btn-primary[disabled]:active {
+            color: #fff;
+            background: #dadce7;
+            border-color: unset;
+        }
+    }
+}

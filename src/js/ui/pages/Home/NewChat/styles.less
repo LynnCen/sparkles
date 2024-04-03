@@ -1,0 +1,71 @@
+@import "../../../utils/stylesMix";
+.container {
+    .mix-flex(flex-start, flex-start, column);
+    height: 100%;
+
+    @sessionConfigH: 56px;
+    .config {
+        width: 100%;
+        height: @sessionConfigH;
+    }
+    .content {
+        width: 100%;
+        height: calc(100% - @sessionConfigH);
+        overflow: hidden;
+
+        .mix-flex(flex-start, flex-start, column);
+
+        .list {
+            width: 100%;
+            padding: 0 16px 10px 16px;
+            flex: 1;
+            overflow: auto;
+            .scrollBar(#DADCE7,transparent,4px,8px);
+            .loaderNotification {
+                width: 100%;
+                font-size: 12px;
+                color: var(--color-normal);
+                min-height: 18px;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            .timeLine {
+                &::before,
+                &::after {
+                    border-color: var(--dimmed);
+                }
+                .timeSplit {
+                    text-align: center;
+                    color: var(--spec-textContent-label);
+                    height: 20px;
+                    background: #e9eaf0;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    padding: 3px 10px;
+                    line-height: 14px;
+                }
+            }
+        }
+
+        .editor {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.empty {
+    width: 100%;
+    height: 100%;
+    -webkit-app-region: drag;
+    .mix-flex();
+
+    img {
+        width: 100px;
+        height: 100px;
+        transform: translateY(-20px);
+    }
+}

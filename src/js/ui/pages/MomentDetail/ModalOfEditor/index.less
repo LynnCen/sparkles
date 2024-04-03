@@ -1,0 +1,48 @@
+@import "utils/stylesMix.less";
+
+.comment_custom_modal {
+    :global {
+        .ant-modal-content {
+            border-radius: 10px;
+        }
+        .ant-modal-body {
+            padding: 0 0 24px;
+        }
+    }
+}
+
+.comment_label {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #0d1324;
+    font-size: 20px;
+    border-bottom: 1px solid #ecedf2;
+    width: 100%;
+}
+
+.comment_title {
+    width: 80%;
+    margin: 0 auto;
+    .ellipsis();
+}
+
+.comment_modal_wrapper {
+    position: relative;
+}
+
+.comment_modal_close {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    cursor: pointer;
+}
+.comment_modal_replies {
+    padding: 16px 24px 24px;
+    max-height: 300px;
+    overflow: auto;
+}

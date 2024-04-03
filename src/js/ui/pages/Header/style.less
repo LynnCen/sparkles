@@ -1,0 +1,44 @@
+@import "../../utils/stylesMix";
+.container {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--dimmed);
+    -webkit-app-region: drag;
+    .mix-flex(center, center);
+    position: relative;
+
+    &.win {
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+    .title {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0 8px;
+        color: var(--color-thick);
+    }
+
+
+    .action {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: 0;
+        -webkit-app-region: no-drag;
+        .mix-flex(flex-start, center);
+
+        .item {
+            width: 32px;
+            height: 32px;
+            .mix-flex(center, center);
+            cursor: pointer;
+        }
+    }
+}

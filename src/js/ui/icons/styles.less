@@ -1,0 +1,113 @@
+/**
+* @Author Pull
+* @Date 2021-03-03 13:39
+* @project styles
+*/
+@import "utils/stylesMix.less";
+.loader {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+
+    @keyframes dominos {
+        50% {
+            opacity: 0.7;
+        }
+        75% {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+        80% {
+            opacity: 1;
+        }
+    }
+
+    > div {
+        position: absolute;
+        top: 50%;
+        width: 25px;
+        height: 7px;
+        background: #0bcaded9;
+        box-shadow: 2px 2px 3px 0 #000000bd;
+
+        &:nth-child(1) {
+            left: 70px;
+            animation: dominos 1s -0.125s ease infinite;
+        }
+
+        &:nth-child(2) {
+            left: 60px;
+            animation: dominos 1s -0.3s ease infinite;
+        }
+
+        &:nth-child(3) {
+            left: 50px;
+            animation: dominos 1s -0.425s ease infinite;
+        }
+
+        &:nth-child(4) {
+            left: 40px;
+            animation: dominos 1s -0.54s ease infinite;
+        }
+
+        &:nth-child(5) {
+            left: 30px;
+            animation: dominos 1s -0.665s ease infinite;
+        }
+
+        &:nth-child(6) {
+            left: 20px;
+            animation: dominos 1s -0.79s ease infinite;
+        }
+
+        &:nth-child(7) {
+            left: 10px;
+            animation: dominos 1s -0.9s ease infinite;
+        }
+
+        &:nth-child(8) {
+            left: 0;
+            animation: dominos 1s -1s ease infinite;
+        }
+    }
+}
+
+.plus {
+    font-weight: normal;
+    position: relative;
+    color: #dadce7;
+    display: block;
+    font-size: 16px;
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        width: 2em;
+        height: 0.4em;
+        border-radius: 0.4em;
+        background-color: currentColor;
+        .positionCenter();
+    }
+    &::after {
+        transform-origin: center center;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+}
+.spin {
+
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    display: inline-block;
+    transform-origin: center center;
+    animation: spin 1s linear infinite;
+}

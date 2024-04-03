@@ -1,0 +1,37 @@
+@import "../../../../../utils/stylesMix";
+.inputBox {
+    width: 360px;
+    height: 36px;
+    .mix-flex(center, center);
+
+    &.small {
+        height: 24px;
+    }
+
+    input {
+        width: 360px;
+        height: 36px;
+        border: none;
+        outline: none;
+
+        border-radius: 4px;
+        background-color: var(--dimmed);
+        font-size: 20px;
+        color: var(--color-lighter);
+    }
+    :global(.ant-input:focus) {
+        border: none;
+        box-shadow: none;
+    }
+
+    .viewName {
+        width: 100%;
+        display: flex;
+        .mix-flex(center, center, row, nowrap);
+        .alias {
+            margin-right: 8px;
+            .ellipsis;
+        }
+    }
+
+}

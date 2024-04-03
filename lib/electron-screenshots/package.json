@@ -1,0 +1,88 @@
+{
+  "_args": [
+    [
+      "electron-screenshots@0.0.10",
+      "/Users/wanlee/Documents/work/pc_chat"
+    ]
+  ],
+  "_from": "electron-screenshots@0.0.10",
+  "_id": "electron-screenshots@0.0.10",
+  "_inBundle": false,
+  "_integrity": "sha512-PsolqByTjm49vMqasJF61ZW0T8uPdrqrxsHukUGs+HoGCvAUN1AXLfroR68yzHNxuTreXxVAQeKg7Vk+PNndNQ==",
+  "_location": "/electron-screenshots",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "electron-screenshots@0.0.10",
+    "name": "electron-screenshots",
+    "escapedName": "electron-screenshots",
+    "rawSpec": "0.0.10",
+    "saveSpec": null,
+    "fetchSpec": "0.0.10"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/electron-screenshots/-/electron-screenshots-0.0.10.tgz",
+  "_spec": "0.0.10",
+  "_where": "/Users/wanlee/Documents/work/pc_chat",
+  "author": {
+    "name": "nashaofu"
+  },
+  "bugs": {
+    "url": "https://github.com/nashaofu/screenshots/issues"
+  },
+  "dependencies": {
+    "react-screenshots": "^0.0.10"
+  },
+  "description": "electron 截图插件",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "electron": "^8.2.5",
+    "electron-debug": "^3.0.1",
+    "eslint": "^7.2.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.5"
+  },
+  "files": [
+    "lib/**"
+  ],
+  "gitHead": "02c23d815d8f8be36441fbe0bfe449bbe92dd769",
+  "homepage": "https://github.com/nashaofu/screenshots/tree/master/packages/electron-screenshots#readme",
+  "keywords": [
+    "electron",
+    "shortcut",
+    "capture",
+    "plugin"
+  ],
+  "license": "MIT",
+  "main": "lib/screenshots.js",
+  "name": "electron-screenshots",
+  "peerDependencies": {
+    "electron": ">=6"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nashaofu/screenshots.git"
+  },
+  "scripts": {
+    "build": "npm run lint && npm run clean && tsc",
+    "clean": "rimraf lib",
+    "dev": "tsc --sourceMap --watch",
+    "lint": "eslint . --ext .js,.ts --fix",
+    "prepublishOnly": "npm run build",
+    "start": "electron lib/index.js"
+  },
+  "types": "lib/screenshots.d.ts",
+  "version": "0.0.10"
+}

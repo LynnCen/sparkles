@@ -1,0 +1,130 @@
+.emojiContainer {
+    //height: 136px;
+    width: 330px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
+    & .emojiItem:nth-child(10n) {
+        margin: 0 0 10px 0;
+    }
+}
+
+.emojiItem {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    margin: 0 10px 10px 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+}
+
+.indicatorContainer {
+    display: flex;
+    justify-content: center;
+
+    & .indicatorDot:hover {
+        background: #a2a8c3;
+    }
+
+    & .indicatorDot:last-child {
+        margin-right: 0;
+    }
+}
+
+.indicator {
+    display: flex;
+    align-items: center;
+}
+
+.indicatorDot {
+    width: 6px;
+    height: 6px;
+    opacity: 1;
+    background: var(--dimmed);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.selected {
+    background: #a2a8c3;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    padding: 16px 16px 10px;
+    background: var(--deep);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 var(--dimmed);
+    z-index: 99;
+    outline: 0;
+    opacity: 0;
+    visibility: hidden;
+    .text {
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+        font-family: PingFang-SC-Regular, PingFang-SC;
+        font-weight: 400;
+        color: #5e6a81;
+        margin-bottom: 10px;
+    }
+    & a {
+        margin: 4px;
+        cursor: pointer;
+        zoom: 1.1;
+        transition: 0.2s;
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.emojiPopover {
+    width: 160px;
+    height: 58px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    .emojiPopoverItem {
+        height: 24px;
+        width: 24px;
+        display: flex;
+        margin: 0 10px 10px 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+    }
+
+    .emojiPopoverItem:nth-last-child(1) {
+        margin: 0 0 10px 0;
+    }
+    .emojiPopoverItem:nth-child(5n) {
+        margin: 0 0 10px 0;
+    }
+    .emojiPopoverItem:nth-child(n > 5) {
+        margin-bottom: 0;
+    }
+}

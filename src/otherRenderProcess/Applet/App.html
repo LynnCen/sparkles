@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+            }
+
+            body {
+                --bg-color: #fff;
+                --text-color: #0d1324;
+                --border-color: #e6e6e6;
+                --action-bar-bg: #fff;
+            }
+
+            body.dark {
+                --bg-color: #212121;
+                --text-color: #fff;
+                --border-color: #474747;
+                --action-bar-bg: #1a1a1a;
+            }
+
+            header {
+                background-color: var(--bg-color);
+                width: 100%;
+                height: 24px;
+                -webkit-app-region: drag;
+            }
+
+            .actionHeader {
+                /*width: 100%;*/
+                height: 32px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 16px 4px 32px;
+                position: relative;
+                background-color: var(--bg-color);
+                -webkit-app-region: drag;
+            }
+
+            .actionHeader .history {
+                width: 32px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                cursor: pointer;
+
+                -webkit-app-region: no-drag;
+            }
+
+            .actionHeader .history .arrow {
+                width: 22px;
+                height: 22px;
+
+                transform: rotate(-90deg);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .actionHeader .history .arrow::before,
+            .actionHeader .history .arrow::after {
+                content: "";
+                width: 3px;
+                height: 15px;
+                background-color: var(--text-color);
+                border-radius: 5px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+            }
+
+            .actionHeader .history .arrow::before {
+                transform-origin: right top;
+                transform: translateX(-50%) rotate(45deg);
+            }
+            .actionHeader .history .arrow::after {
+                transform-origin: left top;
+                transform: translateX(-50%) rotate(-45deg);
+            }
+
+            .actionHeader .title {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 300px;
+                color: var(--text-color);
+            }
+
+            .container {
+                width: 96px;
+                height: 32px;
+                background-color: var(--action-bar-bg);
+                border: 1px solid var(--border-color);
+                border-radius: 18px;
+
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                -webkit-app-region: no-drag;
+            }
+
+            .container .actions {
+                width: 22px;
+                height: 22px;
+                margin-left: 14px;
+                margin-right: 12px;
+                cursor: pointer;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container .actions .dot {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: var(--text-color);
+                box-shadow: -8px 0 0 -1px var(--text-color), 8px 0 0 -1px var(--text-color);
+            }
+
+            .container .close {
+                width: 22px;
+                height: 22px;
+                cursor: pointer;
+            }
+
+            .container .close .icon {
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                margin-left: 12px;
+            }
+
+            .container .close .icon::before,
+            .container .close .icon::after {
+                background-color: var(--text-color);
+                content: "";
+                width: 4px;
+                height: 17px;
+                border-radius: 8px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform-origin: center center;
+                transform: translate(-50%, -50%);
+            }
+
+            .container .close .icon::before {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+
+            .container .close .icon::after {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            .container .separator {
+                height: 21px;
+                width: 1px;
+                background-color: var(--border-color);
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+
+        <section class="actionHeader">
+            <aside class="history"></aside>
+            <h1 class="title"></h1>
+            <section class="container">
+                <div class="actions" id="actions">
+                    <i class="dot"></i>
+                </div>
+                <aside class="separator"></aside>
+                <div class="close" id="close">
+                    <i class="icon"></i>
+                </div>
+            </section>
+        </section>
+        <script>
+            const { parseCurrentWindowParams } = require("../utils.js");
+            const { ipcRenderer, remote } = require("electron");
+            const AppletIPCType = require("./IPCType.js");
+            const APPLET = require("./contants.js");
+
+            const StyleEnum = {
+                Dark: 1,
+                Light: 2,
+            };
+
+            const TypeEnum = {
+                Game: 1,
+                Software: 2,
+            };
+
+            const { name, style, type } = parseCurrentWindowParams();
+
+            // title
+            if (name && type === TypeEnum.Software)
+                document.querySelector(".title").innerHTML = name;
+
+            // theme
+            if (style === StyleEnum.Dark) document.body.classList.add("dark");
+
+            // game or website
+            if (type === TypeEnum.Software)
+                document.querySelector(".history").innerHTML = `<i class="arrow"></i>`;
+
+            // go back
+            document.querySelector(".history").onclick = function () {
+                const win = remote.getCurrentWindow();
+                const views = win.getBrowserViews();
+
+                const mainView = views.find((item) => item.key === APPLET.VIEWS_KEY.Main);
+
+                if (mainView) {
+                    mainView.webContents.send(AppletIPCType.ContentViewBack);
+                }
+            };
+
+
+            document.querySelector("#actions").onclick = function () {
+                ipcRenderer.send(AppletIPCType.ShowAction);
+            };
+
+            document.querySelector("#close").onclick = function () {
+                ipcRenderer.send(AppletIPCType.CloseMiniProgram);
+            };
+        </script>
+    </body>
+</html>

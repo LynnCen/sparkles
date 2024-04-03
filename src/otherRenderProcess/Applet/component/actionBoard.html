@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                background-color: #0000;
+            }
+
+            .container {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                /*padding: 6px;*/
+            }
+
+            .mask {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+
+            .inner {
+                display: none;
+                z-index: 2;
+                position: absolute;
+                right: 15px;
+                top: 27px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0px 5px 10px 0px rgba(162, 168, 195, 0.9);
+            }
+
+            .line {
+                height: 48px;
+
+                cursor: pointer;
+
+                display: flex;
+                align-items: center;
+                padding: 0 16px;
+
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .line:hover {
+                background-color: #eee;
+            }
+
+            .line .icon {
+                width: 21px;
+                height: 21px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                margin-right: 9px;
+            }
+
+            .line .label {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <aside class="mask"></aside>
+            <section class="inner">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </section>
+        </section>
+
+        <script type="module">
+            const IconMap = require("../icons/iconMap.js");
+            const APPLET = require("../contants.js");
+            const AppletIPCType = require("../IPCType");
+
+            const nodeUrl = require("url");
+            const nodeQs = require("querystring");
+            const { ipcRenderer } = require("electron");
+
+            const { href } = window.location;
+            const query = nodeUrl.parse(href).query;
+            const info = nodeQs.parse(query);
+            const data = JSON.parse(info.data || {});
+
+            let htmlStr = "";
+            data.forEach(({ key, label } = {}) => {
+                htmlStr += `<div class="line" id="${key}">
+                                <span class="icon">${IconMap[key]}</span>
+                                <span class="label">${label}</span>
+                            </div>`;
+            });
+
+            const $inner = document.querySelector(".inner");
+            $inner.innerHTML = htmlStr;
+            $inner.style.display = "block";
+
+            document.querySelector(".mask").onclick = () => {
+                ipcRenderer.send(AppletIPCType.CloseActionBoard);
+            };
+
+            document.querySelector(`#${APPLET.ACTION_KEY.ShareToChat}`).onclick = function () {
+                ipcRenderer.send(AppletIPCType.shareToChat);
+            };
+
+            document.querySelector(`#${APPLET.ACTION_KEY.ShareToMoments}`).onclick = function () {
+                ipcRenderer.send(AppletIPCType.shareToMoments);
+            };
+
+            document.querySelector(`#${APPLET.ACTION_KEY.Minimize}`).onclick = function () {
+                ipcRenderer.send(AppletIPCType.minimize);
+            };
+        </script>
+    </body>
+</html>

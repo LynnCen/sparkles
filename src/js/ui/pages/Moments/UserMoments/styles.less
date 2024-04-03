@@ -1,0 +1,141 @@
+/**
+* @Author Pull
+* @Date 2021-10-14 16:51
+* @project styles
+*/
+@import "utils/stylesMix.less";
+.user-home {
+    width: 100%;
+    background-color: #f3f5f9;
+    //min-height: 100vh;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+    .header-container {
+        height: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+    .background {
+        height: 240px;
+        overflow: hidden;
+        position: relative;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            filter: blur(14px);
+        }
+    }
+    .user-action {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 56px;
+        padding: 0 17px;
+        .mix-flex(space-between, center);
+
+        .back {
+            cursor: pointer;
+        }
+    }
+    .user-info {
+        position: relative;
+        //height: 200px;
+        .mix-flex(center, center, column, nowrap);
+        .user-avatar {
+            height: 50px;
+
+            > img {
+                position: absolute;
+                left: 50%;
+                top: -50px;
+                transform: translateX(-50%);
+            }
+        }
+
+        .user-name {
+            font-size: 20px;
+            line-height: 20px;
+            color: #0d1324;
+            margin-top: 8px;
+        }
+        .user-str {
+            font-size: 14px;
+            line-height: 14px;
+            color: #a2a8c3;
+            margin-top: 8px;
+        }
+        .user-sig {
+            width: 400px;
+            text-align: center;
+            line-height: 16px;
+            font-size: 14px;
+            color: #0d1324;
+            margin-top: 8px;
+        }
+        .send-message {
+            background-color: #00c6db;
+            min-width: 116px;
+            min-height: 36px;
+            border-radius: 18px;
+            padding: 10px 16px;
+            margin-top: 16px;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            .mix-flex();
+
+            &[data-disable="true"] {
+                &::before {
+                    content: "";
+                    cursor: default;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 18px;
+                    background-color: #fff9;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .moments-tab {
+        height: 48px;
+        margin-top: 16px;
+        .mix-flex(flex-left, center);
+
+        .tab-item {
+            padding: 0 20px;
+            margin-right: 48px;
+            cursor: pointer;
+            color: #a2a8c3;
+            font-size: 16px;
+            &.active {
+                color: #0d1324;
+            }
+        }
+    }
+
+    .moments {
+        height: calc(100vh - 16px);
+        padding-top: 16px;
+        padding-bottom: 24px;
+        width: 856px;
+        margin: 0 auto;
+    }
+}
+
+.empty {
+    margin: 0 auto;
+    width: 310px;
+    .mix-flex(center, center, column);
+
+    p {
+        text-align: center;
+    }
+}

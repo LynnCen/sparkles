@@ -1,0 +1,125 @@
+@import "../../../../../../../utils/stylesMix";
+.textContainer {
+    padding: 5px 13px 7px 12px;
+    user-select: text;
+    overflow: hidden;
+
+    .textContent {
+        color: var(--color-lighter);
+        .emoji {
+            width: 18px;
+            height: 18px;
+        }
+
+        .extraIcon {
+            vertical-align: bottom;
+            margin-left: 8px;
+        }
+    }
+
+    .textInfo {
+        margin: 8px 0 0 4px;
+        display: inline-block;
+        flex: none;
+        float: right;
+        height: 14px;
+        line-height: 14px;
+
+        &.compactMargin {
+            margin-top: 4px;
+        }
+
+        .textBox {
+            display: flex;
+            align-items: center;
+
+            .textTime {
+                height: 12px;
+                font-size: 12px;
+                font-weight: 400;
+                text-align: left;
+                color: var(--color-normal);
+                line-height: 12px;
+            }
+            .textStatus {
+                margin-left: 4px;
+                height: 16px;
+            }
+        }
+    }
+
+    &.me {
+        background-color: var(--primary);
+
+        .textContent {
+            color: var(--spec-immutable-fff);
+        }
+
+        .textInfo .textBox .textTime {
+            color: var(--spec-immutable-fff-alpha-60);
+        }
+    }
+}
+.textTranslate {
+    position: relative;
+
+    .content {
+        padding: 7px 13px 4px 16px;
+        position: relative;
+        display: none;
+        .divider {
+            content: "";
+            width: calc(100% - 30px);
+            background-color: #e9eaf0;
+            left: 12px;
+            height: 1px;
+            display: block;
+            top: 0;
+            position: absolute;
+            //left: 0;
+        }
+
+        .translateContent {
+            color: var(--color-normal);
+
+            &.success {
+                color: var(--color-lighter);
+            }
+        }
+
+        &.show {
+            display: block;
+        }
+    }
+
+    .icons {
+        padding: 0 13px 0 16px;
+        .mix-flex(space-between, center, row, nowrap);
+        display: none;
+
+        &.show {
+            display: flex;
+        }
+
+        .text {
+            color: var(--color-normal);
+
+            &.mySend {
+                color: var(--spec-textContent-label);
+            }
+        }
+        .left {
+            margin-right: 40px;
+            display: flex;
+            align-items: center;
+            .icon {
+                line-height: 12px;
+                margin-right: 8px;
+
+                svg {
+                    color: var(--icon-fill-normal);
+                }
+            }
+        }
+    }
+}

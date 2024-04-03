@@ -1,0 +1,71 @@
+/**
+* @Author Pull
+* @Date 2021-08-26 15:48
+* @project styles
+*/
+@import "../../utils/stylesMix";
+
+@keyframes Spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.initLoading {
+    :global {
+        .ant-modal-mask {
+            -webkit-app-region: drag;
+        }
+        .ant-modal-content {
+            border-radius: 15px;
+            -webkit-app-region: no-drag;
+        }
+        .ant-modal-body {
+            background-color: var(--deep);
+            border-radius: 15px;
+            padding: 50px 35px 40px;
+        }
+    }
+
+    .loadingText {
+        color: var(--color-lighter);
+        line-height: 20px;
+        font-size: 15px;
+        text-align: center;
+        .percent {
+            display: inline-block;
+            width: 50px;
+            word-break: keep-all;
+            white-space: nowrap;
+            text-align: left;
+        }
+    }
+
+    .loading {
+
+        color: var(--color-lighter);
+        .mix-flex(center, center, column, nowrap);
+        .loadingIcon {
+            margin-bottom: 40px;
+            transform-origin: center center;
+            animation: Spin 4.4s linear infinite;
+        }
+    }
+
+    .loadFail {
+        .mix-flex(center, center, column, nowrap);
+        .loadingIcon {
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            cursor: pointer;
+            border-radius: 25px;
+            background: var(--primary);
+            color: var(--deep);
+        }
+    }
+}

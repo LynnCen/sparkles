@@ -1,0 +1,47 @@
+@import "utils/stylesMix.less";
+
+.cropperModal {
+    border-radius: 8px;
+    overflow: hidden;
+
+    :global {
+    }
+
+    .previewContainer {
+        width: 100%;
+        .mix-flex(center, center);
+        .preview {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-top: 14px;
+        }
+    }
+
+    .handleLine {
+        margin-top: 14px;
+        width: 100%;
+        .mix-flex(center, center);
+
+        .button {
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            box-shadow: none;
+            outline: none;
+            background-color: #51b8cc;
+            color: #fff;
+            min-width: 120px;
+            height: 40px;
+            border-radius: 16px;
+            .mix-flex(center, center);
+
+            .text {
+                margin-left: 5px;
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+    }
+}

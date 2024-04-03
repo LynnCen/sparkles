@@ -1,0 +1,54 @@
+/**
+* @Author Pull
+* @Date 2021-10-11 15:51
+* @project styles.module
+*/
+
+.view-container {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+
+    .view-content {
+        /* autoprefixer: on */
+        word-break: break-all;
+        margin-bottom: 0;
+        font-size: 12px;
+
+        &.limit {
+            overflow: hidden;
+            //text-overflow: ellipsis;
+            //display: -webkit-box;
+            //-webkit-line-clamp: 5;
+            ///*! autoprefixer: off */
+            //-webkit-box-orient: vertical;
+        }
+        :global {
+            .topic {
+                color: #ffa914;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .view-more {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #fff;
+        cursor: pointer;
+        padding-left: 2px;
+        color: #3d4250;
+        &::before {
+            content: "...";
+            color: currentColor;
+            margin-right: 6px;
+            font-size: 12px;
+            vertical-align: middle;
+        }
+
+        .view {
+            color: #71dfeb;
+        }
+    }
+}

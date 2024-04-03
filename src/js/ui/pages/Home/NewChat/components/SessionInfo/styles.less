@@ -1,0 +1,33 @@
+@import "../../../../../utils/stylesMix";
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px 0 15px;
+    background-color: var(--deep);
+    .mix-flex(space-between, center);
+
+
+    .sessionName {
+        color: var(--color-lighter);
+        margin-left: 8px;
+    }
+
+
+    .actions {
+        height: 100%;
+        .mix-flex(center center);
+
+        .item {
+            width: 28px;
+            height: 28px;
+            margin-left: 24px;
+            cursor: pointer;
+            .mix-flex(center, center);
+
+            svg {
+                color: var(--color-lighter);
+            }
+        }
+    }
+}

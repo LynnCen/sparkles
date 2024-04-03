@@ -1,0 +1,77 @@
+/**
+* @Author Pull
+* @Date 2021-10-11 13:32
+* @project ImageMultiGrid.module
+*/
+
+.grid-container {
+    display: grid;
+    grid-gap: 4px;
+    grid-auto-flow: row;
+    border-radius: 10px;
+    overflow: hidden;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+
+    .grid-item {
+        overflow: hidden;
+        & > img,
+        & > video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .showMore {
+        display: none;
+        position: absolute;
+        right: 6px;
+        bottom: 2px;
+        padding: 1px 8px;
+        border-radius: 8px;
+        background-color: #0007;
+        color: #fff;
+    }
+
+    &.grid-one {
+        grid-template-columns: repeat(1, 1fr); /* 相当于 1fr 1fr 1fr */
+        grid-template-rows: repeat(1, 1fr); /* fr单位可以将容器分为几等份 */
+    }
+    &.grid-two {
+        grid-template-columns: repeat(2, 1fr); /* 相当于 1fr 1fr 1fr */
+        grid-template-rows: repeat(1, 1fr); /* fr单位可以将容器分为几等份 */
+    }
+    &.grid-three {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: column;
+        > .grid-item:first-of-type {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+        }
+    }
+    &.grid-over-limit {
+        position: relative;
+        > .showMore {
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+    &.default {
+        height: 136px;
+        &.grid-one {
+            //height: 320px;
+            //height: "a";
+        }
+    }
+    &.small {
+        height: 122px;
+    }
+    &.large {
+        height: 298px;
+    }
+}

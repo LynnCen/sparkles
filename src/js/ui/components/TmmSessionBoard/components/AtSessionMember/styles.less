@@ -1,0 +1,54 @@
+@import "../../../../utils/stylesMix";
+.atWrapper {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    padding-top: 8px;
+    .scrollBar(#DADCE7,transparent,4px,8px);
+    // padding:8px 0  0 24px;
+    // scroll-behavior: auto;
+    .addMember {
+        cursor: pointer;
+    }
+    .atRow {
+        height: 36px;
+        width: 100%;
+        padding-left: 24px;
+        cursor: pointer;
+        .mix-flex(flex-start, center, row, nowrap);
+
+        &:hover {
+            background-color: var(--spec-create-chat-btn);
+        }
+
+        .iconCenter() {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 8px;
+            .mix-flex(center, center);
+        }
+        .avatar {
+            .iconCenter();
+        }
+
+        .addIcon {
+            background-color: var(--spec-green);
+            .iconCenter();
+
+            svg {
+                color: var(--deep);
+            }
+        }
+
+        .name {
+            font-size: 14px;
+            color: var(--color-lighter);
+        }
+    }
+    .tempAtRow {
+        background-color: var(--spec-create-chat-btn);
+    }
+}

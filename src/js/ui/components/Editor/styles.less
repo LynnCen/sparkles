@@ -1,0 +1,40 @@
+/**
+* @Author Pull
+* @Date 2021-11-15 21:03
+* @project styles
+*/
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    .inner {
+        cursor: text;
+        font-size: 14px;
+        height: 100%;
+        padding: 10px;
+        :global {
+            .public-DraftEditorPlaceholder-root {
+                color: rgb(186, 186, 193);
+                padding-top: 3px;
+                padding-left: 3px;
+                margin-bottom: -20px;
+            }
+        }
+    }
+}
+
+.hashtag {
+    color: #ffa100;
+}
+.media {
+    width: 14px;
+    height: 14px;
+    //background-origin: center;
+    // Fix an issue with Firefox rendering video controls
+    // with 'pre-wrap' white-space
+    white-space: initial;
+    background-size: 1em 1em;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,141 @@
+@import "../../../../../../../utils/stylesMix";
+
+.audioBox {
+    height: 53px;
+
+    --circle_bg: var(--primary);
+    --btn_color: var(--deep);
+
+
+    &.me {
+        --circle_bg: var(--spec-immutable-fff);
+        --btn_color: var(--primary);
+        background-color: var(--primary);
+    }
+
+    .audioContainer {
+        padding: 8px 13px 7px 16px;
+        user-select: none;
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        .mix-flex(center, center, row);
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            background-color: var(--circle_bg);
+            position: relative;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-right: 8px;
+            display: block;
+
+
+            &.loading,
+            &.error {
+                cursor: default;
+            }
+
+            &.loading::before {
+                transform: translate(-50%, -50%) rotate(-90deg);
+                content: "";
+                width: 12px;
+                height: 12px;
+                display: block;
+                border-radius: 50%;
+                border: 2px solid;
+                left: calc(50% + 3px);
+                top: calc(50%);
+                position: absolute;
+
+                border-color: transparent var(--btn_color) var(--btn_color) var(--btn_color);
+                animation: Spin 3s linear infinite;
+                .positionCenter;
+            }
+        }
+
+        .duration {
+            font-size: 15px;
+            font-weight: 500;
+            min-width: 40px;
+            color: var(--color-lighter);
+            text-align: center;
+            line-height: 15px;
+
+            &.mySendDur {
+                color: var(--spec-textContent);
+            }
+        }
+
+        .progressAudioContainer {
+            position: relative;
+            height: 20px;
+            width: 146px;
+
+            & div {
+                position: absolute;
+                height: 20px;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                & > img {
+                    height: 20px;
+                    width: 146px;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .progressAudio {
+            width: 146px;
+
+            img {
+                width: 146px;
+            }
+        }
+
+        .progressPlaying {
+            overflow: hidden;
+
+            img {
+                width: 146px;
+            }
+        }
+    }
+
+    .msgInfo {
+        position: absolute;
+        bottom: 4px;
+        right: 14px;
+        height: 16px;
+
+        .msgContent {
+            display: flex;
+            align-items: center;
+            height: 20px;
+
+
+            .msgTime {
+                height: 12px;
+                opacity: 1;
+                font-size: 12px;
+                font-weight: 400;
+                color: var(--color-normal);
+                line-height: 12px;
+
+                &.mySend {
+                    color: var(--spec-immutable-fff-alpha-60);
+                }
+            }
+            .msgStatus {
+                margin-left: 4px;
+            }
+        }
+    }
+
+
+
+
+}

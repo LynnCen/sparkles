@@ -1,0 +1,77 @@
+/**
+* @Author Pull
+* @Date 2021-10-26 10:45
+* @project useUserSelect.style
+*/
+@import "utils/stylesMix.less";
+@import "../../../../global.theme";
+.modalContainer {
+    color: red;
+    .footer {
+        width: 100%;
+        padding: 14px 0;
+        background-color: #fff;
+        .mix-flex(center, center);
+    }
+
+    :global {
+        .ant-modal-body {
+            padding: 0 !important;
+        }
+        .ant-modal-confirm-btns,
+        .anticon-info-circle {
+            display: none !important;
+        }
+    }
+
+    &.dark {
+        :global {
+            .ant-modal-body {
+                background-color: #1f1f1f;
+            }
+        }
+    }
+}
+
+.noFrameContainer {
+    -webkit-app-region: no-drag;
+    .header {
+        height: 60px;
+        padding: 16px 24px;
+        color: rgba(0, 0, 0, 0.65);
+        background: #fff;
+        border-bottom: 1px solid #f0f0f0;
+        border-radius: 2px 2px 0 0;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: bold;
+        position: relative;
+        .mix-flex(center, center);
+
+        .closeIcon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .footer {
+        width: 100%;
+        padding: 14px 0;
+        background-color: #fff;
+        .mix-flex(center, center);
+    }
+
+    :global {
+        .ant-modal-content {
+            border-radius: 14px;
+        }
+        .ant-modal-body {
+            padding: 0 !important;
+        }
+        .ant-modal-confirm-btns,
+        .anticon-info-circle {
+            display: none !important;
+        }
+    }
+}

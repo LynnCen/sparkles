@@ -1,0 +1,64 @@
+@import "../../utils/stylesMix";
+@import "../var";
+.container {
+    width: 100%;
+    height: 100%;
+    .mix-flex(flex-start, flex-start, row, nowrap);
+
+    .left {
+        width: @home_session_width;
+        height: 100%;
+        border-right: 1px solid var(--dimmed);
+        background-color: var(--deep);
+    }
+
+    .right {
+        width: calc(100vw - @home_session_width - @global_nav_width);
+        height: 100%;
+        position: relative;
+        background-color: var(--bg-deep);
+
+        .dragTip {
+            padding: 31px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: var(--bg-deep);
+            width: 100%;
+            display: none;
+            .inner {
+                height: 100%;
+                width: 100%;
+                border: 4px dashed var(--color-normal);
+                .mix-flex(center, center, column);
+            }
+
+            &.dragging {
+                display: block;
+                pointer-events: none;
+            }
+        }
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 999;
+            pointer-events: auto;
+        }
+    }
+}
+.textContent {
+    color: var(--color-lighter);
+    .emoji {
+        width: 18px;
+        height: 18px;
+    }
+
+    .extraIcon {
+        vertical-align: bottom;
+        margin-left: 8px;
+    }
+}

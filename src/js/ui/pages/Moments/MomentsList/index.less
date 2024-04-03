@@ -1,0 +1,75 @@
+@import "utils/stylesMix.less";
+
+.moment-container {
+    width: 100%;
+    min-height: 100vh;
+    //overflow: scroll;
+    //overflow-y: scroll;
+    background-color: #f3f5f9;
+    height: 100vh;
+    .moment-main {
+        margin: 0 auto;
+        overflow-x: hidden;
+        width: 896px;
+    }
+
+    .moment-header {
+        height: 56px;
+        position: relative;
+        padding: 0 16px;
+        border-bottom: 1px solid #e9eaf0;
+        .mix-flex(flex-end, center);
+
+        .moment-nav {
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            .mix-flex();
+
+            .moment-nav-item {
+                height: 100%;
+                font-size: 16px;
+                font-weight: 500;
+                color: #a2a8c3;
+                margin-right: 38px;
+                cursor: pointer;
+                .mix-flex(center, center);
+
+                &.active {
+                    color: #00c6db;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        width: 8px;
+                        height: 4px;
+                        border-radius: 4px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: currentColor;
+                    }
+                }
+            }
+        }
+
+        .moment-notification {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            .mix-flex(center, center);
+        }
+    }
+
+    .moment-list {
+        width: 100%;
+        padding: 20px;
+        //display: grid;
+        //grid-template-columns: repeat(3, 1fr);
+        //grid-auto-flow: row dense;
+        //grid-gap: 20px;
+    }
+}

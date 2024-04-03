@@ -1,0 +1,80 @@
+/**
+* @Author Pull
+* @Date 2021-11-02 14:48
+* @project modal
+*/
+@import "utils/stylesMix.less";
+.modal {
+    -webkit-app-region: no-drag;
+    .header {
+        height: 60px;
+        padding: 16px 24px;
+        color: rgba(0, 0, 0, 0.65);
+        background: #fff;
+        border-bottom: 1px solid #f0f0f0;
+        border-radius: 2px 2px 0 0;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: bold;
+        position: relative;
+        .mix-flex(center, center);
+
+        .closeIcon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .footer {
+        width: 100%;
+        padding: 14px 0;
+        background-color: #fff;
+        .mix-flex(center, center);
+    }
+
+    :global {
+        .ant-modal-content {
+            border-radius: 14px;
+        }
+        .ant-modal-body {
+            padding: 0 !important;
+        }
+        .ant-modal-confirm-btns,
+        .anticon-info-circle {
+            display: none !important;
+        }
+    }
+}
+.reportModal {
+    padding: 24px;
+    :global {
+        textarea {
+            resize: none !important;
+            height: 120px !important;
+            background-color: #f3f5f9 !important;
+
+            &::placeholder {
+                color: #dcdee8;
+            }
+        }
+    }
+
+    .count {
+        .mix-flex(flex-end, center);
+    }
+    .submit {
+        .mix-flex(center, center);
+        .btn {
+            cursor: pointer;
+            padding: 10px 30px;
+            border-radius: 18px;
+            background: #00c6db;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            color: #fff;
+        }
+    }
+}

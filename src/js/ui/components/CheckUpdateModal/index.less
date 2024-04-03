@@ -1,0 +1,85 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 16px 16px 16px 36px;
+    .icon {
+        width: 88px;
+        height: 88px;
+        background: url("../../../../assets/images/icon.png") no-repeat center center;
+        background-size: 100% 100%;
+        margin-right: 40px;
+    }
+    .content {
+        max-width: 370px;
+        .version {
+            color: #0d1324;
+            font-size: 16px;
+            font-family: SFUIText-Semibold, SFUIText;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .description {
+            color: #0d1324;
+            font-size: 14px;
+            font-family: SFUIText-Semibold, SFUIText;
+        }
+        .button {
+            width: 120px;
+            height: 36px;
+            background: #00c6db;
+            border-radius: 18px;
+            line-height: 36px;
+            text-align: center;
+            color: #fff;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+    }
+}
+.failed {
+    width: 100%;
+    height: 100%;
+    padding: 16px 16px 16px 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .icon {
+        width: 32px;
+        height: 32px;
+        background: url("../../../../assets/images/icon_shibai.png") no-repeat center center;
+        background-size: 100% 100%;
+        margin-bottom: 12px;
+    }
+    .description {
+        height: 20px;
+        font-size: 14px;
+        font-family: SFUIText;
+        color: #0d1324;
+        line-height: 20px;
+    }
+    .button {
+        width: 120px;
+        height: 36px;
+        background: #00c6db;
+        border-radius: 18px;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        margin-top: 32px;
+        cursor: pointer;
+    }
+}
+
+:global {
+    .ant-modal-title {
+        text-align: center;
+        height: 19px;
+        font-size: 16px;
+        font-family: SFUIText-Semibold, SFUIText;
+        font-weight: 600;
+        color: #0d1324;
+        line-height: 19px;
+    }
+}

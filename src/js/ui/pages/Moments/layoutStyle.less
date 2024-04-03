@@ -1,0 +1,149 @@
+@import "utils/stylesMix.less";
+
+.moment-container {
+    width: 100%;
+    min-height: 100vh;
+    //overflow: scroll;
+    //overflow-y: scroll;
+    background-color: #f3f5f9;
+    height: 100vh;
+
+    :global {
+        .topic-name::before {
+            content: "#";
+        }
+
+        .moments-count::after {
+            content: " Moments";
+        }
+    }
+
+    .moment-main {
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .moment-header {
+        height: 56px;
+        position: relative;
+        padding: 0 16px;
+        border-bottom: 1px solid #e9eaf0;
+        .mix-flex(flex-end, center);
+
+        .moment-nav {
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            .mix-flex();
+
+            .moment-nav-item {
+                height: 100%;
+                font-size: 16px;
+                font-weight: 500;
+                color: #a2a8c3;
+                margin-right: 38px;
+                cursor: pointer;
+                .mix-flex(center, center);
+
+                &.active {
+                    color: #00c6db;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        width: 8px;
+                        height: 4px;
+                        border-radius: 4px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: currentColor;
+                    }
+                }
+            }
+        }
+
+        .moment-btn {
+            width: 100px;
+            .mix-flex(flex-end, center);
+
+            .btn-refresh {
+                margin-right: 14px;
+            }
+            .btn-refresh,
+            .moment-notification {
+                width: 32px;
+                height: 32px;
+                cursor: pointer;
+                .mix-flex(center, center);
+            }
+        }
+    }
+
+    .topic-detail-header {
+        height: 56px;
+        position: relative;
+        padding: 0 16px;
+        border-bottom: 1px solid #e9eaf0;
+        z-index: 9;
+        .mix-flex(flex-start, center);
+
+        .header-back {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            .mix-flex(center, center);
+        }
+
+        .header-search {
+            width: 400px;
+            height: 30px;
+            color: #252b3a;
+            .positionCenter();
+
+            :global {
+                .ant-input-group-wrapper {
+                    overflow: hidden;
+                    background-color: inherit;
+                    border-radius: 15px;
+                }
+                .ant-input-group {
+                    color: inherit;
+                }
+                .ant-input-group-addon,
+                input {
+                    border: none;
+                    outline: none;
+                    background-color: inherit;
+                    color: inherit;
+                    box-shadow: none;
+                }
+
+                .ant-input-group-addon {
+                    padding-right: 2px;
+                }
+                input {
+                    padding-left: 2px;
+                }
+            }
+        }
+    }
+
+    .moment-content {
+        padding: 0 20px 20px;
+        height: calc(100vh - 56px - 32px);
+        overflow-y: auto;
+        width: 896px;
+        margin: 0 auto;
+
+
+        :global {
+            .ReactVirtualized__Masonry {
+                .scrollBar(#07b3dd);
+            }
+        }
+    }
+}

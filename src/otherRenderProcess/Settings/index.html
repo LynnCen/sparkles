@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TmmTmm-Settings</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            font-family: SFUIText, SFUIText-Regular, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+            --header-bg: #fff;
+            --content-bg: #f8f9fb;
+            --prime-color: #0D1324;
+            --prime-color-alp: #0D132466;
+            --border-color: #e9eaf0;
+            --tip-color: #A2A8C3;
+            --co-color: #5E6A81;
+            --active-color: #5cc7db;
+            --radio-color: #fff;
+            --radio-border: #a3a8c1;
+            --select-border: #dadce7;
+            --select-bg: #fff;
+            --select-hover: #f5f5f5;
+            --color: #1F1F1F;
+            color: var(--color);
+        }
+
+        body.win32 {
+            border: 1px solid var(--select-border);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                --header-bg: #292929;
+                --content-bg: #1f1f1f;
+                --prime-color: #fff;
+                --prime-color-alp: #fff66;
+                --border-color: #313131;
+                --tip-color: #858585;
+                --co-color: #888;
+                --active-color: #59c3d8;
+                --radio-color: #1f1f1f;
+                --radio-border: #808080;
+                --select-border: #484848;
+                --select-bg: #252525;
+                --select-hover: #313131;
+                --color: #fff;
+            }
+            .content .user .user-info .avatar {
+                background-image: url("../../../src/assets/images/user-fallback-dark.png")!important;
+            }
+        }
+
+        /* ---------------------------------------------------- common -----------------------------------------------*/
+
+
+        /*---------------------------------------------- common Radio  */
+        input[type=radio] {
+            margin-right: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 16px;
+            height: 14px;
+            position: relative;
+            outline: none;
+        }
+
+        input[type=radio]:after {
+            position: absolute;
+            width: 10px;
+            height: 15px;
+            top: 0;
+            content: " ";
+            background-color: var(--content-bg);
+            color: #fff;
+            display: inline-block;
+            visibility: visible;
+            padding: 0 3px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px var(--radio-border) inset;
+
+        }
+        input[type=radio]:checked::after {
+            box-shadow: none;
+            background-color: var(--active-color);
+        }
+        input[type=radio]:checked::before {
+            content: "";
+            display: block;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            font-weight: 400;
+            z-index: 1;
+            background-color: var(--radio-color);
+        }
+
+        .radio-item {
+            margin-right: 14px;
+        }
+
+        /*---------------------------------------------- common Checkbox */
+        input[type=checkbox]{
+            cursor: pointer;
+            position: relative;
+            width: 15px;
+            height: 15px;
+            font-size: 14px;
+        }
+        input[type=checkbox]::after{
+            position: absolute;
+            top: 0;
+            /*background-color: var(--active-color);*/
+            color: var(--header-bg);
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            visibility: visible;
+            text-align: center;
+            content: ' ';
+            border-radius: 4px;
+        }
+
+        /*input[type=checkbox]:checked::*/
+        input[type=checkbox]:checked::after{
+            content: "✓";
+            background-color: var(--active-color);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+
+        /*---------------------------------------------- common Select  */
+        .select {
+            height: 30px;
+            padding: 7px 8px;
+            border-radius: 4px;
+            border: 1px solid var(--select-border);
+            background-color: var(--select-bg);
+            min-width: 140px;
+
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+
+            position: relative;
+        }
+
+
+        .select.show .mask,
+        .select.show .list {
+            display: block;
+            opacity: 1;
+        }
+
+        .select .mask {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            display: none;
+        }
+
+        .select .list {
+            min-width: 100%;
+            position: absolute;
+            left: 0;
+            top: calc(100% + 2px);
+            /*height: 0;*/
+            display: none;
+            z-index: 99;
+            box-shadow: 0 3px 8px var(--radio-border);
+            opacity: 0;
+            transition: all 0.2s;
+            max-height: 160px;
+            overflow-y: auto;
+            background-color: var(--select-bg);
+        }
+
+        .select .list::-webkit-scrollbar {
+            width: 3px;
+        }
+        .select .list::-webkit-scrollbar-thumb {
+            background-color: var(--co-color);
+            border-radius: 10px;
+        }
+        .select .list::-webkit-scrollbar-track-piece {
+            background: transparent;
+        }
+
+        .select .list .item {
+            font-size: 16px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            padding: 8px 16px;
+        }
+
+        .select .list .item:hover {
+            background-color: var(--select-hover);
+        }
+        .select .list .item.active {
+            background-color: var(--select-hover);
+            /*color: var(--color);*/
+
+        }
+
+
+        /*.select:focus {*/
+        /*    border-color: var(--active-color);*/
+        /*}*/
+        .select .selected {
+            margin-right: 16px;
+        }
+        .select-arrow {
+            font-size: 8px;
+            width: 2em;
+            height: 2em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .select-arrow::after,
+        .select-arrow::before {
+            content: '';
+            display: block;
+            width: 1em;
+            height: 0.2em;
+            border-radius: 0.2em;
+            background-color: var(--co-color);
+            position: absolute;
+            left: 50%;
+            top: 60%;
+        }
+        .select-arrow::before {
+            transform-origin: left center;
+            transform: rotate(-130deg);
+            width: 0.9em;
+        }
+        .select-arrow::after {
+            transform-origin: left center;
+            transform: rotate(-50deg);
+        }
+
+
+        /* ------------------------------------------- header ------------------------------------------*/
+
+
+        .header {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--header-bg);
+            -webkit-app-region: drag;
+        }
+
+        .header .title {
+            font-weight: normal;
+            font-size: 18px;
+        }
+        .content {
+            height: calc(100vh - 60px);
+            background-color: var(--content-bg);
+            border-top: 1px solid var(--border-color);
+            padding: 0 40px 40px;
+        }
+
+        /* ------------------------------------------------------- user info ------------------------------------------*/
+        .content .user {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .content .user .user-info {
+            width: 360px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+
+        .content .user .user-info .avatar {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 16px;
+            flex-shrink: 0;
+            background: url("../../../src/assets/images/user-fallback.png") no-repeat center center;
+            background-size:  100% 100% ;
+            overflow: hidden;
+        }
+        .content .user .user-info img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+
+        .content .user .user-info .base {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            /*flex: 1;*/
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .content .user .user-info .base .name {
+            color: var(--prime-color);
+            font-weight: 500;
+            font-size: 16px;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .content .user .user-info .base .tmmId {
+            color: var(--tip-color);
+        }
+
+        .user-action {
+            height: 36px;
+            border-radius: 19px;
+            font-size: 14px;
+            border: 1px solid var(--co-color);
+            color: var(--co-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 30px;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+
+        .actionItem {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            height: 40px;
+            font-size: 14px;
+        }
+
+        .actionItem .label {
+            width: 160px;
+            margin-right: 20px;
+            text-align: right;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .theme {
+            height: 88px;
+            margin: 38px 0 30px;
+        }
+        .theme .theme-list {
+            display: flex;
+            align-items: center;
+        }
+        .theme .theme-list .item {
+            margin-right: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .theme .theme-list .item .appearance {
+            width: 84px;
+            height: 52px;
+            position: relative;
+        }
+        .theme .theme-list .item .name {
+            font-size: 14px;
+            line-height: 14px;
+            margin-top: 8px;
+        }
+        .theme .theme-list .item .appearance img {
+            position: absolute;
+            width: 80px;
+            height: 48px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+        .theme .theme-list .item.active .appearance::after {
+            content: '';
+            display: block;
+            width: 84px;
+            height: 52px;
+            border-radius: 10px;
+            background-color: var(--active-color);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        .actionItem.switch {
+            height: 40px;
+        }
+        .actionItem.switch.hide {
+            display: none;
+        }
+
+
+        .logout-mask {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            background-color: var( --prime-color-alp);
+            justify-content: center;
+            align-items: center;
+
+            display: none;
+        }
+        .logout-mask.show {
+            display: flex;
+        }
+        .logout-mask .mask-content {
+            padding: 24px 44px;
+            border-radius: 12px;
+            box-shadow: 0 -3px 0 1px var(--active-color);
+            opacity: 1;
+            background-color: var(--header-bg);
+        }
+        .logout-mask .mask-content .btns {
+            display: flex;
+            justify-content: center;
+            margin-top: 14px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .logout-mask .mask-content .btns button {
+            padding: 5px 15px;
+            border: none;
+            outline: none;
+            color: #fff;
+            border-radius: 4px;
+            margin-right: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .logout-mask .mask-content .btns button:first-of-type {
+            border: 1px solid var(--active-color);
+            color: var(--co-color);
+        }
+        .logout-mask .mask-content .btns button:last-of-type {
+            background-color: var(--active-color);
+        }
+
+
+        .win-close {
+            width: 24px;
+            height: 24px;
+            position: fixed;
+            right: 4px;
+            top: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            -webkit-app-region: no-drag;
+        }
+        .win-close .dot {
+            width: 4px;
+            height: 4px;
+            background-color: var( --prime-color);
+            position: relative;
+
+            cursor: pointer;
+            -webkit-app-region: no-drag;
+        }
+        .win-close .dot::before,
+        .win-close .dot::after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 4px;
+            border-radius: 3px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var( --prime-color);
+            cursor: pointer;
+            -webkit-app-region: no-drag;
+        }
+        .win-close .dot::before {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+        .win-close .dot::after {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header class="header">
+            <h2 class="title" data-locale="Settings">Setting</h2>
+        </header>
+
+        <main class="content">
+
+            <section class="actionItem theme">
+                <aside class="label" data-locale="Theme" data-suffix=": ">Appearance</aside>
+                <article class="theme-list" id="theme-list">
+
+                    <div class="item" data-v="light">
+                        <div class="appearance">
+                            <img src="./img/light.png" alt="">
+                        </div>
+                        <span class="name" data-locale="ThemeLight">Light</span>
+                    </div>
+
+                    <!-- <div class="item" data-v="dark">
+                        <div class="appearance">
+                            <img src="./img/dark.png" alt="">
+                        </div>
+                        <span class="name" data-locale="ThemeDark">Dark</span>
+                    </div> -->
+                </article>
+            </section>
+
+
+            <section class="actionItem lang">
+                <div class="label" data-locale="Locale" data-suffix=": ">Language:</div>
+                <section class="select" id="select_container">
+                    <span id="select-value" class="selected"></span>
+                    <i class="select-arrow"></i>
+
+                    <section id="select_mask" class="mask"></section>
+                    <ul class="list" id="lang-list" data-id="list">
+                    </ul>
+                </section>
+            </section>
+
+            <section class="actionItem switch">
+                <div class="label" data-locale="AlwaysOnTop" data-suffix=": ">Always on Top:</div>
+                <aside class="action">
+                    <input type="checkbox" name="alwaysOnTop">
+                    <span data-locale="AlwaysOnTopDesc">Always show in front of other windows</span>
+                </aside>
+            </section>
+
+            <section class="actionItem switch" id="startup_container">
+                <div class="label" data-locale="StartUpAutomatically" data-suffix=": ">Start up automatically:</div>
+                <aside class="action">
+                    <input type="checkbox" name="startup"> <span data-locale="StartUpDesc">Automatically start TMMTMM at boot</span>
+                </aside>
+            </section>
+
+            <section class="actionItem switch">
+                <div class="label" data-locale="Version" data-suffix=": ">Version</div>
+                <span id="tmm_version">v1.2.3.</span>
+            </section>
+
+
+
+            <section class="user">
+                <!--                <article class="user-info">-->
+                <!--                    <div  class="avatar" id="user_avatar" >-->
+                <!--                    </div>-->
+                <!--                    <div class="base">-->
+                <!--                        <strong class="name" id="user_name">Stephanus Huggins</strong>-->
+                <!--                        <span class="tmmId" id="user_tmmId">ID: Stephanus829855</span>-->
+                <!--                    </div>-->
+                <!--                </article>-->
+                <aside class="user-action" id="logout" data-locale="exitProgram">Log Out</aside>
+            </section>
+        </main>
+    </section>
+
+    <section class="logout-mask" id="logout_mask">
+
+        <div class="mask-content">
+            <div data-locale="existAppTip">sign out</div>
+            <div class="btns">
+                <button id="logout_cancel" data-locale="Cancel">cancel</button>
+                <button id="logout_ok" data-locale="exitProgram">ok</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<script src="./js/main.js"></script>
+
+<script type="module">
+    const { alwaysOnTop, startup, locale, userInfo, pickerList, isOsx, themeSource, shouldUseDarkModal } = init();
+    initLangSelect(pickerList, locale)
+    // initUserInfo(userInfo)
+    initAlwaysOnTop(alwaysOnTop);
+    initAutoStart(isOsx, startup);
+    initVersion(ctx.version)
+    initWindowsBorder(isOsx)
+
+
+    const initTheme =
+        isOsx && themeSource === 'system'
+                ? 'system'
+                : shouldUseDarkModal ? 'dark' : 'light'
+
+    initThemeList(isOsx, initTheme)
+    initWinCloseIcon(isOsx)
+    addThemeEvent();
+    addCheckboxChange('alwaysOnTop')
+    if (isOsx) {
+        addCheckboxChange('startup')
+    }
+
+    updatePageText(locale)
+
+    window.ctx.initListener(values => {
+        // update userInfo
+        // initUserInfo(values.userInfo)
+    })
+
+    window.ctx.onMyInfoUpdate(info => {
+        // initUserInfo(info)
+    })
+</script>
+</body>
+</html>

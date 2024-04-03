@@ -1,0 +1,31 @@
+@import "../../utils/stylesMix";
+
+@topMargin: 87px;
+.box {
+    :global {
+        .ant-drawer-mask {
+            background-color: transparent;
+        }
+
+        .ant-drawer-content-wrapper {
+            border-top: 1px solid var(--dimmed);
+            border-left: 1px solid var(--dimmed);
+            background-color: var(--deep);
+            box-shadow: none!important;
+            height: calc(100vh - @topMargin);
+            position: fixed;
+            right: 0;
+            top: @topMargin;
+
+            .ant-drawer-body {
+                padding: 0;
+                background-color: var(--deep);
+            }
+        }
+    }
+
+
+    .board {
+        .mix-flex(flex-start, flex-start, column, nowrap);
+    }
+}

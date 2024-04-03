@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TmmTmm-Image</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script>
+            if (process.env.HOT) {
+                let port = process.env.PORT || 3000;
+                const scripts = [
+                    `http://localhost:${port}/dist/bundle.js`,
+                    `http://localhost:${port}/dist/lightBox.js`,
+                    // `http://localhost:${port}/dist/common.js`,
+                    // `http://localhost:${port}/dist/vendor.js`,
+                ];
+
+                let $script = null;
+                scripts.forEach((script) => {
+                    $script = document.createElement("script");
+                    $script.async = false;
+                    $script.src = script;
+                    document.body.appendChild($script);
+                });
+            }
+        </script>
+    </body>
+</html>

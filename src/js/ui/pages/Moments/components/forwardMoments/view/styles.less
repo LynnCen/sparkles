@@ -1,0 +1,283 @@
+/**
+* @Author Pull
+* @Date 2021-10-14 10:23
+* @project styles
+*/
+@import "utils/stylesMix.less";
+.post {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #07b3dd;
+    position: fixed;
+    bottom: 42px;
+    right: 24px;
+    cursor: pointer;
+    .mix-flex(center, center);
+}
+.modal {
+    :global {
+        .ant-modal-content {
+            border-radius: 10px;
+            overflow: hidden;
+            -webkit-app-region: no-drag;
+
+            .ant-modal-close-x {
+                line-height: normal;
+                .mix-flex();
+            }
+            .ant-modal-header {
+                height: 60px;
+                .ant-modal-title {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .container {
+        //padding: 0 24px 24px;
+        .header {
+            height: 60px;
+            padding: 16px 24px;
+            color: rgba(0, 0, 0, 0.65);
+            background: #fff;
+            border-bottom: 1px solid #f0f0f0;
+            border-radius: 2px 2px 0 0;
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: bold;
+            position: relative;
+            .mix-flex(center, center);
+
+            .closeIcon {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        > .content {
+            //padding: 0 24px 24px;
+            //padding: 24px;
+            .input {
+                height: 155px;
+                .input-content {
+                    width: 100%;
+                    height: 155px;
+                    overflow-y: auto;
+                    border: none;
+                    outline: none;
+
+                    :global {
+                        .ant-modal-body {
+                            padding-bottom: 24px;
+                        }
+                        .ql-container {
+                            border: none;
+                            .ql-editor {
+                                padding: 0;
+                                &.ql-blank::before {
+                                    left: 0;
+                                }
+                            }
+                        }
+                        .emoji {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+
+            .forwardArea {
+                width: 100%;
+                height: 88px;
+                background-color: #f8f9fb;
+                border-radius: 15px;
+                .mix-flex(flex-start, center);
+
+                .media {
+                    width: 88px;
+                    height: 88px;
+                    border-radius: 15px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .article {
+                    margin-left: 16px;
+                    flex: 1;
+                    .mix-flex(center, flex-start, column);
+
+                    .name {
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-align: left;
+                        color: #0d1324;
+                        line-height: 19px;
+                        width: 100%;
+                    }
+                    .content {
+                        width: 100%;
+                        font-size: 14px;
+                        margin-top: 5px;
+                        font-weight: 400;
+                        text-align: left;
+                        color: #a2a8c3;
+                        line-height: 16px;
+                    }
+                }
+            }
+
+            .action {
+                height: 30px;
+                margin-top: 27px;
+                .mix-flex(space-between, center);
+
+                .user-action {
+                    position: relative;
+                }
+                .send-action {
+                    .mix-flex(center, center, row, nowrap);
+                    .item-label {
+                        width: 100%;
+                        height: 100%;
+                        .mix-flex(flex-end, center);
+                        img {
+                            width: 16px;
+                            height: 16px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+
+                        :global {
+                            .auth_icon {
+                                vertical-align: text-top;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                    :global {
+                        .ant-select,
+                        .ant-select-selector {
+                            border: none !important;
+                            box-shadow: none !important;
+                        }
+                    }
+
+                    .action-auth {
+                        .mix-flex(flex-end, center, row, nowrap);
+                        .auth-list {
+                            max-width: 100px;
+                            line-height: 16px;
+                            display: inline;
+                            .ellipsis;
+                            img {
+                                width: 16px;
+                                height: 16px;
+                                object-fit: cover;
+                                border-radius: 50%;
+                                margin-right: 4px;
+                            }
+                        }
+
+                        :global {
+                            .auth_icon {
+                                line-height: 14px;
+                            }
+                        }
+                    }
+
+                    .send {
+                        padding: 7px 15px;
+                        font-size: 14px;
+                        background-color: #00c6db;
+                        color: #fff;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        outline: none;
+                        border: none;
+                        box-shadow: none;
+                        line-height: 14px;
+                        margin-left: 15px;
+
+                        &[disabled] {
+                            color: #131423c1;
+                            background: #eee;
+                            box-shadow: 0 0 0 1px #aeaeb7;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        > div {
+            -webkit-app-region: no-drag;
+        }
+    }
+}
+
+//.select-container {
+//    .custom-item{
+//        padding: 4px 12px 4px 38px;
+//        cursor: pointer;
+//        position: relative;
+//
+//        &.active {
+//            background: #f5f5f5;
+//        }
+//
+//
+//        .desc {
+//            color: #b4b9cf;
+//            font-size: 12px;
+//
+//        }
+//
+//        :global {
+//            .auth_icon {
+//                position: absolute;
+//                left: 8px;
+//                top: 50%;
+//                transform: translateY(-50%);
+//                width: 22px;
+//                height: 22px;
+//                display: block;
+//            }
+//
+//            svg {
+//                width: 22px;
+//                height: 22px;
+//            }
+//        }
+//    }
+//
+//    .item-group {
+//        color: #b4b9cf;
+//        font-size: 16px;
+//        padding: 6px 12px;
+//    }
+//    .item-label {
+//        .mix-flex(flex-start, center);
+//    }
+//    .auth-list {
+//        max-width: 100px;
+//        line-height: 16px;
+//        display: inline;
+//        .ellipsis;
+//        img {
+//            width: 16px;
+//            height: 16px;
+//            object-fit: cover;
+//            border-radius: 50%;
+//            margin-right: 4px;
+//        }
+//    }
+//}

@@ -1,0 +1,65 @@
+.Switch {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.Switch input {
+    display: none;
+}
+
+.Switch input:checked + .Switch--fake::before {
+    background: #0bcade;
+}
+
+.Switch input:checked + .Switch--fake::after {
+    left: auto;
+    right: 0;
+    background: #fff;
+}
+
+.Switch--fake {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+}
+
+.Switch--fake::before,
+.Switch--fake::after {
+    content: "";
+}
+
+.Switch--fake::before {
+    display: block;
+    width: 35px;
+    height: 20px;
+    margin-top: 0px;
+    background: #dadce7;
+    border-radius: 14px;
+    transition: 0.5s ease-in-out;
+}
+
+.Switch--fake::after {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 0px 2px 0 rgba(53, 37, 37, 0.5);
+    transition: 0.2s;
+}
+
+.Switch input:disabled + .Switch--fake::before {
+    background: #dadce7;
+}
+
+.Switch input:disabled + .Switch--fake::after {
+    left: auto;
+    right: 0;
+    background: #e9eaf0;
+}

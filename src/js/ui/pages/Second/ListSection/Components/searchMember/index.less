@@ -1,0 +1,197 @@
+@import "../../../../../utils/stylesMix";
+@import "../../../../../utils/style_var";
+
+.wrapper {
+    :global(.ant-modal-body) {
+        padding: 0;
+        border-radius: 10px;
+        border: 1px solid var(--bg-light);
+    }
+
+    :global(.ant-modal-content) {
+        border-radius: 10px;
+    }
+}
+
+.search_header {
+    position: relative;
+
+    & p {
+        height: 60px;
+        line-height: 60px;
+        font-size: 18px;
+        text-align: center;
+        color: var(--color-lighter);
+        font-weight: 400;
+        border-bottom: 1px solid var(--dimmed);
+    }
+
+    &_leftback {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}
+
+.main {
+    height: 147px;
+    padding: 24px 20px 34px;
+}
+
+.main_search {
+    margin-bottom: 24px;
+    position: relative;
+
+    .close {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+    }
+
+    :global {
+        .ant-input-clear-icon {
+            display: none;
+        }
+        .ant-input-affix-wrapper {
+            background: var(--bg-normal);
+            border-radius: 15px;
+            outline: none;
+            box-shadow: none;
+            border: none;
+            svg {
+                color: var(--color-normal)
+            }
+            input {
+                background: var(--bg-normal);
+                color: var(--color-lighter);
+            }
+            input::placeholder {
+                color: var(--color-normal);
+            }
+            &:hover {
+                border-color: var(--primary);
+            }
+        }
+    }
+}
+
+.search_result {
+    display: flex;
+    align-items: center;
+    min-height: 32px;
+    & img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+
+    & :global(.ant-spin-sm) {
+        color: #0bcade;
+        margin-left: auto;
+    }
+}
+
+.search_result_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 36px;
+    margin-left: 12px;
+
+    .nameContainer {
+        height: 14px;
+        .mix-flex(flex-start, center, row, nowrap);
+    }
+    .idContainer {
+        height: 12px;
+        .mix-flex(flex-start, center, row, nowrap);
+
+        span {
+            opacity: 1;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: left;
+            color: #a2a8c3;
+        }
+    }
+
+    & span {
+        width: 300px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        color: #0d1324;
+        .ellipsis();
+    }
+}
+
+.apply_request {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+    background-color: var(--spec-create-chat-btn);
+    color: var(--color-normal);
+    -webkit-app-region: no-drag;
+    margin-left: auto;
+    cursor: pointer;
+    & img {
+        object-fit: contain;
+    }
+
+    svg {
+        color: var(--placeholder);
+    }
+}
+
+.empty_result {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #a2a8c3;
+}
+
+.dark {
+    :global {
+        .ant-modal-body,
+        .ant-spin-container,
+        .ant-spin-nested-loading {
+            background: @dark-bg-color;
+        }
+        .ant-spin-container::after {
+            background-color: transparent;
+        }
+        .ant-modal-content {
+            background-color: unset;
+        }
+        .ant-spin-nested-loading > div > .ant-spin {
+            background-color: @dark-bg-color;
+        }
+    }
+    .search_result_content {
+        background: @dark-bg-color;
+        & span {
+            color: @dark-color;
+        }
+
+        & span + span {
+            color: @dark-icon-color;
+        }
+    }
+
+    .search_result {
+        background: @dark-bg-color;
+    }
+
+    .empty_result{
+        background: @dark-bg-color;
+        color: @dark-color-1;
+    }
+}

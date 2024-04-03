@@ -1,0 +1,100 @@
+@import "../../../../../../../utils/stylesMix";
+.fileContainer {
+    background-color: var(--bg-demmed);
+    padding: 14px 16px 20px 12px;
+    position: relative;
+    cursor: pointer;
+    min-width: 240px;
+    max-width: 300px;
+    user-select: none;
+    -webkit-user-drag: none;
+    .mix-flex(flex-start, flex-start, row, no-wrap);
+    .msgInfo {
+        position: absolute;
+        right: 14px;
+        height: 16px;
+        bottom: 12px;
+
+        .msgContent {
+            display: flex;
+            align-items: center;
+            height: 20px;
+
+            .msgTime {
+                height: 12px;
+                opacity: 1;
+                font-size: 12px;
+                font-weight: 400;
+                color: var(--color-normal);
+                line-height: 12px;
+
+                &.mySend {
+                    color: var(--spec-textContent-label);
+                }
+            }
+        }
+
+        .msgStatus {
+            margin-left: 4px;
+        }
+    }
+    .mainContent {
+        min-height: 45px;
+
+        > article {
+            .mix-flex(space-between, flex-start, column);
+            .name {
+                font-size: 14px;
+                color: var(--color-lighter);
+                max-width: 200px;
+                margin: 2px 0 6px;
+                line-height: 16px;
+                .ellipsisMultiple(2);
+            }
+            .fileType {
+                word-break: keep-all;
+            }
+            .size {
+                font-size: 12px;
+                color: var(--color-normal);
+                margin: 0;
+            }
+            .progress {
+                @suffixW: 25px;
+                // width: calc(100% - 45px);
+                .mix-flex(space-between, center, row, nowrap);
+                .suffix {
+                    width: @suffixW;
+                    font-size: 10px;
+                    color: var(--color-normal);
+                    height: 100%;
+                    .mix-flex(center, center, row, nowrap);
+                }
+            }
+        }
+    }
+
+    &.me {
+        > img {
+            margin-left: auto;
+            margin-right: 15px;
+        }
+
+        .upload_progress {
+            margin-top: 8px;
+
+            & :global(.ant-progress-status-success .ant-progress-text) {
+                color: var(--primary);
+            }
+        }
+
+        .upload_label {
+            height: 12px;
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--color-normal);
+            line-height: 12px;
+            margin-left: 4px;
+        }
+    }
+}

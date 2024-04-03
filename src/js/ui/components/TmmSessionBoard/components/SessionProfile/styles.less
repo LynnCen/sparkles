@@ -1,0 +1,59 @@
+@import "../../../../utils/stylesMix";
+.profile {
+    width: 100%;
+    border-top: 8px solid var(--bg-deep);
+    background-color: var(--deep);
+    padding: 8px 16px 12px;
+    position: relative;
+
+    .title {
+        color: var(--color-normal);
+        font-size: 14px;
+        font-family: SFUIText;
+    }
+    .content {
+        color: #1f1f1f;
+        font-size: 14px;
+        font-family: SFUIText;
+        min-height: 48px;
+        white-space: pre-wrap;
+        :global {
+            .ant-typography-expand {
+                color: var(--primary);
+                cursor: pointer;
+            }
+        }
+    }
+    :global {
+        .ant-typography {
+            margin-bottom: 0;
+        }
+    }
+
+    .showDescription {
+        color: #1f1f1f;
+        font-size: 14px;
+        width: 100%;
+        font-family: SFUIText;
+        min-height: 48px;
+        white-space: pre-wrap;
+
+        display: -webkit-box;
+        overflow: hidden;
+        // white-space: normal;
+        overflow-wrap: break-word;
+        text-overflow: ellipsis;
+        /* autoprefixer: off */
+        word-wrap: break-word;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .showMore {
+        color: var(--primary);
+        cursor: pointer;
+        float: right;
+        // position: absolute;
+        // right: 16px;
+        // bottom: 12px;
+    }
+}

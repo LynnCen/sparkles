@@ -1,0 +1,32 @@
+/**
+* @Author Pull
+* @Date 2021-10-14 14:00
+* @project styles
+*/
+@import "utils/stylesMix.less";
+.suffix {
+    margin-left: 8px;
+}
+.topicList {
+    //width: calc(100vw - 64px);
+    //
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #e9eaf0;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 38px;
+    z-index: 999;
+    padding: 4px 0;
+    .item {
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #0d1324;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 16px;
+        cursor: pointer;
+        .ellipsis();
+    }
+}

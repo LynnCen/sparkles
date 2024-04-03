@@ -1,0 +1,29 @@
+@import "../../../node_modules/viewerjs/dist/viewer.min.css";
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* //overflow: hidden; */
+    /*background-color: transparent;*/
+    background-color: #222222;
+    overflow: hidden;
+    /* //background-image: linear-gradient(to bottom, #fff 20px , #000d 21px, #000d); */
+    /* //border: none !important; */
+    /*font:menu;*/
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+}
+
+#root {
+    height: 100%;
+    overflow: hidden;
+    /*background-color: #000d;*/
+}
+#root > div {
+    height: 100%;
+    width: 100%;
+    /* //-webkit-app-region: drag; */
+}

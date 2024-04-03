@@ -1,0 +1,78 @@
+@import "../../../../utils/stylesMix";
+.box {
+    width: 100%;
+    padding: 32px 20px 20px;
+    background-color: var(--deep);
+    .mix-flex(flex-start, center, column, nowrap);
+
+    .avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        position: relative;
+        .mix-flex(center, center);
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            cursor: pointer;
+            z-index: 2;
+
+            .editIcon {
+                width: 20px;
+                height: 20px;
+                background-color: var(--bg-peer);
+                border: 1px solid var(--dimmed);
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                border-radius: 50%;
+                .mix-flex(center, center);
+
+                svg {
+                    color: var(--color-lighter);
+                }
+            }
+        }
+    }
+
+    .name {
+        width: 100%;
+        font-size: 16px;
+        margin: 12px 0 0;
+        color: var(--color-lighter);
+        text-align: center;
+        .ellipsis;
+    }
+
+    .sig {
+        font-size: 12px;
+        margin: 4px 0 0;
+        width: 100%;
+        color: var(--color-bg-primary);
+        .ellipsisMultiple(2);
+        word-break: keep-all;
+        text-align: center;
+    }
+}
+
+.cuInputControl {
+    .mix-flex(center, center);
+
+    .edit {
+        max-width: 170px;
+        outline: none;
+        white-space: nowrap;
+        min-width: 24px;
+        .ellipsis;
+
+        &:focus {
+            text-overflow: inherit;
+            overflow-y: auto;
+            border-bottom: 1px solid currentColor;
+        }
+    }
+}

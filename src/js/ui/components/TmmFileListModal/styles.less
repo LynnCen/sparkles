@@ -1,0 +1,153 @@
+@import "../../utils/stylesMix";
+
+.customStyle {
+    :global {
+        .ant-modal-content {
+            border-radius: 10px;
+            border: 1px solid var(--placeholder);
+            overflow: hidden;
+            box-shadow: 0 10px 30px 0 var(--spec-user-popover-shadow);
+            .ant-modal-body {
+                padding: 0;
+                background-color: var(--deep);
+            }
+        }
+    }
+}
+.container {
+    height: 440px;
+    width: 100%;
+    .mix-flex(flex-start, flex-start, column);
+
+    @headerH: 48px;
+    @footerH: 76px;
+
+    .header {
+        width: 100%;
+        height: @headerH;
+        border-bottom: 1px solid var(--border-light);
+        color: var(--color-lighter);
+        font-size: 16px;
+        .mix-flex(center, center);
+    }
+
+
+    .content {
+        width: 100%;
+        height: calc(100% - @headerH);
+        flex: 1;
+        padding: 8px 0;
+        overflow: auto;
+
+        .mix-flex(flex-end, flex-start, column);
+
+
+        .list {
+            height: calc(100% - @footerH);
+            width: 100%;
+            overflow: auto;
+
+            .item {
+                height: 60px;
+                padding: 0 24px;
+                width: 100%;
+                .mix-flex(flex-start, center, row, nowrap);
+
+                @iconSize: 40px;
+                @marginR: 8px;
+                @delIconSize: 24px;
+                .icon {
+                    width: @iconSize;
+                    height: @iconSize;
+                    margin-right: @marginR;
+                    object-fit: cover;
+
+                    &.video {
+                        position: relative;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            object-fit: cover;
+                        }
+
+                        .mask {
+                            cursor: pointer;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            .mix-flex(center, center);
+                        }
+                    }
+
+                }
+
+                .text {
+                    width: calc(100% - @iconSize - @marginR - @delIconSize);
+                    .mix-flex(center, flex-start, column);
+
+                    span:first-child {
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: var(--color-lighter);
+                        margin-bottom: 6px;
+                        width: 100%;
+                        .ellipsis;
+
+
+                    }
+
+                    span:last-of-type {
+                        font-size: 12px;
+                        line-height: 12px;
+                        color: var(--color-normal);
+                    }
+                }
+
+                .del {
+                    width: @delIconSize;
+                    height: @delIconSize;
+                    cursor: pointer;
+                    .mix-flex(flex-end, center);
+
+                    svg {
+                        color: var(--icon-color-normal);
+                    }
+                }
+            }
+        }
+
+        .footer {
+            width: 100%;
+            height: @footerH;
+            padding: 20px 0;
+            .mix-flex(center, center);
+
+            button {
+                width: 100px;
+                height: 36px;
+                border-radius: 18px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+            button:first-child {
+                margin-right: 20px;
+                color: var(--color-lighter);
+                background-color: var(--dimmed);
+            }
+
+            button:last-of-type {
+                color: var(--deep);
+                background-color: var(--primary);
+            }
+
+            button[disabled] {
+                background-color: var(--dimmed);
+                color: var(--color-bg-primary);
+            }
+        }
+    }
+}
