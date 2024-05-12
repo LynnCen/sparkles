@@ -1,0 +1,46 @@
+.listWrap {
+  max-height: 500px;
+  overflow: auto;
+  margin: 24px 32px;
+
+  .scrollbar();
+
+  .item {
+    color: #132144;
+    font-size: 14px;
+    .flexItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .status {
+        margin-left: 4px;
+      }
+      .operateIcon {
+        color: #999999;
+      }
+    }
+    .childItem {
+      color: #999;
+      font-size: 12px;
+      margin-top: 2px;
+    }
+  }
+  :global {
+    .ant-list-items {
+      .ant-list-item {
+        padding: 20px 16px;
+        border: 1px solid #f3f6fc;
+        cursor: pointer;
+        &:hover {
+          background-color: #f3f6fc;
+        }
+        margin-bottom: 12px;
+        &:last-child {
+          border-bottom: 1px solid #f3f6fc;
+          margin-bottom: 0;
+        }
+      }
+    }
+    
+  }
+}

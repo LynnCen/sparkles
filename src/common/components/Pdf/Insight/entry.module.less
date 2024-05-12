@@ -1,0 +1,984 @@
+@media print {
+  @page {
+    /* A4大小 横向 */
+    size: A4 landscape;
+    margin: 0;
+    padding: 0;
+  }
+  // html {
+  //   zoom: 58.3%;
+  // }
+}
+// pdf尺寸
+.A4 {
+  position: relative;
+  .wh(1124px, 794px); // 注意是横向
+  background-color: #00002e;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #fff;
+  // border-bottom: 1px solid #fff;
+  padding: 80px 70px;
+}
+// 通用占位长矩形
+.placeholderRectangle {
+  .wh(53px, 4px);
+  background-color: #fff;
+}
+// 通用的头样式
+.headerCon {
+  .flex(row, nowrap, space-between, center, flex);
+
+  .themeCon {
+    position: relative;
+    color: rgba(255, 255, 255, 0.59);
+    font-size: 19px;
+
+    .themePlaceholder {
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+      .placeholderRectangle();
+      width: 31px;
+      opacity: 0.7;
+    }
+  }
+
+  .indexCon {
+    position: relative;
+    // color: #fff;
+    // font-size: 44px;
+    // font-weight: bold;
+
+    .indexNum {
+      position: absolute;
+      bottom: -10px;
+      left: -20px;
+      font-size: 100px;
+      color: rgba(255, 255, 255, 0.19);
+      font-weight: bold;
+      font-family: DINAlternate-Bold, DINAlternate;
+    }
+
+    .decorateCon {
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      .wh(80px, 10px);
+      background-color: #006aff;
+      box-sizing: border-box;
+
+      .triangleRightArrow {
+        position: absolute;
+        right: 7px;
+        top: -2px;
+        transform: rotate(-90deg) scale(0.6);
+        color: #fff;
+      }
+
+      // &::after {
+      //   content: '';
+      //   position: absolute;
+      //   top: 50%;
+      //   right: 15px;
+      //   .wh(50px, 1px);
+      //   background-color: #fff;
+      //   margin-top: -0.5px;
+      // }
+    }
+  }
+}
+
+// 双圈
+.doubleCircleCon {
+  display: flex;
+
+  &.horizontal {
+    flex-direction: row;
+    .blueCircle {
+      margin-left: -6px
+    }
+  }
+
+  &.vertical {
+    flex-direction: column;
+    .blueCircle {
+      margin-top: -6px
+    }
+  }
+
+  .blueCircle {
+    .wh(18px, 18px);
+    border-radius: 50%;
+    background: rgba(0, 106, 255, 0.83);
+  }
+
+  .cyanCircle {
+    .blueCircle();
+    background: rgba(135, 252, 209, 0.6);
+  }
+}
+
+// 左侧底部双圈
+.leftFooterDoubleCircle{
+  position: absolute;
+  left: 66px;
+  bottom: 70px;
+}
+
+// 右侧底部双圈
+.rightFooterDoubleCircle{
+  position: absolute;
+  right: 66px;
+  bottom: 70px;
+}
+
+// 公共背景图
+.commonBg {
+  background: url('https://staticres.linhuiba.com/project-custom/location-insight/bg_blurry_mask@2x.png')
+    no-repeat;
+  background-size: 100% 100%;
+  background-color: #00002e;
+}
+
+// 公共渐变背景区域
+.sectionGradient {
+  width: 415px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 20, 112, 0.43) 0%,
+    rgba(0, 98, 169, 0.01) 100%
+  );
+  padding: 17px 13px;
+}
+
+// 公共页面内容
+.commonFlexCon {
+  .flex();
+  margin-top: 80px;
+  .sectionLeftCon {
+    .sectionGradient();
+    min-width: 440px;
+    padding: 22px 14px;
+  }
+
+  .sectionRightCon {
+    margin-left: 65px;
+  }
+}
+
+// 公共提示
+.pointCon {
+  background: rgba(77, 122, 218, 0.18);
+  padding: 8px 17px;
+  font-size: 22px;
+  width: max-content;
+  margin-top: 80px;
+}
+
+// 带箭头的提示
+.summaryStrCon {
+  position: relative;
+  .pointCon();
+  width: auto;
+  font-size: 14px;
+  margin-top: 12px;
+  word-break: break-all;
+
+  &::before {
+    // .top-arrow(25px , rgba(77,122,218,0.18));
+  }
+}
+
+:global {
+  .ant-descriptions {
+    .ant-descriptions-view {
+      .ant-descriptions-row {
+        .ant-descriptions-item {
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .ant-row {
+    .ant-col {
+      &:last-of-type {
+        &.rightBr {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+.cityBusinessCon,
+.shoppingCon,
+.trafficBusSubwayCon,
+.trafficGasTrainCon {
+  :global {
+    .ant-table-wrapper {
+      .ant-table {
+        background: transparent;
+        .ant-table-thead {
+          .ant-table-cell {
+            background-color: #002760;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: none;
+            padding: 9px 14px;
+          }
+        }
+
+        .ant-table-tbody {
+          tr {
+            td.ant-table-cell {
+              background: transparent;
+              color: #fff;
+              font-size: 16px;
+              border-bottom: none;
+              padding: 9px 14px;
+            }
+            &:nth-child(2n) {
+              td.ant-table-cell {
+                background-color: #002760;
+                color: #fff;
+                font-size: 16px;
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 章节封面组件
+.chaptersCoverCon {
+  .flex(row, nowrap, flex-start, center);
+  height: 100%;
+
+  // 章节封面图
+  .chaptersCoverImg {
+    .wh(395px, 395px);
+    margin-right: 45px;
+  }
+  // 章节索引
+  .chaptersIndex {
+    font-size: 154px;
+    font-family: DINAlternate-Bold, DINAlternate;
+    font-weight: bold;
+  }
+  // 标题
+  .titCon {
+    font-size: 55px;
+    font-weight: bold;
+  }
+}
+
+// 封面
+.coverCon {
+  .A4();
+  background: url('https://staticres.linhuiba.com/project-custom/location-insight/bg_cube_pdf@2x.png')
+    no-repeat;
+  background-size: 100% 100%;
+  background-color: #00002e;
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .titCon {
+    .wh(648px, 106px);
+    margin-top: 88px;
+  }
+
+  .report{
+    height: 24px;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+    // opacity: 0.6;
+  }
+
+  .qrCode{
+    position: absolute;
+    left: 80px;
+    bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+     p{
+      height: 20px;
+      font-size: 14px;
+      color: #FFFFFF;
+      line-height: 20px;
+      margin-top: 16px
+    }
+  }
+}
+
+// 目录
+.catalogCon {
+  .A4();
+  background: url('https://staticres.linhuiba.com/project-custom/location-insight/bg_catalog_pdf@2x.png')
+    no-repeat;
+  background-size: 100% 100%;
+  background-color: #00002e;
+  position: relative;
+
+  .mainCon {
+    .flex();
+    position: relative;
+    margin-top: 160px;
+    padding-left: 28px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      .wh(28px, 1.2px);
+      background-color: #979797;
+    }
+    .catalogItemCon {
+      position: relative;
+      border-top: 1.2px solid #979797;
+      padding: 35px 45px 0 0;
+      color: #4D4D6D;
+
+      .catalogItemPage{
+        position: absolute;
+        top: -86px;
+        left: -15px;
+        width: 54px;
+        height: 66px;
+        font-size: 56px;
+        font-family: DINAlternate-Bold, DINAlternate;
+        font-weight: bold;
+        line-height: 66px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        .wh(20px, 20px);
+        border-radius: 50%;
+        background-color: #006aff;
+        margin-top: -10px;
+      }
+
+      .triangleArrow {
+        font-size: 10px;
+        margin-right: 6px;
+        vertical-align: baseline;
+      }
+    }
+
+    .pageIndex{
+      color:#FFFFFF !important;
+    }
+  }
+
+  .footer{
+    position: absolute;
+    left: 66px;
+    bottom: 70px;
+  }
+}
+
+// 客流概览
+.overviewOfPassengerFlow {
+  .overviewCon {
+    .A4();
+    .commonBg();
+  }
+  
+  .firstPage {
+    .A4();
+    .commonBg();
+    position: relative;
+    
+    .content{
+      margin-top: 70px;
+      .flex(row, nowrap, space-between);
+      .left{
+        width: 552px;
+        height: 541px;
+        background: linear-gradient(360deg, rgba(0,98,169,0.01) 0%, rgba(0,20,112,0.43) 100%);
+        border-radius: 8px;
+        padding: 20px;
+        img {
+          object-fit: cover;
+          border-radius: 8px;
+        }
+      }
+      .right{
+        flex: 1;
+        padding: 32px 44px;
+        :global {
+          .v2TitleOuter { // 最外层
+            .v2Title {
+              color: #fff;
+            } // 核心Title
+          }
+        }
+      }
+    }
+    .footer{
+      position: absolute;
+      right: 66px;
+      bottom: 70px;
+    }
+  
+  }
+}
+.fLowTable{
+    .A4();
+    .commonBg();
+
+    .tableContainer{
+      margin-top: 40px;
+      :global {
+        .ant-table-wrapper {
+          .ant-table {
+            background: transparent;
+            .ant-table-thead {
+              .ant-table-cell {
+                background: #006AFF;
+                color: #fff;
+                font-size: 14px;
+                font-weight: bold;
+                // border-left: 1px solid rgba(255, 255, 255, 0.3);
+                // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                border-left: 1px solid rgba(255, 255, 255, 0.3);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                border-top: 1px solid rgba(255, 255, 255, 0.3);
+              }
+              tr{
+                // &:first-child {
+                //   .ant-table-cell:first-child {
+                //     border-left: none;
+                //   }
+                // }
+                &:last-child {
+                  .ant-table-cell:last-child {
+                    border-right: 1px solid rgba(255, 255, 255, 0.3);
+                  }
+                }
+              }
+            }
+
+            .ant-table-tbody {
+              tr {
+                td.ant-table-cell {
+                  background: transparent;
+                  color: #fff;
+                  font-size: 14px;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  // border-bottom: none;
+                  // border-left: 1px solid rgba(255, 255, 255, 0.3);
+                  border-left: 1px solid rgba(255, 255, 255, 0.3);
+                  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                  border-top: 1px solid rgba(255, 255, 255, 0.3);
+                }
+                &:first-child {
+                 .ant-table-cell{
+                    border-top: none;
+                  }
+                }
+                 &{
+                  .ant-table-cell:last-child {
+                    border-right: 1px solid rgba(255, 255, 255, 0.3);
+                  }
+                }
+                &:nth-child(1n) {
+                  td.ant-table-cell {
+                    background-color: #002760;
+                    color: #fff;
+                    font-size: 14px;
+                    // border-bottom: none;
+                  }
+                }
+                &:nth-child(2n) {
+                  td.ant-table-cell {
+                    background-color: transparent;
+                    color: #fff;
+                    font-size: 14px;
+                    // border-bottom: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+// 周边数据
+.peripheralData {
+  .overviewCon {
+    .A4();
+    .commonBg();
+  }
+  
+  .firstPage {
+    .A4();
+    .commonBg();
+    position: relative;
+    
+    .content{
+      margin-top: 70px;
+
+      :global {
+        .ant-space{
+          width: 100%;
+        }
+        .v2TitleOuter { // 最外层
+          .v2Title {
+            color: #fff;
+          } // 核心Title
+        }
+      }
+     
+    }
+    .footer{
+      position: absolute;
+      right: 66px;
+      bottom: 70px;
+    }
+    
+    .cityInformation{
+      width: 100%;
+      height: 465px;
+      background: linear-gradient(360deg, rgba(0,98,169,0.01) 0%, rgba(0,20,112,0.43) 100%);
+      border-radius: 8px;
+      padding: 24px 20px;
+    }
+
+    .chartsContent{
+      width: 490px;
+      height: 270px;
+      background: linear-gradient(360deg, rgba(0,98,169,0.01) 0%, rgba(0,20,112,0.43) 100%);
+      border-radius: 8px;
+      padding: 12px;
+    }
+  }
+}
+// 商圈概览
+.tradingAreaCon {
+  .overviewCon {
+    .A4();
+    .commonBg();
+  }
+
+  .contentCon {
+    .A4();
+    .commonBg();
+    position: relative;
+
+    .flexCon {
+      .flex();
+      margin-top: 80px;
+
+      .radarCon {
+        .sectionGradient();
+
+        .centerTit {
+          margin: 0 auto;
+          width: max-content;
+        }
+
+        .roundCon {
+          .flex(row, nowrap, space-between, center);
+        }
+
+        .radarAngleItemCon {
+          .flex();
+
+          .decorateStick {
+            .wh(4px, 14px);
+            border-radius: 2px;
+            margin-right: 6px;
+            margin-top: 4px;
+          }
+        }
+      }
+
+      .receiveScoreCon {
+        margin-left: 60px;
+        flex: 1;
+
+        .explainCon {
+          padding: 20px 12px;
+          .progressBarItemCon {
+            position: relative;
+
+            .smileCon {
+              position: absolute;
+              .wh(24px, 24px);
+              top: -3px;
+              left: 50%;
+              margin-top: 3px;
+              margin-left: -12px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer{
+      position: absolute;
+      right: 66px;
+      bottom: 70px;
+    }
+  }
+}
+// pdf目录
+.pdfList {
+  .A4();
+  .commonBg();
+  .listContent{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .list{
+      margin-left: 66px
+    }
+  }
+}
+
+
+
+// 城市评估
+.cityCon {
+  .sectionMainCon {
+    .A4();
+    .commonBg();
+  }
+
+  .cityBasicCon {
+    .A4();
+    .commonBg();
+    position: relative;
+
+    .flexCon {
+      .commonFlexCon();
+    }
+
+    
+  }
+
+  .cityBusinessCon {
+    .cityBasicCon();
+    position: relative;
+
+    .sectionRightCon {
+      flex: 1;
+    }
+  }
+}
+
+// 商业氛围
+.businessCon {
+  .sectionMainCon {
+    .A4();
+    .commonBg();
+  }
+
+  .businessOverviewCon {
+    .A4();
+    .commonBg();
+    position: relative;
+
+    .flexCon {
+      .commonFlexCon();
+    }
+    
+  }
+  // 餐饮业态
+  .cateringCon {
+    .A4();
+    .commonBg();
+  }
+  // 购物业态
+  .shoppingCon {
+    .A4();
+    .commonBg();
+    position: relative;
+
+    .flexCon {
+      .commonFlexCon();
+      align-items: center;
+      .sectionRightCon {
+        flex: 1;
+      }
+    }
+
+  }
+  // 机构业态
+  .agencyCon {
+    .typeSchooldCon {
+      .A4();
+      .commonBg();
+
+      .flexCon {
+        .commonFlexCon();
+        .sectionRightCon {
+          flex: 1;
+          margin-left: 25px;
+          .sectionGradient();
+          padding: 22px 12px;
+          box-sizing: border-box;
+        }
+      }
+      :global {
+        .ant-table-wrapper {
+          .ant-table {
+            background: transparent;
+            .ant-table-thead {
+              .ant-table-cell {
+                background-color: #002760;
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                border-bottom: none;
+                padding: 9px 14px;
+              }
+            }
+
+            .ant-table-tbody {
+              tr {
+                td.ant-table-cell {
+                  background: transparent;
+                  color: #fff;
+                  font-size: 16px;
+                  border-bottom: none;
+                  padding: 9px 14px;
+                }
+                &:nth-child(2n) {
+                  td.ant-table-cell {
+                    background-color: #002760;
+                    color: #fff;
+                    font-size: 16px;
+                    border-bottom: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .typeHospitalCon {
+      .A4();
+      .commonBg();
+
+      .aloneCenterCon {
+        margin: 80px auto;
+        .sectionGradient();
+        width: 440px;
+        padding: 22px 12px;
+      }
+      :global {
+        .ant-table-wrapper {
+          .ant-table {
+            background: transparent;
+            .ant-table-thead {
+              .ant-table-cell {
+                background-color: #002760;
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                border-bottom: none;
+                padding: 9px 14px;
+              }
+            }
+
+            .ant-table-tbody {
+              tr {
+                td.ant-table-cell {
+                  background: transparent;
+                  color: #fff;
+                  font-size: 16px;
+                  border-bottom: none;
+                  padding: 9px 14px;
+                }
+                &:nth-child(2n) {
+                  td.ant-table-cell {
+                    background-color: #002760;
+                    color: #fff;
+                    font-size: 16px;
+                    border-bottom: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // 休闲服务业态
+  .leisureServiceCon {
+    .A4();
+    .commonBg();
+
+    .flexCon {
+      .commonFlexCon();
+
+      .sectionRightCon {
+        .sectionGradient();
+        width: 440px;
+        padding: 22px 12px;
+      }
+    }
+  }
+}
+
+// 客群客流评估
+.crowdFlowCon {
+  .sectionMainCon {
+    .A4();
+    .commonBg();
+  }
+
+  .crowdFlowOverviewCon {
+    .A4();
+    .commonBg();
+
+    .flexCon {
+      .commonFlexCon();
+
+      .sectionLeftCon {
+        .flexSection {
+          .flex(row, nowrap, flex-start, center);
+          margin-top: 20px;
+
+          .dailyCon {
+            .wh(170px, 62px);
+            background: #0e164c;
+            border-radius: 5px;
+            text-align: center;
+            color: #c4c7d0;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .crowdFlowPersonSex {
+    .crowdFlowOverviewCon();
+
+    // .sectionGradient();
+    .flexCon {
+      .sectionRightCon {
+        .sectionGradient();
+      }
+    }
+  }
+
+  .crowdFlowExponent {
+    .A4();
+    .commonBg();
+  }
+
+  .marriageIndustryCon {
+    .crowdFlowOverviewCon();
+
+    .flexCon {
+      .flexSection {
+        .flex(row, nowrap, space-between, center);
+
+        .flexItem {
+          width: 120px;
+          box-sizing: border-box;
+          text-align: center;
+          margin: 0 auto;
+          .imgCon {
+            .wh(64px, 64px);
+            display: inline-block;
+          }
+        }
+      }
+
+      .sectionRightCon {
+        flex: 1;
+        .sectionGradient();
+      }
+    }
+  }
+
+  .consumptionHousingPrice {
+    .crowdFlowPersonSex();
+  }
+
+  .preferenceCon {
+    .crowdFlowOverviewCon();
+    position: relative;
+
+    .flexCon {
+      .sectionRightCon {
+        flex: 1;
+        .sectionGradient();
+      }
+    }
+  }
+}
+
+// 交通便利评估
+.trafficCon {
+  .sectionMainCon {
+    .A4();
+    .commonBg();
+  }
+
+  .trafficOverviewCon {
+    .A4();
+    .commonBg();
+
+    .flexCon {
+      .commonFlexCon();
+    }
+  }
+
+  .trafficBusSubwayCon {
+    .A4();
+    .commonBg();
+
+    .flexCon {
+      .commonFlexCon();
+
+      .sectionRightCon {
+        .sectionGradient();
+        flex: 1;
+      }
+    }
+  }
+
+  .trafficGasTrainCon {
+    .trafficBusSubwayCon();
+  }
+}
+.integration {
+  background-color: #1b1b1b !important;
+  // .radarCon {
+  //   background: transparent !important;
+  // }
+}
+

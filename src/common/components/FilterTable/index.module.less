@@ -1,0 +1,44 @@
+.customerTable {
+  :global {
+    .ant-table {
+      .ant-table-thead {
+        &>tr {
+          &>th {
+            background: #F6F7F9;
+            height: 40px;
+          }
+        }
+      }
+
+      .ant-table-column-sorter {
+        margin-left: 8px;
+      }
+
+      .ant-table-column-sorters {
+        justify-content: flex-start;
+      }
+
+      .ant-table-column-title {
+        flex: 0 0 auto;
+      }
+
+      .single-row {
+        background-color: #FAFAFA;
+      }
+
+      .ant-table-tbody {
+        .ant-table-row {
+          .ant-table-cell-row-hover {
+            background-color: #EBF4FF;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.tableWrapper {
+  // max-height: calc(100vh - 350px);
+  overflow: auto;
+}

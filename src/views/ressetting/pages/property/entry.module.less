@@ -1,0 +1,37 @@
+.container {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+
+  .rowName{
+    margin-left: 6px;
+  }
+
+  :global{
+    .ant-table-tbody{
+        .ant-table-row-level-1{
+          .ant-table-cell{
+            svg{
+              display: none !important;
+            }
+          }
+        }
+    }
+  }
+}
+
+
+.row-dragging {
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+
+.row-dragging td {
+  padding: 16px;
+}
+
+.row-dragging .drag-visible {
+  visibility: visible;
+}

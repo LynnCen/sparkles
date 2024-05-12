@@ -1,0 +1,118 @@
+.infoTop {
+  .infoTopDesc {
+    padding: 8px 16px 24px;
+    background: #F7F7FA;
+    border-radius: 4px;
+    margin-top: 24px;
+    margin-bottom: 9px;
+  }
+}
+
+.infoBTop {
+  height: 240px;
+  margin-bottom: 17px;
+  position: relative;
+
+  .infoBTopLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    :global {
+      .ant-image-img {
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .infoBTopRight {
+    flex: 1;
+    padding-left: 324px;
+
+    .customItem {
+      display: inline-block;
+      width: 100px;
+    }
+  }
+
+  .operateAffix {
+    :global {
+      .ant-affix {
+        z-index: 11;
+      }
+    }
+
+    &.operateUnAffix {
+      >div {
+        &:first-child {
+          display: none;
+        }
+      }
+
+      :global {
+        .ant-affix {
+          position: static !important;
+        }
+      }
+    }
+  }
+}
+
+.infoCTotal {
+  background-color: #E8F3FF;
+  line-height: 40px;
+  color: #656E85;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 18px;
+
+  .infoCTotalItem {
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.infoNeedFooter {
+
+  // 当我表单类drawer需要底部确认按钮时，需要以下样式
+  :global {
+    .ant-drawer-body {
+      padding-bottom: 88px;
+    }
+  }
+
+  .drawerFooter {
+    padding: 0 40px;
+    box-sizing: border-box;
+    height: 64px;
+    box-shadow: 0px -2px 4px 1px #F6F7F9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+  }
+}
+
+.tabbarIcon {
+  margin-left: 5px;
+  margin-right: 0;
+  color: #A4B1CD;
+}
+
+.emptyDiv {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

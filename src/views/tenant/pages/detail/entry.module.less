@@ -1,0 +1,77 @@
+.container {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+    cursor: pointer;
+
+  }
+  .titleBox{
+    display: flex;
+    justify-content: space-between
+  }
+  background-color: #fff;
+  padding: 12px;
+
+  :global {
+    .ant-typography {
+      margin: 20px 0;
+    }
+
+    .ant-modal {
+      &.importStoreModal {
+        .ant-modal-content {
+          .ant-form {
+            .ant-form-item {
+              margin-bottom: 0;
+            }
+
+            .hintText {
+              color: #BBC0C7;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      &.setManagerModal {
+        .ant-tag {
+          display: inline-block;
+          margin-top: 4px;
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    .ant-drawer-content-wrapper {
+      .ant-drawer-content {
+        .ant-drawer-wrapper-body {
+          .ant-drawer-body {
+            .ant-form {
+              &.crowdStorehouseSearchCon {
+                .ant-form-item {
+                  .ant-form-item-control {
+                    width: 220px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .createInfo {
+    margin: 10px 0 20px;
+
+    .followerWrap {
+      margin-left: 20px;
+
+      .follower {
+        color: @primary-blue;
+        cursor: pointer;
+      }
+    }
+  }
+}

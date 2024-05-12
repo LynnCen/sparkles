@@ -1,0 +1,71 @@
+
+.excuteWrapper {
+  padding-bottom: 156px;
+
+  .higlightButton {
+    color: #006AFF;
+    border: solid 1px #006AFF;
+  }
+
+  .warningBar {
+    padding: 13px;
+    display: flex;
+    background-color: #FFF1F0;
+    border-radius: 2px;
+    border: solid 1px #FFA39E;
+
+    .offlineIcon {
+      color: #FF4D4F;
+    }
+    .offlineText {
+      margin-left: 5px;
+      color: #132144;
+    }
+    .refresh {
+      margin-left: 40px;
+      color: #006AFF;
+      cursor: pointer;
+      .refreshText {
+        margin-left: 3px;
+      }
+    }
+  }
+
+  .infoBar {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    .source {
+      font-size: 16px;
+      font-weight: bold;
+      color: #132144;
+    }
+  }
+
+  .guideBar {
+    display: flex;
+    justify-content: space-between;
+    .guideText {
+      color: #768098;
+    }
+  }
+}
+
+.tableList {
+  .statusOuter {
+    display: flex;
+    align-items: center;
+    .statusIcon {
+      font-size: 8px;
+      &.statusOffline {
+        color: #F23030;
+      }
+      &.statusOnline {
+        color: #1BA373;
+      }
+    }
+    .statusText {
+      color: #131144;
+    }
+  }
+}

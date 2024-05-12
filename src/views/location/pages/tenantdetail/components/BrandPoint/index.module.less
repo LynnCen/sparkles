@@ -1,0 +1,95 @@
+.container {
+  .logoBorder {
+    .wh(30px);
+    border: 1px solid rgba(151, 151, 151, 0.26);
+    border-radius: 50%;
+    position: relative;
+
+    img {
+      .wh(20px);
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+    }
+  }
+
+  .noLogo {
+    .wh(30px);
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+//新增品牌抽屉层样式
+// .drawer{
+//   background-color: antiquewhite;
+//   .test{
+//     background-color: aquamarine;
+//   }
+
+// }
+
+// :global {
+//   .newBrandDrawer {
+//     .ant-drawer-header {
+//       height: 52px;
+//       padding: 24px 888px 0 40px;
+//     }
+
+//     .ant-drawer-title {
+//       font-size: 20px;
+//       font-family: PingFangSC-Medium, PingFang SC;
+//       font-weight: 500;
+//       color: #1D2129;
+//       line-height: 28px;
+//     }
+
+//     .ant-drawer-body {
+//       padding: 24px 25px 16px 32px;
+
+//     }
+
+//     .ant-drawer-header {
+//       border: none;
+//     }
+
+//   }
+
+//   .ant-space {
+//     margin-top: 63px;
+//     float: right;
+//   }
+// }
+
+// .closeIcon {
+//   .wh(32px);
+//   .flex(row, nowrap, center, center);
+//   position: absolute;
+//   background-color: #fff;
+//   left: -32px;
+//   top: 40px;
+
+//   .icon {
+//     .wh(12px)
+//   }
+// }
+
+.newBrandDrawer {
+  :global {
+    .ant-drawer-content-wrapper {
+      background-color: red;
+      .ant-drawer-content {
+        padding: 24px 32px 16px;
+      }
+    }
+  }
+}
+.common{
+  width:max-content;
+  background-color: #eee;
+  padding: 4px;
+  border-radius: 4px;
+}

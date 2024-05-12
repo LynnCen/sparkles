@@ -1,0 +1,162 @@
+.container {
+  .logo {
+    height: 64px;
+    padding: 0 0 0 71px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    white-space: nowrap;
+    .icon {
+      font-size: 34px;
+      position: absolute;
+      left: 24px;
+    }
+    .logoText {
+      opacity: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: bold;
+      transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+  .collapsedStyle {
+    .hiddenName {
+      opacity: 0;
+    }
+  }
+  .siderWrap {
+    min-height: 100vh;
+    .menuIcon {
+      font-size: 18px;
+    }
+  }
+  .customerIcon {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .main {
+    transition: margin-left 0.2s;
+    min-width: 375px; // 兼容手机端
+
+    :global {
+      .ant-layout-header {
+        height: 48px;
+      }
+    }
+  }
+  .siteLayout {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    .trigger {
+      font-size: 16px;
+      cursor: pointer;
+      transition: color 0.3s;
+      color: #9EA5B0;
+      &:hover {
+        color: @primary-blue;
+      }
+    }
+    .userInfo {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      .dropdownCursor {
+        cursor: pointer;
+      }
+      .menu {
+        width: 13px;
+        height: 25px;
+        background: url(~@/assets/menu.png) 100%/100% no-repeat;
+        cursor: pointer;
+        &:hover {
+          background: url(~@/assets/menu-hover.png) 100%/100% no-repeat;
+        }
+      }
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        border-radius: 50%;
+      }
+      .divider {
+        height: 12px;
+        width: 1px;
+        background: #E2E2E2;
+        margin: 0 16px;
+      }
+    }
+  }
+  .content {
+    margin: 16px 16px 0;
+    // fix 解决 部分容器超出产生重叠的影子
+    min-height: calc(100vh - 84px);
+    :global {
+      .ka-wrapper {
+        height: 100%;
+        .ka-content {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+// 对外开放页面
+.isOpen {
+  .content {
+      // height: auto;
+      // min-height: 100vh;
+    margin: 0;
+    // height: 100vh; // 对外开放页面全屏
+  }
+}
+
+/* 切换组件文档页面 */
+.app-switch {
+  cursor: pointer;
+
+  &-popover :global {
+
+    .ant-popover-inner {
+      border-radius: 4px;
+    }
+
+    .ant-popover-inner-content {
+      padding: 12px;
+    }
+  }
+
+  &--icon {
+    font-size: 28px;
+  }
+
+  &-item {
+    display: flex;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    color: #606266;
+
+    &:hover {
+      background: #F0EFEF;
+    }
+
+    img {
+      margin-right: 5px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &.is-current {
+      background: #F0EFEF;
+    }
+  }
+
+  &--name {
+    color: #000000;
+  }
+}

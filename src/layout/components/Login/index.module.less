@@ -1,0 +1,189 @@
+.container {
+  background: url('~@/assets/images/login-bg.png') 100%/100% no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  min-width: 1440px;
+  display: flex;
+  align-items: center;
+  .content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 80%;
+    .left {
+      width: 50%;
+      height: 100%;
+      background-color: #f6f7f9;
+      position: relative;
+      .logo {
+        font-size: 120px;
+        position: absolute;
+        // top: -54px;
+        margin-top: -24px;
+        left: 40px;
+      }
+      .mainImg {
+        width: 75%;
+        margin: 25% auto 0;
+        height: 58%;
+        background: url('~@/assets/images/online-report.png') 100%/100% no-repeat;
+      }
+      .rightBottomImg {
+        width: 32%;
+        height: 27%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: url('~@/assets/images/left-right-bottom.png') 100%/100% no-repeat;
+      }
+    }
+    .rightWrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      background-color: #fff;
+      padding: 0 80px;
+      position: relative;
+    }
+    .right {
+      width: 100%;
+      .title {
+        font-size: 42px;
+        font-weight: bold;
+        color: #242434;
+      }
+      .subTitle {
+        margin-top: 8px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        color: rgba(36,36,52,0.7);
+        letter-spacing: 2px;
+        font-weight: 500;
+      }
+      .rightTopImg {
+        width: 32%;
+        height: 27%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url('~@/assets/images/right-right-top.png') 100%/100% no-repeat;
+      }
+    }
+  }
+
+  .getCode {
+    cursor: pointer;
+    position: absolute;
+    height: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 24px;
+    right: 0;
+    background-color: #ff861d;
+  }
+}
+
+.icon {
+  color: #b7b7bb;
+}
+
+.listWrap {
+  max-height: 500px;
+  overflow: auto;
+  margin: 24px 32px;
+  .item {
+    color: #132144;
+    font-size: 14px;
+    .flexItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .status {
+        margin-left: 4px;
+      }
+      .operateIcon {
+        color: #999999;
+      }
+    }
+    .childItem {
+      color: #999;
+      font-size: 12px;
+      margin-top: 2px;
+    }
+  }
+  :global {
+    .ant-list-items {
+      .ant-list-item {
+        padding: 20px 16px;
+        border: 1px solid #f3f6fc;
+        cursor: pointer;
+        &:hover {
+          background-color: #f3f6fc;
+        }
+        margin-bottom: 12px;
+        &:last-child {
+          border-bottom: 1px solid #f3f6fc;
+          margin-bottom: 0;
+        }
+      }
+    }
+    
+  }
+}
+.AccountLogin {
+  margin-top: 14px;
+  .usernameInput {
+    margin-bottom: 22px;
+  }
+  .usernameTips {
+    color: #999999;
+    margin: 12px 0 0 0;
+    font-size: 12px;
+    .icon {
+      margin-right: 8px;
+    }
+  }
+  .passwordTips {
+    text-align: right;
+    font-size: 14px;
+    margin: 0 0 24px;
+  }
+  input:-webkit-autofill { // 清除自动填充导致的背景色
+    box-shadow: 0 0 0 1000px #fff inset!important;
+  }
+}
+
+.codeLogin {
+  margin-top: 14px;
+  .inputStyle {
+    position: relative;
+  }
+}
+
+.submitBtn {
+  margin-top: 20px;
+}
+
+.sendButton {
+  &[disabled] {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.spaceWrapper {
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  top: -20px;
+  right: -18px;
+}
+
+

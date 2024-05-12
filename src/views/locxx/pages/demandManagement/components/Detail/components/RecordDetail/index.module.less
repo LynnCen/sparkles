@@ -1,0 +1,53 @@
+.recordDetail{
+  height: 100%;
+  .header{
+    height: 64px;
+    padding: 28px 16px 12px;
+    background-color: #fff;
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  .view{
+    background: #F6F7F9;
+    overflow-y: hidden;
+
+    audio{
+      width: 100%;
+      border-radius: 24px;
+      background: #EEEEEE;
+    }
+
+    .msgList{
+      height: 100%;
+      overflow-y: scroll;
+      padding: 12px 16px;
+      
+
+      :global{
+        .ant-list-items{
+          .ant-list-item{
+            padding: 8px 0;
+          }
+        }
+      }
+      .right{
+        flex-direction: row-reverse;
+      }
+      .msg{
+        width: 100%;
+        font-size: 14px;
+        color: #1D2129;
+        line-height: 20px;
+        padding: 8px 12px;
+        background-color: #fff;
+        border-radius: 4px;
+
+        svg{
+          margin-right: 4px;
+          cursor: pointer;
+          color: #000;
+        }
+      }
+    }
+  }
+}

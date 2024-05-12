@@ -1,0 +1,52 @@
+// .container {
+//   background-color: #fff;
+//   padding: 16px 0;
+// }
+
+.drawerNeedFooter {
+
+  // 当我表单类drawer需要底部确认按钮时，需要以下样式
+  :global {
+    .ant-drawer-body {
+      padding-bottom: 88px;
+    }
+  }
+  .demandBasicInfo {
+    padding: 16px;
+    font-size: 14px;
+    background: #F7F7FA;
+    margin-bottom: 24px;
+  }
+
+  .drawerFooter {
+    padding: 0 40px;
+    box-sizing: border-box;
+    height: 64px;
+    box-shadow: 0px -2px 4px 1px #F6F7F9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+  }
+}
+
+.myUpload {
+  :global {
+    .ant-row {
+      .ant-form-item-label>label {
+        div {
+          flex-wrap: wrap;
+
+          span {
+            white-space: pre-wrap;
+          }
+        }
+      }
+    }
+  }
+}

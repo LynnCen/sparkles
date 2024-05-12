@@ -1,0 +1,198 @@
+.container {
+  .searchBox {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 10px 0 10px;
+  }
+
+  .tableCon {
+    background-color: #fff;
+    padding: 10px
+  }
+}
+
+.modalCanvasDrawImg {
+  .flex();
+  margin-top: 12px;
+  .canvasRight {
+    margin-left: 8px;
+  }
+}
+.videoItem{
+  .videoTitle{
+    font-size: 14px;
+    font-weight: 500;
+    color: #222222;
+    line-height: 20px;
+
+    svg{
+      width: 18px ;
+      height: 14px;
+    }
+    .videoTime{
+      font-size: 12px;
+      font-weight: 400;
+      color: #666666;
+      line-height: 16px;
+      margin-top: 4px;
+    }
+  }
+  .videoAndImage {
+    position: relative;
+    video{
+      border-radius: 4px;
+    }
+   
+    :global {
+      .ant-image {
+        img {
+          object-fit: cover;
+          border-radius: 4px;
+        }
+      }
+    }
+    .analysisSwitchButton {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 2;
+    }
+  }
+
+}
+
+.analysisImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #f6f7f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    object-fit: contain;
+  }
+  .pointSvg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  .maskContent {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+  }
+  &:hover {
+    .maskContent {
+      opacity: 1;
+    }
+  }
+}
+
+
+.analysisImageModalWrapper {
+  :global {
+    .ant-modal-content {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+  .analysisImageModal {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      object-fit: contain;
+    }
+    .pointSvg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+    .closeIcon {
+      font-size: 36px;
+      color: #f6f7f9;
+      position: absolute;
+      z-index: 3;
+      top: -18px;
+      right: -18px;
+    }
+  }
+}
+
+.analysisVideoModalWrapper {
+  :global {
+    .ant-modal-content {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+  .analysisVideoModal {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    video{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: contain;
+    }
+  
+    canvas{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+  
+    :global{
+      .video-js{
+        .vjs-control-bar{
+          z-index: 9 !important;
+        }
+      
+        .vjs-big-play-button{
+          z-index: 9 !important;
+        }
+      }
+    }
+   
+    .closeIcon {
+      font-size: 36px;
+      color: #f6f7f9;
+      position: absolute;
+      z-index: 3;
+      top: -20px;
+      right: 10px;
+    }
+  }
+}

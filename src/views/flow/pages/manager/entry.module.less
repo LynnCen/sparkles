@@ -1,0 +1,32 @@
+.container {
+  background: #fff;
+  padding: 12px;
+
+  :global {
+    .ant-table-wrapper {
+      .ant-table-tbody {
+        .ant-btn.ant-btn-link {
+          padding-left: 0
+        }
+      }
+    }
+
+    .ant-modal-root {
+      .setFlowManagerModal {
+        &.ant-modal-wrap {
+          .ant-modal-content {
+            .ant-modal-body {
+              .ant-form-item-control {
+                margin-top: 4px;
+              }
+
+              .tagItem.ant-tag {
+                margin-bottom: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

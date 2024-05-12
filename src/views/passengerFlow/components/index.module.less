@@ -1,0 +1,37 @@
+.teamModal {
+  .teamSearch {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+    :global {
+      .ant-form-item {
+        flex: 1;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .teamSelect {
+    margin-top: 18px;
+    .teamSelectText {
+      font-size: 14px;
+      line-height: 14px;
+      color: #17273A;
+      margin-bottom: 8px;
+    }
+  }
+}
+.shopSearch {
+  .noColon {
+    :global {
+      .ant-form-item-label {
+        // font-weight: 700;
+        display: none;
+        .ant-form-item-no-colon {
+          &::before {
+            display: none!important;
+          }
+        }
+      }
+    }
+  }
+}

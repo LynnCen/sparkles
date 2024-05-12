@@ -1,0 +1,52 @@
+@import './common/styles/reset.less';
+@import './common/styles/ant-reset-v2.less';
+@import './common/styles/common.less';
+@import './common/styles/component-doc.less';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+  'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+  height: 100%;
+  font-size: 14px;
+}
+
+/* 路由切换动效 */
+.fade-enter {
+  opacity: 0;
+  transform: translate(25px, 0);
+  z-index: 1;
+}
+.fade-enter.fade-enter-active,
+.fade-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade-enter.fade-enter-active {
+  transition: opacity 200ms ease-out, transform 300ms ease;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  // transform: translate(30px, 0);
+  // transition: opacity 200ms ease-out, transform 300ms ease;
+}
+
+/* antd默认样式覆盖 */
+
+// tree 默认选中样式-去除背景，改为文字高亮
+.ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  color: @primary-blue;
+}
+// treeSelect选中样式同步修改
+.ant-select-tree .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+  color: @primary-blue;
+}

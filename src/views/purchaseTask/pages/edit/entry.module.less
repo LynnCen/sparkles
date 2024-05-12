@@ -1,0 +1,191 @@
+.container {
+  .basicTitleRow {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-size: 20px;
+      color: #131144;
+      font-weight: bold;
+    }
+    :global {
+      .ant-btn {
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .itemsWrapper {
+    display: flex;
+    flex-direction: row;
+
+    .item {
+      margin-right: 40px;
+      max-width: 250px;
+    }
+
+    .itemTitle {
+      color: #768098;
+      font-size: 14px;
+    }
+    .itemValue {
+      margin-top: 8px;
+      color: #132144;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }  
+}
+
+.form {
+
+  :global {
+
+    .flex-row {
+      .flex();
+    
+       > .ant-form-item {
+        flex-basis: 50%;
+        flex-shrink: 0;
+        flex-grow: 0;
+
+        &:nth-child(2n) {
+          flex-shrink: 1;
+        }
+
+        .ant-form-item-control-input {
+          width: 100%;
+
+          .ant-picker {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .ant-picker {
+      width: 100%;
+    }
+
+    .ant-form-item-label {
+      width: 80px;
+      white-space: normal;
+      overflow: visible;
+
+      > label {
+        color: #768098;
+      }
+    }
+
+  }
+}
+
+.flex {
+  .flex()
+}
+
+.price {
+  .flex();
+
+  .ant-form-item-control-input {
+    width: 256px;
+
+    .ant-input-number-group-wrapper, .ant-picker {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    width: 77px;
+    height: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #768098;
+    margin-right: 12px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-top: 12px;
+  }
+  
+  &__content {
+    width: 574px;
+    background: #FAFAFA;
+    border-radius: 4px;
+    border: 1px solid #D1D3D6;
+    padding: 16px 12px 0;
+    flex-grow: 1;
+  }
+  &__actual {
+    width: 340px;
+    margin-bottom: 12px;
+  }
+  &__deposit {
+    width: 180px;
+  }
+  &__deposit_recovery {
+    width: 432px;
+  }
+}
+
+.size {
+  background-color: #f2f4f8;
+  padding: 6px 12px;
+  min-height: 34px;
+}
+
+// 额外成本展示
+.extra-amounts {
+  width: fit-content;
+
+  .extra-amount-item {
+    display: flex;
+    justify-content: space-between;
+  
+    &__label {
+      min-width: 60px;
+      text-align: right;
+    }
+  }
+
+  .extra-amount-total {
+    position: relative;
+
+    &.no-amount .extra-amount-item__label {
+      width: auto;
+      min-width: auto;
+    }
+
+    &__edit {
+      position: absolute;
+      right: -35px;
+      height: auto;
+      padding: 0;
+    }
+  }
+}
+
+// 付款计划布局
+.plans {
+  :global {
+    .ant-form-item-row {
+      flex-direction: column;
+    }
+  }
+
+  &__date {
+    :global {
+      .ant-form-item-control-input {
+        width: 240px;
+      }
+    }
+  }
+
+  &__amount {
+    :global {
+      .ant-form-item-control-input {
+        width: 180px;
+      }
+    }
+  }
+}

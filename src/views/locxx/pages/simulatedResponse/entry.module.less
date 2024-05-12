@@ -1,0 +1,100 @@
+.container {
+  background-color: #fff;
+  padding: 12px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: auto;
+  gap: 20px;
+
+  &.left {
+    justify-content: flex-start;
+  }
+
+  &.center {
+    justify-content: safe center;
+  }
+
+  &.right {
+    justify-content: flex-end;
+  }
+
+  &Left {
+    border-right: 1px solid #EEEEEE;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  > div {
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 100%;
+  }
+
+  :global .workbench {
+    flex-grow: 1;
+  }
+
+  .simulateWrap {
+    width: 375px;
+    height: 500px;
+    max-height: 800px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    background: url(https://staticres.linhuiba.com/project-custom/locxx-im/login-bg.png) no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    .simulateHeader {
+      height: 44px;
+      background-color: #fff;
+      border-bottom: 1px solid #e1e1e1;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .title {
+        flex-grow: 1;
+      }
+    }
+
+    .simulateContent {
+      flex: auto;
+      height: 0;
+
+      .simulateLogin {
+        height: 100%;
+        padding: 120px 16px 16px;
+
+        .loginTitle {
+          font-size: 24px;
+          font-weight: 500;
+          margin-bottom: 24px;
+        }
+
+        .loginBtn {
+          margin-top: 16px;
+          width: 100%;
+        }
+      }
+
+      .simulateIframe {
+        height: 100%;
+      }
+    }
+  }
+  &.containerInModal {
+    padding: 0;
+    .simulateHeader {
+      .title {
+        text-align: center;
+      }
+    }
+  }
+}

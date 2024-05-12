@@ -1,0 +1,80 @@
+.container {
+  background-color: #fff;
+  padding: 20px 16px 0;
+  .title {
+    color: #132144;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+  .operateBtns {
+    margin-bottom: 20px;
+    :global {
+      .ant-btn {
+        margin-right: 10px;
+      }
+    }
+  }
+  .flowForm {
+    margin-bottom: 14px;
+    :global {
+      .ant-form-item-control {
+        width: 200px;
+      }
+    }
+    .flowRadio {
+      :global {
+        .ant-form-item-control {
+          width: 240px;
+        }
+      }
+    }
+  }
+}
+
+.tableListTotal {
+  line-height: 20px;
+  color: #132144;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.tableList {
+  .statusCommon {
+    display: block;
+    min-width: 4em;
+  }
+  .statusUnBinding {
+    color: #768098;
+  }
+  .statusOffLine {
+    color: #F23030;
+  }
+
+  .statusOnLine {
+      content: '';
+      display: inline-block;
+      width: 8px; 
+      height: 8px; 
+      border-radius: 50%; 
+      background-color: #7ED321; /* 设置圆的颜色 */
+      margin-right: 4px; 
+  }
+  .statusOuter {
+    display: flex;
+    align-items: center;
+    .status {
+      font-size: 12px;
+      padding-right: 4px;
+      color: #999;
+    }
+    .status1 {
+      color: #FF861D;
+    }
+  }
+}
+
+.pointer {
+  color: #006AFF;
+  cursor: pointer;
+}

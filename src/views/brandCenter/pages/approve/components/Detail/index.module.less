@@ -1,0 +1,79 @@
+.detailTop {
+  border-bottom: solid 1px #EEEEEE;
+  padding-bottom: 24px;
+  .customItem {
+    display: inline-block;
+    width: auto;
+    &:not(:first-child){
+      margin-left: 48px;
+    }
+  }
+  .topDesc {
+    margin-top: 20px;
+    padding: 0 16px 16px;
+    background: #F7F7FA;
+    border-radius: 4px;
+  }
+  :global {
+    .ant-btn-primary {
+      color: #fff !important;
+    }
+  }
+}
+
+.detailMain {
+  :global {
+    .ant-btn {
+      color: #006AFF;
+      border-color: #006AFF;
+      border-radius: 3px;
+    }
+    .ant-image .ant-image-img{
+      object-fit: contain;
+    }
+  }
+}
+
+.rejectForm {
+
+  .rejectTips{
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5F6D84;
+    line-height: 20px;
+    padding: 8px;
+    background-color: #F4F5F7;
+    border-radius: 4px;
+
+    margin-top: -4px;
+    margin-bottom: 10px;
+     svg{
+      font-size: 12px;
+      margin-right: 4px;
+      margin-top: 4px;
+    }
+  }
+  :global {
+    .ant-space-item {
+      display: flex;
+      align-items: center;
+      // background-color: yellow;
+    }
+    .ant-radio-wrapper {
+      margin-right: 0;
+      padding-top: 5px
+      // display: flex;
+      // align-items: center;
+    }
+    .ant-form-item {
+      margin-left: 12px;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    // .ant-radio-wrapper:not(:first-child) {
+    //   margin-left: 32px;
+    // }
+  }
+}

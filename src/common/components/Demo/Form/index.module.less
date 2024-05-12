@@ -1,0 +1,62 @@
+.container {
+  background-color: #fff;
+  padding: 16px 12px;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.17em;
+  }
+}
+
+
+.form {
+
+  :global {
+    // .ant-form-item-control-input {
+    //   width: 300px;
+    // }
+
+    // .ant-form-item-control-input-content {
+    //   width: 300px;
+    // }
+
+    .ant-form-item {
+
+      .ant-input,
+      .ant-input-password,
+      .ant-select.ant-select-in-form-item,
+      .ant-picker,
+      .ant-select {
+        width: 300px;
+      }
+  
+      .businesstime .ant-picker {
+        width: 300px;
+      }
+    }
+  
+    .size .ant-input-number-group-wrapper {
+      width: 90px; // (300-16*2)/3
+    }
+
+  }
+}
+
+.flex {
+  
+  .flex();
+}

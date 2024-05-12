@@ -1,0 +1,45 @@
+
+ @prefixCls: page-container;
+ @header: ~'@{prefixCls}-header';
+ @title: ~'@{prefixCls}-title';
+ @body: ~'@{prefixCls}-body';
+
+
+ .@{prefixCls}-wrapper {
+    background-color: white;
+    margin: 16px;
+    padding: 16px;
+    padding-bottom: 0;
+    flex: 1;
+  .@{header}-wrapper {
+    padding-bottom: 16px;
+  }
+  .@{header} {
+    .@{title} {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      color: #17273A;
+      &::before {
+        content: '';
+        height: 14px;
+        margin-right: 6px;
+        width: 2px;
+        background: #006AFF;
+      }
+    }
+  }
+  .@{body}-wrapper {
+    overflow: auto;
+    // margin-left: 24px;
+    // margin-right: 24px;
+  }
+ }
+ .no-padding {
+  padding: 0;
+
+ }
+ .no-margin {
+  margin: 0
+ }

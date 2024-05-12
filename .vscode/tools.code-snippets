@@ -1,0 +1,31 @@
+// name: 工具
+{
+	"生成引入方法库代码": {
+		"prefix": "func",
+		"description": "生成引入方法库代码",
+		"body": [
+			"import { ${1|def,contrast,beautifyThePrice,deepCopy,replaceEmpty,isNotEmpty|} } from '@lhb/func';"
+		],
+	},
+	"快速深拷贝": {
+		"prefix": "dc",
+		"description": "快捷深拷贝",
+		"body": [
+			"JSON.parse(JSON.stringify(${1:xxxx}))",
+		],
+	},
+	"判断是否为数组": {
+		"prefix": "isarr",
+		"description": "判断是否为数组",
+		"body": [
+			"Array.isArray($1)"
+		],
+	},
+	"Object.assign 拷贝": {
+		"prefix": "copy",
+		"description": "Object.assign 拷贝",
+		"body": [
+			"Object.assign($1)"
+		],
+	},
+}

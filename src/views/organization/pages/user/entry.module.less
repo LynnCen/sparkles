@@ -1,0 +1,26 @@
+.wrapLoading {
+  height: 100%;
+  :global {
+    .ant-spin-container {
+      height: 100%;
+    }
+  }
+}
+.container {
+  height: 100%;
+  display: flex;
+  .content {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 60%;
+    .tableWrap {
+      background-color: #fff;
+      padding: 10px;
+    }
+  }
+  .emptyContent {
+    width: 100%;
+    background-color: #fff;
+    padding: 80px;
+  }
+}

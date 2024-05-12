@@ -1,0 +1,75 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.drawContainer{
+
+  :global{
+    .ant-divider{
+      margin: 16px 0;
+    }
+
+    .ant-checkbox-group{
+      width: 100%;
+      height: 100%;
+      .ant-row{
+        overflow-y:auto ;
+      }
+    }
+  }
+
+  .filterBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    :global{
+      .ant-radio-group{
+        .ant-radio-button-wrapper{
+          padding: 0 24px;
+          height: 36px;
+          line-height: 36px;
+          background: #F7F8FA;
+          border: 1px solid #DDDDDD;
+        }
+        .ant-radio-button-wrapper-checked{
+          border-radius: 4px 0px 0px 4px;
+          border: 1px solid #006AFF;
+          background: #FFFFFF;
+        }
+      }
+    }
+
+    &Right{
+      display: flex;
+      align-items: center;
+
+      div:last-child{
+        margin-left: 16px;
+      }
+
+       :global{
+        .ant-btn-primary{
+          background: #006AFF;
+          border-radius: 4px;
+          border: 1px solid #006AFF;
+        }
+      }
+    }
+  }
+}
+
+.taskList{
+  .followRows{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .editIcon{
+
+      &:hover{
+        color: #006AFF;
+      }
+    }
+  }
+}

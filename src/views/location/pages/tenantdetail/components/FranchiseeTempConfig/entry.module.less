@@ -1,0 +1,67 @@
+.point {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.open {
+  background-color: #00D188;
+}
+.unopen {
+  background-color: #FF4D4F;
+}
+.doubleInput {
+  :global {
+    .ant-form-item-control {
+      width: 150px;
+    }
+    .ant-input-number {
+      border-radius: 4px 0 0 4px !important;
+    }
+  }
+}
+.uploadInput {
+  :global {
+    .ant-input-number {
+      border-radius: 4px 0 0 4px !important;
+    }
+  }
+}
+
+// switch选择样式
+.showSwitch {
+  :global {
+    .ant-switch-checked {
+      background-color: #1ba373;
+    }
+  }
+}
+
+.formCon{
+  .detailItem{
+    margin-top: 0px;
+  }
+}
+
+.tabs {
+  position: sticky;
+  left: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer {
+  :global {
+    .ant-drawer-content-wrapper .ant-drawer-content .ant-drawer-wrapper-body .ant-drawer-body {
+      padding: 0px 40px 24px 40px
+    }
+  }
+}
+
+.redMarkList {
+  max-height: 60vh;
+  overflow: auto;
+}

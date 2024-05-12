@@ -1,0 +1,47 @@
+.contacts {
+  display: flex;
+  position: relative;
+
+  :global {
+    .ant-form-item {
+      width: 76%;
+    }
+
+    .ant-btn {
+      position: absolute;
+      bottom: 16px;
+      right: 0;
+    }
+  }
+}
+
+.item{
+  :global {
+    .ant-form-item-control-input-content{
+      display: flex;
+    }
+  }
+  
+  .preSelect{
+    margin: 0 !important;
+    width: auto;
+    :global {
+      .ant-select{
+        .ant-select-selector{
+          border-radius: 4px 0 0 4px !important;
+          background-color: #ddd;
+        }
+      }
+    }
+  }
+
+  .content{
+    flex: 1;
+    margin: 0 !important;
+    :global {
+      .ant-select-selector{
+        border-radius: 0 4px 4px 0 !important;
+      }
+    }
+  }
+}

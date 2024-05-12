@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  .containerTree{
+    flex: 1;
+    max-height: 1000px;
+    box-shadow: 1px 0px 0px 0px #F6F7F9;
+    border-radius: 2px 2px 0px 0px;
+    border: 1px solid #F6F7F9;
+  }
+  .containerTransfer {
+    width: 169px;
+    position: relative;
+    .containerTransferInner {
+      position: absolute;
+      top: 50%;
+      left: 14px;
+      transform:translateY(-50%);
+      width: 141px;
+    }
+    .transferBtn {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:first-child {
+        margin-bottom: 16px;
+      }
+      :global {
+        .anticon + span, span + .anticon {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

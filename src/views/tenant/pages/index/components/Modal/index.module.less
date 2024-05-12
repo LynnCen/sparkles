@@ -1,0 +1,41 @@
+.tenantNameWrap {
+  padding-left: 20px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.checkSelf {
+  color: @primary-blue;
+  cursor: pointer;
+}
+
+// 新建/编辑租户信息弹窗样式
+.operateTenant {
+  .uploadWrap {
+    :global {
+      .ant-form-item-control-input-content {
+        display: flex;
+        .ant-upload-picture-card-wrapper {
+          width: auto;
+        }
+      }
+    }
+  }
+  .uploadExample {
+    width: 104px;
+    height: 104px;
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 2px;
+    text-align: center;
+    :global {
+      .ant-image {
+        display: block;
+      }
+    }
+    .text {
+      color: rgba(0, 0, 0, 0.45);
+      margin-top: 2px;
+    }
+  }
+}

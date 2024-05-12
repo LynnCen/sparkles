@@ -1,0 +1,90 @@
+.container {
+  background-color: #fff;
+  padding: 24px 16px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.industryContent {
+  margin-top: 10px;
+  display: flex;
+  flex: 1;
+  overflow-y: scroll;
+  border: solid 1px #DDD;
+
+  .leftList {
+    padding: 16px 12px;
+    border-right: solid 1px #DDD;
+    width: 140px;
+    overflow-y: scroll;
+    flex-shrink: 0;
+
+    :global {
+      .ant-anchor-ink {
+        display: none;
+      }
+
+      .ant-anchor-link {
+        padding: 9px 16px;
+        font-size: 14px;
+        color: #222222;
+      }
+    }
+  }
+
+  .rightList {
+    padding: 24px 32px;
+    // background: greenyellow;
+    height: 100%;
+    overflow-y: scroll;
+
+    .topDivider {
+      width: 100%;
+      height: 1px;
+      background-color: #EEE;
+      margin: 8px 0 16px;
+
+      &.invisibleDivider {
+        height: 0;
+        margin: 0;
+      }
+    }
+
+    .secondLevelTitle {
+      font-size: 16px;
+      color: #222;
+      font-weight: bold;
+
+      &.selectBrand {
+        background-color: #006AFF;
+        color: #FFF;
+      }
+
+      &:hover:not(.selectBrand) {
+        color: #006AFF;
+      }
+    }
+
+    .threeLevelWrapper {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .threeLevelItem {
+        font-size: 14px;
+        color: #222;
+        margin: 0 24px 8px 0;
+        display: inline-block;
+
+        &.selectBrand {
+          background-color: #006AFF;
+          color: #FFF;
+        }
+
+        &:hover:not(.selectBrand) {
+          color: #006AFF;
+        }
+      }
+    }
+  }
+}

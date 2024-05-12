@@ -1,0 +1,40 @@
+.table {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .childTable {
+    :global {
+      .ant-table-wrapper .ant-table .ant-table-container .ant-table-thead > tr > th {
+        background-color: white;
+      }
+    }
+  }
+  :global {
+    .ant-table-wrapper .ant-table .ant-table-container .ant-table-tbody .ant-table-expanded-row > td  {
+      background-color: #F3F4F6;
+    }
+  }
+}
+.rowDragging {
+  background: #fafafa;
+  border: 1px solid #ccc;
+  z-index: 999999;
+  box-sizing: border-box;
+}
+
+.rowDragging td {
+  padding: 0 16px;
+  box-sizing: border-box;
+  display: table-cell;
+  line-height: 58px;
+}
+
+.rowDragging .drag-visible {
+  visibility: visible;
+}
+
+
+

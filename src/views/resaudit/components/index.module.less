@@ -1,0 +1,21 @@
+@prefix-cls: file-preview;
+
+.@{prefix-cls}-wrapper {
+  width: 230px;
+  background: #F6F7F9;
+  border-radius: 2px;
+  margin: 6px;
+  .@{prefix-cls} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filename {
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 6px;
+    font-size: 16px;
+  }
+}

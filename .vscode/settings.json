@@ -1,0 +1,49 @@
+{
+  "cSpell.words": [
+    "antd",
+    "btns",
+    "Popconfirm",
+    "resaudit"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true, // 如果开启，保存时的 eslint 无法正常使用
+  // eslint 保存文件时是否自动修复
+  "eslint.alwaysShowStatus": true,
+  "eslint.codeActionsOnSave.mode": "all", // all 一次性修复所有可能的问题，problems 只修复当前的问题（逐个修复）
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue-html",
+    "html",
+    "vue",
+    "wpy",
+    "wxml",
+    "wxss",
+    "cjson",
+    "wxs",
+    "typescript",
+    "typescriptreact",
+    // {
+    //   "language": "vue-html",
+    //   "autoFix": true
+    // },
+    // {
+    //   "language": "html",
+    //   "autoFix": true
+    // },
+    // {
+    //   "language": "vue", // 保存vue文件时是否自动修复，基于 eslint.autoFixOnSave 设置
+    //   "autoFix": true
+    // }
+  ]
+}

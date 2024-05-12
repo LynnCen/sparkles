@@ -1,0 +1,170 @@
+// name: 其他
+{
+  "路由-跳转页面 代码片段": {
+    "prefix": "navigate",
+    "description": "跳转页面代码片段 https://reactrouter.com/en/main/hooks/use-navigate",
+    "body": [
+      "const navigate = useNavigate();",
+      "navigate('/');"
+    ]
+  },
+  "路由-跳转并替换当前页面 代码片段": {
+    "prefix": "navigate",
+    "description": "跳转页面代码片段 https://reactrouter.com/en/main/hooks/use-navigate#type-declaration",
+    "body": [
+      "const navigate = useNavigate();",
+      "navigate('/', { replace: true });"
+    ]
+  },
+  "创建 fuzzy": {
+    "scope": "",
+    "prefix": "demo-fuzzy",
+    "description": "快速创建代码片段",
+    "body": [
+      // 待补充
+    ],
+  },
+  "创建 form-fuzzy": {
+    "scope": "",
+    "prefix": "demo-form-fuzzy",
+    "description": "快速创建代码片段",
+    "body": [
+      // 待补充
+    ],
+  },
+
+  "二次封装的 MessageBox.prompt 提交内容弹窗": {
+    "scope": "",
+    "prefix": "prompt",
+    "description": "src/plugins/tool-modules/prompt.js",
+    "body": [
+      "import prompt from 'src/plugins/tool-modules/prompt.js';",
+      "",
+      "prompt({",
+      "  title: '标题',",
+      "  message: '消息正文内容',",
+      "  required: true,",
+      "  confirmButtonText: '确定',",
+      "  cancelButtonText: '取消',",
+      "  inputType: 'text',",
+      "  inputValue: '',",
+      "  inputPlaceholder: '请输入内容',",
+      "  maxLen: 255,",
+      "  inputValidator: value => {",
+      "    return '验证错误提示';",
+      "  },",
+      "  callback: value => {",
+      "    return new Promise((res, rej) => {",
+      "      res();",
+      "    });",
+      "  }",
+      "});",
+      
+    ],
+  },
+
+  "二次封装的 MessageBox.confirm 确认提示": {
+    "prefix": "confirm",
+    "body": [
+        "      this.\\$confirm('确认审核通过？', '审核通过', { type: 'warning' })",
+        "        .then(() => {",
+        "          // TODO 更换接口",
+        "          getFieldTypes(null, () => {",
+        "            this.\\$message.success('审核通过成功');",
+        "            this.\\$emit('complete');",
+        "          });",
+        "        });"
+    ],
+    "description": "二次封装的 MessageBox.confirm 确认提示"
+  },
+
+
+  "生成请求接口代码片段-get": {
+    "prefix": "api-get",
+    "description": "生成请求接口代码片段-新的方式",
+    "body": [
+      "const [requesting, setRequesting] = useState(false);",
+      "const loadDetail = () => {",
+      "  if (!id) {",
+      "    return;",
+      "  }",
+      "  setRequesting(true);",
+      "  get('/qiniu/token', { bucket: 'linhuiba-temp' }, { isMock: false, needCancel: false, proxyApi: '/mirage' }).then(() => {",
+      "    setDetailData({",
+      "      'brandName': '加多宝（食品酒饮）',",
+      "    });",
+      "  }).finally(() => {",
+      "    setRequesting(false);",
+      "  });",
+      "};"
+    ]
+  },
+  "生成请求接口代码片段-post": {
+    "prefix": "api-post",
+    "description": "生成请求接口代码片段-新的方式",
+    "body": [
+      "const [requesting, setRequesting] = useState(false);",
+      "const loadDetail = () => {",
+      "  if (!id) {",
+      "    return;",
+      "  }",
+      "  setRequesting(true);",
+      "  post('/recommendTask/recommendButtons', { id }, { isMock: true }).then(() => {",
+      "    setDetailData({",
+      "      'brandName': '加多宝（食品酒饮）',",
+      "    });",
+      "  }).finally(() => {",
+      "    setRequesting(false);",
+      "  });",
+      "};"
+    ]
+  },
+
+  "生成导航面包屑代码": {
+    "prefix": ["crumbs", "router-crumbs"],
+    "description": "生成导航面包屑代码",
+    "body": [
+      "crumbs: [{ title: '$1', path: '$2' }]"
+    ]
+  },
+
+  "提供父级 ref 事件 代码片段": {
+    "prefix": ["forwardRef", "useImperativeHandle"],
+    "description": "提供父级 ref 事件，forwardRef 和 useImperativeHandle 结合使用",
+    "body": [
+      "",
+      "  const InputCitiesSelect: FC<InputSelectProps & { ref?: any }> = forwardRef(({ value }, ref) => {",
+      "",
+      "    useImperativeHandle(ref, () => ({",
+      "      getItem",
+      "    }));",
+      "",
+      "    const targetRef = useRef<any>();",
+      "    useImperativeHandle(ref, () => ({",
+      "      getItem: (...rest) => targetRef.current.getItem(...rest)",
+      "    }));",
+      "",
+      "  });",
+      "",
+      ""
+    ]
+  },
+  "对操作动作进行大数据埋点": {
+    "prefix": "LHB-bigdata-Send",
+    "description": "对操作动作进行大数据埋点，event_id 见 https://confluence.lanhanba.com/pages/viewpage.action?pageId=67510815",
+    "body": [
+      "      // const userInfo = useSelector((state: any) => state.common.userInfo);",
+      "      window.LHBbigdata.send({ // 埋点-全屏",
+      "        // TODO 添加 event_id",
+      "        event_id: '', // 事件id-全屏",
+      "        msg: {",
+      "          // user_id: userInfo?.id, // 默认会传，所以不用特意在 msg 内传递",
+      "          // user_name: userInfo?.name, // 用户名",
+      "          demand_id: id, // 需求id",
+      "        }, // 额外需要插入的业务信息",
+      "      });"
+    ]
+  }
+
+
+}

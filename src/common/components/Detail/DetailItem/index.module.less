@@ -1,0 +1,54 @@
+.detailItem {
+  font-size: 14px;
+  color: #132144;
+  margin-bottom: 16px;
+  line-height: 14px;
+  display: flex;
+  .itemLabel {
+    color: #717A8F;
+    white-space: nowrap;
+  }
+  .detailItemFiles {
+    display: flex;
+    flex-wrap: wrap;
+    .itemFiles {
+      padding: 8px 6px 8px 11px;
+      background: #F6F7F9;
+      border-radius: 4px;
+      position: relative;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .itemFilesRight {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 30px;
+        .itemFilesName {
+          width: 150px;
+          overflow: hidden;
+          line-height: 14px;
+          color: #132144;
+          white-space: nowrap;
+          font-size: 12px;
+          // margin-bottom: 10px;
+          text-overflow:ellipsis;
+        }
+        .itemFilesBtn {
+          margin-top: 1px;
+          margin-left: 6px;
+          font-size: 12px;
+          line-height: 12px;
+        }
+      }
+      .itemFilesLeft {
+        position: absolute;
+        top: 5px;
+        left: 11px;
+        font-size: 20px;
+      }
+    }
+  }
+  
+}

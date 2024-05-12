@@ -1,0 +1,37 @@
+
+ @prefixCls: page-container;
+ @header: ~'@{prefixCls}-header';
+ @title: ~'@{prefixCls}-title';
+ @body: ~'@{prefixCls}-body';
+
+
+ .@{prefixCls}-wrapper {
+    background-color: white;
+  .@{header}-wrapper {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .@{header} {
+    .@{title} {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      color: #17273A;
+      &::before {
+        content: '';
+        height: 14px;
+        margin-right: 6px;
+        width: 2px;
+        background: #006AFF;
+      }
+    }
+  }
+  .@{body}-wrapper {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+ }
+ 

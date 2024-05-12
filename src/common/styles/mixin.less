@@ -1,0 +1,173 @@
+// 宽高
+.wh(@width, @height: @width) {
+  width: @width;
+  height: @height;
+}
+// 高居中
+.mheight(@h, @lh: @h) {
+  height: @h;
+  line-height: @lh;
+}
+
+// flex
+.flex(@dir: row, @wrap: nowrap, @jc: flex-start, @ai: flex-start, @ac: flex-start) {
+  display: flex;
+  flex-flow: @dir @wrap;
+  justify-content: @jc;
+  align-items: @ai;
+  align-content: @ac;
+}
+
+.center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fj(@type: space-between) {
+  display: flex;
+  justify-content: @type;
+}
+
+.base-1px(@color) {
+  content: ' ';
+  pointer-events: none;
+  /* 防止点击触发 */
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid @color;
+}
+
+// 1px边框处理
+.bb-1px(@color) {
+  position: relative;
+
+  &:after {
+    .base-1px(@color);
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.bt-1px(@color) {
+  position: relative;
+
+  &:before {
+    .base-1px(@color);
+
+    top: 0;
+    left: 0;
+  }
+}
+
+.bl-1px(@color) {
+  position: relative;
+
+  &:before {
+    .base-1px(@color);
+    top: 0;
+    left: 0;
+  }
+}
+
+.br-1px(@color) {
+  position: relative;
+
+  &:after {
+    .base-1px(@color);
+    top: 0;
+    right: 0;
+  }
+}
+
+.bd-1px(@color) {
+  position: relative;
+
+  &:before {
+    .base-1px(@color);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+// 一行文字
+.one-ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis(@num: 2) {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: @num;
+  overflow: hidden;
+}
+
+// 弹性盒
+.f-DAJ(@direction: row, @align: stretch, @justify: flex-start) {
+  display: flex;
+  flex-direction: @direction;
+  align-items: @align;
+  justify-content: @justify;
+}
+
+.oneLine() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.moreLine(@num) {
+  display: -webkit-box;
+  -webkit-line-clamp: @num;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mixins-position(@positon: absolute, @top: auto, @right: auto, @bottom: auto, @left: auto) {
+  position: @positon;
+  top: @top;
+  right: @right;
+  bottom: @bottom;
+  left: @left;
+}
+
+
+// 滚动条
+.scrollbar(
+  @width: 8px,
+  @height: 0,
+  @scrollbar-background: inherit,
+  @track-background: #f1f1f1,
+  @thumb-background: #c1c1c1
+) {
+  /* 定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸 */
+  &::-webkit-scrollbar {
+    width: @width;
+    height: @height;
+    background-color: @scrollbar-background;
+  }
+
+  /* 定义滚动条轨道 内阴影+圆角 */
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: @track-background;
+  }
+
+  /* 定义滑块 内阴影+圆角 */
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: @thumb-background;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}

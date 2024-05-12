@@ -1,0 +1,74 @@
+
+  .primaryRadio{
+    :global{
+      .ant-radio-group{
+        background: #F0F0F0;
+        border-radius: 3px !important;
+        .ant-radio-button-wrapper{
+          background-color: #F0F0F0 !important;
+          border: none !important;
+          color: #5C6775 !important;
+          border-radius: 3px;
+          &::before{
+            width: 0;
+          }
+          // 重置焦点样式，:focus，:focus-within同时修改
+          &:focus{
+            box-shadow: none ;
+          }
+          &:focus-within{
+            box-shadow: none ;
+          }
+        }
+        .ant-radio-button-wrapper-checked{
+          color: #FFFFFF !important;
+          background-color: #006AFF !important;
+        }
+      }
+
+      .ant-radio-group-small{
+        .ant-radio-button-wrapper{
+          span{
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .defaultRadio{
+    margin-left: 26px;
+    :global{
+      .ant-radio-group{
+        background: #F6F7F9;
+        border-radius: 3px !important;
+        padding: 2px;
+        .ant-radio-button-wrapper{
+          border: none !important;
+          color: #5C6775 !important;
+          border-radius: 3px;
+          &::before{
+            width: 0;
+          }
+          &:focus{
+            box-shadow: none ;
+          }
+          &:focus-within{
+            box-shadow: none ;
+          }
+        }
+        .ant-radio-button-wrapper-checked{
+          color: #006AFF !important;
+          background-color: #fff !important;
+         
+        }
+      }
+      .ant-radio-group-small{
+        .ant-radio-button-wrapper{
+          span{
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+  }
