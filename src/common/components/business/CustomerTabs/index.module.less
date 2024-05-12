@@ -1,0 +1,31 @@
+@defaultcolor: @primary-blue;
+.tabsWrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+  align-items: center;
+  .tabsChange {
+    display: flex;
+    border-radius: 1px;
+    .active {
+      box-shadow: 1px 0 @defaultcolor, 0px 1px @defaultcolor, 1px 1px @defaultcolor, 1px 0 @defaultcolor inset,
+        0 1px @defaultcolor inset;
+      color: @defaultcolor;
+      background: rgba(0, 106, 255, 0.04);
+      z-index: 2;
+    }
+    li {
+      font-weight: 500;
+      padding: 0 29px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 1px 0 #e5e9f2, 0 1px #e5e9f2, 1px 1px #e5e9f2, 1px 0 #e5e9f2 inset, 0 1px #e5e9f2 inset;
+      &:hover {
+        .active();
+        cursor: pointer;
+      }
+    }
+  }
+}

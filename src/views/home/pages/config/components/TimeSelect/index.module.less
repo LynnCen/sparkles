@@ -1,0 +1,26 @@
+.timeSelectContainer{
+  display: flex;
+  height: 32px;
+  .timeSelected{
+    margin-right: 16px;
+    :global{
+      .ant-radio-group{
+        background: #F6F7F9;
+        border-radius: 6px !important;
+        .ant-radio-button-wrapper{
+          line-height: 32px !important;
+          height: 32px !important;
+          border: none !important;
+          color: #5C6775 !important;
+          border-radius: 6px;
+          &::before{
+            width: 0;
+          }
+        }
+        .ant-radio-button-wrapper-checked{
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}

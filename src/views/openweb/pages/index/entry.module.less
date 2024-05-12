@@ -1,0 +1,76 @@
+.completeInfo {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  .completeInfoMask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+  }
+  .completeInfoConfirm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 520px;
+    height: 428px;
+    background: url(https://staticres.linhuiba.com/project-custom/locationpc/console-pc-info.png) no-repeat;
+    background-size: 100% 100%;
+    backdrop-filter: blur(4px);
+    .completeInfoWrapper {
+      padding: 80px 60px 0 ;
+      .completeInfoTitle {
+        font-size: 24px;
+        line-height: 48px;
+        color: #242434;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+      .completeInfoTip {
+        line-height: 20px;
+        font-size: 16px;
+        color: #999;
+        margin-bottom: 40px;
+      }
+      :global {
+        .v2Form {
+          .ant-form-item {
+            .ant-form-item-label {
+              margin-bottom: 16px;
+              > label {
+                color: #000;
+                font-size: 16px;
+                line-height: 20px;
+              }
+            }
+            .ant-select-single:not(.ant-select-customize-input) {
+              .ant-select-selector {
+                height: 40px;
+              }
+              .ant-select-selection-search-input {
+                height: 38px;
+              }
+              .ant-select-selection-item, .ant-select-selection-placeholder {
+                line-height: 38px;
+              }
+            }
+          }
+        }
+      }
+      .submit {
+        border-radius: 4px;
+        margin-top: 24px;
+      }
+    }
+  }
+}
+.customClass {
+  position: absolute!important;
+  top: 0;
+  left: 0;
+}

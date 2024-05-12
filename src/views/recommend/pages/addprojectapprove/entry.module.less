@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  .topCon {
+    width: 642px;
+    height: 52px;
+    background: #ffffff;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    border-radius: 8px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    z-index: 50;
+    .label {
+      color: #999;
+      margin-right: 8px;
+      &:not(:first-child) {
+        margin-left: 40px;
+      }
+    }
+  }
+}

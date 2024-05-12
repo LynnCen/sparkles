@@ -1,0 +1,274 @@
+.container {
+  @media print {
+    @page {
+      /* A4大小 横向 */
+      size: A4 landscape;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  // pdf尺寸
+  .A4 {
+    position: relative;
+    .wh(1124px, 794px); // 注意是横向
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #fff;
+  }
+
+  .code {
+    .text {
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+
+  .frontCoverCon {
+    .A4();
+    background: url('https://staticres.linhuiba.com/project-custom/locationpc/pdf/bg_footprint_home.png')
+      no-repeat;
+    background-size: 100% 100%;
+
+    .content {
+      position: absolute;
+      left: 119px;
+      top: 564px;
+
+      .name {
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 6px;
+      }
+
+      .frontCover {
+        margin-top: 24px;
+
+        img {
+          .wh(98px);
+        }
+
+        .text {
+          width: 98px;
+        }
+      }
+    }
+  }
+
+  .infoCon {
+    .A4();
+    .flex();
+    padding-left: 34px;
+    background: url('https://staticres.linhuiba.com/project-custom/locationpc/pdf/bg_footprint_common.png')
+      no-repeat;
+    background-size: 100% 100%;
+
+    .cardItemCon {
+      .flex(column, nowrap, center, center);
+      position: relative;
+      top: 200px;
+      margin-right: 16px;
+
+      .index {
+        .wh(152px, 152px);
+        position: absolute;
+        left: 90px;
+        top: -90px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        text-align: center;
+        font-size: 53px;
+        background: #434343;
+        .flex(row,nowrap,center,center);
+      }
+
+      .content {
+        .wh(341px, 500px);
+        background: #434343;
+        padding-top: 103px;
+
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          .wh(28px, 25px);
+          content: '';
+          border-left: 2px solid #2731f8;
+          border-top: 2px solid #2731f8;
+        }
+
+        &:after {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          .wh(28px, 25px);
+          content: '';
+          border-right: 2px solid #2731f8;
+          border-bottom: 2px solid #2731f8;
+        }
+
+        .title {
+          font-size: 30px;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+        }
+
+        .line {
+          position: relative;
+          width: 302px;
+          height: 1px;
+          background-color: #fff;
+          margin: auto;
+
+          &:before {
+            position: absolute;
+            left: -4px;
+            top: -4px;
+            content: '';
+            .wh(8px);
+            background: white;
+            border-radius: 50%;
+          }
+
+          &:after {
+            position: absolute;
+            right: -4px;
+            top: -4px;
+            content: '';
+            .wh(8px);
+            background: white;
+            border-radius: 50%;
+          }
+
+          &.Second {
+            transform: translateY(-60px);
+          }
+        }
+
+        .list {
+          margin-top: 31px;
+          .flex(column, nowrap, center, center);
+          padding-left: 34px;
+
+          :global {
+            .ant-descriptions-item {
+              padding-bottom: 4px;
+            }
+
+            .ant-descriptions-item-label {
+              color: rgba(255, 255, 255, 0.8);
+              line-height: 20px;
+            }
+
+            .ant-descriptions-item-content {
+              color: #fff;
+              line-height: 20px;
+              font-weight: bold;
+            }
+          }
+
+          img {
+            display: inline-block;
+            .wh(76px, 74px);
+            margin-right: 9px;
+          }
+
+          .imgList {
+            // display: flex;
+            :global {
+              .ant-descriptions-item-label {
+                display: block;
+              }
+
+              .ant-descriptions-item-content {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .videoCon {
+    .A4();
+    background: url('https://staticres.linhuiba.com/project-custom/locationpc/pdf/bg_footprint_common.png')
+      no-repeat;
+    background-size: 100% 100%;
+    padding: 50px 50px 0 50px;
+
+    .title {
+      font-size: 30px;
+      padding-bottom: 20px;
+      font-weight: bold;
+    }
+
+    :global {
+      .ant-table-row {
+        td {
+          background-color: transparent;
+        }
+      }
+
+      .ant-table {
+        background-color: #434343;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .ant-table-thead > tr > th {
+        background-color: #434343;
+        color: rgba(255, 255, 255);
+        font-weight: bold;
+      }
+
+      .ant-table-cell-row-hover {
+        background-color: #434343;
+      }
+
+      .ant-table-tbody > tr.ant-table-row:hover > td,
+      .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+        background-color: #434343;
+      }
+    }
+  }
+
+  .tendencyChartCon {
+    padding: 50px 50px 0 50px;
+
+    .title {
+      font-size: 30px;
+      padding-bottom: 50px;
+      font-weight: bold;
+    }
+
+    .charts {
+      margin-left: -70px;
+    }
+  }
+
+  .tendencyChartCon {
+    .A4();
+    background: url('https://staticres.linhuiba.com/project-custom/locationpc/pdf/bg_footprint_common.png')
+      no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .backCoverCon {
+    .A4();
+    background: url('https://staticres.linhuiba.com/project-custom/locationpc/pdf/bg_back_cover.png')
+      no-repeat;
+    background-size: 100% 100%;
+
+    .backCode {
+      position: absolute;
+      top: 78px;
+      right: 45px;
+
+      img {
+        .wh(77px);
+      }
+    }
+  }
+}

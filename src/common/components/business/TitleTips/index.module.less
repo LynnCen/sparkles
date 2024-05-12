@@ -1,0 +1,30 @@
+.tipsInfo {
+  position: relative;
+  padding-left: 12px;
+  padding-right: 8px;
+  font-size: 16px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #132144;
+  margin: 24px 0 16px;
+  .flex(flex, nowrap, space-between);
+  .icon {
+    font-size: 14px;
+    color: #b8bdc4;
+    margin: 0 6px;
+    cursor: pointer;
+    &:hover {
+      color: #6e7278;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 16px;
+    background: @primary-blue;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,257 @@
+.container {
+  min-width: 1253px;
+  height: 100%;
+
+  // 搜索框
+  .searchCon {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 14px 16px;
+    :global {
+      margin-bottom: 12px;
+    }
+  }
+
+  // 卡片部分
+  .cardsCon {
+    // margin-top: -8px;
+    .flex();
+
+    .cardItem {
+      flex-basis: 33.33%;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 16px 16px 20px;
+      margin-right: 12px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .sectionCon {
+    .flex();
+
+    .invariableSection {
+      flex-basis: 50%;
+      .wh(auto, 473px);
+      min-width: 613px;
+      margin-right: 12px;
+      background: #ffffff;
+      border-radius: 8px;
+
+      &.chart {
+        height: 290px;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.left {
+        padding: 21px 16px 16px;
+      }
+
+      &.right {
+        padding: 12px 16px 26px;
+      }
+
+      .panelCon {
+        position: relative;
+        .panelItemCon {
+          position: relative;
+          overflow: hidden;
+          .wh(415px, 102px);
+          margin-top: 12px;
+
+          &:first-of-type {
+            margin-top: 0;
+          }
+
+          .bgCon {
+            .wh(100%, 100%);
+            background: linear-gradient(
+              90deg,
+              #36cef3 0%,
+              rgba(57, 211, 249, 0.8) 100%
+            );
+            opacity: 0.1;
+          }
+
+          .trimCon {
+            position: absolute;
+            top: 0;
+            left: -6px;
+            .wh(12px, 100%);
+            background: #36cef3;
+            border-radius: 4px;
+            z-index: 2;
+          }
+
+          .contentCon {
+            position: absolute;
+            left: 26px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+
+            .textFlexCon {
+              .flex(row, nowrap, flex-start, center);
+
+              .mainText {
+                width: 100px;
+              }
+
+              // .secondaryText {
+              //   display: inline-flex;
+              //   flex-flow: row nowrap;
+              //   justify-content: flex-start;
+              //   align-items: center;
+              // }
+            }
+          }
+
+          .cornerCon {
+            position: absolute;
+            right: -10px;
+            top: 12px;
+            .wh(180px, 160px);
+            border-radius: 50%;
+            background: linear-gradient(
+              to right,
+              rgba(54, 206, 243, 0.2) 0%,
+              rgba(54, 206, 243, 0) 100%
+            );
+          }
+        }
+      }
+
+      .panelRateCon {
+        position: absolute;
+        top: 120px;
+        left: 415px;
+        .flex(row, nowrap, flex-start, center);
+
+        .linCon {
+          .wh(36px, 140px);
+          border: 1px solid #ddd;
+          border-left: none;
+        }
+
+        .rateCon {
+          .flex(column);
+          margin-left: 24px;
+        }
+      }
+
+      .rowFunnelItem {
+        position: relative;
+        // .wh(420px, 52px);
+        height: 52px;
+        .flex();
+        margin-top: 12px;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+
+        .valCon {
+          .wh(148px, 100%);
+          background: #f6f7f9;
+          .flex(row, nowrap, flex-start, center);
+          padding-left: 16px;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+        }
+
+        .trapezoidCon {
+          position: relative;
+          .wh(272px, 100%);
+          overflow: hidden;
+
+          .baseMap {
+            .wh(100%, 100%);
+            background-color: #8263ff;
+            opacity: 0.5;
+          }
+
+          .textCon {
+            position: absolute;
+            top: 50%;
+            left: 24px;
+            transform: translateY(-50%);
+            color: #fff;
+          }
+
+          .coverTriangle {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            .wh(0, 0);
+            border-top: 43px solid transparent;
+            border-right: 16px solid #fff;
+            border-bottom: 0 solid transparent;
+            border-left: 0 solid #fff;
+            z-index: 2;
+          }
+        }
+
+        .filtrationCon {
+          position: absolute;
+          top: 26px;
+          right: -110px;
+
+          .relationCon {
+            .flex(row, nowrap, flex-start, center);
+
+            .rhomboidCon {
+              .wh(55px, 130px);
+              transform: skew(-18deg);
+              border: 1px solid #ddd;
+              border-left: none;
+              z-index: 3;
+            }
+          }
+        }
+      }
+
+      .barChartCon {
+        .wh(100%, 220px);
+      }
+    }
+  }
+
+  .fullChartCon {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 16px 12px;
+
+    .flexCon {
+      .flex(row, nowrap, flex-start, center);
+
+      .barChartCon {
+        .wh(100%, 220px);
+      }
+    }
+
+    .chartCon {
+      height: 220px;
+    }
+
+    :global {
+      .ant-segmented {
+        background-color: #f6f7f9;
+        .ant-segmented-item {
+          color: #666;
+          &.ant-segmented-item-selected {
+            color: #006aff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.searchBox {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+  // padding: 10px 10px 0 10px;
+}
+
+.treeWrap {
+  height: 100%;
+  background-color: #fff;
+  margin-right: 10px;
+  flex: 0 0 220px;
+  .content {
+    overflow: auto;
+    height: calc(100% - 51px);
+    :global {
+      .ant-tree-list-holder-inner {
+        height: calc(100vh - 51px - 32px - 48px);
+        overflow-y: scroll;
+      }
+    }
+    .nodeName {
+      max-width: 120px;
+      .oneLine();
+      margin-bottom: 0px;
+    }
+    // :global {
+    //   // .ant-tree .ant-tree-treenode {
+    //   .ant-tree .ant-tree-node-content-wrapper {
+
+    //   }
+    // }
+  }
+  .title {
+    border-bottom: 1px solid #ebeef5;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.tableWrap {
+  margin-top: 10px;
+}

@@ -1,0 +1,149 @@
+.ydContainer {
+  .wh(800px, 450px);
+  padding: 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  .placeholderSection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+
+    .container {
+      .wh(inherit,inherit);
+      background-color: #001528;
+      position: relative;
+
+      .logo {
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .logoIcon {
+        .logo();
+        font-size: 240px;
+      }
+
+      .pauseIcon {
+        .logo();
+        font-size: 100px;
+        color: #fff;
+      }
+    }
+  }
+
+  .pauseImg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-size: 100% 100%;
+    z-index: 9;
+  }
+
+  .barCon {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    transition: all 0.2s ease-out;
+    .flex(row, nowrap, space-between, center);
+    padding: 0 12px;
+
+    &.visibleBar {
+      bottom: 0;
+    }
+  }
+}
+
+.hwContainer {
+  .spinCon {
+    width: 800px;
+  }
+  .pauseImg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-size: 100% 100%;
+    z-index: 9;
+  }
+  .video {
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    width: 800px;
+    background: #000;
+
+    .videoReplace {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      width: 100%;
+      height: 100%;
+      .videoReplaceContainer {
+        width: inherit;
+        height: inherit;
+        background-color: #001528;
+        position: relative;
+        .logo {
+          cursor: pointer;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .pauseIcon {
+          .logo();
+          font-size: 100px;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .bottomContainer {
+    position: relative;
+    width: 800px;
+    .canvasContainer {
+      position: absolute;
+      top: -48px;
+      opacity: 0.8;
+      background: #292b36;
+      width: 800px;
+      z-index: 100;
+      height: 48px;
+      .timeLineBody {
+        display: inline-block;
+      }
+    }
+    .oprationBar {
+      position: absolute;
+      bottom: -40px;
+      width: 100%;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+      transition: all 0.2s ease-out;
+      .flex(row, nowrap, space-between, center);
+      padding: 0 12px;
+
+      &.visibleBar {
+        bottom: 0;
+      }
+    }
+  }
+}
+      

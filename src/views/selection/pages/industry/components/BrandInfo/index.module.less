@@ -1,0 +1,63 @@
+.sectionCon {
+  background-color: #FAFAFA;
+  border-radius: 4px;
+  padding: 4px 12px;
+
+  .flexCon {
+    .flex(row, nowrap, space-between, center);
+    padding: 16px 0;
+
+    &:first-of-type {
+      border-bottom: 1px dashed #EEEEEE;
+    }
+  }
+}
+
+.rankCon {
+  .flexEnd {
+    .flex(row, nowrap, flex-end);
+
+    .switchCon {
+      background: #F6F7F9;
+      border-radius: 3px;
+      padding: 2px;
+
+      .switchItem {
+        display: inline-block;
+        width: 40px;
+        padding: 3px;
+        color: #999;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .switchItemActive {
+        background-color: #fff;
+        font-weight: bold;
+        border-radius: 3px;
+        color: #333
+      }
+    }
+  }
+
+  .theadCon {
+    background: #F6F7F9;
+    border-radius: 4px 4px 0px 0px;
+    padding: 10px 12px;
+  }
+
+  .thCon {
+    padding: 14px 12px;
+    border-bottom: 1px solid #EEEEEE;
+
+    .iconBox {
+      .wh(24px, 24px)
+    }
+  }
+
+  :global {
+    .ant-btn.ant-btn-primary {
+      border-radius: 3px;
+    }
+  }
+}

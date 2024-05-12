@@ -1,0 +1,43 @@
+.operateBox {
+  position: relative;
+  left: 0px;
+  // 筛选条件和竞品分布开关
+  .box {
+    width: 188px;
+    height: 32px;
+    position: absolute;
+    left: 239px; //220+8+11
+    top: 16px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    border-radius: 4px;
+    background-color: white;
+    font-size: 12px;
+    cursor: pointer;
+    .line {
+      width: 1px;
+      height: 12px;
+      background-color: #eee;
+      display: inline-block;
+      margin: 0 8px;
+    }
+  }
+
+  // 竞品分布内容
+  .contendBrandBox {
+    color: black;
+    position: absolute;
+    left: 239px;
+    top: 56px; //16+32+8
+    z-index: 50;
+  }
+  .show {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+}

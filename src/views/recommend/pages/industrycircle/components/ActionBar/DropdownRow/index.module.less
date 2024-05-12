@@ -1,0 +1,102 @@
+.dropdownRowCon {
+  position: relative;
+  .flex(row, nowrap, flex-start, center);
+  background-color: #fff;
+  border-radius: 4px;
+  height: 32px;
+  padding: 0 12px;
+  box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+  margin-right: 155px;
+
+  .rowItem {
+    position: relative;
+    // margin-right: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .unfold {
+      transform: rotate(180deg);
+      transition: transform 0.3s linear;
+    }
+
+    // &:last-of-type {
+    //   margin-right: 0;
+    // }
+    .line {
+      width: 1px;
+      height: 12px;
+      background-color: #eee;
+      display: inline-block;
+      margin: 0 8px;
+    }
+  }
+
+  .dropdownRowContent {
+    position: absolute;
+    left: 0;
+    top: 37px;
+
+    .treeCon {
+      width: 186px;
+      padding: 12px;
+      background-color: #fff;
+      box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+      border-radius: 4px;
+
+      &.large {
+        width: 290px;
+
+        .inlineFlex {
+          display: inline-flex;
+          justify-content: space-between;
+          width: 155px;
+        }
+      }
+
+      :global {
+        .ant-tree {
+          .ant-tree-list {
+            .ant-tree-list-holder {
+              .ant-tree-list-holder-inner {
+                .ant-tree-treenode {
+                  .ant-tree-indent {
+                    .ant-tree-indent-unit {
+                      width: 19px;
+                    }
+                  }
+                  .ant-tree-switcher {
+                    width: 21px;
+                    padding-right: 5px;
+                  }
+                  .ant-tree-node-content-wrapper {
+                    padding-left: 0;
+                  }
+                  .ant-tree-node-selected {
+                    background: none;
+                  }
+                  .ant-tree-checkbox {
+                    margin-right: 4px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .treeTitCon {
+        .flex();
+      }
+      &.clusterType .treeTitCon {
+        .flex(row, nowrap, flex-start, center);
+      }
+
+      .flexCon {
+        .flex(row, nowrap, space-between, center);
+        padding-left: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.container {
+  background-color: white;
+  padding-top: 24px;
+  padding-left: 16px;
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .label {
+    font-size: 12px;
+    color: #959bab;
+    padding-left: 12px;
+  }
+  .chartCon {
+    margin-top: 24px;
+    border-top: 1px solid #eaeff8;
+    .chartTop,
+    .chartBottom {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .chartTitle {
+      position: relative;
+      padding-left: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 27px;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 14px;
+        background: @primary-blue;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

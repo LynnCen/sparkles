@@ -1,0 +1,154 @@
+.basicInfo {
+  background-color: white;
+  padding: 20px 12px 16px;
+  border-radius: 4px;
+  overflow: scroll;
+  width: 226px;
+  .infoItem {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 20px;
+    .label {
+      color: #999999;
+    }
+    .value {
+      margin-top: 8px;
+      color: #222222;
+      .oneLine();
+      .status {
+        :global {
+          .ant-badge-status-text {
+            color: #222222;
+          }
+        }
+      }
+    }
+    .scaleIcon {
+      transform: scale(0.8);
+    }
+  }
+  .planInfo {
+    padding: 16px 16px 34px;
+    background: linear-gradient(
+      335deg,
+      rgba(219, 228, 255, 0.14) 0%,
+      rgba(229, 240, 255, 0.19) 59%,
+      rgba(201, 223, 255, 0.24) 100%
+    );
+    border-radius: 4px;
+    .planInfoItem {
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      line-height: 20px;
+      .planLabel {
+        color: #999999;
+      }
+      .planValue {
+        word-break: break-all;
+        margin-top: 10px;
+        color: #222222;
+        .f-DAJ(row, center, flex-start);
+        .item {
+          flex: 1;
+          .label {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 22px;
+            font-family: PingFangSC-Regular, PingFang SC;
+          }
+          .value {
+            margin-top: 2px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #999999;
+            line-height: 17px;
+          }
+        }
+      }
+      .reason {
+        .moreLine(8);
+        word-break: break-all;
+      }
+    }
+  }
+}
+
+.districtCon {
+  .flexRightSearch {
+    margin-bottom: 10px;
+    width: 100%;
+
+    .moreSearch {
+      cursor: pointer;
+      color: #006aff;
+
+      .searchNumber {
+        color: #006aff;
+      }
+    }
+  }
+
+  :global {
+    .form-search {
+      .ant-form-item-control {
+        max-width: 190px;
+      }
+
+      .ant-select-in-form-item {
+        width: 190px;
+      }
+
+      .ant-form-item-label {
+        width: 90px;
+      }
+    }
+  }
+}
+
+// ListItem组件样式
+.listItemCon {
+  overflow-y: scroll;
+  background-color: white;
+  cursor: pointer;
+  padding: 0 12px;
+  .flex(row, nowrap, flex-start, center);
+
+  .leftCheck {
+    width: 24px;
+    padding: 30px 0;
+  }
+  .rightInfo {
+    flex: 1;
+  }
+
+  .titCon {
+    .one-ellipsis();
+    width: 220px;
+  }
+  .badge {
+    :global {
+      .ant-badge-status-text {
+        margin-left: 4px;
+      }
+    }
+  }
+  .labelCon {
+    padding: 0 5px;
+    // background-color: #f0f0f0;
+    width: max-content;
+    height: 20px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  :global {
+    .ant-badge-status-dot {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}

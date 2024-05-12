@@ -1,0 +1,29 @@
+.container {
+  .mainCon {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 8px;
+  }
+  :global {
+    .ant-form {
+      margin-bottom: 6px;
+    }
+    .ant-form-inline .ant-form-item {
+      margin-right: 40px;
+    }
+  }
+  .extraButtons {
+    .flex(row, nowrap, flex-start, center);
+  }
+  .mapCon {
+    .wh(100%, 385px);
+  }
+
+  .keywordInput {
+    :global {
+      .ant-form-item-control {
+        width: 280px;
+      }
+    }
+  }
+}

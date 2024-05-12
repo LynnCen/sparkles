@@ -1,0 +1,212 @@
+// 商圈点位详情
+.container {
+  background-color: white;
+  // overflow-x: scroll;
+  .goBack {
+    cursor: pointer;
+    color: #2441b3;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fafafa;
+    padding-left: 15px;
+  }
+
+  .detailInfo {
+    padding: 16px 12px 16px 16px;
+    // overflow-x: scroll;
+    .score {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .industryWrapper {
+      .titleRow {
+        background: #fafafa;
+        line-height: 24px;
+        .flex(row, nowrap, flex-start, flex-start);
+      }
+      .titleName {
+        height: 24px;
+        font-family: DINAlternate-Bold, DINAlternate;
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+        flex-shrink: 0;
+        padding: 0 8px 0 5px;
+        background: linear-gradient(90deg, #5ab9ff 0%, #006ff0 100%);
+        border-radius: 2px 0px 0px 2px;
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 95% 0%);
+      }
+      .detailRow {
+        .flex(row, nowrap, flex-start, flex-start);
+        margin-top: 11px;
+        .detailItem {
+          width: 50%;
+          padding: 0 16px;
+          .itemName {
+            color: #999999;
+            font-size: 12px;
+            line-height: 19px;
+            margin-top: 4px;
+          }
+          .itemValue {
+            color: #222222;
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .typeCard {
+      background: #fafafa;
+      border-radius: 6px;
+      border: 1px solid #eeeeee;
+      padding: 10px 0 9px 12px;
+    }
+    .itemBlock {
+      padding: 10px 0 10px 14px;
+      border-radius: 4px;
+      border: 4px;
+      border: 1px solid #eeeeee;
+      .itemName {
+        color: #999999;
+        font-size: 12px;
+      }
+      .itemValue {
+        margin-top: 10px;
+        color: #222222;
+        font-size: 14px;
+        font-weight: bold;
+
+        &.normal {
+          font-weight: normal;
+        }
+      }
+    }
+    .text {
+      border-radius: 1px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      margin-bottom: 16px;
+      .colorOrange {
+        display: inline-block;
+        color: #4c71c1;
+        margin-right: 8px;
+        padding: 0 8px;
+        background: #ff4c00;
+      }
+      .colorGreen {
+        display: inline-block;
+        padding: 0 8px;
+        color: #006f07;
+        background: #e9f8ea;
+      }
+    }
+    .label {
+      display: inline-block;
+      color: #999;
+      min-width: 156px;
+    }
+  }
+  .tooltip {
+    font-size: 12px;
+    margin-bottom: 10px;
+    .flex(row, nowrap, space-between, center);
+    .colorBlock {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 4px;
+      vertical-align: 1px;
+    }
+    .number {
+      display: inline-block;
+      max-width: 30px;
+      width: 30px;
+      // min-width: 30px;
+      margin-right: 5px;
+      position: relative;
+    }
+    .number::after {
+      content: ' ';
+      width: 2px;
+      height: 10px;
+      position: absolute;
+      top: 4px;
+      right: -4px;
+      background-color: #eee;
+      // border-right: 1px solid #eee;
+    }
+  }
+
+  .addBusinessDetail {
+    padding: 16px 12px 16px 16px;
+    .cardBox {
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .card {
+        width: 128px;
+        height: 82px;
+        background: #fafafa;
+        border-radius: 6px;
+        border: 1px solid #eeeeee;
+        padding: 10px 0 9px 12px;
+      }
+    }
+    .otherInfo {
+      margin-top: 16px;
+    }
+  }
+}
+
+// 市场容量（商区围栏）详情
+.BDcontainer {
+  .goBack {
+    cursor: pointer;
+    color: #2441b3;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fafafa;
+    padding-left: 15px;
+    font-size: 12px;
+  }
+  .content {
+    padding: 16px 12px 8px;
+    max-width: 300px;
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-y: hidden;
+      :not(:last-child) {
+        margin-right: 8px;
+      }
+      .card {
+        width: 87px;
+        height: 58px;
+        background-color: #f7fafe;
+        border-radius: 4px;
+        margin-top: 12px;
+        position: relative;
+        .label {
+          position: absolute;
+          top: 8px;
+          left: 8px;
+          font-size: 12px;
+          color: #666;
+        }
+        .value {
+          position: absolute;
+          top: 33px;
+          left: 8px;
+          font-weight: bold;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

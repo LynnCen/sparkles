@@ -1,0 +1,313 @@
+.mapCon {
+  .wh(100%, calc(100vh - 48px - 32px));
+  :global {
+    .businessAreaItemRankMarkerWrapper {
+      position: relative;
+
+      &.isScale {
+        .animation(markerAnimationScale,0.3s,linear);
+      }
+
+      .businessAreaItemRankMarker {
+        .flex(row, nowrap, flex-start, center);
+        background-color: #fff;
+        padding: 5px 10px 5px 5px;
+        border-radius: 20px;
+        box-shadow: 0px 2px 6px 0px rgba(40,40,40,0.12);
+        font-size: 12px;
+        color: #222;
+        width: max-content;
+
+        .businessAreaItemIcon {
+          .wh(18px, 18px);
+          line-height: 18px;
+          text-align: center;
+          color: #fff;
+          border-radius: 50%;
+          .iconSvg {
+            transform: scale(0.8);
+          }
+          // background-color: #fff; // 默认颜色
+        }
+
+        &:hover {
+          font-size: 18px;
+          margin-left: -12px;
+          margin-top: -12px;
+
+          .businessAreaItemIcon {
+            .wh(28px, 28px);
+            line-height: 28px;
+            .iconSvg {
+              transform: scale(0.9);
+            }
+          }
+        }
+      }
+
+      .triangleOrnamental {
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translate(-50%);
+        border: 4px solid #fff;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+
+      &:hover {
+        .triangleOrnamental {
+          bottom: -12px;
+          border-width: 6px;
+          margin-left: -8px;
+        }
+      }
+    }
+
+    .businessAreaItemNameMarker {
+      background-color: #fff;
+      padding: 4px;
+      box-shadow: 0px 0px 12px 0px rgba(110,139,179,0.25);
+      border-radius: 4px;
+      border: 1px solid #DDDDDD;
+      width: max-content;
+      font-size: 12px;
+    }
+    // 地址名称样式
+    ._label {
+      width: max-content;
+      box-shadow: 0px 0px 8px 0px rgba(204, 204, 204, 0.26);
+      color: white;
+      border-radius: 20px;
+      padding: 6px 12px;
+      // &.isScale {
+      //   animation: markerAnimationScale 0.3s linear;
+      // }
+    }
+    .label {
+      ._label();
+      background-color: #006aff;
+
+      // &.isScale {
+      //   animation: markerAnimationScale 0.3s linear;
+      // }
+    }
+    .noPlanLabel {
+      ._label();
+      background-color: #1abaff;
+    }
+    .orangeLabel {
+      ._label();
+      background-color: #ff861d;
+    }
+    .bigLabel {
+      ._label();
+      padding: 8px 16px;
+    }
+    .content {
+      display: inline-flex;
+    }
+    .areaName {
+      display: inline-block;
+      max-width: 80px;
+      .oneLine();
+    }
+    .bigAreaName {
+      font-size: 18px;
+      max-width: 120px;
+      .oneLine();
+    }
+    .signAreaName {
+      max-width: max-content;
+      width: max-content;
+    }
+    .planned {
+      display: inline-block;
+      margin-left: 8px;
+      background-color: white;
+      color: black;
+      padding: 0 4px;
+      border-radius: 10px;
+    }
+    .bigPlanned {
+      .planned();
+      font-size: 18px;
+    }
+    ._triangle {
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translate(-50%);
+      border: 6px solid #006aff;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+    .triangle {
+      ._triangle();
+      border: 6px solid #006aff;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: #006aff;
+    }
+    .bigTriangle {
+      ._triangle();
+      bottom: -17px;
+      border: 9px solid #006aff;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: #006aff;
+    }
+    .noPlanBigTriangle {
+      .bigTriangle();
+      border: 9px solid #1abaff;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: #1abaff;
+    }
+    .orangeTriangle {
+      ._triangle();
+      border: 6px solid #ff861d;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: #ff861d;
+    }
+    .orangeBigTriangle {
+      ._triangle();
+      bottom: -17px;
+      border: 9px solid #ff861d;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: #ff861d;
+    }
+    .signTriangle {
+      ._triangle();
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      border: 6px solid #006aff;
+      border-bottom-color: #006aff;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+    .back {
+      display: inline-block;
+      margin-left: 16px;
+    }
+    .bigBack {
+      font-size: 18px;
+    }
+
+    // 省市圆圈样式
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 8px 0px rgba(204, 204, 204, 0.26);
+      padding: 10px;
+      text-align: center;
+    }
+    .mapCircle {
+      background-color: #006aff;
+      .circle();
+    }
+    .orangeMapCircle {
+      .circle();
+      background-color: #ff861d;
+    }
+    .opacity {
+      opacity: 0.8;
+    }
+    .signImg {
+      .wh(32px,38px);
+      img {
+        .wh(100%,100%);
+      }
+    }
+    // 省市区聚合样式
+    .circlebox {
+      .wh(64px, 64px);
+      border-radius: 50%;
+      border: 1px solid #fff;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+      background-color: #f6f7f9;
+      .f-DAJ(column, center, center);
+
+      .whiteBg {
+        text-align: center;
+        .wh(80%);
+        border-radius: 50%;
+        .f-DAJ(column, center, center);
+        background-color: #fff;
+
+        .text-name {
+          margin-top: 4px;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 16px;
+          color: #132144;
+          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+          white-space: normal;
+        }
+
+        .text-total {
+          font-size: 14px;
+          line-height: 17px;
+          color: #132144;
+          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}
+// 省市区label样式
+.mapLabel {
+  background-color: white;
+  position: relative;
+  width: max-content;
+  padding: 0px 16px 8px 8px;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+
+  .colorCircle {
+    margin-right: 4px;
+    .wh(8px);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .line {
+    padding-top: 8px;
+    font-size: 12px;
+    .rightLine {
+      margin: 0 4px;
+      .wh(1px,10px);
+      display: inline-block;
+      background: #333;
+      display: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .triangle {
+    position: absolute;
+    top: -12px;
+    left: 20%;
+    transform: translate(50%);
+    border: 6px solid #fff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+}

@@ -1,0 +1,138 @@
+.container {
+
+  min-width: 1254px;
+
+  // 品牌选择
+  .topContainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 hsla(0, 0%, 80%, 0.4);
+
+    .banner {
+      margin: 0 20px;
+      padding: 11px 0;
+      border-bottom: #ddd 1px solid;
+      border-radius: 8px 8px 0px 0px;
+      .flex(warp, nowarp, space-between, center);
+
+      .title {
+        .textLeft {
+          .text(#222, 18);
+          font-weight: 600;
+        }
+
+        .textRight {
+          .text(#222, 12);
+          display: inline-block;
+          margin-left: 8px;
+        }
+      }
+
+      .selectContent {
+        position: relative;
+
+        .select {
+          width: 360px;
+          margin-bottom: 0;
+        }
+
+        .showIcon {
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 12;
+          background-color: #006aff;
+          border-radius: 0px 4px 4px 0px;
+          .wh(32px, 32px);
+          .flex(row, nowarp, center, center, center);
+        }
+      }
+
+    }
+
+    .checkBoxGroupContain {
+      padding: 15px 0 8px 20px;
+
+      .checkBox {
+        /* 展开状态 */
+        height: fit-content;
+        max-height: 1800px;
+        transition: 0.7s;
+
+        &.pickUp {
+          max-height: 70px;
+          transition: 0.2s;
+          overflow: hidden;
+        }
+
+        .icon {
+          .wh(16px);
+          position: relative;
+          top: 3px;
+          object-fit: contain;
+          background: #f6f7f9;
+          border-radius: 2px;
+        }
+
+        .brandName {
+          margin-left: 4px;
+          display: inline-block;
+          // max-width: 140px;
+          overflow-wrap: break-word;
+        }
+
+        .content {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 16px;
+        }
+
+        :global {
+          .ant-checkbox-group {
+            display: block;
+          }
+
+          .ant-checkbox-wrapper {
+            display: flex;
+            align-items: flex-start;
+          }
+        }
+
+      }
+
+
+      .packup {
+        margin: 0 auto;
+        .flex(row, nowarp, center, center, center);
+        .text(#999, 14px);
+        cursor: pointer;
+
+        .arrowIcon {
+          .wh(8px);
+          margin-left: 8px;
+        }
+
+        .arrowIconRotate {
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          transition: transform .5s;
+        }
+
+        .arrowIconReset {
+          transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          transition: transform .5s;
+        }
+      }
+    }
+  }
+
+
+}
+
+.formatterColor {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #006aff;
+}

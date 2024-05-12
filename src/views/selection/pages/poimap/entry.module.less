@@ -1,0 +1,357 @@
+.container {
+  .wh(100%, calc(100vh - 80px));
+  position: relative;
+  overflow: hidden;
+
+  .pcdCon {
+    .mixinsPosition(absolute, -42px, 0, auto, 0);
+  }
+
+  .leftDrawerWrapper {
+    padding: 22px 12px;
+    box-sizing: border-box;
+
+    .treeCon {
+      max-height: calc(100vh - 370px);
+      overflow: auto;
+      margin-right: -12px
+    }
+
+    .brandItemCon {
+      // border: 1px solid red;
+      .oneLine();
+      max-width: 110px;
+
+      .imgCon {
+        display: inline-block;
+        .wh(14px, 14px);
+        object-fit: cover;
+      }
+    }
+  }
+
+  :global {
+    .ant-tree {
+      .ant-tree-list {
+        .ant-tree-treenode {
+          .ant-tree-node-content-wrapper {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .dataBoardCon {
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    .headCon {
+      background-color: #fff;
+      padding: 16px 12px;
+    }
+
+    .tabsCon {
+      padding: 0 0 0 12px;
+    }
+
+    :global {
+      .ant-tabs {
+        .ant-tabs-nav {
+          .ant-tabs-tab {
+            font-size: 14px;
+            padding: 0 15px 6px;
+            // border-radius: 0;
+
+            &+.ant-tabs-tab {
+              margin-left: 0;
+            }
+
+            &.ant-tabs-tab-active {
+              font-weight: bold;
+            }
+          }
+
+          .ant-tabs-nav-operations {
+            display: none;
+          }
+        }
+        .ant-tabs-content-holder {
+          padding: 0 8px 24px 0;
+          max-height: calc(100vh - 200px);
+          overflow-y: auto
+        }
+      }
+    }
+
+    .introductionBg {
+      .wh(100%, 156px);
+    }
+
+    .progressRow {
+      .flex(row, nowrap, flex-start, center, center);
+      margin-top: 8px;
+      font-size: 12px;
+      color: #656E85;
+
+      .labelCon {
+        width: 60px;
+        margin-top: 3px;
+
+        &.small {
+          width: 30px;
+        }
+      }
+
+      .valCon {
+        flex: 1;
+
+        :global {
+          .ant-progress {
+            // width: 118px;
+
+            .ant-progress-text {
+              font-size: 12px;
+              color: #656E85;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  :global {
+    .amap-maps {
+      .cardWrapper {
+        position: relative;
+        min-width: 60px;
+        min-height: 40px;
+        padding: 6px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 6px 0px rgba(0, 63, 92, 0.3);
+        color: #132144;
+        
+        .cardVal {
+          position: relative;
+          font-size: 12px;
+        }
+
+        &:before {
+          .bottom-arrow(calc(50% - 6px));
+        }
+      }
+
+      .ringWrapper {
+        .flex(column, nowrap, center, center);
+        .wh(64px, 64px);
+        border-radius: 50%;
+        background-color: #f6f7f9;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+
+        .innerRing {
+          .wh(80%);
+          text-align: center;
+          background-color: #fff;
+          border-radius: 50%;
+          .flex(column, nowrap, center, center);
+        }
+      }
+
+      .cardMarkerWrapper {
+        position: relative;
+        background-color: #fff;
+        padding: 12px 8px;
+        // min-width: 150px;
+        box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+        border: 1px solid #e4e7ed;
+        border-radius: 4px;
+        font-size: 12px;
+
+        .contentWrapper {
+          max-height: 250px;
+          overflow: auto;
+          .itemRow {
+            .flex(row, nowrap, space-between, center);
+            margin-top: 5px;
+            
+            .label {
+              width: max-content;
+              white-space: nowrap;
+            }
+            .valCon {
+              flex: 1;
+              padding-left: 12px;
+              width: max-content;
+            }
+
+            &:first-of-type {
+              margin-top: 0;
+            }
+          }
+        }
+
+        &::before {
+          .top-arrow(28px);
+        }
+      }
+
+      .pointCon {
+        .wh(30px, 35px);
+        background-image: url(https://staticres.linhuiba.com/project-custom/locationpc/industry/bg_industry_map.png);
+        background-size: 100% 100%;
+        padding: 3px;
+
+        .imgCon {
+          border-radius: 50%;
+          .wh(24px);
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+  // .toolbarCon {
+  //   .mixinsPosition(absolute, 10px, null, null, 16px);
+  //   min-width: 260px;
+  //   z-index: 190;
+
+  //   .province {
+  //     .wh(100%, auto);
+  //   }
+
+  //   .treeSelect {
+
+  //     .wh(100%, auto);
+  //     max-height: 74vh;
+  //     margin-top: 8px;
+  //     overflow-y: auto;
+
+  //     .tree {
+  //       padding-top: 10px;
+
+  //       :global {
+
+  //         .ant-tree-treenode {
+  //           width: 100%;
+  //           display: block;
+  //           position: relative;
+
+  //           .ant-tree-switcher {
+  //             display: inline-block;
+  //           }
+
+  //           .ant-tree-checkbox {
+  //             display: inline-block;
+  //             position: absolute;
+  //             right: 0%;
+  //             z-index: 9;
+  //           }
+
+  //           .ant-tree-title {
+  //             .titleWrapper {
+  //               display: inline-block;
+  //               margin-right: 30px;
+
+  //               .dark {
+  //                 font-size: 14px;
+  //                 font-weight: 500;
+  //                 color: #132144;
+  //                 line-height: 16px;
+  //               }
+
+  //               .light {
+  //                 font-size: 14px;
+  //                 font-weight: 400;
+  //                 color: #7A839B;
+  //                 line-height: 16px;
+  //               }
+  //             }
+  //           }
+
+  //           span.ant-tree-checkbox-indeterminate {
+  //             span::after {
+  //               .wh(0, 0)
+  //             }
+  //           }
+  //         }
+
+  //       }
+  //     }
+  //   }
+  // }
+
+  // :global {
+  //   .amap-maps {
+
+  //     .circlebox {
+  //       min-width: 60px;
+  //       min-height: 40px;
+  //       padding: 6px;
+  //       text-align: center;
+  //       background-color: #fff;
+  //       box-shadow: 0px 0px 6px 0px rgba(0, 63, 92, 0.3);
+  //       .f-DAJ(column, center, flex-start);
+
+  //       .text-name {
+  //         font-size: 10px;
+  //         font-weight: bold;
+  //         line-height: 16px;
+  //         color: #132144;
+  //         white-space: normal;
+  //       }
+
+  //       .text-total {
+  //         font-size: 8px;
+  //         line-height: 17px;
+  //         color: #132144;
+  //       }
+
+  //       &:before {
+  //         .bottom-arrow(calc(50% - 6px));
+  //       }
+  //     }
+
+  //     .label {
+  //       padding: 6px 12px;
+  //       background: #FFFFFF;
+  //       box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+  //       border: 1px solid #E4E7ED;
+  //       font-size: 14px;
+  //       color: #333333;
+  //       line-height: 16px;
+  //       position: relative;
+
+  //       .text-name {
+  //         font-size: 14px;
+  //         font-weight: 500;
+  //         color: #333333;
+  //         line-height: 20px;
+  //         white-space: nowrap;
+  //       }
+
+  //       .text-address {
+  //         font-size: 14px;
+  //         font-weight: 400;
+  //         color: #666666;
+  //         line-height: 14px;
+  //       }
+
+  //       &::before {
+  //         .top-arrow();
+  //       }
+  //     }
+
+
+  //   }
+  // }
+
+  // //  隐藏滚动条
+  // * {
+  //   scrollbar-width: none; // firefix
+  //   -ms-overflow-style: none; // ie
+  // }
+
+  // ::-webkit-scrollbar {
+  //   width: 0 !important;
+  // }

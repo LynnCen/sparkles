@@ -1,0 +1,98 @@
+.container {
+  .topSection {
+    .tabWrapper {
+      height: 62px;
+      padding: 10px 16px 0;
+      background: url('https://staticres.linhuiba.com/project-custom/locationpc/recommend/bg_businessdetail_top@2x.png') 100%/100% no-repeat;
+    }
+    :global {
+      .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-tab {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 15px 0 9px;
+      }
+      .ant-tabs-tab + .ant-tabs-tab {
+        margin: 0 0 0 24px;
+      }
+      .ant-tabs-top>.ant-tabs-nav:before {
+        border-bottom: none;
+      }
+      .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-ink-bar {
+        height: 2px;
+      }
+    }
+    .countCon {
+      font-size: 12px;
+      width: 100%;
+      padding: 9px 12px;
+      color: #132144;
+      margin-top: -12px;
+      border-bottom: solid 1px #eee;
+    }
+  }
+
+  .selectedRow {
+    padding: 12px 0 4px 12px;
+  }
+
+  .listCon {
+    padding: 0 12px;
+    box-sizing: border-box;
+
+    :global {
+      .ant-list-item {
+        padding: 18px 0;
+      }
+    }
+    .listItemCon {
+      padding: 0 0;
+      box-sizing: border-box;
+      flex: 1;
+      cursor: pointer;
+
+      .titleRow {
+        .flex(row, nowrap, space-between, center);
+        .titCon {
+          .one-ellipsis();
+          width: 200px;
+        }
+        .score {
+          color: #ff861d;
+        }
+      }
+
+      .infoRow {
+        .flex(row, nowrap, flex-start, center);
+        .labelCon {
+          padding: 0 5px;
+          background-color: #fafafa;
+          width: max-content;
+          height: 20px;
+          line-height: 20px;
+        }
+        .divider {
+          color: #ddd;
+        }
+        .address {
+          .one-ellipsis();
+        }        
+      }
+
+      :global {
+        .ant-badge-status-dot {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
+
+  .footerCon {
+    padding: 12px 14px;
+    box-shadow: 0px 2px 8px 0px rgba(86, 86, 86, 0.2);
+    box-sizing: border-box;
+  }
+}
+
+.networkDetail {
+}

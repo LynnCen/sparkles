@@ -1,0 +1,326 @@
+.font {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.mapContainer {
+  margin-top: 12px;
+  background-color: white;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  padding: 12px 16px 16px 21px;
+
+  :global {
+    .ant-tabs {
+      margin-bottom: 0px;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
+      .font();
+
+    }
+
+    .ant-tabs-tab-btn {
+      .font();
+      font-weight: 400;
+      color: #646566;
+    }
+
+    .ant-tabs.ant-tabs-card>.ant-tabs-nav .ant-tabs-tab {
+      border: 1px solid #eee;
+    }
+
+    .ant-tabs.ant-tabs-card>.ant-tabs-nav .ant-tabs-tab-active {
+      background: #fff;
+      border: 1px solid #eee;
+      border-bottom: 1px solid #fff;
+      border-radius: none;
+    }
+
+    // .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab:nth-child(1) {
+    //   border-radius: 8px 0 0 0;
+    // }
+
+    // .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab:nth-child(2) {
+    //   border-radius: 0 8px 0 0;
+    //   margin-left: -1px;
+    // }
+    .ant-tabs-card.ant-tabs-top>div>.ant-tabs-nav .ant-tabs-tab+.ant-tabs-tab {
+      margin-left: -1px;
+    }
+
+    .ant-tabs-card.ant-tabs-top>div>.ant-tabs-nav .ant-tabs-tab:nth-child(1) {
+      border-radius: 4px 0px 0 0;
+    }
+
+    .ant-tabs-card.ant-tabs-top>div>.ant-tabs-nav .ant-tabs-tab:nth-child(2) {
+      border-radius: 0px 4px 0 0;
+    }
+  }
+
+  .title {
+    width: 100%;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    position: relative;
+    .flex(row, nowarp, space-between, center);
+
+    .left {
+      .flex();
+
+      .titleText {
+        width: max-content;
+        margin-left: 12px;
+        margin-right: 8px;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 4px;
+          height: 16px;
+          background: @primary-blue;
+          left: 0px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+
+    .checkboxContain {
+      // flex: 1;
+      // width: 100%;
+      overflow-x: scroll;
+      position: relative;
+      margin-left: 12px;
+      margin-bottom: -16px;
+
+      .checkbox {
+        .flex();
+      }
+
+      .select {
+        width: 360px;
+      }
+
+      :global {
+        .ant-form-item {
+          margin-bottom: 0;
+        }
+
+        .ant-checkbox-group {
+          .flex(row, nowarp, flex-start);
+
+          .ant-checkbox-wrapper,
+          .ant-checkbox-group-item {
+            width: max-content;
+            .flex(row, nowarp);
+            align-items: none;
+          }
+
+          .ant-checkbox+span {
+            width: max-content;
+            .text(#333, 14px);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .reset {
+      .wh(28px, 24px);
+      right: 0;
+      line-height: 24px;
+      text-align: center;
+      cursor: pointer;
+      background-color: #fff;
+      position: absolute;
+    }
+
+    .checkbox2 {
+      .flex(column, nowarp, flex-start);
+
+      :global {
+        .ant-checkbox-group {
+          .flex(column, nowarp, flex-start);
+        }
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    height: 405px;
+  }
+
+  // 地图相关
+  .mapCon {
+    width: auto;
+    flex: 1;
+    position: relative;
+
+    .radio {
+      position: absolute;
+      background-color: white;
+      padding: 8px 16px;
+      top: 16px;
+      left: 16px;
+      z-index: 99;
+      border-radius: 8px;
+      margin-right: 112px;
+
+      .radioColor {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        margin-right: 4px;
+      }
+    }
+
+    .backCountryBtn {
+      width: 90px;
+      height: 36px;
+      background: #ffffff;
+      border-radius: 8px;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      font-weight: bold;
+    }
+
+    .storeNum {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      width: 188px;
+      height: 36px;
+      background: #ffffff;
+      border-radius: 4px;
+      z-index: 999;
+      line-height: 36px;
+      padding: 0 8px;
+
+      .storeColor {
+        width: 68px;
+        height: 8px;
+        line-height: 8px;
+        display: inline-block;
+        border-radius: 5px;
+      }
+
+      span {
+        margin-left: 6px;
+        color: #717a8f;
+      }
+    }
+
+    :global {
+      .amap-maps {
+        border-radius: 8px;
+      }
+
+      .label {
+        color: #333;
+        background: white;
+        // padding-top: 8px;
+        padding: 12px 12px 0;
+        position: relative;
+        border-radius: 5px;
+
+        .cityName {
+          // margin-left: 8px;
+          display: block;
+          padding-bottom: 4px;
+          border-bottom: 1px solid #eee;
+          margin-bottom: 4px;
+          z-index: 9999;
+        }
+
+        .itemContain {
+          min-width: 220px;
+          .flex(row, warp, space-between);
+          flex-wrap: wrap;
+
+          .shopTypeItem {
+            .brandItem();
+            .flex();
+          }
+        }
+
+        .brandItem {
+          padding-bottom: 8px;
+          // width: 160px;
+          // padding-left: 10px;
+          white-space: nowrap;
+          min-width: 110px;
+
+          .name {
+            padding-right: 4px;
+          }
+
+          .total {
+            padding-left: 4px;
+            padding-right: 8px;
+          }
+
+          // .name {
+          //   // margin-left: 8px;
+          //   // margin-right: 4px;
+          // }
+
+          // .total {
+          //   margin-left: 4px;
+          //   margin-right: 8px;
+          // }
+        }
+
+        .triangle {
+          position: absolute;
+          top: -12px;
+          left: 36px;
+          border: 6px solid white;
+          border-top-color: transparent;
+          border-bottom-color: white;
+          border-left-color: transparent;
+          border-right-color: transparent;
+        }
+
+        .bottomTriangle {
+          position: absolute;
+          bottom: -12px;
+          left: 36px;
+          border: 6px solid white;
+          border-top-color: white;
+          border-bottom-color: transparent;
+          border-left-color: transparent;
+          border-right-color: transparent;
+        }
+      }
+    }
+  }
+
+  .tableCon {
+    width: 463px;
+    margin-left: 12px;
+
+    .tableInfo {
+      overflow: scroll;
+      max-height: 405px;
+    }
+  }
+}
+
+.rankIndex {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}

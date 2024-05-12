@@ -1,0 +1,66 @@
+.container {
+  .context {
+    display: flex;
+    flex-direction: row;
+
+    .left {
+      .top {
+        margin-bottom: 16px;
+
+        .dataArea {
+          display: flex;
+          flex-direction: row;
+          .dataCard {
+            width: 222px;
+            height: 124px;
+            margin-right: 16px;
+          }
+        }
+
+        .chartArea {
+          display: flex;
+          flex-direction: row;
+          margin-top: 16px;
+          .chartCard {
+            width: 460px;
+            height: 234px;
+            margin-right: 16px;
+          }
+        }
+      }
+      .table {
+        width: 936px;
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 8px;
+
+        .progress {
+          .flex(row, nowrap, space-between, center);
+          .greenPoint {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            background: #009963;
+            margin-right: 4px;
+          }
+        }
+        .redPoint {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 4px;
+          background: #F23030;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .right {
+      // background-color: #fff;
+      width: 258px;
+      min-width: 258px;
+      height: 720px;
+    }
+  }
+}

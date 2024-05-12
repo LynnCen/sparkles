@@ -1,0 +1,29 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  .left {
+    display: flex;
+    .text {
+      display: flex;
+      padding-top: 2px;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 11px;
+      .showMore {
+        width: 960px;
+      }
+    }
+  }
+
+  :global {
+    .ant-btn.ant-btn-round.ant-btn-primary.ant-btn-background-ghost {
+      color: #006aff;
+      border-color: #006aff;
+      text-shadow: none;
+      background-color: transparent;
+    }
+  }
+}

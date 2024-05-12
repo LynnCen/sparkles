@@ -1,0 +1,59 @@
+.canvasMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: transparent;
+}
+.videoCon {
+  .wh(100%, 100%);
+  object-position: top left; // 视频画面在容器的位置，在左上位置方便画框
+}
+.controlsCon {
+  .wh(100%, 3em);
+  .flex(row, nowrap, flex-start, center);
+  .mixinsPosition(absolute, auto, 0, 0, 0);
+  background-color: rgba(43, 51, 63, 0.7);
+  z-index: 3;
+  padding: 0 24px;
+
+  .timeCon {
+    width: 110px;
+    position: relative;
+    // border: 1px solid red;
+
+    .curTimeCon {
+      display: inline-block;
+      width: 40px;
+    }
+
+    &::before {
+      content: '/';
+      position: absolute;
+      left: 35px
+
+    }
+  }
+
+  .progressControl {
+    flex: 1;
+
+    :global {
+      .ant-slider.ant-slider-horizontal {
+        .ant-slider-rail {
+          background-color: rgba(238, 238, 238, 0.6);
+        }
+        .ant-slider-track {
+          background-color: #fff;
+        }
+        .ant-slider-handle {
+          border-color: #fff;
+        }
+      }
+    }
+  }
+
+  .speedControl {
+    width: 50px;
+  }
+}

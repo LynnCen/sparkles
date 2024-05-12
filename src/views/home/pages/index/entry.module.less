@@ -1,0 +1,260 @@
+.container {
+  display: flex;
+
+  .leftCon {
+    flex: 1;
+    max-width: 75%; // 防止浏览器放大时的异常表现
+
+    .title {
+      position: relative;
+      margin-bottom: 21px;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 14px;
+        background: @primary-blue;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .overviewCon {
+      // .wh(880px,413px);
+      margin-top: 16px;
+      min-width: 880px;
+      background-color: white;
+      padding: 20px 0 0 15px;
+      border-radius: 18px;
+      .card {
+        margin-top: 20px;
+        margin-bottom: 18px;
+        padding-left: 9px;
+
+        .downStyle {
+          color: #27c259;
+        }
+        .upStyle {
+          color: #fb553a;
+        }
+      }
+    }
+
+    .listCon {
+      // .wh(880px,346px);
+      min-width: 880px;
+      background-color: white;
+      margin-top: 16px;
+      padding: 20px 0 0 15px;
+      border-radius: 18px;
+    }
+    .bottomCardCon {
+      .flex();
+      min-width: 880px;
+      background-color: white;
+      padding: 20px 24px;
+      border-radius: 18px;
+      .finish {
+        .kpiFinishBg {
+          margin-left: 14px;
+          .wh(263px,165px);
+        }
+      }
+      .funnel {
+        // .wh(235px,219px);
+        // flex: 2;
+        margin-right: 25px;
+        .funnelBg {
+          margin-left: 14px;
+          .wh(217px,158px);
+          // width: 85%;
+          // height: 70%;
+        }
+      }
+      .taskCard {
+        flex: 1;
+        .card {
+          height: 88px;
+          border-radius: 6px;
+          background-color: #f7f8fa;
+          position: relative;
+          // margin-right: 16px;
+          margin-bottom: 16px;
+          .circle {
+            display: inline-block;
+            .wh(12px);
+            border-radius: 50%;
+            color: white;
+            border: 4px solid;
+            position: absolute;
+            top: 16px;
+            left: 16px;
+          }
+          .cardTitle {
+            color: #656e85;
+            padding: 12px 0 0 42px;
+          }
+          .cardNums {
+            font-size: 26px;
+            font-weight: bold;
+            padding-left: 42px;
+          }
+        }
+      }
+    }
+  }
+
+  .rightCon {
+    width: 25%;
+    min-width: 283px;
+    max-width: 450px;
+    height: calc(100vh - 80px);
+    // background-color: white;
+    margin-left: 18px;
+    // overflow: scroll;
+
+    .rightContainer {
+      width: 100%;
+      .topSwitch {
+        border-radius: 18px;
+        // .wh(283px,50px);
+        .wh(100%,50px);
+        background-color: white;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 24px;
+        position: relative;
+        .switch {
+          color: #006aff;
+          display: initial-block;
+          position: absolute;
+          right: 24px;
+        }
+      }
+      .topAvatar {
+        // .wh(283px,123px);
+        .wh(100%,123px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        img {
+          .wh(94px);
+        }
+      }
+      .store {
+        // .wh(283px,74px);
+        .wh(100%,74px);
+        border-radius: 18px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .storeCard {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .storeIcon {
+            .wh(32px);
+            background-color: #f7f8fa;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+          }
+          .storeText {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .storeLabel {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .storeNumberCon {
+      margin-top: 16px;
+      // padding: 20px 0 0 24px;
+      // .wh(283px,298px);
+      border-radius: 18px;
+
+      .wh(100%,298px);
+      position: relative;
+      background-color: white;
+      .content {
+        padding-left: 10%;
+        width: 100%;
+      }
+      .label {
+        color: #656e85;
+        span {
+          padding: 16px 16px 4px 24px;
+          display: inline-block;
+        }
+      }
+      .bg {
+        // .wh(283px,195px);
+        .wh(auto,195px);
+        margin: 0;
+
+        padding: 0;
+      }
+    }
+    .storeProportionCon {
+      margin-top: 16px;
+      padding: 20px 0 0 24px;
+      // .wh(283px,250px);
+      border-radius: 18px;
+
+      .wh(100%,250px);
+      position: relative;
+      background-color: white;
+      .bg {
+        margin-top: 19px;
+        .wh(233px,169px);
+        // .wh(auto,169px);
+        .center();
+      }
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .leftCon {
+      max-width: 790px;
+      overflow: auto;
+      .bottomCardCon {
+        .finish {
+          .kpiFinishBg {
+            // margin-left: 14px;
+            .wh(210.4px,132px);
+          }
+        }
+
+        .funnel {
+          // margin-right: 16px;
+          .funnelBg {
+            margin-left: 0;
+            .wh(173.6px,126.4px);
+
+          }
+        }
+      }
+    }
+
+    .rightCon {
+      .storeNumberCon {
+        .content {
+          padding-left: 0
+        }
+      }
+    }
+  }
+}

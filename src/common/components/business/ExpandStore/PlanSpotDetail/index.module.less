@@ -1,0 +1,130 @@
+.detailTop {
+  .approvalContain {
+    width: 80%;
+    .flex(row, nowarp, flex-start, flex-start, center);
+    margin-bottom: 8px;
+    font-size: 0;
+
+    .item {
+      width: max-content;
+      margin-right: 21px;
+      font-size: 14px;
+    }
+
+    .statusIcon {
+      display: inline-block;
+      .wh(8px, 8px);
+      border-radius: 50%;
+      margin: 0 8px;
+      background-color: aqua;
+    }
+
+    .more {
+      cursor: pointer;
+
+      .scaleIcon {
+        transform: scale(0.8);
+      }
+    }
+  }
+
+  .reasonCon {
+    width: 100%;
+    padding: 8px;
+    height: max-content;
+    background: #f7f7fa;
+    border-radius: 4px;
+
+    .reason {
+      .text(#999, 14px);
+    }
+  }
+}
+
+//城市信息
+.cityInfo {
+  .wh(100%, max-content);
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px 0 9px 0;
+  border: 1px solid #ddd;
+
+  .districtName {
+    .text(#222, 18px);
+    font-weight: 500;
+
+    .dostrictPosition {
+      display: inline-block;
+      margin-left: 12px;
+      .text(#666, 13px);
+      font-weight: 400;
+
+      .icon {
+        .wh(14px);
+        color: #006aff;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .info {
+    margin: 16px 14px 0;
+    .flex(row, nowarp, space-between, center, center);
+
+    .item {
+      .flex(column, nowarp, center, flex-start, center);
+
+      .label {
+        .text(#666, 12px);
+      }
+
+      .content {
+        margin-top: 4px;
+        .text(#222, 16px);
+        font-weight: 500;
+
+        .cent {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// 集客点信息
+.collectionPointInfo {
+  margin-top: 20px;
+  .flex(row, nowarp, center, space-between);
+
+  .spotInfo {
+    width: 85%;
+    margin-right: 10px;
+  }
+
+  .link {
+    padding-left: 26px;
+    flex: 1;
+  }
+}
+
+// 动线地图
+.mapCon {
+  padding: 10px 0;
+  .wh(100%,280px);
+  :global {
+    .point {
+      .wh(48px,48px);
+      position: relative;
+    }
+    .text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    img {
+      .wh(100%,100%);
+    }
+  }
+}

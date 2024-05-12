@@ -1,0 +1,103 @@
+.dynamicDetail {
+  margin-top: 10px;
+  height: max-content;
+  background-color: white;
+  position: relative;
+
+  .anchorCon {
+    position: fixed;
+    right: 12px;
+    width: 150px;
+
+    &.defaultPostion {
+      bottom: 120px;
+    }
+  }
+
+  .spotRelationDetail{
+    :global{
+      .ant-tabs-content {
+        padding-right: 0 !important;
+      
+      }
+      .ant-tabs-nav::before{
+        border-bottom: none;
+      }
+    }
+  }
+
+  :global {
+
+    .ant-tabs>.ant-tabs-nav,
+    .ant-tabs>div>.ant-tabs-nav {
+      margin-bottom: 0;
+      background-color: white;
+    }
+
+    .ant-tabs-content {
+      padding-right: 40px;
+      // padding-bottom: 16px;
+    }
+
+    .ant-tabs {
+      .ant-tabs-nav {
+        .ant-tabs-tab-btn:active,
+        .ant-tabs-tab-btn:focus {
+          color: #222
+        }
+      }
+    }
+  }
+
+  &.topSticky {
+    :global {
+
+      .ant-tabs>.ant-tabs-nav,
+      .ant-tabs>div>.ant-tabs-nav {
+        position: sticky;
+        top: 0;
+        z-index: 9;
+      }
+    }
+  }
+
+  &.hideTab {
+    :global {
+      .ant-tabs-nav {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+.topCon {
+  height: 72px;
+  background-color: white;
+  position: relative;
+
+  .topTitle {
+    font-size: 20px;
+    color: #132144;
+    font-weight: bold;
+    padding-top: 22px;
+    padding-left: 15px;
+  }
+}
+
+.spotRelationDetail{
+  :global {
+
+    .ant-tabs>.ant-tabs-nav,
+    .ant-tabs>div>.ant-tabs-nav {
+      margin-bottom: 0;
+      background-color: white;
+    }
+
+    .ant-tabs-content {
+      padding-right: 223px;
+      padding-bottom: 16px;
+    }
+  }
+}

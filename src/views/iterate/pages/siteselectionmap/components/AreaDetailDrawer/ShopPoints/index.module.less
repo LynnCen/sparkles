@@ -1,0 +1,40 @@
+.pointItemCon {
+  .flex();
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 12px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #006AFF;
+    .titleText {
+      color: #2441B3
+    }
+  }
+
+  .pointImgCon {
+    .wh(164px, 122px);
+    min-width: 164px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .contentCon {
+    flex: 1;
+    overflow: hidden;
+
+    .briefCon {
+      width: 100%;
+      flex: 1;
+      padding: 10px 12px;
+      background: #FAFAFA;
+      border-radius: 4px;
+      box-sizing: border-box;
+
+      .itemComCon {
+        .flex(row, nowrap, flex-start, center);
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.topCon {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  z-index: 3;
+  .flex(row, nowrap, flex-start);
+
+  .searchCon {
+    box-shadow: 0px 0px 12px 0px rgba(110,139,179,0.25);
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 2px 0;
+    margin-right: 12px;
+
+    :global {
+      .ant-select-selector {
+        border: none
+      }
+
+      .ant-select.ant-select-auto-complete {
+        .ant-input-affix-wrapper {
+          padding-left: 0;
+          border: none;
+          .ant-input-suffix {
+            .ant-input-clear-icon.ant-input-clear-icon-has-suffix {
+              margin-right: 4px
+            }
+          }
+        }
+      }
+
+      .ant-select.ant-cascader {
+        .ant-select-selector {
+          padding-left: 8px;
+        }
+        .ant-select-arrow {
+          right: 17px;
+  
+          &::after {
+            content: '';
+            position: absolute;
+            right: -8px;
+            top: 50%;
+            .wh(1px, 14px);
+            background-color: #ddd;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+
+  // .toolBoxWrapper {
+  //   // background: #fff;
+  //   // padding: 2px 0;
+  //   // border: 1px solid red;
+  // }
+}

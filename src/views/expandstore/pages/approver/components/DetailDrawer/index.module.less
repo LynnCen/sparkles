@@ -1,0 +1,90 @@
+.approveDrawer {
+  .detailTop {
+    background: #fff;
+    padding: 16px 0;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    .approvalTab {
+      margin-top: 30px;
+    }
+  }
+  .top {
+    padding: 0 40px;
+  }
+  .body {
+    padding: 0 40px;
+  }
+  :global {
+    .ant-drawer-body {
+      padding: 0px 0px;
+    }
+  }
+  // .mainCon {
+  //   overflow-y: scroll;
+  //   overflow-x: hidden;
+  //   padding-right: 40px;
+  // }
+  .detailContainer {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100vh - 64px);
+    scroll-padding-top: 134px; //兼容包含顶部固定定位头部的时候，anchor定位被遮挡的情况
+  }
+  .footerCon {
+    width: 100%;
+    .flex(row, nowrap, flex-end);
+    padding: 16px 40px;
+    background-color: #fff;
+    box-shadow: 0px -2px 4px 1px #f6f7f9;
+  }
+}
+
+.taskDetailTitleCon {
+  background: #fff;
+  padding-top: 16px;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  .extraButtons {
+    :global {
+      .ant-btn.ant-btn-text {
+        color: #999999;
+      }
+    }
+    .approvingBtn {
+      :global {
+        .ant-btn.ant-btn-text {
+          background: #f4f5f9;
+        }
+        .ant-btn {
+          cursor: not-allowed;
+        }
+      }
+    }
+    .historyBtn {
+      height: 32px;
+      padding: 0 8px;
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+      &:hover {
+        cursor: pointer;
+        span {
+          color: #006aff;
+        }
+        .icon {
+          color: #006aff;
+        }
+      }
+    }
+  }
+  .statusBox {
+    .wh(44px,20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+  }
+}

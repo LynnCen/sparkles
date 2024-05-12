@@ -1,0 +1,23 @@
+.map {
+  width: 240px; // 之前362
+  height: 240px; // 之前362
+  :global {
+    .contend-con {
+      position: relative;
+      .wh(24px, 25.5px); // 之前32,34
+      background: url('https://staticres.linhuiba.com/project-custom/store-assistant-h5/fish/icon_card_wrapper.png') no-repeat;
+      background-size: 100%;
+
+      .contend-brand-logo {
+        .wh(22px, 24px);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        border-radius: 50%;
+        overflow: hidden;
+        object-fit: cover;
+        transform: translate(-50%, -40%);
+      }
+    }
+  }
+}

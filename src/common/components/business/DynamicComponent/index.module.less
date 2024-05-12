@@ -1,0 +1,56 @@
+
+// 地图样式
+.mapCon {
+  .wh(100%, 208px);
+  margin-bottom: 16px;
+}
+
+.anchorCon {
+  position: fixed;
+  right: 20px;
+  width: 150px;
+  &.defaultPostion {
+    top: 125px;
+  }
+}
+
+.dynamicComponent {
+  :global {
+    // 与该文件上传组件禁用时展示相关 src/common/components/business/DynamicComponent/components/Upload.tsx
+    .ant-upload.ant-upload-select.ant-upload-select-picture-card.ant-upload-disabled {
+      visibility: hidden; // 组件隐藏，但能让子组件显示
+      width: auto;
+      height: 16px;
+    }
+  }
+}
+
+.textareaItem {
+  :global {
+    textarea.ant-input {
+      min-height: 62px;
+    }
+  }
+}
+.contendInfo {
+
+  :global {
+    .operate {
+      cursor: pointer;
+      font-weight: 500;
+      color: #006AFF;
+      font-size: 14px;
+    }
+
+    .operate-wrapper {
+      height: 40px;
+    }
+
+    .disabled {
+      .operate {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

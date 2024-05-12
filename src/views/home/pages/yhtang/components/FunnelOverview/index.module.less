@@ -1,0 +1,74 @@
+.overviewCon {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 17px 16px 20px;
+
+  .flexCon {
+    .flex();
+
+    .leftCon {
+      flex-basis: 50%;
+
+      .funnelItem {
+        position: relative;
+        .flex(row, nowrap, center);
+        .wh(400px, 64px);
+        margin-left: 196px;
+        // border: 1px solid red;
+        margin-top: 12px;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+
+        // 等腰梯形
+        .isoscelesTrapezoid {
+          width: 400px;
+          border-top: 64px solid rgb(0, 106, 255);              
+          border-left: 20px solid transparent;   
+          border-right: 20px solid transparent;
+          opacity: 0.5;
+
+          .explainCon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .tooltipIcon {
+              opacity: 0.8;
+            }
+          }
+        }
+        // 梯形边上的数值解释
+        .explainValCon {
+          position: absolute;
+          right: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-right: 106px;
+
+          .valCon {
+            position: relative;
+            padding-right: 12px;
+
+            &::after {
+              content: ' ';
+              position: absolute;
+              top: 50%;
+              left: 100%;
+              .wh(117px, 1px);
+              background-color: #DDDDDD;
+            }
+          }
+        }
+      }
+    }
+
+    .rightCon {
+      flex-basis: 50%;
+      padding-left: 12px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@prefixCls: description;
+@label: ~'@{prefixCls}-label';
+@content: ~'@{prefixCls}-content';
+
+.@{prefixCls}-wrapper {
+  margin-bottom: 16px;
+  .@{prefixCls} {
+    display: flex;
+  }
+  .@{label} {
+    color: #717A8F;
+  }
+  .@{content} {
+    color: #132144;
+    flex: 1;
+  }
+}

@@ -1,0 +1,134 @@
+.topLeft {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  .flex();
+  .card {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #222;
+  }
+  // 竞品门店+本品牌门店
+  .content {
+    position: relative;
+    display: inline-block;
+    // 竞品门店 点击按钮
+    .competitorCard {
+      .wh(100px,37px);
+      .card();
+    }
+    // 本品牌门店 点击按钮
+    .brandCard {
+      .wh(114px,37px);
+      margin-left: 12px;
+      .card();
+    }
+    // icon
+    .arrowIcon {
+      color: #959bab;
+      transform: rotate(0);
+      transition: transform 0.2s linear;
+    }
+    // icon
+    .arrowIconUp {
+      color: #959bab;
+      transform: rotate(180deg);
+      transition: transform 0.2s linear;
+    }
+    // 竞品门店内内容
+    .competitorCon {
+      position: absolute;
+      top: 49px; //37+12
+      left: 0px;
+      .wh(200px, auto);
+      max-height: 400px;
+      background-color: white;
+      box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+      border-radius: 4px;
+      overflow: scroll;
+      padding: 12px;
+      .title {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 8px;
+      }
+      .flexStartCon {
+        display: inline-flex;
+
+        .imgCon {
+          display: inline-block;
+          .wh(14px, 14px);
+        }
+      }
+    }
+    // 本品牌门店内容
+    .brandCon {
+      position: absolute;
+      top: 49px; //37+12
+      left: 12px; //margin-left的12
+      .wh(200px, auto);
+      max-height: 400px;
+      background-color: white;
+      box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+      border-radius: 4px;
+      overflow: scroll;
+      padding: 12px;
+      .title {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 8px;
+      }
+      .inlineFlex {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100px;
+      }
+    }
+  }
+
+  .cityCon {
+    background: #fff;
+    margin-right: 12px;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    border-radius: 4px;
+
+    :global {
+      .ant-select-selector {
+        height: 37px;
+        border-color: transparent !important;
+
+        .ant-select-selection-search {
+          .ant-select-selection-search-input {
+            height: 37px;
+            line-height: 37px;
+          }
+        }
+        .ant-select-selection-placeholder {
+          line-height: 37px;
+        }
+        .ant-select-selection-item {
+          line-height: 37px;
+        }
+      }
+
+      .ant-select-arrow {
+        top: 55%;
+      }
+    }
+  }
+}
+.topCenter {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" translate="no">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="google" content="notranslate" />
+  <!-- iconfont -->
+  <!--saas管理后台 https://www.iconfont.cn/manage/index?spm=a313x.7781069.1998910419.16&manage_type=myprojects&projectId=3161649&keyword=&project_type=&page= -->
+  <script src="//at.alicdn.com/t/c/font_3161649_s4k6xq3523g.js"></script>
+  <!-- locatioin_pc https://www.iconfont.cn/manage/index?spm=a313x.7781069.1998910419.23&manage_type=myprojects&projectId=1879396&keyword=&project_type=&page= -->
+  <script src="//at.alicdn.com/t/c/font_1879396_2kqiwuiy1kk.js"></script>
+  <!-- 客流宝pc https://www.iconfont.cn/manage/index?spm=a313x.7781069.1998910419.16&manage_type=myprojects&projectId=3217613&keyword=&project_type=&page= -->
+  <script src="//at.alicdn.com/t/font_3217613_3x16ro8v5j2.js"></script>
+  <!-- Location https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=1493136&keyword=&project_type=&page= -->
+  <script src="//at.alicdn.com/t/c/font_1493136_t4zkktefa7a.js"></script>
+  <!-- UI组件库 https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=2105876&keyword=&project_type=&page= -->
+  <!-- 公共组件平台iconfont -->
+  <!-- https://www.iconfont.cn/manage/index?spm=a313x.7781069.1998910419.22&manage_type=myprojects&projectId=3866791 -->
+  <script src="//at.alicdn.com/t/c/font_3866791_w3208f5b4hh.js"></script>
+  <script src="//at.alicdn.com/t/c/font_2105876_hc4vatvqnud.js"></script>
+  <script src="https://staticres.linhuiba.com/libs/lhb-bigdata/1.0.3/lhb-bigdata.js"></script>
+  <!-- 微信调试工具 -->
+  <!-- <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script> -->
+  <% if(process.env.NODE_ENV !=='production' ){ %>
+    <script crossorigin src="https://staticres.linhuiba.com/libs/react/17.0.2/react.development.js"></script>
+    <script crossorigin src="https://staticres.linhuiba.com/libs/react-dom/17.0.2/react-dom.development.js"> </script>
+    <script crossorigin src="https://staticres.linhuiba.com/libs/history/5.2.0/history.development.js"></script>
+    <script crossorigin
+      src="https://staticres.linhuiba.com/libs/react-router/6.2.1/react-router.development.js"></script>
+    <script crossorigin
+      src="https://staticres.linhuiba.com/libs/react-router-dom/6.2.1/react-router-dom.development.js"></script>
+    <% }else{ %>
+      <script crossorigin src="https://staticres.linhuiba.com/libs/react/17.0.2/react.production.min.js"></script>
+      <script crossorigin
+        src="https://staticres.linhuiba.com/libs/react-dom/17.0.2/react-dom.production.min.js"></script>
+      <script crossorigin src="https://staticres.linhuiba.com/libs/history/5.2.0/history.production.min.js"></script>
+      <script crossorigin
+        src="https://staticres.linhuiba.com/libs/react-router/6.2.1/react-router.production.min.js"></script>
+      <script crossorigin
+        src="https://staticres.linhuiba.com/libs/react-router-dom/6.2.1/react-router-dom.production.min.js"></script>
+      <% } %>
+        <title>Location</title>
+</head>
+
+<body>
+  <!-- <script>
+    var vConsole = new window.VConsole();
+  </script> -->
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+</html>

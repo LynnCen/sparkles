@@ -1,0 +1,349 @@
+.container {
+  .containerTop {
+    padding: 27px 40px 12px;
+
+    // &.hasLabel {
+    //   padding-bottom: 8px;
+    // }
+
+    .titleRow {
+      .flex(row, nowrap, space-between, center);
+
+      // .titleRowLeft {
+      //   .flex(row, nowrap, flex-start, center);
+      // }
+      .flexCon {
+        .flex(row, nowrap, flex-start, center);
+      }
+    }
+    // .topTip {
+    //   padding-top: 6px;
+    //   flex-shrink: 0;
+    // }
+    .historyBtn {
+      width: 32px;
+      height: 32px;
+      border: solid #DDDDDD 1px;
+      border-radius: 4px;
+      &:hover {
+        border: solid #006AFF 1px;
+        color: #006AFF;
+      }
+      position: relative;
+      .icon {
+        .center();
+        font-size: 14px;
+      }
+    }
+    .favourBtn {
+      width: 32px;
+      height: 32px;
+    }
+
+    .labelRow {
+      display: flex;
+      align-items: center;
+      .labelRowWrap {
+        flex: auto;
+        width: 0;
+        .flex(row, nowrap, flex-start, flex-start);
+        .operations {
+          flex-shrink: 0;
+          .flex(row, nowrap, flex-start, flex-start);
+
+          .btn {
+            background-color: #f5f5f5;
+            .wh(20px, 20px);
+            .flex(row, nowrap, center, center);
+          }
+
+          .arrowIcon {
+            transform: rotate(0);
+            transition: transform 0.2s linear;
+          }
+
+          .arrowIconUp {
+            transform: rotate(180deg);
+            transition: transform 0.2s linear;
+          }
+        }
+
+        .labelsWrapper {
+          .flex(row, wrap, flex-start, flex-start);
+
+          .typeIcon {
+            width: 37px;
+            height: 20px;
+            position: relative;
+            min-width: 32px;
+
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+          }
+
+          &.isFold {
+            height: 29px; // 按实际需要调整
+            overflow-y: hidden;
+          }
+
+          .label {
+            height: 21px;
+            line-height: 21px;
+            font-size: 12px;
+            color: #3966c7;
+            .one-ellipsis();
+            background-color: #f0f4fc;
+            border-radius: 2px;
+            margin: 0 8px 8px 0;
+            padding: 0 4px;
+          }
+        }
+      }
+      // .rightExpand {
+      //   font-size: 12px;
+      //   color: #666666;
+      //   line-height: 20px;
+      //   display: flex;
+      //   align-items: center;
+      //   // .questionIcon {
+      //   //   color: #666666;
+      //   //   margin-left: 4px;
+      //   //   cursor: pointer;
+      //   // }
+      // }
+    }
+  }
+
+  .areaDetail {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    // border: 1px solid red;
+
+    .mainBacCon {
+      margin-bottom: 16px;
+      .basCon {
+        height: 368px;
+        .flex(row, wrap, space-between, flex-start);
+      }
+
+      .descCon {
+        width: 100%;
+        margin-top: 8px;
+        padding: 12px;
+        background: #fafafa;
+        border-radius: 8px;
+        .text(#666, 12px);
+      }
+    }
+
+    :global {
+      .ant-tabs {
+        .ant-tabs-nav {
+          .ant-tabs-tab-btn:active,
+          .ant-tabs-tab-btn:focus {
+            color: #222;
+          }
+        }
+      }
+    }
+  }
+
+  .scoreContainer {
+    border: solid 1px #eee;
+    border-radius: 8px;
+    background-image: url('https://staticres.linhuiba.com/project-custom/locationpc/selectionmap/bg_businessdetail_score.png');
+    padding: 9px 4px 9px 24px;
+    .flex(row, nowrap, flex-start, center);
+
+    .iconWrapper {
+      flex-shrink: 0;
+      .wh(42px, 42px);
+
+      img {
+        object-fit: cover;
+        user-select: none;
+      }
+    }
+
+    .scoreWrapper {
+      flex-shrink: 0;
+
+      .score {
+        font-family: Impact;
+      }
+
+      .scoreTitle {
+        font-size: 11px;
+        color: #999;
+      }
+    }
+
+    .despWrapper {
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 6px;
+      border-image: linear-gradient(
+          270deg,
+          rgba(255, 255, 255, 0.51),
+          rgba(255, 255, 255, 1)
+        )
+        1 1;
+      backdrop-filter: blur(3px);
+    }
+  }
+
+  .basicContainer {
+    width: 368px;
+
+    .cateCon {
+      border: solid 1px #eee;
+      border-radius: 8px;
+      width: 100%;
+
+      .addressRow {
+        .flex(row, nowrap, flex-start, center);
+
+        .titleCon {
+          .oneLine();
+        }
+      }
+
+      .infos {
+        .flex(row, nowrap, space-between, flex-start);
+      }
+    }
+
+    .valueRow {
+      .flex(row, nowrap, flex-start, center);
+    }
+
+    .tag {
+      height: 24px;
+      line-height: 24px;
+      border-radius: 2px;
+      background: rgba(122, 154, 255, 0.08);
+      padding: 0 6px;
+      color: #3c5984;
+      font-size: 12px;
+      margin: 8px 0 0 4px;
+    }
+
+    .singleCon {
+      width: 100%;
+
+      .singleDev {
+        .wh(180px, 75px);
+        background: #fafafa;
+
+        border-radius: 8px;
+        padding: 16px 0 0 16px;
+      }
+    }
+  }
+
+  .surround {
+    margin-top: 33px;
+
+    :global {
+      .v2TitleOuter {
+        // 最外层
+        .v2Title {
+          .text(#222, 16px);
+          font-weight: bold;
+          // margin-bottom: 12px;
+
+          > div {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .desc {
+      margin: 16px 0;
+      padding-left: 10px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 8px;
+      background-color: #fafafa;
+      font-size: 12px;
+      color: #222;
+    }
+    .surroundingFacility {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 384px;
+      .table {
+        flex: 1;
+        background-color: white;
+        border-radius: 8px;
+        border: 1px solid #eeeeee;
+        padding: 16px;
+        height: 100%;
+        :global {
+          //实现斑马线效果
+          .zebraLine {
+            .ant-table-cell-fix-left,
+            .ant-table-cell-fix-right {
+              background-color: #fafafa;
+              &.ant-table-cell-row-hover {
+                background-color: #ebf4ff;
+              }
+            }
+            > td {
+              background-color: #fafafa;
+            }
+          }
+        }
+      }
+      .pieChart {
+        flex: 1;
+        background-color: white;
+        border-radius: 8px;
+        border: 1px solid #eeeeee;
+        padding: 16px;
+        margin-left: 16px;
+        height: 100%;
+      }
+    }
+
+    .surroundContainer {
+      border-radius: 8px;
+      border: solid 1px #eee;
+      display: flex;
+      flex-direction: column;
+      padding: 8px 16px 16px;
+
+      .surroundTabs {
+        :global {
+          .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-tab {
+            font-size: 14px;
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .chancepoint {
+    :global {
+      .v2TitleOuter {
+        // margin-bottom: 12px;
+
+        // 最外层
+        .v2Title {
+          .text(#222, 16px);
+          font-weight: bold;
+
+          > div {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.drawGraph {
+  position: absolute;
+  // top: 42px; //10+32 此处不需要加上横条与下方的间距4,下方内容设置了margin-top
+  // left: 428px; // 220+8+10+290-100
+  z-index: 50;
+  width: 117px;
+
+  // margin-left: 48px;
+  // &.hideLeftDrawer {
+  //   left: 222px; // 24+8+290-100
+  // }
+
+  .expand {
+    width: 100%;
+    height: 32px;
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .title::before {
+      display: inline-block;
+      margin-right: 4px;
+      color: #ff4d4f;
+      font-size: 14px;
+      font-family: SimSun, sans-serif;
+      line-height: 1;
+      content: '*';
+    }
+
+    &.isExpanded {
+      color: #006aff;
+      .expandIcon {
+        transform: rotate(-180deg);
+      }
+    }
+
+    .expandIcon {
+      margin-left: 12px;
+    }
+  }
+  .content {
+    font-size: 14px;
+    margin-top: 6px;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    .card {
+      .wh(100%, 40px);
+      display: flex;
+      align-items: center;
+      padding-left: 16px;
+      border-radius: 4px;
+      &:hover {
+        background-color: #f4f5f7;
+      }
+    }
+    .active {
+      color: #006ffa;
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+}
+
+// 新增商圈form
+.addFormContainer {
+  z-index: 50;
+  background-color: white;
+  border-radius: 8px;
+  width: 336px;
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.08),
+    0px 16px 24px 2px rgba(0, 0, 0, 0.04), 0px 6px 30px 5px rgba(0, 0, 0, 0.05);
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 18px 0 22px 24px;
+  }
+  .from {
+    padding-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 16px;
+  }
+  .bottom {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #f6f7f9;
+    padding: 16px 24px;
+  }
+}
+.popBox {
+  width: 294px;
+}

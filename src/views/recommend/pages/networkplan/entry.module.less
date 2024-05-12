@@ -1,0 +1,25 @@
+.container {
+  padding: 0 16px 16px 16px;
+  background-color: #fff;
+
+  .hintCon {
+    .flex(row, nowrap, space-between, center);
+    padding: 8px 16px;
+    border: 1px solid #FFE58F;
+    box-sizing: border-box;
+    background-color: #FFFBE6;
+    margin-bottom: 12px;
+
+    .hintContent {
+      .flex(row, nowrap, flex-start, center);
+    }
+  }
+
+  :global{
+    .ant-divider{
+      margin-bottom: 12px;
+      margin-top: 12px;
+      border-top: 1px solid #eee;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.desc {
+  position: relative;
+  width: 531px;
+  background: linear-gradient(156deg, #FFFFFF 0%, #EEF4FF 100%);
+  border-radius: 8px;
+  border: 1px solid #E5EEFF;
+  padding: 16px 16px 48px 16px;
+  word-break: break-all;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+
+  img {
+    width: 83px;
+    height: 49px;
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 2px;
+
+  }
+}
+
+.earningItem {
+  padding: 24px;
+  background: #FAFAFA;
+  border-radius: 8px;
+  height: 104px;
+
+  .count {
+    font-weight: 500;
+    font-size: 20px;
+    color: #222222;
+    margin-bottom: 8px;
+    // .countText{
+    //   color: #222222;
+    //   font-size: 18px;
+    //   font-weight: bold;
+    // }
+    .unit{
+      font-size: 12px;
+    }
+  }
+
+
+  .description {
+    font-size: 14px;
+    color: #666666;
+  }
+}
+
+.coreInformation{
+  .coreInformationItem{
+    display: flex;
+    border: 1px solid #EEEEEE;
+    .label{
+      border-right:1px solid #EEEEEE;
+      font-weight: 500;
+      color: #222222;
+      padding-left: 12px;
+      width: 144px;
+      height: 45px;
+      background: #FAFAFA;
+      display: flex;
+      align-items: center;
+    }
+    .value{
+      border-left: none;
+      flex: 1;
+      color: #666666;
+      padding-left: 12px;
+      width: 144px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  :not(:first-child){
+    border-top: 1px solid transparent;
+  }
+
+}

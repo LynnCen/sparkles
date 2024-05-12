@@ -1,0 +1,40 @@
+.addCondition {
+  margin: 8px 20px 0;
+}
+
+.drawer {
+  :global {
+    .resant-drawer-body {
+      padding: 0;
+    }
+  }
+
+  .title{
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+
+  .sponsorConditional {
+    margin-top: 20px;
+    .department,
+    .role {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      padding:0 12px ;
+
+      :global{
+        .ant-tree-select{
+          width: 60%;
+          margin-right: 16px;
+        }
+        .ant-select{
+          width: 60%;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}

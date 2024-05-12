@@ -1,0 +1,376 @@
+.container {
+
+  min-width: 1208px;
+  .titleTips {
+    margin-top: 10px;
+    padding-left: 12px;
+    width: 100%;
+
+    &::after {
+      width: 4px;
+
+    }
+  }
+
+  .filterFieldsCon {
+    padding: 16px;
+    background-color: #fff;
+
+    .searchFormCon {
+      margin-bottom: 0;
+      :global{
+        .ant-form-item{
+          margin-bottom: 0;
+        }
+        .ant-form-item-label{
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .dataPanelCon {
+    width: 100%;
+    background-color: #fff;
+    padding: 16px;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+    .contentCon {
+      .flex();
+      flex-wrap: wrap;
+      min-width: 1000px;
+
+      .funnelCon {
+        width: 250px;
+        // margin-right: 45px;
+
+        .funnelItemCon {
+          .flex();
+          margin-bottom: 21px;
+
+          .explainCon {
+            .flex();
+            height: 82px;
+            box-sizing: border-box;
+
+            .textCon {
+              line-height: 20px;
+              width: 88px;
+              padding: 13px;
+              font-size: 9px;
+              height: 82px;
+              padding-left: 10px;
+              box-sizing: border-box;
+
+              .number {
+                text-align: center;
+                width: 100%;
+                margin-top: 18px;
+              }
+
+              .ratio {
+                font-size: 18px;
+                transform: translateX(-44px) scale(0.5);
+                width: 176px;
+
+                svg {
+                  margin-right: 6px;
+                }
+              }
+            }
+
+
+            .distinctionCon {
+              position: relative;
+              border-color: @primary-blue transparent transparent;
+              border-width: 82px 82px 0 0; // right 控制底角宽度
+              border-style: solid solid none;
+
+              .titleText {
+                position: absolute;
+                color: #fff;
+                top: -41px;
+                transform: translateY(-50%);
+                margin-left: 10px;
+                width: 100%;
+              }
+
+            }
+          }
+
+          .comparisonCon {
+            flex: 1;
+            .wh(100%, 1px);
+            position: relative;
+
+            .displacementCon {
+              position: absolute;
+              top: 0;
+              left: 0;
+              .wh(100%, auto);
+              .flex(row, nowrap, flex-start, center);
+
+              .branchBoxCon {
+                .wh(26px, 73px);
+              }
+
+              .dataCon {
+                .flex(row, nowrap, space-between, center);
+                .wh(185px, 68px);
+                padding: 16px;
+                border: 1px solid #e5e9f2;
+                margin-left: 16px;
+              }
+            }
+          }
+
+          &:nth-of-type(2) {
+
+            // 累加14px
+            .comparisonCon {
+              .displacementCon {
+                top: -57px;
+              }
+            }
+          }
+
+          &:nth-of-type(3) {
+            .comparisonCon {
+              .displacementCon {
+                top: -43px;
+              }
+            }
+          }
+
+          &:nth-of-type(4) {
+            .comparisonCon {
+              .displacementCon {
+                top: -29px;
+              }
+            }
+          }
+
+          &:nth-of-type(5) {
+            .comparisonCon {
+              .displacementCon {
+                top: -15px;
+              }
+            }
+          }
+        }
+
+        .overturn {
+          transform: rotate(180deg);
+        }
+      }
+
+      .mapCon {
+        flex: 1;
+        .wh(auto, 380px);
+        position: relative;
+
+        .provinceForm {
+          position: absolute;
+          top: 7px;
+          left: calc(50% - 158px);
+          transform: translateX(-50%);
+          background-color: white;
+        }
+
+        .dataCount {
+          position: absolute;
+          top: 7px;
+          left: calc(50% + 104px);
+          transform: translateX(-50%);
+          height: 32px;
+          background-color: white;
+          font-size: 12px;
+          color: #222222;
+          padding: 0 0 0 10px;
+          line-height: 32px;
+          width: 310px;
+
+          .dataCountValue {
+            font-size: 18px;
+            color: #222222;
+            font-weight: bold;
+          }
+
+          .dataCountLabel {
+            font-size: 12px;
+            color: #999999;
+          }
+
+          .dataCountContent {
+            width: 50%;
+          }
+        }
+
+        :global {
+          .amap-maps {
+            .cardWrapper {
+              position: relative;
+              min-width: 56px;
+              // min-height: 40px;
+              background: linear-gradient(270deg, #6c97f8 0%, #3d76ff 100%);
+              box-shadow: 0px 0px 6px 0px rgba(0, 63, 92, 0.3);
+              box-sizing: border-box;
+              border-radius: 4px;
+
+              .cardTitle {
+                .flex(row, nowrap, space-between, center);
+                color: #fff;
+                font-size: 12px;
+                padding: 4px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+
+                &.isCurrent {
+                  background: linear-gradient(270deg, #fcd349 0%, #ffb52c 100%);
+                }
+
+                .cardIcon {
+                  .wh(20px, 20px);
+                  margin-right: 4px;
+                }
+
+                .cardName {
+                  width: max-content;
+                }
+              }
+
+              .cardVal {
+                position: relative;
+                font-size: 18px;
+                color: #959bab;
+                font-weight: bold;
+                text-align: center;
+                background-color: #fff;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+              }
+
+              &:before {
+                .bottom-arrow(calc(50% - 6px));
+              }
+            }
+
+            // .ringWrapper {
+            //   .flex(column, nowrap, center, center);
+            //   .wh(64px, 64px);
+            //   border-radius: 50%;
+            //   background-color: #f6f7f9;
+            //   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+
+            //   .innerRing {
+            //     .wh(80%);
+            //     text-align: center;
+            //     background-color: #fff;
+            //     border-radius: 50%;
+            //     .flex(column, nowrap, center, center);
+            //   }
+            // }
+
+            .cardMarkerWrapper {
+              position: relative;
+              background-color: #fff;
+              padding: 12px 8px;
+              // min-width: 150px;
+              box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+              border: 1px solid #e4e7ed;
+              border-radius: 4px;
+              font-size: 12px;
+
+              .contentWrapper {
+                max-height: 250px;
+                overflow: auto;
+                width: max-content;
+                // .itemRow {
+                //   .flex(row, nowrap, space-between, center);
+                //   margin-top: 5px;
+
+                //   .label {
+                //     width: max-content;
+                //     white-space: nowrap;
+                //   }
+                //   .valCon {
+                //     flex: 1;
+                //     padding-left: 12px;
+                //     width: max-content;
+                //   }
+
+                //   &:first-of-type {
+                //     margin-top: 0;
+                //   }
+                // }
+              }
+
+              &::before {
+                .top-arrow(28px);
+              }
+            }
+
+            .pointCon {
+              .wh(30px, 35px);
+              // background-image: url(https://staticres.linhuiba.com/project-custom/locationpc/new/icon_car_industry.svg);
+              background-size: 100% 100%;
+              padding: 3px;
+
+              .imgCon {
+                border-radius: 50%;
+                .wh(24px);
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+
+      .dataOverview {
+        padding-left: 16px;
+        width: 360px;
+        height: 100%;
+
+        .detailGroup {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .detailItem {
+          width: 50%;
+          margin-top: 0;
+          margin-bottom: 16px;
+        }
+
+        .dataOverviewChart{
+          width: 360px;
+          padding:0 16px 0 10px;
+        }
+      }
+    }
+  }
+
+  .tabsCon {
+    background-color: #fff;
+    padding: 16px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+    :global{
+      .ant-tabs{
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      .ant-tabs-nav{
+        margin-bottom: 12px;
+      }
+      .ant-tabs-tab{
+        padding: 0 0 12px 0;
+        &-active{
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

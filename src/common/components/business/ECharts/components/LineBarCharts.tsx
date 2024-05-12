@@ -1,0 +1,306 @@
+/** 折线柱状混合图 */
+import { FC, useState, useEffect } from 'react';
+import { CanvasRenderer } from 'echarts/renderers';
+import { BarChart, LineChart } from 'echarts/charts';
+import {
+  ToolboxComponent,
+  TooltipComponent,
+  GridComponent,
+  LegendComponent
+} from 'echarts/components';
+import * as echarts from 'echarts/core';
+import ECharts from '@/common/components/business/ECharts';
+import { floorKeep, isNotEmptyAny, replaceEmpty } from '@lhb/func';
+import { UniversalTransition } from 'echarts/features';
+import { formatNumber } from '@/common/utils/ways';
+
+echarts.use([
+  ToolboxComponent,
+  TooltipComponent,
+  GridComponent,
+  LegendComponent,
+  BarChart,
+  LineChart,
+  CanvasRenderer,
+  UniversalTransition
+]);
+
+// 计算最大值
+function calMax(arr) {
+  let max = arr[0] || 0;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  const maxInt = Math.ceil(+floorKeep(max, 9.5, 4, 2));// 不让最高的值超过最上面的刻度
+
+  const maxVal = +floorKeep(maxInt, 10, 3, 0);// 让显示的刻度是整数
+
+  return maxVal;
+}
+
+// 计算最小值
+function calMin(arr) {
+  let min = arr[0] || 0;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  const minInt = Math.floor(+floorKeep(min, 10, 4, 2));
+  const minVal = +floorKeep(minInt, 10, 3, 0);// 让显示的刻度是整数
+
+  return minVal;
+}
+
+// function getClosestMultipleOfTen(num) {
+//   return Math.ceil(num / 10) * 10;
+// }
+const LineBarCharts: FC<any> = ({
+  className,
+  optionLabel = 'name',
+  optionVal = 'data',
+  config = {},
+}) => {
+  const [options, setOptions] = useState<any>(null);
+  const [ins, setIns] = useState<any>(null);
+
+  useEffect(() => {
+    return () => {
+      ins && ins.dispose();
+    };
+  }, [ins]);
+
+  useEffect(() => {
+    if (isNotEmptyAny(config.barData) && isNotEmptyAny(config.lineData) && ins) {
+      initOptions();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [config?.barData, config?.lineData, ins]);
+
+  const loadedHandle = (ins: any) => {
+    ins && setIns(ins);
+  };
+
+  const initOptions = () => {
+    const xData = config.barData.data.map(item => {
+      return item?.[optionLabel];
+    });
+    const barYData = config.barData.data.map(item => {
+      return +item?.[optionVal];
+    });
+    const lineYData = config.lineData.data.map(item => {
+      return item?.[optionVal] && +floorKeep(item[optionVal], 100, 3, 2);
+    });
+
+    const tooltip = {
+      trigger: 'axis',
+      backgroundColor: '#494949',
+      textStyle: {
+        color: '#FFFFFF'
+      },
+      position: function (point, params, dom, rect, size) { // 新加配置，让 tooltip始终显示在容器内
+        // 计算tooltip的横坐标和纵坐标
+        let x = point[0];
+        let y = point[1];
+
+        // 确定tooltip应该显示在鼠标的左侧还是右侧
+        if (x + size.contentSize[0] / 2 + 20 > size.viewSize[0]) {
+          x -= size.contentSize[0] + 20; // 在左侧显示
+        } else {
+          x += 20; // 在右侧显示
+        }
+
+        // 纵坐标上对齐到图例中心
+        y -= size.contentSize[1] / 2;
+
+        // 检查tooltip是否超出图表左右边界
+        if (x < 0) {
+          x = 0;
+        }
+        if (x + size.contentSize[0] > size.viewSize[0]) {
+          x = size.viewSize[0] - size.contentSize[0];
+        }
+
+        // 检查tooltip是否超出图表上下边界
+        if (y < 0) {
+          y = 0;
+        }
+        if (y + size.contentSize[1] > size.viewSize[1]) {
+          y = size.viewSize[1] - size.contentSize[1];
+        }
+
+        return [x, y];
+      },
+      ...(config.tooltipConfig || {})
+    };
+
+    const legend = {
+      show: true,
+      y: 'bottom',
+      icon: 'circle', // 设置为默认的圆形图标
+      itemWidth: 8, // 图例宽度
+      itemHeight: 10, // 图例高度
+      data: [config?.barData.name, config?.lineData.name],
+      ...(config?.legendConfig || {})
+    };
+
+    // x轴配置
+    const xAxis = [{
+      type: 'category',
+      data: xData,
+      axisLine: {
+        lineStyle: {
+          type: 'dashed',
+          color: '#EEE',
+          width: '1'
+        }
+      },
+      axisLabel: {
+        textStyle: { // 轴文字样式
+          color: '#A2A9B0'
+        },
+        rotate: config.rotateVal,
+      },
+      splitLine: { // 分割线样式
+        lineStyle: {
+          type: 'dashed',
+          color: '#EEE',
+          width: '1'
+        }
+      },
+      axisPointer: {
+        type: 'shadow'
+      },
+      ...(config.xAxisConfig || {})
+    }];
+
+
+    // const Min1 = calMin(barYData);
+    const Min2 = calMin(lineYData);
+    const Max1 = calMax(barYData);
+    const Max2 = calMax(lineYData);
+
+    // y轴公共配置项
+    const yAxisPublicConfig = {
+      splitLine: {
+        lineStyle: {
+          type: 'dashed',
+          color: '#EEE',
+          width: '1'
+        }
+      },
+      axisLabel: {
+        textStyle: {
+          color: '#A2A9B0',
+        },
+      },
+      axisLine: { // 轴线样式
+        lineStyle: {
+          type: 'dashed',
+          color: '#EEE',
+          width: '1'
+        }
+      },
+    };
+
+    // y轴配置
+    const yAxis = [
+      {
+        type: 'value',
+        min: 0, // 柱状图目前不会出现负数，暂时先设定最小值为0
+        max: Max1,
+        splitNumber: 10,
+        interval: floorKeep((Max1 - 0), 5, 4, 0), // 强制设置坐标轴分割间隔
+        ...yAxisPublicConfig,
+        ...(config.barYAxisConfig || {}) // 柱状图y轴传入配置
+      },
+      {
+        type: 'value',
+        min: Min2,
+        max: Max2,
+        splitNumber: 10,
+        interval: +floorKeep((Max2 - Min2), 5, 4, 0) || 10, // 强制设置坐标轴分割间隔,如过计算出来的间隔为0，则设置为10
+        ...yAxisPublicConfig,
+        axisLabel: {
+          formatter: (val) => {
+            return val + '%';
+          },
+          color: '#A2A9B0'
+        },
+        ...(config.lineYAxisConfig || {}), // 折线图y轴传入配置
+
+      }
+    ];
+
+    const series = [
+      {
+        name: config?.barData.name,
+        type: 'bar',
+        data: barYData,
+        barWidth: 12, // 柱状宽度
+        itemStyle: {
+          color: '#A6E7D0'
+        },
+        tooltip: {
+          valueFormatter: function (value) {
+            return formatNumber(value); // 格式化数字
+          }
+        },
+        ...(config.barSeriesConfig || {}) // 柱状图series传入配置
+      },
+      {
+        name: config?.lineData.name,
+        type: 'line',
+        itemStyle: {
+          color: {
+            type: 'linear',
+            x: 0,
+            y: 0,
+            x2: 0,
+            y2: 1,
+            colorStops: [{
+              offset: 0, color: '#FFE771' // 0% 处的颜色
+            }, {
+              offset: 1, color: '#FFC161' // 100% 处的颜色
+            }],
+            global: false // 缺省为 false
+          }
+        },
+        data: lineYData,
+        yAxisIndex: 1, // 使用的 y 轴的 index，在单个图表实例中存在多个 y轴的时候有用。
+        tooltip: {
+          valueFormatter: function (value) {
+            return replaceEmpty(value) + '%';
+          }
+        },
+        ...(config.lineSeriesConfig || {}) // 折线图series传入配置
+        // min: 0,
+        // max: 100,
+        // interval: 5,
+        // data: [200, 300, 400, 500, 600, 700, 800]
+      }
+    ];
+
+    setOptions({
+      tooltip,
+      xAxis,
+      yAxis,
+      legend,
+      series,
+      grid: config.grid,
+      ...config?.otherOptions // 除xAxis/yAxis/series之外的配置
+    });
+
+  };
+
+  return (
+    <ECharts
+      options={options}
+      className={className}
+      loadedEchartsHandle={loadedHandle} />
+  );
+};
+
+export default LineBarCharts;

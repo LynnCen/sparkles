@@ -1,0 +1,294 @@
+.chartsContainer {
+  // height: 100%;
+  margin-top: 24px;
+
+  .tips {
+    display: inline-block;
+    .text(#999, 12px);
+    font-weight: 400;
+  }
+
+  :global {
+    .v2TitleOuter {
+      // margin-bottom: 12px;
+
+      // 最外层
+      .v2Title {
+        .text(#222, 16px);
+        font-weight: bold;
+
+        > div {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .desc {
+    .text(#666, 14px);
+    margin: 8px 0 12px 11px;
+    // font-weight: bold;
+  }
+
+  .chartWrapper {
+    height: 316px;
+    border: solid 1px #eee;
+    border-radius: 8px;
+    position: relative;
+    .tabs {
+      font-size: 12px;
+      cursor: pointer;
+      width: 86px;
+      height: 24px;
+      background: #f6f7f9;
+      border-radius: 4px;
+      color: #999999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card {
+        .wh(40px,20px);
+        text-align: center;
+        line-height: 20px;
+      }
+      .active {
+        color: white;
+        background-color: #006ffa;
+        border-radius: 4px;
+      }
+    }
+    &.historyChartWrap {
+      height: 351px;
+    }
+    .chartTitleRow {
+      .flex(row, nowrap, space-between, center);
+      :global {
+        .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-tab {
+          padding: 4px 12px !important;
+          margin: 0 !important;
+          font-size: 12px;
+        }
+      }
+    }
+    .chartTop {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      .chartTitle {
+        margin-top: 16px;
+        margin-left: 16px;
+        font-size: 14px;
+        color: #222;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+      }
+      .chartTab {
+        position: relative;
+        z-index: 1;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 12px;
+      }
+    }
+    .chartContent {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .ageBarChart {
+      margin: 0 8px;
+    }
+    .rateContent {
+      margin-top: 12px;
+      .rateHeader {
+        margin-left: 84px;
+        margin-right: 48px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #eee;
+        box-sizing: border-box;
+        .headerItem {
+          flex: 1;
+          height: 20px;
+          line-height: 20px;
+          text-align: center;
+        }
+      }
+      .rateItemWrap {
+        margin-top: 2px;
+        .rateItemList {
+          margin-right: 48px;
+          display: flex;
+          align-items: center;
+          margin-top: 8px;
+          .itemLeft {
+            width: 84px;
+            height: 24px;
+            line-height: 24px;
+            text-align: right;
+            padding-right: 12px;
+            box-sizing: border-box;
+            font-size: 12px;
+            color: #222222;
+          }
+          .itemRight {
+            flex: auto;
+            width: 0;
+            display: flex;
+            align-items: center;
+            height: 24px;
+            .rateItem {
+              flex: 1;
+              height: 24px;
+              line-height: 24px;
+              text-align: center;
+              color: #222222;
+              box-sizing: border-box;
+              font-size: 12px;
+              &:nth-child(1) {
+                background: #006aff;
+                border-radius: 50px 0px 0px 50px;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    :global {
+      .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-tab {
+        padding: 9px 0px !important;
+        margin: 0 12px;
+        font-size: 14px;
+
+        &:first-of-type {
+          margin: 0 12px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.descCon {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+  background: #fafafa;
+  border-radius: 8px;
+  .text(#222, 12px);
+}
+
+// 人口客群男女比例图
+.sexRateWrap {
+  padding: 0 24px;
+  box-sizing: border-box;
+  .sexRate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 36px 16px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+    .sexInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin-top: 6px;
+        font-weight: 500;
+        font-size: 12px;
+        color: #222222;
+      }
+    }
+    .rateContent {
+      flex: auto;
+      width: 0;
+      margin: 0 12px;
+      display: flex;
+      align-items: center;
+      .leftRate {
+        width: 50%;
+        .rateBar {
+          height: 14px;
+          border-top-left-radius: 32px;
+          border-bottom-left-radius: 32px;
+          overflow: hidden;
+          background: #358aff;
+        }
+        .ratePercent {
+          margin-top: 6px;
+          font-size: 14px;
+          color: #222222;
+          text-align: center;
+        }
+      }
+      .rightRate {
+        width: 50%;
+        .rateBar {
+          height: 14px;
+          border-top-right-radius: 32px;
+          border-bottom-right-radius: 32px;
+          overflow: hidden;
+          background: #ffbe5e;
+        }
+        .ratePercent {
+          margin-top: 6px;
+          font-size: 14px;
+          color: #222222;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.statisticFlowWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .statisticsFlowCard {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #eeeeee;
+    overflow: hidden;
+    padding: 16px 16px 16px 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      flex: auto;
+      width: 0;
+      .flowValue {
+        font-weight: bold;
+        font-size: 28px;
+        color: #222222;
+        line-height: 32px;
+      }
+      .flowText {
+        font-weight: 400;
+        font-size: 12px;
+        color: #999999;
+        line-height: 18px;
+        margin-top: 2px;
+      }
+    }
+    .right {
+      .rightIcon {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}
+
+.withOutBorder{
+  border-bottom: 0px !important;
+}

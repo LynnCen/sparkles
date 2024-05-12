@@ -1,0 +1,214 @@
+.leftCon {
+  position: absolute;
+  top: 0;
+  // 筛选项列表
+  .selectionListCon {
+    background-color: white;
+    // max-height: calc(100vh - 48px - 61px - 12px - 32px - 12px);
+    height: calc(100vh - 129px);
+    position: relative;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    border-radius: 4px;
+    overflow-y: auto;
+    .list {
+      // top是绝对点位 48+9
+      margin-top: 57px;
+      // min-height: 625px;
+      height: calc(100% - 48px);
+    }
+    .top {
+      .wh(146px,48px);
+      position: relative;
+      background-color: #006ffa;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      z-index: 10;
+      overflow-x: hidden;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      .textImg {
+        display: inline-block;
+        .wh(73px,16px);
+        position: absolute;
+        left: 16px;
+      }
+      .arrowImg {
+        display: inline-block;
+        .wh(73px,48px);
+        position: absolute;
+        right: -6px;
+      }
+      @media screen and(min-width:1440px) {
+        width: 10.1vw;
+      }
+      @media screen and(min-width:1920px) {
+        width: 194px; //10.1%*2560px
+      }
+    }
+
+    .card {
+      &:hover {
+        background-color: #f6f7f9;
+      }
+      padding: 8px 16px;
+      position: relative;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .label {
+        font-weight: bold;
+        font-size: 12px;
+        color: #333;
+      }
+      .icon {
+        position: absolute;
+        right: 16px;
+        font-size: 12px;
+        color: #959bab;
+      }
+    }
+    .activeCard {
+      background-color: #f6f7f9;
+    }
+  }
+  // 右侧具体筛选项
+  .sideBox {
+    background-color: white;
+    position: absolute;
+    right: -498px; //368+146+12-16-12
+    top: 109px; //61+48
+    // width: 187px;
+    width: 368px;
+    z-index: 100;
+    border-radius: 4px;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    overflow: auto;
+    padding: 0 16px 6px 16px;
+    // border: 16px solid white;
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+    scrollbar-width: thin;
+    .box {
+      margin-top: 12px;
+      margin-bottom: 4px;
+      :global {
+        .ant-checkbox-wrapper {
+          margin-left: 0;
+        }
+        .ant-checkbox + span {
+          padding-left: 4px;
+          padding-right: 5px;
+        }
+      }
+      .title {
+        font-size: 12px;
+        padding-left: 12px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: '';
+          width: 3px;
+          height: 12px;
+          background: #006aff;
+          left: 0px;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+
+      .checkbox {
+        margin-top: 10px;
+
+        .logo {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          margin-right: 4px;
+          object-fit: contain;
+        }
+        .name {
+          display: inline-block;
+          min-width: 130px;
+          max-width: 130px;
+          width: 130px;
+          font-size: 12px;
+          line-height: 22px;
+        }
+        .brandName {
+          display: inline-block;
+          min-width: 116px;
+          max-width: 116px;
+          width: 116px;
+          font-size: 12px;
+          line-height: 22px;
+        }
+        .remark {
+          margin-left: 4px;
+          line-height: 12px;
+        }
+      }
+    }
+    .checkboxRadio {
+      display: inline-block;
+      margin-top: 10px;
+      .radio {
+        .oneLine();
+        .name {
+          display: inline-block;
+          min-width: 120px;
+          max-width: 120px;
+          width: 120px;
+          font-size: 12px;
+          line-height: 22px;
+        }
+      }
+    }
+    .sideBoxTop {
+      top: 0;
+      font-weight: bold;
+      border-bottom: 1px solid #eee;
+      font-size: 12px;
+      position: sticky;
+      background-color: white;
+      z-index: 10;
+      padding-top: 16px;
+
+      .title {
+        font-weight: bold;
+      }
+
+      .remark {
+        margin-top: 4px;
+        margin-bottom: 14px;
+        color: #999999;
+      }
+    }
+    .sessionTop {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 10;
+    }
+    .searchInput {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 12px;
+      margin-bottom: 0px;
+    }
+    .tabs {
+      margin-top: 16px;
+    }
+    .clear {
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+      color: #006ffa;
+    }
+  }
+}

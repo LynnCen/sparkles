@@ -1,0 +1,67 @@
+.container {
+    :global {
+        .statistic-wrapper {
+            background: linear-gradient(90deg, #65A0F2 0%, #2978E8 100%);
+            height: 111px;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 16px;
+            color: #FFFFFF;
+
+            .statistic-data {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+
+                .title {
+                    font-size: 12px;
+                }
+
+                .value {
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-bottom: 6px;
+                }
+            }
+
+        }
+
+        .form-search {
+            margin-bottom: 10px;
+
+            .search-form-base-operates {
+                margin-bottom: 10px;
+            }
+
+            .ant-form-item-control {
+                width: 200px;
+            }
+
+            .ant-form-item-label {
+                width: 86px;
+            }
+        }
+
+        .row-class-total .ant-table-row-expand-icon-cell svg {
+            display: none;
+        }
+    }
+
+    .statusRender {
+      display: flex;
+      align-items: center;
+        .statusRenderIcon {
+            font-size: 8px;
+            vertical-align: baseline;
+            margin-right: 4px;
+
+            &.statusRenderIconDone {
+                color: green;
+            }
+
+            &.statusRenderIconUnDone {
+                color: red;
+            }
+        }
+    }
+}

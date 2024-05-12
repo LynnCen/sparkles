@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  height: 100%;
+  // LeftTree
+  .treeWrap {
+    height: 100%;
+    background-color: #fff;
+    margin-right: 10px;
+    width: 220px;
+    flex: 0 0 220px;
+    .title {
+      border-bottom: 1px solid #ebeef5;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    //优先级低于原样式
+    :global {
+      .ant-tree,
+      .ant-tree-treenode-disabled,
+      .ant-tree-node-content-wrapper {
+        color: black !important;
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    // flex: 1 1 auto;
+    min-width: 60%;
+    background-color: #fff;
+    padding: 24px;
+    .tableWrap {
+      // .btn {
+      //   margin-bottom: 24px;
+      // }
+      .tableCon {
+        margin-top: 20px;
+        .logo {
+          .wh(35px);
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .notImported {
+      .wh(57px,22px);
+      font-size: 10px;
+      text-align: center;
+      background-color: #e6f4ff;
+      color: #006aff;
+    }
+    .imported {
+      .wh(61px,22px);
+      font-size: 10px;
+      text-align: center;
+      background-color: #f0f0f0;
+      color: #009963;
+      span {
+        display: inline-block;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+//Modal
+.text {
+  padding: 16px 0 0 16px;
+  font-size: 16px;
+  color: #17273a;
+}
+.upload {
+  padding: 12px 0 0 90px;
+}
+.downloadFile {
+  .wh(230px,64px);
+  margin-left: 84px;
+}
+
+.exportModal {
+  :global {
+    .ant-form {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+      .hintText {
+        color: #bbc0c7;
+        font-size: 12px;
+      }
+    }
+    .ant-modal-body {
+      margin-bottom: 30px;
+    }
+  }
+}

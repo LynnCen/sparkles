@@ -1,0 +1,124 @@
+.sectionCon {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 18px;
+}
+
+.numClass {
+  font-family: DINAlternate-Bold, DINAlternate;
+  color: #000;
+  font-weight: bold
+}
+
+.overviewCon {
+  .sectionCon();
+
+  .valueCon {
+    .flex(row, nowrap, space-around, center);
+    margin-top: 20px;
+
+    .numStyle {
+      .numClass();
+      font-size: 40px;
+    }
+  }
+}
+
+.progressCon {
+  .sectionCon();
+
+  .mainCon {
+    .flex();
+    height: 290px;
+    margin-top: 16px;
+    box-sizing: border-box;
+    border: 1px solid #E6E9ED;
+    border-radius: 18px;
+
+    .leftCon {
+      background: #FBFCFF;
+      border-radius: 18px 0px 0px 18px;
+      padding: 20px 24px;
+      height: 100%;
+
+      .titCon {
+        .flex(row, nowrap, flex-start, center);
+        .iconCon {
+          .wh(32px);
+          background-color: #B3C2E0;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 32px;
+        }
+      }
+
+      .rateNum {
+        .numClass();
+        font-size: 44px;
+      }
+
+      .progressSection {
+        width: 270px;
+        margin-top: 26px;
+
+        .easyFlex {
+          .flex(row, nowrap, space-between, center);
+        }
+      }
+    }
+
+    .rightCon {
+      flex: 1;
+      height: 100%;
+      padding: 26px 20px;
+
+      .chartImgCon {
+        .flex(row, nowrap, space-around, center);
+        margin-top: 30px;
+
+        .imgPlanCon {
+          .wh(328px, 138px);
+        }
+
+        .imgPracticalCon {
+          .wh(363px, 138px);
+        }
+      }
+    }
+  }
+}
+
+.statisticsCon {
+  .progressCon();
+  
+  .mainCon {
+    height: 336px;
+
+    .leftCon {
+      width: 336px;
+
+      .funnelCon {
+        .wh(297px, 213px);
+        margin-top: 30px
+      }
+    }
+
+    .rightCon {
+      .chartBarCon {
+        .wh(676px, 221px);
+      }
+    }
+  }
+}
+
+.tableCon {
+  .sectionCon();
+}
+
+.exportModule {
+  .sectionCon();
+
+  .mlLarger {
+    margin-left: 60px;
+  }
+}

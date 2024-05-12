@@ -1,0 +1,109 @@
+.leftCon {
+  width: 220px;
+  box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+  border-radius: 4px;
+  // height: 500px;
+  .leftConTop {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    border-bottom: 1px solid #eee;
+    margin: 0 12px;
+    .brandName {
+      font-weight: bold;
+    }
+    .backBtn {
+      position: absolute;
+      right: 12px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+  }
+  .switch {
+    position: absolute;
+    right: 12px;
+    top: 4px;
+  }
+  .circleColor {
+    .wh(8px);
+    display: inline-block;
+    margin-right: 7px;
+    border-radius: 50%;
+  }
+  :global {
+    .ant-tree-indent {
+      .wh(0px);
+    }
+    .ant-tree {
+      .ant-tree-treenode {
+        padding: 0 0 6px 0;
+      }
+    }
+  }
+}
+
+.labelBox {
+  width: 286px;
+  // border-radius: 5px;
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.16);
+
+  .titleText {
+    display: inline-block;
+    margin-left: 14px;
+    .oneLine();
+    max-width: 240px;
+  }
+  .title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 44px;
+    background-color: #006aff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+    font-size: 14px;
+    .closeIcon {
+      position: absolute;
+      right: 12px;
+      font-size: 16px;
+    }
+  }
+  .content {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+  }
+  .top {
+    display: flex;
+    padding-top: 16px;
+    margin-left: 14px;
+    font-size: 12px;
+    .label {
+      color: #222;
+      font-weight: bold;
+      min-width: 87px;
+    }
+    .textValue {
+      margin-top: 6px;
+    }
+    .open {
+      color: #00b077;
+    }
+    .relieve {
+      color: #1e4460;
+    }
+  }
+  .bottom {
+    padding-top: 12px;
+    margin-left: 14px;
+    font-size: 12px;
+  }
+  .address {
+    margin-top: 6px;
+    padding-bottom: 16px;
+    .oneLine();
+    color: #999;
+  }
+}

@@ -1,0 +1,108 @@
+.topCon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  // 省市区级联
+  .provinceCon {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    border-radius: 4px;
+    width: 147px;
+    // height: 37px;
+    :global {
+      .ant-select-selector {
+        height: 37px;
+        border-color: transparent !important;
+
+        .ant-select-selection-search {
+          .ant-select-selection-search-input {
+            height: 37px;
+            line-height: 37px;
+          }
+        }
+        .ant-select-selection-placeholder {
+          line-height: 37px;
+        }
+        .ant-select-selection-item {
+          line-height: 37px;
+        }
+      }
+
+      .ant-select-arrow {
+        top: 55%;
+      }
+    }
+  }
+  // 条件筛选（按钮）
+  .competitor {
+    position: absolute;
+    left: 159px; //147+12
+    .wh(124px,37px);
+    background-color: white;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    .arrow {
+      position: absolute;
+      right: 12px;
+      color: #959bab;
+      transition: transform 0.2s linear;
+    }
+    // icon
+    .arrowIcon {
+      .arrow();
+      transform: rotate(0);
+    }
+    // icon
+    .arrowIconUp {
+      .arrow();
+      transform: rotate(180deg);
+    }
+  }
+  // 条件筛选内容
+  .competitorContent {
+    background: white;
+    position: absolute;
+    left: 159px; //147+12
+    top: 45px; //37+8
+    border-radius: 4px;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+  }
+  .search {
+    position: absolute;
+    left: calc(50vw - 170px - 20px);
+    transform: translateX(-50%);
+  }
+  .optionsCon {
+    width: 124px;
+    padding: 16px 12px 0 12px;
+
+    .title {
+      font-size: 12px;
+      font-weight: bold;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #eee;
+    }
+    :not(:last-child) {
+      .box {
+        margin-bottom: 16px; //24-8
+      }
+    }
+    .box {
+      margin-top: 12px;
+      margin-bottom: 8px; //16-8
+
+      .name {
+        min-width: 70px;
+        width: 70px;
+        display: inline-block;
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

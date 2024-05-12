@@ -1,0 +1,53 @@
+.nodeItemCon {
+  .flex();
+  width: 100%;
+  margin-top: 12px;
+
+  .nameCon {
+    position: relative;
+    .wh(36px, 36px); 
+    background-color: @primary-blue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 16px;
+
+    .statusBadge {
+      position: absolute;
+      right: 0;
+      top: -3px;
+      .wh(12px, 12px);
+      background-color: #00ca80;
+      border-radius: 50%;
+      text-align: center;
+
+      .scaleIcon {
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        transform: scale(0.4);
+      }
+    }
+  }
+
+  .contentCon {
+    flex: 1;
+
+    .opinionCon {
+      flex: 1;
+      width: 100%;
+      margin-top: -8px;
+      background: rgba(0,106,255,0.07);
+      border-radius: 4px;
+      padding: 8px;
+      background-color: rgba(0,106,255,0.07);
+      white-space: normal;
+      word-break: break-all;
+
+      &.isStart {
+        background: #F6F7F9;
+      }
+    }
+  }
+}

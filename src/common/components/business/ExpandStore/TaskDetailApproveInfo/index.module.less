@@ -1,0 +1,41 @@
+.approveInfo {
+  padding: 16px;
+  border-radius: 4px;
+  border: solid 1px #dddddd;
+  position: relative;
+  .flexRow {
+    .flex(row, nowrap, flex-start, center);
+  }
+  .rightCon {
+    position: absolute;
+    right: 12px;
+    top: 0;
+  }
+}
+
+.detailButton {
+  .flex(row, nowrap, flex-start, center);
+}
+
+.approveBox {
+  background-color: #f7f7fa;
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+  position: relative;
+  padding: 9px 12px;
+  .rightCon {
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    color: #006ffa;
+
+    span:not(:last-child) {
+      padding-right: 9px;
+      border-right: 1px solid #ddd;
+    }
+    span {
+      cursor: pointer;
+      padding-left: 9px;
+    }
+  }
+}

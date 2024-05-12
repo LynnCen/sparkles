@@ -1,0 +1,101 @@
+  .nodeCon {
+    .flex(column, nowrap, flex-start, center);
+    .cardCon {
+      border-radius: 8px;
+      overflow: hidden;
+      width: 200px;
+
+      .titCon {
+        background-color: #006aff; 
+        padding: 12px;
+        color: #fff;
+      }
+
+      .contentCon {
+        padding: 24px 12px;
+        background-color: #fff;
+      }
+    }
+
+    .connectingLine {
+      .wh(1px, 70px);
+      background-color: #cacaca;
+      margin-left: 50%;
+    }
+
+    .conditionCon {
+      .flex();
+      align-items: stretch;
+      background-color: #eee;
+      position: relative;
+      z-index: 2;
+
+      .conditionItem {
+        .flex(column, nowrap, flex-start, center);
+        position: relative;
+        padding: 30px 50px 0;
+        border-top: 1px solid #cacaca;
+        border-bottom: 1px solid #cacaca;
+
+        .cardCon {
+          position: relative;
+          .cardCon();
+          z-index: 2;
+        }
+
+        .fullConnectingLine {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          bottom: 0;
+          .wh(1px, 100%);
+          background-color: #cacaca;
+        }
+        
+        &:first-of-type {
+          border-top: none;
+          border-bottom: none;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            .wh(50%, 1px);
+            background-color: #cacaca;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            right: 0;
+            .wh(50%, 1px);
+            background-color: #cacaca;
+          }
+        }
+
+        &:last-of-type {
+          border-top: none;
+          border-bottom: none;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            .wh(50%, 1px);
+            background-color: #cacaca;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            .wh(50%, 1px);
+            background-color: #cacaca;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,76 @@
+.drawer{
+  :global {
+    .ant-drawer-body {
+      padding: 0 16px;
+    }
+  }
+}
+
+.formCon {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  .flex(column, nowrap, space-between);
+  .formWrap {
+    width: 100%;
+    flex: 1;
+    overflow: scroll;
+    padding: 16px 0;
+    .checkboxLabel {
+      font-size: 14px;
+      line-height: 20px;
+      color: #132144;
+      font-weight: bold;
+    }
+  }
+  .groupItem {
+    :global {
+      .ant-form-item-control-input {
+        min-height: 20px;
+      }
+      .ant-form-item {
+        margin-bottom: 18px;
+      }
+    }
+  }
+  .promptWrap {
+    .flex(row, nowrap, space-between, center);
+    width: 100%;
+    height: 32px;
+    padding: 0 8px;
+    background: rgba(255,134,29,0.05);
+    border-radius: 2px;
+    border: 1px solid #FF861D;
+    .promptLeft {
+      flex: 1;
+      color: #FF861D;
+      font-size: 14px;
+    }
+    .promptRight {
+      width: 86px;
+      height: 24px;
+      background: #FF861D;
+      border-color: #FF861D;
+      padding: 0;
+      line-height: 20px;
+    }
+  }
+  .bottom {
+    width: 100%;
+    height: 72px;
+    border-top: 1px solid #F6F7F9;
+    .flex(row, nowrap, flex-end, center);  
+    :global {
+      .ant-btn {
+        height: 40px;
+        width: 74px;
+        padding: 0;
+      }
+    }
+    .cancelBtn {
+      background: #F4F5F7;
+      border: 1px solid #EEEEEE;
+      color: #132144;
+    }
+  }
+}

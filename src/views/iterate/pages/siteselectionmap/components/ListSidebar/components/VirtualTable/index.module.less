@@ -1,0 +1,24 @@
+.virtualTable {
+  .virtualTableCell {
+    box-sizing: border-box;
+    padding: 0 12px;
+    width: 100%;
+    // .oneLine();
+    background: #FFF;
+    &:hover {
+      background-color: rgba(242, 243, 245, 0.5);
+    }
+    .virtualTableCellCon {
+      padding-top: 16px;
+      border-bottom: 1px solid #eee;
+      height: 100%;
+    }
+  }
+
+  :global {
+    .ant-table-container:before,
+    .ant-table-container:after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.labelEdit {
+  :global {
+    .ant-form-item-label > label {
+      font-weight: bold;
+    }
+    .ant-radio-wrapper {
+      margin-right: 12px;
+    }
+  }
+  .typeLabel {
+    .wh(37px, 16px);
+  }
+  :global {
+    .ant-form-item-explain-error {
+      margin: 12px 0;
+    }
+  }
+  .addBtn {
+    .flex(row, nowrap, flex-start, center);
+  }
+  .suffixWrapper {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      bottom: 2px;
+      left: 0;
+      width: 1px;
+      background-color: #ddd;
+    }
+    .suffixBtn {
+      color: #2441B3;
+      cursor: pointer;
+    }
+  }
+  .labelsWrapper {
+    :global {
+      .ant-space {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

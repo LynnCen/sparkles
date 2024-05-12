@@ -1,0 +1,46 @@
+.surround {
+  margin-top: 16px;
+
+  :global {
+    .v2TitleOuter {
+
+      // 最外层
+      .v2Title {
+        .text(#222, 16px);
+        font-weight: bold;
+        // margin-bottom: 12px;
+
+        >div {
+          margin-right: 8px
+        }
+      }
+    }
+  }
+
+  .desc {
+    .text(#222, 14px);
+    margin: 8px 0 0 11px;
+    font-weight: bold;
+  }
+
+  .surroundContainer {
+    border-radius: 8px;
+    border: solid 1px #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px 16px;
+
+
+
+    .surroundTabs {
+      :global {
+        .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-tab {
+          font-size: 14px;
+          padding: 10px 0;
+        }
+
+
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.listItem {
+  // box-sizing: border-box;
+  // flex: 1;
+  cursor: pointer;
+  height: 100%;
+
+  .titleRow {
+    .flex(row, nowrap, space-between, center);
+    .titCon {
+      .one-ellipsis();
+      width: 210px;
+    }
+    .score {
+      color: #ff861d;
+    }
+  }
+  .rankRow {
+    .flex(row, nowrap, space-between, center);
+    .rankRowLeft {
+      .flex(row, nowrap, flex-start, center);
+      .typeIcon {
+        width: 37px;
+        height: 16px;
+        position: relative;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    .rankRowRight {
+      .flex(row, nowrap, flex-start, center);
+    }
+  }
+  .labelRow {
+    .flex(row, wrap, flex-start, flex-start);
+    height: 25px;
+    overflow-y: hidden;
+    .label {
+      height: 21px;
+      line-height: 21px;
+      font-size: 12px;
+      color: #3966C7;
+      .one-ellipsis();
+      background-color: #F0F4FC;
+      border-radius: 2px;
+      margin: 0 4px 4px 0;
+      padding: 0 4px;
+    }
+  }
+}

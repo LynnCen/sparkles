@@ -1,0 +1,259 @@
+.bottomInfoContainer {
+  background-color: white;
+  padding-bottom: 20px;
+  // position: relative;
+
+  .top {
+    // position: relative;
+    .flex(row, nowarp, space-between, center);
+    padding: 34px 20px 18px;
+
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+      // position: relative;
+      min-width: 650px;
+      line-height: 32px;
+      .flex(row, nowarp, flex-start, center, center);
+
+      .screensContain {
+        margin-left: 8px;
+        .flex(row, nowarp, flex-start, center, center);
+      }
+
+      &::before {
+        // position: absolute;
+        content: '';
+        width: 4px;
+        height: 16px;
+        background: @primary-blue;
+        margin-right: 8px;
+        // left: 20px;
+        // top: 42px;
+      }
+    }
+
+    .legend {
+      // position: absolute;
+      // top: 40px;
+      // right: 20px;
+
+      .legendColor {
+        .wh(10px);
+        display: inline-block;
+        margin-right: 4px;
+        border-radius: 50%;
+        border: 3px solid;
+        background-color: white;
+      }
+
+      span {
+        color: #666666;
+      }
+    }
+
+    .typeBox {
+      margin-left: 8px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: #f6f7f9;
+      border-radius: 4px;
+      width: 86px;
+      height: 24px;
+      cursor: pointer;
+
+
+      .text {
+        width: 40px;
+        height: 20px;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 20px;
+        color: #666;
+        font-size: 12px;
+      }
+
+      .selected {
+        color: #fff;
+        background-color: #006AFF;
+      }
+    }
+  }
+
+  .echarts {
+    .wh(100%, 230px);
+  }
+
+
+}
+
+.chartContain {
+  margin: 0 20px;
+  padding: 24px 0px;
+  border-radius: 8px;
+  border: 1px solid #DDDDDD;
+
+  &.boderNone {
+    border: none;
+    padding: 0;
+  }
+
+  .legend {
+
+    text-align: center;
+    margin-top: 16px;
+
+    .legendColor {
+      .wh(10px);
+      display: inline-block;
+      margin-right: 4px;
+      border-radius: 50%;
+      border: 3px solid;
+      background-color: white;
+    }
+
+    span {
+      color: #666666;
+    }
+  }
+
+  .storeNumBox {
+    .wh(100%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    // padding-left: 20px;
+    // padding-right: 20px;
+
+    .storeNumItem {
+      flex: 1;
+      border: 1px solid #333;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      border-radius: 8px;
+      border: 1px solid #dddddd;
+      padding: 12px;
+
+      .storeNumTitle {
+        color: #666;
+        .oneLine();
+      }
+
+      .storeNumCharts {
+        .wh(100%, 230px);
+      }
+    }
+
+    .tableBox {
+      border-radius: 8px;
+      border: 1px solid #dddddd;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      padding: 12px;
+      flex: 1;
+
+      .storeNumTitle {
+        color: #222;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .cityTypeHis {
+    // padding: 0 12px;
+    .flex(row, nowarp, space-between);
+
+    .singleChart {
+      .wh(100%, max-content);
+
+      .chartName {
+        .text(#666, 14px);
+        margin-left: 80px;
+        .oneLine();
+      }
+    }
+
+    .cityTypeBox {
+      .wh(100%);
+      .flex(row, nowarp, center, center, center);
+
+      .storeNumItem {
+        // flex: 1;
+        border: 1px solid #333;
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+
+        border-radius: 8px;
+        padding: 12px;
+
+        .storeNumTitle {
+          color: #999;
+          .oneLine();
+        }
+
+        .storeNumCharts {
+          .wh(100%, 230px);
+        }
+      }
+
+      .tableBox {
+        padding: 12px;
+        flex: 1;
+        border-radius: 8px;
+        border: 1px solid #dddddd;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+
+        .storeNumTitle {
+          color: #222;
+          margin-bottom: 8px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .echarts {
+      min-height: 230px;
+      .wh(100%, 100%);
+    }
+  }
+
+
+}
+
+
+
+
+.extrSelectCon {
+  font-weight: 400;
+
+  .regionalScreens {
+    width: 250px;
+    margin: 0 8px;
+  }
+
+  :global {
+    .v2Form .ant-form-item {
+      margin-bottom: 0;
+      ;
+    }
+  }
+}
+
+
+
+.tableInfo {
+  padding: 0px 20px;
+}

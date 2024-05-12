@@ -1,0 +1,805 @@
+@import '../components/config-v2/ant.less';
+@primary-color: #006AFF; // 主题色
+@primary-tab-hove-color: #2989ff; // tab的hover颜色
+@primary-font-size: 14px; // 各种框的主要字体大小
+@primary-background-color-hover: rgba(0,106,255,0.06); // hover下，当前项背景色
+@primary-disable-background-color: #F4F5F9; // 禁用下，框的背景色
+@primary-form-color: #222; // 各种框的字体色，禁用和可用是一样的
+@primary-border-color: #ddd; // 边框色，禁用和可用是一样的
+@primary-border-radius: 4px; // border-radius
+@primary-placeholder-color: #ccc; // placeholder的字体色
+@secondary-background-color: #F6F7F9; // 用于一些tag或者table的次要背景色
+@picker-color: rgba(0,0,0,0.65);
+@picker-hover-color: #E8F3FF;
+.hoverBox() {
+  border-color: @primary-color;
+  box-shadow: none;
+}
+
+/* 公共 */
+input, textarea {
+  &::-webkit-input-placeholder {
+    font-size: @primary-font-size;
+    color: @primary-placeholder-color!important;
+  }
+  &::-webkit-scrollbar {
+    width: 8px; // 固定滚动条宽度
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 14px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+    background: rgba(144, 147, 153, 0.3);
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    background: none;
+  }
+}
+
+/* Button */
+.@{ant}-btn {
+  &.@{ant}-btn-primary {
+    &:not(:disabled) {
+      background: @primary-color;
+      border-color: @primary-color;
+      color: #FFFFFF;
+      &:hover {
+        background: @primary-color;
+        border-color: @primary-color;
+        opacity: 0.8;
+      }
+    }
+  }
+  &.@{ant}-btn-link {
+    &:not(:disabled) {
+      color: #2441B3;
+      span {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* Tabs */
+.@{ant}-tabs-nav {
+  &::before {
+    border-bottom: 1px solid #eee;
+  }
+  .@{ant}-tabs-nav-wrap {
+    .@{ant}-tabs-tab {
+      font-size: 16px;
+      padding: 15px 0;
+      .@{ant}-badge {
+        font-size: 16px;
+      }
+      &.@{ant}-tabs-tab-active {
+        .@{ant}-tabs-tab-btn {
+          color: @primary-color;
+        }
+        .@{ant}-badge {
+          color: @primary-color;
+        }
+      }
+      &:hover {
+        color: @primary-tab-hove-color;
+      }
+    }
+    .@{ant}-tabs-ink-bar {
+      background-color: @primary-color;
+      height: 3px;
+    }
+  }
+  .@{ant}-tabs-extra-content {
+    .@{ant}-btn {
+      border-radius: @primary-border-radius!important;
+      &.@{ant}-btn-primary {
+        border-color: @primary-color;
+        background: @primary-color;
+      }
+    }
+  }
+}
+/* Table */
+.@{ant}-table-wrapper {
+  .@{ant}-table {
+    color: #132144;
+    .@{ant}-table-container {
+      .@{ant}-table-thead
+        > tr {
+          > th {
+            font-weight: 400;
+            color: #666;
+            background: @secondary-background-color;
+            height: 40px;
+            padding-top: 8.5px;
+            padding-bottom: 8.5px;
+            &:not(:last-child):not(.@{ant}-table-selection-column):not(.@{ant}-table-row-expand-icon-cell):not([colspan])::before {
+              width: 0;
+          }
+        }
+      }
+      .@{ant}-table-tbody {
+        > tr  {
+          > td {
+            border-bottom: 1px solid #eee;
+            padding-top: 12.5px;
+            padding-bottom: 12.5px;
+            background-color: #FFFFFF;
+          }
+          &.@{ant}-table-row {
+            .@{ant}-table-cell-row-hover {
+              background-color: #EBF4FF;
+            }
+          }
+          &.custom-ant-table-single-row {
+            .@{ant}-table-cell-fix-left, .@{ant}-table-cell-fix-right {
+              background-color: #FAFAFA;
+              &.@{ant}-table-cell-row-hover {
+                background-color: #EBF4FF;
+              }
+            }
+            > td {
+              background-color: #FAFAFA;
+            }
+          }
+        }
+      }
+      .@{ant}-table-summary {
+        > tr {
+          > td {
+            border-bottom: 1px solid #eee;
+            padding-top: 12.5px;
+            padding-bottom: 12.5px;
+            background-color: #FFFFFF;
+          }
+        }
+      }
+      .@{ant}-table-tbody .global-operate .@{ant}-btn-link {
+        height: 22px;
+        line-height: 1;
+      }
+    }
+    &.@{ant}-table-bordered {
+      .@{ant}-table-container {
+        .@{ant}-table-body {
+          table {
+            tbody {
+              tr {
+                td {
+                  border-right: 1px solid #eee;
+                }
+                .@{ant}-table-cell-fix-right-first {
+                  &::after {
+                    border-right-color: #eee;
+                  }
+                }
+              }
+            }
+          }
+        }
+        div.@{ant}-table-summary {
+          box-shadow: 0 -1px 0 #eee;
+        }
+        .@{ant}-table-summary {
+          table {
+            tfoot {
+              tr {
+                td {
+                  border-right: 1px solid #eee;
+                }
+                .@{ant}-table-cell-fix-right-first {
+                  &::after {
+                    border-right-color: #eee;
+                  }
+                }
+              }
+            }
+          }
+        }
+        table {
+          .@{ant}-table-thead {
+            tr {
+              th {
+                border-right: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.@{ant}-table-empty {
+      .@{ant}-table-container {
+        .@{ant}-table-body {
+          .@{ant}-table-placeholder {
+            .@{ant}-table-cell {
+              .@{ant}-table-expanded-row-fixed {
+                margin-bottom: -12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /**
+  * 虚拟滚动列表
+  * 注意:
+  * 只在动态数据下使用虚拟滚动列表、目前只实现行背景，行高，其他如有需求可后续添加
+  */
+  &.virtual-table {
+    .@{ant}-table-container:before, .@{ant}-table-container:after {
+      display: none;
+    }
+    .virtual-table-cell {
+      border-bottom: 1px solid #eee;
+      padding: 0 10px;
+      line-height: 40px;
+      background-color: #FFFFFF;
+      border-right: 1px solid #eee;
+      &.custom-ant-table-single-row {
+        background-color: #FAFAFA;
+      }
+    }
+    [data-theme="dark"]  .virtual-table-cell {
+      box-sizing: border-box;
+      padding: 16px;
+      border-bottom: 1px solid #303030;
+      background: #141414;
+    }
+    .@{ant}-table-container {
+      .@{ant}-table-body {
+        table {
+          tbody {
+            tr {
+              td {
+                border-right: 1px solid #eee;
+              }
+            }
+          }
+        }
+      }
+      table {
+        .@{ant}-table-thead {
+          tr {
+            th {
+              border-right: 1px solid #eee;
+              border-bottom: 1px solid #eee;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Select */
+.@{ant}-select {
+  font-size: @primary-font-size;
+  color: @primary-form-color;
+  &.@{ant}-select-disabled, &.@{ant}-select-disabled.@{ant}-select-multiple{
+    &:not(.@{ant}-select-customize-input) {
+      .@{ant}-select-selector {
+        background-color: @primary-disable-background-color;
+        color: @primary-form-color;
+      }
+    }
+  }
+  &.@{ant}-select-disabled.@{ant}-select-multiple {
+    .@{ant}-select-selection-item {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  &:not(.@{ant}-select-customize-input) {
+    .@{ant}-select-selector {
+      border-color: @primary-border-color;
+      border-radius: @primary-border-radius!important;
+    }
+  }
+  &:not(.@{ant}-select-disabled) {
+    &:hover {
+      .@{ant}-select-selector {
+        .hoverBox();
+      }
+    }
+  }
+  &.@{ant}-select-focused {
+    &:not(.@{ant}-select-disabled) {
+      &:not(.@{ant}-select-customize-input) {
+        .@{ant}-select-selector {
+          .hoverBox();
+        }
+      }
+    }
+  }
+  .@{ant}-select-selection-placeholder { // select框的placeholder
+    font-size: @primary-font-size;
+    color: @primary-placeholder-color!important;
+  }
+  // 西雅发起ui投票后，暂定选择先缩小搜索icon
+  // .@{ant}-select-arrow {
+  //   font-size: @primary-font-size;
+  // }
+  // 这是放大close方案，备选方案，先暂存于此
+  // .@{ant}-select-clear {
+  //   font-size: @primary-font-size;
+  //   width: 14px;
+  //   height: 14px;
+  //   margin-top: -7px;
+  //   right: 12px;
+  // }
+  .@{ant}-select-selection-overflow-item {
+    .@{ant}-select-selection-item, .@{ant}-tag {
+      color: @primary-form-color;
+    }
+    .@{ant}-tag {
+      background-color: @secondary-background-color;
+      border-color: #E5E9F2;
+    }
+  }
+}
+/* Input */
+.@{ant}-input-affix-wrapper {
+  border-radius: @primary-border-radius!important;
+  font-size: @primary-font-size;
+  border-color: @primary-border-color;
+  &:hover {
+    .hoverBox();
+  }
+  &.@{ant}-input-affix-wrapper-focused {
+    .hoverBox();
+  }
+  &:not(.@{ant}-input-affix-wrapper-disabled) {
+    &:hover {
+      .hoverBox();
+    }
+  }
+  &.@{ant}-input-affix-wrapper-disabled {
+    background-color: @primary-disable-background-color;
+    .@{ant}-input::placeholder {
+      color: @primary-placeholder-color!important;
+    }
+    &:hover {
+      border-color: @primary-border-color;
+    }
+    .@{ant}-input-suffix {
+      .anticon {
+        cursor: not-allowed;
+        &:hover {
+          color: rgba(0, 0, 0, 0.45);
+        }
+      }
+    }
+  }
+  .@{ant}-input{
+    font-size: @primary-font-size;
+    color: @primary-form-color;
+    &[disabled] {
+      color: @primary-form-color;
+    }
+  }
+  textarea {
+    &.@{ant}-input-disabled {
+      background-color: @primary-disable-background-color;
+    }
+  }
+}
+// 带前置和后置slot的样式调整
+.@{ant}-input-group-wrapper {
+  .@{ant}-input-wrapper {
+    .@{ant}-input-group-addon {
+      background-color: @secondary-background-color;
+      color: @primary-form-color;
+      border-color: @primary-border-color;
+    }
+    span:first-child {
+      &.@{ant}-input-group-addon {
+        border-radius: @primary-border-radius 0 0 @primary-border-radius;
+        & + .@{ant}-input-affix-wrapper {
+          border-radius: 0 @primary-border-radius @primary-border-radius 0!important;
+        }
+      }
+      &.@{ant}-input-affix-wrapper {
+        border-radius: @primary-border-radius 0 0 @primary-border-radius!important;
+        & + .@{ant}-input-group-addon {
+          border-radius: 0 @primary-border-radius @primary-border-radius 0;
+        }
+      }
+    }
+  }
+}
+/* InputNumber */
+.@{ant}-input-number-group-wrapper {
+  width: 100%; // antd至给了.@{ant}-input-number-wrapper 加了100%，未给最外层加
+}
+.@{ant}-input-number {
+  border-radius: @primary-border-radius;
+  border-color: @primary-border-color;
+  &:hover, &.@{ant}-input-number-focused {
+    .hoverBox();
+  }
+  .@{ant}-input-number-input{
+    font-size: @primary-font-size;
+    border-radius: @primary-border-radius;
+    &[disabled] {
+      color: @primary-form-color;
+    }
+  }
+  &.@{ant}-input-number-disabled {
+    background-color: @primary-disable-background-color;
+    &:hover {
+      border-color: @primary-border-color;
+    }
+  }
+}
+// 带前置和后置slot的样式调整
+.@{ant}-input-number-group-wrapper {
+  .@{ant}-input-number-wrapper {
+    .@{ant}-input-number-group-addon {
+      background-color: @secondary-background-color;
+      color: @primary-form-color;
+      border-color: @primary-border-color;
+    }
+    div:first-child {
+      &.@{ant}-input-number-group-addon {
+        border-radius: @primary-border-radius 0 0 @primary-border-radius;
+      }
+      &.@{ant}-input-number + .@{ant}-input-number-group-addon {
+        border-radius: 0 @primary-border-radius @primary-border-radius 0;
+      }
+    }
+  }
+}
+/* Picker */
+.@{ant}-picker {
+  border-radius: @primary-border-radius!important;
+  border: 1px solid @primary-border-color;
+  .@{ant}-picker-input > input {
+    color: @primary-form-color;
+  }
+  &:not(.@{ant}-picker-disabled) {
+    &.@{ant}-picker-focused, &:hover {
+      .hoverBox();
+    }
+  }
+  &.@{ant}-picker-disabled {
+    border-color: @primary-border-color;
+    background: @primary-disable-background-color;
+  }
+  &.@{ant}-picker-range{
+    .@{ant}-picker-input>input{
+      font-size: @primary-font-size;
+    }
+  }
+}
+.@{ant}-picker-content {
+  // 日期选择器
+  .@{ant}-picker-cell-in-view {
+    color: @picker-color;
+    &.@{ant}-picker-cell-selected {
+      .@{ant}-picker-cell-inner {
+        background: @primary-color;
+      }
+    }
+    &.@{ant}-picker-cell-range-start {
+      .@{ant}-picker-cell-inner{
+        background: @primary-color;
+      }
+    }
+    &.@{ant}-picker-cell-range-end {
+      .@{ant}-picker-cell-inner {
+        background: @primary-color;
+      }
+    }
+    &.@{ant}-picker-cell-today {
+      .@{ant}-picker-cell-inner{
+        &::before {
+          border-color: @primary-color;
+        }
+      }
+    }
+    &:not(.@{ant}-picker-cell-selected):not(.@{ant}-picker-cell-range-start):not(.@{ant}-picker-cell-range-end):not(.@{ant}-picker-cell-range-hover-start):not(.@{ant}-picker-cell-range-hover-end) {
+      &:hover {
+        .@{ant}-picker-cell-inner {
+          background: @picker-hover-color;
+        }
+      }
+    }
+  }
+  .@{ant}-picker-week-panel-row {
+    &:not(.@{ant}-picker-week-panel-row-selected) {
+      &:hover {
+        .@{ant}-picker-cell-in-view:not(.@{ant}-picker-cell-disabled) {
+          background: @picker-hover-color;
+        }
+      }
+    }
+  }
+  // 时间选择器
+  .@{ant}-picker-time-panel-column {
+    > li {
+      &.@{ant}-picker-time-panel-cell:not(.@{ant}-picker-time-panel-cell-selected) {
+        .@{ant}-picker-time-panel-cell-inner {
+          color: @picker-color;
+        }
+        &:hover {
+          .@{ant}-picker-time-panel-cell-inner {
+            background: @picker-hover-color;
+          }
+        }
+      }
+      &.@{ant}-picker-time-panel-cell {
+        &.@{ant}-picker-time-panel-cell-selected {
+          .@{ant}-picker-time-panel-cell-inner {
+            color: @primary-color;
+            background-color: @secondary-background-color;
+          }
+          &:hover {
+            .@{ant}-picker-time-panel-cell-inner {
+              background-color: @secondary-background-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Descriptions */
+.@{ant}-descriptions{
+  .@{ant}-descriptions-item {
+    padding: 5px 0px;
+  }
+}
+
+/* SelectTree */
+.@{ant}-select-dropdown {
+  .@{ant}-select-tree {
+    .@{ant}-select-tree-list-holder-inner {
+      .@{ant}-select-tree-treenode:not(.@{ant}-select-tree-treenode-disabled) {
+        .@{ant}-select-tree-node-content-wrapper {
+          &:hover {
+            background-color: @primary-background-color-hover;
+          }
+          &.@{ant}-select-tree-node-selected {
+            background-color: transparent;
+            .@{ant}-select-tree-title {
+              color: @primary-color;
+            }
+          }
+        }
+        &.filter-node {
+          .@{ant}-select-tree-title {
+            color: @primary-color;
+            font-weight: normal;
+          }
+        }
+        &.@{ant}-select-tree-treenode-checkbox-checked {
+          color: @primary-color;
+          .@{ant}-select-tree-node-content-wrapper {
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+    .@{ant}-select-tree-checkbox-checked {
+      .@{ant}-select-tree-checkbox-inner {
+        background-color: @primary-color;
+        border-color: @primary-color;
+      }
+    }
+    .@{ant}-select-tree-checkbox-indeterminate {
+      .@{ant}-select-tree-checkbox-inner{
+        &::after {
+          background-color: @primary-color;
+        }
+      }
+    }
+  }
+}
+
+.@{ant}-tree-select {
+  &.@{ant}-select-multiple {
+    .@{ant}-select-selection-item {
+      background-color: @secondary-background-color;
+      border-color: #F2F3F5;
+      border-radius: @primary-border-radius;
+    }
+  }
+}
+/* Tree组件 */
+.@{ant}-tree {
+  .@{ant}-tree-checkbox-checked:not(.@{ant}-tree-checkbox-disabled) {
+    .@{ant}-tree-checkbox-inner {
+      background-color: @primary-color;
+      border-color: @primary-color;
+    }
+  }
+  .@{ant}-tree-checkbox-indeterminate:not(.@{ant}-tree-checkbox-disabled) {
+    .@{ant}-tree-checkbox-inner{
+      &::after {
+        background-color: @primary-color;
+      }
+    }
+  }
+}
+
+/* Switch */
+.@{ant}-switch {
+  &.@{ant}-switch-checked {
+    background-color: @primary-color;
+  }
+  &.@{ant}-switch-disabled, &.@{ant}-switch-loading {
+    opacity: 0.5;
+  }
+}
+/* Radio */
+.@{ant}-radio {
+  &.@{ant}-radio-checked:not(.@{ant}-radio-disabled) {
+    &::after, .@{ant}-radio-inner {
+      border-color: @primary-color;
+    }
+    .@{ant}-radio-inner::after {
+      background-color: @primary-color;
+    }
+  }
+  &.@{ant}-radio-disabled {
+    + span {
+      color: #ccc;
+    }
+    .@{ant}-radio-inner {
+      background-color: #F2F3F5;
+      &::after {
+        background-color: #D1D3D6;
+      }
+    }
+  }
+}
+.@{ant}-radio-wrapper {
+  &:hover {
+    .@{ant}-radio:not(.@{ant}-radio-disabled) {
+      .@{ant}-radio-inner {
+        border-color: @primary-color;
+      }
+    }
+  }
+}
+/* checkbox */
+.@{ant}-checkbox {
+  &.@{ant}-checkbox-checked:not(.@{ant}-checkbox-disabled) {
+    &::after {
+      border-color: @primary-color;
+    }
+    .@{ant}-checkbox-inner {
+      border-color: @primary-color;
+      background-color: @primary-color;
+    }
+  }
+  &.@{ant}-checkbox-indeterminate:not(.@{ant}-checkbox-disabled) {
+    .@{ant}-checkbox-inner {
+      &::after {
+        background-color: @primary-color;
+      }
+    }
+  }
+}
+.@{ant}-checkbox-wrapper {
+  &:hover {
+    .@{ant}-checkbox:not(.@{ant}-checkbox-disabled) {
+      .@{ant}-checkbox-inner {
+        border-color: @primary-color;
+      }
+    }
+  }
+}
+/* Message */
+.@{ant}-message {
+  color: #000000;
+  font-weight: 400;
+  .@{ant}-message-notice-content {
+    padding: 0;
+    .@{ant}-message-custom-content {
+      padding: 10px 16px;
+    }
+  }
+}
+/* Modal */
+.@{ant}-modal-content {
+  border-radius: 8px;
+  .@{ant}-modal-header {
+    padding-top: 19px;
+    padding-bottom: 7px;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    .@{ant}-modal-title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  .@{ant}-modal-body {
+    .@{ant}-form.v2Form {
+      .@{ant}-form-item {
+        .@{ant}-form-item-label > label {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .@{ant}-modal-close {
+    top: 16px;
+    right: 22px;
+    .@{ant}-modal-close-x {
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      .anticon-close {
+        color: #86909C;;
+      }
+    }
+  }
+  .@{ant}-modal-footer{
+    padding: 16px 24px;
+    .@{ant}-btn{
+      min-width: 74px;
+      height: 32px;;
+      font-size: 14px;
+      margin: 0 0 0 12px;
+      border-radius: 3px;
+    }
+  }
+}
+/* ImagePreview */
+.@{ant}-image-preview-operations-wrapper {
+  bottom: 32px;
+  top: auto!important;
+  user-select: none;
+  .@{ant}-image-preview-operations {
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 100px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 252px;
+    background-color: rgba(0,0,0,.2);
+    .@{ant}-image-preview-operations-progress {
+      top: -38px;
+    }
+    .@{ant}-image-preview-operations-operation-close {
+      position: fixed;
+      top: 32px;
+      right: 32px;
+      background-color: rgba(0,0,0,.2);
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      &:hover {
+        background-color: rgba(0,0,0,.3);
+      }
+    }
+  }
+  .@{ant}-image-preview-switch-left, .@{ant}-image-preview-switch-right {
+    top: auto;
+    bottom: 60px;
+    background-color: rgba(0,0,0,.2);
+    &:not(.@{ant}-image-preview-switch-left-disabled) {
+      &:hover {
+        background-color: rgba(0,0,0,.3);
+      }
+    }
+  }
+  .@{ant}-image-preview-switch-left {
+    left: auto;
+    right: 50%;
+    transform: translate(-100%, -50%);
+  }
+  .@{ant}-image-preview-switch-right {
+    right: auto;
+    left: 50%;
+    transform: translate(100%, -50%);
+  }
+}

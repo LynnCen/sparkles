@@ -1,0 +1,211 @@
+@media print {
+  @page {
+    /* A4大小 横向 */
+    size: A4 landscape;
+    margin: 0;
+    padding: 0;
+  }
+
+  // html {
+  //   zoom: 58.3%;
+  // }
+}
+
+// pdf尺寸
+.A4 {
+  position: relative;
+  .wh(1124px, 794px); // 注意是横向
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #fff;
+  // border-bottom: 1px solid #fff;
+  padding: 55px 73px;
+}
+
+.container {
+  width: 1124px;
+  background: #fff;
+  box-sizing: border-box;
+  font-family: PingFangSC-Medium, PingFang SC;
+
+  .pages {
+    .A4();
+  }
+
+  .header {
+    font-size: 20px;
+    font-weight: 500;
+    color: #17273A;
+    text-align: center;
+  }
+
+  .storeScoreWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .left {
+      width: 683px;
+
+      .storeScore {
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #16325D;
+
+        .score {
+          font-size: 32px;
+          font-weight: 600;
+          color: #006AFF;
+        }
+
+        .scoreUnit {
+          font-size: 12px;
+          font-weight: 400;
+          color: #006AFF;
+        }
+      }
+
+      .suggest {
+        .wh(100%, 41px);
+        margin-top: 8px;
+        background: #F7FAFF;
+        line-height: 41px;
+        position: relative;
+        font-size: 12px;
+        font-weight: 400;
+        color: #132144;
+
+        .triangle {
+          position: absolute;
+          top: -12px;
+          left: 92px;
+          border: 6px solid #F6F7F9;
+          border-top-color: transparent;
+          border-bottom-color: #F6F7F9;
+          border-left-color: transparent;
+          border-right-color: transparent;
+        }
+      }
+    }
+
+    .right {
+      .echarts {
+        margin-top: 48px;
+        .wh(282px, 214px);
+      }
+    }
+  }
+}
+
+.incomeCard {
+  width: 100%;
+  margin-top: 16px;
+
+  :global {
+    .ant-card-body {
+      padding: 16px;
+    }
+  }
+
+  .titleTips {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .simplyTable {
+    display: flex;
+    flex-direction: row;
+    padding: 0 8px;
+
+    .tableItem {
+      flex: 1;
+
+      .header {
+        font-size: 12px;
+        color: #959BAB;
+      }
+
+      .body {
+        font-size: 14px;
+        font-weight: 500;
+        color: #16325D;
+        margin-top: 8px;
+      }
+    }
+  }
+
+}
+
+
+/* 店铺基本信息 */
+.basicInfoCard {
+  width: 100%;
+  margin-top: 16px;
+
+  :global {
+    .ant-card-body {
+      padding: 16px 16px 8px;
+    }
+  }
+
+  .cardTitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #16325D;
+  }
+
+  .tagContent {
+    margin-top: 8px;
+    display: flex;
+
+    .tagValue {
+      padding: 0 8px;
+      height: 24px;
+      line-height: 24px;
+      color: #006AFF;
+      font-size: 12px;
+      border: 1px solid #CCE1FF;
+      margin-right: 16px;
+      border-radius: 2px;
+    }
+  }
+
+  .infoContent {
+    margin-top: 12px;
+  }
+}
+
+/* TabTitle */
+.tabTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #16325D;
+  margin-top: 32px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #F4F5F7;
+}
+
+/* tab info */
+.tabInfoContent {
+  .imagesContent {
+    display: flex;
+
+    img {
+      width: 156px;
+      height: 86px;
+      object-fit: cover;
+    }
+  }
+
+  .flexSectionCon {
+    .flex(row, wrap);
+    color: #333;
+  }
+}
+
+.secondTitle {
+  margin: 16px 0 10px;
+  font-weight: 400;
+  color: #17273A;
+}

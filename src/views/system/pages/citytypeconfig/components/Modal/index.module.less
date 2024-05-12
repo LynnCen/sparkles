@@ -1,0 +1,24 @@
+// .import {
+//   // width: 336px;
+// }
+
+.field {
+  .flex(row, nowarp, flex-start, center);
+  width: max-content;
+
+  .minusIcon {
+    margin-left: 5px;
+    margin-bottom: 16px;
+    color: #999999;
+
+    &:hover {
+      color: #006AFF;
+    }
+  }
+
+  :global {
+    .ant-input[disabled] {
+      color: #999999;
+    }
+  }
+}

@@ -1,0 +1,262 @@
+.mapCon {
+  .wh(100%, 100%);
+  :global {
+    .amap-maps {
+      .amap-layers {
+        .amap-markers {
+          @import '@/common/styles/amap-chance-point.less';
+          @import '@/common/styles/amap-business-area-marker-item.less';
+
+          // 竞品门店hover后显示的content的样式
+          .competitorOverview {
+            .wh(200px, auto);
+            background-color: #fff;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 12px 0px rgba(110,139,179,0.25);
+            font-size: 12px;
+          }
+          // 区级别下展示所有marker时的item的样式
+          // .siteSelectionMapItemMarkerCon {
+          //   position: relative;
+          //   text-align: center;
+          //   .wh(28px, 39px);
+          //   .svgCon {
+          //     position: absolute;
+          //     left: -4px; // 手动调整iconfont的不败
+          //     right: 0;
+          //     top: -4px;
+          //     bottom: 0;
+          //     font-size: 36px;
+
+          //     .iconSvg {
+          //       vertical-align: 0;
+          //     }
+          //   }
+
+          //   .rankVal {
+          //     position: relative;
+          //     z-index: 2;
+          //     // position: absolute;
+          //     // left: 12px;
+          //     // top: 8px;
+          //     font-size: 12px;
+          //     color: #fff;
+          //     font-weight: 500;
+          //     // margin-left: -50%;
+          //     // transform: translateX(-50%);
+          //   }
+          // }
+          // 区聚合时的样式
+          .clusterMarkerOfDistrict {
+            .wh(48px,48px);
+            .flex(row, nowrap, center, center);
+            color: white;
+            background-color: #006aff;
+            box-shadow: 0px 4px 6px 0px rgba(89, 98, 119, 0.2);
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+          }
+
+          .circlebox {
+            .wh(64px, 64px);
+            border-radius: 50%;
+            border: 1px solid #fff;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+            background-color: #f6f7f9;
+            .f-DAJ(column, center, center);
+      
+            .whiteBg {
+              text-align: center;
+              .wh(80%);
+              border-radius: 50%;
+              .f-DAJ(column, center, center);
+              background-color: #fff;
+      
+              .text-name {
+                margin-top: 4px;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 16px;
+                color: #132144;
+                text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+                white-space: normal;
+              }
+      
+              .text-total {
+                font-size: 14px;
+                line-height: 17px;
+                color: #132144;
+                text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 省市区hover下的样式
+  .mapLabel {
+    background-color: white;
+    position: relative;
+    width: max-content;
+    padding: 0px 16px 8px 8px;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+
+    .colorCircle {
+      margin-right: 4px;
+      .wh(8px);
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .line {
+      padding-top: 8px;
+      font-size: 12px;
+      .rightLine {
+        margin: 0 4px;
+        .wh(1px,10px);
+        display: inline-block;
+        background: #333;
+        display: center;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .triangle {
+      position: absolute;
+      top: -12px;
+      left: 20%;
+      transform: translate(50%);
+      border: 6px solid #fff;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+  }
+
+  // 概览样式
+  .overviewCon {
+    position: relative;
+    .wh(300px, 372px);
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px rgba(204,204,204,0.32);
+    border-radius: 8px;
+    border: 1px solid #DDDDDD;
+    cursor: default;
+
+    .titCon {
+      padding: 16px 12px 0;
+
+      .closeIcon {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+      }
+    }
+
+    .mainCon {
+      height: 282px;
+      overflow: auto;
+
+      ::-webkit-scrollbar {
+        width: 8px; // 固定滚动条宽度
+        height: 8px;
+      }
+      ::-webkit-scrollbar-thumb {
+        border-radius: 14px;
+        box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+        background: rgba(153, 153, 153, 0.3);
+      }
+  
+      .rankCon {
+        .flex(row, nowrap, flex-start, center, center);
+        background: linear-gradient(270deg, rgba(250,250,251,0) 0%, #F6F7F9 100%);
+        border-radius: 4px;
+        padding: 3px 4px;
+        margin: 6px 12px 12px;
+        
+        .labelType {
+          .wh(38px, 16px);
+          // border: 1px solid red;
+          img {
+            vertical-align: baseline
+          }
+        }
+      }
+  
+      .infoCon {
+        .flex(row, nowrap, flex-start, center);
+
+        .infoItem {
+          position: relative;
+          flex-basis: 50%;
+          // flex-basis: 100%;
+          text-align: center;
+          &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -10px;
+            .wh(1px, 20px);
+            background-color: #F2F3F5;
+          }
+  
+          &:last-of-type {
+            &::after {
+              .wh(0, 0);
+            }
+          }
+        }
+      }
+
+      .labelCon {
+        // background-color: #fff;
+        // padding: 0px 12px 6px;
+        padding: 0 12px;
+      }
+
+      .tabsCon {
+        padding: 0 12px;
+
+        :global {
+          .ant-tabs {
+            line-height: normal;
+            .ant-tabs-nav-wrap {
+              .ant-tabs-nav-list {
+                .ant-tabs-tab {
+                  padding: 8px 0;
+                  .ant-tabs-tab-btn {
+                    font-size: 12px
+                  }
+
+                  &+.ant-tabs-tab {
+                    margin-left: 16px
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    .footerCon {
+      .wh(100%, 52px);
+      line-height: 52px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #FFFFFF;
+      padding: 0 12px;
+      border-top: 1px solid #F2F3F5;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+
+    }
+  }
+}

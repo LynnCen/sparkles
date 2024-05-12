@@ -1,0 +1,30 @@
+.projectTableCon{
+
+  .moreBtn{
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+    line-height: 17px;
+    text-align: left;
+
+    &:hover{
+      color: @primary-blue-hover;
+      cursor: pointer;
+    }
+  }
+  :global{
+    .ant-btn-text{
+      font-size: 12px;
+      color: #666666;
+      padding-right: 0;
+
+      .anticon-right{
+        margin-left: 0;
+      }
+    }
+    .ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table > thead > tr:not(:last-child) > th{
+
+      border-bottom: 1px solid #eee;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.baseInfo {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 20px 40px;
+  border: 1px solid #f4f5f7;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .value {
+      font-size: 18px;
+      font-weight: 500;
+      .flex(row, nowrap, space-between, center);
+      .point {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background: #009963;
+        margin-right: 4px;
+      }
+      .state {
+        color: #006aff;
+      }
+    }
+    .label {
+      font-size: 12px;
+      font-weight: 400;
+      color: #666666;
+      margin-top: 8px;
+    }
+  }
+}
+
+.user {
+  height: 220px;
+  overflow: scroll;
+}

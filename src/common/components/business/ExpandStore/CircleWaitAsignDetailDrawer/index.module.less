@@ -1,0 +1,120 @@
+.taskDetailHeader {
+  padding: 29px 0 25px;
+  .flex(row, nowrap, space-between, flex-end);
+
+  .headerLeft {
+    .flex(row, nowrap, flex-start, center);
+    .name {
+      color: #1D2129;
+    }
+    .statusBox {
+      height: 20px;
+      line-height: 20px;
+      padding: 0 4px;
+    }
+  }
+  .flexRow {
+    .flex(row, nowrap, flex-start, center);
+  }
+
+  .extraButtons {
+    .flex(row, nowrap, flex-start, center);
+    flex-shrink: 0;
+    :global {
+      .ant-btn.ant-btn-text {
+        color: #999999;
+      }
+    }
+  }
+  .historyBtn {
+    .flex(row, nowrap, flex-start, center);
+    height: 32px;
+    padding: 0 8px;
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+    &:hover {
+      cursor: pointer;
+      span {
+        color: #006aff;
+      }
+      .icon {
+        color: #006aff;
+      }
+    }
+  }
+  .changeBtn {
+    :global {
+      .ant-btn {
+        color: #333333;
+        border-color: #DDDDDD;
+      }
+      .ant-btn:hover {
+        color: #006aff;
+        border-color: #006aff;
+      }
+      .ant-btn:focus {
+        color: #333333;
+        border-color: #DDDDDD;
+      }
+    }
+  }
+  .approvingBtn {
+    :global {
+      .ant-btn.ant-btn-text {
+        background: #f4f5f9;
+      }
+      .ant-btn {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+.basicWrapper {
+  .flex(row, nowrap, space-between, '');
+
+  .basicInfo {
+    flex: 1;
+    margin-right: 32px;
+    .label {
+      font-size: 14px;
+      color: #999999;
+      margin-top: 16px;
+    }
+
+    .value {
+      color: #222222;
+
+      background: #F7F7FA;
+      border-radius: 4px;
+      padding: 6px 8px;
+      margin-top: 4px;
+    }
+
+
+  }
+
+  .basicMap {
+    width: 554px;
+    height: 454px;
+
+  }
+
+}
+
+.drawerFooter {
+  padding: 0 40px;
+  box-sizing: border-box;
+  height: 64px;
+  box-shadow: 0px -2px 4px 1px #f6f7f9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+}

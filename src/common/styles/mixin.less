@@ -1,0 +1,216 @@
+// 宽高
+.wh(@width, @height: @width) {
+  width: @width;
+  height: @height;
+}
+
+// 高居中
+.mheight(@h, @lh: @h) {
+  height: @h;
+  line-height: @lh;
+}
+
+// flex
+.flex(@dir: row, @wrap: nowrap, @jc: flex-start, @ai: flex-start, @ac: flex-start) {
+  display: flex;
+  flex-flow: @dir @wrap;
+  flex-direction: @dir;
+  justify-content: @jc;
+  align-items: @ai;
+  align-content: @ac;
+}
+
+.center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fj(@type: space-between) {
+  display: flex;
+  justify-content: @type;
+}
+
+.base-1px(@color) {
+  content: ' ';
+  pointer-events: none;
+  /* 防止点击触发 */
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid @color;
+}
+
+// 1px边框处理
+.bb-1px(@color) {
+  position: relative;
+
+  &:after {
+    .base-1px(@color);
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.bt-1px(@color) {
+  position: relative;
+
+  &:before {
+    .base-1px(@color);
+
+    top: 0;
+    left: 0;
+  }
+}
+
+.bl-1px(@color) {
+  position: relative;
+
+  &:before {
+    .base-1px(@color);
+    top: 0;
+    left: 0;
+  }
+}
+
+.br-1px(@color) {
+  position: relative;
+
+  &:after {
+    .base-1px(@color);
+    top: 0;
+    right: 0;
+  }
+}
+
+.bd-1px(@color) {
+  position: relative;
+
+  &:before {
+    .base-1px(@color);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+// 一行文字
+.one-ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis(@num: 2) {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @num;
+  overflow: hidden;
+}
+
+// 弹性盒
+.f-DAJ(@direction: row, @align: stretch, @justify: flex-start) {
+  display: flex;
+  flex-direction: @direction;
+  align-items: @align;
+  justify-content: @justify;
+}
+
+.oneLine() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.moreLine(@num) {
+  display: -webkit-box;
+  -webkit-line-clamp: @num;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mixinsPosition(@positon: absolute, @top: auto, @right: auto, @bottom: auto, @left: auto) {
+  position: @positon;
+  top: @top;
+  right: @right;
+  bottom: @bottom;
+  left: @left;
+}
+
+// 上尖角
+.top-arrow(@left: 40px, @color: #fff) {
+  content: ' ';
+  position: absolute;
+  border-top: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid @color;
+  top: -12px;
+  left: @left;
+}
+
+// 下尖角
+.bottom-arrow(@left: 40px, @color: #fff) {
+  content: ' ';
+  position: absolute;
+  border-top: 6px solid @color;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  bottom: -12px;
+  left: @left;
+}
+
+.text(@color: #000, @fontSize :14px, @lineHeight :20px, @align: null) {
+  color: @color;
+  font-size: unit(@fontSize, px);
+  line-height: unit(@lineHeight, px);
+  text-align: @align;
+}
+
+.animation(@animation-name,@animation-duration,@animation-timing-function) {
+  animation: @arguments;
+}
+.markerAnimationScale(@keyframesName) {
+  @keyframes @keyframesName {
+    0% {
+      transform: scale(0);
+    }
+    10% {
+      transform: scale(0.1);
+    }
+    20% {
+      transform: scale(0.2);
+    }
+    30% {
+      transform: scale(0.3);
+    }
+    40% {
+      transform: scale(0.4);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+    60% {
+      transform: scale(0.6);
+    }
+    70% {
+      transform: scale(0.7);
+    }
+    80% {
+      transform: scale(0.8);
+    }
+    90% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+.markerAnimationScale(markerAnimationScale);

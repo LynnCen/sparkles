@@ -1,0 +1,114 @@
+@primary: #20A0FF;
+@success: #67C23A;
+@warning: #F7BA2A;
+@danger: #F56C6C;
+@info: #909399;
+@orange: #FF861D; // 橙色
+@blue: #006AFF; // 蓝色
+@green: #009963; // 绿色
+@gray: #BFBFBF;// 灰色
+@red: #F5222D; // 红色
+
+.color-text {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  :global {
+
+    .color-text__color {
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      margin-right: 6px;
+
+      &.primary {
+        background-color: @primary;
+      }
+
+      &.success {
+        background-color: @success;
+      }
+
+      &.warning {
+        background-color: @warning;
+      }
+
+      &.danger {
+        background-color: @danger;
+      }
+
+      &.info {
+        background-color: @info;
+      }
+
+      // 蓝色
+      &.blue {
+        background-color: @blue;
+      }
+      // 绿色
+      &.green {
+        background-color: @green;
+      }
+      // 橙色
+      &.orange {
+        background-color: @orange;
+      }
+      // 红色
+      &.red {
+        background-color: @red;
+      }
+      // 灰色
+      &.gray {
+        background-color: @gray;
+      }
+    }
+
+    .color-text__text {
+
+      &.primary {
+        color: @primary;
+      }
+
+      &.success {
+        color: @success;
+      }
+
+      &.warning {
+        color: @warning;
+      }
+
+      &.danger {
+        color: @danger;
+      }
+
+      &.info {
+        color: @info;
+      }
+
+      // 蓝色
+      &.blue {
+        color: @blue;
+      }
+      // 绿色
+      &.green {
+        color: @green;
+      }
+      // 橙色
+      &.orange {
+        color: @orange;
+      }
+      // 红色
+      &.red {
+        color: @red;
+      }
+      // 灰色
+      &.gray {
+        color: @gray;
+      }
+    }
+  }
+}

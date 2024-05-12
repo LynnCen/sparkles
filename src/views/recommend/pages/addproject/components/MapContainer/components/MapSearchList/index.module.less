@@ -1,0 +1,113 @@
+.container {
+  .rankCon {
+    &:hover {
+      color: @primary-blue;
+
+      .triangleIcon {
+        color: #006aff;
+        transition: transform 0.2s linear;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .topSection {
+    .countCon {
+      font-size: 12px;
+      width: 100%;
+      padding: 9px 12px;
+      background: #fafafa;
+      color: #132144;
+      margin-top: -8px;
+    }
+  }
+  .top {
+    display: flex;
+    align-items: center;
+  }
+  .listCon {
+    padding: 0 12px;
+    box-sizing: border-box;
+
+    .listItemCon {
+      // box-sizing: border-box;
+      // flex: 1;
+      cursor: pointer;
+      .flex(row, nowrap, flex-start, center);
+
+      .leftCheck {
+        width: 24px;
+        padding: 30px 0;
+      }
+      .rightInfo {
+        flex: 1;
+      }
+
+      .titCon {
+        .one-ellipsis();
+        // width: 192px;
+      }
+      .badge {
+        :global {
+          .ant-badge-status-text {
+            margin-left: 4px;
+          }
+        }
+      }
+      .labelCon {
+        line-height: 12px;
+        padding: 4px 4px;
+        border-radius: 1px;
+        width: max-content;
+        background-color: #fafafa;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      :global {
+        .ant-badge-status-dot {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
+
+  .footerCon {
+    padding: 12px 12px;
+    box-shadow: 0px 2px 8px 0px rgba(86, 86, 86, 0.2);
+    box-sizing: border-box;
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.selectedRow {
+  // padding: 12px;
+  padding: 12px 12px;
+  box-shadow: 0px 2px 8px 0px rgba(86, 86, 86, 0.2);
+  box-sizing: border-box;
+  .value {
+    width: 84px;
+    max-width: 84px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .cancelBtn {
+    border: 1px solid #006aff;
+    color: #006aff;
+    border-radius: 4px;
+    margin-right: 8px;
+    height: 28px;
+  }
+  .confirmBtn {
+    height: 28px;
+    border-radius: 4px;
+  }
+}
+.networkDetail {
+  margin-top: -8px;
+}

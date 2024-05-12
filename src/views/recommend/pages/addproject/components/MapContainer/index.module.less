@@ -1,0 +1,117 @@
+.container {
+  .wh(100%,100%);
+  // min-width: 1200px;
+  position: relative;
+  // overflow-y: hidden;
+  overflow: hidden;
+
+  .backBtn {
+    z-index: 999;
+    .wh(108px, 32px);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 348px;
+    top: 16px;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    cursor: pointer;
+  }
+
+  // 竞品分布
+  // 地图覆盖物沿用推荐报告详情页样式
+  // src/views/recommend/pages/reportdetail/entry.module.less
+  :global {
+    .amap-maps {
+      .amap-marker-label {
+        display: block;
+        width: max-content;
+        font-size: 12px;
+        text-align: center;
+        background: white;
+        border: 1px solid #eee;
+        border-radius: 5px;
+      }
+    }
+
+    .icon-label {
+      // .wh(auto, auto);
+      // .wh(132px,auto);
+      width: max-content;
+      padding: 5px 12px 5px 8px;
+      background: #ffffff;
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e4e7ed;
+      position: relative;
+      left: -62px;
+      top: 6px;
+
+      .trangle {
+        position: absolute;
+        top: -12px;
+        left: 53px;
+        border: 6px solid #000;
+        border-top-color: transparent;
+        border-bottom-color: #fff;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+
+      .text-name {
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 17px;
+        // white-space: nowrap;
+
+        .text-rank {
+          color: #ff861d;
+        }
+      }
+
+      .text-address {
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+        line-height: 14px;
+      }
+    }
+
+    .iconCon {
+      .wh(48px, 48px);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .iconText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+    }
+
+    .iconStyle {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  // 删除按钮
+  :global {
+    .deleteLabel {
+      padding: 2px 6px;
+      width: max-content;
+      background-color: white;
+      .deleteText {
+        display: inline-block;
+        margin-right: 4px;
+      }
+    }
+  }
+}

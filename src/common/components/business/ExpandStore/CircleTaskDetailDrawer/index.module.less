@@ -1,0 +1,97 @@
+.container {
+}
+
+.taskDetailHeader {
+  padding: 29px 0 25px;
+  .flex(row, nowrap, space-between, flex-end);
+
+  .headerLeft {
+    .flex(row, nowrap, flex-start, center);
+    .name {
+      color: #1D2129;
+    }
+    .statusBox {
+      height: 20px;
+      line-height: 20px;
+      padding: 0 4px;
+    }
+  }
+  .flexRow {
+    .flex(row, nowrap, flex-start, center);
+  }
+
+  .extraButtons {
+    .flex(row, nowrap, flex-start, center);
+    flex-shrink: 0;
+    :global {
+      .ant-btn.ant-btn-text {
+        color: #999999;
+      }
+    }
+  }
+  .historyBtn {
+    .flex(row, nowrap, flex-start, center);
+    height: 32px;
+    padding: 0 8px;
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+    &:hover {
+      cursor: pointer;
+      span {
+        color: #006aff;
+      }
+      .icon {
+        color: #006aff;
+      }
+    }
+  }
+  .changeBtn {
+    :global {
+      .ant-btn {
+        color: #333333;
+        border-color: #DDDDDD;
+      }
+      .ant-btn:hover {
+        color: #006aff;
+        border-color: #006aff;
+      }
+      .ant-btn:focus {
+        color: #333333;
+        border-color: #DDDDDD;
+      }
+    }
+  }
+  .approvingBtn {
+    :global {
+      .ant-btn.ant-btn-text {
+        background: #f4f5f9;
+      }
+      .ant-btn {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.taskStatusColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .taskStatusIcon {
+    .wh(8px);
+    border-radius: 50%;
+    margin-right: 4px;
+  }
+}
+
+.taskChange {
+  :global {
+    .ant-radio-wrapper {
+      margin-right: 32px;
+      margin-bottom: 8px;
+    }
+  }
+}

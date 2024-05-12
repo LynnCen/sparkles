@@ -1,0 +1,39 @@
+.scrollListCardContainer{
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  .cardTitle{
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    .title{
+      height: 28px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #222222;
+      line-height: 28px;
+      display: flex;
+      .titleTipsIcon{
+        width: 12px;
+        height: 12px;
+        color: #CCCCCD;
+        margin-left: 5px;
+      }
+    }
+  }
+  .listTable{
+    :global{
+      .ant-table .ant-table-container .ant-table-thead > tr {
+        border-radius: 4px;
+        & > th{
+          height: 36px;
+          padding-top: 6.5px;
+          padding-bottom: 6.5px;
+          // border-radius: 4px;
+        }
+      } 
+    }
+  }
+}

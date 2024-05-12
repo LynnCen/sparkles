@@ -1,0 +1,518 @@
+.container {
+  background-color: #fff;
+  position: relative;
+  @media print {
+    @page {
+      /* A4大小 横向 */
+      size: A4 landscape;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  // pdf尺寸
+  .A4 {
+    position: relative;
+    .wh(1124px, 794px); // 注意是横向
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  // 封面公共部分
+  .coverPage {
+    .A4();
+    text-align: center;
+    color: #fff;
+    .coverPageDivider {
+      width: 100%;
+      height: 40px;
+      background-color: #16325D;
+    }
+    .coverPageLogo {
+      width: 699px;
+      height: 72px;
+      margin-top: 45px;
+    }
+  }
+  // 菜单模块公共部分
+  .mainModule {
+    padding: 0 40px;
+    color: #17273A;
+    .A4();
+    .mainModuleWrapper {
+      height: 594px;
+      overflow: hidden;
+    }
+    table, td {
+      border: 1px solid #eee;
+      border-collapse: collapse;
+    }
+    table {
+      width: 100%;
+      font-size: 12px;
+      td {
+        padding: 4px 8px 3px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  // 下面是各个页面
+  /* 封面-首页 */
+  .firstPage {
+    .firstPageTitle {
+      width: 100%;
+      height: 568px;
+      background-color: #FF5E00;
+      letter-spacing: 1px;
+      position: relative;
+      .firstPageTitleWrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .firstPageAddress {
+          font-size: 64px;
+          line-height: 90px;
+          letter-spacing: 2px;
+          font-weight: 600;
+          width: 800px;
+          margin: 0 auto 16px;
+        }
+        .firstPageTip {
+          line-height: 45px;
+          font-size: 32px;
+          margin-bottom: 16px;
+        }
+        .firstPageText {
+          font-size: 24px;
+          line-height: 33px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  /* 封面-最后一页 */
+  .lastPage {
+    .lastPageTitle {
+      width: 100%;
+      height: 568px;
+      background-color: #FF5E00;
+      letter-spacing: 1px;
+      .thanks {
+        text-align: left;
+        padding-top: 96px;
+        font-size: 180px;
+        font-weight: 600;
+        color: #FFFFFF;
+        line-height: 252px;
+        letter-spacing: 7px;
+        padding-left: 139px;
+      }
+      .lastInfo {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        padding-left: 139px;
+        letter-spacing: 1px;
+        margin-bottom: 32px;
+        .lastInfoLabel {
+          margin-right: 16px;
+          width: 132px;
+          height: 48px;
+          line-height: 48px;
+          border-radius: 10px;
+          border: 2px solid #FFFFFF;
+        }
+      }
+    }
+  }
+  /* 菜单一、项目综述 */
+  .mainModule1 {
+    .mainModuleTotal {
+      width: 100%;
+      height: 95px;
+      border: 1px solid #F4F5F7;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 40px 0;
+      .moduleTotalItem {
+        .totalItemTop {
+          font-weight: 500;
+          color: #FF5E00;
+          line-height: 33px;
+          font-size: 24px;
+          margin-bottom: 8px;
+        }
+        .totalItemBottom {
+          color: #959BAB;
+          line-height: 22px;
+          font-size: 16px;
+        }
+      }
+    }
+    .mainModule1Con {
+      padding-top: 24px;
+      display: flex;
+      .conLeft {
+        flex: 1;
+        .module1Item {
+          height: 51px;
+        }
+      }
+      .conRight {
+        width: 407px;
+        height: 407px;
+        margin-left: 17px;
+      }
+    }
+  }
+  /* 二、加盟商信息 */
+  .mainModule2 {
+    table {
+      tbody {
+        tr {
+          td {
+            &:first-child {
+              width: 183px;
+            }
+            &.tdBase {
+              width: 130px;
+            }
+            &:nth-child(odd) {
+              background-color: #F6F7F9;
+            }
+          }
+        }
+      }
+    }
+    .module2Bottom {
+      display: flex;
+      margin-top: 16px;
+      .conLeft {
+        width: 434px;
+        img {
+          width: 220px;
+          height: 220px;
+        }
+      }
+      .conRight {
+        flex: 1;
+        .conRightFlex {
+          display: flex;
+          .conFlexLeft {
+            width: 107px;
+          }
+          .conFlexRight {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+  /* 三、选址23不要 */
+  .mainModule3 {
+    .mainModuleWrapper {
+      display: flex;
+      .conLeft {
+        flex: 1;
+        padding-right: 16px;
+        table {
+          tr {
+            td {
+              line-height: 13px;
+              &.firstTd {
+                background-color: #F6F7F9;
+                width: 79px;
+                font-size: 14px;
+                line-height: 17px;
+              }
+              &.secondTd {
+                width: 405px;
+              }
+              &.yesTd {
+                color: #F23030;
+              }
+              &.noTd {
+                color: #333;
+              }
+            }
+            &.firstTd {
+              background-color: #F6F7F9;
+              td {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .conRight {
+        width: 471px;
+        img {
+          width: 220px;
+          height: 220px;
+          margin-right: 16px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  // 四、数据审核表
+  .mainModule4 {
+    .module4Flex {
+      display: flex;
+      justify-content: space-between;
+      table {
+        tr {
+          td {
+            line-height: 12px;
+          }
+          &:first-child {
+            td {
+              background-color: #F6F7F9;
+            }
+          }
+        }
+      }
+      .conLeft {
+        width: 514px;
+      }
+      .conRight {
+        width: 514px;
+      }
+    }
+  }
+  // 五、营业额预估, 六、项目投资财务测算表
+  .mainModule5, .mainModule6 {
+    .mainModuleTotal {
+      width: 100%;
+      height: 125px;
+      border: 1px solid #F4F5F7;
+      padding: 16px 40px 0;
+      .moduleTotal {
+        display: flex;
+        .moduleTotalItem {
+          margin-right: 94px;
+          .totalItemTop {
+            font-weight: 500;
+            color: #FF5E00;
+            line-height: 33px;
+            font-size: 24px;
+            margin-bottom: 8px;
+          }
+          .totalItemBottom {
+            color: #959BAB;
+            line-height: 22px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    table {
+      tr {
+        td {
+          line-height: 12px;
+        }
+        &:first-child {
+          td {
+            background-color: #F6F7F9;
+          }
+        }
+      }
+    }
+  }
+  .mainModule6 {
+    .mainModuleTotal {
+      height: 87px;
+      .moduleTotal {
+        display: flex;
+        justify-content: space-between;
+        .moduleTotalItem {
+          margin-right: 0;
+          display: flex;
+          align-items: center;
+          .totalItemTop {
+            margin-bottom: 0;
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+    .module6Flex {
+      display: flex;
+      justify-content: space-between;
+      table {
+        width: 538px;
+        tr {
+          td {
+            line-height: 14px;
+            &:first-child {
+              width: 183px;
+            }
+          }
+          &:first-child {
+            text-align: center;
+          }
+        }
+        &:last-child {
+          width: 496px;
+        }
+      }
+    }
+  }
+  /* 七、基础信息 */
+  .mainModule7 {
+    table {
+      tbody {
+        tr {
+          td {
+            &:first-child {
+              width: 236px;
+            }
+            &.tdBase {
+              width: 157px;
+            }
+            &.tdBase2 {
+              width: 190px;
+            }
+            &.tdBase3 {
+              width: 95px;
+            }
+            &.tdBase4 {
+              width: 200px;
+            }
+            &.tdBase5 {
+              width: 101px;
+            }
+            &.tdBase6 {
+              width: 180px;
+            }
+            &.tdBase7 {
+              width: 135px;
+            }
+            &.tdBase8 {
+              width: 115px;
+            }
+            &.tdBase9 {
+              width: 175px;
+            }
+            &:nth-child(odd) {
+              background-color: #F6F7F9;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* 八、选址须知/工程条件确认 */
+  .mainModule8, .mainModule12{
+    .module8Flex {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      > div {
+        width: 480px;
+        height: 480px;
+        background-color: #F8F8F8;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; /* 图片根据比例缩放，保持全部可见 */
+          object-position: center; /* 图片居中对齐 */
+        }
+      }
+    }
+    .module8Remark {
+      color: #999999;
+      line-height: 17px;
+      margin-top: 16px;
+    }
+  }
+  /* 九、项目所在商圈陈述 */
+  .mainModule9Static {
+    .module9StaticFlex {
+      display: flex;
+      .conLeft {
+        flex: 1;
+        .conLeftFlex {
+          display: flex;
+          align-items: center;
+          color: #333333;
+          margin-bottom: 24px;
+          .conLeftNum {
+            font-size: 40px;
+            line-height: 56px;
+            width: 48px;
+          }
+          .conLeftMain {
+            flex: 1;
+            .conLeftName {
+              line-height: 22px;
+              font-size: 16px;
+            }
+            .conLeftTotal {
+              font-size: 12px;
+              color: #999999;
+              line-height: 17px;
+              margin-top: 6px;
+            }
+          }
+          .conLeftSize {
+            font-size: 12px;
+          }
+        }
+      }
+      .conRight {
+        width: 480px;
+        height: 480px;
+        margin-left: 184px;
+      }
+    }
+  }
+  .mainModule9 {
+    .module9Flex {
+      display: flex;
+      justify-content: space-between;
+      .moduleCon {
+        width: 480px;
+        .moduleImg {
+          width: 100%;
+          height: 480px;
+          background-color: #F8F8F8;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* 图片根据比例缩放，保持全部可见 */
+            object-position: center; /* 图片居中对齐 */
+          }
+        }
+      }
+    }
+    .remark {
+      font-size: 12px;
+      color: #999999;
+      line-height: 17px;
+    }
+  }
+  /* 十、项目店地址视频 */
+  .mainModule10 {
+    .module10Item {
+      margin-bottom: 10px;
+      .module10Link {
+        color: #006AFF;
+      }
+    }
+  }
+  /* 十一、其他附件 */
+  .mainModule11 {
+    .module11 {
+      display: flex;
+      justify-content: space-between;
+      .module11Item {
+        width: 514px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

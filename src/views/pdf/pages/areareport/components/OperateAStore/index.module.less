@@ -1,0 +1,232 @@
+.rateContent {
+  margin-top: 12px;
+
+  .rateHeader {
+    margin-left: 84px;
+    margin-right: 48px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+
+    .headerItem {
+      flex: 1;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #222222;
+    }
+  }
+
+  .rateItemWrap {
+    margin-top: 2px;
+
+    .rateItemList {
+      margin-right: 48px;
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+
+      .itemLeft {
+        width: 84px;
+        height: 24px;
+        line-height: 24px;
+        text-align: right;
+        padding-right: 12px;
+        box-sizing: border-box;
+        font-size: 12px;
+        color: #222222;
+      }
+
+      .itemRight {
+        flex: auto;
+        width: 0;
+        display: flex;
+        align-items: center;
+        height: 24px;
+
+        .rateItem {
+          flex: 1;
+          height: 24px;
+          line-height: 24px;
+          text-align: center;
+          color: #222222;
+          box-sizing: border-box;
+          font-size: 12px;
+
+          &:nth-child(1) {
+            background: #006AFF;
+            border-radius: 50px 0px 0px 50px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+.chartWrapper {
+  height: 316px;
+  border: solid 1px #eee;
+  border-radius: 8px;
+  position: relative;
+
+  &.historyChartWrap {
+    height: 351px;
+  }
+
+  .chartTitleRow {
+    .flex(row, nowrap, space-between, center);
+
+    :global {
+      .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-tab {
+        padding: 4px 12px !important;
+        margin: 0 !important;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .chartTop {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .descOver {
+      z-index: 1;
+      .text(#666, 14px);
+      position: absolute;
+      top: 45px;
+      left: 4px;
+      margin: 8px 11px 12px 11px;
+    }
+
+    .chartTitle {
+      margin-top: 16px;
+      margin-left: 16px;
+      font-size: 14px;
+      color: #222;
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+    }
+
+    .chartTab {
+      position: relative;
+      z-index: 1;
+      margin-left: 16px;
+      margin-right: 16px;
+      margin-top: 12px;
+    }
+  }
+
+  .chartContent {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .ageBarChart {
+    margin: 0 8px;
+  }
+
+  .rateContent {
+    margin-top: 12px;
+
+    .rateHeader {
+      margin-left: 84px;
+      margin-right: 48px;
+      display: flex;
+      align-items: center;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #eee;
+      box-sizing: border-box;
+
+      .headerItem {
+        flex: 1;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+
+    .rateItemWrap {
+      margin-top: 2px;
+
+      .rateItemList {
+        margin-right: 48px;
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+
+        .itemLeft {
+          width: 84px;
+          height: 24px;
+          line-height: 24px;
+          text-align: right;
+          padding-right: 12px;
+          box-sizing: border-box;
+          font-size: 12px;
+          color: #222222;
+        }
+
+        .itemRight {
+          flex: auto;
+          width: 0;
+          display: flex;
+          align-items: center;
+          height: 24px;
+
+          .rateItem {
+            flex: 1;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: #222222;
+            box-sizing: border-box;
+            font-size: 12px;
+
+            &:nth-child(1) {
+              background: #006AFF;
+              border-radius: 50px 0px 0px 50px;
+              color: #ffffff;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  :global {
+    .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-tab {
+      padding: 9px 0px !important;
+      margin: 0 12px;
+      font-size: 14px;
+
+      &:first-of-type {
+        margin: 0 12px 0 0;
+      }
+    }
+  }
+}
+
+.desc {
+  .text(#666, 14px);
+  margin-left: 11px;
+  // margin: 8px 0 12px 11px;
+}
+
+.colText {
+  overflow-wrap: break-word;
+  max-width: 200px !important;
+  word-wrap: break-word !important;
+  word-break: break-all !important;
+}

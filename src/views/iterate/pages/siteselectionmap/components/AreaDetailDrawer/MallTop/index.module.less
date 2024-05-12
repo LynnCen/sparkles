@@ -1,0 +1,66 @@
+.mallTopContainer {
+  .flex();
+  margin-bottom: 16px;
+
+  .imgGroupCon {
+    .wh(271px, 217px);
+    min-width: 271px;
+    margin-right: 12px;
+    overflow: hidden; // 兼容safari
+
+    .imgItemCon {
+      .wh(271px, 217px);
+    }
+  }
+
+  .emptyCon {
+    .imgGroupCon();
+  }
+
+  .contentCon {
+    flex: 1;
+    // margin-left: 12px;
+
+    .gatherCon {
+      .flex(row, nowrap, flex-end, center);
+      position: relative;
+
+      .targetOffset {
+        position: absolute;
+        right: 0;
+        top: 42px;
+        .flex(row, nowrap, flex-end, center);
+      }
+      .iconCon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+      }
+      .icon {
+        font-size: 14px;
+      }
+    }
+
+    .showItemValCon {
+      .flex(row, nowrap, flex-start, center);
+
+      .showItemExtra {
+        margin-left: 4px;
+        padding: 4px 6px;
+        background: rgba(122, 154, 255, 0.08);
+        font-size: 12px;
+        color: #3c5984;
+      }
+    }
+
+    .desCon {
+      .flex();
+
+      .labelCon {
+        min-width: 70px;
+      }
+    }
+  }
+}

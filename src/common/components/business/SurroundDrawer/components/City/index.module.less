@@ -1,0 +1,140 @@
+.competitiveAnalysis {
+  padding: 0 0 20px 0;
+  width: 100%;
+
+  // .title{
+  //   display: flex;
+  //   align-items: center;
+  //   margin-bottom: 20px;
+  //   .moreDescriptionIcon{
+  //     color: #CCCCCD;
+  //     margin-left: 4px
+  //   }
+  // }
+  .info {
+    width: 100%;
+    margin-bottom: 20px;
+    .flex(row, nowrap, flex-start, flex-start);
+
+    .leftBox {
+      width: 100%;
+      min-width: 460px;
+      height: 400px;
+      background: #F6F7F9;
+      border-radius: 8px;
+      margin-right: 20px;
+      overflow: hidden;
+
+      .mapCon {
+        .wh(100%, 100%);
+        position: relative;
+
+        :global {
+          .textMarkerWrapper {
+            position: relative;
+
+            // border: 1px solid red;
+            .textMarkerCon {
+              width: max-content;
+              max-width: 350px;
+              background-color: #fff;
+              font-size: 14px;
+              color: #132144;
+              font-weight: bold;
+              padding: 9px 12px;
+              border-radius: 8px;
+              // box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.06);
+              .oneLine();
+            }
+
+            &::before {
+              content: '';
+              position: absolute;
+              border-top: 8px solid transparent;
+              border-left: 8px solid transparent;
+              border-right: 8px solid transparent;
+              border-bottom: 8px solid #fff;
+              top: -14px;
+              left: 50%;
+              margin-left: -8px;
+            }
+          }
+        }
+
+        .peopleHeadSwitch {
+          position: absolute;
+          z-index: 98;
+          right: 12px;
+          top: 12px;
+          padding: 6px;
+          box-sizing: border-box;
+          background-color: #FFFFFF;
+          color: #333;
+          font-size: 14px;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    .rightBox {
+      .lables {
+        .tip {
+          .text(#132144);
+          font-weight: 600;
+        }
+
+        .item {
+          margin-top: 0;
+        }
+      }
+
+      width: 450px;
+      height: 100%;
+
+      .scoreTop {
+        display: flex;
+        align-items: center;
+
+        .score {
+          height: 33px;
+          font-size: 24px;
+          font-weight: 500;
+          color: #5084F3;
+          line-height: 33px;
+          margin-right: 4px;
+        }
+
+        .scoreTitle {
+          height: 18px;
+          font-size: 12px;
+          font-weight: 500;
+          color: #717A8F;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+
+  .box {
+    background: #FFFFFF;
+    border-radius: 8px;
+    opacity: 0.92;
+    border: 1px solid #EEEEEE;
+
+    :global {
+      .last-module {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .chartbox {
+    height: 270px;
+  }
+
+  .charts {
+    .wh(100%, 100%);
+  }
+}

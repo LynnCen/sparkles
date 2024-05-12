@@ -1,0 +1,117 @@
+.chancePointDrawer {
+  .detailTop {
+    background: #fff;
+    padding-top: 16px;
+
+    :global {
+      .v2Title {
+        max-width: 500px;
+      }
+    }
+    // position: sticky;
+    // top: 0px;
+    // z-index: 10;
+
+    // .approvalTab {
+    //   margin-top: 30px;
+    // }
+  }
+
+  :global {
+    .ant-drawer-body {
+      padding: 0 40px !important;
+    }
+  }
+}
+
+// .detailContainer {
+//   overflow-y: auto;
+//   overflow-x: hidden;
+//   max-height: calc(100vh - 65px);
+//   scroll-padding-top: 65px; //兼容包含顶部固定定位头部的时候，anchor定位被遮挡的情况
+// }
+
+.item {
+  margin-top: -12px;
+}
+
+// 踩点组件
+.stepOnInfo {
+  .reportLink {
+    .text(#2441b3, 14, 20);
+  }
+}
+
+// 亚瑟士-评估预测
+.fieldItemModule {
+  border: 1px solid #f4f5f7;
+  border-radius: 2px;
+  padding: 24px 48px;
+}
+
+// 评分雷达
+.areaScore {
+  .areaScoreConatin {
+    width: 100%;
+    // padding-right: 180px;
+    .flex(row, nowrap, flex-start, flex-start);
+    // border: 1px solid red;
+
+    .rader {
+      width: 45%;
+      padding: 16px 16px 18px;
+      border: 1px solid #f4f5f7;
+      min-height: 257px;
+
+      .totalScore {
+        display: flex;
+        align-self: center;
+        font-weight: 500;
+
+        .tips {
+          .text(#959bab, 14, 45);
+        }
+
+        .score {
+          .text(#FF861D, 32, 45);
+          margin-left: 12px;
+        }
+
+        .unit {
+          .text(#FF861D, 14, 55, end);
+        }
+      }
+    }
+
+    .table {
+      margin-left: 12px;
+      width: 55%;
+    }
+  }
+}
+
+//核心信息
+.coreInfo {
+  // width: 66%;
+  margin-top: -12px;
+  margin-top: -18px;
+}
+
+// 基本信息
+.tabInfo {
+  :global {
+    .ant-tabs > .ant-tabs-nav,
+    .ant-tabs > div > .ant-tabs-nav {
+      position: static !important;
+      top: none;
+      z-index: 0;
+      margin-bottom: 0;
+      background-color: white;
+    }
+
+    .ant-tabs-content {
+      padding-right: 223px;
+      // padding-bottom: 16px;
+    }
+  }
+}

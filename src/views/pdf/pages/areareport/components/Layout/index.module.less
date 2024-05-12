@@ -1,0 +1,140 @@
+.pageLayout {
+  width: 100%;
+  min-height: 1146px;
+  padding: 32px 0 ;
+  background: #FFFFFF;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+
+  .pageLayoutInner {
+    width: 100%;
+  }
+
+  .container {
+    padding: 20px 32px 0 32px;
+
+    .desc {
+      .text(#222, 14px);
+      margin: 8px 0 0 11px;
+      font-weight: bold;
+    }
+  }
+}
+
+.headerWrapper {
+  width: 563px;
+  height: 32px;
+  margin-bottom: 24px;
+  // margin: 32px 32px 24px 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  .leftText {
+    display: flex;
+
+    .moduleCount {
+      width: 40px;
+      height: 100%;
+      line-height: 32px;
+      font-size: 20px;
+      font-weight: 600;
+      padding-right: 4px;
+      color: #fff;
+      background: #006AFF;
+      text-align: right;
+    }
+
+    .arrow {
+      width: 0;
+      height: 0;
+      border-top: 16px solid transparent;
+      border-bottom: 16px solid transparent;
+      border-left: 10px solid #006AFF;
+    }
+
+    .headerName {
+      font-weight: 600;
+      font-size: 24px;
+      color: #222222;
+      margin-left: 4px;
+    }
+  }
+
+  .rightPageCount {
+    font-weight: 400;
+    font-size: 14px;
+    color: #999999;
+  }
+
+
+}
+
+.pageHeader {
+  height: 49px;
+ margin: 0 32px;
+  position: relative;
+  border-bottom: 1px solid #EEEEEE;;
+
+  .pageTitle {
+    font-weight: 600;
+    font-size: 24px;
+    color: #222222;
+  }
+
+  .line {
+    bottom: -2px;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #006AFF;
+  }
+
+}
+
+.pageFooterWrapper {
+  margin-top: 36px;
+  padding-left: 32px;
+
+  .content {
+    padding-top: 18px;
+    width: 531px;
+    font-size: 24px;
+    color: #DDDDDD;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    border-top: 1px solid #EEEEEE;
+    align-items: center;
+
+    .flag {
+      margin: 0 8px;
+    }
+  }
+
+  .logoIcon {
+    max-height: 48px;
+    .wh(132px, 23px);
+  }
+}
+
+.cardLayout {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #EEEEEE;
+
+  .cardTitle {
+    font-size: 14px;
+    color: #222222;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.pageLayoutWrapper {
+  width: 595px;
+  // min-height: 1146px;
+}

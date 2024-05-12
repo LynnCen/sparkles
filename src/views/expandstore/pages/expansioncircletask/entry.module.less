@@ -1,0 +1,50 @@
+.font {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.expansionTaskContainer {
+	padding: 5px 16px;
+	background-color: #fff;
+
+	.name {
+		.font();
+		color: #2441b3;
+		cursor: pointer;
+	}
+
+	.taskStatus {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.taskStatusIcon {
+			.wh(8px);
+			border-radius: 50%;
+			margin-right: 4px;
+		}
+	}
+  .expiredDate {
+    color: red;
+  }
+ 
+ 
+}
+
+.topWrapper{
+  :global{
+    .ant-tabs-nav{
+      min-height: 56px;
+    }
+    // .v2-container-top{
+    //   .titleOperate{
+    //     height: 56px;
+    //     margin-bottom: 0;
+    //   }
+    // }
+    
+  }
+}
+
+

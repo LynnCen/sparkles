@@ -1,0 +1,389 @@
+.container {
+  .wh(100%, 100%);
+  min-width: 1220px;
+
+  // padding: 24px 16px;
+  .fixedWidth {
+    // .wh(1145px, auto);
+    margin: 0 auto;
+  }
+
+  .overview {
+    // .wh(1145px, auto);
+    padding-bottom: 16px;
+
+    .topConSpace {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .wh(100%, 62px);
+      position: relative;
+
+      .topCon {
+        padding-left: 20px;
+        .wh(100%, 62px);
+        border-bottom: 1px solid #eaeff8;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        z-index: 9;
+        position: absolute;
+        top: 0;
+        border-radius: 4px;
+
+        .titleSpan {
+          font-size: 20px;
+          color: #132144;
+          font-weight: bold;
+        }
+
+        .right {
+          display: flex;
+          flex-grow: 1;
+          justify-content: flex-end;
+
+          .addBtnSpan {
+            margin-right: 16px;
+          }
+
+          .iconArea {
+            display: flex;
+            flex-direction: column;
+            margin-right: 2px;
+
+            .iconText {
+              font-size: 10px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .rankCon {
+      // .wh(100%, 440px);
+      // 400
+      margin-top: 16px;
+      background-color: white;
+      // border: 1px solid #e5e9f2;
+
+      .rankTitle {
+        position: relative;
+        // .wh(100%, 40px);
+        padding-top: 13px;
+        padding-left: 28px;
+        // background: #f6f7f9;
+        border-radius: 2px 2px 0px 0px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #132244;
+        // line-height: 40px;
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 4px;
+          height: 16px;
+          background: @primary-blue;
+          left: 16px;
+          top: 70%;
+
+          transform: translateY(-50%);
+        }
+      }
+
+      .rankInfo {
+        padding: 16px 16px;
+        display: flex;
+        justify-content: center;
+
+        .leftCon {
+          width: 576px;
+          min-width: 576px;
+
+          // flex:1;
+          .scoreProgressCon {
+            width: 425px;
+          }
+
+          border: 1px solid #f4f5f7;
+          padding: 10px 16px 0;
+          padding-bottom: 12px;
+
+          .ScoreProgressBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .radarBox {
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .totalPointsCon {
+            .flex(row, nowrap, flex-start, center);
+          }
+        }
+
+        .rightCon {
+          flex: 1;
+          padding-left: 16px;
+
+          :global {
+
+            .ant-table-thead>tr>th,
+            .ant-table-tbody>tr>td,
+            .ant-table tfoot>tr>th,
+            .ant-table tfoot>tr>td {
+              padding: 14px 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tabConSpance {
+    .wh(100%, 50px);
+    padding-left: 16px;
+    // top: 16px;
+    position: relative;
+    background-color: white;
+
+    .tabCon {
+      position: absolute;
+      top: 16px;
+      background-color: #fff;
+      z-index: 9;
+
+      :global {
+        label {
+          .wh(null, 40px);
+
+          span {
+            line-height: 40px;
+          }
+        }
+
+        .ant-radio-button-wrapper {
+          padding: 0 26px;
+          background: #f7f8fa;
+          border: 1px solid #dcdee0;
+        }
+
+        .ant-radio-button-wrapper-checked {
+          background: #006aff;
+          border: 1px solid #006aff;
+        }
+      }
+    }
+  }
+
+  .reportCon {
+    // height: 630px;
+    background-color: white;
+    // .wh(1145px, auto);
+    // padding: 24px 16px;
+    padding: 24px 16px 100px 16px;
+    // border-radius: 2px 2px 0px 0px;
+    // border: 1px solid #f0f0f0;
+    position: relative;
+
+    .radius {}
+
+    .report {
+      .wh(100%, auto);
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      .mapBox {
+        position: relative;
+        .wh(40%, 522px);
+
+        .loading {
+          .wh(100%, 100%);
+
+          &>span {
+            .wh(100%, 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .radiusSelect {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 99;
+        }
+
+        .radius {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          z-index: 99;
+          background-color: rgba(255, 255, 255, 1);
+          line-height: 19px;
+          font-size: 14px;
+          color: rgba(19, 33, 68, 1);
+          padding: 4px 11px 3px 12px;
+        }
+
+        .iconList {
+          // .wh(100%, 20px);
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          color: #959bab;
+          padding-top: 15px;
+          padding-bottom: 40px;
+
+          img {
+            .wh(18px, 18px);
+          }
+
+          .icon {
+            margin-left: 5px;
+            margin-top: 7px;
+          }
+        }
+      }
+
+      .rightTableCon {
+        padding-left: 16px;
+        .wh(60%, 522px);
+
+        .tuli {
+          display: inline-block;
+          .wh(18px, 18px);
+        }
+
+        .poiTitle {
+          .wh(100%, 80px);
+          border-radius: 2px;
+
+          .poiNum {
+            line-height: 44px;
+
+            span:first-child {
+              font-size: 14px;
+              // font-weight: 400;
+              color: #768098;
+              line-height: 20px;
+              margin-right: 12px;
+            }
+
+            span:nth-child(2) {
+              font-size: 24px;
+              color: #132144;
+              line-height: 50px;
+              margin-right: 4px;
+              font-weight: bold;
+            }
+
+            span:last-child {
+              font-size: 12px;
+              // font-weight: 400;
+              color: #132144;
+              line-height: 22px;
+            }
+          }
+
+          p:last-child {
+            font-size: 12px;
+            // font-weight: 400;
+            color: #656e85;
+            line-height: 20px;
+          }
+        }
+
+        .itemTable {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    .lineBox {
+      .wh(100%, 30px);
+
+      &>div {
+        .wh(260px, 100%);
+        float: left;
+        color: #132144;
+
+        label {
+          display: inline-block;
+          min-width: 80px;
+          color: #717a8f;
+        }
+      }
+    }
+  }
+
+  .marginBottom {
+    margin-bottom: 432px;
+  }
+
+  :global {
+    .amap-maps {
+      .amap-marker-label {
+        display: block;
+        .wh(16px, 10px);
+        border: none;
+        font-size: 12px;
+        text-align: center;
+        background: none;
+        color: #fff;
+      }
+    }
+
+    .icon-label {
+      // .wh(auto, auto);
+      .wh(132px, auto);
+      padding: 5px 12px 5px 8px;
+      background: #ffffff;
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e4e7ed;
+      position: relative;
+      left: -62px;
+      top: 6px;
+
+      .trangle {
+        position: absolute;
+        top: -12px;
+        left: 53px;
+        border: 6px solid #000;
+        border-top-color: transparent;
+        border-bottom-color: #fff;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+
+      .text-name {
+        font-size: 14px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 17px;
+        // white-space: nowrap;
+      }
+
+      .text-address {
+        font-size: 14px;
+        font-weight: 400;
+        color: #666666;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+.columnStyle {
+  display: inline-block;
+  min-width: 100px;
+}

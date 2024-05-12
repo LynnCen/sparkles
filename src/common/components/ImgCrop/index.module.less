@@ -1,0 +1,98 @@
+.easyCrop {
+  display: flex;
+
+  .cropper {
+    flex: 1;
+  }
+
+  .viewer {
+    margin-left: 34px;
+
+    .output {
+      position: relative;
+      width: 300px;
+      overflow: hidden;
+      background-color: #F1F1F5;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: top left;
+      }
+    }
+
+    .outputLabel {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 14px;
+      color: #656E85;
+      line-height: 16px;
+    }
+  }
+}
+
+.logoCrop {
+  .templateUpload {
+    .wh(298px);
+    background: #F1F1F5;
+    border-radius: 8px;
+    padding-top: 116px;
+  }
+
+  :global {
+    .ant-upload.ant-upload-select-picture-card {
+      .wh(auto);
+      border: none;
+      margin: 0;
+    }
+    .ant-upload-list-picture-card-container {
+      .wh(298px);
+    }
+  }
+
+  .okBtnDisabled:disabled {
+    background-color: rgba(0, 106, 255, 0.40);
+    color: #fff;
+
+    &:hover {
+      background-color: rgba(0, 106, 255, 0.40);
+      color: #fff;
+    }
+  }
+
+  .footerUpload {
+    width: auto;
+    float: left;
+
+    :global {
+      .ant-btn {
+        background-color: #fff;
+      }
+
+      .ant-upload-select-picture-card {
+        .wh(auto);
+        border: none;
+
+        .ant-btn-text {
+          &:hover {
+            color: #2989ff;
+            border-color: transparent;
+            background: transparent;
+          }
+
+          &:disabled:hover {
+            color: rgba(0, 0, 0, 0.25);
+          }
+        }
+      }
+    }
+  }
+}
+
+.label {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #656E85;
+  line-height: 20px;
+}

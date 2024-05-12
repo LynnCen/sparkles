@@ -1,0 +1,101 @@
+// FormDrawer.tsx
+.formDrawer {
+  :global {
+    .ant-drawer-wrapper-body{
+      .ant-drawer-body {
+        padding-right: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  // mainCon.tsx
+  .mainCon {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 40px;
+  }
+
+  .footerCon {
+    width: 100%;
+    .flex(row, nowrap, flex-end);
+    padding: 16px 40px;
+    background-color: #fff;
+  }
+
+  :global {
+    .ant-tabs {
+      .ant-tabs-nav {
+        .ant-tabs-tab-btn:active,
+        .ant-tabs-tab-btn:focus {
+          color: #222
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// importChancePointHistoryModal.tsx
+
+.exportModal {
+  :global {
+    .ant-form {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+
+      .hintText {
+        color: #bbc0c7;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.importExcel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .left {
+    width: 336px;
+    padding: 0px 0px 0px 0px;
+
+    .template {
+      background: #f6f7f9;
+      padding: 8px;
+      margin-bottom: 28px;
+    }
+
+    .iconSize {
+      .wh(16px, 16px);
+    }
+
+    :global {
+      .ant-form .ant-form-item .ant-upload-list .ant-upload-list-text-container .v2UploadFileStatsItem {
+        width: 280px;
+      }
+    }
+  }
+
+  .right {
+    padding-top: 5px;
+    flex: 1;
+
+    .records {
+      border: 1px solid rgb(221, 221, 221);
+      border-radius: 4px;
+      padding: 10px 16px 10px 16px;
+      margin-top: 12px;
+      height: 204px;
+      overflow-y: auto;
+
+      .item {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

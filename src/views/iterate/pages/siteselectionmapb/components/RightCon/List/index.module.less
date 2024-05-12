@@ -1,0 +1,97 @@
+.wrapperCon {
+  // .flex(row, nowrap, flex-start, center);
+  // margin-top: 12px;
+  .itemCon {
+    box-sizing: border-box;
+    padding: 0 12px;
+    .titRow {
+      cursor: pointer;
+      .flex(row, nowrap, flex-start, center);
+      .leftSection {
+        .flex(row, nowrap, flex-start, center);
+        width: 220px;
+        @media (min-width: 1440px) {
+          // width: 15.28vw; //220/14440≈0.15277
+          width: calc(19.5vw - 24px - 32px); //280/1440 vw - 其余间距
+        }
+        @media screen and(min-width:1920px) {
+          width: 319px; //-24-32
+        }
+        &.short {
+          width: 160px;
+          @media (min-width: 1440px) {
+            width: calc(19.5vw - 24px - 32px - 65px); //280/1440 vw - 其余间距
+          }
+          @media screen and(min-width:1920px) {
+            width: 254px; //-24-32-65
+          }
+        }
+        .topImg {
+          .wh(20px, 20px);
+          img {
+            vertical-align: baseline;
+          }
+        }
+      }
+      .newCreate {
+        display: inline-block;
+        .wh(31px, 21px);
+        line-height: 21px;
+        font-size: 12px;
+        text-align: center;
+        background: rgba(255, 134, 29, 0.07);
+        border-radius: 2px;
+        color: #ff861d;
+      }
+      .rightSection {
+        flex: 1;
+        text-align: right;
+        .arrowIconUp {
+          transform: rotate(180deg);
+          transition: transform 0.2s linear;
+        }
+        .arrowIcon {
+          transform: rotate(0);
+          transition: transform 0.2s linear;
+        }
+      }
+    }
+    .labelsCon {
+      .flex(row, wrap);
+      height: 24px;
+      overflow-y: hidden;
+      margin-top: 5px;
+      .imgCon {
+        .wh(33px, 21px);
+        margin-right: 10px;
+        margin-bottom: 8px;
+      }
+    }
+    .overviewCon {
+      margin-top: 8px;
+      .commonWrapper {
+        background: #fafafa;
+        border-radius: 4px;
+        padding: 12px;
+      }
+      .scoreWrapper {
+        .commonWrapper();
+      }
+      .flexSection {
+        .flex(row, nowrap, flex-start, center);
+        :global {
+          .ant-progress-inner,
+          .ant-progress-bg {
+            height: 6px !important;
+          }
+        }
+      }
+      .text {
+        min-height: 40px;
+      }
+      .secondaryWrapper {
+        .commonWrapper();
+      }
+    }
+  }
+}

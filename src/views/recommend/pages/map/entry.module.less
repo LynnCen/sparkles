@@ -1,0 +1,51 @@
+.container {
+  .wh(100%, calc(100vh - 80px));
+  position: relative;
+
+  .positionedCon {
+    .mixinsPosition(absolute, 10px, null, null, 16px);
+    width: 750px;
+    z-index: 9;
+  }
+
+  .supernatantCon {
+    .mixinsPosition(absolute, 60px, null, null, 16px);
+    .wh(373px, 74vh);
+    z-index: 190;
+    background-color: #fff;
+    padding: 12px;
+    overflow-y: scroll;
+    .bottomBtn{
+      .wh(100%, 44px);
+
+      position: sticky;
+      bottom: -12px;
+      padding-bottom: 12px;
+      background-color: #fff;
+    }
+  }
+
+  .resultCon {
+    .supernatantCon();
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    .wh(400px, auto);
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+
+  :global {
+    .amap-maps {
+      .amap-marker-label {
+        border: none;
+        font-size: 12px;
+        padding: 4px 6px;
+        text-align: center;
+        background-color: rgba( 0, 119, 255, 0.8);
+        color: #fff;
+      }
+    }
+  }
+}

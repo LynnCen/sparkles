@@ -1,0 +1,118 @@
+.enterDrawerWrap {
+  // 当我表单类drawer需要底部确认按钮时，需要以下样式
+  // :global {
+  //   .ant-drawer-body {
+  //     padding-bottom: 88px !important;
+  //   }
+  // }
+  .drawerTop {
+    margin-top: 12px;
+  }
+  .showTab {
+    display: block;
+  }
+  .hindTab {
+    display: none;
+  }
+  .tabs {
+    position: relative;
+    // 绘制面板（地图）
+    .drawingBoard {
+      position: absolute;
+      top: 110px;
+      .back {
+        position: absolute;
+        top: 42px; //30+12
+        right: 16px;
+        width: 72px;
+        height: 27px;
+        background: #ffffff;
+        box-shadow: 0px 0px 8px 0px rgba(153, 153, 153, 0.25);
+        border-radius: 8px;
+        z-index: 20;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 27px;
+      }
+      .wh(100%,280px);
+      :global {
+        .drawHint {
+          padding: 5px 7px 4px 5px;
+          background-color: rgba(0, 0, 0, 0.6);
+          color: white;
+          width: max-content;
+          border-radius: 4px;
+          box-shadow: 0px 0px 5px 0px rgba(153, 153, 153, 0.22);
+        }
+      }
+      .required {
+        margin-bottom: 8px;
+        &::before {
+          display: inline-block;
+          margin-right: 4px;
+          color: #ff4d4f;
+          font-size: 14px;
+          font-family: SimSun, sans-serif;
+          line-height: 1;
+          content: '*';
+        }
+      }
+    }
+    .lineName {
+      background-color: white;
+      width: max-content;
+      padding: 0 4px;
+      border-radius: 2px;
+    }
+  }
+  .tabItemAddBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .tabFormWrap {
+    margin-top: 24px;
+  }
+  .compareTableFormWrap {
+    border-top: 1px solid #eeeeee;
+    margin-top: 8px;
+    .formInputStyle {
+      margin-bottom: 0 !important;
+    }
+    .deleteBtn {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
+  .shopInfoTableFormWrap {
+    border-top: 1px solid #eeeeee;
+    margin-top: 24px;
+    .formInputStyle {
+      margin-bottom: 0 !important;
+    }
+    .deleteBtn {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
+
+  .drawerFooter {
+    padding: 0 40px;
+    box-sizing: border-box;
+    height: 64px;
+    box-shadow: 0px -2px 4px 1px #f6f7f9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
+  }
+}

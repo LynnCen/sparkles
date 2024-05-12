@@ -1,0 +1,500 @@
+.mapBox {
+  position: relative;
+  .wh(100%,100%);
+  .backBtn {
+    z-index: 999;
+    .wh(108px,32px);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 16px;
+    left: 8px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    cursor: pointer;
+  }
+  .form {
+    position: absolute;
+    padding-left: 8px;
+    padding-top: 16px;
+    left: 0px;
+    z-index: 999;
+    :global {
+      .ant-select-selector {
+        min-width: 100px;
+      }
+      .ant-form-item {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  // .mapCon {
+  //   .wh(100%,100%);
+  //   :global {
+  //     // 地址名称样式
+  //     ._label {
+  //       width: max-content;
+  //       box-shadow: 0px 0px 8px 0px rgba(204, 204, 204, 0.26);
+  //       color: white;
+  //       border-radius: 20px;
+  //       padding: 6px 15px;
+  //     }
+  //     .label {
+  //       ._label();
+  //       background-color: #006aff;
+  //     }
+  //     .orangeLabel {
+  //       ._label();
+  //       background-color: #ff861d;
+  //     }
+  //     .content {
+  //       display: inline-flex;
+  //     }
+  //     .areaName {
+  //       display: inline-block;
+  //       max-width: 140px;
+  //       .oneLine();
+  //     }
+  //     .signAreaName {
+  //       max-width: max-content;
+  //       width: max-content;
+  //     }
+  //     .planned {
+  //       display: inline-block;
+  //       margin-left: 8px;
+  //       background-color: white;
+  //       color: black;
+  //       padding: 0 4px;
+  //       border-radius: 10px;
+  //     }
+  //     ._triangle {
+  //       position: absolute;
+  //       bottom: -12px;
+  //       left: 50%;
+  //       transform: translate(-50%);
+  //       border: 6px solid #006aff;
+  //       border-bottom-color: transparent;
+  //       border-left-color: transparent;
+  //       border-right-color: transparent;
+  //     }
+  //     .triangle {
+  //       ._triangle();
+  //       border: 6px solid #006aff;
+  //       border-bottom-color: transparent;
+  //       border-left-color: transparent;
+  //       border-right-color: transparent;
+  //       border-top-color: #006aff;
+  //     }
+  //     .orangeTriangle {
+  //       ._triangle();
+  //       border: 6px solid #ff861d;
+  //       border-bottom-color: transparent;
+  //       border-left-color: transparent;
+  //       border-right-color: transparent;
+  //       border-top-color: #ff861d;
+  //     }
+  //     .signTriangle {
+  //       ._triangle();
+  //       position: absolute;
+  //       bottom: 32px;
+  //       left: 50%;
+  //       border: 6px solid #006aff;
+  //       border-bottom-color: #006aff;
+  //       border-left-color: transparent;
+  //       border-right-color: transparent;
+  //       border-top-color: transparent;
+  //     }
+  //     .back {
+  //       display: inline-block;
+  //       margin-left: 16px;
+  //     }
+
+  //     // 省市圆圈样式
+  //     .circle {
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       flex-direction: column;
+  //       color: white;
+  //       width: 84px;
+  //       height: 84px;
+  //       border-radius: 50%;
+  //       box-shadow: 0px 0px 8px 0px rgba(204, 204, 204, 0.26);
+  //       padding: 10px;
+  //       text-align: center;
+  //     }
+  //     .mapCircle {
+  //       background-color: #006aff;
+  //       .circle();
+  //     }
+  //     .orangeMapCircle {
+  //       .circle();
+  //       background-color: #ff861d;
+  //     }
+
+  //     .signImg {
+  //       .wh(32px,38px);
+  //       img {
+  //         .wh(100%,100%);
+  //       }
+  //     }
+  //   }
+
+  //   // 地图覆盖物沿用推荐报告详情页样式
+  //   // src/views/recommend/pages/reportdetail/entry.module.less
+  //   :global {
+  //     .amap-maps {
+  //       .amap-marker-label {
+  //         display: block;
+  //         .wh(16px, 10px);
+  //         border: none;
+  //         font-size: 12px;
+  //         text-align: center;
+  //         background: none;
+  //         color: #fff;
+  //       }
+  //     }
+
+  //     .icon-label {
+  //       // .wh(auto, auto);
+  //       // .wh(132px,auto);
+  //       width: max-content;
+  //       padding: 5px 12px 5px 8px;
+  //       background: #ffffff;
+  //       box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+  //       border: 1px solid #e4e7ed;
+  //       position: relative;
+  //       left: -62px;
+  //       top: 6px;
+
+  //       .trangle {
+  //         position: absolute;
+  //         top: -12px;
+  //         left: 53px;
+  //         border: 6px solid #000;
+  //         border-top-color: transparent;
+  //         border-bottom-color: #fff;
+  //         border-left-color: transparent;
+  //         border-right-color: transparent;
+  //       }
+
+  //       .text-name {
+  //         font-size: 14px;
+  //         font-family: PingFangSC-Medium, PingFang SC;
+  //         font-weight: 500;
+  //         color: #333333;
+  //         line-height: 17px;
+  //         // white-space: nowrap;
+
+  //         .text-rank {
+  //           color: #ff861d;
+  //         }
+  //       }
+
+  //       .text-address {
+  //         font-size: 14px;
+  //         font-family: PingFangSC-Regular, PingFang SC;
+  //         font-weight: 400;
+  //         color: #666666;
+  //         line-height: 14px;
+  //       }
+  //     }
+  //     .iconCon {
+  //       .wh(48px,48px);
+  //       position: relative;
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //     }
+  //     .iconText {
+  //       position: absolute;
+  //       top: 50%;
+  //       left: 50%;
+  //       transform: translate(-50%, -50%);
+  //       color: #ffffff;
+  //     }
+  //     .iconStyle {
+  //       width: 48px;
+  //       height: 48px;
+  //     }
+  //   }
+  // }
+  // :global {
+  //   // 省市区聚合样式
+  //   .circlebox {
+  //     .wh(56px, 56px);
+  //     border-radius: 50%;
+  //     border: 1px solid #fff;
+  //     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  //     background-color: #f6f7f9;
+  //     .f-DAJ(column, center, center);
+
+  //     .whiteBg {
+  //       text-align: center;
+  //       .wh(80%);
+  //       border-radius: 50%;
+  //       .f-DAJ(column, center, center);
+  //       background-color: #fff;
+
+  //       .text-name {
+  //         margin-top: 4px;
+  //         font-size: 12px;
+  //         font-weight: bold;
+  //         line-height: 16px;
+  //         color: #132144;
+  //         text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  //         white-space: normal;
+  //       }
+
+  //       .text-total {
+  //         font-size: 14px;
+  //         line-height: 17px;
+  //         color: #132144;
+  //         text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  //       }
+  //     }
+  //   }
+  // }
+  // // 省市区label样式
+  // .mapLabel {
+  //   background-color: white;
+  //   position: relative;
+  //   width: max-content;
+  //   padding: 8px;
+  //   .colorCircle {
+  //     .wh(8px);
+  //     border-radius: 50%;
+  //     display: inline-block;
+  //   }
+  //   .line {
+  //     margin-top: 8px;
+  //     .rightBorder {
+  //       padding-left: 4px;
+  //       padding-right: 4px;
+  //       border-right: 1px solid #333;
+  //     }
+  //   }
+  //   .triangle {
+  //     position: absolute;
+  //     top: -12px;
+  //     left: 20%;
+  //     transform: translate(50%);
+  //     border: 6px solid #fff;
+  //     border-top-color: transparent;
+  //     border-left-color: transparent;
+  //     border-right-color: transparent;
+  //   }
+  // }
+}
+
+// new
+.showBusiness {
+  z-index: 100;
+  position: absolute;
+  bottom: 16px;
+  // 108+8+8
+  left: 124px;
+  color: #000;
+  width: 138px;
+  height: 32px;
+  background: #ffffff;
+  box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.mapCon {
+  .wh(100%, calc(100vh - 48px - 32px));
+  :global {
+    // 省市区聚合样式
+    .circlebox {
+      .wh(64px, 64px);
+      border-radius: 50%;
+      border: 1px solid #fff;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+      background-color: #f6f7f9;
+      .f-DAJ(column, center, center);
+
+      .whiteBg {
+        text-align: center;
+        .wh(80%);
+        border-radius: 50%;
+        .f-DAJ(column, center, center);
+        background-color: #fff;
+
+        .text-name {
+          margin-top: 4px;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 16px;
+          color: #132144;
+          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+          white-space: normal;
+        }
+
+        .text-total {
+          font-size: 14px;
+          line-height: 17px;
+          color: #132144;
+          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+  // clusterMarkerCon  --  区级别以下，点位 聚合
+  :global {
+    .clusterMarkerCon {
+      background-color: #006aff;
+      box-shadow: 0px 4px 6px 0px rgba(89, 98, 119, 0.2);
+      border: 1px solid #ffffff;
+      .wh(36px,36px);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+  }
+  :global {
+    @import '@/common/styles/amap-competitor-brand.less';
+  }
+}
+// 省市区label样式
+.mapLabel {
+  background-color: white;
+  position: relative;
+  width: max-content;
+  padding: 0px 16px 8px 8px;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+
+  .colorCircle {
+    margin-right: 4px;
+    .wh(8px);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .line {
+    padding-top: 8px;
+    font-size: 12px;
+    .rightLine {
+      margin: 0 4px;
+      .wh(1px,10px);
+      display: inline-block;
+      background: #333;
+      display: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .triangle {
+    position: absolute;
+    top: -12px;
+    left: 20%;
+    transform: translate(50%);
+    border: 6px solid #fff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+}
+.opacity {
+  opacity: 0.8;
+}
+.isScale {
+  .animation(markerAnimationScale,0.3s,linear);
+}
+// 点位样式
+.pointCon {
+  width: max-content;
+  // 普通形态
+  .triangle {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 4px solid white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  .contentCon {
+    padding: 5px 10px 5px 5px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 9px 0px rgba(40, 40, 40, 0.12);
+    .iconBox {
+      .wh(18px);
+      background-color: #006aff;
+      color: white;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      margin-right: 4px;
+    }
+    .value {
+      max-width: 70px;
+      font-weight: bold;
+      font-size: 12px;
+      .oneLine();
+    }
+
+    .planBox {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 12px;
+      .line {
+        display: inline-block;
+        .wh(1px,9px);
+        margin: 0 4px;
+        background-color: #222;
+      }
+    }
+  }
+
+  // hover后放大
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+// 商区围栏提示
+.SignContent {
+  width: max-content;
+  position: relative;
+  .triangle {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 6px solid #ff861d;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+  .contentCon {
+    background-color: #ff861d;
+    padding: 5px 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 2px 6px 0px rgba(40, 40, 40, 0.12);
+    border: 1px solid rgba(255, 134, 29, 0.3);
+    .value {
+      font-weight: bold;
+      font-size: 12px;
+      .oneLine();
+    }
+  }
+}

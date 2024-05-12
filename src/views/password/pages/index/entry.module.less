@@ -1,0 +1,89 @@
+.container {
+  background-color: #fff;
+  height: 100vh;
+  header {
+    height: 48px;
+    line-height: 48px;
+    box-shadow: 0px 1px 0px 0px #f2f2f2;
+    .logoIcon {
+      font-size: 120px;
+      height: 48px;
+      margin-left: 17%;
+    }
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 48px);
+    .content {
+      width: 700px;
+      height: 464px;
+      background: #ffffff;
+      box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+      border-radius: 2px;
+      margin: 0 auto;
+      .title {
+        height: 48px;
+        line-height: 48px;
+        background-color: #f5f6fa;
+        border-radius: 2px 2px 0px 0px;
+        text-align: center;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #132144;
+      }
+      .formWrap {
+        margin: 60px 56px 0 56px;
+        :global {
+          .ant-form-item-label > label {
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #132144;
+          }
+          .ant-input-lg {
+            font-size: 14px;
+          }
+          .ant-input-affix-wrapper {
+            padding: 8px 11px;
+          }
+        }
+        .inputStyle {
+          position: relative;
+          .getCode {
+            cursor: pointer;
+            position: absolute;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 24px;
+            right: 0;
+            background-color: #ff861d;
+            font-size: 14px;
+          }
+        }
+        .operateBtn {
+          text-align: center;
+          padding-top: 20px;
+          // margin-top: 30px;
+          :global {
+            .ant-form-item-control {
+              border-top: 1px solid #f6f7f9;
+              padding-top: 16px;
+            }
+          }
+          button {
+            height: 40px;
+          }
+          .cancelBtn {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}

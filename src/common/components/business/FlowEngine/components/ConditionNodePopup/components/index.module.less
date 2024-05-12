@@ -1,0 +1,56 @@
+.container {
+  padding: 8px 20px 0;
+}
+
+.col {
+  text-align: center;
+  font-size: 14px;
+
+  &:first-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  &:last-child {
+    cursor: pointer;
+  }
+}
+
+.select {
+  width: 100%;
+}
+
+.add {
+  cursor: pointer;
+  color: #ff943e;
+  margin: auto 0;
+  font-size: 18px;
+}
+
+.connect {
+  position: relative;
+  padding-left: 10px;
+  font-size: 14px;
+
+  &::after {
+    content: ' ';
+    pointer-events: none;
+
+    /* 防止点击触发 */
+    position: absolute;
+    top: -58px;
+    bottom: -58px;
+    left: -2px;
+    box-sizing: border-box;
+    border-left: 1px solid rgba(0, 0, 0, 6%);
+    transform: scaleY(0.5);
+  }
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+.mt8 {
+  margin-top: 8px;
+}

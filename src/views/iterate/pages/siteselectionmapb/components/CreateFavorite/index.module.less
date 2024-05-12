@@ -1,0 +1,29 @@
+.spaceCon {
+  .flex(row, nowrap, flex-end);
+  // 收藏按钮
+  .favoriteBtnWrapper {
+    .flex(row, nowrap, center, center);
+    .wh(24px, 24px);
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #EEEEEE;
+    cursor: pointer;
+
+    .starIcon {
+      z-index: 2;
+      color: #222;
+
+      &.active {
+        color: #006aff;
+      }
+    }
+
+    &:hover {
+      border-color: #006aff;
+
+      .starIcon {
+        color: #006aff;
+      }
+    }
+  }
+}

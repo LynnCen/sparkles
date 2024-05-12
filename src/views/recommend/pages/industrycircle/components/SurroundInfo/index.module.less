@@ -1,0 +1,178 @@
+.surroundContain {
+  width: 100%;
+  height: max-content;
+  padding: 6px;
+  background-color: #F1F1F1;
+
+  .report {
+    .wh(100%, 412px);
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 10px;
+
+    .lockCon {
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      transform: translateX(50%);
+      .flex(column, nowarp, center, center);
+
+      .lock {
+        .wh(32px, 32px);
+        background-color: #006AFF;
+        border-radius: 50%;
+        margin-bottom: 8px;
+        .flex(row, nowarp, center, center);
+
+        .icon {
+          display: inline-block;
+          .wh(10px, 13px);
+          background: url('https://staticres.linhuiba.com/project-custom/locationpc/surround/icon_report_lock.png') no-repeat;
+          background-size: 100%;
+        }
+      }
+
+      .btn {
+        .wh(138px, 32px);
+        border-radius: 16px;
+        text-align: center;
+        line-height: 32px;
+        border: 1px solid #CFE3FF;
+        color: #006AFF;
+        font-weight: 500;
+        cursor: pointer;
+        background: linear-gradient(180deg, #D8E6FF, #fff);
+      }
+
+    }
+
+
+  }
+
+
+  // 定制组件样式
+  .cardContainer {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+
+    // 定制组件样式 
+    :global {
+      .ant-tabs.ant-tabs-card>.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: #006aff;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      .ant-tabs.ant-tabs-card>.ant-tabs-nav .ant-tabs-tab {
+        border-radius: 0;
+      }
+
+
+      .ant-tabs-nav-wrap {
+        border-radius: 4px 0 0 0;
+
+      }
+
+      .ant-tabs-nav-operations {
+        border-radius: 4px;
+
+      }
+    }
+  }
+}
+
+.cityInfo {
+  height: 100%;
+  overflow-y: hidden;
+  padding: 8px;
+
+  .cityContent {
+    overflow-y: auto;
+
+    .desContent {
+      margin: 19px 12px 12px;
+      .flex(column, nowarp);
+
+      .title {
+        .text(#132144, 14px);
+        font-weight: 600;
+      }
+
+      .level {
+        .text(#006AFF, 24px);
+        margin: 10px 0 7px;
+        font-weight: 600;
+
+      }
+
+      .recommend {
+        .text(#717A8F, 12px)
+      }
+    }
+
+    .tips {
+      padding: 8px 13px 12px;
+      background: #4D7ADA;
+      border-radius: 0px 0px 6px 6px;
+
+      .item {
+        margin-top: 4px;
+      }
+    }
+
+    .sheets {
+      margin-top: 16px;
+    }
+
+    .box {
+      margin: 0 -12px;
+    }
+
+
+    .chartbox {
+      height: 270px;
+    }
+
+    .charts {
+      .wh(100%, 100%);
+    }
+  }
+
+
+}
+
+.populationCom {
+  padding: 16px 12px;
+
+
+  .sheets {
+    margin-bottom: 16px;
+  }
+}
+
+.itemBlock {
+  padding: 10px 14px 8px;
+  border-radius: 4px;
+  border: 4px;
+  border: 1px solid #EEEEEE;
+
+  .itemName {
+    .text(#999, 12px);
+  }
+
+  .valueBlock {
+    margin-top: 5px;
+
+    .itemValue {
+      .text(#222, 14px);
+      font-weight: 600;
+
+      &.normal {
+        font-weight: normal
+      }
+    }
+  }
+
+}

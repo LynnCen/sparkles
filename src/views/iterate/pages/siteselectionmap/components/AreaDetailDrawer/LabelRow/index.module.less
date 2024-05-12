@@ -1,0 +1,68 @@
+.labelRow {
+  display: flex;
+  align-items: center;
+  .labelRowWrap {
+    flex: auto;
+    width: 0;
+    .flex(row, nowrap, flex-start, flex-start);
+    .operations {
+      flex-shrink: 0;
+      .flex(row, nowrap, flex-start, flex-start);
+
+      .btn {
+        background-color: #F5F5F5;
+        .wh(20px, 20px);
+        .flex(row, nowrap, center, center);
+      }
+
+      .arrowIcon {
+        transform: rotate(0);
+        transition: transform 0.2s linear;
+      }
+
+      .arrowIconUp {
+        transform: rotate(180deg);
+        transition: transform 0.2s linear;
+      }
+    }
+
+    .labelsWrapper {
+      .flex(row, wrap, flex-start, flex-start);
+
+      &.isMall {
+        max-width: 400px;
+      }
+
+      .typeIcon {
+        width: 37px;
+        height: 20px;
+        position: relative;
+        min-width: 32px;
+  
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+  
+
+      &.isFold {
+        height: 29px; // 按实际需要调整
+        overflow-y: hidden;
+      }
+
+      .label {
+        height: 21px;
+        line-height: 21px;
+        font-size: 12px;
+        color: #3966C7;
+        .one-ellipsis();
+        background-color: #F0F4FC;
+        border-radius: 2px;
+        margin: 0 8px 8px 0;
+        padding: 0 4px;
+      }
+    }
+  }
+}

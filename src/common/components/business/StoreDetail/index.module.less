@@ -1,0 +1,182 @@
+.tabInfo {
+  min-height: 1000px;
+  margin-top: 10px;
+  background-color: white;
+
+  .tab {
+    border-style: solid;
+    border-width: 0px 1px 1px;
+    border-color: #f6f7f9;
+    padding-left: 15px;
+  }
+  .top {
+    padding: 16px;
+  }
+  :global {
+    .ant-tabs > .ant-tabs-nav,
+    .ant-tabs > div > .ant-tabs-nav {
+      position: sticky;
+      top: 0;
+      z-index: 9;
+      margin-bottom: 0;
+    }
+
+    .ant-tabs.ant-tabs-card > .ant-tabs-nav {
+      .ant-tabs-tab {
+        border-radius: 0;
+        background-color: #f6f7f9;
+      }
+
+      .ant-tabs-tab-active {
+        background-color: #006aff;
+      }
+    }
+  }
+}
+
+.topCon {
+  height: 72px;
+  background-color: white;
+  position: relative;
+  .topTitle {
+    font-size: 20px;
+    color: #132144;
+    font-weight: bold;
+    padding-top: 22px;
+    padding-left: 15px;
+  }
+  .exportBtn {
+    .wh(108px,40px);
+    .mixinsPosition(absolute, 16px, 16px, auto, auto);
+    position: absolute;
+  }
+}
+.card {
+  // margin-top: 10px;
+  padding: 16px;
+  background-color: white;
+}
+.viewMore {
+  cursor: pointer;
+}
+
+.project {
+  background-color: white;
+
+  .tips {
+    margin-top: 0px;
+    margin-left: 16px;
+    padding-left: 12px;
+    &::after {
+      .wh(4px,16px);
+    }
+  }
+  .row {
+    margin-left: 27px;
+    margin-right: 27px;
+    padding: 24px;
+    border: 1px solid #f4f5f7;
+  }
+
+  .number {
+    color: #132144;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+  }
+  .unit {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 12px;
+    color: #132144;
+  }
+  .label {
+    color: #666666;
+    font-size: 12px;
+    width: 120px;
+    max-width: 120px;
+    .moreLine(1);
+  }
+  .labelCon {
+    margin-right: 70px;
+  }
+}
+
+.around {
+  background-color: white;
+  padding: 16px 27px 16px 27px;
+  // .table {
+  //   border: 0px solid #F4F5F7;
+  // }
+}
+
+.score {
+  margin-top: 10px;
+  .wh(100%, 500px);
+  background-color: white;
+  border-top: 1px solid #eaeff8;
+  border-bottom: 1px solid #eaeff8;
+  .tips {
+    margin-top: 16px;
+    margin-left: 16px;
+    padding-left: 12px;
+    &::after {
+      .wh(4px,16px);
+    }
+  }
+  .scoreBody {
+    padding-left: 36px;
+
+    .wh(100%, 432px);
+    .f-DAJ(row, center, space-around);
+
+    .echartsCon {
+      .wh(40%, 432px);
+      border: 1px solid #f4f5f7;
+      .echartsScore {
+        padding: 16px;
+      }
+      .ecahrtDetail {
+        margin-top: 11px;
+        color: #656e85;
+        font-size: 12px;
+        font-weight: bold;
+        .echartsLink {
+          cursor: pointer;
+          display: inline-block;
+          padding-left: 2px;
+          color: #2441b3;
+        }
+      }
+    }
+
+    .rightCon {
+      .wh(60%, 432px);
+      margin-left: 16px;
+      margin-right: 16px;
+      border: 1px solid #f6f7f9;
+      .rightRankSpan {
+        height: 42px;
+      }
+
+      // .suggest {
+      //   .wh(100%, 62px);
+      //   margin-top: 8px;
+      //   background: #f6f7f9;
+      //   line-height: 62px;
+      //   position: relative;
+
+      //   .trangle {
+      //     position: absolute;
+      //     top: -12px;
+      //     left: 76px;
+      //     border: 6px solid #f6f7f9;
+      //     border-top-color: transparent;
+      //     border-bottom-color: #f6f7f9;
+      //     border-left-color: transparent;
+      //     border-right-color: transparent;
+      //   }
+      // }
+    }
+  }
+}

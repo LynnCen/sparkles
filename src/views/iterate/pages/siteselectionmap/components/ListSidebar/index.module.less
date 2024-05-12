@@ -1,0 +1,67 @@
+.sidebarCon {
+  .commonConStyle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(110,139,179,0.25);
+  }
+
+  .controlRow {
+    .commonConStyle();
+    .flex(row, nowrap, space-between, center);
+    .wh(300px, 36px);
+    padding: 0 12px;
+    cursor: pointer;
+
+    .spanSpace {
+      padding: 0 2px;
+    }
+
+    .arrowIcon {
+      transform: rotate(0);
+      transition: transform 0.2s linear;
+    }
+
+    .arrowIconUp {
+      transform: rotate(180deg);
+      transition: transform 0.2s linear;
+    }
+  }
+
+  .listCon {
+    .commonConStyle();
+    top: 64px;
+    .wh(300px, calc(100vh - 117px));
+    transition: height 0.2s linear;
+    overflow: auto;
+
+    &.isFold {
+      height: 0;
+      transition: height 0.2s linear;
+    }
+
+    .sortRow {
+      .flex(row, nowrap, flex-start, center);
+      .rankCon {
+        .triangleIcon {
+          color: #9EA5B0;
+          &.triangleIconSel {
+            color: @primary-blue;
+          }
+        }
+        &:hover {
+          color: @primary-blue;
+          .triangleIcon {
+            color: #006aff;
+            transition: transform 0.2s linear;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

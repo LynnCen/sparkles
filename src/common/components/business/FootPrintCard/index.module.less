@@ -1,0 +1,44 @@
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #e5e9f2;
+  height: 120px;
+  .topStyle {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      flex: 1;
+    }
+    .right {
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 62px;
+    }
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    color: #132144;
+    font-weight: 400;
+    .infoIcon {
+      color: #b8bdc4;
+      margin-left: 4px;
+      cursor: pointer;
+      &:hover {
+        color: #6e7278;
+      }
+    }
+  }
+  .content {
+    margin-top: 10px;
+    .number {
+      font-size: 33px;
+      font-family: HelveticaNeue;
+      color: #132144;
+      line-height: 34px;
+      word-break: break-all;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+
+  .pdfPage {
+    // 使用页的共通样式
+    // padding: 12px 40px 48px 24px;
+    // width: 595px;
+    // min-height: 600px;
+    // background: #FFF;
+    
+    :global {
+      .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-tab {
+        padding: 12px 0;
+      }
+    }
+  }
+  .property {
+    border-left: solid 1px #EEEEEE;
+    border-top: solid 1px #EEEEEE;
+    border-right: solid 1px #EEEEEE;
+    &:last-child {
+      border-bottom: solid 1px #EEEEEE;
+    }
+    .flex(row, nowrap, flex-start, stretch);
+    .propertyTitle {
+      flex-shrink: 0;
+      background: #FAFAFA;
+      border-right: solid 1px #EEEEEE;
+      width: 144px;
+      font-weight: 500;
+    }
+    .propertyValue {
+      flex: 1;
+      word-break: break-all;
+      white-space: pre-wrap;
+
+      .imgBox {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .textCon {
+        line-break: anywhere;
+      }
+    }
+  }

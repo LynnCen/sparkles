@@ -1,0 +1,131 @@
+.container {
+  height: calc(100vh - 60px);
+  .flexRightMain {
+    padding: 20px 0 0;
+  }
+}
+// 列表
+.statusRender {
+  display: flex;
+  align-items: center;
+  .statusRenderIcon {
+    font-size: 8px;
+    vertical-align: baseline;
+    margin-right: 4px;
+    &.statusRenderIconDone {
+      color: green;
+    }
+    &.statusRenderIconUnDone {
+      color: red;
+    }
+  }
+}
+// 商圈详情
+.businessDetail {
+  :global {
+    .v2Title {
+      font-weight: 500;
+      margin-bottom: 7px;
+    }
+  }
+  .businessDetailTag {
+    margin-bottom: 12px;
+  }
+  .businessDetailRate {
+    line-height: 33px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 12px;
+    .businessDetailRateCore {
+      font-size: 24px;
+    }
+  }
+  .businessDetailRanking {
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+    margin-bottom: 15px;
+    .rankingNum {
+      color: #222;
+      font-weight: 500;
+      margin-left: 4px;
+    }
+    &.businessDetailRankingLast {
+      margin-bottom: 0;
+      padding-bottom: 13px;
+      border-bottom: 1px solid #eeeeee;
+    }
+  }
+  .specialItem {
+    margin-top: 12px;
+  }
+}
+.topCard {
+  display: flex;
+  margin-bottom: 5px;
+
+  .left {
+    flex: 1;
+    background: linear-gradient(90deg, #65a0f2 0%, #2978e8 100%);
+    border-radius: 4px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .card {
+      margin-left: 24px;
+      margin-right: 96px;
+      .num {
+        color: #fff;
+        font-size: 16px;
+      }
+      .title {
+        color: #fff;
+        opacity: 0.8;
+        font-size: 12px;
+      }
+    }
+  }
+  .right {
+    // flex: 1;
+    cursor: pointer;
+    .wh(139px,60px);
+    img {
+      .wh(100%,100%);
+      object-fit: cover;
+    }
+  }
+}
+
+.districtCon {
+  .flexRightSearch {
+    margin-bottom: 6px;
+    width: 100%;
+
+    .moreSearch {
+      cursor: pointer;
+      color: #006aff;
+
+      .searchNumber {
+        color: #006aff;
+      }
+    }
+  }
+
+  :global {
+    .form-search {
+      .ant-form-item-control {
+        max-width: 190px;
+      }
+
+      .ant-select-in-form-item {
+        width: 190px;
+      }
+
+      .ant-form-item-label {
+        width: 90px;
+      }
+    }
+  }
+}

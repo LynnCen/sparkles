@@ -1,0 +1,88 @@
+.categoryCom {
+  padding-left: 12px;
+  background-color: #fff;
+
+  .listCon {
+    margin-top: 5px;
+
+    .item {
+      padding: 12px 10px;
+      width: 100%;
+      .flex(row, nowarp);
+
+      .address {
+        flex: 1;
+        .flex(column, nowarp);
+
+        .mainAdd {
+          .text(#222, 14px);
+          font-weight: 600;
+          max-width: 190px;
+          .oneLine();
+
+        }
+
+        .exraAdd {
+          margin-top: 8px;
+          max-width: 190px;
+          .text(#666, 12px);
+          .oneLine();
+        }
+      }
+
+      .iconImg {
+        .wh(20px, 24px);
+        flex-shrink: 0; // flex 布局下图片空间被压缩
+        margin-right: 12px;
+        background-size: 100% 100%;
+      }
+
+      .distance {
+        text-align: right;
+        .text(#222, 14px);
+        font-weight: 600;
+      }
+
+    }
+  }
+
+  :global {
+    .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-tab {
+      background-color: transparent !important;
+      padding: 9px 0px !important;
+      margin: 0 16px;
+    }
+
+    .ant-list-item {
+      padding: 0;
+    }
+
+    .poi {
+      height: 112px;
+      max-width: 124px;
+      background: #FFFFFF;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+      border: 1px solid #DDDDDD;
+      .flex(column);
+
+      .poi-name {
+        border-bottom: 1px solid #EEEEEE;
+        .text(#222, 12px);
+        .oneLine();
+      }
+
+      .poi-info {
+
+        .poi-label {
+          .text(#666, 12px)
+        }
+
+        .poi-value {
+          .text(#222, 12px)
+        }
+      }
+    }
+  }
+}

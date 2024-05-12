@@ -1,0 +1,358 @@
+// .mapSearchListContent {
+//   width: 320px;
+//   height: 100%;
+//   background: #ffffff;
+//   box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+//   display: flex;
+//   flex-direction: column;
+
+//   .search {
+//     padding: 12px 16px;
+//     border-bottom: 1px solid #eeeeee;
+//     :global {
+//       .ant-form-item {
+//         margin-bottom: 0px;
+//       }
+//     }
+//   }
+
+//   .filter {
+//     padding: 15px 44px 12px;
+//     display: flex;
+//     justify-content: space-between;
+//     color: #333333;
+
+//     .dropdownBtn {
+//       cursor: pointer;
+
+//       .searchNumber {
+//         color: #006aff;
+//       }
+
+//       &:hover {
+//         color: #006aff;
+//         svg {
+//           transform: rotate(180deg);
+//         }
+//       }
+//     }
+
+//     .sortFilter {
+//       display: block;
+//       width: 58px;
+//       overflow: hidden;
+//       white-space: nowrap;
+//       text-overflow: ellipsis;
+//     }
+
+//     .defaultFilter {
+//       color: #333333;
+//       &:hover {
+//         color: #006aff;
+//       }
+//     }
+
+//     .blueFilter {
+//       color: #006aff;
+//     }
+//   }
+
+//   .total {
+//     width: 100%;
+//     height: 40px;
+//     background: #fafafa;
+//     padding: 9px 16px;
+//     color: #132144;
+//     display: flex;
+//     align-items: center;
+
+//     .num {
+//       color: #222222;
+//       font-weight: 700;
+//     }
+//     .backBtn {
+//       cursor: pointer;
+//       height: 17px;
+//       font-size: 12px;
+//       font-family: PingFangSC-Regular, PingFang SC;
+//       font-weight: 400;
+//       color: #2441b3;
+//       cursor: pointer;
+//     }
+//   }
+//   .selectedRow {
+//     padding: 12px 0 4px 16px;
+//     background-color: #fff;
+//     font-size: 14px;
+//     font-family: PingFangSC-Regular, PingFang SC;
+//     font-weight: 400;
+//     color: #222222;
+//     line-height: 20px;
+
+//     .selectedNum {
+//       font-weight: 500;
+//       color: #006aff;
+//     }
+
+//     :global {
+//       .ant-btn-default {
+//         width: 88px;
+//         height: 28px;
+//         border-radius: 4px;
+//         border: 1px solid #dddddd;
+//         margin-left: 8px;
+//         span {
+//           height: 17px;
+//           font-size: 12px;
+//           font-family: PingFangSC-Regular, PingFang SC;
+//           font-weight: 400;
+//           color: #222222;
+//           line-height: 17px;
+//         }
+//       }
+//     }
+//   }
+//   .content {
+//     flex: 1;
+//   }
+//   .list {
+//     .cell:first {
+//       padding: 8px 16px 0;
+//     }
+//     .cell {
+//       padding: 18px 16px 0;
+//       &:hover {
+//         background: rgba(255, 134, 29, 0.04);
+//       }
+
+//       .cellBox {
+//         display: flex;
+//         flex-direction: column;
+//       }
+
+//       .cellTop {
+//         width: 100%;
+//         display: flex;
+//         justify-content: space-between;
+
+//         .areaName {
+//           flex: 1;
+//           height: 20px;
+//           font-size: 14px;
+//           font-family: PingFangSC-Regular, PingFang SC;
+//           font-weight: 400;
+//           color: #222222;
+//           line-height: 20px;
+//           .title {
+//             max-width: 208px;
+//             width: 208px;
+//             .oneLine();
+//           }
+//         }
+
+//         :global {
+//           .ant-badge-status-dot {
+//             width: 8px;
+//             height: 8px;
+//           }
+//           .ant-badge-status-text {
+//             margin-left: 4px;
+//             width: 36px;
+//             height: 17px;
+//             font-size: 12px;
+//             font-family: PingFangSC-Regular, PingFang SC;
+//             font-weight: 400;
+//             color: #222222;
+//             line-height: 17px;
+//           }
+//         }
+//       }
+//       .cellBottom {
+//         width: 100%;
+//         margin-top: 10px;
+//         align-items: center;
+//         display: flex;
+//         justify-content: space-between;
+//         padding-bottom: 16px;
+//         border-bottom: 1px solid #f0f0f0;
+
+//         .label {
+//           height: 17px;
+//           font-size: 12px;
+//           font-family: PingFangSC-Regular, PingFang SC;
+//           color: #666666;
+//           line-height: 17px;
+//         }
+
+//         .value {
+//           height: 17px;
+//           font-size: 12px;
+//           font-family: PingFangSC-Medium, PingFang SC;
+//           font-weight: 500;
+//           color: #222222;
+//           line-height: 17px;
+//         }
+
+//         .icon {
+//           font-size: 20px;
+//           line-height: 48px;
+//           color: #006aff;
+//         }
+//       }
+//     }
+
+//     :global {
+//       .ant-list-item {
+//         border-bottom: none !important;
+//       }
+//     }
+//   }
+
+//   .footer {
+//     padding: 0 12px;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 56px;
+//     background: #ffffff;
+//     box-shadow: 0px 2px 8px 0px rgba(86, 86, 86, 0.2);
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+
+//     .addBtn {
+//       flex: 1;
+//       height: 32px;
+//       background: #ffffff;
+//       border-radius: 3px;
+//       border: 1px solid #006aff;
+//       margin-right: 12px;
+//       span {
+//         height: 22px;
+//         font-size: 14px;
+//         font-family: PingFangSC-Regular, PingFang SC;
+//         color: #006aff;
+//         line-height: 22px;
+//       }
+//     }
+
+//     .allBtn {
+//       flex: 1;
+//       height: 32px;
+//       background: #006aff;
+//       border-radius: 3px;
+//       span {
+//         height: 20px;
+//         font-size: 14px;
+//         font-family: PingFangSC-Regular, PingFang SC;
+//         font-weight: 00;
+//         color: #ffffff;
+//         line-height: 20px;
+//       }
+//     }
+//   }
+// }
+// .dropdown {
+//   :global {
+//     .ant-dropdown-menu-title-content {
+//       text-align: center;
+//     }
+//   }
+// }
+
+// .footer {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 56px;
+//   background: #ffffff;
+//   box-shadow: 0px 2px 8px 0px rgba(86, 86, 86, 0.2);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   :global {
+//     .ant-btn-primary {
+//       width: 295px;
+//       height: 32px;
+//       background: #006aff;
+//       border-radius: 3px;
+//       border: 1px solid #006aff;
+//     }
+//   }
+// }
+
+.container {
+  .rankCon {
+    &:hover {
+      color: @primary-blue;
+
+      .triangleIcon {
+        color: #006aff;
+        transition: transform 0.2s linear;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .topSection {
+    .countCon {
+      font-size: 12px;
+      width: 100%;
+      padding: 9px 12px;
+      background: #fafafa;
+      color: #132144;
+      margin-top: -8px;
+    }
+  }
+
+  .selectedRow {
+    padding: 12px 0 4px 12px;
+  }
+
+  .listCon {
+    padding: 0 12px;
+    box-sizing: border-box;
+
+    .listItemCon {
+      padding: 0 0;
+      box-sizing: border-box;
+      flex: 1;
+      cursor: pointer;
+
+      .titCon {
+        .one-ellipsis();
+        width: 270px;
+      }
+
+      .labelCon {
+        line-height: 12px;
+        padding: 4px 4px;
+        border-radius: 1px;
+        width: max-content;
+        background-color: #fafafa;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      :global {
+        .ant-badge-status-dot {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
+
+  .footerCon {
+    padding: 12px 14px;
+    box-shadow: 0px 2px 8px 0px rgba(86, 86, 86, 0.2);
+    box-sizing: border-box;
+  }
+}
+.networkDetail {
+  margin-top: -8px;
+}

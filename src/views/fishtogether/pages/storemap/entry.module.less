@@ -1,0 +1,317 @@
+.container {
+  .wh(100%, calc(100vh - 80px));
+  position: relative;
+  :global{
+    //地图饼图
+    .circlebox {
+      .wh(64px, 64px);
+      border-radius: 50%;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+      background-color: #f6f7f9;
+      .f-DAJ(column, center, center);
+  
+      .whiteBg {
+        text-align: center;
+        .wh(80%);
+        border-radius: 50%;
+        .f-DAJ(column, center, center);
+        background-color: #fff;
+  
+        .text-name {
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 16px;
+          color: #132144;
+          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+          white-space: normal;
+        }
+  
+        .text-total {
+          font-size: 10px;
+          line-height: 17px;
+          color: #132144;
+          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+    //地图标签
+    .label {
+      .wh(215px, auto);
+      // min-width: 100px;
+      padding: 12px 12px;
+      background: #ffffff;
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e4e7ed;
+      border-radius: 4px;
+      position: relative;
+      font-size: 14px;
+      color: #333333;
+      line-height: 16px;
+  
+      //聚合点Label样式
+      .title {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 22px;
+        white-space: break-word;
+        margin-bottom: 6px;
+      }
+      .row{
+        padding-top : 4px;
+        .contentLabel{
+          color: #999999;
+          font-size: 12px;
+        }
+        .content{
+          color:#333333;
+          font-size: 12px;
+          word-break: break-all;
+        }
+      }
+      // .marker {
+      //   min-width: 250px;
+      //   display: flex;
+      //   line-height: 22px;
+  
+      //   // .itemlabel {
+      //   //   color: #656E85;
+      //   //   white-space: nowrap;
+      //   // }
+      // }
+  
+      // .itemlabel {
+      //   color: #656e85;
+      //   white-space: nowrap;
+      // }
+  
+      .item {
+        display: flex;
+        align-items: center;
+        line-height: 28px;
+  
+        img {
+          display: block;
+          .wh(18px);
+        }
+        .icon{
+          .wh(24px);
+        }
+        span {
+          margin-left: 4px;
+          white-space: nowrap;
+        }
+      }
+  
+      &::before {
+        .top-arrow(93px);
+      }
+    }
+  }
+
+  // 地图覆盖物沿用推荐报告详情页样式
+  // src/views/recommend/pages/reportdetail/entry.module.less
+  :global {
+    .amap-maps {
+      .amap-marker-label {
+        display: block;
+        .wh(16px, 10px);
+        border: none;
+        font-size: 12px;
+        text-align: center;
+        background: none;
+        color: #fff;
+      }
+    }
+
+    .icon-label {
+      // .wh(auto, auto);
+      .wh(132px,auto);
+      padding: 5px 12px 5px 8px;
+      background: #ffffff;
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e4e7ed;
+      position: relative;
+      left: -62px;
+      top: 6px;
+
+      .trangle {
+        position: absolute;
+        top: -12px;
+        left: 53px;
+        border: 6px solid #000;
+        border-top-color: transparent;
+        border-bottom-color: #fff;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+
+      .text-name {
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 17px;
+        // white-space: nowrap;
+
+        .text-rank {
+          color: #ff861d;
+        }
+      }
+
+      .text-address {
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+        line-height: 14px;
+      }
+    }
+    .iconCon {
+      .wh(48px,48px);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .iconText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+    }
+    .iconStyle {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+.leftCon {
+  min-width: 225px;
+  .mixinsPosition(absolute, 60px, auto, auto, 24px);
+  z-index: 9;
+  background-color: white;
+  // padding: 10px;
+  padding-bottom: 13px;
+  .title{
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+  }
+  .switchCon{
+    color: #666666;
+    padding-top: 12px;
+    padding-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    .switch{
+      margin-right: 16px;
+    }
+  }
+  .checkBox{
+    padding-top: 6px;
+    padding-left: 16px;
+    .interval{
+      color: #333333;
+      display: inline-block;
+      padding-right: 4px;
+      padding-left: 4px;
+      border-right: 1px solid #D1D4D8;
+    }
+    .img{
+      width:209px;
+    }
+    .areaImage{
+      .wh(14px);
+    }
+  }
+  .bottom{
+    color:#2e2dff;
+    font-weight: bold;
+    cursor:pointer;
+  }
+  :global {
+
+    .ant-checkbox-group {
+      width: 100%;
+
+      .ant-checkbox-wrapper>span {
+        font-size: 14px;
+        color: #333333;
+        line-height: 16px;
+      }
+
+    }
+
+    .ant-checkbox-wrapper {
+      width: 100%;
+      display: block;
+
+      .ant-checkbox {
+        float: left;
+        top: 0.7em;
+      }
+    }
+  }
+  .topSearch {
+    .mixinsPosition(absolute, 16px, auto, auto, 50%);
+    transform: translate(-50%, 0);
+    z-index: 9;
+    .boxCon {
+      position: absolute;
+      // left: 288px;
+      margin-left: 50px;
+    }
+  }
+}
+
+// .circlebox {
+//   min-width: 60px;
+//   min-height: 40px;
+//   padding: 6px;
+//   text-align: center;
+//   background-color: #fff;
+//   box-shadow: 0px 0px 6px 0px rgba(0, 63, 92, 0.3);
+//   .f-DAJ(column, center, flex-start);
+
+//   .text-name {
+//     font-size: 10px;
+//     font-weight: bold;
+//     line-height: 16px;
+//     color: #132144;
+//     white-space: normal;
+//   }
+
+//   .text-total {
+//     font-size: 8px;
+//     line-height: 17px;
+//     color: #132144;
+//   }
+
+//   &:before {
+//     .bottom-arrow(calc(50% - 6px));
+//   }
+// }
+
+.provinceCon{
+  .mixinsPosition(absolute, 22px, auto, auto, 24px);
+  background-color: white;
+  width: 225px;
+}
+
+.searchSelect{
+  position: relative;
+  right: 1px;
+  :global{
+    .ant-form{
+      width: 150px;
+    }
+    .ant-select:not(.ant-select-customize-input) {
+      .ant-select-selector{
+        border: 1px solid transparent;
+      }
+    }
+  }
+}

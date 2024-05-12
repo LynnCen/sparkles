@@ -1,0 +1,97 @@
+.container {
+  .otherCon {
+    .flex(row, nowrap, flex-start, center);
+    .wh(160px, 36px);
+    padding: 0 12px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(110,139,179,0.25);
+    border-radius: 4px;
+    margin-left: 12px;
+    cursor: pointer;
+
+    .arrowIcon {
+      transform: rotate(0);
+      transition: transform 0.2s linear;
+    }
+
+    .arrowIconUp {
+      transform: rotate(180deg);
+      transition: transform 0.2s linear;
+    }
+  }
+
+  .wrapper {
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(110,139,179,0.25);
+    border-radius: 4px;
+    margin-left: 12px;
+    .wh(200px, 0);
+    transition: height 0.2s linear;
+    overflow: auto;
+
+    &.isUnfold {
+      height: max-content;
+      transition: height 0.2s linear;
+    }
+
+    :global {
+      .ant-tabs {
+        .ant-tabs-nav {
+          .ant-tabs-nav-wrap {
+            .ant-tabs-nav-list {
+              flex: 1;
+              justify-content: space-around;
+              align-items: center;
+
+              .ant-tabs-tab {
+                font-size: 14px;
+                padding: 12px 0;
+                font-weight: bold;
+
+                &+ .ant-tabs-tab {
+                  margin-left: 0;
+                }
+              }
+
+              .ant-tabs-ink-bar {
+                height: 2px;
+              }
+            }
+          }
+        }
+
+        .ant-tabs-content-holder {
+          .ant-tabs-content {
+            padding: 0 6px 12px 12px;
+            max-height: 255px;
+            overflow-y: auto;
+
+            .ant-checkbox-group {
+              .ant-checkbox-wrapper {
+                .ant-checkbox + span {
+                  padding-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .inlineFlex {
+      display: inline-flex;
+      justify-content: space-between;
+      width: 100px;
+    }
+
+    .flexStartCon {
+      // .flex(row, nowrap, flex-start, center);
+      display: inline-flex;
+
+      .imgCon {
+        display: inline-block;
+        .wh(14px, 14px);
+      }
+    }
+  }
+}

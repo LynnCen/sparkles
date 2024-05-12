@@ -1,0 +1,38 @@
+.permissionSelector {
+  .leftTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    span {
+      color: @primary-blue;
+    }
+  }
+  :global {
+    .ant-col-12 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .content {
+    margin-top: 10px;
+    flex: 1;
+    min-height: 200px;
+    max-height: 400px;
+    overflow: auto;
+    .userInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 10px;
+      &:hover {
+        background-color: #f5f7fa;
+      }
+    }
+    :global {
+      .ant-card-body {
+        padding: 0;
+      }
+    }
+  }
+}

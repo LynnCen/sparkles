@@ -1,0 +1,286 @@
+// .container {
+//   .wh(100%,100%);
+//   min-width: 1200px;
+//   position: relative;
+//   // overflow-y: hidden;
+//   overflow: hidden;
+
+//   .backBtn {
+//     z-index: 999;
+//     .wh(108px, 32px);
+//     background-color: white;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: absolute;
+//     left: 348px;
+//     top: 16px;
+//     box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+//     cursor: pointer;
+//   }
+
+//   .topBoxCon {
+//     z-index: 999;
+//     position: absolute;
+//     // top: 16px;
+//     top: 0;
+//     left: 50%;
+//     .flex();
+
+//     .searchCityCon {
+//       margin-right: 10px;
+//     }
+//   }
+
+//   // 竞品门店分布
+//   .contendBrand {
+//     cursor: pointer;
+//     .wh(112px, 32px);
+//     z-index: 999;
+//     background-color: white;
+//     position: absolute;
+//     top: 16px;
+//     right: 170px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+
+//     .contendBrandBox {
+//       color: black;
+//       position: absolute;
+//       top: 36px;
+//       left: 0px;
+//     }
+
+//     .show {
+//       // opacity: 1;
+//       display: block;
+//     }
+
+//     .hidden {
+//       // opacity: 0;
+//       display: none;
+//     }
+//   }
+
+//   .CurrentBrandBox {
+//     position: absolute;
+//     top: 16px;
+//     right: 12px;
+//     z-index: 999;
+//   }
+
+//   .active {
+//     color: #006aff;
+//   }
+
+//   // 地图覆盖物沿用推荐报告详情页样式
+//   // src/views/recommend/pages/reportdetail/entry.module.less
+//   :global {
+//     .amap-maps {
+//       .amap-marker-label {
+//         display: block;
+//         .wh(16px, 10px);
+//         border: none;
+//         font-size: 12px;
+//         text-align: center;
+//         background: none;
+//         color: #fff;
+//       }
+//     }
+
+//     .icon-label {
+//       // .wh(auto, auto);
+//       // .wh(132px,auto);
+//       width: max-content;
+//       padding: 5px 12px 5px 8px;
+//       background: #ffffff;
+//       box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+//       border: 1px solid #e4e7ed;
+//       position: relative;
+//       left: -62px;
+//       top: 6px;
+
+//       .trangle {
+//         position: absolute;
+//         top: -12px;
+//         left: 53px;
+//         border: 6px solid #000;
+//         border-top-color: transparent;
+//         border-bottom-color: #fff;
+//         border-left-color: transparent;
+//         border-right-color: transparent;
+//       }
+
+//       .text-name {
+//         font-size: 14px;
+//         font-family: PingFangSC-Medium, PingFang SC;
+//         font-weight: 500;
+//         color: #333333;
+//         line-height: 17px;
+//         // white-space: nowrap;
+
+//         .text-rank {
+//           color: #ff861d;
+//         }
+//       }
+
+//       .text-address {
+//         font-size: 14px;
+//         font-family: PingFangSC-Regular, PingFang SC;
+//         font-weight: 400;
+//         color: #666666;
+//         line-height: 14px;
+//       }
+//     }
+
+//     .iconCon {
+//       .wh(48px, 48px);
+//       position: relative;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//     }
+
+//     .iconText {
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//       color: #ffffff;
+//     }
+
+//     .iconStyle {
+//       width: 48px;
+//       height: 48px;
+//     }
+//   }
+// }
+.container {
+  position: relative;
+  .wh(100%, 100%);
+  min-width: 900px;
+  overflow: hidden;
+
+  // 从其他地方迁移过来的，针对地图上部分hover显示的marker
+  :global {
+    .amap-maps {
+      .amap-layers {
+        .amap-markers {
+          @import '@/common/styles/amap-chance-point.less';
+        }
+      }
+
+      .amap-marker-label {
+        display: block;
+        .wh(16px, 10px);
+        border: none;
+        font-size: 12px;
+        text-align: center;
+        background: none;
+        color: #fff;
+      }
+    }
+
+    .poi {
+      width: max-content;
+      background: #FFFFFF;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+      border: 1px solid #DDDDDD;
+      font-size: 0; // 解决 block 引起的高度增多
+
+      .poi-name {
+        display: inline-block;
+        width: 100%;
+        height: max-content;
+        .text(#222, 12px);
+        // .oneLine();
+      }
+
+      .poi-info {
+
+        border-top: 1px solid #EEEEEE;
+        padding-top: 7px;
+        .flex(column);
+
+        .poi-label {
+          .text(#666, 12px);
+
+          .poi-value {
+            .text(#222, 12px)
+          }
+        }
+
+      }
+    }
+
+    .icon-label {
+      // .wh(auto, auto);
+      // .wh(132px,auto);
+      width: max-content;
+      padding: 5px 12px 5px 8px;
+      background: #ffffff;
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e4e7ed;
+      position: relative;
+      left: -62px;
+      top: 6px;
+
+      .trangle {
+        position: absolute;
+        top: -12px;
+        left: 53px;
+        border: 6px solid #000;
+        border-top-color: transparent;
+        border-bottom-color: #fff;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+
+      .text-name {
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 17px;
+        // white-space: nowrap;
+
+        .text-rank {
+          color: #ff861d;
+        }
+      }
+
+      .text-address {
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+        line-height: 14px;
+      }
+    }
+
+    .iconCon {
+      .wh(48px, 48px);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .iconText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+    }
+
+    .iconStyle {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

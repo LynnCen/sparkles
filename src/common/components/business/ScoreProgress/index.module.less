@@ -1,0 +1,66 @@
+.container {
+  .explainTextCon {
+    .flex();
+
+    .explainTextItem {
+      flex: 1;
+    }
+  }
+  .tickMarkCon {
+    .flex();
+
+    .largeTickLine {
+      position: relative;
+      flex: 1;
+      .flex(row, nowrap, flex-start, flex-end);
+      height: 12px;
+      border-right: 1px solid #DDDDDD;
+      box-sizing: border-box;
+
+      &.isFirst {
+        border-left: 1px solid #DDDDDD;
+      }
+
+      .smallTickLine {
+        flex: 1;
+        height: 6px;
+        border-right: 1px solid #DDDDDD;
+        box-sizing: border-box;
+
+        &.isLast {
+          border-right: none
+        }
+      }
+
+      .pointerImg {
+        position: absolute;
+        bottom: -18px; // 22 - 4
+        .wh(15px, 22px);
+        z-index: 3;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .progressWrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+    .progressOuter {
+      position: relative;
+      .wh(100%, 6px);
+      // overflow: hidden;
+      background: linear-gradient(270deg, #FF861D 0%, #FFEB65 49%, #B9EF6A 100%);
+      border-radius: 4px;
+
+      .progressInter {
+        position: absolute;
+        top: 0;
+        right: -0.5px;
+        bottom: 0;
+        background-color: #F6F7F9;
+        border-radius: 4px;
+        z-index: 2;
+      }
+    }
+  }
+}

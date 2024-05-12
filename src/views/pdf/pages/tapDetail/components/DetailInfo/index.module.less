@@ -1,0 +1,26 @@
+.cardWrap {
+  display: flex;
+  word-break: break-all;
+
+  .title {
+    flex-shrink: 0;
+    color: #999;
+    font-weight: 400;
+  }
+
+  .value {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    :global {
+
+      div.ant-typography,
+      .ant-typography p {
+        margin-bottom: 0;
+        color: #17273a;
+        font-weight: 400;
+      }
+    }
+  }
+}

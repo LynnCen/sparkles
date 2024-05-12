@@ -1,0 +1,150 @@
+.network-plan {
+  display: flex;
+  justify-content: center;
+
+  :global {
+    .ant-btn {
+      border-radius: 3px;
+    }
+  }
+
+  .left-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 166px;
+
+    &-title {
+      width: 180px;
+      height: 42px;
+      font-size: 30px;
+      font-weight: 600;
+      color: #222222;
+      line-height: 42px;
+    }
+
+    &-content {
+      width: 190px;
+      height: 46px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+      line-height: 22px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      :global {
+        .resant-btn-primary {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+
+          .btn-icon {
+            width: 14px;
+            height: 14px;
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .right-box {
+    width: 361px;
+    height: 100%;
+    background: url('https://staticres.linhuiba.com/project-custom/locationpc/recommend/networkPlan_bg.png') 100%/100% no-repeat;
+  }
+}
+
+// 规划管理弹窗
+.branchPlanningModal {
+  display: flex;
+
+  .leftBox {
+    flex: 1;
+    background: #FAFAFA;
+    padding: 24px;
+    line-height: 22px;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .rightBox {
+    width: 228px;
+    margin-left: 16px;
+    height: 368px;
+    padding: 16px 14px 24px;
+    border: 1px solid #EEEEEE;
+    display: flex;
+    flex-direction: column;
+
+    :global {
+
+      .ant-form-item {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .infoBox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .versionBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    .version {
+      height: 22px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #333333;
+      margin-bottom: 4px;
+    }
+
+    .versionValue {
+      height: 22px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #FF861D;
+    }
+  }
+
+
+  .value {
+    height: 22px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+  }
+
+  .label {
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 20px;
+  }
+}
+
+.planningManageSimpleTable {
+  :global {
+    .ant-badge-status-dot {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+

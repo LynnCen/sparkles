@@ -1,0 +1,205 @@
+@import './common/styles/reset.less';
+@import './common/styles/common.less';
+@import './common/styles/ant-reset-v2.less';
+@import './common/styles/component-doc.less';
+
+body {
+  margin: 0;
+  font-family: PingFangSC-Regular, PingFang SC, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#root {
+  font-family: PingFangSC-Regular, PingFang SC, Avenir, Helvetica, Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #132144;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+
+/* 路由切换效果 */
+.fade-enter {
+  opacity: 0;
+  transform: translate(25px, 0);
+  z-index: 1;
+}
+.fade-enter.fade-enter-active,
+.fade-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade-enter.fade-enter-active {
+  transition: opacity 200ms ease-out, transform 300ms ease;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  // transform: translate(30px, 0);
+  // transition: opacity 200ms ease-out, transform 300ms ease;
+}
+
+/* Table */
+
+// 去除table表头的竖线
+#root
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
+  width: 0;
+}
+
+// .ant-table-thead
+//   > tr
+//   > th {
+//     z-index: 2;
+//   }
+
+// table 默认显示斑马线
+.ant-table-row {
+  &:nth-of-type(2n + 1) {
+    td {
+      background-color: #fcfdfd;
+    }
+  }
+}
+
+/* Tabs */
+.ant-tabs {
+  &.ant-tabs-card {
+    > .ant-tabs-nav {
+      .ant-tabs-tab {
+        border: 1px solid #dcdee0;
+        border-radius: 4px;
+        padding: 10px 26px;
+        + .ant-tabs-tab {
+          margin-left: 0;
+        }
+      }
+
+      .ant-tabs-tab-active {
+        background: #006aff;
+        border: 1px solid #006aff;
+        .ant-tabs-tab-btn {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+#root {
+  .ant-table-column-sorters {
+    justify-content: flex-start;
+    .ant-table-column-title {
+      flex: none;
+    }
+    .ant-table-column-sorter {
+      color: #acb4c7;
+    }
+  }
+}
+
+/* Pagination */
+.ant-pagination {
+  .ant-pagination-item-active {
+    a {
+      color: #fff;
+    }
+  }
+}
+
+/* Select多选的样式 */
+.ant-select-multiple .ant-select-selection-item {
+  background-color: #f6f7f9;
+  border-radius: 2px;
+  border: 1px solid #e5e9f2;
+  color: #949cae;
+}
+
+// select下拉按钮的颜色
+.ant-select-arrow {
+  color: #656e85;
+}
+
+/* message */
+.ant-message-notice-content {
+  .ant-message-custom-content {
+    border-radius: 2px;
+  }
+}
+.ant-message {
+  color: #000000;
+  font-weight: 400;
+  .ant-message-notice-content {
+    padding: 0;
+    .ant-message-custom-content {
+      padding: 10px 16px;
+      &.ant-message-success {
+        background-color: #effff6;
+      }
+      &.ant-message-info {
+        background-color: #ebf3ff;
+      }
+      &.ant-message-error {
+        background-color: #fff2f0;
+      }
+      &.ant-message-warning {
+        background-color: #feeddd;
+      }
+    }
+  }
+}
+
+.ant-divider-horizontal.ant-divider {
+  border-top: 1px solid #f6f7f9;
+}
+
+// input number样式
+.ant-input-number.ant-input-number {
+  border: 1px solid #e5e9f2;
+}
+
+// 时间选择器icon
+.ant-picker {
+  .ant-picker-suffix {
+    color: #bbc0c7;
+  }
+}
+
+// 图片预览 image.PreviewGroup 覆盖住左侧菜单栏
+// .ant-image-preview-root {
+//   .ant-image-preview-mask {
+//     z-index: 10001;
+//   }
+
+//   .ant-image-preview-wrap {
+//     z-index: 10801;
+//   }
+// }
+.ant-tooltip {
+  .ant-tooltip-inner {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .ant-tooltip-arrow {
+    .ant-tooltip-arrow-content {
+      --antd-arrow-background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+.ant-dropdown {
+  border-radius: 4px;
+}
+

@@ -1,0 +1,270 @@
+.container {
+  // min-width: 1440px;
+  .titleTips {
+    margin-top: 0;
+    padding-left: 12px;
+
+    &::after {
+      width: 4px;
+    }
+  }
+
+  .filterFieldsCon {
+    padding: 24px 20px 20px;
+    background-color: #fff;
+
+    .searchFormCon {
+      margin-bottom: 0;
+    }
+  }
+
+  .dataPanelCon {
+    width: 100%;
+    background-color: #fff;
+    padding: 24px 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+    .contentCon {
+      .flex();
+      min-width: 1000px;
+
+      .funnelCon {
+        width: 630px;
+        // margin-right: 45px;
+
+        .funnelItemCon {
+          .flex();
+
+          .explainCon {
+            .flex();
+            height: 66px;
+            box-sizing: border-box;
+
+            .textCon {
+              width: 230px;
+              padding: 12px;
+              box-sizing: border-box;
+            }
+
+            .placeholderCon {
+              .wh(120px, 0);
+
+              .distinctionCon {
+                position: relative;
+                border-color: @primary-blue transparent transparent;
+                border-width: 66px 66px 0 0; // right 控制底角宽度
+                border-style: solid solid none;
+
+                .titleText {
+                  position: absolute;
+                  top: -45px;
+                  left: 46px;
+                  width: max-content;
+                  transform: translateX(-50%);
+                  color: #fff;
+                }
+              }
+            }
+          }
+
+          .comparisonCon {
+            flex: 1;
+            .wh(100%, 1px);
+            position: relative;
+
+            .displacementCon {
+              position: absolute;
+              top: 0;
+              left: 0;
+              .wh(100%, auto);
+              .flex(row, nowrap, flex-start, center);
+
+              .branchBoxCon {
+                .wh(26px, 73px);
+              }
+
+              .dataCon {
+                .flex(row, nowrap, space-between, center);
+                .wh(185px, 68px);
+                padding: 16px;
+                border: 1px solid #e5e9f2;
+                margin-left: 16px;
+              }
+            }
+          }
+
+          &:nth-of-type(2) {
+            // 累加14px
+            .comparisonCon {
+              .displacementCon {
+                top: -57px;
+              }
+            }
+          }
+          &:nth-of-type(3) {
+            .comparisonCon {
+              .displacementCon {
+                top: -43px;
+              }
+            }
+          }
+          &:nth-of-type(4) {
+            .comparisonCon {
+              .displacementCon {
+                top: -29px;
+              }
+            }
+          }
+          &:nth-of-type(5) {
+            .comparisonCon {
+              .displacementCon {
+                top: -15px;
+              }
+            }
+          }
+        }
+
+        .overturn {
+          transform: rotate(180deg);
+        }
+      }
+
+      .mapCon {
+        flex: 1;
+        .wh(auto, 415px);
+        position: relative;
+        .provinceForm {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          background-color: white;
+        }
+        :global {
+          .amap-maps {
+            .cardWrapper {
+              position: relative;
+              min-width: 56px;
+              // min-height: 40px;
+              background: linear-gradient(270deg, #6c97f8 0%, #3d76ff 100%);
+              box-shadow: 0px 0px 6px 0px rgba(0, 63, 92, 0.3);
+              box-sizing: border-box;
+              border-radius: 4px;
+
+              .cardTitle {
+                .flex(row, nowrap, space-between, center);
+                color: #fff;
+                font-size: 12px;
+                padding: 4px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+
+                &.isCurrent {
+                  background: linear-gradient(270deg, #fcd349 0%, #ffb52c 100%);
+                }
+
+                .cardIcon {
+                  .wh(20px, 20px);
+                  margin-right: 4px;
+                }
+
+                .cardName {
+                  width: max-content;
+                }
+              }
+
+              .cardVal {
+                position: relative;
+                font-size: 18px;
+                color: #959bab;
+                font-weight: bold;
+                text-align: center;
+                background-color: #fff;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+              }
+
+              &:before {
+                .bottom-arrow(calc(50% - 6px));
+              }
+            }
+
+            // .ringWrapper {
+            //   .flex(column, nowrap, center, center);
+            //   .wh(64px, 64px);
+            //   border-radius: 50%;
+            //   background-color: #f6f7f9;
+            //   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+
+            //   .innerRing {
+            //     .wh(80%);
+            //     text-align: center;
+            //     background-color: #fff;
+            //     border-radius: 50%;
+            //     .flex(column, nowrap, center, center);
+            //   }
+            // }
+
+            .cardMarkerWrapper {
+              position: relative;
+              background-color: #fff;
+              padding: 12px 8px;
+              // min-width: 150px;
+              box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+              border: 1px solid #e4e7ed;
+              border-radius: 4px;
+              font-size: 12px;
+
+              .contentWrapper {
+                max-height: 250px;
+                overflow: auto;
+                width: max-content;
+                // .itemRow {
+                //   .flex(row, nowrap, space-between, center);
+                //   margin-top: 5px;
+
+                //   .label {
+                //     width: max-content;
+                //     white-space: nowrap;
+                //   }
+                //   .valCon {
+                //     flex: 1;
+                //     padding-left: 12px;
+                //     width: max-content;
+                //   }
+
+                //   &:first-of-type {
+                //     margin-top: 0;
+                //   }
+                // }
+              }
+
+              &::before {
+                .top-arrow(28px);
+              }
+            }
+
+            .pointCon {
+              .wh(30px, 35px);
+              // background-image: url(https://staticres.linhuiba.com/project-custom/locationpc/new/icon_car_industry.svg);
+              background-size: 100% 100%;
+              padding: 3px;
+
+              .imgCon {
+                border-radius: 50%;
+                .wh(24px);
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tabsCon {
+    background-color: #fff;
+    padding: 12px 16px;
+    margin-top: 10px;
+  }
+}

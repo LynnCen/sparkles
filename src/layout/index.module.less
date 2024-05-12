@@ -1,0 +1,408 @@
+.layout {
+  // 去掉滚动条
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  scrollbar-width: none;
+
+  .logo {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // 设置logo的背景颜色
+    // background-color: #fff;
+    padding: 12px 26px 20px 13px;
+    .logoIcon {
+      // font-size: 160px;
+      max-height: 48px;
+      .wh(132px,23px);
+    }
+    img {
+      display: block;
+      // .wh(100%, auto);
+      .wh(132px,23px);
+      // max-height: 48px;
+    }
+  }
+  .logo,
+  .collapsedStyle {
+    padding: 0px;
+  }
+  .collapsedStyle {
+    .logoIcon {
+      // font-size: 30px;
+      .wh(30px,30px);
+    }
+    img {
+      display: block;
+      .wh(30px, 30px);
+    }
+  }
+  // 图标大小
+  .menuIcon {
+    font-size: 16px;
+  }
+  .siderWrap {
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    .bottomCon {
+      // margin-left: -4px;
+      position: fixed;
+      bottom: 0px;
+      height: 48px;
+      background: #001629;
+      z-index: 9999;
+      box-shadow: 0px -1px 4px 2px rgba(246, 247, 249, 0.11);
+      transition: background 0.3s, width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+      .collapsed {
+        position: absolute;
+        font-size: 20px;
+        top: 12px;
+        right: 11px;
+        color: #f7f8fa;
+        background-color: rgba(246, 247, 249, 0.11);
+        padding: 0px 3px 0px 3px;
+        opacity: 0.8;
+        border-radius: 2px;
+        // transition: all 0.2s;
+        // transition-duration: 0.2s;
+        // transition-timing-function: ease;
+        // transition-delay: 0s;
+        // transition-property: all;
+      }
+    }
+    .docsLink {
+      padding-left: 24px;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 10px;
+      &:hover {
+        text-decoration: underline;
+        color: #006aff;
+      }
+    }
+  }
+  .leftLayout {
+    transition: margin-left 0.2s;
+    min-width: 780px;
+    .header {
+      margin-left: 1px;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 18px;
+      .leftWrap {
+        display: flex;
+        align-items: center;
+        // 旧收起按钮
+        // .trigger {
+        //   margin-right: 10px;
+        // }
+        :global {
+          .ant-breadcrumb a {
+            color: #006aff;
+          }
+          .ant-breadcrumb-separator {
+            color: #006aff;
+            margin: 0;
+          }
+          .ant-breadcrumb li:last-child {
+            color: #132144;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #132144;
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        color: #132144;
+        .dropDownLink {
+          display: flex;
+          align-items: center;
+        }
+        .downLined {
+          margin-left: 10px;
+          color: #9ea5b0;
+          font: 12px;
+        }
+        .chooseAccount {
+          position: relative;
+          padding: 0 16px;
+          margin-right: 16px;
+          .icon {
+            margin-left: 10px;
+            color: #acb4c7;
+            cursor: pointer;
+          }
+          &::after {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 12px;
+            background: #e2e2e2;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        img {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+        }
+        .avatarImg {
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          display: inline-block;
+          vertical-align: middle;
+          background-color: #ecf6fe;
+          margin-right: 8px;
+          border: 2px solid #f5fbff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .icon {
+            width: 24px;
+            height: 24px;
+            background: url('~@/assets/images/default-photo.png') 100%/100%
+              no-repeat;
+          }
+        }
+      }
+    }
+    .content {
+      padding: 16px;
+      min-height: calc(100vh - 48px);
+
+      &.isFull {
+        padding: 0
+      }
+      // background-color: #f7f7f7;
+    }
+  }
+
+  :global {
+    .ant-menu-inline {
+      width: 170px;
+    }
+    // 菜单
+    .ant-layout-sider-children {
+      height: auto;
+      // 去掉选中后的蓝色右边框
+      .ant-menu-inline .ant-menu-item::after {
+        border-right: 0px;
+      }
+      .ant-menu {
+        ul {
+          background-color: #000c17;
+        }
+      }
+
+      .ant-menu.ant-menu-dark {
+        background-color: #001629;
+      }
+
+      .ant-menu {
+        // 修改所有字体颜色
+        // color: #17273a;
+        // 一级无子结构修改padding-left
+        .ant-menu-item {
+          // 这个样式写在style中，只能通过important去修改
+          border-left: 4px solid #060f17;
+          border-right: 4px solid #060f17;
+          position: relative;
+          padding-left: 20px !important;
+        }
+        // 选中的border圆角
+        .ant-menu-item-selected {
+          // border-radius: 2px;
+          // 由于加了4px的border来展示ui的要求样式，导致2px的border-radius不生效，所以使用这种办法来生成圆角
+          &::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            border: 2px solid #060f17;
+            border-radius: 4px;
+          }
+        }
+
+        .ant-menu-inline {
+          margin-left: 0px;
+        }
+
+        .ant-menu-submenu {
+          // 有子结构的一级菜单
+          .ant-menu-submenu-title {
+            // 这个样式写在style中，只能通过important去修改
+            padding-left: 24px !important;
+          }
+          // 二级菜单相关缩进
+          ul {
+            .ant-menu-item,
+            .ant-menu-submenu-title {
+              border-left: 4px solid #060f17;
+              border-right: 4px solid #060f17;
+              padding-left: 42px !important;
+            }
+          }
+
+          // 三级菜单相关缩进
+          ul {
+            li {
+              ul {
+                .ant-menu-item,
+                .ant-menu-submenu-title {
+                  padding-left: 54px !important;
+                }
+              }
+            }
+          }
+
+          // 四级菜单相关缩进
+          ul {
+            li {
+              ul {
+                li {
+                  ul {
+                    .ant-menu-item,
+                    .ant-menu-submenu-title {
+                      padding-left: 56px !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      // // 二级菜单相关缩进
+      // .ant-menu {
+      //   .ant-menu-submenu {
+      //     ul {
+      //       .ant-menu-item,
+      //       .ant-menu-submenu-title {
+      //         padding-left: 46px !important;
+      //       }
+      //     }
+      //   }
+      // }
+      // // 三级菜单相关缩进
+      // .ant-menu {
+      //   .ant-menu-submenu {
+      //     ul {
+      //       li {
+      //         ul {
+      //           .ant-menu-item,
+      //           .ant-menu-submenu-title {
+      //             padding-left: 58px !important;
+      //           }
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+      // // 四级菜单相关缩进
+      // .ant-menu {
+      //   .ant-menu-submenu {
+      //     ul {
+      //       li {
+      //         ul {
+      //           li {
+      //             ul {
+      //               .ant-menu-item,
+      //               .ant-menu-submenu-title {
+      //                 padding-left: 60px !important;
+      //               }
+      //             }
+      //           }
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+    }
+    // 设置侧边栏背景为白色
+    .ant-layout-sider {
+      background-color: #001629;
+      // padding: 0px 4px;
+    }
+  }
+}
+
+.layout {
+  :global {
+    // 折叠后菜单
+    .ant-layout-sider-collapsed {
+      .ant-menu-inline-collapsed {
+        .ant-menu-item {
+          padding-left: 11px !important;
+        }
+        .ant-menu-submenu {
+          .ant-menu-submenu-title {
+            padding-left: 15px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 切换组件文档页面 */
+.app-switch {
+  cursor: pointer;
+
+  &-popover :global {
+
+    .ant-popover-inner {
+      border-radius: 4px;
+    }
+
+    .ant-popover-inner-content {
+      padding: 12px;
+    }
+  }
+
+  &--icon {
+    font-size: 28px;
+  }
+
+  &-item {
+    display: flex;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    color: #606266;
+
+    &:hover {
+      background: #F0EFEF;
+    }
+
+    img {
+      margin-right: 5px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &.is-current {
+      background: #F0EFEF;
+    }
+  }
+
+  &--name {
+    color: #000000;
+  }
+}

@@ -1,0 +1,186 @@
+[
+  {
+    "key": "del店铺",
+    "encode": "FL02",
+    "title": "店铺",
+    "parentEncode": "MDFL",
+    "children": [
+      {
+        "key": "del餐饮服务",
+        "encode": "FL0202",
+        "title": "餐饮服务",
+        "parentEncode": "FL02",
+        "children": [
+          {
+            "key": "del甜品店",
+            "encode": "050900",
+            "title": "甜品店",
+            "parentEncode": "FL0202",
+            "children": [
+              {
+                "key": "大欢喜港式糖水",
+                "encode": "050810",
+                "title": "大欢喜港式糖水",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "时间与故事·芋作甜品",
+                "encode": "050810",
+                "title": "时间与故事·芋作甜品",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "芋说鲜果芋圆",
+                "encode": "050810",
+                "title": "芋说鲜果芋圆",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "喜三德甜品",
+                "encode": "050810",
+                "title": "喜三德甜品",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "五条人糖水铺",
+                "encode": "050810",
+                "title": "五条人糖水铺",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "满记甜品",
+                "encode": "050810",
+                "title": "满记甜品",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "九记八方甜品",
+                "encode": "050810",
+                "title": "九记八方甜品",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "鲜芋仙",
+                "encode": "050810",
+                "title": "鲜芋仙",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "简鹿糖水铺",
+                "encode": "050810",
+                "title": "简鹿糖水铺",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "财神糖水铺",
+                "encode": "050810",
+                "title": "财神糖水铺",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "小甜糖水",
+                "encode": "050810",
+                "title": "小甜糖水",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "十年老铺糖水",
+                "encode": "050810",
+                "title": "十年老铺糖水",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "红小姐糖水铺",
+                "encode": "050810",
+                "title": "红小姐糖水铺",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "喜鹊糖水铺",
+                "encode": "050810",
+                "title": "喜鹊糖水铺",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "蛀牙牙糖水铺",
+                "encode": "050810",
+                "title": "蛀牙牙糖水铺",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              }
+            ]
+          },
+          {
+            "key": "del西式快餐",
+            "encode": "050900",
+            "title": "西式快餐",
+            "parentEncode": "FL0202",
+            "children": [
+              {
+                "key": "肯德基",
+                "encode": "050810",
+                "title": "肯德基",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              },
+              {
+                "key": "麦当劳",
+                "encode": "050810",
+                "title": "麦当劳",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              }
+            ]
+          },
+          {
+            "key": "del咖啡",
+            "encode": "050900",
+            "title": "咖啡",
+            "parentEncode": "FL0202",
+            "children": [
+              {
+                "key": "星巴克",
+                "encode": "050810",
+                "title": "星巴克",
+                "parentEncode": "FL0202",
+                "children": [],
+                "type": "store"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,239 @@
+.searchBox {
+  .flexRightSearch {
+    margin-bottom: 6px;
+    width: 100%;
+
+    .moreSearch {
+      cursor: pointer;
+      color: #006aff;
+
+      .searchNumber {
+        color: #006aff;
+      }
+    }
+  }
+
+  :global {
+    .form-search {
+      .ant-form-item-control {
+        max-width: 190px;
+      }
+
+      .ant-select-in-form-item {
+        width: 190px;
+      }
+
+      .ant-form-item-label {
+        width: 90px;
+      }
+    }
+  }
+}
+
+.flexRightMoreOperate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+  .moreOperateNum {
+    font-size: 14px;
+
+    .moreOperateNumber {
+      font-weight: bold;
+      font-size: 20px;
+      margin-left: 8px;
+    }
+
+    .moreDes {
+      color: #999;
+
+      .count {
+        color: #222;
+        font-weight: 500;
+        margin: 0 4px;
+      }
+    }
+  }
+
+  .customTip {
+    :global {
+      .ant-tooltip-inner {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .ant-tooltip-arrow {
+        .ant-tooltip-arrow-content {
+          --antd-arrow-background-color: rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+  }
+}
+
+// 新建商圈规划
+.districtModal {
+  .districtModalMain {
+    display: flex;
+    margin-top: 16px;
+  }
+
+  .districtModalBottom {
+    text-align: right;
+  }
+}
+
+// 柱形图
+.dataBarChart {
+  .wh(100%, 100%);
+}
+
+// 全部筛选
+.searchModal {
+  .searchModalLabel {
+    margin-left: 4px;
+    font-size: 12px;
+    color: #ff861d;
+  }
+
+  :global {
+    .ant-modal-body {
+      max-height: 70vh;
+      overflow-y: auto;
+
+      .v2Form.v2Form-vertical .ant-form-item .ant-form-item-label {
+        height: 24px;
+      }
+    }
+  }
+}
+
+.sliderBox {
+  padding: 0 30px 0 20px;
+}
+
+.sliderBarSelect {
+  .wh(420px, max-content);
+
+  .shortContain {
+    width: 100%;
+    height: max-content;
+    background-color: #fafafa;
+    padding: 16px 16px 8px;
+    margin: 14px 0;
+    border-radius: 4px;
+    // .flex(row, warp);
+
+    .item {
+      .flex(column, nowarp, flex-start, flex-start, center);
+      margin-bottom: 16px;
+
+      .value {
+        .text(#333, 12px);
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+
+      .label {
+        .text(#999, 12px);
+      }
+    }
+  }
+}
+
+// 这里的global是为了穿透给特定的echarts tooltip ，勿删
+// c1c4ba3a 是整套networkPlanEdit组件集的 自生成 uuid
+:global {
+  .data-car-chart-c1c4ba3a {
+    color: #fff;
+    font-size: 12px;
+
+    .data-car-chart-c1c4ba3a-item {
+      line-height: 17px;
+      height: 17px;
+      clear: both;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.data-car-chart-c1c4ba3a-item-2 {
+        margin-bottom: 0;
+      }
+
+      .data-car-chart-c1c4ba3a-item-left {
+        float: left;
+        margin-right: 20px;
+
+        .data-car-chart-c1c4ba3a-left-wrapper {
+          display: flex;
+          align-items: center;
+
+          .data-car-chart-c1c4ba3a-left-icon {
+            margin-right: 4px;
+            width: 8px;
+            height: 8px;
+            background: linear-gradient(
+              180deg,
+              #358aff 0%,
+              rgba(53, 138, 255, 0.5) 100%
+            );
+            border-radius: 1px;
+
+            &.data-car-chart-c1c4ba3a-left-icon-2 {
+              background: linear-gradient(
+                180deg,
+                #f2993d 0%,
+                rgba(242, 153, 61, 0.5) 100%
+              );
+            }
+          }
+        }
+      }
+
+      .data-car-chart-c1c4ba3a-item-right {
+        float: left;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.popoverBox {
+  :global {
+    .ant-popover-inner-content {
+      background-color: #006aff;
+      width: 230px;
+      border-radius: 5px;
+    }
+
+    .ant-popover-arrow-content {
+      // background-color: #006aff;
+      --antd-arrow-background-color: #006aff;
+    }
+  }
+
+  .tipBox {
+    height: 60px;
+    color: white;
+    position: relative;
+  }
+
+  .bottom {
+    position: absolute;
+    right: 4px;
+  }
+}
+
+.popContent {
+  position: absolute;
+  /* bottom: 356px; */
+  left: 200px;
+  background-color: pink;
+  height: 300px;
+  opacity: 0.3;
+  width: 300px;
+  z-index: 999;
+  bottom: 56px;
+}

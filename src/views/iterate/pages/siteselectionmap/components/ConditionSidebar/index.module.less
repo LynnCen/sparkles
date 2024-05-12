@@ -1,0 +1,125 @@
+.leftCon {
+  margin-top: 16px;
+  padding: 0px 16px 0 16px;
+  max-height: 100%;
+  .mixinsPosition(absolute, 0, auto, 0, auto);
+
+  // 顶部
+  .top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    .topTitle {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .topClear {
+      position: absolute;
+      right: 0;
+      color: #006aff;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+  .content {
+    overflow: scroll;
+    max-height: calc(100% - 20px);
+  }
+  // 热门组合提示
+  .tips {
+    position: relative;
+    .wh(208px,32px);
+    border-radius: 2px;
+    font-size: 12px;
+    border: 1px solid rgba(255, 134, 29, 0.7);
+    background: rgba(255, 134, 29, 0.07);
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 6px;
+    margin-top: 16px;
+    .iconBox {
+      position: absolute;
+      right: 8px;
+      // top: 5px;
+      .wh(12px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .icon {
+      font-size: 8px;
+      color: #959bab;
+    }
+  }
+  // 网规标签
+  .networkLabel {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    width: 37px;
+    height: 16px;
+  }
+}
+// 筛选项卡片,评分区间
+.cardCon,
+.scoreSection {
+  margin-top: 16px;
+  position: relative;
+  .clear {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #006aff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .label {
+    max-width: 72px;
+    color: #666666;
+  }
+  .line {
+    .wh(100%,1px);
+    margin-top: 16px;
+    background-color: #eeeeee;
+  }
+  :global {
+    .ant-checkbox-wrapper {
+      width: 50%;
+      margin-left: 0;
+      margin-top: 8px;
+    }
+    .ant-typography {
+      margin-bottom: 0;
+    }
+    .ant-form-item {
+      margin-bottom: 0px;
+      margin-top: 8px;
+    }
+  }
+}
+// 评分区间
+.scoreSection {
+  .form {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+}
+
+// ExpandBox中的
+.bottom {
+  width: 100%;
+  margin-top: 8px;
+  color: #999999;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  .text {
+    font-size: 12px;
+  }
+  .icon {
+    font-size: 8px;
+    margin-left: 4px;
+  }
+}

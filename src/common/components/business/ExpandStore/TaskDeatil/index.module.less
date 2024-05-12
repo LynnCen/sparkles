@@ -1,0 +1,85 @@
+.taskDetail {
+  overflow-y: auto;
+  overflow-x: auto;
+  margin-top: 16px;
+  padding-bottom: 40px;
+}
+
+.addInfo {
+  display: inline-block;
+  padding: 0;
+  margin-top: 12px;
+  cursor: pointer;
+  .text(#006aff, 14px);
+}
+
+.pointMatching {
+  .name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #2441b3;
+    cursor: pointer;
+  }
+  .processButton {
+    margin-right: 9px;
+    // .text(#006AFF, 14px);
+    &.highlight {
+      .text(#2441b3, 14px);
+      cursor: pointer;
+    }
+    &.grayout {
+      .text(#999, 14px);
+    }
+    &.complete {
+      color: #ddd;
+      pointer-events: none;
+    }
+  }
+  .hide {
+    display: none;
+  }
+}
+
+.communication {
+  .addcommunication {
+    .addInfo();
+  }
+}
+
+.meetCardCon {
+  display: flex;
+  margin-top: 18px;
+  .date {
+    width: max-content;
+    .dateTop {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .dateBottom {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  .record {
+    margin-left: 12px;
+    flex: 1;
+    .title {
+      padding: 4px;
+      background-color: #f6f7f9;
+      border-radius: 2px;
+      width: max-content;
+      max-width: 100%;
+      font-size: 14px;
+    }
+    .content {
+      margin-top: 8px;
+      color: #666666;
+      font-size: 14px;
+      line-height: 20px;
+      word-break: break-all;
+    }
+  }
+}

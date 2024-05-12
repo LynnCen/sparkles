@@ -1,0 +1,110 @@
+// 本品牌门店分布
+.currentBrand {
+  cursor: pointer;
+  .wh(140px, 32px);
+  z-index: 999;
+  background-color: white;
+  // position: absolute;
+  // top: 16px;
+  // right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+
+  .currentSelectBox {
+    width: 140px;
+    position: absolute;
+    top: 36px;
+    background-color: white;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+
+    .allBrand {
+      margin-top: 8px;
+      margin-left: 8px;
+    }
+
+    .selectBox {
+      margin-left: 8px;
+
+      .check {
+        padding-bottom: 8px;
+
+        .icon {
+          font-size: 18px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  color: #006aff;
+}
+
+.labelBox {
+  width: 286px;
+  // border-radius: 5px;
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.16);
+
+  .titleText {
+    display: inline-block;
+    margin-left: 14px;
+    .oneLine();
+    max-width: 240px;
+  }
+  .title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 44px;
+    background-color: #006aff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
+    font-size: 14px;
+    .closeIcon {
+      position: absolute;
+      right: 12px;
+      font-size: 16px;
+    }
+  }
+  .content {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+  }
+  .top {
+    display: flex;
+    padding-top: 16px;
+    margin-left: 14px;
+    font-size: 12px;
+    .label {
+      color: #222;
+      font-weight: bold;
+      min-width: 87px;
+    }
+    .textValue {
+      margin-top: 6px;
+    }
+    .open {
+      color: #00b077;
+    }
+    .relieve {
+      color: #1e4460;
+    }
+  }
+  .bottom {
+    padding-top: 12px;
+    margin-left: 14px;
+    font-size: 12px;
+  }
+  .address {
+    margin-top: 6px;
+    padding-bottom: 16px;
+    .oneLine();
+    color: #999;
+  }
+}

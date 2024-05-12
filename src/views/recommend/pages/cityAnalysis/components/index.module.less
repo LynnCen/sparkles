@@ -1,0 +1,131 @@
+.leftContainer {
+  width: 360px;
+  height: calc(100vh - 134px);
+  background-color: #fff;
+  z-index: 97;
+  position: absolute;
+  left: 16px;
+  top: 54px;
+  box-shadow: 0px 0px 8px 0px rgba(204, 204, 204, 0.5);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+
+  .tabContent {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .cityOverview {
+    flex: auto;
+    height: 0;
+    overflow-y: auto;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+
+    :global {
+      .ant-spin-nested-loading {
+        height: 100%;
+
+        .ant-spin-container {
+          height: 100%;
+        }
+      }
+    }
+
+    .charts {
+      height: 200px;
+    }
+  }
+
+  .districtOverview {
+    flex: auto;
+    height: 0;
+    width: 100%;
+
+    :global {
+      .ant-spin-nested-loading {
+        height: 100%;
+
+        .ant-spin-container {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
+    .districtOverviewContent {
+      padding: 0 16px;
+      box-sizing: border-box;
+      flex: auto;
+      height: 0;
+      overflow-y: auto;
+    }
+
+    .footerBtn {
+      height: 42px;
+      width: 100%;
+      box-shadow: 0px 0px 8px 0px rgba(204, 204, 204, 0.5);
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2441B3;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+}
+
+.titleFamily {
+  font-family: PingFangSC-Medium, PingFang SC;
+}
+
+.topContainer {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  height: 32px;
+  z-index: 97;
+  display: flex;
+  align-items: flex-start;
+
+  .topBoxCon {
+    margin-left: 8px;
+  }
+}
+
+.provincePopup {
+  z-index: 98;
+}
+
+
+/* detailItem */
+.detailItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  line-height: 20px;
+
+  .label {
+    min-width: 84px;
+    color: #999999;
+    font-size: 14px;
+  }
+
+  .value {
+    flex: auto;
+    width: 0;
+    font-weight: 500;
+    color: #333333;
+    font-family: PingFangSC-Medium, PingFang SC;
+  }
+}
+
+.chartWrap {
+  border-radius: 6px;
+  border: 1px solid #eee;
+  margin-top: 12px;
+}

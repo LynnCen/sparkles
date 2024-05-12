@@ -1,0 +1,166 @@
+.container {
+  background-color: white;
+
+  // overflow-x: scroll;
+  .goBack {
+    .flex(row, nowrap, flex-start, center);
+    cursor: pointer;
+    height: 44px;
+    border-bottom: solid 1px #eee;
+  }
+
+  .areaTitle {
+    .flex(row, nowrap, space-between, flex-start);
+    padding: 12px 12px 10px 12px;
+
+    .favorBtn {
+      .wh(28px);
+      padding: 0;
+      border-radius: 4px;
+      flex-shrink: 0;
+      position: relative;
+      .favorIcon {
+        .wh(12px);
+        .center();
+      }
+    }
+    :global {
+      .ant-btn {
+        color: #222;
+        border-color: #eee;
+      }
+      .ant-btn:focus {
+        color: #222;
+        border-color: #eee;
+      }
+      .ant-btn:hover {
+        color: #006AFF;
+        border-color: #006AFF;
+      }
+    }    
+  }
+
+  .detailInfo {
+    padding: 0 12px 12px;
+
+    // overflow-x: scroll;
+    .industryWrapper {
+      border-radius: 2px 2px 0px 0px;
+      border: solid 1px #eee;
+
+      .titleRow {
+        background: #fafafa;
+        line-height: 32px;
+        .flex(row, nowrap, flex-start, flex-start);
+      }
+
+      .titleName {
+        height: 32px;
+        font-family: DINAlternate-Bold, DINAlternate;
+        color: #ffffff;
+        flex-shrink: 0;
+        padding: 0 8px 0 5px;
+        background: #006AFF;
+        border-radius: 2px 0px 0px 0px;
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 95% 0%);
+      }
+
+      .detailRow {
+        .flex(row, nowrap, flex-start, center);
+
+        .itemName {
+          width: 80px;
+        }
+        .itemValue {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .itemBlock {
+      padding: 10px 0 10px 14px;
+      border-radius: 4px;
+      border: 4px;
+      border: 1px solid #EEEEEE;
+
+      .itemName {
+        color: #999999;
+        font-size: 12px;
+      }
+
+      .itemValue {
+        margin-top: 10px;
+        color: #222222;
+        font-size: 14px;
+        font-weight: bold;
+
+        &.normal {
+          font-weight: normal
+        }
+      }
+    }
+
+    .text {
+      border-radius: 1px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      margin-bottom: 16px;
+
+      .colorOrange {
+        display: inline-block;
+        color: #4c71c1;
+        margin-right: 8px;
+        padding: 0 8px;
+        background: #ff4c00;
+      }
+
+      .colorGreen {
+        display: inline-block;
+        padding: 0 8px;
+        color: #006f07;
+        background: #e9f8ea;
+      }
+    }
+
+    .label {
+      display: inline-block;
+      color: #999;
+      min-width: 156px;
+    }
+  }
+
+  .tooltip {
+    font-size: 12px;
+    margin-bottom: 10px;
+    .flex(row, nowrap, space-between, center);
+
+    .colorBlock {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      vertical-align: 1px;
+    }
+
+    .number {
+      display: inline-block;
+      max-width: 30px;
+      width: 30px;
+      // min-width: 30px;
+      margin-right: 5px;
+      position: relative;
+    }
+
+    .number::after {
+      content: ' ';
+      width: 2px;
+      height: 10px;
+      position: absolute;
+      top: 4px;
+      right: -4px;
+      background-color: #eee;
+      // border-right: 1px solid #eee;
+    }
+  }
+}

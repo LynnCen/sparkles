@@ -1,0 +1,277 @@
+@BigScreenWidth: 19.45vw; //280/1440 ≈ 0.1945
+
+.wrapperCon {
+  .commonConStyle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+  }
+
+  .infoCon {
+    .commonConStyle();
+    .flex(row, nowrap, space-between, center);
+    .wh(280px, 37px);
+    @media (min-width: 1440px) {
+      width: @BigScreenWidth;
+    }
+    @media screen and(min-width:1920px) {
+      width: 374px;
+    }
+    padding: 0 12px;
+    cursor: pointer;
+
+    .spanSpace {
+      padding: 0 2px;
+    }
+
+    .arrowIcon {
+      transform: rotate(0);
+      transition: transform 0.2s linear;
+    }
+
+    .arrowIconUp {
+      transform: rotate(180deg);
+      transition: transform 0.2s linear;
+    }
+  }
+
+  .listCon {
+    .commonConStyle();
+    top: 61px;
+    .wh(280px, calc(100vh - 129px));
+    @media (min-width: 1440px) {
+      width: 19.45vw; //290/1440 ≈ 0.1945
+    }
+    @media (min-width: 1920px) {
+      width: 374px;
+    }
+    transition: height 0.2s linear;
+    overflow: auto;
+    box-sizing: border-box;
+
+    &.isFold {
+      height: 0;
+      transition: height 0.2s linear;
+    }
+
+    .topCon {
+      height: 88px; // list里面用了媒体查询，所以这里高度写死，才能保证虚拟列表的高度没问题
+      overflow: hidden;
+      .sortWrapper {
+        .flex(row, nowrap, space-between, center);
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .rankCon {
+        .flex(row, nowrap, flex-start, center);
+        padding: 10px 8px 0 12px;
+        overflow-x: auto;
+        box-sizing: border-box;
+
+        .rankItem {
+          background: #fafafa;
+          border-radius: 12px;
+          padding: 2px 10px;
+          cursor: pointer;
+          font-size: 12px;
+          color: #222;
+          min-width: max-content;
+          margin-right: 4px;
+
+          &.active {
+            background: #e9f2ff;
+            color: #006aff;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .textCon {
+      width: max-content;
+
+      .arrowIcon {
+        transform: rotate(0);
+        transition: transform 0.2s linear;
+      }
+
+      &:hover {
+        .arrowIcon {
+          transform: rotate(180deg);
+          transition: transform 0.2s linear;
+        }
+      }
+    }
+
+    .loadingCon {
+      // .wh(280px, calc(100vh - 129px));
+      // border: 1px solid red
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    .backCon {
+      .wh(32px, 32px);
+      .flex(row, nowrap, center, center);
+      z-index: 2;
+      position: absolute;
+      right: 24px;
+      bottom: 16px;
+      border-radius: 50%;
+      box-shadow: 0px 2px 6px 0px rgba(204, 204, 204, 0.5);
+      background-color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+.toolCon {
+  position: absolute;
+  right: 292px;
+  @media (min-width: 1440px) {
+    right: calc(@BigScreenWidth + 12px);
+  }
+  @media screen and(min-width:1920px) {
+    right: 386px; //+12
+  }
+  bottom: 20px;
+  .flex();
+
+  &.isRight {
+    right: 12px;
+  }
+
+  .toolItem {
+    .flex(row, nowrap, space-around, center);
+    .wh(32px, 32px);
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+}
+
+// 顶部 地图皮肤工具箱
+// .skinToolCon {
+//   position: absolute;
+//   right: 304px; //12+280+12从右到左
+//   @media (min-width: 1440px) {
+//     right: calc(@BigScreenWidth + 24px);
+//   }
+//   @media screen and(min-width:1920px) {
+//     right: 398px; //+24
+//   }
+//   top: 12px;
+//   // transform: translateY(-50%);
+//   // .wh(146px,37px);
+//   .wh(75px,37px);
+//   background-color: white;
+//   z-index: 3;
+//   padding: 7px 8px 8px 6px;
+//   display: flex;
+//   align-items: center;
+//   background: #ffffff;
+//   box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+//   border-radius: 4px;
+//   cursor: pointer;
+//   .card {
+//     position: relative;
+//     .wh(24px,25px);
+//     margin-right: 11px;
+//     display: flex;
+//     justify-content: center;
+//     z-index: 2;
+//   }
+//   .active {
+//     // border: 1px solid #006ffa;
+//     .wh(25px,25px);
+//     background-color: #006ffa;
+//     z-index: 1;
+//     border-radius: 4px;
+//   }
+//   .img {
+//     .wh(24px,25px);
+//     display: inline-block;
+//   }
+//   .selectedBox {
+//     position: absolute;
+//     right: 0px;
+//     bottom: 0px;
+//     border-right: 5px solid #006ffa;
+//     border-bottom: 5px solid #006ffa;
+//     border-top: 5px solid transparent;
+//     border-left: 5px solid transparent;
+//     border-radius: 3px;
+//     .icon {
+//       position: absolute;
+//       left: 0px;
+//       top: 0px;
+//       font-size: 4px;
+//       color: white;
+//     }
+//   }
+// }
+
+.skinToolCon {
+  position: absolute;
+  right: 304px; //12+280+12从右到左
+  color: #222;
+  @media (min-width: 1440px) {
+    right: calc(@BigScreenWidth + 24px);
+  }
+  @media screen and(min-width:1920px) {
+    right: 398px; //+24
+  }
+  top: 12px;
+  .wh(94px,37px);
+  background-color: white;
+  z-index: 3;
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 12px 0px rgba(110, 139, 179, 0.25);
+  border-radius: 4px;
+  cursor: pointer;
+  .arrowIcon {
+    color: #959bab;
+    transform: rotate(0);
+    transition: transform 0.2s linear;
+  }
+
+  .arrowIconUp {
+    color: #959bab;
+    transform: rotate(180deg);
+    transition: transform 0.2s linear;
+  }
+  .heatCon {
+    position: absolute;
+    top: 45px; //37+8
+    right: 0;
+    background-color: white;
+    width: 94px;
+    height: 72px;
+    box-shadow: 0px 0px 8px 0px rgba(110, 139, 179, 0.3);
+    border-radius: 4px;
+    .card {
+      .wh(94px,36px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #222;
+    }
+  }
+}
+// 顶部 地图皮肤工具箱--右侧推荐个数不显示情况
+.rightMove {
+  right: 12px;
+}

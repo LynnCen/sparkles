@@ -1,0 +1,99 @@
+.filterWrap {
+  .titleWrap {
+    margin: 0 0 24px;
+  }
+  .title {
+    position: relative;
+    padding-left: 6px;
+    padding-right: 8px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #132144;
+    margin-bottom: 20px;
+    .flex(flex, nowrap, space-between);
+    &::after {
+      position: absolute;
+      content: '';
+      width: 2px;
+      height: 14px;
+      background: @primary-blue;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .searchForm {
+    .colItem {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    // :global {
+    //   .ant-form-item-control {
+    //     width: 250px;
+    //   }
+    //   .ant-form-item-control:first-child:not([class^='ant-col-']):not([class*=' ant-col-']) {
+    //     width: 300px;
+    //   }
+    // }
+    .delete {
+      margin-left: 16px;
+    }
+  }
+}
+
+.dataBox {
+  background: white;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  .topBar {
+    height: 34px;
+    color: #333;
+    font-size: 16px;
+    background: #f7f7f7;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f5f6fa;
+  }
+  .title {
+    display: inline-block;
+    margin-right: 4px;
+    color: #132144;
+  }
+}
+
+.chartContainer {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.resetBtn {
+  margin-left: 16px;
+  border: none;
+  color: #acb4c7;
+  padding: 0;
+  svg {
+    margin-right: 8px;
+  }
+  &:hover {
+    color: #acb4c7;
+  }
+  &:active {
+    color: #acb4c7;
+  }
+}
+
+// .highSearch {
+// }
+
+.moreStoreWrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  .storeName {
+    width: 240px;
+    margin-right: 20px;
+  }
+}
